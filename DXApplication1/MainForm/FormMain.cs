@@ -1220,40 +1220,36 @@ namespace 城市空间生态格局智能评估系统
             classificationStatisticForm frm = new classificationStatisticForm();
             frm.ShowDialog();
         }
+        #region 4.2 分类合并
+        private void classCombine_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            classificationMergeForm frm = new classificationMergeForm();
+            frm.ShowDialog();
+            if (frm.DialogResult != DialogResult.OK) return;
+            #region 1、参数设置
+            PIE.CommonAlgo.StClassPostComb info = new PIE.CommonAlgo.StClassPostComb();
 
+            info.InputFileName = frm.inputImage;
+            info.OutputFileName = frm.resultImage;
+            info.ClassCount = frm.classCount; //分类合并前的类别
+            info.CompareIndex = frm.classMerge; //合并前的类别分别设置合并后对应的类的索引
 
+            PIE.SystemAlgo.ISystemAlgo algo = PIE.SystemAlgo.AlgoFactory.Instance().CreateAlgo("PIE.CommonAlgo.dll", "PIE.CommonAlgo.ImgClassCombineAlgo");
+            if (algo == null) return;
+            #endregion
 
+            //2、算法执行
+            PIE.SystemAlgo.ISystemAlgoEvents algoEvents = algo as PIE.SystemAlgo.ISystemAlgoEvents;
+            algo.Name = " 分类合并";
+            algo.Params = info;
+            bool result = PIE.SystemAlgo.AlgoFactory.Instance().ExecuteAlgo(algo);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            //3、结果显示
+            ILayer layer = PIE.Carto.LayerFactory.CreateDefaultLayer(frm.resultImage);
+            mapControlMain.ActiveView.FocusMap.AddLayer(layer);
+            mapControlMain.ActiveView.PartialRefresh(ViewDrawPhaseType.ViewAll);
+        }
+        #endregion
         #endregion
 
         #endregion
@@ -1267,6 +1263,7 @@ namespace 城市空间生态格局智能评估系统
             form.ShowDialog();
         }
         #endregion
+
         #region 廊道提取
         #region 铁路因子
         private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

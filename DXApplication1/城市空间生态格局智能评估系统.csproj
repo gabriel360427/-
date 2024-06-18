@@ -91,6 +91,12 @@
     <Compile Include="Custom Forms\brightnessParam.Designer.cs">
       <DependentUpon>brightnessParam.cs</DependentUpon>
     </Compile>
+    <Compile Include="Custom Forms\classificationMergeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\classificationMergeForm.designer.cs">
+      <DependentUpon>classificationMergeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Custom Forms\classificationStatisticForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\brightnessParam.resx">
       <DependentUpon>brightnessParam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\classificationMergeForm.resx">
+      <DependentUpon>classificationMergeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\classificationStatisticForm.resx">
       <DependentUpon>classificationStatisticForm.cs</DependentUpon>

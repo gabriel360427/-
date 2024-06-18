@@ -308,3 +308,6 @@ C:\Users\Gabriel_36\Desktop\git\-\DXApplication1\obj\Debug\城市空间生态格
 C:\Users\Gabriel_36\Desktop\git\-\DXApplication1\obj\Debug\城市空间生态格局智能评估系统.csproj.CopyComplete
 C:\Users\Gabriel_36\Desktop\git\-\DXApplication1\obj\Debug\城市空间生态格局智能评估系统.exe
 C:\Users\Gabriel_36\Desktop\git\-\DXApplication1\obj\Debug\城市空间生态格局智能评估系统.pdb
+C:\Users\Administrator\Desktop\新建文件夹 (2)\-\DXApplication1\obj\Debug\城市空间生态格局智能评估系统.Custom_Commands.linearResistanceFactor.resources
+C:\Users\Administrator\Desktop\新建文件夹 (2)\-\DXApplication1\obj\Debug\城市空间生态格局智能评估系统.Custom_Commands.reClassification.resources
+C:\Users\Administrator\Desktop\新建文件夹 (2)\-\DXApplication1\obj\Debug\城市空间生态格局智能评估系统.Custom_Forms.classificationMergeForm.resources
