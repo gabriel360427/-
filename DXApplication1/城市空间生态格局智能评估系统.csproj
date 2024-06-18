@@ -79,6 +79,18 @@
     <Compile Include="Custom Commands\AddDataCommand.cs" />
     <Compile Include="Custom Commands\LoadFeatureDataCommand.cs" />
     <Compile Include="Custom Commands\LoadRasterDataCommand.cs" />
+    <Compile Include="Custom Forms\atmosphericCorrectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\atmosphericCorrectionForm.designer.cs">
+      <DependentUpon>atmosphericCorrectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Forms\classpostMMAForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\classpostMMAForm.designer.cs">
+      <DependentUpon>classpostMMAForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Custom Forms\BandSynthesisForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,6 +175,12 @@
     <Compile Include="Custom Forms\transparencyParam.Designer.cs">
       <DependentUpon>transparencyParam.cs</DependentUpon>
     </Compile>
+    <Compile Include="Custom Forms\quickMosaicForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\quickMosaicForm.designer.cs">
+      <DependentUpon>quickMosaicForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Custom Tools\SpatialQueryTool.cs" />
     <Compile Include="MainForm\FormMain.cs">
       <SubType>Form</SubType>
@@ -172,6 +190,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Custom Forms\atmosphericCorrectionForm.resx">
+      <DependentUpon>atmosphericCorrectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\classpostMMAForm.resx">
+      <DependentUpon>classpostMMAForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\BandSynthesisForm.resx">
       <DependentUpon>BandSynthesisForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -213,6 +237,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\transparencyParam.resx">
       <DependentUpon>transparencyParam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\quickMosaicForm.resx">
+      <DependentUpon>quickMosaicForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>

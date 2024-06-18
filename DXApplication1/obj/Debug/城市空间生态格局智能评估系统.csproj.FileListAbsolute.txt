@@ -385,3 +385,6 @@ C:\Users\Administrator\Desktop\新建文件夹 (3)\DXApplication1\obj\Debug\城�
 C:\Users\Administrator\Desktop\新建文件夹 (3)\DXApplication1\obj\Debug\城市空间生态格局智能评估系统.Properties.Resources.resources
 C:\Users\Administrator\Desktop\新建文件夹 (3)\DXApplication1\obj\Debug\城市空间生态格局智能评估系统.csproj.GenerateResource.Cache
 C:\Users\Administrator\Desktop\新建文件夹 (3)\DXApplication1\obj\Debug\城市空间生态格局智能评估系统.exe.licenses
+C:\Users\Administrator\Desktop\新建文件夹 (2)\-\DXApplication1\obj\Debug\城市空间生态格局智能评估系统.Custom_Forms.classpostMMAForm.resources
+C:\Users\Administrator\Desktop\新建文件夹 (2)\-\DXApplication1\obj\Debug\城市空间生态格局智能评估系统.Custom_Forms.quickMosaicForm.resources
+C:\Users\Administrator\Desktop\新建文件夹 (2)\-\DXApplication1\obj\Debug\城市空间生态格局智能评估系统.Custom_Forms.atmosphericCorrectionForm.resources

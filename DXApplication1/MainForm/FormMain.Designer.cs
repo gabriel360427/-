@@ -127,6 +127,7 @@
             this.GaoDeAnnotation = new DevExpress.XtraBars.BarButtonItem();
             this.LoadArcGISServerLayer = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.storageFormatConversion = new DevExpress.XtraBars.BarButtonItem();
             this.BASEMENT = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.mapProject = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.dataManagement = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -148,12 +149,11 @@
             this.unSupervisedClassification = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.supervisedClassification = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.postClassification = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.timeseriesClassification = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.reClassifications = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.timeseriesClassification = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.VectorProcess = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.vectorTools = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.vectorGridConversion = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.formatConversion = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage5 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup15 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup16 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -340,10 +340,11 @@
             this.GaoDeRoad,
             this.GaoDeAnnotation,
             this.LoadArcGISServerLayer,
-            this.barButtonItem1});
+            this.barButtonItem1,
+            this.storageFormatConversion});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.ribbonControl1.MaxItemId = 112;
+            this.ribbonControl1.MaxItemId = 113;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.BASEMENT,
@@ -600,6 +601,7 @@
             this.atmosphericCorrection.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("atmosphericCorrection.ImageOptions.Image")));
             this.atmosphericCorrection.Name = "atmosphericCorrection";
             this.atmosphericCorrection.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.atmosphericCorrection.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.atmosphericCorrection_ItemClick);
             // 
             // imageMatching
             // 
@@ -725,6 +727,7 @@
             this.quickMosaic.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("quickMosaic.ImageOptions.Image")));
             this.quickMosaic.Name = "quickMosaic";
             this.quickMosaic.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.quickMosaic.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.quickMosaic_ItemClick);
             // 
             // seamlessMosaic
             // 
@@ -804,6 +807,7 @@
             this.classpostMMA.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("classpostMMA.ImageOptions.Image")));
             this.classpostMMA.Name = "classpostMMA";
             this.classpostMMA.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.classpostMMA.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.classpostMMA_ItemClick);
             // 
             // classStatistics
             // 
@@ -1142,6 +1146,14 @@
             this.barButtonItem1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
             // 
+            // storageFormatConversion
+            // 
+            this.storageFormatConversion.Caption = "存储格式转换";
+            this.storageFormatConversion.Id = 112;
+            this.storageFormatConversion.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.Utility_BatchTrans_Interleave;
+            this.storageFormatConversion.Name = "storageFormatConversion";
+            this.storageFormatConversion.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
             // BASEMENT
             // 
             this.BASEMENT.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -1284,8 +1296,8 @@
             this.unSupervisedClassification,
             this.supervisedClassification,
             this.postClassification,
-            this.timeseriesClassification,
-            this.reClassifications});
+            this.reClassifications,
+            this.timeseriesClassification});
             this.Classification.Name = "Classification";
             this.Classification.Text = "影像分类";
             // 
@@ -1318,23 +1330,22 @@
             this.postClassification.Name = "postClassification";
             this.postClassification.Text = "分类后处理";
             // 
-            // timeseriesClassification
-            // 
-            this.timeseriesClassification.Name = "timeseriesClassification";
-            this.timeseriesClassification.Text = "基于时序的影像分类";
-            // 
             // reClassifications
             // 
             this.reClassifications.ItemLinks.Add(this.reClassification);
             this.reClassifications.Name = "reClassifications";
             this.reClassifications.Text = "重分类";
             // 
+            // timeseriesClassification
+            // 
+            this.timeseriesClassification.Name = "timeseriesClassification";
+            this.timeseriesClassification.Text = "基于时序的影像分类";
+            // 
             // VectorProcess
             // 
             this.VectorProcess.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.vectorTools,
-            this.vectorGridConversion,
-            this.ribbonPageGroup1});
+            this.formatConversion});
             this.VectorProcess.Name = "VectorProcess";
             this.VectorProcess.Text = "矢量处理";
             // 
@@ -1353,17 +1364,13 @@
             this.vectorTools.Name = "vectorTools";
             this.vectorTools.Text = "矢量工具";
             // 
-            // vectorGridConversion
+            // formatConversion
             // 
-            this.vectorGridConversion.ItemLinks.Add(this.gridToVector);
-            this.vectorGridConversion.ItemLinks.Add(this.vectorToGrid);
-            this.vectorGridConversion.Name = "vectorGridConversion";
-            this.vectorGridConversion.Text = "矢栅转换";
-            // 
-            // ribbonPageGroup1
-            // 
-            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "缓冲区";
+            this.formatConversion.ItemLinks.Add(this.gridToVector);
+            this.formatConversion.ItemLinks.Add(this.vectorToGrid);
+            this.formatConversion.ItemLinks.Add(this.storageFormatConversion);
+            this.formatConversion.Name = "formatConversion";
+            this.formatConversion.Text = "格式转换";
             // 
             // ribbonPage5
             // 
@@ -1501,7 +1508,7 @@
             // 
             this.tocControlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tocControlMain.Location = new System.Drawing.Point(0, 0);
-            this.tocControlMain.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tocControlMain.Margin = new System.Windows.Forms.Padding(5);
             this.tocControlMain.Name = "tocControlMain";
             this.tocControlMain.Size = new System.Drawing.Size(234, 530);
             this.tocControlMain.TabIndex = 0;
@@ -1664,7 +1671,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage2.Size = new System.Drawing.Size(1173, 476);
+            this.tabPage2.Size = new System.Drawing.Size(1172, 490);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "制图模式";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -1685,7 +1692,7 @@
             this.toolStrip2.Location = new System.Drawing.Point(3, 4);
             this.toolStrip2.Name = "toolStrip2";
             this.toolStrip2.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.toolStrip2.Size = new System.Drawing.Size(40, 468);
+            this.toolStrip2.Size = new System.Drawing.Size(40, 482);
             this.toolStrip2.TabIndex = 1;
             this.toolStrip2.Text = "toolStrip2";
             // 
@@ -1774,7 +1781,7 @@
             this.pageLayoutControlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pageLayoutControlMain.Location = new System.Drawing.Point(3, 4);
             this.pageLayoutControlMain.Name = "pageLayoutControlMain";
-            this.pageLayoutControlMain.Size = new System.Drawing.Size(1167, 468);
+            this.pageLayoutControlMain.Size = new System.Drawing.Size(1166, 482);
             this.pageLayoutControlMain.TabIndex = 0;
             this.pageLayoutControlMain.Text = "pageLayoutControlMain";
             // 
@@ -2158,7 +2165,7 @@
         private DevExpress.XtraBars.BarButtonItem attributeEdit;
         private DevExpress.XtraBars.BarButtonItem barButtonItem64;
         private DevExpress.XtraBars.BarButtonItem unionFeature;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup vectorGridConversion;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup formatConversion;
         private DevExpress.XtraBars.BarButtonItem barButtonItem17;
         private DevExpress.XtraBars.BarButtonItem imageClipping;
         private DevExpress.XtraBars.BarButtonItem precisionAnalysis;
@@ -2177,12 +2184,12 @@
         private System.Windows.Forms.ToolStripMenuItem DeleteLayerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem FeatureLayerAttributeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem SymbolSelectorToolStripMenuItem;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
         private System.Windows.Forms.ToolStripButton zoomToOrigin4;
         private System.Windows.Forms.ToolStripMenuItem LayerPropertyToolStripMenuItem;
         private DevExpress.XtraEditors.Repository.RepositoryItemTrackBar repositoryItemTrackBar4;
         private DevExpress.XtraEditors.Repository.RepositoryItemZoomTrackBar repositoryItemZoomTrackBar6;
+        private DevExpress.XtraBars.BarButtonItem storageFormatConversion;
     }
 }
 

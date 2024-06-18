@@ -904,7 +904,9 @@ namespace 城市空间生态格局智能评估系统
         #endregion
 
         #region 三、影像处理
+
         #region 1. 辐射校正
+
         #region 1.1 辐射定标
         private void radiometricCalibration_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -914,7 +916,44 @@ namespace 城市空间生态格局智能评估系统
         #endregion
 
         #region 1.2 大气校正
+        private void atmosphericCorrection_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            //PIE.SystemUI.ICommand cmd = new AtmosphericCorrectionDemo();
+            //cmd.OnCreate(mapControlMain);
+            //cmd.OnClick();
+            atmosphericCorrectionForm frm = new atmosphericCorrectionForm();
+            frm.ShowDialog();
+            if (frm.DialogResult == DialogResult.OK)
+            {
+                #region 1、参数设置
+                PIE.CommonAlgo.DataProcess_AtmCor_Info info = new PIE.CommonAlgo.DataProcess_AtmCor_Info();
 
+                info.InputFile = frm.selectedImage;
+                info.InputXML = frm.selectedMetadata;
+                info.OutputSR = frm.resultImage;
+                info.AtmModel = frm.selectedAtmosPattern;
+                info.AerosolType = frm.selectedAirosolPattern;
+                info.InitialVIS = frm.inputVisibility;
+                info.AeroRetrieval = frm.selectedAirosolYesOrNo;
+                info.FileTypeCode = "Gtiff";
+                info.DataType = frm.dataType;
+
+                PIE.SystemAlgo.ISystemAlgo algo = PIE.SystemAlgo.AlgoFactory.Instance().CreateAlgo("PIE.CommonAlgo.dll", "PIE.CommonAlgo.AtmosphericCorrectionAlgo");
+                if (algo == null) return;
+                #endregion
+
+                //2、算法执行
+                PIE.SystemAlgo.ISystemAlgoEvents algoEvents = algo as PIE.SystemAlgo.ISystemAlgoEvents;
+                algo.Name = "大气校正";
+                algo.Params = info;
+                bool result = PIE.SystemAlgo.AlgoFactory.Instance().ExecuteAlgo(algo);
+
+                //3、结果显示
+                ILayer layer = PIE.Carto.LayerFactory.CreateDefaultLayer(info.OutputSR);
+                mapControlMain.ActiveView.FocusMap.AddLayer(layer);
+                mapControlMain.ActiveView.PartialRefresh(ViewDrawPhaseType.ViewAll);
+            }
+        }
         #endregion
 
         #endregion
@@ -927,6 +966,7 @@ namespace 城市空间生态格局智能评估系统
         #region 2.2 正射校正
 
         #endregion
+
         #region 2.3 几何精校正
 
         #endregion
@@ -934,8 +974,13 @@ namespace 城市空间生态格局智能评估系统
         #endregion
 
         #region 3. 影像镶嵌
-        #region 3.1 快速拼接
 
+        #region 3.1 快速拼接
+        private void quickMosaic_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            quickMosaicForm form = new quickMosaicForm();
+            form.ShowDialog();
+        }
         #endregion
 
         #region 3.2 无缝镶嵌
@@ -998,9 +1043,6 @@ namespace 城市空间生态格局智能评估系统
         #region 2.1 ISODATA分类
         private void isoData_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            //PIE.SystemUI.ICommand cmd = new ISODATA();
-            //cmd.OnCreate(mapControlMain);
-            //cmd.OnClick();
             ISODATAForm frm = new ISODATAForm();
             frm.ShowDialog();
             if (frm.DialogResult == DialogResult.OK)
@@ -1181,7 +1223,7 @@ namespace 城市空间生态格局智能评估系统
             bool result = AlgoFactory.Instance().ExecuteAlgo(algo);//同步执行roi统计算法
             #endregion
 
-            #region DistanceClassify算法
+            #region 最大似然分类算法
             //执行完成后得到roi统计的参数会发生变化
             roiDataInfo = (ROIStatistics_Exchange_Info)algo.Params;
             int roiNum = roiDataInfo.vecROIName.Count;
@@ -1202,11 +1244,11 @@ namespace 城市空间生态格局智能评估系统
                     m_DataInfo.ROICof.Add(roiDataInfo.vecCof[i * frm.SelectBandNums * frm.SelectBandNums + k]);
                 }
             }
-            ISystemAlgo distanceAlgo = AlgoFactory.Instance().CreateAlgo("PIE.CommonAlgo.dll", "PIE.CommonAlgo.DistanceClassificationAlgo");//最大似然法就将DistanceClassificationAlgo替换为MLClassificationAlgo
-            distanceAlgo.Params = m_DataInfo;
-            ISystemAlgoEvents systemEvents = distanceAlgo as ISystemAlgoEvents;
+            ISystemAlgo mlclassificationAlgo = AlgoFactory.Instance().CreateAlgo("PIE.CommonAlgo.dll", "PIE.CommonAlgo.MLClassificationAlgo");//最大似然法MLClassificationAlgo
+            mlclassificationAlgo.Params = m_DataInfo;
+            ISystemAlgoEvents systemEvents = mlclassificationAlgo as ISystemAlgoEvents;
             systemEvents.OnExecuteCompleted += systemEvents_OnExecuteCompleted;
-            result = AlgoFactory.Instance().ExecuteAlgo(distanceAlgo);
+            result = AlgoFactory.Instance().ExecuteAlgo(mlclassificationAlgo);
             #endregion
         }
         #endregion
@@ -1220,6 +1262,8 @@ namespace 城市空间生态格局智能评估系统
             classificationStatisticForm frm = new classificationStatisticForm();
             frm.ShowDialog();
         }
+        #endregion
+
         #region 4.2 分类合并
         private void classCombine_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -1250,18 +1294,58 @@ namespace 城市空间生态格局智能评估系统
             mapControlMain.ActiveView.PartialRefresh(ViewDrawPhaseType.ViewAll);
         }
         #endregion
+
+        #region 4.3 主/次要分析
+        private void classpostMMA_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            classpostMMAForm frm = new classpostMMAForm();
+            frm.ShowDialog();
+            if (frm.DialogResult != DialogResult.OK) return;
+            frm.getClassIndex();
+            #region 1、参数设置
+            PIE.CommonAlgo.StMajMinParameter info = new PIE.CommonAlgo.StMajMinParameter();
+
+            info.InputFileName = frm.inputImage;
+            info.OutputFileName = frm.resultImage;
+            info.Veciselclass = frm.classIndex;
+            info.VeciNotselclass = frm.restClassIndex;
+            info.MajMin = frm.majMin;
+            info.KernelX = frm.kernelX;
+            info.KernelY = frm.kernelY;
+            info.Weight = frm.pixelProportion;
+            info.VecColor = null;
+
+            PIE.SystemAlgo.ISystemAlgo algo = PIE.SystemAlgo.AlgoFactory.Instance().CreateAlgo("PIE.CommonAlgo.dll", "PIE.CommonAlgo.ImgClassPostMMAAlgo");
+            if (algo == null) return;
+            #endregion
+
+            //2、算法执行
+            PIE.SystemAlgo.ISystemAlgoEvents algoEvents = algo as PIE.SystemAlgo.ISystemAlgoEvents;
+            algo.Name = " 主/次要分析";
+            algo.Params = info;
+            bool result = PIE.SystemAlgo.AlgoFactory.Instance().ExecuteAlgo(algo);
+
+            //3、结果显示
+            ILayer layer = PIE.Carto.LayerFactory.CreateDefaultLayer(frm.resultImage);
+            mapControlMain.ActiveView.FocusMap.AddLayer(layer);
+            mapControlMain.ActiveView.PartialRefresh(ViewDrawPhaseType.ViewAll);
+        }
         #endregion
+
+        #region 4.4 精度分析
 
         #endregion
 
         #endregion
 
-        #region 重分类
+        #region 5. 重分类
         private void reClassification_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             reClassification form = new reClassification();
             form.ShowDialog();
         }
+        #endregion
+
         #endregion
 
         #region 廊道提取
@@ -1281,6 +1365,8 @@ namespace 城市空间生态格局智能评估系统
             form.ShowDialog();
         }
         #endregion
+
+        
         #endregion 
     }
 }
