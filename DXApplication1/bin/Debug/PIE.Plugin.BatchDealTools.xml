@@ -1,0 +1,711 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PIE.Plugin.BatchDealTools</name>
+    </assembly>
+    <members>
+        <member name="T:PIE.Plugin.AtmosphericCorrectionBatchCommand">
+            <summary>
+            大气校正Command
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.AtmosphericCorrectionBatchCommand.m_bFailed">
+            <summary>
+            是否执行失败
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.AtmosphericCorrectionBatchCommand.m_TotalNumber">
+            <summary>
+            数据总量
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.AtmosphericCorrectionBatchCommand.m_CurrentNumber">
+            <summary>
+            当前运行的数据数量
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.AtmosphericCorrectionBatchCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.AtmosphericCorrectionBatchCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.AtmosphericCorrectionBatchCommand.OnAlgoExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法执行完成事件
+            </summary>
+            <param name="algo">算法</param>
+        </member>
+        <member name="M:PIE.Plugin.AtmosphericCorrectionBatchCommand.OnAlgoProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度变化事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns>int</returns>
+        </member>
+        <member name="T:PIE.Plugin.FrmAtmosphericCorrectionBatch">
+            <summary>
+            大气校正窗体
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmAtmosphericCorrectionBatch.m_ListExchangeData">
+            <summary>
+            交换数据
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.FrmAtmosphericCorrectionBatch.ListExChangeData">
+            <summary>
+            交换数据属性
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmAtmosphericCorrectionBatch.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmAtmosphericCorrectionBatch.simpleButton_Input_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择输入文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmAtmosphericCorrectionBatch.simpleButton_Output_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择输出文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmAtmosphericCorrectionBatch.simpleButton_Confirm_Click(System.Object,System.EventArgs)">
+            <summary>
+            确定
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmAtmosphericCorrectionBatch.simpleButton_Cancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmAtmosphericCorrectionBatch.GetFiles">
+            <summary>
+            获取文件路径
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmAtmosphericCorrectionBatch.provingText(DevExpress.XtraEditors.TextEdit,System.String)">
+            <summary>
+            判断textbox是否为空
+            </summary>
+            <param name="textBox"></param>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmAtmosphericCorrectionBatch.textEdit_Visibility_EditValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            能见度修改事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmAtmosphericCorrectionBatch.provingText(DevExpress.XtraEditors.TextEdit)">
+            <summary>
+            检查输入是否正确
+            </summary>
+            <param name="txtBox"></param>
+            <returns></returns>
+        </member>
+        <member name="F:PIE.Plugin.FrmAtmosphericCorrectionBatch.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmAtmosphericCorrectionBatch.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmAtmosphericCorrectionBatch.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.FrmPIECalibrationBatch">
+            <summary>
+            辐射定标批处理窗体
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmPIECalibrationBatch.m_ExChangeData">
+            <summary>
+            交换数据
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.FrmPIECalibrationBatch.ExChangeData">
+            <summary>
+            交换数据属性
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmPIECalibrationBatch.m_InputFiles">
+            <summary>
+            输入文件
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmPIECalibrationBatch.m_InputXmlFiles">
+            <summary>
+            输入Xml
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmPIECalibrationBatch.m_OutFiles">
+            <summary>
+            输出文件名
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmPIECalibrationBatch.m_Ret">
+            <summary>
+            是否存在xml数据
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmPIECalibrationBatch.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmPIECalibrationBatch.simpleButton_InputFilePath_Click(System.Object,System.EventArgs)">
+            <summary>
+            输入文件选择
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmPIECalibrationBatch.simpleButton_OutputFilePath_Click(System.Object,System.EventArgs)">
+            <summary>
+            输出文件选择
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmPIECalibrationBatch.simpleButton_Sure_Click(System.Object,System.EventArgs)">
+            <summary>
+            确定
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmPIECalibrationBatch.simpleButton5_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmPIECalibrationBatch.provingText(DevExpress.XtraEditors.TextEdit,System.String)">
+            <summary>
+            判断textbox是否为空
+            </summary>
+            <param name="textBox"></param>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmPIECalibrationBatch.parseXML(System.String,System.String@,System.String@,System.String@,System.String@,System.String@)">
+            <summary>
+            检查输入文件对应的xml文件与data中配置文件是否匹配
+            </summary>
+            <param name="strInfile"></param>
+            <param name="strSatellite"></param>
+            <param name="strSensor"></param>
+            <param name="strSceneDate"></param>
+            <param name="strSunElevation"></param>
+            <param name="strAbsCalibType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmPIECalibrationBatch.getXMLNodeValue(System.String,System.String,System.String@)">
+            <summary>
+            读取输入文件对应的xml文件
+            </summary>
+            <param name="strInfile"></param>
+            <param name="strNodeStr"></param>
+            <param name="strOut"></param>
+            <returns></returns>
+        </member>
+        <member name="F:PIE.Plugin.FrmPIECalibrationBatch.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmPIECalibrationBatch.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmPIECalibrationBatch.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.PIECalibrationBatchCommand">
+            <summary>
+            辐射定标批处理Command
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.PIECalibrationBatchCommand.m_bFailed">
+            <summary>
+            是否执行失败
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.PIECalibrationBatchCommand.m_TotalNumber">
+            <summary>
+            数据总量
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.PIECalibrationBatchCommand.m_CurrentNumber">
+            <summary>
+            当前运行的数据数量
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.PIECalibrationBatchCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.PIECalibrationBatchCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.PIECalibrationBatchCommand.OnAlgoExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法执行完成事件
+            </summary>
+            <param name="algo">算法</param>
+        </member>
+        <member name="M:PIE.Plugin.PIECalibrationBatchCommand.OnAlgoProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度变化事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns>int</returns>
+        </member>
+        <member name="T:PIE.Plugin.FrmPIEFusionBatch">
+            <summary>
+            图像融合批处理窗体
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmPIEFusionBatch.m_ExChangeData">
+            <summary>
+            交换数据
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.FrmPIEFusionBatch.ExChangeData">
+            <summary>
+            交换数据属性
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmPIEFusionBatch.m_ListFiles">
+            <summary>
+            输入文件
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmPIEFusionBatch.m_InputFiles">
+            <summary>
+            输入文件
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmPIEFusionBatch.m_MssFiles">
+            <summary>
+            输入MSS
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmPIEFusionBatch.m_PanFiles">
+            <summary>
+            输入PAN
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmPIEFusionBatch.m_OutFiles">
+            <summary>
+            输出文件名
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmPIEFusionBatch.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmPIEFusionBatch.simpleButton_InputFilePath_Click(System.Object,System.EventArgs)">
+            <summary>
+            输入文件选择
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmPIEFusionBatch.simpleButton_OutputFilePath_Click(System.Object,System.EventArgs)">
+            <summary>
+            输出文件选择
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmPIEFusionBatch.simpleButton_Sure_Click(System.Object,System.EventArgs)">
+            <summary>
+            确定
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmPIEFusionBatch.simpleButton5_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmPIEFusionBatch.provingText(DevExpress.XtraEditors.TextEdit,System.String)">
+            <summary>
+            判断textbox是否为空
+            </summary>
+            <param name="textBox"></param>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="F:PIE.Plugin.FrmPIEFusionBatch.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmPIEFusionBatch.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmPIEFusionBatch.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.PIEFusionBatchCommand">
+            <summary>
+            图像融合批处理Command
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.PIEFusionBatchCommand.m_bFailed">
+            <summary>
+            是否执行失败
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.PIEFusionBatchCommand.m_TotalNumber">
+            <summary>
+            数据总量
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.PIEFusionBatchCommand.m_CurrentNumber">
+            <summary>
+            当前运行的数据数量
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.PIEFusionBatchCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.PIEFusionBatchCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.PIEFusionBatchCommand.OnAlgoExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法执行完成事件
+            </summary>
+            <param name="algo">算法</param>
+        </member>
+        <member name="M:PIE.Plugin.PIEFusionBatchCommand.OnAlgoProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度变化事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns>int</returns>
+        </member>
+        <member name="T:PIE.Plugin.FrmPIEOrthoBatch">
+            <summary>
+            正射校正窗体
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmPIEOrthoBatch.m_ListExChangeData">
+            <summary>
+            交换数据
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.FrmPIEOrthoBatch.ListExChangeData">
+            <summary>
+            交换数据属性
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.FrmPIEOrthoBatch.ListMatchInfo">
+            <summary>
+            交换数据属性
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmPIEOrthoBatch.m_BaseType">
+            <summary>
+            选择基准文件类型 0 单基准 1 多基准
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmPIEOrthoBatch.orthoFunc">
+            <summary>
+            OrthoFunctionsBatch类实例
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmPIEOrthoBatch.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmPIEOrthoBatch.GetFiles">
+            <summary>
+            获取文件路径
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmPIEOrthoBatch.simpleButton_Input_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择输入目录
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmPIEOrthoBatch.simpleButton_GCP_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择GCP文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmPIEOrthoBatch.simpleButton_Output_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择输出目录
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmPIEOrthoBatch.simpleButton_DEM_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择DEM文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmPIEOrthoBatch.simpleButton_Confirm_Click(System.Object,System.EventArgs)">
+            <summary>
+            确定
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmPIEOrthoBatch.simpleButton_Cancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmPIEOrthoBatch.radioButton1_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            点击“常值”
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmPIEOrthoBatch.radioButton2_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            点击“DEM文件”radioButton
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmPIEOrthoBatch.InPutGCP(System.String,System.String,System.String@,System.Collections.Generic.List{PIE.CommonAlgo.Struct_GCP}@)">
+            <summary>
+            导入GCP文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmPIEOrthoBatch.simpleButton_SelectMark_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择基准影像
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:PIE.Plugin.FrmPIEOrthoBatch.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmPIEOrthoBatch.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmPIEOrthoBatch.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.OrthoFunctionsBatch">
+            <summary>
+            正射函数类
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.OrthoFunctionsBatch.SRS_WKT_WGS84">
+            <summary>
+            WGS84的WKT字符串
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.OrthoFunctionsBatch.GetFiles(System.String)">
+            <summary>
+            获取文件路径
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.OrthoFunctionsBatch.provingText(DevExpress.XtraEditors.TextEdit,System.String)">
+            <summary>
+            判断textbox是否为空
+            </summary>
+            <param name="textBox"></param>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.OrthoFunctionsBatch.findXMLTag(System.Xml.XmlNode,System.String,System.Xml.XmlNode,System.String@)">
+            <summary>
+            获取XML标签
+            </summary>
+            <param name="parentNode"></param>
+            <param name="szName"></param>
+            <param name="resultTag"></param>
+            <param name="resultValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.OrthoFunctionsBatch.createTempGCP(System.String,System.String,System.String)">
+            <summary>
+            创建临时GCP文件
+            </summary>
+            <param name="strGCP"></param>
+            <param name="strXML"></param>
+            <param name="strFile"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.OrthoFunctionsBatch.GetProjName(System.String)">
+            <summary>
+            获取投影名称
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.OrthoFunctionsBatch.GetGroundRes0(System.String,System.String@,System.String@)">
+            <summary>
+            获取影像分辨率
+            </summary>
+            <param name="strFileName"></param>
+            <param name="strRes"></param>
+            <param name="GFSensor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.OrthoFunctionsBatch.LoadRPC(System.String,PIE.CommonAlgo.ST_RPCCoef)">
+            <summary>
+            加载RPC文件（因涉及GDAL，未写完）
+            </summary>
+            <param name="strRPCFile"></param>
+            <param name="rpcCoef"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.OrthoFunctionsBatch.ImportGCP(System.Int32@,System.String,System.String@,System.Collections.Generic.List{PIE.CommonAlgo.Struct_GCP}@,System.String@)">
+            <summary>
+            导入GCP
+            </summary>
+            <param name="nErr"></param>
+            <param name="strGCPFile"></param>
+            <param name="strWarpImgFile"></param>
+            <param name="vGCP"></param>
+            <param name="GCPWKT"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.OrthoFunctionsBatch.provingText(DevExpress.XtraEditors.TextEdit)">
+            <summary>
+            判断输入是否合法
+            </summary>
+            <param name="txtBox">txtBox对象</param>
+            <returns></returns>
+        </member>
+        <member name="T:PIE.Plugin.PIEOrthoBatchCommand">
+            <summary>
+            正射校正Command
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.PIEOrthoBatchCommand.m_bFailed">
+            <summary>
+            是否执行失败
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.PIEOrthoBatchCommand.m_TotalNumber">
+            <summary>
+            数据总量
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.PIEOrthoBatchCommand.m_CurrentNumber">
+            <summary>
+            当前运行的数据数量
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.PIEOrthoBatchCommand.statusMatchBar">
+            <summary>
+            状态条
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.PIEOrthoBatchCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.PIEOrthoBatchCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.PIEOrthoBatchCommand.OnAlgoExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法执行完成事件
+            </summary>
+            <param name="algo">算法</param>
+        </member>
+        <member name="M:PIE.Plugin.PIEOrthoBatchCommand.OnAlgoProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度变化事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns>int</returns>
+        </member>
+    </members>
+</doc>

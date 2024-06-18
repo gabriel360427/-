@@ -1,0 +1,3083 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PIE.Plugin.UtilityTools</name>
+    </assembly>
+    <members>
+        <member name="T:PIE.Plugin.BandCombinationCommand">
+            <summary>
+            波段合成
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.BandCombinationCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.BandCombinationCommand.OnClick">
+            <summary>
+            点击事件
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.BandCombinationCommand.OnAlgoExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法执行完成事件
+            </summary>
+            <param name="algo">算法</param>
+        </member>
+        <member name="M:PIE.Plugin.BandCombinationCommand.OnAlgoProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度变化事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns>int</returns>
+        </member>
+        <member name="T:PIE.Plugin.FrmBandCombination">
+            <summary>
+            波段合成
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmBandCombination.frmSelectFile">
+            <summary>
+            选择文件对话框
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmBandCombination.m_Map">
+            <summary>
+            地图对象
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmBandCombination.m_ListGroup">
+            <summary>
+            参数信息
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmBandCombination.m_AlgoParam">
+            <summary>
+            算法参数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmBandCombination.#ctor(PIE.Carto.IMap)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmBandCombination.simpleButton_SelectFile_Click(System.Object,System.EventArgs)">
+            <summary>
+            文件选择
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmBandCombination.simpleButton_MoveUp_Click(System.Object,System.EventArgs)">
+            <summary>
+            向上移动
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmBandCombination.simpleButton_MoveDown_Click(System.Object,System.EventArgs)">
+            <summary>
+            向下移动
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmBandCombination.simpleButton_Delete_Click(System.Object,System.EventArgs)">
+            <summary>
+            删除
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmBandCombination.simpleButton_SelectFileOut_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择输出路径
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmBandCombination.simpleButton_Sure_Click(System.Object,System.EventArgs)">
+            <summary>
+            确定
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmBandCombination.simpleButton_Cancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:PIE.Plugin.FrmBandCombination.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmBandCombination.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmBandCombination.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.FrmBoundSelect">
+            <summary>
+            范围选择
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.FrmBoundSelect.RowMin">
+            <summary>
+            起始行
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.FrmBoundSelect.RowMax">
+            <summary>
+            终止行
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.FrmBoundSelect.ColumnMin">
+            <summary>
+            起始列
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.FrmBoundSelect.ColumnMax">
+            <summary>
+            终止列
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmBoundSelect.#ctor(System.Int32,System.Int32)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmBoundSelect.simpleButton_Sure_Click(System.Object,System.EventArgs)">
+            <summary>
+            确定
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmBoundSelect.simpleButton_Cancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmBoundSelect.simpleButton_SelectByHand_Click(System.Object,System.EventArgs)">
+            <summary>
+            手动选择
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:PIE.Plugin.FrmBoundSelect.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmBoundSelect.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmBoundSelect.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.FrmSelectRasterBand">
+            <summary>
+            波段选择
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.FrmSelectRasterBand.ListBandSelected">
+            <summary>
+            选中波段
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmSelectRasterBand.#ctor(System.Int32,PIE.DataSource.PixelDataType)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmSelectRasterBand.InitialListBox(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            初始化选中波段
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmSelectRasterBand.simpleButton_SelectAll_Click(System.Object,System.EventArgs)">
+            <summary>
+            全选
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmSelectRasterBand.simpleButton_Clear_Click(System.Object,System.EventArgs)">
+            <summary>
+            清空
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmSelectRasterBand.listBoxControl1_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            选择变化
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmSelectRasterBand.simpleButton_Sure_Click(System.Object,System.EventArgs)">
+            <summary>
+            确定
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmSelectRasterBand.simpleButton_Cancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:PIE.Plugin.FrmSelectRasterBand.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmSelectRasterBand.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmSelectRasterBand.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.ParamGroup">
+            <summary>
+            记录参数信息
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.ParamGroup.rLayer">
+            <summary>
+            图层
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.ParamGroup.pBands">
+            <summary>
+            波段列表
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.ParamGroup.pRegion">
+            <summary>
+            范围
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.ParamGroup.#ctor(PIE.Carto.IRasterLayer,System.Collections.Generic.List{System.Int32},PIE.CommonAlgo.Interestregion)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="layer">栅格图层</param>
+            <param name="bands">波段列表</param>
+            <param name="region">范围</param>
+        </member>
+        <member name="T:PIE.Plugin.FrmSupervisedClassificaiton">
+            <summary>
+            波段合成
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmSupervisedClassificaiton.m_ListGroup">
+            <summary>
+            所有参数信息
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmSupervisedClassificaiton.m_SelGroup">
+            <summary>
+            当前选择参数信息
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmSupervisedClassificaiton.#ctor(PIE.Carto.IMap)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmSupervisedClassificaiton.simpleButton_FileOpen_Click(System.Object,System.EventArgs)">
+            <summary>
+            打开文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmSupervisedClassificaiton.listBoxControl_FileList_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            当前选中文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmSupervisedClassificaiton.simpleButton_BoundSelect_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择范围
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmSupervisedClassificaiton.simpleButton_SelectBand_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择波段
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmSupervisedClassificaiton.simpleButton_Sure_Click(System.Object,System.EventArgs)">
+            <summary>
+            确定
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmSupervisedClassificaiton.simpleButton_Cancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmSupervisedClassificaiton.InitialDataInfo(System.String)">
+            <summary>
+            初始化界面信息
+            </summary>
+            <param name="filePath"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmSupervisedClassificaiton.getFileType(System.String)">
+            <summary>
+            获取文件类型
+            </summary>
+            <param name="filePath"></param>
+            <returns></returns>
+        </member>
+        <member name="F:PIE.Plugin.FrmSupervisedClassificaiton.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmSupervisedClassificaiton.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmSupervisedClassificaiton.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.BandLineRepairCommand">
+            <summary>
+            坏线修复
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.BandLineRepairCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.BandLineRepairCommand.OnClick">
+            <summary>
+            点击事件
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmBandLineUI.m_VerticalResampleStyle">
+            <summary>
+            垂直方向坏道重采样方式
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmBandLineUI.m_HorizonResampleStyle">
+            <summary>
+             水平方向坏道重采样方式
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmBandLineUI.m_Row">
+            <summary>
+            影像ySize 栅格高度
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmBandLineUI.m_Column">
+            <summary>
+            影像xSize;栅格宽度
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmBandLineUI.simpleButton_Cancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmBandLineUI.simpleButton_OK_Click(System.Object,System.EventArgs)">
+            <summary>
+            确定按钮
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmBandLineUI.buttonEdit_InputFile_Click(System.Object,System.EventArgs)">
+            <summary>
+            输入文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmBandLineUI.buttonEdit_OutputFile_Click(System.Object,System.EventArgs)">
+            <summary>
+            设置输出路径
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmBandLineUI.checkEdit_IsModify_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            是否在源数据上修复
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmBandLineUI.radioButton_VerticalLine_Click(System.Object,System.EventArgs)">
+            <summary>
+            垂直坏道radio选择
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmBandLineUI.radioButton_HorizonLine_Click(System.Object,System.EventArgs)">
+            <summary>
+            水平坏道radio选择
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmBandLineUI.simpleButton_AddLine_Click(System.Object,System.EventArgs)">
+            <summary>
+            增加行列号
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmBandLineUI.simpleButton_DeleteLine_Click(System.Object,System.EventArgs)">
+            <summary>
+            删除行列号
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmBandLineUI.simpleButton_ModifyLine_Click(System.Object,System.EventArgs)">
+            <summary>
+            修改行列号
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmBandLineUI.simpleButton_ClearLine_Click(System.Object,System.EventArgs)">
+            <summary>
+            清除行列号
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmBandLineUI.AddLine(System.Windows.Forms.DataGridView)">
+            <summary>
+            添加坏线行列号数据
+            </summary>
+            <param name="view"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmBandLineUI.DeleteData(System.Windows.Forms.DataGridView)">
+            <summary>
+            删除选中的数据
+            </summary>
+            <param name="view"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmBandLineUI.GetLine(System.Windows.Forms.DataGridView)">
+            <summary>
+            得到DataGridView中所有数据
+            </summary>
+            <param name="view"></param>
+            <returns></returns>
+        </member>
+        <member name="F:PIE.Plugin.FrmBandLineUI.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmBandLineUI.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmBandLineUI.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.BandSpecCommand">
+            <summary>
+            波谱运算Command
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.BandSpecCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.BandSpecCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.BandSpecCommand.OnAlgoExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法执行完成事件
+            </summary>
+            <param name="algo">算法</param>
+        </member>
+        <member name="M:PIE.Plugin.BandSpecCommand.OnAlgoProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度变化事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns>int</returns>
+        </member>
+        <member name="T:PIE.Plugin.BandOperCommand">
+            <summary>
+            波段运算Command
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.BandOperCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.BandOperCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.BandOperCommand.OnAlgoExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法执行完成事件
+            </summary>
+            <param name="algo">算法</param>
+        </member>
+        <member name="M:PIE.Plugin.BandOperCommand.OnAlgoProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度变化事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns>int</returns>
+        </member>
+        <member name="T:PIE.Plugin.BatchDataProjTransformCommand">
+            <summary>
+            批量数据坐标转换
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.BatchDataProjTransformCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.BatchDataProjTransformCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.BatchDataProjTransformCommand.OnAlgoExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法执行完成事件
+            </summary>
+            <param name="algo">算法</param>
+        </member>
+        <member name="M:PIE.Plugin.BatchDataProjTransformCommand.OnAlgoProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度变化事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns>int</returns>
+        </member>
+        <member name="T:PIE.Plugin.FrmBitDepthTrans">
+            <summary>
+            位深转换窗体
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmBitDepthTrans.m_ExchangeData">
+            <summary>
+            位深转换算法参数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmBitDepthTrans.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmBitDepthTrans.GetFiles(System.String)">
+            <summary>
+            获取文件路径
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmBitDepthTrans.provingText(DevExpress.XtraEditors.TextEdit,System.String)">
+            <summary>
+            判断textbox是否为空
+            </summary>
+            <param name="textBox"></param>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmBitDepthTrans.simpleButton_Cancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmBitDepthTrans.simpleButton_Sure_Click(System.Object,System.EventArgs)">
+            <summary>
+            确定
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmBitDepthTrans.simpleButton_FileIn_Click(System.Object,System.EventArgs)">
+            <summary>
+            输入文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmBitDepthTrans.simpleButton_FileOut_Click(System.Object,System.EventArgs)">
+            <summary>
+            输出文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmBitDepthTrans.textEdit_MinIn_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+            <summary>
+             输入数字校验
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmBitDepthTrans.comboBoxEdit_DataType_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            输入类型变化事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:PIE.Plugin.FrmBitDepthTrans.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmBitDepthTrans.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmBitDepthTrans.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.BitDepthTransCommand">
+            <summary>
+            位深转换Command
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.BitDepthTransCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.BitDepthTransCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.BitDepthTransCommand.OnAlgoExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法执行完成事件
+            </summary>
+            <param name="algo">算法</param>
+        </member>
+        <member name="M:PIE.Plugin.BitDepthTransCommand.OnAlgoProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度变化事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns>int</returns>
+        </member>
+        <member name="T:PIE.Plugin.BufferAnalysisCommand">
+            <summary>
+            坐标转换Command
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.BufferAnalysisCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.BufferAnalysisCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.BufferAnalysisCommand.OnAlgoProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度变化事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns>int</returns>
+        </member>
+        <member name="M:PIE.Plugin.BufferAnalysisCommand.OnAlgoExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法执行完成事件
+            </summary>
+            <param name="algo">算法</param>
+        </member>
+        <member name="F:PIE.Plugin.BufferAnalysisForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.BufferAnalysisForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.BufferAnalysisForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.DataProjTransformCommand">
+            <summary>
+            数据坐标转换
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.DataProjTransformCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.DataProjTransformCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.DataProjTransformCommand.OnAlgoExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法执行完成事件
+            </summary>
+            <param name="algo">算法</param>
+        </member>
+        <member name="M:PIE.Plugin.DataProjTransformCommand.OnAlgoProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度变化事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns>int</returns>
+        </member>
+        <member name="T:PIE.Plugin.DataProjTransCommand">
+            <summary>
+            坐标转换Command
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.DataProjTransCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.DataProjTransCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.FrmDataProjTrans">
+            <summary>
+            坐标转换窗体
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmDataProjTrans.m_Hookhelper">
+            <summary>
+            IHookHelper
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmDataProjTrans.m_srcWKT">
+            <summary>
+            源坐标系信息
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmDataProjTrans.m_destWKT">
+            <summary>
+            目标坐标系信息
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmDataProjTrans.m_countPoints">
+            <summary>
+            控制点总个数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmDataProjTrans.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmDataProjTrans.InitialData(PIE.Carto.IHookHelper)">
+            <summary>
+            初始化
+            </summary>
+            <param name="hook"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmDataProjTrans.simpleButton_InputFile_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择输入待进行坐标转换数据文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmDataProjTrans.GetFiles(System.String)">
+            <summary>
+            获取文件路径
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmDataProjTrans.simpleButton_Output_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择输出文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmDataProjTrans.simpleButton_InputCoordinate_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择源坐标系
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmDataProjTrans.simpleButton_OutCoordProject_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择目标坐标系
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmDataProjTrans.simpleButton_Cancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmDataProjTrans.provingText(DevExpress.XtraEditors.TextEdit,System.String)">
+            <summary>
+            判断textbox是否为空
+            </summary>
+            <param name="textBox"></param>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmDataProjTrans.simpleButton_Confirm_Click(System.Object,System.EventArgs)">
+            <summary>
+            确定
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmDataProjTrans.GetProjName(System.String)">
+            <summary>
+            获取投影名称
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="F:PIE.Plugin.FrmDataProjTrans.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmDataProjTrans.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmDataProjTrans.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.HistogramStatCommand">
+            <summary>
+            直方图统计Command
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.HistogramStatCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.HistogramStatCommand.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.HistogramStatCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.HotMapUI.FrmHotMapUI.btn_Ok_Click(System.Object,System.EventArgs)">
+            <summary>
+            开始
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.HotMapUI.FrmHotMapUI.btn_Cancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.HotMapUI.FrmHotMapUI.btn_GetInputFile_Click(System.Object,System.EventArgs)">
+            <summary>
+            打开文件路径
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.HotMapUI.FrmHotMapUI.btn_GetOutFile_Click(System.Object,System.EventArgs)">
+            <summary>
+            输出路径
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.HotMapUI.FrmHotMapUI.number_rasterWidth_ValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            栅格宽度变化时 像元大小跟着变化
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.HotMapUI.FrmHotMapUI.textEdit_PixSize_EditValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            像元大小改变，输出宽度也改变
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.HotMapUI.FrmHotMapUI.cbx_outRasterType_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            输出类型变化时  输出路径控件内容置空
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:PIE.Plugin.HotMapUI.FrmHotMapUI.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.HotMapUI.FrmHotMapUI.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.HotMapUI.FrmHotMapUI.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.HotMapCommand.OnAlgoProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度变化事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns>int</returns>
+        </member>
+        <member name="M:PIE.Plugin.HotMapCommand.OnAlgoExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法执行完成事件
+            </summary>
+            <param name="algo">算法</param>
+        </member>
+        <member name="T:PIE.Plugin.FrmImageMirror">
+            <summary>
+            图像镜像窗体
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmImageMirror.m_ExChangeData">
+            <summary>
+            交换数据
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.FrmImageMirror.ExChangeData">
+            <summary>
+            交换数据属性
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmImageMirror.dataSetMSS">
+            <summary>
+            多光谱影像数据集
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmImageMirror.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmImageMirror.simpleButton_InputFile_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择输入多光谱数据文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmImageMirror.GetFiles(System.String)">
+            <summary>
+            获取文件路径
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmImageMirror.listBoxControl1_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            波段选择变化事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmImageMirror.simpleButton_Clear_Click(System.Object,System.EventArgs)">
+            <summary>
+            清空全选切换
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmImageMirror.simpleButton_Output_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择输出文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmImageMirror.simpleButton_Cancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmImageMirror.provingText(DevExpress.XtraEditors.TextEdit,System.String)">
+            <summary>
+            判断textbox是否为空
+            </summary>
+            <param name="textBox"></param>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmImageMirror.simpleButton_Confirm_Click(System.Object,System.EventArgs)">
+            <summary>
+            确定
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmImageMirror.FrmImageMirror_FormClosed(System.Object,System.Windows.Forms.FormClosedEventArgs)">
+            <summary>
+            窗体关闭
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:PIE.Plugin.FrmImageMirror.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmImageMirror.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmImageMirror.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.ImageMirrorCommand">
+            <summary>
+            图像镜像Command
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.ImageMirrorCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.ImageMirrorCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.ImageMirrorCommand.OnAlgoExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法执行完成事件
+            </summary>
+            <param name="algo">算法</param>
+        </member>
+        <member name="M:PIE.Plugin.ImageMirrorCommand.OnAlgoProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度变化事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns>int</returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmImagePyramidBuild.button_Add_Click(System.Object,System.EventArgs)">
+            <summary>
+            添加按钮
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmImagePyramidBuild.GetAllFilesFromDir(System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            递归查找文件
+            </summary>
+            <param name="dir"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmImagePyramidBuild.button_Remove_Click(System.Object,System.EventArgs)">
+            <summary>
+            移除
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmImagePyramidBuild.checkBox_SelectAll_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            全选
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmImagePyramidBuild.ShowStatistics">
+            <summary>
+            显示统计信息
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmImagePyramidBuild.button_OK_Click(System.Object,System.EventArgs)">
+            <summary>
+            确定
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmImagePyramidBuild.button_Cancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:PIE.Plugin.FrmImagePyramidBuild.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmImagePyramidBuild.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmImagePyramidBuild.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.ImagePyramidBuildCommand">
+            <summary>
+            创建金字塔Command
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.ImagePyramidBuildCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.ImagePyramidBuildCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.ImagePyramidBuildCommand.OnAlgoExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法执行完成事件
+            </summary>
+            <param name="algo">算法</param>
+        </member>
+        <member name="M:PIE.Plugin.ImagePyramidBuildCommand.OnAlgoProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度变化事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns>int</returns>
+        </member>
+        <member name="T:PIE.Plugin.FrmImageRotation">
+            <summary>
+            图像旋转窗体
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmImageRotation.m_ExChangeData">
+            <summary>
+            交换数据
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.FrmImageRotation.ExChangeData">
+            <summary>
+            交换数据属性
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmImageRotation.dataSetMSS">
+            <summary>
+            多光谱影像数据集
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmImageRotation.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmImageRotation.simpleButton_InputFile_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择输入多光谱数据文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmImageRotation.GetFiles(System.String)">
+            <summary>
+            获取文件路径
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmImageRotation.listBoxControl1_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            波段选择变化事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmImageRotation.simpleButton_Clear_Click(System.Object,System.EventArgs)">
+            <summary>
+            清空全选切换
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmImageRotation.simpleButton_Output_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择输出文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmImageRotation.simpleButton_Cancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmImageRotation.provingText(DevExpress.XtraEditors.TextEdit,System.String)">
+            <summary>
+            判断textbox是否为空
+            </summary>
+            <param name="textBox"></param>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmImageRotation.simpleButton_Confirm_Click(System.Object,System.EventArgs)">
+            <summary>
+            确定
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmImageRotation.provingText(DevExpress.XtraEditors.TextEdit,System.Int32,System.Int32,System.String@)">
+            <summary>
+            设定参数设置范围
+            </summary>
+            <param name="textEdit">文本对象</param>
+            <param name="minNum">最小值</param>
+            <param name="maxNum">最大值</param>
+            <param name="msg">字符串信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmImageRotation.provingText(DevExpress.XtraEditors.TextEdit)">
+            <summary>
+            判断是否为浮点数
+            </summary>
+            <param name="textEdit">文本对象</param>
+            <returns>是否是浮点</returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmImageRotation.FrmImageRotation_FormClosed(System.Object,System.Windows.Forms.FormClosedEventArgs)">
+            <summary>
+            窗体关闭
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:PIE.Plugin.FrmImageRotation.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmImageRotation.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmImageRotation.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.ImageRotationCommand">
+            <summary>
+            图像旋转Command
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.ImageRotationCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.ImageRotationCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.ImageRotationCommand.OnAlgoExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法执行完成事件
+            </summary>
+            <param name="algo">算法</param>
+        </member>
+        <member name="M:PIE.Plugin.ImageRotationCommand.OnAlgoProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度变化事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns>int</returns>
+        </member>
+        <member name="T:PIE.Plugin.FrmImageSieveFilter">
+            <summary>
+            栅格剔除块类
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmImageSieveFilter.m_ImageSieveFilter_Exchange_info">
+            <summary>
+            剔除栅格块参数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmImageSieveFilter.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.FrmImageSieveFilter.Exchange_info">
+            <summary>
+            参数结构属性
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmImageSieveFilter.GetInputPath">
+            <summary>
+            获得输入文件的路径
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmImageSieveFilter.GetOutputPath">
+            <summary>
+            获得输出文件的路径
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmImageSieveFilter.CheckUIParams">
+            <summary>
+            检查界面的参数是否有效
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmImageSieveFilter.btnInput_Click(System.Object,System.EventArgs)">
+            <summary>
+            输入栅格文件
+            </summary>
+            <param name="sender">事件触发器</param>
+            <param name="e">事件参数</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmImageSieveFilter.btnOutput_Click(System.Object,System.EventArgs)">
+            <summary>
+            设置输出文件
+            </summary>
+            <param name="sender">事件触发器</param>
+            <param name="e">事件参数</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmImageSieveFilter.btnCancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消
+            </summary>
+            <param name="sender">事件触发器</param>
+            <param name="e">事件参数</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmImageSieveFilter.btnOK_Click(System.Object,System.EventArgs)">
+            <summary>
+            确定
+            </summary>
+            <param name="sender">事件触发器</param>
+            <param name="e">事件参数</param>
+        </member>
+        <member name="F:PIE.Plugin.FrmImageSieveFilter.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmImageSieveFilter.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmImageSieveFilter.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.ImageSieveFilterCommand">
+            <summary>
+            剔除栅格块
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.ImageSieveFilterCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.ImageSieveFilterCommand.OnClick">
+            <summary>
+            重写单击事件
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.ImageSieveFilterCommand.algoEvents_OnProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.ImageSieveFilterCommand.algoEvents_OnExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法完成事件
+            </summary>
+            <param name="algo">算法名称</param>
+        </member>
+        <member name="F:PIE.Plugin.FrmImgClassReSample.m_ExChangeData">
+            <summary>
+            交换数据
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.FrmImgClassReSample.ExChangeData">
+            <summary>
+            交换数据属性
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmImgClassReSample.m_Hookhelper">
+            <summary>
+            IHookHelper
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmImgClassReSample.m_CurrentDataset">
+            <summary>
+            当前图层
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmImgClassReSample.dtBand">
+            <summary>
+            波段列表
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmImgClassReSample.Width">
+            <summary>
+            栅格数据集宽度
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmImgClassReSample.Height">
+            <summary>
+            栅格数据集高度
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmImgClassReSample.#ctor(PIE.Carto.IHookHelper)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="hookHelper"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmImgClassReSample.simpleButton_Cancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmImgClassReSample.simpleButton_Confirm_Click(System.Object,System.EventArgs)">
+            <summary>
+            确定
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmImgClassReSample.simpleButton_Output_Click(System.Object,System.EventArgs)">
+            <summary>
+            输出文件选择
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmImgClassReSample.simpleButton_InputFile_Click(System.Object,System.EventArgs)">
+            <summary>
+            加载重采样数据
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmImgClassReSample.btnChecked_Click(System.Object,System.EventArgs)">
+            <summary>
+            全选、清空按钮
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmImgClassReSample.gridView1_RowClick(System.Object,DevExpress.XtraGrid.Views.Grid.RowClickEventArgs)">
+            <summary>
+            单击行事件，进行选择控制
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmImgClassReSample.ChangeCheck(System.Data.DataTable,System.Boolean)">
+            <summary>
+            改变波段是否选择
+            </summary>
+            <param name="dt"></param>
+            <param name="flag"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmImgClassReSample.provingText(DevExpress.XtraEditors.TextEdit,System.String)">
+            <summary>
+            判断textbox是否为空
+            </summary>
+            <param name="textBox"></param>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmImgClassReSample.InitialTextedit">
+            <summary>
+            初始化输入文件
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmImgClassReSample.InitialListbox(PIE.DataSource.IRasterDataset)">
+            <summary>
+            初始化波段信息
+            </summary>
+            <param name="dataset"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmImgClassReSample.InitialDataTable">
+            <summary>
+            初始化波段信息DataTable
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmImgClassReSample.FrmImgClassReSample_FormClosed(System.Object,System.Windows.Forms.FormClosedEventArgs)">
+            <summary>
+            窗体关闭
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:PIE.Plugin.FrmImgClassReSample.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmImgClassReSample.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmImgClassReSample.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.ImgClassResampleCommand.OnAlgoExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法执行完成事件
+            </summary>
+            <param name="algo">算法</param>
+        </member>
+        <member name="M:PIE.Plugin.ImgClassResampleCommand.OnAlgoProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度变化事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns>int</returns>
+        </member>
+        <member name="T:PIE.Plugin.InverseDistanceInterpolationCommand">
+            <summary>
+            反距离权重Command
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.InverseDistanceInterpolationCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.InverseDistanceInterpolationCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.InverseDistanceInterpolationCommand.OnAlgoProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度变化事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns>int</returns>
+        </member>
+        <member name="M:PIE.Plugin.InverseDistanceInterpolationCommand.OnAlgoExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法执行完成事件
+            </summary>
+            <param name="algo">算法</param>
+        </member>
+        <member name="T:PIE.Plugin.InverseDistanceInterpolationForm">
+            <summary>
+            反距离权重界面Form
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.InverseDistanceInterpolationForm.m_Info">
+            <summary>
+            反距离权重参数对象
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.InverseDistanceInterpolationForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.InverseDistanceInterpolationForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.InverseDistanceInterpolationForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmKrigingInterpolation.btn_Ok_Click(System.Object,System.EventArgs)">
+            <summary>
+            确定
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmKrigingInterpolation.btn_GetInputFile_Click(System.Object,System.EventArgs)">
+            <summary>
+            获取打开文件路径
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmKrigingInterpolation.btn_GetOutFile_Click(System.Object,System.EventArgs)">
+            <summary>
+            获取文件输出路径
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmKrigingInterpolation.btn_Cancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmKrigingInterpolation.number_rasterWidth_ValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            栅格宽度改变时 像元大小也跟着改变
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmKrigingInterpolation.textEdit_PixSize_EditValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            像元带下改变时，栅格宽度也跟着变化
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:PIE.Plugin.FrmKrigingInterpolation.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmKrigingInterpolation.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmKrigingInterpolation.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.KrigingInterpolationCommand.OnAlgoProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度变化事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns>int</returns>
+        </member>
+        <member name="M:PIE.Plugin.KrigingInterpolationCommand.OnAlgoExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法执行完成事件
+            </summary>
+            <param name="algo">算法</param>
+        </member>
+        <member name="T:PIE.Plugin.LoadLandsat8HJDataCommand">
+            <summary>
+            加载landsat8和HJ卫星数据
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.LoadLandsat8HJDataCommand.OnClick">
+            <summary>
+            点击事件
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.FrmMaskApplication">
+            <summary>
+            创建掩膜窗体
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmMaskApplication.m_ExChangeData">
+            <summary>
+            交换数据
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.FrmMaskApplication.ExChangeData">
+            <summary>
+            交换数据属性
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmMaskApplication.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmMaskApplication.simpleButtonShp_InputFile_Click(System.Object,System.EventArgs)">
+            <summary>
+            输入掩膜文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmMaskApplication.simpleButton_InputFile_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择输入文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmMaskApplication.GetFiles(System.String,System.String)">
+            <summary>
+            获取文件路径
+            </summary>
+            <param name="filter"></param>
+            <param name="title"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmMaskApplication.simpleButton_Output_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择输出文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmMaskApplication.simpleButton_Cancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmMaskApplication.provingText(DevExpress.XtraEditors.TextEdit,System.String)">
+            <summary>
+            判断textbox是否为空
+            </summary>
+            <param name="textBox"></param>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmMaskApplication.simpleButton_Confirm_Click(System.Object,System.EventArgs)">
+            <summary>
+            确定
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:PIE.Plugin.FrmMaskApplication.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmMaskApplication.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmMaskApplication.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.MaskApplicationCommand">
+            <summary>
+            应用掩膜Command
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.MaskApplicationCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.MaskApplicationCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.MaskApplicationCommand.OnAlgoExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法执行完成事件
+            </summary>
+            <param name="algo">算法</param>
+        </member>
+        <member name="M:PIE.Plugin.MaskApplicationCommand.OnAlgoProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度变化事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns>int</returns>
+        </member>
+        <member name="T:PIE.Plugin.FrmMaskCreation">
+            <summary>
+            创建掩膜窗体
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmMaskCreation.m_ExChangeData">
+            <summary>
+            交换数据
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.FrmMaskCreation.ExChangeData">
+            <summary>
+            交换数据属性
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmMaskCreation.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmMaskCreation.simpleButtonShp_InputFile_Click(System.Object,System.EventArgs)">
+            <summary>
+            输入文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmMaskCreation.simpleButton_InputFile_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择输入属性文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmMaskCreation.GetFiles(System.String,System.String)">
+            <summary>
+            获取文件路径
+            </summary>
+            <param name="filter"></param>
+            <param name="title"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmMaskCreation.simpleButton_Output_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择输出文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmMaskCreation.simpleButton_Cancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmMaskCreation.provingText(DevExpress.XtraEditors.TextEdit,System.String)">
+            <summary>
+            判断textbox是否为空
+            </summary>
+            <param name="textBox"></param>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmMaskCreation.simpleButton_Confirm_Click(System.Object,System.EventArgs)">
+            <summary>
+            确定
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:PIE.Plugin.FrmMaskCreation.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmMaskCreation.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmMaskCreation.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.MaskCreationCommand">
+            <summary>
+            创建掩膜Command
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.MaskCreationCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.MaskCreationCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.MaskCreationCommand.OnAlgoExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法执行完成事件
+            </summary>
+            <param name="algo">算法</param>
+        </member>
+        <member name="M:PIE.Plugin.MaskCreationCommand.OnAlgoProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度变化事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns>int</returns>
+        </member>
+        <member name="T:PIE.Plugin.FrmProjectDefinition">
+            <summary>
+            投影定义窗体
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmProjectDefinition.m_Hookhelper">
+            <summary>
+            IHookHelper
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmProjectDefinition.m_ListRFLayer">
+            <summary>
+            对应下拉框图层列表
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmProjectDefinition.m_ExChangeData">
+            <summary>
+            交换数据
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.FrmProjectDefinition.ExChangeData">
+            <summary>
+            交换数据属性
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmProjectDefinition.m_destWKT">
+            <summary>
+            目标坐标系信息
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmProjectDefinition.m_DataSet">
+            <summary>
+            打开的数据集
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmProjectDefinition.m_InputFilesList">
+            <summary>
+            输入文件全路径名称
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmProjectDefinition.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmProjectDefinition.InitialData(PIE.Carto.IHookHelper)">
+            <summary>
+            初始化
+            </summary>
+            <param name="hook">hook对象</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmProjectDefinition.simpleButton_Input_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择输入数据文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmProjectDefinition.comboBoxEdit_IntputFile_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            选择输入数据变化，投影跟着变化
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmProjectDefinition.GetFiles(System.String)">
+            <summary>
+            获取文件路径
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmProjectDefinition.simpleButton_Project_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择投影
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmProjectDefinition.provingText(DevExpress.XtraEditors.TextEdit,System.String)">
+            <summary>
+            判断textbox是否为空
+            </summary>
+            <param name="textBox"></param>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmProjectDefinition.simpleButton_Confirm_Click(System.Object,System.EventArgs)">
+            <summary>
+            确定
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmProjectDefinition.ProjDefineFeature(System.String,System.String)">
+            <summary>
+            矢量数据定义投影
+            </summary>
+            <param name="inputpath">输入定义投影数据路径</param>
+            <param name="destWKT">WKT空间参考</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmProjectDefinition.ProjDefineRaster(System.String,System.String)">
+            <summary>
+            栅格数据定义投影
+            </summary>
+            <param name="inputpath">输入定义投影数据路径</param>
+            <param name="destWKT">WKT空间参考</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmProjectDefinition.simpleButton_Cancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmProjectDefinition.GetProjName(System.String)">
+            <summary>
+            获取投影名称
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmProjectDefinition.FrmProjectDefinition_FormClosed(System.Object,System.Windows.Forms.FormClosedEventArgs)">
+            <summary>
+            窗体关闭
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:PIE.Plugin.FrmProjectDefinition.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmProjectDefinition.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmProjectDefinition.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.ProjectDefinitionCommand">
+            <summary>
+            投影定义Command
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.ProjectDefinitionCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.ProjectDefinitionCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.FrmProjectTransform">
+            <summary>
+            投影转换窗体
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmProjectTransform.m_Hookhelper">
+            <summary>
+            IHookHelper
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmProjectTransform.m_ListRFLayer">
+            <summary>
+            对应下拉框图层列表
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmProjectTransform.m_ExChangeData">
+            <summary>
+            交换数据
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.FrmProjectTransform.ExChangeData">
+            <summary>
+            交换数据属性
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmProjectTransform.m_destWKT">
+            <summary>
+            坐标系信息
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmProjectTransform.m_DataSet">
+            <summary>
+            打开的数据集
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmProjectTransform.m_InputFilesList">
+            <summary>
+            输入文件全路径名称
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmProjectTransform.m_OutFilesList">
+            <summary>
+            输出文件全路径名称
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmProjectTransform.m_SrcSrs">
+            <summary>
+            输入wkt
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmProjectTransform.m_DestSrs">
+            <summary>
+            输出wkt
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmProjectTransform.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmProjectTransform.InitialData(PIE.Carto.IHookHelper)">
+            <summary>
+            初始化
+            </summary>
+            <param name="hook">hook对象</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmProjectTransform.LoadGeoTransformFile(System.String,System.Collections.Generic.IList{PIE.CommonAlgo.stGeoTransform})">
+            <summary>
+            地理变换函数
+            </summary>
+            <param name="strTransFormFile"></param>
+            <param name="m_vecAllTransModels"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmProjectTransform.simpleButton_Input_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择输入数据文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmProjectTransform.GetMatchGeoTranModel(PIE.Geometry.ISpatialReference,PIE.Geometry.ISpatialReference,System.Collections.Generic.IList{PIE.CommonAlgo.stGeoTransform},System.Collections.Generic.IList{PIE.CommonAlgo.stGeoTransform})">
+            <summary>
+            匹配地理变换参数
+            </summary>
+            <param name="SrcSrs"></param>
+            <param name="DestSrs"></param>
+            <param name="vecAllTransModels"></param>
+            <param name="vecTransModels"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmProjectTransform.comboBoxEdit_IntputFile_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            选择输入数据变化，输出跟着变化
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmProjectTransform.GetFiles(System.String)">
+            <summary>
+            获取文件路径
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmProjectTransform.simpleButton_OutCoordProject_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择投影
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmProjectTransform.provingText(DevExpress.XtraEditors.TextEdit,System.String)">
+            <summary>
+            判断textbox是否为空
+            </summary>
+            <param name="textBox"></param>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmProjectTransform.simpleButton_Confirm_Click(System.Object,System.EventArgs)">
+            <summary>
+            确定
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmProjectTransform.simpleButton_Cancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmProjectTransform.GetProjName(System.String)">
+            <summary>
+            获取投影名称
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="F:PIE.Plugin.FrmProjectTransform.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmProjectTransform.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmProjectTransform.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.ProjectTransformCommand">
+            <summary>
+            投影转换Command
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.ProjectTransformCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.ProjectTransformCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.ProjectTransformCommand.OnAlgoExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法执行完成事件
+            </summary>
+            <param name="algo">算法</param>
+        </member>
+        <member name="M:PIE.Plugin.ProjectTransformCommand.OnAlgoProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度变化事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns>int</returns>
+        </member>
+        <member name="T:PIE.Plugin.FrmRasterConverter">
+            <summary>
+            影像格式转换窗体
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmRasterConverter.m_ExChangeData">
+            <summary>
+            交换数据
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.FrmRasterConverter.ExChangeData">
+            <summary>
+            交换数据属性
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmRasterConverter.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmRasterConverter.simpleButton_InputFile_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择输入分类数据文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmRasterConverter.GetFiles(System.String)">
+            <summary>
+            获取文件路径
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmRasterConverter.simpleButton_Output_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择输出文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmRasterConverter.simpleButton_Cancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmRasterConverter.provingText(DevExpress.XtraEditors.TextEdit,System.String)">
+            <summary>
+            判断textbox是否为空
+            </summary>
+            <param name="textBox"></param>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmRasterConverter.simpleButton_Confirm_Click(System.Object,System.EventArgs)">
+            <summary>
+            确定
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:PIE.Plugin.FrmRasterConverter.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmRasterConverter.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmRasterConverter.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.RasterConverterCommand">
+            <summary>
+            影像格式转换Command
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.RasterConverterCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.RasterConverterCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.RasterConverterCommand.OnAlgoExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法执行完成事件
+            </summary>
+            <param name="algo">算法</param>
+        </member>
+        <member name="M:PIE.Plugin.RasterConverterCommand.OnAlgoProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度变化事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns>int</returns>
+        </member>
+        <member name="F:PIE.Plugin.FrmInvalidValue.m_ListLayer">
+            <summary>
+            Map下图层信息
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmInvalidValue.m_RasterDataset">
+            <summary>
+            栅格数据集数据
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.FrmInvalidValue.FilePath">
+            <summary>
+            文件路径
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmInvalidValue.#ctor(System.Collections.Generic.List{PIE.Carto.ILayer})">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmInvalidValue.GetInput_Click(System.Object,System.EventArgs)">
+            <summary>
+            获取文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmInvalidValue.btn_Ok_Click(System.Object,System.EventArgs)">
+            <summary>
+            确定
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmInvalidValue.btn_Cancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmInvalidValue.InitialParam">
+            <summary>
+            初始化值
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmInvalidValue.comboBox_InputPath_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            路径下拉框路径值出现变化时
+            </summary>
+            <param name="sender">触发器</param>
+            <param name="e">触发器参数</param>
+        </member>
+        <member name="F:PIE.Plugin.FrmInvalidValue.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmInvalidValue.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmInvalidValue.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.SetInvalidValueCommand">
+            <summary>
+            设置无效值命令
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.SetInvalidValueCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.SetInvalidValueCommand.OnClick">
+            <summary>
+            点击事件
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.SetInvalidValueCommand.GetLayerInfo(PIE.Carto.ILayer,System.Collections.Generic.List{PIE.Carto.ILayer}@)">
+            <summary>
+             获取Map下的图层信息 (递归思想)
+            </summary>
+            <param name="tempLayer">图层</param>
+            <param name="dic">图层信息</param>
+        </member>
+        <member name="T:PIE.Plugin.SpectralSectionCommand">
+            <summary>
+            波谱剖面分析Command
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.SpectralSectionCommand.frmSpectralSection">
+            <summary>
+            波谱剖面分析窗体
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.SpectralSectionCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.SpectralSectionCommand.Finalize">
+            <summary>
+            析构函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.SpectralSectionCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.FrmUtilityFormatConvert">
+            <summary>
+            影像存储格式转换窗体
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmUtilityFormatConvert.m_strStoreType">
+            <summary>
+            元数据存储格式
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmUtilityFormatConvert.m_ExChangeData">
+            <summary>
+            交换数据
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.FrmUtilityFormatConvert.ExChangeData">
+            <summary>
+            交换数据属性
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmUtilityFormatConvert.dataSetMSS">
+            <summary>
+            分类影像数据集
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmUtilityFormatConvert.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmUtilityFormatConvert.simpleButton_InputFile_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择输入分类数据文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmUtilityFormatConvert.GetFiles(System.String)">
+            <summary>
+            获取文件路径
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmUtilityFormatConvert.simpleButton_Output_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择输出文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmUtilityFormatConvert.simpleButton_Cancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmUtilityFormatConvert.provingText(DevExpress.XtraEditors.TextEdit,System.String)">
+            <summary>
+            判断textbox是否为空
+            </summary>
+            <param name="textBox"></param>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmUtilityFormatConvert.simpleButton_Confirm_Click(System.Object,System.EventArgs)">
+            <summary>
+            确定
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmUtilityFormatConvert.FrmUtilityFormatConvert_FormClosed(System.Object,System.Windows.Forms.FormClosedEventArgs)">
+            <summary>
+            窗体关闭
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:PIE.Plugin.FrmUtilityFormatConvert.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmUtilityFormatConvert.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmUtilityFormatConvert.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.UtilityFormatConvertCommand">
+            <summary>
+            存储格式转换Command
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.UtilityFormatConvertCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.UtilityFormatConvertCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.UtilityFormatConvertCommand.OnAlgoExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法执行完成事件
+            </summary>
+            <param name="algo">算法</param>
+        </member>
+        <member name="M:PIE.Plugin.UtilityFormatConvertCommand.OnAlgoProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度变化事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns>int</returns>
+        </member>
+        <member name="T:PIE.Plugin.FrmRasterToVector">
+            <summary>
+            分类合并窗体
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmRasterToVector.m_bSelectAll">
+            <summary>
+            是否选择全部
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmRasterToVector.m_iSelectCount">
+            <summary>
+            选中类别数目
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmRasterToVector.m_ExChangeData">
+            <summary>
+            交换数据
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.FrmRasterToVector.ExChangeData">
+            <summary>
+            交换数据属性
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmRasterToVector.dataSetMSS">
+            <summary>
+            分类影像数据集
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmRasterToVector.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmRasterToVector.simpleButton_InputFile_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择输入分类数据文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmRasterToVector.GetFiles(System.String)">
+            <summary>
+            获取文件路径
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmRasterToVector.simpleButton_Output_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择输出文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmRasterToVector.simpleButton_Cancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmRasterToVector.provingText(DevExpress.XtraEditors.TextEdit,System.String)">
+            <summary>
+            判断textbox是否为空
+            </summary>
+            <param name="textBox"></param>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmRasterToVector.simpleButton_Confirm_Click(System.Object,System.EventArgs)">
+            <summary>
+            确定
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmRasterToVector.comboBoxEdit_Mode_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            单个/多个文件切换
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmRasterToVector.simpleButton_Clear_Click(System.Object,System.EventArgs)">
+            <summary>
+            清除和选中所有切换
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmRasterToVector.dataGridViewMatch_CellClick(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+            <summary>
+            Check选中状态更改
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmRasterToVector.FrmRasterToVector_FormClosed(System.Object,System.Windows.Forms.FormClosedEventArgs)">
+            <summary>
+            窗体关闭
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:PIE.Plugin.FrmRasterToVector.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmRasterToVector.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmRasterToVector.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.RasterToVectorCommand">
+            <summary>
+            栅格矢量化Command
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.RasterToVectorCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.RasterToVectorCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.RasterToVectorCommand.OnAlgoExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法执行完成事件
+            </summary>
+            <param name="algo">算法</param>
+        </member>
+        <member name="M:PIE.Plugin.RasterToVectorCommand.OnAlgoProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度变化事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns>int</returns>
+        </member>
+        <member name="T:PIE.Plugin.FrmVectorToRaster">
+            <summary>
+            分类合并窗体
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmVectorToRaster.m_ExChangeData">
+            <summary>
+            交换数据
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmVectorToRaster.m_FieldIndexDic">
+            <summary>
+            字段索引字典
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.FrmVectorToRaster.ExChangeData">
+            <summary>
+            交换数据属性
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmVectorToRaster.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmVectorToRaster.simpleButtonShp_InputFile_Click(System.Object,System.EventArgs)">
+            <summary>
+            输入矢量文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmVectorToRaster.simpleButton_InputFile_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择输入基准影像文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmVectorToRaster.GetFiles(System.String,System.String)">
+            <summary>
+            获取文件路径
+            </summary>
+            <param name="filter"></param>
+            <param name="title"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmVectorToRaster.simpleButton_Output_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择输出文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmVectorToRaster.simpleButton_Cancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmVectorToRaster.provingText(DevExpress.XtraEditors.TextEdit,System.String)">
+            <summary>
+            判断textbox是否为空
+            </summary>
+            <param name="textBox"></param>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmVectorToRaster.simpleButton_Confirm_Click(System.Object,System.EventArgs)">
+            <summary>
+            确定
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmVectorToRaster.textEdit1_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+            <summary>
+            控制行数输入
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmVectorToRaster.textEdit2_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+            <summary>
+            控制列数输入
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmVectorToRaster.checkEdit_SetInvalidValue_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            设置无效值勾选事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:PIE.Plugin.FrmVectorToRaster.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmVectorToRaster.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmVectorToRaster.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.VectorToRasterCommand">
+            <summary>
+            矢量栅格化Command
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.VectorToRasterCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.VectorToRasterCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.VectorToRasterCommand.OnAlgoExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法执行完成事件
+            </summary>
+            <param name="algo">算法</param>
+        </member>
+        <member name="M:PIE.Plugin.VectorToRasterCommand.OnAlgoProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度变化事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns>int</returns>
+        </member>
+    </members>
+</doc>

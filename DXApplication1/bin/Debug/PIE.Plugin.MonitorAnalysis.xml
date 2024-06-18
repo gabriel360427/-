@@ -1,0 +1,835 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PIE.Plugin.MonitorAnalysis</name>
+    </assembly>
+    <members>
+        <member name="T:PIE.Plugin.ComboBoxColorRamp">
+            <summary>
+            颜色带下拉列表
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.ComboBoxColorRamp.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.CommomMethod.InitialButtonColor(System.Windows.Forms.Form,System.Collections.Generic.Dictionary{System.String,System.String},PIE.Carto.IFeatureRender)">
+            <summary>
+            各个窗体里初始化按钮的状态
+            </summary>
+            <param name="frm"></param>
+            <param name="dic"></param>
+            <param name="m_FeatureRender"></param>
+        </member>
+        <member name="M:PIE.Plugin.CommomMethod.ChangeButtonColor(System.Windows.Forms.Form,System.Collections.Generic.Dictionary{System.String,System.String},System.Boolean)">
+            <summary>
+            修改按钮的状态
+            </summary>
+            <param name="flag"></param>
+        </member>
+        <member name="F:PIE.Plugin.FrmMicaps3.m_ActiveView">
+            <summary>
+            ActiveView-活动视图
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmMicaps3.m_FeatureRender">
+            <summary>
+            Micaps-渲染对象
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmMicaps3.m_IsInitialized">
+            <summary>
+            是否初始化了
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmMicaps3.btnName_flag">
+            <summary>
+            按钮与标签对应表
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmMicaps3.Initialize(PIE.Carto.IActiveView,PIE.Carto.IFeatureRender)">
+            <summary>
+            初始化
+            </summary>
+            <param name="activeView">视图</param>
+            <param name="featureRender">渲染对象</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmMicaps3.InitialDic">
+            <summary>
+            初始化字典表（根据需要增减）
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmMicaps3.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmMicaps3.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmMicaps3.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmMicaps2.m_ActiveView">
+            <summary>
+            ActiveView-活动视图
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmMicaps2.m_FeatureRender">
+            <summary>
+            Micaps-渲染对象
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmMicaps2.m_IsInitialized">
+            <summary>
+            是否初始化了
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmMicaps2.btnName_flag">
+            <summary>
+            按钮与标签对应表
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmMicaps2.Initialize(PIE.Carto.IActiveView,PIE.Carto.IFeatureRender)">
+            <summary>
+            初始化
+            </summary>
+            <param name="activeView">视图</param>
+            <param name="featureRender">渲染对象</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmMicaps2.InitialDic">
+            <summary>
+            初始化字典表（根据需要增减）
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmMicaps2.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmMicaps2.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmMicaps2.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmMicaps1.m_ActiveView">
+            <summary>
+            ActiveView-活动视图
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmMicaps1.m_FeatureRender">
+            <summary>
+            Micaps-渲染对象
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmMicaps1.m_IsInitialized">
+            <summary>
+            是否初始化了
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmMicaps1.btnName_flag">
+            <summary>
+            按钮与标签对应表
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmMicaps1.#ctor">
+            <summary>
+            Micaps1类数据显示控制窗体
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmMicaps1.Initialize(PIE.Carto.IActiveView,PIE.Carto.IFeatureRender)">
+            <summary>
+            初始化
+            </summary>
+            <param name="activeView">视图</param>
+            <param name="featureRender">渲染对象</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmMicaps1.InitialDic">
+            <summary>
+            初始化字典表（根据需要增减）
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmMicaps1.ChangeButtonColor(System.Boolean)">
+            <summary>
+            修改按钮的状态
+            </summary>
+            <param name="flag"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmMicaps1.buttonAll_Click(System.Object,System.EventArgs)">
+            <summary>
+            All按钮事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmMicaps1.buttonRST_Click(System.Object,System.EventArgs)">
+            <summary>
+            重置选择
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:PIE.Plugin.FrmMicaps1.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmMicaps1.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmMicaps1.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmMicaps4.m_ActiveView">
+            <summary>
+            ActiveView-活动视图
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmMicaps4.m_FeatureRender">
+            <summary>
+            Micaps-渲染对象
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmMicaps4.m_IsInitialized">
+            <summary>
+            是否初始化了
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmMicaps4.btnName_flag">
+            <summary>
+            按钮与标签对应表
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmMicaps4.Initialize(PIE.Carto.IActiveView,PIE.Carto.IFeatureRender)">
+            <summary>
+            初始化
+            </summary>
+            <param name="activeView">视图</param>
+            <param name="featureRender">渲染对象</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmMicaps4.InitialDic">
+            <summary>
+            初始化字典表（根据需要增减）
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmMicaps4.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmMicaps4.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmMicaps4.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.MicapsOpCommand">
+            <summary>
+            MicapsOpCommand
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.MicapsOpCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.MicapsOpCommand.frm">
+            <summary>
+            成员变量，便于获取已经打开的窗体
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.MicapsOpCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.Properties.Resources.Culture">
+            <summary>
+              使用此强类型资源类，为所有资源查找
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.Properties.Resources.关闭">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.Properties.Resources.文件">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.FrmNormalizeWaterExtract">
+            <summary>
+            归一化水体指数分类窗体
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmNormalizeWaterExtract.m_ExChangeData">
+            <summary>
+            交换数据
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.FrmNormalizeWaterExtract.ExChangeData">
+            <summary>
+            交换数据属性
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmNormalizeWaterExtract.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmNormalizeWaterExtract.simpleButton_InputFile_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择输入数据文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmNormalizeWaterExtract.simpleButton_Output_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择输出文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmNormalizeWaterExtract.simpleButton_Cancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmNormalizeWaterExtract.provingText(DevExpress.XtraEditors.TextEdit,System.String)">
+            <summary>
+            判断textbox是否为空
+            </summary>
+            <param name="textBox"></param>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmNormalizeWaterExtract.simpleButton_Confirm_Click(System.Object,System.EventArgs)">
+            <summary>
+            确定
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmNormalizeWaterExtract.simpleButton_Vector_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择矢量范围数据
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmNormalizeWaterExtract.simpleButton_Delete_Click(System.Object,System.EventArgs)">
+            <summary>
+            删除选择数据
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:PIE.Plugin.FrmNormalizeWaterExtract.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmNormalizeWaterExtract.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmNormalizeWaterExtract.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.FrmNormalizeWaterExtract1">
+            <summary>
+            归一化水体指数分类窗体
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmNormalizeWaterExtract1.m_ExChangeData">
+            <summary>
+            交换数据
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.FrmNormalizeWaterExtract1.ExChangeData">
+            <summary>
+            交换数据属性
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmNormalizeWaterExtract1.m_Map">
+            <summary>
+            地图对象
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmNormalizeWaterExtract1.#ctor(PIE.Carto.IMap)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmNormalizeWaterExtract1.simpleButton_InputFile_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择输入数据文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmNormalizeWaterExtract1.simpleButton_Output_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择输出文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmNormalizeWaterExtract1.simpleButton_Cancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmNormalizeWaterExtract1.provingText(DevExpress.XtraEditors.TextEdit,System.String)">
+            <summary>
+            判断textbox是否为空
+            </summary>
+            <param name="textBox"></param>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Plugin.FrmNormalizeWaterExtract1.simpleButton_Confirm_Click(System.Object,System.EventArgs)">
+            <summary>
+            确定
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmNormalizeWaterExtract1.simpleButton_Vector_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择矢量范围数据
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmNormalizeWaterExtract1.simpleButton_Delete_Click(System.Object,System.EventArgs)">
+            <summary>
+            删除选择数据
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:PIE.Plugin.FrmNormalizeWaterExtract1.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmNormalizeWaterExtract1.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmNormalizeWaterExtract1.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.FrmWaterExtract">
+            <summary>
+            水体提取窗口
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmWaterExtract.m_ExChangeData">
+            <summary>
+            交换数据
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.FrmWaterExtract.ExChangeData">
+            <summary>
+            交换数据属性
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmWaterExtract.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmWaterExtract.simpleButtonOK_Click(System.Object,System.EventArgs)">
+            <summary>
+            确定按钮事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmWaterExtract.simpleButtonCancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消按钮事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmWaterExtract.buttonEditInputFile_ButtonClick(System.Object,DevExpress.XtraEditors.Controls.ButtonPressedEventArgs)">
+            <summary>
+            输入文件选择按钮事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmWaterExtract.buttonEditOutputFile_ButtonClick(System.Object,DevExpress.XtraEditors.Controls.ButtonPressedEventArgs)">
+            <summary>
+            提取结果输出路径
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:PIE.Plugin.FrmWaterExtract.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmWaterExtract.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmWaterExtract.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.FrmWaterExtract1">
+            <summary>
+            水体提取窗口
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmWaterExtract1.m_ExChangeData">
+            <summary>
+            交换数据
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.FrmWaterExtract1.ExChangeData">
+            <summary>
+            交换数据属性
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmWaterExtract1.m_Map">
+            <summary>
+            地图对象
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmWaterExtract1.#ctor(System.String,PIE.Carto.IMap)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmWaterExtract1.simpleButtonOK_Click(System.Object,System.EventArgs)">
+            <summary>
+            确定按钮事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmWaterExtract1.simpleButtonCancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消按钮事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmWaterExtract1.simpleButton_selectinput_Click(System.Object,System.EventArgs)">
+            <summary>
+            输入文件选择按钮事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmWaterExtract1.simpleButton_selectoutput_Click(System.Object,System.EventArgs)">
+            <summary>
+            提取结果输出路径
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:PIE.Plugin.FrmWaterExtract1.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmWaterExtract1.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmWaterExtract1.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.NormalizeWaterExtractCommand">
+            <summary>
+            归一化水体指数分类Command
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.NormalizeWaterExtractCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.NormalizeWaterExtractCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.NormalizeWaterExtractCommand.OnAlgoExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法执行完成事件
+            </summary>
+            <param name="algo">算法</param>
+        </member>
+        <member name="M:PIE.Plugin.NormalizeWaterExtractCommand.OnAlgoProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度变化事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns>int</returns>
+        </member>
+        <member name="T:PIE.Plugin.WaterExtract_NDWICommand">
+            <summary>
+            水体提取-水体指数法Command
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.WaterExtract_NDWICommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.WaterExtract_NDWICommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.WaterExtract_NDWICommand.OnAlgoExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法执行完成事件
+            </summary>
+            <param name="algo">算法</param>
+        </member>
+        <member name="M:PIE.Plugin.WaterExtract_NDWICommand.OnAlgoProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度变化事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns>int</returns>
+        </member>
+        <member name="T:PIE.Plugin.WaterExtract_SingleBandCommand">
+            <summary>
+            水体提取-单波段阈值法Command
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.WaterExtract_SingleBandCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.WaterExtract_SingleBandCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.WaterExtract_SingleBandCommand.OnAlgoExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法执行完成事件
+            </summary>
+            <param name="algo">算法</param>
+        </member>
+        <member name="M:PIE.Plugin.WaterExtract_SingleBandCommand.OnAlgoProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度变化事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns>int</returns>
+        </member>
+        <member name="T:PIE.Plugin.WaterExtract_SpecPhMethodCommand">
+            <summary>
+            水体提取-谱间关系法Command
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.WaterExtract_SpecPhMethodCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.WaterExtract_SpecPhMethodCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.WaterExtract_SpecPhMethodCommand.OnAlgoExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法执行完成事件
+            </summary>
+            <param name="algo">算法</param>
+        </member>
+        <member name="M:PIE.Plugin.WaterExtract_SpecPhMethodCommand.OnAlgoProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度变化事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns>int</returns>
+        </member>
+        <member name="T:PIE.Plugin.FrmWaterStatistics">
+            <summary>
+            水体提取窗口
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmWaterStatistics.m_ExChangeData">
+            <summary>
+            交换数据
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.FrmWaterStatistics.ExChangeData">
+            <summary>
+            交换数据属性
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmWaterStatistics.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmWaterStatistics.simpleButtonOK_Click(System.Object,System.EventArgs)">
+            <summary>
+            确定按钮事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmWaterStatistics.simpleButtonCancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消按钮事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmWaterStatistics.buttonEditInputFile_ButtonClick(System.Object,DevExpress.XtraEditors.Controls.ButtonPressedEventArgs)">
+            <summary>
+            输入文件选择按钮事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmWaterStatistics.buttonEditOutputFile_ButtonClick(System.Object,DevExpress.XtraEditors.Controls.ButtonPressedEventArgs)">
+            <summary>
+            提取结果输出路径
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Plugin.FrmWaterStatistics.buttonEditShpFile_ButtonClick(System.Object,DevExpress.XtraEditors.Controls.ButtonPressedEventArgs)">
+            <summary>
+            输入矢量路径
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:PIE.Plugin.FrmWaterStatistics.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmWaterStatistics.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmWaterStatistics.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.WaterStatistics_DepthCommand">
+            <summary>
+            水体提取-水深提取Command
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.WaterStatistics_DepthCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.WaterStatistics_DepthCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.WaterStatistics_DepthCommand.OnAlgoExecuteCompleted(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法执行完成事件
+            </summary>
+            <param name="algo">算法</param>
+        </member>
+        <member name="M:PIE.Plugin.WaterStatistics_DepthCommand.OnAlgoProgressChanged(System.Double,System.String,PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            算法进度变化事件
+            </summary>
+            <param name="complete">进度</param>
+            <param name="msg">进度信息</param>
+            <param name="algo">算法</param>
+            <returns>int</returns>
+        </member>
+    </members>
+</doc>

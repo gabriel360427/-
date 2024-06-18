@@ -1,0 +1,5024 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PIE.Controls</name>
+    </assembly>
+    <members>
+        <member name="T:PIE.Controls.BaseCommand">
+            <summary>
+            Command的基类
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.BaseCommand.m_Hook">
+            <summary>
+            Hook对象
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.BaseCommand.m_HookHelper">
+            <summary>
+            HookHelper对象
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.BaseCommand.m_Image">
+            <summary>
+            Hook对象
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.BaseCommand.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.BaseCommand.Caption">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.BaseCommand.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.BaseCommand.Checked">
+            <summary>
+            是否选中
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.BaseCommand.ToolTip">
+            <summary>
+            提示信息
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.BaseCommand.Type">
+            <summary>
+            Command的类型
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.BaseCommand.TypeName">
+            <summary>
+            类型名称
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.BaseCommand.Image">
+            <summary>
+            设置Image
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.BaseCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.BaseCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.BaseCommand.OnCreate(System.Object)">
+            <summary>
+            创建插件对象
+            </summary>
+            <param name="hook"></param>
+        </member>
+        <member name="T:PIE.Controls.BaseCommandControl">
+            <summary>
+            BaseCommandControl类
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.BaseCommandControl.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.BaseCommandControl.Control">
+            <summary>
+            Control
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.BaseTool">
+            <summary>
+            基本的Tool
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.BaseTool.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.BaseTool.Cursor">
+            <summary>
+            鼠标样式
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.BaseTool.Deactivate">
+            <summary>
+            取消激活
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Controls.BaseTool.OnContextMenu(System.Int32,System.Int32)">
+            <summary>
+            右键菜单弹出
+            </summary>
+            <param name="x">点击点X</param>  
+            <param name="y">点击点Y</param>
+            <returns>是否成功</returns> 
+        </member>
+        <member name="M:PIE.Controls.BaseTool.OnDblClick">
+            <summary>
+            双击
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.BaseTool.OnKeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            键盘按键按下操作
+            </summary>
+            <param name="sender">触发对象</param>  
+            <param name="e">键盘事件参数</param>
+        </member>
+        <member name="M:PIE.Controls.BaseTool.OnKeyUp(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            键盘按键抬起操作
+            </summary>
+            <param name="sender">触发对象</param>  
+            <param name="e">键盘事件参数</param>
+        </member>
+        <member name="M:PIE.Controls.BaseTool.OnMouseEnter(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            鼠标进入操作
+            </summary>
+            <param name="sender">触发对象</param>  
+            <param name="e">鼠标事件参数</param>
+        </member>
+        <member name="M:PIE.Controls.BaseTool.OnMouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            鼠标按下操作
+            </summary>
+            <param name="sender">触发对象</param>  
+            <param name="e">鼠标事件参数</param>
+        </member>
+        <member name="M:PIE.Controls.BaseTool.OnMouseMove(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            鼠标移动操作
+            </summary>
+            <param name="sender">触发对象</param>  
+            <param name="e">鼠标事件参数</param>
+        </member>
+        <member name="M:PIE.Controls.BaseTool.OnMouseUp(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            鼠标抬起操作
+            </summary>
+            <param name="sender">触发对象</param>  
+            <param name="e">鼠标事件参数</param>
+        </member>
+        <member name="T:PIE.Controls.AddDataCommand">
+            <summary>
+            加载数据命令 （多种数据格式）
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.AddDataCommand.OnCreate(System.Object)">
+            <summary>
+            创建插件对象
+            </summary>
+            <param name="hook"></param>
+        </member>
+        <member name="M:PIE.Controls.AddDataCommand.OnClick">
+            <summary>
+            点击事件
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.CustomServerCommand">
+            <summary>
+            自定义服务命令
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.CustomServerCommand.m_ListInfo">
+            <summary>
+            xml信息
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.CustomServerCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.CustomServerCommand.OnClick">
+            <summary>
+            点击事件
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.CustomServerCommand.GetCustomerOnlineTiledLayer(System.String)">
+            <summary>
+            得到自定义在线服务图层
+            </summary>
+            <param name="serverName"></param>
+            <returns></returns>
+        </member>
+        <member name="P:PIE.Controls.FrmCommonServer.ServerName">
+            <summary>
+            服务名称
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.FrmCommonServer.SrWkt">
+            <summary>
+            空间参考wkt
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.FrmCommonServer.m_ListInfo">
+            <summary>
+            配置文件xml瓦片服务信息
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.FrmCommonServer.m_ListServerName">
+            <summary>
+            服务名称列表
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.FrmCommonServer.m_Flag">
+            <summary>
+            是否新增服务数据
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FrmCommonServer.#ctor(System.Collections.Generic.List{PIE.Controls.TiledInfo})">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FrmCommonServer.btn_LoadServer_Click(System.Object,System.EventArgs)">
+            <summary>
+            加载服务
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Controls.FrmCommonServer.btn_CustomServer_Click(System.Object,System.EventArgs)">
+            <summary>
+            新增服务 -展开高级选项界面
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Controls.FrmCommonServer.btn_Cancel1_Click(System.Object,System.EventArgs)">
+            <summary>
+            关闭窗体
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Controls.FrmCommonServer.comboBox_ServerName_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            服务名称选择
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Controls.FrmCommonServer.btn_NewLoadServer_Click(System.Object,System.EventArgs)">
+            <summary>
+            加载新增影像瓦片
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Controls.FrmCommonServer.btn_Cancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            隐藏高级GroupBox选项
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Controls.FrmCommonServer.btn_Spatialreference_Click(System.Object,System.EventArgs)">
+            <summary>
+            空间参考自定义选择
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:PIE.Controls.FrmCommonServer.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FrmCommonServer.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Controls.FrmCommonServer.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.TiledInfo">
+            <summary>
+            自定义瓦片服务信息类
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.TiledInfo.ServerName">
+            <summary>
+            服务名称
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.TiledInfo.Url">
+            <summary>
+            服务地址
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.TiledInfo.SrWkt">
+            <summary>
+             空间参考
+            </summary>      
+        </member>
+        <member name="P:PIE.Controls.TiledInfo.XMin">
+            <summary>
+            瓦片初始范围四角点坐标-X最小值
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.TiledInfo.XMax">
+            <summary>
+            瓦片初始范围四角点坐标-X最大值
+            </summary>
+            
+        </member>
+        <member name="P:PIE.Controls.TiledInfo.YMin">
+            <summary>
+            瓦片初始范围四角点坐标-Y最小值
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.TiledInfo.YMax">
+            <summary>
+            瓦片初始范围四角点坐标-Y最大值
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.TiledInfo.Level">
+            <summary>
+            瓦片显示级别
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.TiledInfo.TileWid">
+            <summary>
+            瓦片宽度
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.TiledInfo.TileOriginX">
+            <summary>
+             瓦片参照点X
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.TiledInfo.TileOriginY">
+            <summary>
+            瓦片参照点Y
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.TiledInfo.Scale">
+            <summary>
+            比例尺
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.TiledInfo.Resolution">
+            <summary>
+            分辨率
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.TiledInfo.ESPGCode">
+            <summary>
+            空间参考编码
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.XmlOper.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.XmlOper.AddXmlFirstNode(System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            增加第一层的节点
+            </summary>
+            <param name="xmlFilePath">文件路径</param>
+            <param name="RootPath">根节点名字</param>
+            <param name="Name">所要添加第一层节点的节点名</param>
+            <param name="attribute"></param>
+        </member>
+        <member name="M:PIE.Controls.XmlOper.AddXmlFirstNode(System.String,System.String,System.String,System.String[0:,0:])">
+            <summary>
+            增加第一层的节点
+            </summary>
+            <param name="xmlFilePath">文件路径</param>
+            <param name="RootPath">根节点名字</param>
+            <param name="Name">所要添加第一层节点的节点名</param>
+            <param name="attribute"></param>
+        </member>
+        <member name="M:PIE.Controls.XmlOper.GetXMLFirstNodeAttributes(System.String,System.String,System.String)">
+            <summary>
+            获取第一层节点的属性值，返回所有的属性名和对应的值
+            </summary>
+            <param name="xmlFilePath">文件路径</param>
+            <param name="RootPath">根节点名</param>
+            <param name="firstNodeName">第一层节点名</param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Controls.XmlOper.GetXMLFirstNodeAttributes(System.String)">
+            <summary>
+            获取第一层节点的属性值，返回所有的属性名和对应的值
+            </summary>
+            <param name="xmlFilePath">文件路径</param>
+            <param name="RootPath">根节点名</param>
+            <param name="firstNodeName">第一层节点名</param>
+            <returns></returns>
+        </member>
+        <member name="T:PIE.Controls.ExportFeatureMenuCommand">
+            <summary>
+            导出栅格数据
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.ExportFeatureMenuCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.ExportFeatureMenuCommand.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.ExportFeatureMenuCommand.OnCreate(System.Object)">
+            <summary>
+            创建插件对象
+            </summary>
+            <param name="hook"></param>
+        </member>
+        <member name="M:PIE.Controls.ExportFeatureMenuCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.FrmLoadArcGISImage">
+            <summary>
+            加载ArcGISImage
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.FrmLoadArcGISImage.URL">
+            <summary>
+            网络地址
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FrmLoadArcGISImage.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FrmLoadArcGISImage.button_Cancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Controls.FrmLoadArcGISImage.button_OK_Click(System.Object,System.EventArgs)">
+            <summary>
+            确定
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:PIE.Controls.FrmLoadArcGISImage.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FrmLoadArcGISImage.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Controls.FrmLoadArcGISImage.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.LoadHJDataCommand">
+            <summary>
+            环境星数据加载
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.LoadHJDataCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.LoadHJDataCommand.OnCreate(System.Object)">
+            <summary>
+            创建插件对象
+            </summary>
+            <param name="hook"></param>
+        </member>
+        <member name="M:PIE.Controls.LoadHJDataCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.RasterCommand">
+            <summary>
+            栅格数据加载
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.RasterCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.RasterCommand.OnCreate(System.Object)">
+            <summary>
+            创建插件对象
+            </summary>
+            <param name="hook"></param>
+        </member>
+        <member name="M:PIE.Controls.RasterCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.ExportRasterMenuCommand">
+            <summary>
+            导出栅格数据
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.ExportRasterMenuCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.ExportRasterMenuCommand.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.ExportRasterMenuCommand.OnCreate(System.Object)">
+            <summary>
+            创建插件对象
+            </summary>
+            <param name="hook"></param>
+        </member>
+        <member name="M:PIE.Controls.ExportRasterMenuCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.RasterLoaderMenuCommand">
+            <summary>
+            加载栅格图层
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.RasterLoaderMenuCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.RasterLoaderMenuCommand.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.RasterLoaderMenuCommand.OnCreate(System.Object)">
+            <summary>
+            创建插件对象
+            </summary>
+            <param name="hook"></param>
+        </member>
+        <member name="M:PIE.Controls.RasterLoaderMenuCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.ScientificDatasetCommand">
+            <summary>
+            科学数据集加载
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.ScientificDatasetCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.ScientificDatasetCommand.OnCreate(System.Object)">
+            <summary>
+            创建插件对象
+            </summary>
+            <param name="hook"></param>
+        </member>
+        <member name="M:PIE.Controls.ScientificDatasetCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.TDTTiledImgCommand">
+            <summary>
+            天地图影像底图加载
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.TDTTiledImgCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.TDTTiledImgCommand.OnCreate(System.Object)">
+            <summary>
+            创建插件对象
+            </summary>
+            <param name="hook"></param>
+        </member>
+        <member name="M:PIE.Controls.TDTTiledImgCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.LoadArcGISServerLayerCommand">
+            <summary>
+            ArcGIS Server底图加载
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.LoadArcGISServerLayerCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.LoadArcGISServerLayerCommand.OnCreate(System.Object)">
+            <summary>
+            创建插件对象
+            </summary>
+            <param name="hook"></param>
+        </member>
+        <member name="M:PIE.Controls.LoadArcGISServerLayerCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.TDTTiledVecCommand">
+            <summary>
+            天地图矢量底图加载
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.TDTTiledVecCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.TDTTiledVecCommand.OnCreate(System.Object)">
+            <summary>
+            创建插件对象
+            </summary>
+            <param name="hook"></param>
+        </member>
+        <member name="M:PIE.Controls.TDTTiledVecCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.TDTTiledCvaCommand">
+            <summary>
+            天地图矢量注记加载
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.TDTTiledCvaCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.TDTTiledCvaCommand.OnCreate(System.Object)">
+            <summary>
+            创建插件对象
+            </summary>
+            <param name="hook"></param>
+        </member>
+        <member name="M:PIE.Controls.TDTTiledCvaCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.TDTTiledCiaCommand">
+            <summary>
+            天地图影像注记加载
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.TDTTiledCiaCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.TDTTiledCiaCommand.OnCreate(System.Object)">
+            <summary>
+            创建插件对象
+            </summary>
+            <param name="hook"></param>
+        </member>
+        <member name="M:PIE.Controls.TDTTiledCiaCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.VectorCommand">
+            <summary>
+            矢量数据加载
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.VectorCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.VectorCommand.OnCreate(System.Object)">
+            <summary>
+            创建插件对象
+            </summary>
+            <param name="hook"></param>
+        </member>
+        <member name="M:PIE.Controls.VectorCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.VectorLoaderMenuCommand">
+            <summary>
+            矢量数据图层加载
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.VectorLoaderMenuCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.VectorLoaderMenuCommand.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.VectorLoaderMenuCommand.OnCreate(System.Object)">
+            <summary>
+            创建插件对象
+            </summary>
+            <param name="hook"></param>
+        </member>
+        <member name="M:PIE.Controls.VectorLoaderMenuCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.ZYZXAnnotationCommand">
+            <summary>
+            资源卫星在线注记命令
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.ZYZXAnnotationCommand.OnClick">
+            <summary>
+            单击事件
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.ZYZXImgBaseMapCommand">
+            <summary>
+            资源卫星在线影像
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.ZYZXImgBaseMapCommand.OnClick">
+            <summary>
+            单击事件
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.ZYZXLatestImgCommand">
+            <summary>
+            资源卫星在线影像
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.ZYZXLatestImgCommand.OnClick">
+            <summary>
+            单击事件
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.AdjustTransparentCommandControl">
+            <summary>
+            调整矢量透明度
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.AdjustTransparentCommandControl.m_ToolStripComboBoxItem">
+            <summary>
+            ToolStripComboBox
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.AdjustTransparentCommandControl.Control">
+            <summary>
+            Control
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.AdjustTransparentCommandControl.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.AdjustTransparentCommandControl.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.AdjustTransparentCommandControl.OnCreate(System.Object)">
+            <summary>
+            创建插件对象
+            </summary>
+            <param name="hook"></param>
+        </member>
+        <member name="M:PIE.Controls.AdjustTransparentCommandControl.activeViewEvents_OnBeforeCurrentLayerChanging">
+            <summary>
+            当前视图变化前
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.AdjustTransparentCommandControl.AdjustTransparentCommandControl_OnPropertyChanged(PIE.Carto.ILayer)">
+            <summary>
+            图层属性变化事件
+            </summary>
+            <param name="layer"></param>
+        </member>
+        <member name="M:PIE.Controls.AdjustTransparentCommandControl.activeViewEvents_OnCurrentLayerChanged">
+            <summary>
+            当前图层发生变化后
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.AdjustTransparentCommandControl.comBoxItem_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            透明值调整事件
+            </summary>
+            <param name="sender">事件触发器</param>
+            <param name="e">事件触发参数</param>
+        </member>
+        <member name="T:PIE.Controls.FrmMagicWandAddToLayer">
+            <summary>
+            魔术棒添加到图层
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.FrmMagicWandAddToLayer.m_Map">
+            <summary>
+            地图对象
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.FrmMagicWandAddToLayer.m_Flag">
+            <summary>
+            标识
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FrmMagicWandAddToLayer.#ctor(PIE.Carto.IMap)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FrmMagicWandAddToLayer.Initialize">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FrmMagicWandAddToLayer.button1_Click(System.Object,System.EventArgs)">
+            <summary>
+            确定
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Controls.FrmMagicWandAddToLayer.button2_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:PIE.Controls.FrmMagicWandAddToLayer.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FrmMagicWandAddToLayer.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Controls.FrmMagicWandAddToLayer.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.LoadFeatureRenderCommand">
+            <summary>
+            Feature加载显示方案
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.LoadFeatureRenderCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.LoadFeatureRenderCommand.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.LoadFeatureRenderCommand.OnCreate(System.Object)">
+            <summary>
+            创建插件对象
+            </summary>
+            <param name="hook"></param>
+        </member>
+        <member name="M:PIE.Controls.LoadFeatureRenderCommand.OnClick">
+            <summary>
+            点击事件
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.MagicWandAddToLayerCommand">
+            <summary>
+            添加到图层
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.MagicWandAddToLayerCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.MagicWandAddToLayerCommand.Caption">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.MagicWandCombineToLayerCommand">
+            <summary>
+            合并到图层
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.MagicWandCombineToLayerCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.MagicWandCombineToLayerCommand.Caption">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.MagicWandSaveAsCommand">
+            <summary>
+            魔术另存为
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.MagicWandSaveAsCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.MagicWandSaveAsCommand.Caption">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.NewGroupLayerCommand">
+            <summary>
+            Map新建图层组
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.NewGroupLayerCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.NewGroupLayerCommand.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.NewGroupLayerCommand.OnCreate(System.Object)">
+            <summary>
+            创建插件对象
+            </summary>
+            <param name="hook">hook对象</param>
+        </member>
+        <member name="M:PIE.Controls.NewGroupLayerCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.ClearAllLayersCommand">
+            <summary>
+            清除所有图层
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.ClearAllLayersCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.ClearAllLayersCommand.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.ClearAllLayersCommand.OnCreate(System.Object)">
+            <summary>
+            创建插件对象
+            </summary>
+            <param name="hook"></param>
+        </member>
+        <member name="M:PIE.Controls.ClearAllLayersCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.DeleteLayerCommand">
+            <summary>
+            删除图层
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.DeleteLayerCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.DeleteLayerCommand.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.DeleteLayerCommand.OnCreate(System.Object)">
+            <summary>
+            创建插件对象
+            </summary>
+            <param name="hook"></param>
+        </member>
+        <member name="M:PIE.Controls.DeleteLayerCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.LoadRasterRenderCommand">
+            <summary>
+            加载显示方案
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.LoadRasterRenderCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.LoadRasterRenderCommand.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.LoadRasterRenderCommand.OnCreate(System.Object)">
+            <summary>
+            创建插件对象
+            </summary>
+            <param name="hook"></param>
+        </member>
+        <member name="M:PIE.Controls.LoadRasterRenderCommand.OnClick">
+            <summary>
+            点击事件
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.SaveFeatureRenderCommand">
+            <summary>
+            Feature保存显示方案
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.SaveFeatureRenderCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.SaveFeatureRenderCommand.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.SaveFeatureRenderCommand.OnCreate(System.Object)">
+            <summary>
+            创建插件对象
+            </summary>
+            <param name="hook"></param>
+        </member>
+        <member name="M:PIE.Controls.SaveFeatureRenderCommand.OnClick">
+            <summary>
+            点击事件
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.SaveRasterRenderCommand">
+            <summary>
+            保存显示方案
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.SaveRasterRenderCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.SaveRasterRenderCommand.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.SaveRasterRenderCommand.OnCreate(System.Object)">
+            <summary>
+            创建插件对象
+            </summary>
+            <param name="hook"></param>
+        </member>
+        <member name="M:PIE.Controls.SaveRasterRenderCommand.OnClick">
+            <summary>
+            点击事件
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.FeatureLayerAnnotationCommand">
+            <summary>
+            矢量图层标注
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FeatureLayerAnnotationCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.FeatureLayerAnnotationCommand.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FeatureLayerAnnotationCommand.OnCreate(System.Object)">
+            <summary>
+            创建插件对象
+            </summary>
+            <param name="hook"></param>
+        </member>
+        <member name="M:PIE.Controls.FeatureLayerAnnotationCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FeatureLayerAnnotationCommand.IsChecked">
+            <summary>
+            是否选中
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PIE.Controls.OpenFilePathCommand">
+            <summary>
+            打开文件所在路径
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.OpenFilePathCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.OpenFilePathCommand.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.OpenFilePathCommand.OnCreate(System.Object)">
+            <summary>
+            创建插件对象
+            </summary>
+            <param name="hook"></param>
+        </member>
+        <member name="M:PIE.Controls.OpenFilePathCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.TurnOffAllLayersCommand">
+            <summary>
+            隐藏所有图层
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.TurnOffAllLayersCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.TurnOffAllLayersCommand.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.TurnOffAllLayersCommand.OnCreate(System.Object)">
+            <summary>
+            创建插件对象
+            </summary>
+            <param name="hook"></param>
+        </member>
+        <member name="M:PIE.Controls.TurnOffAllLayersCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.TurnOnAllLayersCommand">
+            <summary>
+            显示所有图层
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.TurnOnAllLayersCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.TurnOnAllLayersCommand.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.TurnOnAllLayersCommand.OnCreate(System.Object)">
+            <summary>
+            创建插件对象
+            </summary>
+            <param name="hook"></param>
+        </member>
+        <member name="M:PIE.Controls.TurnOnAllLayersCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.ZoomToLayerCommand">
+            <summary>
+            缩放至图层
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.ZoomToLayerCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.ZoomToLayerCommand.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.ZoomToLayerCommand.OnCreate(System.Object)">
+            <summary>
+            创建插件对象
+            </summary>
+            <param name="hook"></param>
+        </member>
+        <member name="M:PIE.Controls.ZoomToLayerCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.AttributeIdentifyTool">
+            <summary>
+            属性查询
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.AttributeIdentifyTool.m_FrmAttributeIdentify">
+            <summary>
+            属性查询窗体
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.AttributeIdentifyTool.m_Envelope">
+            <summary>
+            Envelope
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.AttributeIdentifyTool.m_ActiveView">
+            <summary>
+            ActiveView
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.AttributeIdentifyTool.m_PmdContents">
+            <summary>
+            PmdContents
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.AttributeIdentifyTool.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.AttributeIdentifyTool.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.AttributeIdentifyTool.OnCreate(System.Object)">
+            <summary>
+            创建插件对象
+            </summary>
+            <param name="hook"></param>
+        </member>
+        <member name="M:PIE.Controls.AttributeIdentifyTool.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.AttributeIdentifyTool.OnMouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            鼠标按下
+            </summary>
+            <param name="sender">触发对象</param>  
+            <param name="e">鼠标事件参数</param>
+        </member>
+        <member name="M:PIE.Controls.AttributeIdentifyTool.m_FrmAttributeIdentify_Disposed(System.Object,System.EventArgs)">
+            <summary>
+            窗体关闭
+            </summary>
+            <param name="sender">触发对象</param>  
+            <param name="e">鼠标事件参数</param>
+        </member>
+        <member name="T:PIE.Controls.FrmAttributeIdentify">
+            <summary>
+            矢量查询窗体
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.FrmAttributeIdentify.m_ComboBoxIndex">
+            <summary>
+            下拉框索引值
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.FrmAttributeIdentify.m_ComboBoxSelsect">
+            <summary>
+            下拉框选择内容
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.FrmAttributeIdentify.m_ActiveView1">
+            <summary>
+            IActiveView
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.FrmAttributeIdentify.pmdContents1">
+            <summary>
+            IPmdContents
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FrmAttributeIdentify.#ctor(PIE.Carto.IActiveView,PIE.Carto.IPmdContents)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="activeView">IActiveView</param>
+            <param name="pmdContents">IPmdContents</param>
+        </member>
+        <member name="M:PIE.Controls.FrmAttributeIdentify.treeViewUpdate(System.Windows.Forms.TreeNode)">
+            <summary>
+            更新目录树
+            </summary>
+            <param name="selectLayersNodes">目录树节点</param>
+        </member>
+        <member name="M:PIE.Controls.FrmAttributeIdentify.dataGridUpdate(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})">
+            <summary>
+            更新DataGridView显示
+            </summary>
+            <param name="feafieldsName">字段名</param>  
+            <param name="feafieldsValue">字段值</param>
+        </member>
+        <member name="M:PIE.Controls.FrmAttributeIdentify.dataGridClear">
+            <summary>
+            更新DataGridViewClear
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FrmAttributeIdentify.lableUpdate(System.Int32)">
+            <summary>
+            更新选中要素个数
+            </summary>
+            <param name="selectFeaturesCount">选中要素个数值</param>  
+        </member>
+        <member name="M:PIE.Controls.FrmAttributeIdentify.comboxUpdate(System.Collections.Generic.List{System.String},System.Int32)">
+            <summary>
+            更新comboBox里图层显示
+            </summary>
+            <param name="layerNameList">所有图层名称</param>
+            <param name="selectedIndex">下拉框选中索引</param>
+        </member>
+        <member name="M:PIE.Controls.FrmAttributeIdentify.comboBox1_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            comboBox选择改变
+            </summary>
+            <param name="sender">触发对象</param>  
+            <param name="e">鼠标事件参数</param>
+        </member>
+        <member name="M:PIE.Controls.FrmAttributeIdentify.FrmAttributeIdentify_FormClosed(System.Object,System.Windows.Forms.FormClosedEventArgs)">
+            <summary>
+            窗体关闭
+            </summary>
+            <param name="sender">触发对象</param>  
+            <param name="e">鼠标事件参数</param>
+        </member>
+        <member name="M:PIE.Controls.FrmAttributeIdentify.treeView1_AfterSelect(System.Object,System.Windows.Forms.TreeViewEventArgs)">
+            <summary>
+            目录树选择后显示
+            </summary>
+            <param name="sender">触发对象</param>  
+            <param name="e">鼠标事件参数</param>
+        </member>
+        <member name="F:PIE.Controls.FrmAttributeIdentify.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FrmAttributeIdentify.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:PIE.Controls.FrmAttributeIdentify.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.FrmRasterIdentify">
+            <summary>
+            探针工具窗体
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FrmRasterIdentify.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FrmRasterIdentify.ResetTextbox(System.String)">
+            <summary>
+            设置richTextBox显示的值
+            </summary>
+            <param name="strInfo">显示的值</param>
+        </member>
+        <member name="F:PIE.Controls.FrmRasterIdentify.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FrmRasterIdentify.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Controls.FrmRasterIdentify.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.FrmSpatialMeasure">
+            <summary>
+            空间量算窗体
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.FrmSpatialMeasure.m_MeasureLineTool">
+            <summary>
+            MeasureLineTool对象
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.FrmSpatialMeasure.m_MeasureAreaTool">
+            <summary>
+            MeasureAreaTool对象
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.FrmSpatialMeasure.m_MeasureObjectTool">
+            <summary>
+            MeasureObjectTool对象
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.FrmSpatialMeasure.m_MeasureElementTool">
+            <summary>
+            MeasureElementTool对象
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.FrmSpatialMeasure.m_PmdContents">
+            <summary>
+            IPmdContents对象
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.FrmSpatialMeasure.m_IsShow_Line">
+            <summary>
+            距离量测是否选中
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.FrmSpatialMeasure.m_IsShow_Area">
+            <summary>
+            面积量测是否选中
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.FrmSpatialMeasure.m_IsShow_Object">
+            <summary>
+            对象量测是否选中
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.FrmSpatialMeasure.m_IsShow_Element">
+            <summary>
+            元素量测是否选中
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FrmSpatialMeasure.#ctor(PIE.Carto.IPmdContents)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="pmdContents">视图组份</param>
+        </member>
+        <member name="M:PIE.Controls.FrmSpatialMeasure.FrmSpatialMeasure_Load(System.Object,System.EventArgs)">
+            <summary>
+            初始化窗体
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Controls.FrmSpatialMeasure.btn_MeasureLine_Click(System.Object,System.EventArgs)">
+            <summary>
+            距离量测
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Controls.FrmSpatialMeasure.btn_MeasureArea_Click(System.Object,System.EventArgs)">
+            <summary>
+            面积量测
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Controls.FrmSpatialMeasure.btn_MeasureObject_Click(System.Object,System.EventArgs)">
+            <summary>
+            对象量测
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Controls.FrmSpatialMeasure.btn_MeasureElement_Click(System.Object,System.EventArgs)">
+            <summary>
+            要素量测
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Controls.FrmSpatialMeasure.btn_Clear_Click(System.Object,System.EventArgs)">
+            <summary>
+            清空
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Controls.FrmSpatialMeasure.txtDisplay(System.String)">
+            <summary>
+            设置文本框显示
+            </summary>
+            <param name="str">文本框显示字符</param>
+        </member>
+        <member name="F:PIE.Controls.FrmSpatialMeasure.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FrmSpatialMeasure.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Controls.FrmSpatialMeasure.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.MeasureAreaTool">
+            <summary>
+            面积量算工具
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.MeasureAreaTool.m_strArea">
+            <summary>
+            获取面积
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.MeasureAreaTool.m_ActiveView">
+            <summary>
+            地图视图
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.MeasureAreaTool.m_FrmSpatialMeasure">
+            <summary>
+            空间量算窗体
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.MeasureAreaTool.m_LstPoint">
+            <summary>
+            鼠标位置
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.MeasureAreaTool.m_FillSymbol">
+            <summary>
+            面符号样式
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.MeasureAreaTool.#ctor(PIE.Carto.IActiveView)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="activeView">视图</param>
+        </member>
+        <member name="M:PIE.Controls.MeasureAreaTool.SetFillSymbol">
+            <summary>
+            设置面样式
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.MeasureAreaTool.OnMouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            鼠标移动
+            </summary>
+            <param name="sender">触发对象</param>  
+            <param name="e">鼠标事件参数</param>
+        </member>
+        <member name="M:PIE.Controls.MeasureAreaTool.OnDblClick">
+            <summary>
+            鼠标双击事件
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.MeasureAreaTool.OnMouseMove(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            鼠标移动
+            </summary>
+            <param name="sender">触发对象</param>  
+            <param name="e">鼠标事件参数</param>
+        </member>
+        <member name="M:PIE.Controls.MeasureAreaTool.SetForm(System.Windows.Forms.Form)">
+            <summary>
+            绑定窗体
+            </summary>
+            <param name="form">空间量算窗体</param>
+        </member>
+        <member name="T:PIE.Controls.MeasureElementTool">
+            <summary>
+            元素量测工具
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.MeasureElementTool.m_strLenth">
+            <summary>
+            获取长度
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.MeasureElementTool.m_strArea">
+            <summary>
+            获取面积
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.MeasureElementTool.m_ActiveView">
+            <summary>
+            地图视图
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.MeasureElementTool.m_FrmSpatialMeasure">
+            <summary>
+            空间量算窗体
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.MeasureElementTool.m_LstPoint">
+            <summary>
+            鼠标位置
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.MeasureElementTool.#ctor(PIE.Carto.IActiveView)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="activeView">视图</param>
+        </member>
+        <member name="M:PIE.Controls.MeasureElementTool.OnMouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            鼠标移动
+            </summary>
+            <param name="sender">触发对象</param>  
+            <param name="e">鼠标事件参数</param>
+        </member>
+        <member name="M:PIE.Controls.MeasureElementTool.MeasureElement_MouseDown(System.Drawing.Point)">
+            <summary>
+            要素量算
+            </summary>
+            <param name="point"></param>
+        </member>
+        <member name="M:PIE.Controls.MeasureElementTool.SelectElementsByPoint(PIE.Carto.IActiveView,PIE.Geometry.IPoint,System.Boolean)">
+            <summary>
+            通过鼠标点选择元素
+            </summary>
+            <param name="pActiveView"></param>
+            <param name="endPoint"></param>
+            <param name="p"></param>
+        </member>
+        <member name="M:PIE.Controls.MeasureElementTool.HasSelectElementByScreenPoint(System.Drawing.Point,System.Double@,System.Double@)">
+            <summary>
+            判断当前屏幕鼠标点是否有选择元素
+            </summary>
+            <param name="pt"></param>
+            <param name="ele_area"></param>
+            <param name="ele_Length"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Controls.MeasureElementTool.SetForm(System.Windows.Forms.Form)">
+            <summary>
+            绑定窗体
+            </summary>
+            <param name="form">空间量算窗体</param>
+        </member>
+        <member name="T:PIE.Controls.MeasureLineTool">
+            <summary>
+            距离量算工具
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.MeasureLineTool.m_strLenth">
+            <summary>
+            获取长度
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.MeasureLineTool.m_ActiveView">
+            <summary>
+            地图视图
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.MeasureLineTool.m_FrmSpatialMeasure">
+            <summary>
+            空间量算窗体
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.MeasureLineTool.m_LstPoint">
+            <summary>
+            鼠标位置
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.MeasureLineTool.m_LineSymbol">
+            <summary>
+            线样式
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.MeasureLineTool.#ctor(PIE.Carto.IActiveView)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="activeView">视图</param>
+        </member>
+        <member name="M:PIE.Controls.MeasureLineTool.SetLineSymbol">
+            <summary>
+            设置线样式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Controls.MeasureLineTool.OnMouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            鼠标按下
+            </summary>
+            <param name="sender">触发对象</param>  
+            <param name="e">鼠标事件参数</param>
+        </member>
+        <member name="M:PIE.Controls.MeasureLineTool.OnDblClick">
+            <summary>
+            鼠标双击事件
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.MeasureLineTool.OnMouseMove(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            鼠标移动
+            </summary>
+            <param name="sender">触发对象</param>  
+            <param name="e">鼠标事件参数</param>
+        </member>
+        <member name="M:PIE.Controls.MeasureLineTool.SetForm(System.Windows.Forms.Form)">
+            <summary>
+            绑定窗体
+            </summary>
+            <param name="form">空间量算窗体</param>
+        </member>
+        <member name="T:PIE.Controls.MeasureObjectTool">
+            <summary>
+            对象量算工具
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.MeasureObjectTool.m_strLenth">
+            <summary>
+            获取长度
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.MeasureObjectTool.m_strArea">
+            <summary>
+            获取面积
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.MeasureObjectTool.m_ActiveView">
+            <summary>
+            地图视图
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.MeasureObjectTool.m_FrmSpatialMeasure">
+            <summary>
+            空间量算窗体
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.MeasureObjectTool.m_LstPoint">
+            <summary>
+            鼠标位置
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.MeasureObjectTool.#ctor(PIE.Carto.IActiveView)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="activeView">视图</param>
+        </member>
+        <member name="M:PIE.Controls.MeasureObjectTool.OnMouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            鼠标移动
+            </summary>
+            <param name="sender">触发对象</param>  
+            <param name="e">鼠标事件参数</param>
+        </member>
+        <member name="M:PIE.Controls.MeasureObjectTool.SetForm(System.Windows.Forms.Form)">
+            <summary>
+            绑定窗体
+            </summary>
+            <param name="form">空间量算窗体</param>
+        </member>
+        <member name="T:PIE.Controls.SpatialMeasureCommand">
+            <summary>
+            空间量测Command
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.SpatialMeasureCommand.m_FrmSpatialMeasure">
+            <summary>
+            空间量算窗体
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.SpatialMeasureCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.SpatialMeasureCommand.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.SpatialMeasureCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.SpatialMeasureCommand.frmSpatialMeasure_Disposed(System.Object,System.EventArgs)">
+            <summary>
+            关闭FrmRasterIdentify窗体事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:PIE.Controls.DrawBalloonCalloutTextElementTool">
+            <summary>
+            绘制注释
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.DrawBalloonCalloutTextElementTool.#ctor">
+            <summary>
+            注释
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.DrawBalloonCalloutTextElementTool.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.DrawBalloonCalloutTextElementTool.OnMouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            点击事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:PIE.Controls.FrmTextDialog">
+            <summary>
+            绘制文本框
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.FrmTextDialog.contents">
+            <summary>
+            文本内容
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.FrmTextDialog.Contents">
+            <summary>
+            文本
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FrmTextDialog.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FrmTextDialog.button1_Click(System.Object,System.EventArgs)">
+            <summary>
+            确定
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Controls.FrmTextDialog.button2_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:PIE.Controls.FrmTextDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FrmTextDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Controls.FrmTextDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.MarkDeleteCommand">
+            <summary>
+            清除标绘
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.MarkDeleteCommand.#ctor">
+            <summary>
+            矩形
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.MarkDeleteCommand.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.MarkDeleteCommand.OnClick">
+            <summary>
+            点击事件
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.MarkDeleteCommand.IsEnable">
+            <summary>
+            按钮是否可用
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.SEL_TYPE">
+            <summary>
+            缩放类型
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.SelectElementTool">
+            <summary>
+            选择要素
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.SelectElementTool.startPoint">
+            <summary>
+            起始点
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.SelectElementTool.endPoint">
+            <summary>
+            结束点
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.SelectElementTool.movePoint">
+            <summary>
+            当前移动点
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.SelectElementTool.editMode">
+            <summary>
+            编辑类型
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.SelectElementTool.selType">
+            <summary>
+            缩放方式
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.SelectElementTool.zoomEle">
+            <summary>
+            IElement
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.SelectElementTool.zoomReferenceXMin">
+            <summary>
+            参考点XMin
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.SelectElementTool.zoomReferenceXMax">
+            <summary>
+            参考点XMax
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.SelectElementTool.zoomReferenceYMin">
+            <summary>
+            参考点YMin
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.SelectElementTool.zoomReferenceYMax">
+            <summary>
+            参考点YMax
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.SelectElementTool.isLock">
+            <summary>
+            是否锁定
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.SelectElementTool.m_nTextMoveStyle">
+            <summary>
+            文本元素移动样式
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.SelectElementTool.#ctor">
+            <summary>
+            选择要素
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.SelectElementTool.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.SelectElementTool.OnCreate(System.Object)">
+            <summary>
+            创建插件对象
+            </summary>
+            <param name="hook"></param>
+        </member>
+        <member name="M:PIE.Controls.SelectElementTool.OnMouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            点击事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Controls.SelectElementTool.GetTextMoveStyle(PIE.Geometry.IPoint)">
+            <summary>
+            获取移动文本样式
+            </summary>
+            <param name="ptPoint">起点</param>
+            <returns>移动文本的样式</returns>
+        </member>
+        <member name="M:PIE.Controls.SelectElementTool.OnMouseMove(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            鼠标移动
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Controls.SelectElementTool.MoveTextElement(PIE.Carto.ITextElement,PIE.Geometry.IPoint,PIE.Geometry.IPoint)">
+            <summary>
+            移动文本元素
+            </summary>
+            <param name="ele">文本元素</param>
+            <param name="startPoint">起点</param>
+            <param name="endPoint">终点</param>
+        </member>
+        <member name="M:PIE.Controls.SelectElementTool.OnMouseUp(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            鼠标弹起
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Controls.SelectElementTool.OnDblClick">
+            <summary>
+            双击事件
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.SelectElementTool.OnKeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            按键删除选定要素
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Controls.SelectElementTool.EnableZoomScreenPoint(System.Drawing.Point,PIE.Carto.IElement@,PIE.Controls.SEL_TYPE@)">
+            <summary>
+            是否满足缩放条件
+            </summary>
+            <param name="screenPoint">屏幕点</param>
+            <param name="pElement">缩放要素</param>
+            <param name="pType">缩放类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Controls.SelectElementTool.HasSelectElementByScreenPoint(System.Drawing.Point,System.Boolean)">
+            <summary>
+            判断当前鼠标是不是指向已选中的元素
+            </summary>
+            <param name="screenPoint"></param>
+            <param name="p"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Controls.SelectElementTool.GetPolygonByScreenPoint(System.Drawing.Point)">
+            <summary>
+            点缓冲面
+            </summary>
+            <param name="screenPoint"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Controls.SelectElementTool.SelectElementsByPoint(PIE.Geometry.IPoint,System.Boolean)">
+            <summary>
+            点选要素
+            </summary>
+            <param name="endPoint"></param>
+            <param name="p"></param>
+        </member>
+        <member name="M:PIE.Controls.SelectElementTool.ZoomElement(System.Double,System.Double,PIE.Geometry.IPoint,System.Int32)">
+            <summary>
+            根据参考点，移动点缩放要素
+            </summary>
+            <param name="refX">参考点X坐标</param>
+            <param name="refY">参考点Y坐标</param>
+            /// <param name="point">移动点</param>
+            <param name="nTag">有效值：0-X变动；1-Y变动；2-XY都变动</param>
+        </member>
+        <member name="M:PIE.Controls.SelectElementTool.DrawTempZoomElement(System.Double,System.Double,PIE.Geometry.IPoint,System.Int32)">
+            <summary>
+            根据参考点，移动点绘制临时缩放要素
+            </summary>
+            <param name="refX">参考点X坐标</param>
+            <param name="refY">参考点Y坐标</param>
+            /// <param name="point">移动点</param>
+            <param name="nTag">有效值：0-X变动；1-Y变动；2-XY都变动</param>
+        </member>
+        <member name="T:PIE.Controls.SelectElemnetToolEx">
+            <summary>
+            选择元素工具（在制图模式下能选择在地图模式下绘制的元素）
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.SelectElemnetToolEx.m_StartPoint">
+            <summary>
+            起始点
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.SelectElemnetToolEx.m_EndPoint">
+            <summary>
+            结束点
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.SelectElemnetToolEx.m_MovePoint">
+            <summary>
+            当前移动点
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.SelectElemnetToolEx.m_EditMode">
+            <summary>
+            编辑类型
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.SelectElemnetToolEx.m_SelType">
+            <summary>
+            缩放方式
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.SelectElemnetToolEx.m_ZoomEle">
+            <summary>
+            IElement
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.SelectElemnetToolEx.m_ZoomReferenceXMin">
+            <summary>
+            参考点XMin
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.SelectElemnetToolEx.m_ZoomReferenceXMax">
+            <summary>
+            参考点XMax
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.SelectElemnetToolEx.m_ZoomReferenceYMin">
+            <summary>
+            参考点YMin
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.SelectElemnetToolEx.m_ZoomReferenceYMax">
+            <summary>
+            参考点YMax
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.SelectElemnetToolEx.m_IsLock">
+            <summary>
+            是否锁定
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.SelectElemnetToolEx.m_BControlKeys">
+            <summary>
+            文本元素移动样式
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.SelectElemnetToolEx.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.SelectElemnetToolEx.OnCreate(System.Object)">
+            <summary>
+            创建插件对象
+            </summary>
+            <param name="hook"></param>
+        </member>
+        <member name="M:PIE.Controls.SelectElemnetToolEx.#ctor">
+            <summary>
+            选择要素
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.SelectElemnetToolEx.OnMouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            点击事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Controls.SelectElemnetToolEx.OnMouseUp(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            鼠标弹起
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Controls.SelectElemnetToolEx.OnMouseMove(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            鼠标移动
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Controls.SelectElemnetToolEx.OnKeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            按键删除选定要素
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Controls.SelectElemnetToolEx.OnKeyUp(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            按键弹起事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Controls.SelectElemnetToolEx.OnDblClick">
+            <summary>
+            双击事件
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.SelectElemnetToolEx.GetTextMoveStyle(PIE.Geometry.IPoint)">
+            <summary>
+            获取移动文本样式
+            </summary>
+            <param name="ptPoint">起点</param>
+            <returns>移动文本的样式</returns>
+        </member>
+        <member name="M:PIE.Controls.SelectElemnetToolEx.GetMapByMapFrameElement">
+            <summary>
+            通过制图下的mapFrameElement得到地图下的地图Map
+            </summary>
+            <returns></returns>
+            
+        </member>
+        <member name="M:PIE.Controls.SelectElemnetToolEx.IsMapModeElement(PIE.Carto.IActiveView,PIE.Carto.IActiveView@)">
+            <summary>
+            是否是地图模式元素（制图模式中）    //目标：判断悬浮点在哪个元素上
+            </summary>
+            <param name="pActiveView"></param>
+            <param name="activeView"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Controls.SelectElemnetToolEx.GetMapInfo(PIE.Carto.IActiveView,PIE.Carto.IActiveView@)">
+            <summary>
+            得到地图信息（制图模式中）
+            </summary>
+            <param name="pActiveView"></param>
+            <param name="activeView"></param>
+        </member>
+        <member name="M:PIE.Controls.SelectElemnetToolEx.SelectElementsByPoint(PIE.Geometry.IPoint,PIE.Carto.IActiveView)">
+            <summary>
+            点选要素
+            </summary>
+            <param name="endPoint"></param>
+            <param name="activeView"></param>
+            <param name="p"></param>
+        </member>
+        <member name="M:PIE.Controls.SelectElemnetToolEx.ZoomElement(System.Double,System.Double,PIE.Geometry.IPoint,System.Int32)">
+            <summary>
+            根据参考点，移动点缩放要素
+            </summary>
+            <param name="refX">参考点X坐标</param>
+            <param name="refY">参考点Y坐标</param>
+            /// <param name="point">移动点</param>
+            <param name="nTag">有效值：0-X变动；1-Y变动；2-XY都变动</param>
+        </member>
+        <member name="M:PIE.Controls.SelectElemnetToolEx.HasSelectElementByScreenPoint(System.Drawing.Point,PIE.Carto.IActiveView,System.Boolean)">
+            <summary>
+            判断当前鼠标是不是指向已选中的元素
+            </summary>
+            <param name="screenPoint"></param>
+            <param name="p"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Controls.SelectElemnetToolEx.GetPolygonByScreenPoint(System.Drawing.Point,PIE.Carto.IActiveView)">
+            <summary>
+            点缓冲面
+            </summary>
+            <param name="screenPoint"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Controls.SelectElemnetToolEx.EnableZoomScreenPoint(System.Drawing.Point,PIE.Carto.IActiveView,PIE.Carto.IElement@,PIE.Controls.SEL_TYPE@)">
+            <summary>
+            是否满足缩放条件
+            </summary>
+            <param name="screenPoint">屏幕点</param>
+            <param name="pElement">缩放要素</param>
+            <param name="pType">缩放类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Controls.SelectElemnetToolEx.DrawTempZoomElement(PIE.Carto.IActiveView,System.Double,System.Double,PIE.Geometry.IPoint,System.Int32)">
+            <summary>
+            根据参考点，移动点绘制临时缩放要素
+            </summary>
+            <param name="refX">参考点X坐标</param>
+            <param name="refY">参考点Y坐标</param>
+            /// <param name="point">移动点</param>
+            <param name="nTag">有效值：0-X变动；1-Y变动；2-XY都变动</param>
+        </member>
+        <member name="M:PIE.Controls.SelectElemnetToolEx.MoveTextElement(PIE.Carto.ITextElement,PIE.Geometry.IPoint,PIE.Geometry.IPoint)">
+            <summary>
+            移动文本元素
+            </summary>
+            <param name="ele">文本元素</param>
+            <param name="startPoint">起点</param>
+            <param name="endPoint">终点</param>
+        </member>
+        <member name="T:PIE.Controls.FeatureLayerAttributeCommand">
+            <summary>
+            属性表
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FeatureLayerAttributeCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.FeatureLayerAttributeCommand.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FeatureLayerAttributeCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.LayerPropertyCommand">
+            <summary>
+            隐藏所有图层
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.LayerPropertyCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.LayerPropertyCommand.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.LayerPropertyCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.ModifySpatialReferenceCommand">
+            <summary>
+            修改坐标系
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.ModifySpatialReferenceCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.ModifySpatialReferenceCommand.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.ModifySpatialReferenceCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.AttributeEditCommand">
+            <summary>
+            属性编辑Command
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.AttributeEditCommand.m_AttributeEditControl">
+            <summary>
+            属性编辑窗口
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.AttributeEditCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.AttributeEditCommand.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.AttributeEditCommand.OnCreate(System.Object)">
+            <summary>
+            创建命令
+            </summary>
+            <param name="hook"></param>
+        </member>
+        <member name="M:PIE.Controls.AttributeEditCommand.OnClick">
+            <summary>
+            点击
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.AttributeEditCommand.m_FormAttributeEdit_Disposed(System.Object,System.EventArgs)">
+            <summary>
+            窗体关闭
+            </summary>
+            <param name="sender">触发对象</param>  
+            <param name="e">鼠标事件参数</param>
+        </member>
+        <member name="T:PIE.Controls.AttributeEditControl">
+            <summary>
+            属性编辑控件
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.AttributeEditControl.m_FocusMap">
+            <summary>
+            焦点地图
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.AttributeEditControl.m_CurrentFeature">
+            <summary>
+            当前Feature
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.AttributeEditControl.#ctor(PIE.Carto.IMap)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.AttributeEditControl.UnBindingEvents">
+            <summary>
+            解绑事件
+            </summary>
+            <returns>解绑事件成功</returns>
+        </member>
+        <member name="M:PIE.Controls.AttributeEditControl.InitialControl">
+            <summary>
+            初始化Control
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.AttributeEditControl.BuildLayerNode(PIE.Carto.IFeatureLayer,System.Collections.Generic.IList{PIE.DataSource.IFeature})">
+            <summary>
+            建立目录树节点，以及datagridview
+            </summary>
+            <param name="fLayer"></param>
+            <param name="listFeatures"></param>
+        </member>
+        <member name="M:PIE.Controls.AttributeEditControl.InitialDataGridView(System.Windows.Forms.TreeNode)">
+            <summary>
+            初始化Tool
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.AttributeEditControl.activeViewEvents_OnLayerDeleted(PIE.Carto.ILayer)">
+            <summary>
+            监听图层删除事件
+            </summary>
+            <param name="layer"></param>
+        </member>
+        <member name="M:PIE.Controls.AttributeEditControl.activeViewEvents_OnFeaturesSelectionChanged">
+            <summary>
+            图层要素选择变化
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.AttributeEditControl.treeView1_MouseClick(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            点击选择Feature
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Controls.AttributeEditControl.dataGridView1_CellValueChanged(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+            <summary>
+            Feature属性值变化事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:PIE.Controls.AttributeEditControl.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.AttributeEditControl.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:PIE.Controls.AttributeEditControl.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.NodeTag">
+            <summary>
+            目录树节点赋值
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.NodeTag.m_FeaLayer">
+            <summary>
+            节点存储的Layer
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.NodeTag.m_Feature">
+            <summary>
+            节点存储的Feature
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.EditFeatureNodeTool">
+            <summary>
+            编辑要素节点Tool
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.EditFeatureNodeTool.m_ActiveView">
+            <summary>
+            ActiveView
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.EditFeatureNodeTool.m_Feature">
+            <summary>
+            Feature对象
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.EditFeatureNodeTool.m_NewGeo">
+            <summary>
+            Geometry
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.EditFeatureNodeTool.m_Lock">
+            <summary>
+            是否锁定
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.EditFeatureNodeTool.m_MoveLock">
+            <summary>
+            移动是否锁定
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.EditFeatureNodeTool.m_CanEdit">
+            <summary>
+            是否可编辑
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.EditFeatureNodeTool.m_EditPoint">
+            <summary>
+            当前编辑点
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.EditFeatureNodeTool.m_EditPointIndex">
+            <summary>
+            当前编辑点的索引
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.EditFeatureNodeTool.m_Editor">
+            <summary>
+            编辑器
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.EditFeatureNodeTool.m_ScreenPoint">
+            <summary>
+            屏幕点
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.EditFeatureNodeTool.m_EditCur">
+            <summary>
+            编辑节点时的鼠标样式
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.EditFeatureNodeTool.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.EditFeatureNodeTool.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.EditFeatureNodeTool.OnCreate(System.Object)">
+            <summary>
+            创建命令
+            </summary>
+            <param name="hook"></param>
+        </member>
+        <member name="M:PIE.Controls.EditFeatureNodeTool.OnClick">
+            <summary>
+            单击事件
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.EditFeatureNodeTool.OnContextMenu(System.Int32,System.Int32)">
+            <summary>
+            右键菜单弹出
+            </summary>
+            <param name="x">点击点X</param>  
+            <param name="y">点击点Y</param>
+            <returns>是否成功</returns> 
+        </member>
+        <member name="M:PIE.Controls.EditFeatureNodeTool.OnMouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            鼠标按下事件
+            </summary>
+            <param name="sender"></param>  
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Controls.EditFeatureNodeTool.OnMouseMove(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            鼠标移动事件
+            </summary>
+            <param name="sender"></param>  
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Controls.EditFeatureNodeTool.OnMouseUp(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            鼠标弹起事件
+            </summary>
+            <param name="sender"></param>  
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Controls.EditFeatureNodeTool.Deactivate">
+            <summary>
+            取消激活
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.EditFeatureNodeTool.HasSelectEditFeature">
+            <summary>
+            tool是否可用 判断有选中要素
+            </summary>
+            <returns>是否成功</returns> 
+        </member>
+        <member name="M:PIE.Controls.EditFeatureNodeTool.CanEditNode(System.Drawing.Point)">
+            <summary>
+            判断鼠标是否在节点上，若是则可以移动或删除节点
+            </summary>
+            <param name="screenPoint">点对象</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:PIE.Controls.EditFeatureNodeTool.GetPolygonByScreenPoint(System.Drawing.Point)">
+            <summary>
+            获取面
+            </summary>
+            <param name="screenPoint">点对象</param>
+            <returns>面</returns>
+        </member>
+        <member name="M:PIE.Controls.EditFeatureNodeTool.CanShowMenu(System.Drawing.Point)">
+            <summary>
+            是否可以弹出菜单 判断鼠标是否与Geometry相交
+            </summary>
+            <param name="screenPoint">点对象</param>
+            <returns>是否可见</returns>
+        </member>
+        <member name="M:PIE.Controls.EditFeatureNodeTool.IsNodeDeleteEnable">
+            <summary>
+            删除节点是否可用
+            </summary>
+            <returns>是否可用</returns>
+        </member>
+        <member name="M:PIE.Controls.EditFeatureNodeTool.itemDelete_Click(System.Object,System.EventArgs)">
+            <summary>
+            删除节点
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Controls.EditFeatureNodeTool.itemAdd_Click(System.Object,System.EventArgs)">
+            <summary>
+            新增节点
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:PIE.Controls.SplitToShapeFileCommand">
+            <summary>
+            分割提取Command
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.SplitToShapeFileCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.UnionFeatureCommand">
+            <summary>
+            合并要素Command
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.UnionFeatureCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.UndoCommand">
+            <summary>
+            撤销Command
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.UndoCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.TraceCommand">
+            <summary>
+            追踪Command
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.TraceCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.StopEditCommand">
+            <summary>
+            结束编辑Command
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.StopEditCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.StopEditCommand.OnClick">
+            <summary>
+            单击事件
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.StartEditCommand">
+            <summary>
+            开始编辑Command
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.StartEditCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.SplitFeatureCommand">
+            <summary>
+            拆分要素Command
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.SplitFeatureCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.SnappingVertexCommand">
+            <summary>
+            捕捉折点Command
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.SnappingVertexCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.SnappingPointCommand">
+            <summary>
+            捕捉点Command
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.SnappingPointCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.SnappingMidPointCommand">
+            <summary>
+            捕捉中点Command
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.SnappingMidPointCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.SnappingEndCommand">
+            <summary>
+            捕捉端点Command
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.SnappingEndCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.SnappingEdgeCommand">
+            <summary>
+            捕捉线Command
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.SnappingEdgeCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.SelectFeatureTool">
+            <summary>
+            选择要素Tool
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.SelectFeatureTool.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.SaveEditCommand">
+            <summary>
+            保存编辑Command
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.SaveEditCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.RotateFeatureTool">
+            <summary>
+            旋转要素Tool
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.RotateFeatureTool.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.ReshapeFeatureTool">
+            <summary>
+            整形要素Tool
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.ReshapeFeatureTool.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.RedoCommand">
+            <summary>
+            恢复Command
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.RedoCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.DeleteFeatureCommand">
+            <summary>
+            删除要素Command
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.DeleteFeatureCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.ClearSelectionFeaturesCommand">
+            <summary>
+            清空选择要素Command
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.ClearSelectionFeaturesCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.ClipFeatureTool">
+            <summary>
+            裁切要素Tool
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.ClipFeatureTool.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.MoveFeatureTool">
+            <summary>
+            移动要素Tool
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.MoveFeatureTool.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.DrawRectFeatureTool">
+            <summary>
+            绘制矩形要素Tool
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.DrawRectFeatureTool.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.DrawPolylineFeatureTool">
+            <summary>
+            绘制线要素Tool
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.DrawPolylineFeatureTool.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.DrawPolygonFeatureTool">
+            <summary>
+            绘制多边形要素Tool
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.DrawPolygonFeatureTool.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.DrawPointFeatureTool">
+            <summary>
+            绘制点要素Tool
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.DrawPointFeatureTool.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.DrawEllipseFeatureTool">
+            <summary>
+            绘制椭圆要素Tool
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.DrawEllipseFeatureTool.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.DrawCircleFeatureTool">
+            <summary>
+            绘制圆形要素Tool
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.DrawCircleFeatureTool.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.AnalyseBufferCommand">
+            <summary>
+            缓冲区分析Command
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.AnalyseBufferCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.AddFeatureCommand">
+            <summary>
+            添加要素Command
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.AddFeatureCommand.m_AddFeatrureControl">
+            <summary>
+            添加要素窗口
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.AddFeatureCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.AddFeatureCommand.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.AddFeatureCommand.OnCreate(System.Object)">
+            <summary>
+            创建命令
+            </summary>
+            <param name="hook"></param>
+        </member>
+        <member name="M:PIE.Controls.AddFeatureCommand.OnClick">
+            <summary>
+            点击
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.AddFeatureCommand.m_FormAddFeature_Disposed(System.Object,System.EventArgs)">
+            <summary>
+            窗体关闭
+            </summary>
+            <param name="sender">触发对象</param>  
+            <param name="e">鼠标事件参数</param>
+        </member>
+        <member name="T:PIE.Controls.AddFeatureControl">
+            <summary>
+            添加要素
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.AddFeatureControl.m_FocusMap">
+            <summary>
+            焦点地图
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.AddFeatureControl.m_HookHelper">
+            <summary>
+            IHookHelper
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.AddFeatureControl.m_ListFLayer">
+            <summary>
+            用于关联listBoxControl_Layers具体对象
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.AddFeatureControl.#ctor(PIE.Carto.IHookHelper)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.AddFeatureControl.InitialControl">
+            <summary>
+            初始化Control
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.AddFeatureControl.InitialTool">
+            <summary>
+            初始化Tool
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.AddFeatureControl.SetCurrentTool(System.String)">
+            <summary>
+            设置当前tool
+            </summary>
+            <param name="type"></param>
+        </member>
+        <member name="M:PIE.Controls.AddFeatureControl.activeViewEvents_OnLayerDeleted(PIE.Carto.ILayer)">
+            <summary>
+            监听图层删除事件
+            </summary>
+            <param name="layer"></param>
+        </member>
+        <member name="M:PIE.Controls.AddFeatureControl.activeViewEvents_OnLayerAdded(PIE.Carto.ILayer)">
+            <summary>
+            监听新增图层事件
+            </summary>
+            <param name="layer"></param>
+        </member>
+        <member name="M:PIE.Controls.AddFeatureControl.listBoxControl_Layers_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            当前layer变化事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Controls.AddFeatureControl.imageListBoxControl_Tool_MouseClick(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            tool点击事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:PIE.Controls.AddFeatureControl.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.AddFeatureControl.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:PIE.Controls.AddFeatureControl.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.CreateLayerCommand">
+            <summary>
+            创建图层Command
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.CreateLayerCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.CreateLayerCommand.OnClick">
+            <summary>
+            点击事件
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.EditLayerCommand">
+            <summary>
+            编辑图层Command
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.EditLayerCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.EditLayerCommand.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.EditLayerCommand.OnCreate(System.Object)">
+            <summary>
+            创建插件对象
+            </summary>
+            <param name="hook"></param>
+        </member>
+        <member name="M:PIE.Controls.EditLayerCommand.OnClick">
+            <summary>
+            点击事件
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.FrmCreateFeatureLayer">
+            <summary>
+            创建图层/编辑图层窗体
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.FrmCreateFeatureLayer.m_FocusMap">
+            <summary>
+            当前地图
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.FrmCreateFeatureLayer.FeatureLayer">
+            <summary>
+            FeatureLayer
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FrmCreateFeatureLayer.InitialData">
+            <summary>
+            初始化窗体
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FrmCreateFeatureLayer.#ctor(PIE.Carto.IFeatureLayer,PIE.Carto.IMap)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FrmCreateFeatureLayer.dataGridView1_EditingControlShowing(System.Object,System.Windows.Forms.DataGridViewEditingControlShowingEventArgs)">
+            <summary>
+            单元格开始编辑事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Controls.FrmCreateFeatureLayer.textBox_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+            <summary>
+            鼠标编辑事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Controls.FrmCreateFeatureLayer.dataGridView1_CellValueChanged(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+            <summary>
+            Grid值变化事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Controls.FrmCreateFeatureLayer.simpleButton_FileOut_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择输出路径
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Controls.FrmCreateFeatureLayer.simpleButton_Cooor_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择坐标系
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Controls.FrmCreateFeatureLayer.simpleButton_Add_Click(System.Object,System.EventArgs)">
+            <summary>
+            添加
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Controls.FrmCreateFeatureLayer.simpleButton_Delete_Click(System.Object,System.EventArgs)">
+            <summary>
+            删除
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Controls.FrmCreateFeatureLayer.simpleButton_Sure_Click(System.Object,System.EventArgs)">
+            <summary>
+            确定
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Controls.FrmCreateFeatureLayer.simpleButton_Cancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Controls.FrmCreateFeatureLayer.CheckOutFields">
+            <summary>
+            校验字段
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FrmCreateFeatureLayer.InitialFields">
+            <summary>
+            初始化字段列表
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FrmCreateFeatureLayer.ChangeFieldType(System.Int32)">
+            <summary>
+            转换字段类型在界面的显示
+            </summary>
+            <param name="fType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Controls.FrmCreateFeatureLayer.GetListFieldName">
+            <summary>
+            获得字段名称
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:PIE.Controls.FrmCreateFeatureLayer.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FrmCreateFeatureLayer.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Controls.FrmCreateFeatureLayer.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.MapScaleCommandControl">
+            <summary>
+            地图比例尺控件
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.MapScaleCommandControl.m_ToolStripComboxItem">
+            <summary>
+            ToolStripComboBox
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.MapScaleCommandControl.m_TransformEvents">
+            <summary>
+            ITransformEvents
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.MapScaleCommandControl.m_Locked">
+            <summary>
+            是否锁定
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.MapScaleCommandControl.mMutex">
+            <summary>
+            线程同步
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.MapScaleCommandControl.mThreadId">
+            <summary>
+            线程ID
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.MapScaleCommandControl.mAsyncOperation">
+            <summary>
+            异步操作对象
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.MapScaleCommandControl.mCallbackRecieved">
+            <summary>
+            接收到事件回调方法
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.MapScaleCommandControl.Control">
+            <summary>
+            Control
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.MapScaleCommandControl.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.MapScaleCommandControl.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.MapScaleCommandControl.OnCreate(System.Object)">
+            <summary>
+            创建插件对象
+            </summary>
+            <param name="hook"></param>
+        </member>
+        <member name="M:PIE.Controls.MapScaleCommandControl.comBoxItem_EditValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            坐标变化事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Controls.MapScaleCommandControl.m_TransformEvents_OnResolutionUpdated(PIE.Display.IDisplayTransformation)">
+            <summary>
+            地图比例尺变化事件
+            </summary>
+            <param name="displayTransformation"></param>
+        </member>
+        <member name="M:PIE.Controls.MapScaleCommandControl.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.MapScaleCommandControl.CallbackUpdataBarItemUIEvent(System.Object)">
+            <summary>
+            触发回调方法
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="T:PIE.Controls.AdjustBrightnessControl">
+            <summary>
+            调整亮度
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.AdjustBrightnessControl.m_ToolStripComboBoxItem">
+            <summary>
+            ToolStripComboBox
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.AdjustBrightnessControl.Control">
+            <summary>
+            Control
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.AdjustBrightnessControl.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.AdjustBrightnessControl.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.AdjustBrightnessControl.OnCreate(System.Object)">
+            <summary>
+            创建插件对象
+            </summary>
+            <param name="hook"></param>
+        </member>
+        <member name="M:PIE.Controls.AdjustBrightnessControl.activeViewEvents_OnBeforeCurrentLayerChanging">
+            <summary>
+            当前视图变化前
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.AdjustBrightnessControl.AdjustBrightnessControl_OnPropertyChanged(PIE.Carto.ILayer)">
+            <summary>
+            图层属性变化事件
+            </summary>
+            <param name="layer"></param>
+        </member>
+        <member name="M:PIE.Controls.AdjustBrightnessControl.activeViewEvents_OnCurrentLayerChanged">
+            <summary>
+            当前图层发生变化后
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.AdjustBrightnessControl.comBoxItem_EditValueChanging(System.Object,System.EventArgs)">
+            <summary>
+            亮度值调整事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:PIE.Controls.AdjustContrastControl">
+            <summary>
+            调整对比度
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.AdjustContrastControl.m_ToolStripComboBoxItem">
+            <summary>
+            ToolStripComboBox
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.AdjustContrastControl.Control">
+            <summary>
+            Control
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.AdjustContrastControl.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.AdjustContrastControl.OnCreate(System.Object)">
+            <summary>
+            创建插件对象
+            </summary>
+            <param name="hook"></param>
+        </member>
+        <member name="M:PIE.Controls.AdjustContrastControl.activeViewEvents_OnBeforeCurrentLayerChanging">
+            <summary>
+            当前视图变化前
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.AdjustContrastControl.AdjustTransparentControl_OnPropertyChanged(PIE.Carto.ILayer)">
+            <summary>
+            图层属性变化事件
+            </summary>
+            <param name="layer"></param>
+        </member>
+        <member name="M:PIE.Controls.AdjustContrastControl.activeViewEvents_OnCurrentLayerChanged">
+            <summary>
+            当前图层发生变化后
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.AdjustContrastControl.comBoxItem_EditValueChanging(System.Object,System.EventArgs)">
+            <summary>
+            对比度值调整事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="P:PIE.Controls.AdjustContrastControl.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.AdjustTransparentControl">
+            <summary>
+            调整透明度
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.AdjustTransparentControl.m_ToolStripComboBoxItem">
+            <summary>
+            ToolStripComboBox
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.AdjustTransparentControl.Control">
+            <summary>
+            Control
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.AdjustTransparentControl.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.AdjustTransparentControl.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.AdjustTransparentControl.OnCreate(System.Object)">
+            <summary>
+            创建插件对象
+            </summary>
+            <param name="hook"></param>
+        </member>
+        <member name="M:PIE.Controls.AdjustTransparentControl.activeViewEvents_OnBeforeCurrentLayerChanging">
+            <summary>
+            当前图层变化前
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.AdjustTransparentControl.activeViewEvents_OnCurrentLayerChanged">
+            <summary>
+            当前图层变化后
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.AdjustTransparentControl.AdjustTransparentControl_OnPropertyChanged(PIE.Carto.ILayer)">
+            <summary>
+            图层属性变化事件
+            </summary>
+            <param name="layer"></param>
+        </member>
+        <member name="M:PIE.Controls.AdjustTransparentControl.comBoxItem_EditValueChanging(System.Object,System.EventArgs)">
+            <summary>
+            透明度值调整事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:PIE.Controls.SwitchStretchModeControl">
+            <summary>
+            设置拉伸方式
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.SwitchStretchModeControl.m_ToolStripComboBoxItem">
+            <summary>
+            ToolStripComboBox
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.SwitchStretchModeControl.Control">
+            <summary>
+            Control
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.SwitchStretchModeControl.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.SwitchStretchModeControl.OnCreate(System.Object)">
+            <summary>
+            创建插件对象
+            </summary>
+            <param name="hook">hook对象</param>
+        </member>
+        <member name="M:PIE.Controls.SwitchStretchModeControl.activeViewEvents_OnBeforeCurrentLayerChanging">
+            <summary>
+            当前图层变化前
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.SwitchStretchModeControl.activeViewEvents_OnCurrentLayerChanged">
+            <summary>
+            当前图层变化后
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.SwitchStretchModeControl.AdjustTransparentControl_OnPropertyChanged(PIE.Carto.ILayer)">
+            <summary>
+            图层属性变化事件
+            </summary>
+            <param name="layer"></param>
+        </member>
+        <member name="M:PIE.Controls.SwitchStretchModeControl.comBoxItem_EditValueChanging(System.Object,System.EventArgs)">
+            <summary>
+            拉伸方式变化事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Controls.SwitchStretchModeControl.ResetStretch(PIE.Carto.IRasterStretch)">
+            <summary>
+            重置combobox值
+            </summary>
+            <param name="strech"></param>
+        </member>
+        <member name="P:PIE.Controls.SwitchStretchModeControl.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.AddMapFrameCommand">
+            <summary>
+            添加数据框
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.AddMapFrameCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.AddMapFrameCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.ChangePageTemplateCommand">
+            <summary>
+            切换制图模板
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.ChangePageTemplateCommand.m_ChangePageTemplate">
+            <summary>
+            模板变量
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.ChangePageTemplateCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.ChangePageTemplateCommand.OnCreate(System.Object)">
+            <summary>
+            创建插件对象
+            </summary>
+            <param name="hook"></param>
+        </member>
+        <member name="M:PIE.Controls.ChangePageTemplateCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.StopAutoSaveCommand">
+            <summary>
+            结束自动保存Command
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.StopAutoSaveCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.StopAutoSaveCommand.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.StopAutoSaveCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.StartAutoSaveCommand">
+            <summary>
+            开始自动保存Command
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.StartAutoSaveCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.StartAutoSaveCommand.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.StartAutoSaveCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.PageLayoutAutoSaveWrapper">
+            <summary>
+            自动保存类
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.PageLayoutAutoSaveWrapper.m_Timer">
+            <summary>
+            定时器对象
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.PageLayoutAutoSaveWrapper.m_Lock">
+            <summary>
+            锁
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.PageLayoutAutoSaveWrapper.m_Instance">
+            <summary>
+            实例
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.PageLayoutAutoSaveWrapper.PmdContents">
+            <summary>
+            自动保存对象
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.PageLayoutAutoSaveWrapper.BStartAutoSave">
+            <summary>
+            是否开启自动保存
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.PageLayoutAutoSaveWrapper.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.PageLayoutAutoSaveWrapper.GetInstance">
+            <summary>
+            获得实例
+            </summary>
+            <returns>实例对象</returns>
+        </member>
+        <member name="M:PIE.Controls.PageLayoutAutoSaveWrapper.Start">
+            <summary>
+            实例化Timer,设置时间间隔,并开始Timer
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.PageLayoutAutoSaveWrapper.Stop">
+            <summary>
+            结束方法
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.PageLayoutAutoSaveWrapper.Dispose">
+            <summary>
+            释放Timer
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.PageLayoutAutoSaveWrapper.m_Timer_Tick(System.Object,System.EventArgs)">
+            <summary>
+            Timer到执行的事件
+            </summary>
+            <param name="sender">事件触发器</param>
+            <param name="e">事件参数</param>
+        </member>
+        <member name="T:PIE.Controls.FrmChangePageTemplate">
+            <summary>
+            模板窗体
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FrmChangePageTemplate.#ctor">
+            <summary>
+            加载的pmd路径
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.FrmChangePageTemplate.PmdPath">
+            <summary>
+            加载的pmd路径
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.FrmChangePageTemplate.m_PmdPath">
+            <summary>
+            加载的pmd路径
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FrmChangePageTemplate.btnOK_Click(System.Object,System.EventArgs)">
+            <summary>
+            确定
+            </summary>
+            <param name="sender">事件触发器</param>
+            <param name="e">事件参数</param>
+        </member>
+        <member name="M:PIE.Controls.FrmChangePageTemplate.btnCancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消
+            </summary>
+            <param name="sender">事件触发器</param>
+            <param name="e">事件参数</param>
+        </member>
+        <member name="F:PIE.Controls.FrmChangePageTemplate.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FrmChangePageTemplate.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Controls.FrmChangePageTemplate.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.ChangePageTemplateControl">
+            <summary>
+            切换地图模板UserControl
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.ChangePageTemplateControl.m_PmdDirePath">
+            <summary>
+            Pmd文件夹路径
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.ChangePageTemplateControl.m_PmdFilePath">
+            <summary>
+            Pmd文件的路径
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.ChangePageTemplateControl.m_LstPmdFullName">
+            <summary>
+            当前文件夹下Pmd文件路径集合
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.ChangePageTemplateControl.m_LstImage">
+            <summary>
+            当前文件夹下Pmd的示意图路径集合
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.ChangePageTemplateControl.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.ChangePageTemplateControl.PmdFilePath">
+            <summary>
+            Pmd路径
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.ChangePageTemplateControl.Initialize">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.ChangePageTemplateControl.ReadPmdFiles(System.String)">
+            <summary>
+            读取指定路径下的pmd文件
+            </summary>
+            <param name="pmdPath">pmdPath对象</param>
+        </member>
+        <member name="M:PIE.Controls.ChangePageTemplateControl.InitialListView">
+            <summary>
+            设置平铺的图片和名称
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.ChangePageTemplateControl.GetImageByMapDocument(PIE.Carto.IMapDocument)">
+            <summary>
+            设置图片
+            </summary>
+            <param name="mapDocument">MapDocument对象C</param>
+            <returns>Image对象</returns>
+        </member>
+        <member name="M:PIE.Controls.ChangePageTemplateControl.lstPmd_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            模板切换事件
+            </summary>
+            <param name="sender">事件触发器</param>
+            <param name="e">事件触发参数</param>
+        </member>
+        <member name="M:PIE.Controls.ChangePageTemplateControl.btnOpen_Click(System.Object,System.EventArgs)">
+            <summary>
+            打开pmd文档
+            </summary>
+            <param name="sender">事件触发器</param>
+            <param name="e">事件触发参数</param>
+        </member>
+        <member name="M:PIE.Controls.ChangePageTemplateControl.btnDetails_Click(System.Object,System.EventArgs)">
+            <summary>
+            列表
+            </summary>
+            <param name="sender">事件触发器</param>
+            <param name="e">事件参数</param>
+        </member>
+        <member name="M:PIE.Controls.ChangePageTemplateControl.btnThumbnail_Click(System.Object,System.EventArgs)">
+            <summary>
+            平铺
+            </summary>
+            <param name="sender">事件触发器</param>
+            <param name="e">事件参数</param>
+        </member>
+        <member name="M:PIE.Controls.ChangePageTemplateControl.listView1_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            平铺改变事件
+            </summary>
+            <param name="sender">事件触发器</param>
+            <param name="e">事件触发参数</param>
+        </member>
+        <member name="F:PIE.Controls.ChangePageTemplateControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.ChangePageTemplateControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Controls.ChangePageTemplateControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.BookMarksCommand">
+            <summary>
+            书签管理Command
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.BookMarksCommand.m_FrmBookMarks">
+            <summary>
+            书签管理窗体
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.BookMarksCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.BookMarksCommand.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.BookMarksCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.BookMarksCommand.frmBookMarks_Disposed(System.Object,System.EventArgs)">
+            <summary>
+            关闭书签管理窗体事件
+            </summary>
+            <param name="sender">事件触发器</param>
+            <param name="e">事件触发参数</param>
+        </member>
+        <member name="T:PIE.Controls.BookMarksControl">
+            <summary>
+            书签管理
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.BookMarksControl.m_PmdContents">
+            <summary>
+            IPmdContents对象
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.BookMarksControl.m_BookMarksList">
+            <summary>
+            书签名称集合
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.BookMarksControl.m_BookMarkXmlPath">
+            <summary>
+            书签名称xml路径
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.BookMarksControl.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.BookMarksControl.Initialize(PIE.Carto.IPmdContents)">
+            <summary>
+            初始化
+            </summary>
+            <param name="pmdContents">视图组份</param>
+        </member>
+        <member name="M:PIE.Controls.BookMarksControl.IntialDataGridViewXML">
+            <summary>
+            初始化表格和xml文档
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.BookMarksControl.ToolStripMenuItem_Add_Click(System.Object,System.EventArgs)">
+            <summary>
+            创建书签
+            </summary>
+            <param name="sender">事件触发器</param>
+            <param name="e">事件触发参数</param>
+        </member>
+        <member name="M:PIE.Controls.BookMarksControl.ToolStripMenuItem_Delete_Click(System.Object,System.EventArgs)">
+            <summary>
+            删除书签
+            </summary>
+            <param name="sender">事件触发器</param>
+            <param name="e">事件触发参数</param>
+        </member>
+        <member name="M:PIE.Controls.BookMarksControl.dataGridView1_CellDoubleClick(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+            <summary>
+            双击触发事件
+            </summary>
+            <param name="sender">事件触发器</param>
+            <param name="e">事件触发参数</param>
+        </member>
+        <member name="F:PIE.Controls.BookMarksControl.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.BookMarksControl.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:PIE.Controls.BookMarksControl.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.FrmAddBookMark">
+            <summary>
+            书签管理窗体
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.FrmAddBookMark.BookMarkName">
+            <summary>
+            书签名称
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.FrmAddBookMark.m_BookMarksList">
+            <summary>
+            书签名称集合
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FrmAddBookMark.#ctor(System.Collections.Generic.IList{System.String})">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FrmAddBookMark.button_OK_Click(System.Object,System.EventArgs)">
+            <summary>
+            确定
+            </summary>
+            <param name="sender">事件触发器</param>
+            <param name="e">事件触发参数</param>
+        </member>
+        <member name="M:PIE.Controls.FrmAddBookMark.button_Cancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消
+            </summary>
+            <param name="sender">事件触发器</param>
+            <param name="e">事件触发参数</param>
+        </member>
+        <member name="F:PIE.Controls.FrmAddBookMark.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FrmAddBookMark.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:PIE.Controls.FrmAddBookMark.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.FrmBookMarks">
+            <summary>
+            书签管理窗体
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FrmBookMarks.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FrmBookMarks.Initialize(PIE.Carto.IPmdContents)">
+            <summary>
+            初始化
+            </summary>
+            <param name="pmdContents">pmdContent</param>
+        </member>
+        <member name="F:PIE.Controls.FrmBookMarks.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FrmBookMarks.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:PIE.Controls.FrmBookMarks.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.CoordinateSettingCommand">
+            <summary>
+            坐标定位Command
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.CoordinateSettingCommand.m_FrmCoordinate">
+            <summary>
+            坐标定位窗体
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.CoordinateSettingCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.CoordinateSettingCommand.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.CoordinateSettingCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.CoordinateSettingCommand.frmCoordinate_Disposed(System.Object,System.EventArgs)">
+            <summary>
+            关闭坐标定位窗体事件
+            </summary>
+            <param name="sender">事件触发器</param>
+            <param name="e">事件触发参数</param>
+        </member>
+        <member name="T:PIE.Controls.CoordinateSettingControl">
+            <summary>
+            坐标定位
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.CoordinateSettingControl.m_PmdContents">
+            <summary>
+            IPmdContents对象
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.CoordinateSettingControl.m_SpatialRef">
+            <summary>
+            空间参考对象
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.CoordinateSettingControl.m_Flag">
+            <summary>
+            Flag对象
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.CoordinateSettingControl.m_InitFlag">
+            <summary>
+            初始Flag对象
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.CoordinateSettingControl.m_XValue">
+            <summary>
+            坐标x
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.CoordinateSettingControl.m_YValue">
+            <summary>
+            坐标y
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.CoordinateSettingControl.m_BKeyChangedX">
+            <summary>
+            坐标x是否键入标志
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.CoordinateSettingControl.m_BKeyChangedY">
+            <summary>
+            坐标y否键入标志
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.CoordinateSettingControl.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.CoordinateSettingControl.Initialize(PIE.Carto.IPmdContents)">
+            <summary>
+            初始化
+            </summary>
+            <param name="pmdContents">视图组份</param>
+        </member>
+        <member name="M:PIE.Controls.CoordinateSettingControl.button_CoordinateSetting_Click(System.Object,System.EventArgs)">
+            <summary>
+            坐标定位
+            </summary>
+            <param name="sender">事件触发器</param>
+            <param name="e">事件触发参数</param>
+        </member>
+        <member name="M:PIE.Controls.CoordinateSettingControl.checkBox_D_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            坐标类型D
+            </summary>
+            <param name="sender">事件触发器</param>
+            <param name="e">事件触发参数</param>
+        </member>
+        <member name="M:PIE.Controls.CoordinateSettingControl.checkBox_DF_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            坐标类型DF
+            </summary>
+            <param name="sender">事件触发器</param>
+            <param name="e">事件触发参数</param>
+        </member>
+        <member name="M:PIE.Controls.CoordinateSettingControl.checkBox_DFM_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            坐标类型DFM
+            </summary>
+            <param name="sender">事件触发器</param>
+            <param name="e">事件触发参数</param>
+        </member>
+        <member name="M:PIE.Controls.CoordinateSettingControl.checkBox_XY_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            坐标类型XY
+            </summary>
+            <param name="sender">事件触发器</param>
+            <param name="e">事件触发参数</param>
+        </member>
+        <member name="M:PIE.Controls.CoordinateSettingControl.DegreeToXYZ(PIE.Geometry.IPoint)">
+            <summary>
+            将度分秒格式转换为地理坐标
+            </summary>
+            <param name="point">需转换的点</param>
+            <returns>地理坐标</returns>
+        </member>
+        <member name="M:PIE.Controls.CoordinateSettingControl.XYZToDegree(PIE.Geometry.IPoint)">
+            <summary>
+            将地理坐标转换为度分秒格式
+            </summary>
+            <param name="point">需转换的点</param>
+            <returns>度分秒</returns>
+        </member>
+        <member name="M:PIE.Controls.CoordinateSettingControl.XYZToLonLat(PIE.Geometry.IPoint)">
+            <summary>
+            将地理坐标转换为小数格式
+            </summary>
+            <param name="point">需转换的点</param>
+            <returns>度分秒</returns>
+        </member>
+        <member name="M:PIE.Controls.CoordinateSettingControl.XYToDFM(System.String)">
+            <summary>
+            XY转度分秒
+            </summary>
+            <param name="str">字符串</param>
+            <returns>DFM</returns>
+        </member>
+        <member name="M:PIE.Controls.CoordinateSettingControl.DFMToXY(System.String)">
+            <summary>
+            度分秒转XY
+            </summary>
+            <param name="str">字符串</param>
+            <returns>XY</returns>
+        </member>
+        <member name="M:PIE.Controls.CoordinateSettingControl.DFToXY(System.String)">
+            <summary>
+            度分转XY
+            </summary>
+            <param name="str">字符串</param>
+            <returns>XY</returns>
+        </member>
+        <member name="M:PIE.Controls.CoordinateSettingControl.XYToDF(System.String)">
+            <summary>
+            XY转度分
+            </summary>
+            <param name="str">字符串</param>
+            <returns>DF</returns>
+        </member>
+        <member name="M:PIE.Controls.CoordinateSettingControl.DToXY(System.String)">
+            <summary>
+            度转XY
+            </summary>
+            <param name="str">字符串</param>
+            <returns>XY</returns>
+        </member>
+        <member name="M:PIE.Controls.CoordinateSettingControl.XYToD(System.String)">
+            <summary>
+            XY转度
+            </summary>
+            <param name="str">字符串</param>
+            <returns>D</returns>
+        </member>
+        <member name="M:PIE.Controls.CoordinateSettingControl.textBox_XCoordinate_LostFocus(System.Object,System.EventArgs)">
+            <summary>
+            X焦点消失
+            </summary>
+            <param name="sender">事件触发器</param>
+            <param name="e">事件触发参数</param>
+        </member>
+        <member name="M:PIE.Controls.CoordinateSettingControl.textBox_YCoordinate_LostFocus(System.Object,System.EventArgs)">
+            <summary>
+            Y焦点消失
+            </summary>
+            <param name="sender">事件触发器</param>
+            <param name="e">事件触发参数</param>
+        </member>
+        <member name="M:PIE.Controls.CoordinateSettingControl.textBox_XCoordinate_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+            <summary>
+            X键入值
+            </summary>
+            <param name="sender">事件触发器</param>
+            <param name="e">事件触发参数</param>
+        </member>
+        <member name="M:PIE.Controls.CoordinateSettingControl.textBox_YCoordinate_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+            <summary>
+            Y键入值
+            </summary>
+            <param name="sender">事件触发器</param>
+            <param name="e">事件触发参数</param>
+        </member>
+        <member name="M:PIE.Controls.CoordinateSettingControl.XValue_ParametersTry">
+            <summary>
+            输入X值判断
+            </summary>
+            <returns>是否让输入</returns>
+        </member>
+        <member name="M:PIE.Controls.CoordinateSettingControl.YValue_ParametersTry">
+            <summary>
+            更新输入Y值判断
+            </summary>
+            <returns>是否让输入</returns>
+        </member>
+        <member name="M:PIE.Controls.CoordinateSettingControl.textBox_XCoordinate_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            更新输入X值判断
+            </summary>
+            <param name="sender">事件触发器</param>
+            <param name="e">事件触发参数</param>
+        </member>
+        <member name="M:PIE.Controls.CoordinateSettingControl.textBox_YCoordinate_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            更新输入Y值判断
+            </summary>
+            <param name="sender">事件触发器</param>
+            <param name="e">事件触发参数</param>
+        </member>
+        <member name="F:PIE.Controls.CoordinateSettingControl.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.CoordinateSettingControl.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:PIE.Controls.CoordinateSettingControl.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.FrmCoordinateSetting">
+            <summary>
+            坐标定位窗体
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FrmCoordinateSetting.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FrmCoordinateSetting.Initialize(PIE.Carto.IPmdContents)">
+            <summary>
+            初始化
+            </summary>
+            <param name="pmdContents">pmdContent对象</param>
+        </member>
+        <member name="F:PIE.Controls.FrmCoordinateSetting.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.FrmCoordinateSetting.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:PIE.Controls.FrmCoordinateSetting.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.AnnotationConvertCommand">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.AnnotationConvertCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.MapHawkEyeControl">
+            <summary>
+            鹰眼图控件
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.MapHawkEyeControl.m_BuddyControl">
+            <summary>
+            MapHawkEyeControl控件的关联对象
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.MapHawkEyeControl.m_MapHawkEyeControl">
+            <summary>
+            MapControl对象
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.MapHawkEyeControl.m_IsSyn">
+            <summary>
+            鹰眼是否同步MapControl地图
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.MapHawkEyeControl.m_IsDrag">
+            <summary>
+            是否拖动
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.MapHawkEyeControl.m_DrawElement">
+            <summary>
+            鹰眼图框面元素
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.MapHawkEyeControl.m_CenterPoint">
+            <summary>
+            地图中心点
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.MapHawkEyeControl.IsSetBuddy">
+            <summary>
+            是否已关联控件
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.MapHawkEyeControl.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.MapHawkEyeControl.SetBuddy(PIE.Carto.IPmdContents)">
+            <summary>
+            获取或设置MapHawkEyeControl控件的关联对象
+            </summary>
+            <param name="buddy"></param>
+        </member>
+        <member name="M:PIE.Controls.MapHawkEyeControl.StartSyn">
+            <summary>
+            开始同步（鹰眼图和地图控件进行同步）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Controls.MapHawkEyeControl.StopSyn">
+            <summary>
+            结束同步
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.MapHawkEyeControl.MapHawkEyeControl_MouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            鼠标按下事件
+            </summary>
+            <param name="sender">触发器</param>
+            <param name="e">触发器参数</param>
+        </member>
+        <member name="M:PIE.Controls.MapHawkEyeControl.MapHawkEyeControl_MouseUp(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            鼠标抬起事件
+            </summary>
+            <param name="sender">触发器</param>
+            <param name="e">触发器参数</param>
+        </member>
+        <member name="M:PIE.Controls.MapHawkEyeControl.MapHawkEyeControl_MouseMove(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            鼠标移动事件
+            </summary>
+            <param name="sender">触发器</param>
+            <param name="e">触发器参数</param>
+        </member>
+        <member name="M:PIE.Controls.MapHawkEyeControl.MapControl_OnLayerAdded(PIE.Carto.ILayer)">
+             <summary>
+            地图图层增加事件
+             </summary>
+             <param name="layer"></param>
+        </member>
+        <member name="M:PIE.Controls.MapHawkEyeControl.MapControl_OnLayerDeleted(PIE.Carto.ILayer)">
+            <summary>
+            地图图层删除事件
+            </summary>
+            <param name="layer">图层</param>
+        </member>
+        <member name="M:PIE.Controls.MapHawkEyeControl.MapControl_OnExtentUpdated(System.Object,System.Boolean,PIE.Geometry.IEnvelope)">
+            <summary>
+            视图窗口变化事件
+            </summary>
+            <param name="sender"></param>
+            <param name="sizeChanged"></param>
+            <param name="newEnvelope"></param>
+        </member>
+        <member name="M:PIE.Controls.MapHawkEyeControl.LayerEvents_OnRenderChanged(PIE.Carto.ILayer)">
+            <summary>
+            地图图层渲染事件
+            </summary>
+            <param name="layer">图层</param>
+        </member>
+        <member name="M:PIE.Controls.MapHawkEyeControl.GetLayer(PIE.Carto.ILayer)">
+            <summary>
+            得到鹰眼图中对应的图层
+            </summary>
+            <param name="layer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Controls.MapHawkEyeControl.RenderHawkEyeMap(PIE.Carto.ILayer)">
+            <summary>
+            鹰眼图渲染
+            </summary>
+            <param name="layer">渲染图层</param>
+        </member>
+        <member name="M:PIE.Controls.MapHawkEyeControl.IsContainLayer(PIE.Carto.ILayer,System.Object,System.String@)">
+            <summary>
+            判断鹰眼图是否包含mapControl图层
+            </summary>
+            <param name="layer">mapControl 图层</param>
+            <param name="obj">对象</param>
+            <param name="outlayerId">输出图层ID</param>
+            <returns>true 包含，false 不包含,输出</returns>
+        </member>
+        <member name="M:PIE.Controls.MapHawkEyeControl.LayerEvents_OnVisibilityChanged(PIE.Carto.ILayer)">
+            <summary>
+            地图图层可视化变化事件
+            </summary>
+            <param name="layer"></param>
+        </member>
+        <member name="M:PIE.Controls.MapHawkEyeControl.MapControl_OnLayerReordered(PIE.Carto.ILayer,System.Int32)">
+            <summary>
+            图层顺序事件
+            </summary>
+            <param name="layer">图层</param>
+            <param name="index">索引</param>
+        </member>
+        <member name="M:PIE.Controls.MapHawkEyeControl.ConnectLayerEventListener(PIE.Carto.ILayer)">
+            <summary>
+            增加图层事件的监听
+            </summary>
+            <param name="layer"></param>
+        </member>
+        <member name="M:PIE.Controls.MapHawkEyeControl.CancelLayerEventListener(PIE.Carto.ILayer)">
+            <summary>
+            取消图层事件监听
+            </summary>
+            <param name="layer"></param>
+        </member>
+        <member name="M:PIE.Controls.MapHawkEyeControl.InitialView(PIE.Geometry.IEnvelope)">
+            <summary>
+            初始化鹰眼图
+            </summary>
+            <param name="envelop">主地图视图范围</param>
+        </member>
+        <member name="M:PIE.Controls.MapHawkEyeControl.IsContainPoint(PIE.Geometry.IPoint)">
+            <summary>
+            判断点是否在面元素内
+            </summary>
+            <param name="point">当前点坐标</param>
+            <returns>bool false 面不包含点 true面包含点</returns>
+        </member>
+        <member name="M:PIE.Controls.MapHawkEyeControl.IsDesignMode">
+            <summary>
+            是否为设计模式
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.MapHawkEyeControl.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.MapHawkEyeControl.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:PIE.Controls.MapHawkEyeControl.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.MapHawkEyeControlEx">
+            <summary>
+            鹰眼图Pmd视图控件
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.MapHawkEyeControlEx.m_BuddyControl">
+            <summary>
+            MapHawkEyeControl控件的关联对象
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.MapHawkEyeControlEx.m_MapHawkEyeControl">
+            <summary>
+            MapControl对象
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.MapHawkEyeControlEx.m_IsSyn">
+            <summary>
+            鹰眼是否同步MapControl地图
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.MapHawkEyeControlEx.m_DrawElement">
+            <summary>
+            鹰眼图框面元素
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.MapHawkEyeControlEx.m_CenterPoint">
+            <summary>
+            地图中心点
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.MapHawkEyeControlEx.IsSetBuddy">
+            <summary>
+            是否已关联控件
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.MapHawkEyeControlEx.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.MapHawkEyeControlEx.SetBuddy(PIE.Carto.IPmdContents)">
+            <summary>
+            获取或设置MapHawkEyeControl控件的关联对象
+            </summary>
+            <param name="buddy"></param>
+        </member>
+        <member name="M:PIE.Controls.MapHawkEyeControlEx.LoadPmd(System.String)">
+            <summary>
+            添加PMD文档
+            </summary>
+            <param name="path">Pmd文档路径</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:PIE.Controls.MapHawkEyeControlEx.StartSyn">
+            <summary>
+            开始同步（鹰眼图和地图控件进行同步）
+            </summary>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:PIE.Controls.MapHawkEyeControlEx.StopSyn" -->
+        <member name="M:PIE.Controls.MapHawkEyeControlEx.MapHawkEyeControl_MouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            鼠标按下事件
+            </summary>
+            <param name="sender">触发器</param>
+            <param name="e">触发器参数</param>
+        </member>
+        <member name="M:PIE.Controls.MapHawkEyeControlEx.MapControl_OnExtentUpdated(System.Object,System.Boolean,PIE.Geometry.IEnvelope)">
+            <summary>
+            主地图范围发生变化，鹰眼图显示框
+            </summary>
+            <param name="sender"></param>
+            <param name="sizeChanged"></param>
+            <param name="newEnvelope">底图范围</param>
+        </member>
+        <member name="M:PIE.Controls.MapHawkEyeControlEx.IsDesignMode">
+            <summary>
+            是否为设计模式
+            </summary>
+        </member>
+        <member name="F:PIE.Controls.MapHawkEyeControlEx.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.MapHawkEyeControlEx.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:PIE.Controls.MapHawkEyeControlEx.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.HelpCommand">
+            <summary>
+            帮助Command
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.HelpCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Controls.HelpCommand.OnClick">
+            <summary>
+            打开帮助文档  
+            </summary>
+        </member>
+        <member name="T:PIE.Controls.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.Culture">
+            <summary>
+              使用此强类型资源类，为所有资源查找
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources._object">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.area">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.AttributeIdentify">
+            <summary>
+              查找 System.Byte[] 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.CartoGraphy_MapFrame">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.clear">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.CoordinateSystem">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.cur00005">
+            <summary>
+              查找 System.Byte[] 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.DataLoader_ArcGISImage">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.DataLoader_HDF">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.DataLoader_Raster">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.DataLoader_TDTTiledCia">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.DataLoader_TDTTiledCva">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.DataLoader_TDTTiledImg">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.DataLoader_TDTTiledVec">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.DataLoader_Tiled">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.DataLoader_Vector">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.Display_Enhan_Bright">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.Display_Enhan_Contrast">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.Display_Enhan_ResetAll">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.Display_Enhan_Stretch">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.Display_Enhan_Transparent">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.Display_Inverse_Bright">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.DrawCursor">
+            <summary>
+              查找 System.Byte[] 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.element">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.FileOpened">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.Identify_AttributeIdentify">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.Identify_RasterIdentify">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.line">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.MainCategory_UserManual">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.MapBrowser_CenterZoomIn">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.MapBrowser_CenterZoomOut">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.MapBrowser_FullExtent">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.MapBrowser_Pan">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.MapBrowser_SwipeLayer">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.MapBrowser_ZoomIn">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.MapBrowser_ZoomOut">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.MapBrowser_ZoomToNativeResolution">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.MapBrowser_ZoomToNextExtent">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.MapBrowser_ZoomToPreviousExtent">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.MarkTool_DrawBalloonCalloutTextElement">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.MarkTool_DrawTextElement">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.MarkTool_EditElementNode">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.MarkTool_MarkClear">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.MarkTool_MarkerDelete">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.MarkTool_RotateElement">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.MarkTool_SelectElement">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.node_edit">
+            <summary>
+              查找 System.Byte[] 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.node_edit_select">
+            <summary>
+              查找 System.Byte[] 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.Pan">
+            <summary>
+              查找 System.Byte[] 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.PanHold">
+            <summary>
+              查找 System.Byte[] 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.select">
+            <summary>
+              查找 System.Byte[] 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.select_move">
+            <summary>
+              查找 System.Byte[] 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.SwipDown">
+            <summary>
+              查找 System.Byte[] 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.SwipLeft">
+            <summary>
+              查找 System.Byte[] 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.SwipRight">
+            <summary>
+              查找 System.Byte[] 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.SwipUp">
+            <summary>
+              查找 System.Byte[] 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.SynInter_Measure">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.VectorEditor_AddFeature">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.VectorEditor_CreateLayer">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.ZoomIn">
+            <summary>
+              查找 System.Byte[] 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:PIE.Controls.Properties.Resources.ZoomOut">
+            <summary>
+              查找 System.Byte[] 类型的本地化资源。
+            </summary>
+        </member>
+    </members>
+</doc>

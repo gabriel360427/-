@@ -1,0 +1,737 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PIE.Framework</name>
+    </assembly>
+    <members>
+        <member name="T:PIE.Framework.Application">
+            <summary>
+            应用Application
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.Application.MainForm">
+            <summary>
+            应用主窗体
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.Application.CommandManager">
+            <summary>
+            命令管理器
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.Application.DockManager">
+            <summary>
+            DockManager对象
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.Application.MapControl">
+            <summary>
+            MapControl对象
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.Application.PageLayoutControl">
+            <summary>
+            PageLayoutControl对象
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.Application.TOCControl">
+            <summary>
+            TOCControl对象
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.Application.StatusBar">
+            <summary>
+            状态栏
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.Application.CurrentControl">
+            <summary>
+            当前窗体
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.Application.MapDocument">
+            <summary>
+            MapDocument
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.Application.RibbonControl">
+            <summary>
+            RibbonControl控件
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.Application.TabControl">
+            <summary>
+            显示面板（如果没有可以为空）
+            </summary>
+        </member>
+        <member name="M:PIE.Framework.Application.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="T:PIE.Framework.EnvironmentPaths">
+            <summary>
+            系统环境路径
+            </summary>
+        </member>
+        <member name="F:PIE.Framework.EnvironmentPaths.mRootPath">
+            <summary>
+            根目录
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.EnvironmentPaths.RootPath">
+            <summary>
+            根目录
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.EnvironmentPaths.BinPath">
+            <summary>
+            Bin文件夹路径
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.EnvironmentPaths.ConfigPath">
+            <summary>
+            配置文件文件夹路径
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.EnvironmentPaths.DataPath">
+            <summary>
+            数据文件夹路径
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.EnvironmentPaths.LogPath">
+            <summary>
+            日志文件夹路径
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.EnvironmentPaths.LanguagePath">
+            <summary>
+            Language文件夹路径
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.EnvironmentPaths.TempPath">
+            <summary>
+            Temp文件夹路径
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.EnvironmentPaths.HelpPath">
+            <summary>
+            Help文件夹路径
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.EnvironmentPaths.StylePath">
+            <summary>
+            Style文件夹路径
+            </summary>
+        </member>
+        <member name="M:PIE.Framework.EnvironmentPaths.GetDefaultRootPath">
+            <summary>
+            获得根目录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PIE.Framework.IApplication">
+            <summary>
+            IApplication接口
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.IApplication.MainForm">
+            <summary>
+            应用主窗体
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.IApplication.CommandManager">
+            <summary>
+            命令管理器
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.IApplication.DockManager">
+            <summary>
+            DockManager对象
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.IApplication.MapControl">
+            <summary>
+            MapControl对象
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.IApplication.PageLayoutControl">
+            <summary>
+            PageLayoutControl对象
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.IApplication.TOCControl">
+            <summary>
+            TOCControl对象
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.IApplication.StatusBar">
+            <summary>
+            状态栏
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.IApplication.CurrentControl">
+            <summary>
+            当前窗体
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.IApplication.MapDocument">
+            <summary>
+            MapDocument
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.IApplication.RibbonControl">
+            <summary>
+            RibbonControl控件
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.IApplication.TabControl">
+            <summary>
+            显示面板（如果没有可以为空）
+            </summary>
+        </member>
+        <member name="T:PIE.Framework.DesktopCommand">
+            <summary>
+            窗体关联Command
+            </summary>
+        </member>
+        <member name="F:PIE.Framework.DesktopCommand.m_Application">
+            <summary>
+            Application对象
+            </summary>
+        </member>
+        <member name="F:PIE.Framework.DesktopCommand.m_Hook">
+            <summary>
+            Hook对象
+            </summary>
+        </member>
+        <member name="F:PIE.Framework.DesktopCommand.m_HookHelper">
+            <summary>
+            HookHelper对象
+            </summary>
+        </member>
+        <member name="F:PIE.Framework.DesktopCommand.m_Image">
+            <summary>
+            Hook对象
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.DesktopCommand.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.DesktopCommand.Caption">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.DesktopCommand.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.DesktopCommand.Checked">
+            <summary>
+            是否选中
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.DesktopCommand.ToolTip">
+            <summary>
+            提示信息
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.DesktopCommand.Type">
+            <summary>
+            Command的类型
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.DesktopCommand.TypeName">
+            <summary>
+            类型名称
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.DesktopCommand.Image">
+            <summary>
+            设置Image
+            </summary>
+        </member>
+        <member name="M:PIE.Framework.DesktopCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Framework.DesktopCommand.OnCreate(System.Object)">
+            <summary>
+            关联方法（绑定控件对象）
+            </summary>
+            <param name="hook">钩子</param>
+        </member>
+        <member name="M:PIE.Framework.DesktopCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.Framework.DesktopCommand.AddNewMapPage(System.String)">
+            <summary>
+            添加新页面
+            </summary>
+            <param name="title">map名称</param>
+        </member>
+        <member name="T:PIE.Framework.DesktopCommandControl">
+            <summary>
+            窗体关联CommandControl
+            </summary>
+        </member>
+        <member name="M:PIE.Framework.DesktopCommandControl.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.DesktopCommandControl.Control">
+            <summary>
+            Control
+            </summary>
+        </member>
+        <member name="T:PIE.Framework.DesktopTool">
+            <summary>
+            窗体关联Tool
+            </summary>
+        </member>
+        <member name="M:PIE.Framework.DesktopTool.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.DesktopTool.Cursor">
+            <summary>
+            鼠标样式
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:PIE.Framework.DesktopTool.Deactivate" -->
+        <member name="M:PIE.Framework.DesktopTool.OnContextMenu(System.Int32,System.Int32)">
+            <summary>
+            右键菜单弹出
+            </summary>
+            <param name="x">点击点X</param>  
+            <param name="y">点击点Y</param>
+            <returns>是否成功</returns> 
+        </member>
+        <member name="M:PIE.Framework.DesktopTool.OnDblClick">
+            <summary>
+            双击
+            </summary>
+        </member>
+        <member name="M:PIE.Framework.DesktopTool.OnKeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            键盘按键按下操作
+            </summary>
+            <param name="sender">触发对象</param>  
+            <param name="e">键盘事件参数</param>
+        </member>
+        <member name="M:PIE.Framework.DesktopTool.OnKeyUp(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            键盘按键抬起操作
+            </summary>
+            <param name="sender">触发对象</param>  
+            <param name="e">键盘事件参数</param>
+        </member>
+        <member name="M:PIE.Framework.DesktopTool.OnMouseEnter(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            鼠标进入操作
+            </summary>
+            <param name="sender">触发对象</param>  
+            <param name="e">鼠标事件参数</param>
+        </member>
+        <member name="M:PIE.Framework.DesktopTool.OnMouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            鼠标按下操作
+            </summary>
+            <param name="sender">触发对象</param>  
+            <param name="e">鼠标事件参数</param>
+        </member>
+        <member name="M:PIE.Framework.DesktopTool.OnMouseMove(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            鼠标移动操作
+            </summary>
+            <param name="sender">触发对象</param>  
+            <param name="e">鼠标事件参数</param>
+        </member>
+        <member name="M:PIE.Framework.DesktopTool.OnMouseUp(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            鼠标抬起操作
+            </summary>
+            <param name="sender">触发对象</param>  
+            <param name="e">鼠标事件参数</param>
+        </member>
+        <member name="T:PIE.Framework.CommandItem">
+            <summary>
+            CommandItem类
+            </summary>
+        </member>
+        <member name="M:PIE.Framework.CommandItem.#ctor(PIE.SystemUI.ICommand,DevExpress.XtraBars.BarItem)">
+            <summary>
+            CommandItem
+            </summary>
+            <param name="command">命令</param>
+            <param name="barItem">barItem</param>
+        </member>
+        <member name="P:PIE.Framework.CommandItem.ItemGuid">
+            <summary>
+            ItemGUID
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.CommandItem.BarItem">
+            <summary>
+            与Command关联的DevButtonItem控件
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.CommandItem.Command">
+            <summary>
+            与DevButtonItem关联的Command
+            </summary>
+        </member>
+        <member name="M:PIE.Framework.CommandItem.ResetBarItem">
+            <summary>
+            重置CommandItem的显示
+            </summary>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:PIE.Framework.CommandItem.UpdateUI">
+            <summary>
+            更新显示
+            </summary>
+            <returns>是否成功</returns>
+        </member>
+        <member name="E:PIE.Framework.CommandItem.OnCommandClickedEvent">
+            <summary>
+            Command点击事件
+            </summary>
+        </member>
+        <member name="M:PIE.Framework.CommandItem.BarItem_ItemClick(System.Object,DevExpress.XtraBars.ItemClickEventArgs)">
+            <summary>
+            关联事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:PIE.Framework.ICommandItem">
+            <summary>
+            ICommandItem接口
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.ICommandItem.ItemGuid">
+            <summary>
+            ItemGUID
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.ICommandItem.BarItem">
+            <summary>
+            与Command关联的DevButtonItem控件
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.ICommandItem.Command">
+            <summary>
+            与DevButtonItem关联的Command
+            </summary>
+        </member>
+        <member name="M:PIE.Framework.ICommandItem.ResetBarItem">
+            <summary>
+            重置CommandItem的显示
+            </summary>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:PIE.Framework.ICommandItem.UpdateUI">
+            <summary>
+            更新显示
+            </summary>
+            <returns>是否成功</returns>
+        </member>
+        <member name="T:PIE.Framework.ICommandEvents">
+            <summary>
+            CommandItem事件接口
+            </summary>
+        </member>
+        <member name="E:PIE.Framework.ICommandEvents.OnCommandClickedEvent">
+            <summary>
+            Item单击事件
+            </summary>
+        </member>
+        <member name="T:PIE.Framework.OnCommandClickedEventHandler">
+            <summary>
+            CommandItem单击事件委托
+            </summary>
+            <param name="command"></param>
+        </member>
+        <member name="T:PIE.Framework.CommandManager">
+            <summary>
+            CommandManager类
+            </summary>
+        </member>
+        <member name="F:PIE.Framework.CommandManager.mCommandItemsDictionary">
+            <summary>
+            命令组
+            </summary>
+        </member>
+        <member name="F:PIE.Framework.CommandManager.mTimer">
+            <summary>
+            刷新控制器
+            </summary>
+        </member>
+        <member name="F:PIE.Framework.CommandManager.m_isSubItem">
+            <summary>
+            用于判断是否在groupButton中
+            </summary>
+        </member>
+        <member name="M:PIE.Framework.CommandManager.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.CommandManager.RibbonControl">
+            <summary>
+            RibbonControl控件
+            </summary>
+        </member>
+        <member name="M:PIE.Framework.CommandManager.Add(DevExpress.XtraBars.BarItem,PIE.SystemUI.ICommand,System.Object)">
+            <summary>
+            添加命令
+            </summary>
+            <param name="barItem">关联按钮</param>
+            <param name="cmd">命令</param>
+            <param name="hook">Hook</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:PIE.Framework.CommandManager.SetHook(System.Object)">
+            <summary>
+            设置Hook对象
+            </summary>
+            <param name="hook">Hook</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:PIE.Framework.CommandManager.StartUpdataCommandUI">
+            <summary>
+            开始更新地图显示
+            </summary>
+        </member>
+        <member name="M:PIE.Framework.CommandManager.StopUpdataCommandUI">
+            <summary>
+            开始更新地图显示
+            </summary>
+        </member>
+        <member name="M:PIE.Framework.CommandManager.AddRibbonPage(System.String)">
+            <summary>
+            添加RibbonPage
+            </summary>
+            <param name="caption">RibbonPage名称</param>
+            <returns>RibbonPage</returns>
+        </member>
+        <member name="M:PIE.Framework.CommandManager.GetRibbonPage(System.String)">
+            <summary>
+            获得RibbonPage
+            </summary>
+            <param name="caption">RibbonPage名称</param>
+            <returns>RibbonPage</returns>
+        </member>
+        <member name="M:PIE.Framework.CommandManager.AddRibbonPageGroup(System.String,System.String)">
+            <summary>
+            添加RibbonPageGroup
+            </summary>
+            <param name="pageCaption">RibbonPage名称</param>
+            <param name="groupCaption">RibbonPageGroup名称</param>
+            <returns>RibbonPageGroup</returns>
+        </member>
+        <member name="M:PIE.Framework.CommandManager.GetRibbonPageGroup(System.String,System.String)">
+            <summary>
+            获得RibbonPageGroup
+            </summary>
+            <param name="pageCaption">RibbonPage名称</param>
+            <param name="groupCaption">RibbonPageGroup名称</param>
+            <returns>RibbonPageGroup</returns>
+        </member>
+        <member name="M:PIE.Framework.CommandManager.GetBarItem(System.String,System.String,System.String)">
+            <summary>
+            获得BarItem
+            </summary>
+            <param name="pageCaption">RibbonPage名称</param>
+            <param name="groupCaption">RibbonPageGroup名称</param>
+            <param name="barCaption">BarItem名称</param>
+            <returns>BarItem</returns>
+        </member>
+        <member name="M:PIE.Framework.CommandManager.ConstructBarItem(PIE.Framework.IApplication,PIE.Configuration.IConfigItem)">
+            <summary>
+            创建BarItem
+            </summary>
+            <param name="app">应用Application</param>
+            <param name="configItem">ConfigItem</param>
+            <returns>BarItem</returns>
+        </member>
+        <member name="M:PIE.Framework.CommandManager.LoadAddIn(PIE.Framework.IApplication,System.String)">
+            <summary>
+            加载插件
+            </summary>
+            <param name="app">应用App</param>
+            <param name="addinFilePath">插件路径</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:PIE.Framework.CommandManager.UnLoadAddIn(System.String)">
+            <summary>
+            卸载插件
+            </summary>
+            <param name="addinFilePath">插件路径</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:PIE.Framework.CommandManager.DestroyBarItem(PIE.Configuration.IConfigItem)">
+            <summary>
+            销毁BarItem
+            </summary>
+            <param name="configItem">ConfigItem</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:PIE.Framework.CommandManager.SetVisBaseModel(System.Int32)">
+            <summary>
+            根据当前视图模式控制窗体插件的显示
+            </summary>
+            <param name="targetModel">当前的视图模式</param>
+        </member>
+        <member name="E:PIE.Framework.CommandManager.OnCommandClickedEvent">
+            <summary>
+            事件方法
+            </summary>
+        </member>
+        <member name="M:PIE.Framework.CommandManager.mTimer_Tick(System.Object,System.EventArgs)">
+            <summary>
+            计时器按钮
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.Framework.CommandManager.RaiseOnCommandClickedEvent(PIE.SystemUI.ICommand)">
+            <summary>
+            触发CommandItem单击事件
+            </summary>
+            <param name="command"></param>
+        </member>
+        <member name="M:PIE.Framework.CommandManager.commandItemEvents_OnCommandClickedEvent(PIE.SystemUI.ICommand)">
+            <summary>
+            CommandItem事件方法关联
+            </summary>
+            <param name="command">commandItem</param>
+        </member>
+        <member name="T:PIE.Framework.ICommandManager">
+            <summary>
+            ICommandManager接口
+            </summary>
+        </member>
+        <member name="M:PIE.Framework.ICommandManager.Add(DevExpress.XtraBars.BarItem,PIE.SystemUI.ICommand,System.Object)">
+            <summary>
+            添加命令
+            </summary>
+            <param name="barItem">关联按钮</param>
+            <param name="cmd">命令</param>
+            <param name="hook">Hook</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:PIE.Framework.ICommandManager.SetHook(System.Object)">
+            <summary>
+            设置Hook对象
+            </summary>
+            <param name="hook">Hook</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:PIE.Framework.ICommandManager.StartUpdataCommandUI">
+            <summary>
+            开始更新地图显示
+            </summary>
+        </member>
+        <member name="M:PIE.Framework.ICommandManager.StopUpdataCommandUI">
+            <summary>
+            开始更新地图显示
+            </summary>
+        </member>
+        <member name="T:PIE.Framework.IRibbonControlManager">
+            <summary>
+            RibbonControl管理器
+            </summary>
+        </member>
+        <member name="P:PIE.Framework.IRibbonControlManager.RibbonControl">
+            <summary>
+            RibbonControl控件
+            </summary>
+        </member>
+        <member name="M:PIE.Framework.IRibbonControlManager.AddRibbonPage(System.String)">
+            <summary>
+            添加RibbonPage
+            </summary>
+            <param name="caption">RibbonPage名称</param>
+            <returns>RibbonPage</returns>
+        </member>
+        <member name="M:PIE.Framework.IRibbonControlManager.GetRibbonPage(System.String)">
+            <summary>
+            获得RibbonPage
+            </summary>
+            <param name="caption">RibbonPage名称</param>
+            <returns>RibbonPage</returns>
+        </member>
+        <member name="M:PIE.Framework.IRibbonControlManager.AddRibbonPageGroup(System.String,System.String)">
+            <summary>
+            添加RibbonPageGroup
+            </summary>
+            <param name="pageCaption">RibbonPage名称</param>
+            <param name="groupCaption">RibbonPageGroup名称</param>
+            <returns>RibbonPageGroup</returns>
+        </member>
+        <member name="M:PIE.Framework.IRibbonControlManager.GetRibbonPageGroup(System.String,System.String)">
+            <summary>
+            获得RibbonPageGroup
+            </summary>
+            <param name="pageCaption">RibbonPage名称</param>
+            <param name="groupCaption">RibbonPageGroup名称</param>
+            <returns>RibbonPageGroup</returns>
+        </member>
+        <member name="M:PIE.Framework.IRibbonControlManager.GetBarItem(System.String,System.String,System.String)">
+            <summary>
+            获得BarItem
+            </summary>
+            <param name="pageCaption">RibbonPage名称</param>
+            <param name="groupCaption">RibbonPageGroup名称</param>
+            <param name="barCaption">BarItem名称</param>
+            <returns>BarItem</returns>
+        </member>
+        <member name="M:PIE.Framework.IRibbonControlManager.ConstructBarItem(PIE.Framework.IApplication,PIE.Configuration.IConfigItem)">
+            <summary>
+            创建BarItem
+            </summary>
+            <param name="app">应用Application</param>
+            <param name="configProperty">ConfigItem</param>
+            <returns>BarItem</returns>
+        </member>
+        <member name="M:PIE.Framework.IRibbonControlManager.LoadAddIn(PIE.Framework.IApplication,System.String)">
+            <summary>
+            加载插件
+            </summary>
+            <param name="app">应用App</param>
+            <param name="path">插件路径</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:PIE.Framework.IRibbonControlManager.UnLoadAddIn(System.String)">
+            <summary>
+            卸载插件
+            </summary>
+            <param name="addinFilePath">插件路径</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:PIE.Framework.IRibbonControlManager.DestroyBarItem(PIE.Configuration.IConfigItem)">
+            <summary>
+            销毁BarItem
+            </summary>
+            <param name="configItem">ConfigItem</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:PIE.Framework.IRibbonControlManager.SetVisBaseModel(System.Int32)">
+            <summary>
+            根据当前视图模式控制窗体插件的显示
+            </summary>
+            <param name="targetModel">当前的视图模式</param>
+        </member>
+    </members>
+</doc>

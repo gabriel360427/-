@@ -1,0 +1,255 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PIE.Configuration</name>
+    </assembly>
+    <members>
+        <member name="T:PIE.Configuration.ConfigItem">
+            <summary>
+            ConfigItem类
+            </summary>
+        </member>
+        <member name="F:PIE.Configuration.ConfigItem.m_ItemAttribute">
+            <summary>
+            ItemAttribute属性
+            </summary>
+        </member>
+        <member name="M:PIE.Configuration.ConfigItem.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Configuration.ConfigItem.Attributes">
+            <summary>
+            Attributes属性集合
+            </summary>
+        </member>
+        <member name="M:PIE.Configuration.ConfigItem.GetAttribute(System.String,System.Object)">
+            <summary>
+            获取属性值
+            </summary>
+            <param name="name">值</param>
+            <param name="defaultValue">默认值</param>
+            <returns>对象</returns>
+        </member>
+        <member name="M:PIE.Configuration.ConfigItem.SetAttribute(System.String,System.Object)">
+            <summary>
+            设置属性值
+            </summary>
+            <param name="name">名称</param>
+            <param name="value">值</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="T:PIE.Configuration.ConfigOperator">
+            <summary>
+            ConfigOperator类
+            </summary>
+        </member>
+        <member name="M:PIE.Configuration.ConfigOperator.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Configuration.ConfigOperator.OpenConfigFile(System.String)">
+            <summary>
+            打开配置文件
+            </summary>
+            <param name="configFilePath">配置文件路径</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:PIE.Configuration.ConfigOperator.SaveConfigFile(System.String)">
+            <summary>
+            保存配置文件
+            </summary>
+            <param name="configFilePath">配置文件路径</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:PIE.Configuration.ConfigOperator.SaveAsConfigFile(System.String)">
+            <summary>
+            配置文件另存为
+            </summary>
+            <param name="configFilePath">配置文件路径</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:PIE.Configuration.ConfigOperator.ConstructConfigProperty(System.Xml.XmlNode)">
+            <summary>
+            构造ConfigProperty
+            </summary>
+            <param name="xmlNode">xmlNode节点</param>
+            <returns>返回ConfigProperty</returns>
+        </member>
+        <member name="M:PIE.Configuration.ConfigOperator.ConstructXmlElement(System.Xml.XmlDocument,System.Xml.XmlElement,PIE.Configuration.IConfigProperty)">
+            <summary>
+            构造XmlElement
+            </summary>
+            <param name="xmlDoc">Xml文档</param>
+            <param name="rootElement">XmlElement节点</param>
+            <param name="configProperty">ConfigProperty</param>
+            <returns>XmlElement</returns>
+        </member>
+        <member name="T:PIE.Configuration.ConfigProperty">
+            <summary>
+            ConfigProperty类
+            </summary>
+        </member>
+        <member name="F:PIE.Configuration.ConfigProperty.m_ConfigProperties">
+            <summary>
+            ConfigProperties集合
+            </summary>
+        </member>
+        <member name="M:PIE.Configuration.ConfigProperty.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Configuration.ConfigProperty.Name">
+            <summary>
+            获取或设置ConfigProperty名称
+            </summary>
+            <returns>ConfigProperty对象名称</returns>
+        </member>
+        <member name="P:PIE.Configuration.ConfigProperty.Value">
+            <summary>
+            获取或设置ConfigProperty的值，例如<satellite>RADARSAT-2</satellite>
+            </summary>
+            <returns>ConfigProperty的值</returns>
+        </member>
+        <member name="M:PIE.Configuration.ConfigProperty.GetConfigProperty(System.Int32)">
+            <summary>
+            获取ConfigProperty值
+            </summary>
+            <param name="itemIndex">索引值</param>
+            <returns>ConfigProperty对象</returns>
+        </member>
+        <member name="M:PIE.Configuration.ConfigProperty.GetConfigProperty(System.String)">
+            <summary>
+            获取ConfigProperty值
+            </summary>
+            <param name="name">名称</param>
+            <returns>ConfigProperty对象</returns>
+        </member>
+        <member name="M:PIE.Configuration.ConfigProperty.GetConfigPropertyEx(System.String)">
+            <summary>
+            递归获取指定的ConfigProperty值
+            </summary>
+            <param name="name">名称</param>
+            <returns>ConfigProperty对象</returns>
+        </member>
+        <member name="M:PIE.Configuration.ConfigProperty.SetConfigProperty(System.Int32,PIE.Configuration.IConfigProperty)">
+            <summary>
+            设置ConfigProperty
+            </summary>
+            <param name="index">编号</param>
+            <param name="configProperty">值</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="P:PIE.Configuration.ConfigProperty.ConfigPropertyCount">
+            <summary>
+            ConfigItem的Count
+            </summary>
+        </member>
+        <member name="T:PIE.Configuration.IConfigItem">
+            <summary>
+            IConfigItem接口
+            </summary>
+        </member>
+        <member name="P:PIE.Configuration.IConfigItem.Attributes">
+            <summary>
+            Attributes属性集合
+            </summary>
+        </member>
+        <member name="M:PIE.Configuration.IConfigItem.GetAttribute(System.String,System.Object)">
+            <summary>
+            获取属性值
+            </summary>
+            <param name="name">值</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.Configuration.IConfigItem.SetAttribute(System.String,System.Object)">
+            <summary>
+            设置属性值
+            </summary>
+            <param name="name">名称</param>
+            <param name="value">值</param>
+            <returns></returns>
+        </member>
+        <member name="T:PIE.Configuration.IConfigOperator">
+            <summary>
+            IConfigOperator接口
+            </summary>
+        </member>
+        <member name="M:PIE.Configuration.IConfigOperator.OpenConfigFile(System.String)">
+            <summary>
+            打开配置文件
+            </summary>
+            <param name="configFilePath">配置文件路径</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:PIE.Configuration.IConfigOperator.SaveConfigFile(System.String)">
+            <summary>
+            保存配置文件
+            </summary>
+            <param name="configFilePath">配置文件路径</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:PIE.Configuration.IConfigOperator.SaveAsConfigFile(System.String)">
+            <summary>
+            配置文件另存为
+            </summary>
+            <param name="configFilePath">配置文件路径</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="T:PIE.Configuration.IConfigProperty">
+            <summary>
+            IConfigProperty接口
+            </summary>
+        </member>
+        <member name="P:PIE.Configuration.IConfigProperty.Name">
+            <summary>
+            获取或设置ConfigProperty名称
+            </summary>
+            <returns>ConfigProperty对象名称</returns>
+        </member>
+        <member name="P:PIE.Configuration.IConfigProperty.Value">
+            <summary>
+            获取或设置ConfigProperty的值
+            </summary>
+            <returns>ConfigProperty的值</returns>
+        </member>
+        <member name="M:PIE.Configuration.IConfigProperty.GetConfigProperty(System.Int32)">
+            <summary>
+            获取ConfigProperty值
+            </summary>
+            <param name="itemIndex">索引值</param>
+            <returns>ConfigProperty对象</returns>
+        </member>
+        <member name="M:PIE.Configuration.IConfigProperty.GetConfigProperty(System.String)">
+            <summary>
+            获取ConfigProperty值
+            </summary>
+            <param name="name">名称</param>
+            <returns>ConfigProperty对象</returns>
+        </member>
+        <member name="M:PIE.Configuration.IConfigProperty.GetConfigPropertyEx(System.String)">
+            <summary>
+            递归获取指定的ConfigProperty值
+            </summary>
+            <param name="name">名称</param>
+            <returns>ConfigProperty对象</returns>
+        </member>
+        <member name="M:PIE.Configuration.IConfigProperty.SetConfigProperty(System.Int32,PIE.Configuration.IConfigProperty)">
+            <summary>
+            设置ConfigProperty
+            </summary>
+            <param name="index">编号</param>
+            <param name="configProperty">值</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="P:PIE.Configuration.IConfigProperty.ConfigPropertyCount">
+            <summary>
+            ConfigItem的Count
+            </summary>
+        </member>
+    </members>
+</doc>

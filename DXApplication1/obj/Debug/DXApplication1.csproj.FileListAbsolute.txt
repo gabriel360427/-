@@ -1,0 +1,89 @@
+D:\Program Files (x86)\VS2013Projects\DXApplication1\DXApplication1\bin\Debug\DXApplication1.exe
+D:\Program Files (x86)\VS2013Projects\DXApplication1\DXApplication1\bin\Debug\DXApplication1.pdb
+D:\Program Files (x86)\VS2013Projects\DXApplication1\DXApplication1\bin\Debug\PIE.AdapterUI.dll
+D:\Program Files (x86)\VS2013Projects\DXApplication1\DXApplication1\bin\Debug\PIE.AdapterUICLR.dll
+D:\Program Files (x86)\VS2013Projects\DXApplication1\DXApplication1\bin\Debug\PIE.Carto.dll
+D:\Program Files (x86)\VS2013Projects\DXApplication1\DXApplication1\bin\Debug\PIE.CommonAlgo.dll
+D:\Program Files (x86)\VS2013Projects\DXApplication1\DXApplication1\bin\Debug\PIE.DataSource.dll
+D:\Program Files (x86)\VS2013Projects\DXApplication1\DXApplication1\bin\Debug\PIE.Display.dll
+D:\Program Files (x86)\VS2013Projects\DXApplication1\DXApplication1\bin\Debug\PIE.Geometry.dll
+D:\Program Files (x86)\VS2013Projects\DXApplication1\DXApplication1\bin\Debug\PIE.SystemAlgo.dll
+D:\Program Files (x86)\VS2013Projects\DXApplication1\DXApplication1\bin\Debug\PIE.SystemUI.dll
+D:\Program Files (x86)\VS2013Projects\DXApplication1\DXApplication1\bin\Debug\PIE.Utility.dll
+D:\Program Files (x86)\VS2013Projects\DXApplication1\DXApplication1\bin\Debug\PIE.AdapterUI.xml
+D:\Program Files (x86)\VS2013Projects\DXApplication1\DXApplication1\bin\Debug\PIE.AdapterUICLR.xml
+D:\Program Files (x86)\VS2013Projects\DXApplication1\DXApplication1\bin\Debug\PIE.Carto.xml
+D:\Program Files (x86)\VS2013Projects\DXApplication1\DXApplication1\bin\Debug\PIE.CommonAlgo.xml
+D:\Program Files (x86)\VS2013Projects\DXApplication1\DXApplication1\bin\Debug\PIE.DataSource.xml
+D:\Program Files (x86)\VS2013Projects\DXApplication1\DXApplication1\bin\Debug\PIE.Display.xml
+D:\Program Files (x86)\VS2013Projects\DXApplication1\DXApplication1\bin\Debug\PIE.Geometry.xml
+D:\Program Files (x86)\VS2013Projects\DXApplication1\DXApplication1\bin\Debug\PIE.SystemAlgo.xml
+D:\Program Files (x86)\VS2013Projects\DXApplication1\DXApplication1\bin\Debug\PIE.SystemUI.xml
+D:\Program Files (x86)\VS2013Projects\DXApplication1\DXApplication1\bin\Debug\PIE.Utility.xml
+D:\Program Files (x86)\VS2013Projects\DXApplication1\DXApplication1\obj\Debug\DXApplication1.csprojResolveAssemblyReference.cache
+D:\Program Files (x86)\VS2013Projects\DXApplication1\DXApplication1\obj\Debug\DXApplication1.Form1.resources
+D:\Program Files (x86)\VS2013Projects\DXApplication1\DXApplication1\obj\Debug\DXApplication1.Properties.Resources.resources
+D:\Program Files (x86)\VS2013Projects\DXApplication1\DXApplication1\obj\Debug\DXApplication1.csproj.GenerateResource.Cache
+D:\Program Files (x86)\VS2013Projects\DXApplication1\DXApplication1\obj\Debug\DXApplication1.exe.licenses
+D:\Program Files (x86)\VS2013Projects\DXApplication1\DXApplication1\obj\Debug\DXApplication1.exe
+D:\Program Files (x86)\VS2013Projects\DXApplication1\DXApplication1\obj\Debug\DXApplication1.pdb
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\obj\Debug\DXApplication1.exe
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\obj\Debug\DXApplication1.pdb
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\DXApplication1.exe
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\DXApplication1.pdb
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.AdapterUI.dll
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.AdapterUICLR.dll
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.Carto.dll
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.CommonAlgo.dll
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.DataSource.dll
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.Display.dll
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.Geometry.dll
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.SystemAlgo.dll
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.SystemUI.dll
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.Utility.dll
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.AdapterUI.xml
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.AdapterUICLR.xml
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.Carto.xml
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.CommonAlgo.xml
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.DataSource.xml
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.Display.xml
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.Geometry.xml
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.SystemAlgo.xml
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.SystemUI.xml
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.Utility.xml
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\obj\Debug\DXApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\obj\Debug\DXApplication1.Properties.Resources.resources
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\obj\Debug\DXApplication1.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\obj\Debug\DXApplication1.exe.licenses
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.CommonMP.dll
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.Configuration.dll
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.Controls.dll
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.ControlsEx.dll
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.ControlsUI.dll
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.Framework.dll
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.Plugin.BatchDealTools.dll
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.Plugin.CloudFlash.dll
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.Plugin.ImagePreProcess.dll
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.Plugin.ImageTransform.dll
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.Plugin.MapSubdivision.dll
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.Plugin.MonitorAnalysis.dll
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.Plugin.UtilityTools.dll
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.SARAlgo.dll
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.Plugin.FY4DataWrapper.dll
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\System.Data.SQLite.dll
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\Gif.Components.dll
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\AviFile.dll
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.CommonMP.xml
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.Configuration.xml
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.Controls.xml
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.ControlsEx.xml
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.ControlsUI.xml
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.Framework.xml
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.Plugin.BatchDealTools.xml
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.Plugin.CloudFlash.xml
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.Plugin.ImagePreProcess.xml
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.Plugin.MapSubdivision.xml
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.Plugin.MonitorAnalysis.xml
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.Plugin.UtilityTools.xml
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\bin\Debug\PIE.SARAlgo.xml
+C:\Users\Administrator\Desktop\DXApplication1\DXApplication1\obj\Debug\DXApplication1.FormMain.resources

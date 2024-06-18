@@ -1,0 +1,671 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        "Utility"
+    </assembly>
+    <members>
+        <member name="M:PIE.Utility.DeviceUtil.GetDeviceRadio">
+            <summary>
+获得当前计算机的显示比例
+</summary>
+            <returns>显示比例</returns>
+            <summary>
+获得当前计算机的显示比例
+</summary>
+            <returns>显示比例</returns>
+        </member>
+        <member name="T:PIE.Utility.DeviceUtil">
+            <summary>
+设备信息辅助类
+</summary>
+        </member>
+        <member name="M:PIE.Utility.LogInfo.Fatal(System.String)">
+            <summary>
+致命错误
+</summary>
+            <param name="strMessage">信息字符串</param>
+            <summary>
+致命错误
+</summary>
+            <param name="strMessage">信息字符串</param>
+        </member>
+        <member name="M:PIE.Utility.LogInfo.Error(System.String)">
+            <summary>
+错误
+</summary>
+            <param name="strMessage">信息字符串</param>
+            <summary>
+错误
+</summary>
+            <param name="strMessage">信息字符串</param>
+        </member>
+        <member name="M:PIE.Utility.LogInfo.Warn(System.String)">
+            <summary>
+警告
+</summary>
+            <param name="strMessage">信息字符串</param>
+            <summary>
+警告
+</summary>
+            <param name="strMessage">信息字符串</param>
+        </member>
+        <member name="M:PIE.Utility.LogInfo.Info(System.String)">
+            <summary>
+信息
+</summary>
+            <param name="strMessage">信息字符串</param>
+            <summary>
+信息
+</summary>
+            <param name="strMessage">信息字符串</param>
+        </member>
+        <member name="M:PIE.Utility.LogInfo.Debug(System.String)">
+            <summary>
+调试
+</summary>
+            <param name="strMessage">信息字符串</param>
+            <summary>
+调试
+</summary>
+            <param name="strMessage">信息字符串</param>
+        </member>
+        <member name="M:PIE.Utility.LogInfo.Trace(System.String)">
+            <summary>
+追踪
+</summary>
+            <param name="strMessage">信息字符串</param>
+            <summary>
+追踪
+</summary>
+            <param name="strMessage">信息字符串</param>
+        </member>
+        <member name="T:PIE.Utility.LogInfo">
+            <summary>
+日志信息LogInfo
+</summary>
+        </member>
+        <member name="T:SysUtility.LogInfo">
+@class 日志信息类 LogInfo
+	* @brief
+
+</member>
+        <member name="M:ConvertImageToQImage(System.Drawing.Image)">
+            <summary>
+转换Image句柄为QImage
+</summary>
+            <param name="image">转换的Image</param>
+            <returns>QImage对象</returns>
+        </member>
+        <member name="M:ConvertQImageToImage(QImage*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>
+转换QImage为Image句柄
+</summary>
+            <param name="image">转换的QImage</param>
+            <returns>Image句柄</returns>
+        </member>
+        <member name="M:ConvertObjectToQVariant(System.Object)">
+            <summary>
+转换Object句柄为QVariant
+</summary>
+            <param name="object">转换的Object</param>
+            <returns>QVariant</returns>
+        </member>
+        <member name="M:ConvertQVariantToObject(QVariant*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>
+转换QVariant为Object句柄
+</summary>
+            <param name="variant">转换的QVariant</param>
+            <returns>Object句柄</returns>
+        </member>
+        <member name="M:ConvertColorToQColor(System.Drawing.Color)">
+            <summary>
+转换Color句柄为QColor
+</summary>
+            <param name="color">转换的Color</param>
+            <returns>QColor</returns>
+        </member>
+        <member name="M:ConvertQColorToColor(QColor*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>
+转换QColor为Color
+</summary>
+            <param name="color">转换的QColor</param>
+            <returns>Color</returns>
+        </member>
+        <member name="M:ConvertFontToQFont(System.Drawing.Font)">
+            <summary>
+转换Font句柄为QFont
+</summary>
+            <param name="font">转换的Font</param>
+            <returns>QFont</returns>
+        </member>
+        <member name="M:ConvertQFontToFont(QFont*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>
+转换QFont为Font句柄
+</summary>
+            <param name="font">转换的QFont</param>
+            <returns>Font句柄</returns>
+        </member>
+        <member name="M:ConvertQStringToString(QString*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>
+转换QString为String句柄
+</summary>
+            <param name="strValueSource">转换前的String句柄</param>
+            <returns>转换后的String</returns>
+        </member>
+        <member name="M:ConvertQStringToString(QString*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.String@)">
+            <summary>
+转换QString为String句柄
+</summary>
+            <param name="strValueSource">转换前的String句柄</param>
+            <param name="strValueTarget">转换后的String</param>
+            <returns />
+        </member>
+        <member name="M:ConvertStringToQString(System.String)">
+            <summary>
+转换String句柄为QString
+</summary>
+            <param name="strValueSource">转换前的String句柄</param>
+            <returns />
+        </member>
+        <member name="M:ConvertStringToQString(System.String,QString*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>
+转换String句柄为QString
+</summary>
+            <param name="strValueSource">转换前的String句柄</param>
+            <param name="strValueTarget">转换后的String</param>
+            <returns />
+        </member>
+        <member name="M:PIE.Utility.PIEObject.Equals(System.Object)">
+            <summary>
+重新定义Equals方法
+</summary>
+            <param name="obj">对比的Object</param>
+            <returns>是否不相等</returns>
+        </member>
+        <member name="M:PIE.Utility.PIEObject.op_Inequality(PIE.Utility.PIEObject,PIE.Utility.PIEObject)">
+            <summary>
+重新定义不等于运算符
+</summary>
+            <param name="src">操作数1</param>
+            <param name="other">操作数2</param>
+            <returns>是否不相等</returns>
+        </member>
+        <member name="M:PIE.Utility.PIEObject.op_Equality(PIE.Utility.PIEObject,PIE.Utility.PIEObject)">
+            <summary>
+重新定义等于运算符
+</summary>
+            <param name="src">操作数1</param>
+            <param name="other">操作数2</param>
+            <returns>是否相等</returns>
+        </member>
+        <member name="M:PIE.Utility.PIEObject.GetHandle">
+            <summary>
+获取关联对象的句柄
+</summary>
+            <returns>关联对象的句柄</returns>
+        </member>
+        <member name="T:PIE.Utility.PIEObject">
+            <summary>
+ PIEObject对象
+</summary>
+        </member>
+        <member name="M:PIE.Utility.IObject.GetHandle">
+            <summary>
+获取关联对象的句柄
+</summary>
+            <returns>关联对象的句柄</returns>
+        </member>
+        <member name="T:PIE.Utility.IObject">
+            <summary>
+基本对象
+</summary>
+        </member>
+        <member name="M:PIE.Utility.MathUtil.GetPointByRadiumAndNorthAngle(System.Double,System.Double,System.Double,System.Double,System.Double@,System.Double@)">
+            <summary>
+通过原点半径和角度获得点
+</summary>
+            <param name="x1">原点X</param>
+            <param name="y1">原点Y</param>
+            <param name="radium">半径</param>
+            <param name="angle">角度</param>
+            <param name="x2">计算点X</param>
+            <param name="y2">计算点Y</param>
+            <returns> 是否成功</returns>
+            <summary>
+通过原点半径和角度获得点
+</summary>
+            <param name="x1">原点X</param>
+            <param name="y1">原点Y</param>
+            <param name="radium">半径</param>
+            <param name="angle">角度</param>
+            <param name="x2">计算点X</param>
+            <param name="y2">计算点Y</param>
+            <returns> 是否成功</returns>
+        </member>
+        <member name="M:PIE.Utility.MathUtil.GetNorthAngle(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+获得正北角
+</summary>
+            <param name="x1">第一个点的X坐标</param>
+            <param name="y1">第一个点的Y坐标</param>
+            <param name="x2">第二个点的X坐标</param>
+            <param name="y2">第二个点的Y坐标</param>
+            <returns>角度</returns>
+            <summary>
+获得正北角
+</summary>
+            <param name="x1">第一个点的X坐标</param>
+            <param name="y1">第一个点的Y坐标</param>
+            <param name="x2">第二个点的X坐标</param>
+            <param name="y2">第二个点的Y坐标</param>
+            <returns>角度</returns>
+        </member>
+        <member name="M:PIE.Utility.MathUtil.IsEqual(System.Int32,System.Int32)">
+            <summary>
+获得是否相等
+</summary>
+            <param name="val1">值1</param>
+            <param name="val2">值2</param>
+            <returns>相等返回true不等返回false</returns>
+            <summary>
+获得是否相等
+</summary>
+            <param name="val1">值1</param>
+            <param name="val2">值2</param>
+            <returns>相等返回true不等返回false</returns>
+        </member>
+        <member name="M:PIE.Utility.MathUtil.IsEqual(System.Single,System.Single)">
+            <summary>
+获得是否相等
+</summary>
+            <param name="val1">值1</param>
+            <param name="val2">值2</param>
+            <returns>相等返回true不等返回false</returns>
+            <summary>
+获得是否相等
+</summary>
+            <param name="val1">值1</param>
+            <param name="val2">值2</param>
+            <returns>相等返回true不等返回false</returns>
+        </member>
+        <member name="M:PIE.Utility.MathUtil.IsEqual(System.Double,System.Double)">
+            <summary>
+获得是否相等
+</summary>
+            <param name="val1">值1</param>
+            <param name="val2">值2</param>
+            <returns>相等返回true不等返回false</returns>
+            <summary>
+获得是否相等
+</summary>
+            <param name="val1">值1</param>
+            <param name="val2">值2</param>
+            <returns>相等返回true不等返回false</returns>
+        </member>
+        <member name="M:PIE.Utility.MathUtil.RadiansToDegrees(System.Double)">
+            <summary>
+获得弧度转化为度
+</summary>
+            <param name="radians">值</param>
+            <returns>度</returns>
+            <summary>
+获得弧度转化为度
+</summary>
+            <param name="radians">值</param>
+            <returns>度</returns>
+        </member>
+        <member name="M:PIE.Utility.MathUtil.RadiansToDegrees(System.Single)">
+            <summary>
+获得弧度转化为度
+</summary>
+            <param name="radians">值</param>
+            <returns>度</returns>
+            <summary>
+获得弧度转化为度
+</summary>
+            <param name="radians">值</param>
+            <returns>度</returns>
+        </member>
+        <member name="M:PIE.Utility.MathUtil.DegreesToRadians(System.Double)">
+            <summary>
+获得度转化为弧度
+</summary>
+            <param name="degrees">值</param>
+            <returns>弧度</returns>
+            <summary>
+获得度转化为弧度
+</summary>
+            <param name="degrees">值</param>
+            <returns>弧度</returns>
+        </member>
+        <member name="M:PIE.Utility.MathUtil.DegreesToRadians(System.Single)">
+            <summary>
+获得度转化为弧度
+</summary>
+            <param name="degrees">值</param>
+            <returns>弧度</returns>
+            <summary>
+获得度转化为弧度
+</summary>
+            <param name="degrees">值</param>
+            <returns>弧度</returns>
+        </member>
+        <member name="M:PIE.Utility.MathUtil.Sqrt(System.Double!System.Runtime.CompilerServices.IsConst)">
+            <summary>
+获得求平方根运算
+</summary>
+            <param name="val">值</param>
+            <returns>平方根值</returns>
+            <summary>
+获得求平方根运算
+</summary>
+            <param name="val">值</param>
+            <returns>平方根值</returns>
+        </member>
+        <member name="M:PIE.Utility.MathUtil.Pow(System.Double!System.Runtime.CompilerServices.IsConst,System.Double!System.Runtime.CompilerServices.IsConst)">
+            <summary>
+获得求幂运算
+</summary>
+            <param name="val1">底数值</param>
+            <param name="val2">幂数值</param>
+            <returns>幂运算值</returns>
+            <summary>
+获得求幂运算
+</summary>
+            <param name="val1">底数值</param>
+            <param name="val2">幂数值</param>
+            <returns>幂运算值</returns>
+        </member>
+        <member name="M:PIE.Utility.MathUtil.Fabs(System.Double!System.Runtime.CompilerServices.IsConst)">
+            <summary>
+获得求绝对值
+</summary>
+            <param name="val">值</param>
+            <returns>绝对值</returns>
+            <summary>
+获得求绝对值
+</summary>
+            <param name="val">值</param>
+            <returns>绝对值</returns>
+        </member>
+        <member name="M:PIE.Utility.MathUtil.Floor(System.Double!System.Runtime.CompilerServices.IsConst)">
+            <summary>
+获得小于取整（如1.9999返回1）
+</summary>
+            <param name="val">值</param>
+            <returns>小于取整值</returns>
+            <summary>
+获得小于取整（如1.9999返回1）
+</summary>
+            <param name="val">值</param>
+            <returns>小于取整值</returns>
+        </member>
+        <member name="M:PIE.Utility.MathUtil.Ceil(System.Double!System.Runtime.CompilerServices.IsConst)">
+            <summary>
+获得大于取整（如1.0001返回2）
+</summary>
+            <param name="val">值</param>
+            <returns>大于取整值</returns>
+            <summary>
+获得大于取整（如1.0001返回2）
+</summary>
+            <param name="val">值</param>
+            <returns>大于取整值</returns>
+        </member>
+        <member name="M:PIE.Utility.MathUtil.Ln(System.Double!System.Runtime.CompilerServices.IsConst)">
+            <summary>
+获得对数
+</summary>
+            <param name="val">值</param>
+            <returns>对数值</returns>
+            <summary>
+获得对数
+</summary>
+            <param name="val">值</param>
+            <returns>对数值</returns>
+        </member>
+        <member name="M:PIE.Utility.MathUtil.Exp(System.Double!System.Runtime.CompilerServices.IsConst)">
+            <summary>
+获得指数（e的val次幂）
+</summary>
+            <param name="val">值</param>
+            <returns>指数值</returns>
+            <summary>
+获得指数（e的val次幂）
+</summary>
+            <param name="val">值</param>
+            <returns>指数值</returns>
+        </member>
+        <member name="M:PIE.Utility.MathUtil.Atan(System.Double!System.Runtime.CompilerServices.IsConst)">
+            <summary>
+获得反正切
+</summary>
+            <param name="val">角度值</param>
+            <returns>反正切值</returns>
+            <summary>
+获得反正切
+</summary>
+            <param name="val">角度值</param>
+            <returns>反正切值</returns>
+        </member>
+        <member name="M:PIE.Utility.MathUtil.Tan(System.Double!System.Runtime.CompilerServices.IsConst)">
+            <summary>
+获得正切
+</summary>
+            <param name="degreeAngle">角度值</param>
+            <returns>正切值</returns>
+            <summary>
+获得正切
+</summary>
+            <param name="degreeAngle">角度值</param>
+            <returns>正切值</returns>
+        </member>
+        <member name="M:PIE.Utility.MathUtil.Acos(System.Double!System.Runtime.CompilerServices.IsConst)">
+            <summary>
+获得反余弦
+</summary>
+            <param name="val">角度值</param>
+            <returns>反余弦值</returns>
+            <summary>
+获得反余弦
+</summary>
+            <param name="val">角度值</param>
+            <returns>反余弦值</returns>
+        </member>
+        <member name="M:PIE.Utility.MathUtil.Cos(System.Double!System.Runtime.CompilerServices.IsConst)">
+            <summary>
+获得余弦
+</summary>
+            <param name="degreeAngle">角度值</param>
+            <returns>余弦值</returns>
+            <summary>
+获得余弦
+</summary>
+            <param name="degreeAngle">角度值</param>
+            <returns>余弦值</returns>
+        </member>
+        <member name="M:PIE.Utility.MathUtil.Asin(System.Double!System.Runtime.CompilerServices.IsConst)">
+            <summary>
+获得反正弦
+</summary>
+            <param name="val">角度值</param>
+            <returns>反正弦值</returns>
+            <summary>
+获得反正弦
+</summary>
+            <param name="val">角度值</param>
+            <returns>反正弦值</returns>
+        </member>
+        <member name="M:PIE.Utility.MathUtil.Sin(System.Double!System.Runtime.CompilerServices.IsConst)">
+            <summary>
+获得正弦
+</summary>
+            <param name="degreeAngle">角度值</param>
+            <returns>正弦值</returns>
+            <summary>
+获得正弦
+</summary>
+            <param name="degreeAngle">角度值</param>
+            <returns>正弦值</returns>
+        </member>
+        <member name="M:PIE.Utility.MathUtil.GetPI">
+            <summary>
+获得PI
+</summary>
+            <returns>PI值</returns>
+            <summary>
+获得PI
+</summary>
+            <returns>PI值</returns>
+        </member>
+        <member name="T:PIE.Utility.MathUtil">
+            <summary>
+数学方法计算类
+</summary>
+        </member>
+        <member name="M:SysUtility.MathUtil.GetNorthAngle(System.Double,System.Double,System.Double,System.Double)">
+@brief 获得正北角
+@param[in] double x1 点1的X
+@param[in] double y1 点1的Y
+@param[in] double x2 点2的X
+@param[in] double y2 点2的Y
+@return double 角度
+
+</member>
+        <member name="M:SysUtility.MathUtil.IsEqual(System.Int32,System.Int32)">
+@brief 是否相等
+@param[in] int val1 值1
+@param[in] int val2 值2
+@return bool 相等返回true不等返回false
+
+</member>
+        <member name="M:SysUtility.MathUtil.IsEqual(System.Single,System.Single)">
+@brief 是否相等
+@param[in] float val1 值1
+@param[in] float val2 值2
+@return bool 相等返回true不等返回false
+
+</member>
+        <member name="M:SysUtility.MathUtil.IsEqual(System.Double,System.Double)">
+@brief 是否相等
+@param[in] double val1 值1
+@param[in] double val2 值2
+@return bool 相等返回true不等返回false
+
+</member>
+        <member name="M:SysUtility.MathUtil.RadiansToDegrees(System.Double)">
+@brief 弧度转化为度
+@param[in] const double radians 值
+@return double 度
+
+</member>
+        <member name="M:SysUtility.MathUtil.RadiansToDegrees(System.Single)">
+@brief 弧度转化为度
+@param[in] const float radians 值
+@return float 度
+
+</member>
+        <member name="M:SysUtility.MathUtil.DegreesToRadians(System.Double)">
+@brief 度转化为弧度
+@param[in] const double degrees 值
+@return double 弧度
+
+</member>
+        <member name="M:SysUtility.MathUtil.DegreesToRadians(System.Single)">
+@brief 度转化为弧度
+@param[in] const float degrees 值
+@return float 弧度
+
+</member>
+        <member name="M:SysUtility.MathUtil.Sqrt(System.Double!System.Runtime.CompilerServices.IsConst)">
+@brief 求平方根运算
+@param[in] const double val 值
+@return double 平方根值
+
+</member>
+        <member name="M:SysUtility.MathUtil.Pow(System.Double!System.Runtime.CompilerServices.IsConst,System.Double!System.Runtime.CompilerServices.IsConst)">
+@brief 求幂运算
+@param[in] const double val1 底数值
+@param[in] const double val2 幂数值
+@return double 求幂运算值
+
+</member>
+        <member name="M:SysUtility.MathUtil.Fabs(System.Double!System.Runtime.CompilerServices.IsConst)">
+@brief 求绝对值
+@param[in] const double val 值
+@return double 绝对值值
+
+</member>
+        <member name="M:SysUtility.MathUtil.Floor(System.Double!System.Runtime.CompilerServices.IsConst)">
+@brief 小于取整（如1.9999返回1）
+@param[in] const double val 值
+@return int 小于取整值
+
+</member>
+        <member name="M:SysUtility.MathUtil.Ceil(System.Double!System.Runtime.CompilerServices.IsConst)">
+@brief 大于取整（如1.0001返回2）
+@param[in] const double val 值
+@return int 大于取整值
+
+</member>
+        <member name="M:SysUtility.MathUtil.Ln(System.Double!System.Runtime.CompilerServices.IsConst)">
+@brief 对数
+@param[in] const double val 值
+@return double 对数值
+
+</member>
+        <member name="M:SysUtility.MathUtil.Exp(System.Double!System.Runtime.CompilerServices.IsConst)">
+@brief 指数（e的val次幂）
+@param[in] const double val 值
+@return double 指数值
+
+</member>
+        <member name="M:SysUtility.MathUtil.Atan(System.Double!System.Runtime.CompilerServices.IsConst)">
+@brief 反正切
+@param[in] const double val 值
+@return double 反正切值
+
+</member>
+        <member name="M:SysUtility.MathUtil.Tan(System.Double!System.Runtime.CompilerServices.IsConst)">
+@brief 正切
+@param[in] const double degreeAngle 角度值
+@return double 正切值
+
+</member>
+        <member name="M:SysUtility.MathUtil.Acos(System.Double!System.Runtime.CompilerServices.IsConst)">
+@brief 反余弦
+@param[in] const double val 值
+@return double 反余弦值
+
+</member>
+        <member name="M:SysUtility.MathUtil.Cos(System.Double!System.Runtime.CompilerServices.IsConst)">
+@brief 余弦
+@param[in] const double degreeAngle 角度值
+@return double 余弦值
+
+</member>
+        <member name="M:SysUtility.MathUtil.Asin(System.Double!System.Runtime.CompilerServices.IsConst)">
+@brief 反正弦
+@param[in] const double val 值
+@return double 反正弦值
+
+</member>
+        <member name="M:SysUtility.MathUtil.Sin(System.Double!System.Runtime.CompilerServices.IsConst)">
+@brief 正弦
+@param[in] const double degreeAngle 角度值
+@return double 正弦值
+
+</member>
+        <member name="M:SysUtility.MathUtil.GetPI">
+@brief 获得PI
+@return Pi
+
+</member>
+        <member name="T:SysUtility.MathUtil">
+@class MathUtil
+	* @brief 数学方法计算类
+
+</member>
+        <!-- 丢弃成员“M:SysUtility.MathUtil.GetPointByRadiumAndNorthAngle(System.Double,System.Double,System.Double,System.Double,System.Double*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.Double*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)”的格式错误的 XML 文档注释。-->
+    </members>
+</doc>

@@ -1,0 +1,1418 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        "SystemUI"
+    </assembly>
+    <members>
+        <member name="P:PIE.SystemUI.ICommandControl.Control">
+            <summary>
+获取或设置Control对象
+</summary>
+        </member>
+        <member name="T:PIE.SystemUI.ICommandControl">
+            <summary>
+ICommandControl接口
+</summary>
+        </member>
+        <member name="M:PIE.SystemUI.ITool.OnMouseMove(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+鼠标移动操作
+</summary>
+            <param name="sender">触发对象</param>
+            <param name="e">鼠标事件参数</param>
+        </member>
+        <member name="M:PIE.SystemUI.ITool.OnMouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+鼠标按下操作
+</summary>
+            <param name="sender">触发对象</param>
+            <param name="e">鼠标事件参数</param>
+        </member>
+        <member name="M:PIE.SystemUI.ITool.OnMouseUp(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+鼠标抬起操作
+</summary>
+            <param name="sender">触发对象</param>
+            <param name="e">鼠标事件参数</param>
+        </member>
+        <member name="M:PIE.SystemUI.ITool.OnMouseEnter(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+鼠标进入操作
+</summary>
+            <param name="sender">触发对象</param>
+            <param name="e">鼠标事件参数</param>
+        </member>
+        <member name="M:PIE.SystemUI.ITool.OnKeyUp(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+键盘按键抬起操作
+</summary>
+            <param name="sender">触发对象</param>
+            <param name="e">键盘事件参数</param>
+        </member>
+        <member name="M:PIE.SystemUI.ITool.OnKeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+键盘按键按下操作
+</summary>
+            <param name="sender">触发对象</param>
+            <param name="e">键盘事件参数</param>
+        </member>
+        <member name="M:PIE.SystemUI.ITool.OnDblClick">
+            <summary>
+双击
+</summary>
+        </member>
+        <member name="M:PIE.SystemUI.ITool.OnContextMenu(System.Int32,System.Int32)">
+            <summary>
+右键菜单弹出
+</summary>
+            <param name="x">点击点X</param>
+            <param name="y">点击点Y</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:PIE.SystemUI.ITool.Deactivate">
+            <summary>
+取消按钮的激活
+</summary>
+            <returns>是否成功</returns>
+        </member>
+        <member name="P:PIE.SystemUI.ITool.Cursor">
+            <summary>
+获取光标
+</summary>
+        </member>
+        <member name="T:PIE.SystemUI.ITool">
+            <summary>
+ITool接口
+</summary>
+        </member>
+        <member name="M:PIE.SystemUI.ICommand.OnClick">
+            <summary>
+单击事件
+</summary>
+        </member>
+        <member name="M:PIE.SystemUI.ICommand.OnCreate(System.Object)">
+            <summary>
+创建插件对象
+</summary>
+            <param name="hook">hook</param>
+        </member>
+        <member name="P:PIE.SystemUI.ICommand.Image">
+            <summary>
+获取按钮图片
+</summary>
+        </member>
+        <member name="P:PIE.SystemUI.ICommand.Checked">
+            <summary>
+获取是否选中
+</summary>
+        </member>
+        <member name="P:PIE.SystemUI.ICommand.Enabled">
+            <summary>
+获取是否可用
+</summary>
+        </member>
+        <member name="P:PIE.SystemUI.ICommand.TypeName">
+            <summary>
+获取类型名称
+</summary>
+        </member>
+        <member name="P:PIE.SystemUI.ICommand.Type">
+            <summary>
+获取类型
+</summary>
+        </member>
+        <member name="P:PIE.SystemUI.ICommand.ToolTip">
+            <summary>
+获取提示信息
+</summary>
+        </member>
+        <member name="P:PIE.SystemUI.ICommand.Caption">
+            <summary>
+获取标题
+</summary>
+        </member>
+        <member name="P:PIE.SystemUI.ICommand.Name">
+            <summary>
+获取名称
+</summary>
+        </member>
+        <member name="T:PIE.SystemUI.ICommand">
+            <summary>
+ICommand接口
+</summary>
+        </member>
+        <member name="T:PIE.SystemUI.CommmandType">
+            <summary>
+CommmandType类型
+</summary>
+        </member>
+        <member name="F:PIE.SystemUI.CommmandType.Proxy">
+            <summary>
+包C++方式
+</summary>
+        </member>
+        <member name="F:PIE.SystemUI.CommmandType.Normal">
+            <summary>
+通用类型
+</summary>
+        </member>
+        <member name="F:PIE.SystemUI.CommmandType.Unknown">
+            <summary>
+未知类型
+</summary>
+        </member>
+        <member name="T:PIE.SystemUI.LayerDrawPhaseType">
+            <summary>
+LayerDrawPhaseType类型
+</summary>
+        </member>
+        <member name="F:PIE.SystemUI.LayerDrawPhaseType.DPSelection">
+            <summary>
+选择集
+</summary>
+        </member>
+        <member name="F:PIE.SystemUI.LayerDrawPhaseType.DPAnnotation">
+            <summary>
+标注
+</summary>
+        </member>
+        <member name="F:PIE.SystemUI.LayerDrawPhaseType.DPGeography">
+            <summary>
+Geo图形
+</summary>
+        </member>
+        <member name="T:PIE.SystemUI.PieAreaUnits">
+            <summary>
+PieAreaUnits面积单位
+</summary>
+        </member>
+        <member name="F:PIE.SystemUI.PieAreaUnits.AreaUnitsLast">
+            <summary />
+        </member>
+        <member name="F:PIE.SystemUI.PieAreaUnits.DecimalSquareDegrees">
+            <summary>
+度（十进制）
+</summary>
+        </member>
+        <member name="F:PIE.SystemUI.PieAreaUnits.SquareKilometers">
+            <summary>
+平方千米
+</summary>
+        </member>
+        <member name="F:PIE.SystemUI.PieAreaUnits.Hectares">
+            <summary />
+        </member>
+        <member name="F:PIE.SystemUI.PieAreaUnits.Ares">
+            <summary>
+平方
+</summary>
+        </member>
+        <member name="F:PIE.SystemUI.PieAreaUnits.SquareMeters">
+            <summary>
+平方米
+</summary>
+        </member>
+        <member name="F:PIE.SystemUI.PieAreaUnits.SquareDecimeters">
+            <summary>
+平方分米
+</summary>
+        </member>
+        <member name="F:PIE.SystemUI.PieAreaUnits.SquareCentimeters">
+            <summary>
+平方厘米
+</summary>
+        </member>
+        <member name="F:PIE.SystemUI.PieAreaUnits.SquareMillimeters">
+            <summary>
+平方毫米
+</summary>
+        </member>
+        <member name="F:PIE.SystemUI.PieAreaUnits.SquareMiles">
+            <summary>
+平方米
+</summary>
+        </member>
+        <member name="F:PIE.SystemUI.PieAreaUnits.Acres">
+            <summary />
+        </member>
+        <member name="F:PIE.SystemUI.PieAreaUnits.SquareYards">
+            <summary>
+平方尺
+</summary>
+        </member>
+        <member name="F:PIE.SystemUI.PieAreaUnits.SquareFeet">
+            <summary>
+平方英寸
+</summary>
+        </member>
+        <member name="F:PIE.SystemUI.PieAreaUnits.SquareInches">
+            <summary>
+平方英尺
+</summary>
+        </member>
+        <member name="F:PIE.SystemUI.PieAreaUnits.Unknown">
+            <summary>
+未知单位
+</summary>
+        </member>
+        <member name="T:PIE.SystemUI.PieUnits">
+            <summary>
+PieUnits长度单位
+</summary>
+        </member>
+        <member name="F:PIE.SystemUI.PieUnits.UnitsCount">
+            <summary>
+个数
+</summary>
+        </member>
+        <member name="F:PIE.SystemUI.PieUnits.Decimeters">
+            <summary>
+分米
+</summary>
+        </member>
+        <member name="F:PIE.SystemUI.PieUnits.DecimalDegrees">
+            <summary>
+度（十进制）
+</summary>
+        </member>
+        <member name="F:PIE.SystemUI.PieUnits.Kilometers">
+            <summary>
+千米
+</summary>
+        </member>
+        <member name="F:PIE.SystemUI.PieUnits.Meters">
+            <summary>
+米
+</summary>
+        </member>
+        <member name="F:PIE.SystemUI.PieUnits.Centimeters">
+            <summary>
+厘米
+</summary>
+        </member>
+        <member name="F:PIE.SystemUI.PieUnits.Millimeters">
+            <summary>
+毫米
+</summary>
+        </member>
+        <member name="F:PIE.SystemUI.PieUnits.NauticalMiles">
+            <summary>
+海里
+</summary>
+        </member>
+        <member name="F:PIE.SystemUI.PieUnits.Miles">
+            <summary>
+英里
+</summary>
+        </member>
+        <member name="F:PIE.SystemUI.PieUnits.Yards">
+            <summary>
+码
+</summary>
+        </member>
+        <member name="F:PIE.SystemUI.PieUnits.Feet">
+            <summary>
+英尺
+</summary>
+        </member>
+        <member name="F:PIE.SystemUI.PieUnits.Points">
+            <summary>
+点
+</summary>
+        </member>
+        <member name="F:PIE.SystemUI.PieUnits.Inches">
+            <summary>
+英寸
+</summary>
+        </member>
+        <member name="F:PIE.SystemUI.PieUnits.Unknown">
+            <summary>
+未知单位
+</summary>
+        </member>
+        <member name="F:PIE.SystemUI.OperationStack.m_pCInstance">
+            <summary>
+C++对象-子对象
+</summary>
+        </member>
+        <member name="M:PIE.SystemUI.OperationStack.#ctor(SysUtility._ptr_t&lt;SysUI.IOperationStack&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>
+构造函数
+</summary>
+        </member>
+        <member name="M:PIE.SystemUI.OperationStack.GetHandle">
+            <summary>
+获取关联对象的句柄
+</summary>
+            <returns>关联对象的句柄</returns>
+        </member>
+        <member name="M:PIE.SystemUI.OperationStack.CanUndo">
+            <summary>
+是否可以回退
+</summary>
+            <returns>可回退时为true，否则为false</returns>
+            <summary>
+是否可以回退
+</summary>
+            <returns>可回退时为true，否则为false</returns>
+        </member>
+        <member name="M:PIE.SystemUI.OperationStack.CanRedo">
+            <summary>
+是否可以重做
+</summary>
+            <returns>可重做时为true，否则为false</returns>
+            <summary>
+是否可以重做
+</summary>
+            <returns>可重做时为true，否则为false</returns>
+        </member>
+        <member name="M:PIE.SystemUI.OperationStack.Reset">
+            <summary>
+重置
+</summary>
+            <summary>
+重置
+</summary>
+        </member>
+        <member name="M:PIE.SystemUI.OperationStack.GetCount">
+            <summary>
+获取操作数
+</summary>
+            <returns>获取操作数</returns>
+            <summary>
+获取操作数
+</summary>
+            <returns>获取操作数</returns>
+        </member>
+        <member name="M:PIE.SystemUI.OperationStack.Undo">
+            <summary>
+回退
+</summary>
+            <summary>
+回退
+</summary>
+        </member>
+        <member name="M:PIE.SystemUI.OperationStack.Redo">
+            <summary>
+重做
+</summary>
+            <summary>
+重做
+</summary>
+        </member>
+        <member name="M:PIE.SystemUI.OperationStack.GetUndoOperation">
+            <summary>
+获取上一步操作对象
+</summary>
+            <returns>操作对象</returns>
+            <summary>
+获取上一步操作对象
+</summary>
+            <returns>操作对象</returns>
+        </member>
+        <member name="M:PIE.SystemUI.OperationStack.GetRedoOperation">
+            <summary>
+获取下一步操作对象
+</summary>
+            <returns>操作对象</returns>
+            <summary>
+获取下一步操作对象
+</summary>
+            <returns>操作对象</returns>
+        </member>
+        <member name="M:PIE.SystemUI.OperationStack.GetOperation(System.Int32)">
+            <summary>
+根据索引获取操作对象
+</summary>
+            <param name="index">操作索引</param>
+            <returns>操作对象</returns>
+            <summary>
+根据索引获取操作对象
+</summary>
+            <param name="index">操作索引</param>
+            <returns>操作对象</returns>
+        </member>
+        <member name="M:PIE.SystemUI.OperationStack.RemoveOperation(PIE.SystemUI.IOperation!System.Runtime.CompilerServices.IsConst)">
+            <summary>
+移除操作
+</summary>
+            <param name="operation">操作对象</param>
+            <summary>
+移除操作
+</summary>
+            <param name="operation">操作对象</param>
+        </member>
+        <member name="M:PIE.SystemUI.OperationStack.AddOperation(PIE.SystemUI.IOperation!System.Runtime.CompilerServices.IsConst)">
+            <summary>
+添加操作
+</summary>
+            <param name="operation">操作对象</param>
+            <summary>
+添加操作
+</summary>
+            <param name="operation">操作对象</param>
+        </member>
+        <member name="M:PIE.SystemUI.OperationStack.Finalize">
+            <summary>
+析构函数
+</summary>
+            <summary>
+析构函数
+</summary>
+        </member>
+        <member name="M:PIE.SystemUI.OperationStack.Dispose">
+            <summary>
+析构函数
+</summary>
+            <summary>
+析构函数
+</summary>
+        </member>
+        <member name="M:PIE.SystemUI.OperationStack.#ctor">
+            <summary>
+构造函数
+</summary>
+            <summary>
+构造函数
+</summary>
+        </member>
+        <member name="T:PIE.SystemUI.OperationStack">
+            <summary>
+OperationStack类
+</summary>
+        </member>
+        <member name="M:ConvertImageToQImage(System.Drawing.Image)">
+            <summary>
+转换Image句柄为QImage
+</summary>
+            <param name="image">转换的Image</param>
+            <returns>QImage对象</returns>
+        </member>
+        <member name="M:ConvertQImageToImage(QImage*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>
+转换QImage为Image句柄
+</summary>
+            <param name="image">转换的QImage</param>
+            <returns>Image句柄</returns>
+        </member>
+        <member name="M:ConvertObjectToQVariant(System.Object)">
+            <summary>
+转换Object句柄为QVariant
+</summary>
+            <param name="object">转换的Object</param>
+            <returns>QVariant</returns>
+        </member>
+        <member name="M:ConvertQVariantToObject(QVariant*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>
+转换QVariant为Object句柄
+</summary>
+            <param name="variant">转换的QVariant</param>
+            <returns>Object句柄</returns>
+        </member>
+        <member name="M:ConvertColorToQColor(System.Drawing.Color)">
+            <summary>
+转换Color句柄为QColor
+</summary>
+            <param name="color">转换的Color</param>
+            <returns>QColor</returns>
+        </member>
+        <member name="M:ConvertQColorToColor(QColor*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>
+转换QColor为Color
+</summary>
+            <param name="color">转换的QColor</param>
+            <returns>Color</returns>
+        </member>
+        <member name="M:ConvertFontToQFont(System.Drawing.Font)">
+            <summary>
+转换Font句柄为QFont
+</summary>
+            <param name="font">转换的Font</param>
+            <returns>QFont</returns>
+        </member>
+        <member name="M:ConvertQFontToFont(QFont*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>
+转换QFont为Font句柄
+</summary>
+            <param name="font">转换的QFont</param>
+            <returns>Font句柄</returns>
+        </member>
+        <member name="M:ConvertQStringToString(QString*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>
+转换QString为String句柄
+</summary>
+            <param name="strValueSource">转换前的String句柄</param>
+            <returns>转换后的String</returns>
+        </member>
+        <member name="M:ConvertQStringToString(QString*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.String@)">
+            <summary>
+转换QString为String句柄
+</summary>
+            <param name="strValueSource">转换前的String句柄</param>
+            <param name="strValueTarget">转换后的String</param>
+            <returns />
+        </member>
+        <member name="M:ConvertStringToQString(System.String)">
+            <summary>
+转换String句柄为QString
+</summary>
+            <param name="strValueSource">转换前的String句柄</param>
+            <returns />
+        </member>
+        <member name="M:ConvertStringToQString(System.String,QString*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>
+转换String句柄为QString
+</summary>
+            <param name="strValueSource">转换前的String句柄</param>
+            <param name="strValueTarget">转换后的String</param>
+            <returns />
+        </member>
+        <member name="M:PIE.SystemUI.SystemUIFactory.ConstructCLRTrackerCancel(System.Void*)">
+            <summary>
+创建Geometry
+</summary>
+            <param name="pGeo">Geometry对象C++</param>
+            <returns>Geometry对象CLR</returns>
+            <summary>
+创建Geometry
+</summary>
+            <param name="pGeo">Geometry对象C++</param>
+            <returns>Geometry对象CLR</returns>
+        </member>
+        <member name="T:PIE.SystemUI.SystemUIFactory">
+            <summary>
+SystemUIFactory类
+</summary>
+        </member>
+        <member name="F:PIE.SystemUI.TrackerCancel.m_pCInstance">
+            <summary>
+C++对象-子对象
+</summary>
+        </member>
+        <member name="M:PIE.SystemUI.TrackerCancel.#ctor(SysUtility._ptr_t&lt;SysUI.TrackerCancel&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>
+构造函数
+</summary>
+        </member>
+        <member name="M:PIE.SystemUI.TrackerCancel.GetHandle">
+            <summary>
+获取关联对象的句柄
+</summary>
+            <returns>关联对象的句柄</returns>
+        </member>
+        <member name="M:PIE.SystemUI.TrackerCancel.Reset">
+            <summary>
+重置
+</summary>
+            <returns />
+            <summary>
+重置
+</summary>
+            <returns />
+        </member>
+        <member name="M:PIE.SystemUI.TrackerCancel.IsCanced">
+            <summary>
+是否已经取消
+</summary>
+            <returns>是否取消</returns>
+            <summary>
+是否已经取消
+</summary>
+            <returns>是否取消</returns>
+        </member>
+        <member name="M:PIE.SystemUI.TrackerCancel.Cancel">
+            <summary>
+取消
+</summary>
+            <returns />
+            <summary>
+取消
+</summary>
+            <returns />
+        </member>
+        <member name="M:PIE.SystemUI.TrackerCancel.Finalize">
+            <summary>
+析构函数
+</summary>
+            <summary>
+析构函数
+</summary>
+        </member>
+        <member name="M:PIE.SystemUI.TrackerCancel.Dispose">
+            <summary>
+析构函数
+</summary>
+            <summary>
+析构函数
+</summary>
+        </member>
+        <member name="M:PIE.SystemUI.TrackerCancel.#ctor">
+            <summary>
+构造函数
+</summary>
+            <summary>
+构造函数
+</summary>
+        </member>
+        <member name="T:PIE.SystemUI.TrackerCancel">
+            <summary>
+TrackerCancel类
+</summary>
+        </member>
+        <member name="M:PIE.SystemUI.ITrackerCancel.Reset">
+            <summary>
+重置
+</summary>
+            <returns />
+        </member>
+        <member name="M:PIE.SystemUI.ITrackerCancel.IsCanced">
+            <summary>
+是否已经取消
+</summary>
+            <returns>是否取消</returns>
+        </member>
+        <member name="M:PIE.SystemUI.ITrackerCancel.Cancel">
+            <summary>
+取消
+</summary>
+            <returns />
+        </member>
+        <member name="T:PIE.SystemUI.ITrackerCancel">
+            <summary>
+ITrackerCancel接口
+</summary>
+        </member>
+        <member name="D:SysUI.TrackerCancelPtr">
+@brief 取消追踪器类智能指针
+
+</member>
+        <member name="F:SysUI.TrackerCancel.m_mutex">
+@brief 互斥锁
+
+</member>
+        <member name="F:SysUI.TrackerCancel.m_State">
+@brief 状态
+
+</member>
+        <member name="M:SysUI.TrackerCancel.Reset">
+@brief 重置
+@return
+
+</member>
+        <member name="M:SysUI.TrackerCancel.IsCanced">
+@brief 是否已经取消
+@return
+
+</member>
+        <member name="M:SysUI.TrackerCancel.Cancel">
+@brief 取消
+@return
+
+</member>
+        <member name="M:SysUI.TrackerCancel.Dispose">
+@brief 析构函数
+@return
+
+</member>
+        <member name="M:SysUI.TrackerCancel.#ctor">
+@brief 构造函数
+
+</member>
+        <member name="T:SysUI.TrackerCancel">
+@class TrackerCancel
+	* @brief  取消追踪器类
+
+</member>
+        <member name="F:PIE.SystemUI.BaseOperation.m_pCInstance">
+            <summary>
+C++对象-子对象
+</summary>
+        </member>
+        <member name="M:PIE.SystemUI.BaseOperation.#ctor(SysUtility._ptr_t&lt;SysUI.IOperation&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>
+构造函数
+</summary>
+        </member>
+        <member name="M:PIE.SystemUI.BaseOperation.GetHandle">
+            <summary>
+获取关联对象的句柄
+</summary>
+            <returns>关联对象的句柄</returns>
+        </member>
+        <member name="M:PIE.SystemUI.BaseOperation.GetDescription">
+            <summary>
+获得描述信息
+</summary>
+            <returns>描述信息</returns>
+            <summary>
+获得描述信息
+</summary>
+            <returns>描述信息</returns>
+        </member>
+        <member name="M:PIE.SystemUI.BaseOperation.Undo">
+            <summary>
+回退
+</summary>
+            <returns />
+            <summary>
+回退
+</summary>
+            <returns />
+        </member>
+        <member name="M:PIE.SystemUI.BaseOperation.Redo">
+            <summary>
+重做
+</summary>
+            <returns />
+            <summary>
+重做
+</summary>
+            <returns />
+        </member>
+        <member name="M:PIE.SystemUI.BaseOperation.Do">
+            <summary>
+执行
+</summary>
+            <returns />
+            <summary>
+执行
+</summary>
+            <returns />
+        </member>
+        <member name="M:PIE.SystemUI.BaseOperation.CanUndo">
+            <summary>
+是否可以回退
+</summary>
+            <returns>是否可以回退</returns>
+            <summary>
+是否可以回退
+</summary>
+            <returns>是否可以回退</returns>
+        </member>
+        <member name="M:PIE.SystemUI.BaseOperation.CanRedo">
+            <summary>
+是否可以重做
+</summary>
+            <returns>是否可以重做</returns>
+            <summary>
+是否可以重做
+</summary>
+            <returns>是否可以重做</returns>
+        </member>
+        <member name="M:PIE.SystemUI.BaseOperation.Finalize">
+            <summary>
+析构函数
+</summary>
+            <summary>
+析构函数
+</summary>
+        </member>
+        <member name="M:PIE.SystemUI.BaseOperation.Dispose">
+            <summary>
+析构函数
+</summary>
+            <summary>
+析构函数
+</summary>
+        </member>
+        <member name="M:PIE.SystemUI.BaseOperation.#ctor">
+            <summary>
+构造函数
+</summary>
+            <summary>
+构造函数
+</summary>
+        </member>
+        <member name="T:PIE.SystemUI.BaseOperation">
+            <summary>
+BaseOperation操作基类
+</summary>
+        </member>
+        <member name="F:PIE.SystemUI.ControlsOperationStack.m_pCInstance">
+            <summary>
+C++对象-子对象
+</summary>
+        </member>
+        <member name="M:PIE.SystemUI.ControlsOperationStack.GetHandle">
+            <summary>
+获取关联对象的句柄
+</summary>
+            <returns>关联对象的句柄</returns>
+        </member>
+        <member name="M:PIE.SystemUI.ControlsOperationStack.CanUndo">
+            <summary>
+是否可以回退
+</summary>
+            <returns>可回退时为true，否则为false</returns>
+            <summary>
+是否可以回退
+</summary>
+            <returns>可回退时为true，否则为false</returns>
+        </member>
+        <member name="M:PIE.SystemUI.ControlsOperationStack.CanRedo">
+            <summary>
+是否可以重做
+</summary>
+            <returns>可重做时为true，否则为false</returns>
+            <summary>
+是否可以重做
+</summary>
+            <returns>可重做时为true，否则为false</returns>
+        </member>
+        <member name="M:PIE.SystemUI.ControlsOperationStack.Reset">
+            <summary>
+重置
+</summary>
+            <summary>
+重置
+</summary>
+        </member>
+        <member name="M:PIE.SystemUI.ControlsOperationStack.GetCount">
+            <summary>
+获取操作数
+</summary>
+            <returns>获取操作数</returns>
+            <summary>
+获取操作数
+</summary>
+            <returns>获取操作数</returns>
+        </member>
+        <member name="M:PIE.SystemUI.ControlsOperationStack.Undo">
+            <summary>
+回退
+</summary>
+            <summary>
+回退
+</summary>
+        </member>
+        <member name="M:PIE.SystemUI.ControlsOperationStack.Redo">
+            <summary>
+重做
+</summary>
+            <summary>
+重做
+</summary>
+        </member>
+        <member name="M:PIE.SystemUI.ControlsOperationStack.GetUndoOperation">
+            <summary>
+获取上一步操作对象
+</summary>
+            <returns>操作对象</returns>
+            <summary>
+获取上一步操作对象
+</summary>
+            <returns>操作对象</returns>
+        </member>
+        <member name="M:PIE.SystemUI.ControlsOperationStack.GetRedoOperation">
+            <summary>
+获取下一步操作对象
+</summary>
+            <returns>操作对象</returns>
+            <summary>
+获取下一步操作对象
+</summary>
+            <returns>操作对象</returns>
+        </member>
+        <member name="M:PIE.SystemUI.ControlsOperationStack.GetOperation(System.Int32)">
+            <summary>
+根据索引获取操作对象
+</summary>
+            <param name="index">操作索引</param>
+            <returns>操作对象</returns>
+            <summary>
+根据索引获取操作对象
+</summary>
+            <param name="index">操作索引</param>
+            <returns>操作对象</returns>
+        </member>
+        <member name="M:PIE.SystemUI.ControlsOperationStack.RemoveOperation(PIE.SystemUI.IOperation!System.Runtime.CompilerServices.IsConst)">
+            <summary>
+移除操作
+</summary>
+            <param name="operation">操作对象</param>
+            <summary>
+移除操作
+</summary>
+            <param name="operation">操作对象</param>
+        </member>
+        <member name="M:PIE.SystemUI.ControlsOperationStack.AddOperation(PIE.SystemUI.IOperation!System.Runtime.CompilerServices.IsConst)">
+            <summary>
+添加操作
+</summary>
+            <param name="operation">操作对象</param>
+            <summary>
+添加操作
+</summary>
+            <param name="operation">操作对象</param>
+        </member>
+        <member name="P:PIE.SystemUI.ControlsOperationStack.Instance">
+            <summary>
+实例化
+</summary>
+        </member>
+        <member name="M:PIE.SystemUI.ControlsOperationStack.Finalize">
+            <summary>
+析构函数
+</summary>
+            <summary>
+析构函数
+</summary>
+        </member>
+        <member name="M:PIE.SystemUI.ControlsOperationStack.Dispose">
+            <summary>
+析构函数
+</summary>
+            <summary>
+析构函数
+</summary>
+        </member>
+        <member name="M:PIE.SystemUI.ControlsOperationStack.#ctor">
+            <summary>
+构造函数
+</summary>
+            <summary>
+构造函数
+</summary>
+        </member>
+        <member name="T:PIE.SystemUI.ControlsOperationStack">
+            <summary>
+ControlsOperationStack类
+</summary>
+        </member>
+        <member name="M:PIE.SystemUI.IOperationStack.CanUndo">
+            <summary>
+是否可以回退
+</summary>
+            <returns>可回退时为true，否则为false</returns>
+        </member>
+        <member name="M:PIE.SystemUI.IOperationStack.CanRedo">
+            <summary>
+是否可以重做
+</summary>
+            <returns>可重做时为true，否则为false</returns>
+        </member>
+        <member name="M:PIE.SystemUI.IOperationStack.Reset">
+            <summary>
+重置
+</summary>
+        </member>
+        <member name="M:PIE.SystemUI.IOperationStack.GetCount">
+            <summary>
+获取操作数
+</summary>
+            <returns>获取操作数</returns>
+        </member>
+        <member name="M:PIE.SystemUI.IOperationStack.Undo">
+            <summary>
+回退
+</summary>
+        </member>
+        <member name="M:PIE.SystemUI.IOperationStack.Redo">
+            <summary>
+重做
+</summary>
+        </member>
+        <member name="M:PIE.SystemUI.IOperationStack.GetUndoOperation">
+            <summary>
+获取上一步操作对象
+</summary>
+            <returns>操作对象</returns>
+        </member>
+        <member name="M:PIE.SystemUI.IOperationStack.GetRedoOperation">
+            <summary>
+获取下一步操作对象
+</summary>
+            <returns>操作对象</returns>
+        </member>
+        <member name="M:PIE.SystemUI.IOperationStack.GetOperation(System.Int32)">
+            <summary>
+根据索引获取操作对象
+</summary>
+            <param name="index">操作索引</param>
+            <returns>操作对象</returns>
+        </member>
+        <member name="M:PIE.SystemUI.IOperationStack.RemoveOperation(PIE.SystemUI.IOperation!System.Runtime.CompilerServices.IsConst)">
+            <summary>
+移除操作
+</summary>
+            <param name="operation">操作对象</param>
+        </member>
+        <member name="M:PIE.SystemUI.IOperationStack.AddOperation(PIE.SystemUI.IOperation!System.Runtime.CompilerServices.IsConst)">
+            <summary>
+添加操作
+</summary>
+            <param name="operation">操作对象</param>
+        </member>
+        <member name="T:PIE.SystemUI.IOperationStack">
+            <summary>
+IOperationStack接口
+</summary>
+        </member>
+        <member name="M:PIE.SystemUI.IOperation.GetDescription">
+            <summary>
+获得描述信息
+</summary>
+            <returns>描述信息</returns>
+        </member>
+        <member name="M:PIE.SystemUI.IOperation.Undo">
+            <summary>
+回退
+</summary>
+            <returns />
+        </member>
+        <member name="M:PIE.SystemUI.IOperation.Redo">
+            <summary>
+重做
+</summary>
+            <returns />
+        </member>
+        <member name="M:PIE.SystemUI.IOperation.Do">
+            <summary>
+执行
+</summary>
+            <returns />
+        </member>
+        <member name="M:PIE.SystemUI.IOperation.CanUndo">
+            <summary>
+是否可以回退
+</summary>
+            <returns>是否可以回退</returns>
+        </member>
+        <member name="M:PIE.SystemUI.IOperation.CanRedo">
+            <summary>
+是否可以重做
+</summary>
+            <returns>是否可以重做</returns>
+        </member>
+        <member name="T:PIE.SystemUI.IOperation">
+            <summary>
+IOperation操作接口
+</summary>
+        </member>
+        <member name="F:SysUI.ControlsOperationStack.m_sControlOperationStack">
+@brief 控制操作堆栈
+
+</member>
+        <member name="F:SysUI.ControlsOperationStack.m_pGroupOperation">
+@brief 组操作
+
+</member>
+        <member name="M:SysUI.ControlsOperationStack.Dispose">
+@brief  析构函数
+
+</member>
+        <member name="M:SysUI.ControlsOperationStack.#ctor">
+@brief  构造函数
+
+</member>
+        <member name="M:SysUI.ControlsOperationStack.Reset">
+@brief 重置
+@return void
+
+</member>
+        <member name="M:SysUI.ControlsOperationStack.GetCount">
+@brief 获取操作数量
+@return void
+
+</member>
+        <member name="M:SysUI.ControlsOperationStack.Undo">
+@brief 回退
+@return void
+
+</member>
+        <member name="M:SysUI.ControlsOperationStack.Redo">
+@brief 重做
+@return void
+
+</member>
+        <member name="M:SysUI.ControlsOperationStack.CanUndo">
+@brief 是否可以回退
+@return bool 是 true, 否 false
+
+</member>
+        <member name="M:SysUI.ControlsOperationStack.CanRedo">
+@brief 是否可以重做
+@return bool 是 true, 否 false
+
+</member>
+        <member name="M:SysUI.ControlsOperationStack.GetUndoOperation">
+@brief 获取上一步操作对象
+@return IOperationPtr 操作对象
+
+</member>
+        <member name="M:SysUI.ControlsOperationStack.GetRedoOperation">
+@brief 获取下一步操作对象
+@return IOperationPtr 操作对象
+
+</member>
+        <member name="M:SysUI.ControlsOperationStack.GetOperation(System.Int32)">
+@brief 根据索引获取操作对象
+@param [in] index 操作索引
+@return IOperationPtr 操作对象
+
+</member>
+        <member name="M:SysUI.ControlsOperationStack.RemoveOperation(SysUtility._ptr_t&lt;SysUI.IOperation&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+@brief 移除操作
+@param [in] ptrOpt 操作对象
+@return void
+
+</member>
+        <member name="M:SysUI.ControlsOperationStack.AddOperation(SysUtility._ptr_t&lt;SysUI.IOperation&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+@brief 添加操作
+@param [in] ptrOpt 操作对象
+@return  bool 成功与否
+
+</member>
+        <member name="M:SysUI.ControlsOperationStack.AbortOperation">
+@brief  中止操作
+@return bool 成功与否
+
+</member>
+        <member name="M:SysUI.ControlsOperationStack.StopOperation">
+@brief  停止操作
+@return bool 成功与否
+
+</member>
+        <member name="M:SysUI.ControlsOperationStack.GetCurrentOperation">
+@brief  获取当前的操作对象
+@return SysUI::GroupOperationsPtr 智能指针
+
+</member>
+        <member name="M:SysUI.ControlsOperationStack.StartOperation(QString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+@brief  开始编辑操作对象
+@param [in] strDescription = ""  默认参数
+@return bool  成功与否
+
+</member>
+        <member name="M:SysUI.ControlsOperationStack.Destroy">
+@brief  销毁对象
+@return void
+
+</member>
+        <member name="M:SysUI.ControlsOperationStack.Instance">
+@brief  获得单例
+@return 堆栈操作管理器对象指针
+
+</member>
+        <member name="T:SysUI.ControlsOperationStack">
+@class ControlsOperationStack
+	* @brief  堆栈操作管理器
+
+</member>
+        <member name="D:SysUI.GroupOperationsPtr">
+@brief 组操作对象智能指针
+
+</member>
+        <member name="F:SysUI.GroupOperations.m_lstOpt">
+@brief 组操作对象下子操作对象
+
+</member>
+        <member name="M:SysUI.GroupOperations.AddOperation(SysUtility._ptr_t&lt;SysUI.IOperation&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+@brief 添加操作
+@param [in] ptrOpt 操作基类对象
+@return
+
+</member>
+        <member name="M:SysUI.GroupOperations.SetDescription(QString!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+@brief 设置描述信息
+@param [in] strDescription 描述信息的字符串
+@return
+
+</member>
+        <member name="M:SysUI.GroupOperations.GetDescription">
+@brief 获得描述信息
+@return
+
+</member>
+        <member name="M:SysUI.GroupOperations.Undo">
+@brief 回退
+@return
+
+</member>
+        <member name="M:SysUI.GroupOperations.Do">
+@brief 执行
+@return
+
+</member>
+        <member name="M:SysUI.GroupOperations.Dispose">
+@brief 虚析构函数
+@return
+
+</member>
+        <member name="M:SysUI.GroupOperations.#ctor">
+@brief 构造函数
+@return
+
+</member>
+        <member name="T:SysUI.GroupOperations">
+@class GroupOperations
+	* @brief 组操作对象
+
+</member>
+        <member name="D:SysUI.IOperationStackPtr">
+@brief 操作堆栈类智能指针
+
+</member>
+        <member name="F:SysUI.IOperationStack.m_listOpts">
+@brief 操作堆栈中操作对象栈
+
+</member>
+        <member name="F:SysUI.IOperationStack.m_nCurrIndex">
+@brief 操作堆栈中当前操作对象索引
+
+</member>
+        <member name="M:SysUI.IOperationStack.Dispose">
+@brief 虚析构函数
+@return
+
+</member>
+        <member name="M:SysUI.IOperationStack.#ctor">
+@brief 构造函数
+@return
+
+</member>
+        <member name="M:SysUI.IOperationStack.Reset">
+@brief 重置
+@return
+
+</member>
+        <member name="M:SysUI.IOperationStack.GetCount">
+@brief 获取操作数量
+@return  操作数量
+
+</member>
+        <member name="M:SysUI.IOperationStack.Undo">
+@brief 回退
+@return
+
+</member>
+        <member name="M:SysUI.IOperationStack.Redo">
+@brief 重做
+@return
+
+</member>
+        <member name="M:SysUI.IOperationStack.CanUndo">
+@brief 是否可以回退
+@return  成功 true,失败 false
+
+</member>
+        <member name="M:SysUI.IOperationStack.CanRedo">
+@brief 是否可以重做
+@return 成功 true,失败  false
+
+</member>
+        <member name="M:SysUI.IOperationStack.GetUndoOperation">
+@brief 获取上一步操作对象
+@return IOperationPtr 操作对象
+
+</member>
+        <member name="M:SysUI.IOperationStack.GetRedoOperation">
+@brief 获取下一步操作对象
+@return IOperationPtr 操作对象
+
+</member>
+        <member name="M:SysUI.IOperationStack.GetOperation(System.Int32)">
+@brief 根据索引获取操作对象
+@param [in] index 操作索引
+@return IOperationPtr 操作对象
+
+</member>
+        <member name="M:SysUI.IOperationStack.RemoveOperation(SysUtility._ptr_t&lt;SysUI.IOperation&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+@brief 移除操作
+@param [in] ptrOpt 操作对象
+@return
+
+</member>
+        <member name="M:SysUI.IOperationStack.AddOperation(SysUtility._ptr_t&lt;SysUI.IOperation&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+@brief 添加操作
+@param [in] ptrOpt 操作对象
+@return
+
+</member>
+        <member name="T:SysUI.IOperationStack">
+@class IOperationStack
+	* @brief 操作堆栈类
+
+</member>
+        <member name="D:SysUI.IOperationPtr">
+@brief 操作基类智能指针
+
+</member>
+        <member name="F:SysUI.IOperation.m_bDone">
+@brief 是否已经执行
+
+</member>
+        <member name="F:SysUI.IOperation.m_strDescription">
+@brief 描述信息
+
+</member>
+        <member name="M:SysUI.IOperation.Dispose">
+@brief 虚析构函数
+@return
+
+</member>
+        <member name="M:SysUI.IOperation.#ctor">
+@brief 构造函数
+@return
+
+</member>
+        <member name="M:SysUI.IOperation.GetDescription">
+@brief 获得描述信息
+@return 描述信息
+
+</member>
+        <member name="M:SysUI.IOperation.Undo">
+@brief 回退
+@return
+
+</member>
+        <member name="M:SysUI.IOperation.Redo">
+@brief 重做
+@return
+
+</member>
+        <member name="M:SysUI.IOperation.Do">
+@brief 执行
+@return
+
+</member>
+        <member name="M:SysUI.IOperation.CanUndo">
+@brief 是否可以回退
+@return   是 true,否 false
+
+</member>
+        <member name="M:SysUI.IOperation.CanRedo">
+@brief 是否可以重做
+@return  是 true,否 false
+
+</member>
+        <member name="T:SysUI.IOperation">
+@class IOperation
+	* @brief  操作基类
+
+</member>
+        <member name="M:SysUtility.CRef.Dispose">
+@brief 析构函数 （虚函数）
+
+</member>
+        <member name="M:SysUtility.CRef.#ctor">
+@brief 构造函数
+
+</member>
+        <member name="M:SysUtility.CRef.AddRef">
+@brief 计数器独占地自增
+@return unsigned long  返回计数器中对象的个数
+
+</member>
+        <member name="M:SysUtility.CRef.Release">
+@brief 计数器独占地自减
+@return unsigned long 返回计数器中对象的个数
+
+</member>
+        <member name="T:SysUtility.CRef">
+@class CRef
+	* @brief 管理引用计数器类
+
+</member>
+    </members>
+</doc>

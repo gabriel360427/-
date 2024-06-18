@@ -1,0 +1,579 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PIE.Plugin.CloudFlash</name>
+    </assembly>
+    <members>
+        <member name="T:PIE.Plugin.CloudFlashResumeCommand">
+            <summary>
+            恢复动画Command
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.CloudFlashResumeCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.CloudFlashResumeCommand.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.CloudFlashResumeCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.CloudFlashAutoChangeCommand">
+            <summary>
+            自动切换Command
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.CloudFlashAutoChangeCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.CloudFlashAutoChangeCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.CloudFlashStopCommand">
+            <summary>
+            结束动画Command
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.CloudFlashStopCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.CloudFlashStopCommand.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.CloudFlashStopCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.CloudFlashSuspendCommand">
+            <summary>
+            暂停动画Command
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.CloudFlashSuspendCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.CloudFlashSuspendCommand.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.CloudFlashSuspendCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.CloudFlashStartCommand">
+            <summary>
+            开始动画Command
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.CloudFlashStartCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.CloudFlashStartCommand.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.CloudFlashStartCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.CloudFlashLayerGroupCommand">
+            <summary>
+            组合测试GroupCommand
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.CloudFlashLayerGroupCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.CloudFlashLayerGroupCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.CloudFlashLayerCollectionCommand">
+            <summary>
+            图层设置Command
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.CloudFlashLayerCollectionCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.CloudFlashLayerCollectionCommand.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.CloudFlashLayerCollectionCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.CloudFlashCommand">
+            <summary>
+            云图Command
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.CloudFlashCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.CloudFlashCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.FrmCloudFlashLayerCollection">
+            <summary>
+            图层收集窗体
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmCloudFlashLayerCollection.m_bSelectAll">
+            <summary>
+            是否选择全部
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmCloudFlashLayerCollection.m_iSelectCount">
+            <summary>
+            选中类别数目
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmCloudFlashLayerCollection.m_Layers">
+            <summary>
+            全部图层合集
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.FrmCloudFlashLayerCollection.m_SelectLayers">
+            <summary>
+            选中图层合集
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmCloudFlashLayerCollection.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmCloudFlashLayerCollection.Initialize(PIE.Carto.IMap)">
+            <summary>
+            初始化
+            </summary>
+            <param name="lstLayers">图层合集</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmCloudFlashLayerCollection.simpleButton_Cancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消
+            </summary>
+            <param name="sender">事件触发器</param>
+            <param name="e">事件触发参数</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmCloudFlashLayerCollection.simpleButton_Confirm_Click(System.Object,System.EventArgs)">
+            <summary>
+            确定
+            </summary>
+            <param name="sender">事件触发器</param>
+            <param name="e">事件触发参数</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmCloudFlashLayerCollection.simpleButton_Clear_Click(System.Object,System.EventArgs)">
+            <summary>
+            清除和选中所有切换
+            </summary>
+            <param name="sender">事件触发器</param>
+            <param name="e">事件触发参数</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmCloudFlashLayerCollection.dataGridViewMatch_CellClick(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+            <summary>
+            Check选中状态更改
+            </summary>
+            <param name="sender">事件触发器</param>
+            <param name="e">事件触发参数</param>
+        </member>
+        <member name="F:PIE.Plugin.FrmCloudFlashLayerCollection.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.FrmCloudFlashLayerCollection.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PIE.Plugin.FrmCloudFlashLayerCollection.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.SaveToGiFCommand">
+            <summary>
+            保存GiFCommand
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.SaveToGiFCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.SaveToGiFCommand.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.SaveToGiFCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.SaveToVideoCommand">
+            <summary>
+            保存GiFCommand
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.SaveToVideoCommand.isStart">
+            <summary>
+            是否正在录制
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.SaveToVideoCommand.m_thread">
+            <summary>
+            录制线程
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.SaveToVideoCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.SaveToVideoCommand.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.SaveToVideoCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.SaveToPngJpgCommand">
+            <summary>
+            保存GiFCommand
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.SaveToPngJpgCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.SaveToPngJpgCommand.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.SaveToPngJpgCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.Plugin.TimeIntervalCommandControl">
+            <summary>
+            设置时间间隔
+            </summary>
+        </member>
+        <member name="F:PIE.Plugin.TimeIntervalCommandControl.m_BarEditItem">
+            <summary>
+            BarEditItem
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.TimeIntervalCommandControl.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.TimeIntervalCommandControl.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="P:PIE.Plugin.TimeIntervalCommandControl.Control">
+            <summary>
+            Control
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.TimeIntervalCommandControl.OnCreate(System.Object)">
+            <summary>
+            创建插件对象
+            </summary>
+            <param name="hook">hook对象</param>
+        </member>
+        <member name="M:PIE.Plugin.TimeIntervalCommandControl.OnClick">
+            <summary>
+            单击事件
+            </summary>
+        </member>
+        <member name="M:PIE.Plugin.TimeIntervalCommandControl.m_BarEditItem_EditValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            时间间隔变化事件
+            </summary>
+            <param name="sender">事件触发器</param>
+            <param name="e">事件触发参数</param>
+        </member>
+        <member name="T:PIE.CloudFlash.CloudFlashWrapper">
+            <summary>
+            云图动画处理类
+            </summary>
+        </member>
+        <member name="F:PIE.CloudFlash.CloudFlashWrapper.m_Lock">
+            <summary>
+            锁
+            </summary>
+        </member>
+        <member name="F:PIE.CloudFlash.CloudFlashWrapper.m_Instance">
+            <summary>
+            实例
+            </summary>
+        </member>
+        <member name="F:PIE.CloudFlash.CloudFlashWrapper.m_MapControl">
+            <summary>
+            地图对象
+            </summary>
+        </member>
+        <member name="F:PIE.CloudFlash.CloudFlashWrapper.m_AnimationLayer">
+            <summary>
+            动画图层
+            </summary>
+        </member>
+        <member name="F:PIE.CloudFlash.CloudFlashWrapper.m_Interval">
+            <summary>
+            时间间隔
+            </summary>
+        </member>
+        <member name="F:PIE.CloudFlash.CloudFlashWrapper.m_PicElement">
+            <summary>
+            PIELOGO
+            </summary>
+        </member>
+        <member name="F:PIE.CloudFlash.CloudFlashWrapper.m_TextElement">
+            <summary>
+            文本
+            </summary>
+        </member>
+        <member name="F:PIE.CloudFlash.CloudFlashWrapper.m_timer">
+            <summary>
+            视频录制对象
+            </summary>
+            <summary>
+            视频录制定时器
+            </summary>
+        </member>
+        <member name="P:PIE.CloudFlash.CloudFlashWrapper.Interval">
+            <summary>
+            时间间隔
+            </summary>
+        </member>
+        <member name="P:PIE.CloudFlash.CloudFlashWrapper.Mode">
+            <summary>
+            当前的状态0表示未启动，1表示正在播放动画，2表示暂停
+            </summary>
+        </member>
+        <member name="M:PIE.CloudFlash.CloudFlashWrapper.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.CloudFlash.CloudFlashWrapper.GetInstance">
+            <summary>
+            获得实例
+            </summary>
+            <returns>实例对象</returns>
+        </member>
+        <member name="M:PIE.CloudFlash.CloudFlashWrapper.StartTimer">
+            <summary>
+            开始播放
+            </summary>
+        </member>
+        <member name="M:PIE.CloudFlash.CloudFlashWrapper.SuspendTimer">
+            <summary>
+            暂停方法
+            </summary>
+        </member>
+        <member name="M:PIE.CloudFlash.CloudFlashWrapper.ResumeTimer">
+            <summary>
+            继续播放
+            </summary>
+        </member>
+        <member name="M:PIE.CloudFlash.CloudFlashWrapper.StopTimer">
+            <summary>
+            结束方法
+            </summary>
+        </member>
+        <member name="M:PIE.CloudFlash.CloudFlashWrapper.SetCurrentControl(PIE.AxControls.IMapControl)">
+            <summary>
+            设置绘制到的控件
+            </summary>
+            <param name="mapControl"></param>
+        </member>
+        <member name="M:PIE.CloudFlash.CloudFlashWrapper.DrawPIELogo">
+            <summary>
+            绘制PIELogo
+            </summary>
+            <param name="mapControl"></param>
+        </member>
+        <member name="M:PIE.CloudFlash.CloudFlashWrapper.DrawTextElement">
+            <summary>
+            绘制文本元素
+            </summary>
+            <param name="mapControl"></param>
+        </member>
+        <member name="M:PIE.CloudFlash.CloudFlashWrapper.Export2Gif(System.String)">
+            <summary>
+            保存GiF
+            </summary>
+        </member>
+        <member name="M:PIE.CloudFlash.CloudFlashWrapper.StartCaptureVideo(System.String)">
+            <summary>
+            开始生成Avi
+            </summary>
+            <param name="filePath"></param>
+        </member>
+        <member name="M:PIE.CloudFlash.CloudFlashWrapper.CloudFlashWrapper_SizeChanged(System.Object,System.EventArgs)">
+            <summary>
+            Size变化事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PIE.CloudFlash.CloudFlashWrapper.CloudFlashWrapper_OnAfterScreenDraw(System.Object,System.Int64)">
+            <summary>
+            OnAfterScreenDraw事件
+            </summary>
+            <param name="sender"></param>
+            <param name="hdc"></param>
+        </member>
+        <member name="M:PIE.CloudFlash.CloudFlashWrapper.RefreshPicturePosition">
+            <summary>
+            刷新图片位置
+            </summary>
+        </member>
+        <member name="M:PIE.CloudFlash.CloudFlashWrapper.RefreshTextPosition">
+            <summary>
+            刷新文本位置
+            </summary>
+        </member>
+        <member name="T:PIE.CloudFlash.FrmCloudFlash">
+            <summary>
+            云图动画控制
+            </summary>
+        </member>
+        <member name="F:PIE.CloudFlash.FrmCloudFlash.m_Activeview">
+            <summary>
+            IActiveView实例
+            </summary>
+        </member>
+        <member name="F:PIE.CloudFlash.FrmCloudFlash.m_CloudFlash">
+            <summary>
+            云图效果处理类
+            </summary>
+        </member>
+        <member name="M:PIE.CloudFlash.FrmCloudFlash.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.CloudFlash.FrmCloudFlash.Initialize(PIE.Carto.IActiveView)">
+            <summary>
+            初始化
+            </summary>
+            <param name="activeview">activeview对象</param>
+        </member>
+        <member name="M:PIE.CloudFlash.FrmCloudFlash.btnStart_Click(System.Object,System.EventArgs)">
+            <summary>
+            开始
+            </summary>
+            <param name="sender">事件触发器</param>
+            <param name="e">事件参数</param>
+        </member>
+        <member name="M:PIE.CloudFlash.FrmCloudFlash.m_CloudFlash_m_FinishedEvent">
+            <summary>
+            Timer处理完成
+            </summary>
+        </member>
+        <member name="M:PIE.CloudFlash.FrmCloudFlash.txtInterval_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            时间间隔改变
+            </summary>
+            <param name="sender">事件触发器</param>
+            <param name="e">事件参数</param>
+        </member>
+        <member name="M:PIE.CloudFlash.FrmCloudFlash.btnSuspend_Click(System.Object,System.EventArgs)">
+            <summary>
+            暂停
+            </summary>
+            <param name="sender">事件触发器</param>
+            <param name="e">事件参数</param>
+        </member>
+        <member name="M:PIE.CloudFlash.FrmCloudFlash.btnResume_Click(System.Object,System.EventArgs)">
+            <summary>
+            恢复
+            </summary>
+            <param name="sender">事件触发器</param>
+            <param name="e">事件参数</param>
+        </member>
+        <member name="M:PIE.CloudFlash.FrmCloudFlash.FrmCloudFlash_Load(System.Object,System.EventArgs)">
+            <summary>
+            初始化
+            </summary>
+            <param name="sender">事件触发器</param>
+            <param name="e">事件参数</param>
+        </member>
+        <member name="M:PIE.CloudFlash.FrmCloudFlash.FrmCloudFlash_FormClosed(System.Object,System.Windows.Forms.FormClosedEventArgs)">
+            <summary>
+            关闭
+            </summary>
+            <param name="sender">事件触发器</param>
+            <param name="e">事件参数</param>
+        </member>
+        <member name="F:PIE.CloudFlash.FrmCloudFlash.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:PIE.CloudFlash.FrmCloudFlash.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:PIE.CloudFlash.FrmCloudFlash.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+    </members>
+</doc>

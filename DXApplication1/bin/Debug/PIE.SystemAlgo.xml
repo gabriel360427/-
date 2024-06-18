@@ -1,0 +1,247 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PIE.SystemAlgo</name>
+    </assembly>
+    <members>
+        <member name="T:PIE.SystemAlgo.AlgoFactory">
+            <summary>
+            AlgoFactory类
+            </summary>
+        </member>
+        <member name="F:PIE.SystemAlgo.AlgoFactory.m_Lock">
+            <summary>
+            锁
+            </summary>
+        </member>
+        <member name="F:PIE.SystemAlgo.AlgoFactory.m_Instance">
+            <summary>
+            实例
+            </summary>
+        </member>
+        <member name="F:PIE.SystemAlgo.AlgoFactory.m_ListAlgos">
+            <summary>
+            算法列表
+            </summary>
+        </member>
+        <member name="F:PIE.SystemAlgo.AlgoFactory.m_SyncContext">
+            <summary>
+            UI线程的同步上下文
+            </summary>
+        </member>
+        <member name="M:PIE.SystemAlgo.AlgoFactory.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.SystemAlgo.AlgoFactory.Instance">
+            <summary>
+            获得实例
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.SystemAlgo.AlgoFactory.CreateAlgo(System.String,System.String)">
+            <summary>
+            创建算法
+            </summary>
+            <param name="dllPath">dll名称，包含后缀dll</param>  
+            <param name="algoName">算法名称，包括前缀命名空间</param>
+            <returns>算法</returns> 
+        </member>
+        <member name="M:PIE.SystemAlgo.AlgoFactory.ExecuteAlgo(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            执行算法(同步)
+            </summary>
+            <param name="algo">算法对象</param>  
+            <returns>是否执行成功</returns> 
+        </member>
+        <member name="M:PIE.SystemAlgo.AlgoFactory.ExecuteAlgoFun(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            执行算法(同步)
+            </summary>
+            <param name="algo">算法对象</param>  
+            <returns>是否执行成功</returns> 
+        </member>
+        <member name="M:PIE.SystemAlgo.AlgoFactory.AsynExecuteAlgo(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            执行算法(异步)
+            </summary>
+            <param name="algo">算法对象</param>  
+        </member>
+        <member name="M:PIE.SystemAlgo.AlgoFactory.TaskEndAny(System.Threading.Tasks.Task{PIE.SystemAlgo.ISystemAlgo})">
+            <summary>
+            单个任务完成事件
+            </summary>
+            <param name="tsk"></param>
+        </member>
+        <member name="M:PIE.SystemAlgo.AlgoFactory.TaskEndAll(System.Threading.Tasks.Task{PIE.SystemAlgo.ISystemAlgo}[])">
+            <summary>
+            所有的任务完成事件
+            </summary>
+            <param name="tsks"></param>
+        </member>
+        <member name="M:PIE.SystemAlgo.AlgoFactory.ThreadSafeRaiseExecuteCompletedEvent(PIE.SystemAlgo.ISystemAlgo)">
+            <summary>
+            线程安全的触发算法完成事件
+            </summary>
+        </member>
+        <member name="M:PIE.SystemAlgo.AlgoFactory.RaiseExecuteCompletedEvent(System.Object)">
+            <summary>
+            触发算法完成事件
+            </summary>
+            <param name="tsk"></param>
+        </member>
+        <member name="T:PIE.SystemAlgo.BaseSystemAlgo">
+            <summary>
+            算法基类
+            </summary>
+        </member>
+        <member name="F:PIE.SystemAlgo.BaseSystemAlgo.m_ErrCode">
+            <summary>
+            错误编号
+            </summary>
+        </member>
+        <member name="F:PIE.SystemAlgo.BaseSystemAlgo.m_ErrMsg">
+            <summary>
+            错误信息
+            </summary>
+        </member>
+        <member name="M:PIE.SystemAlgo.BaseSystemAlgo.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:PIE.SystemAlgo.BaseSystemAlgo.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:PIE.SystemAlgo.BaseSystemAlgo.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:PIE.SystemAlgo.BaseSystemAlgo.Params">
+            <summary>
+            参数
+            </summary>
+        </member>
+        <member name="E:PIE.SystemAlgo.BaseSystemAlgo.OnProgressChanged">
+            <summary>
+            进度变化事件
+            </summary>
+        </member>
+        <member name="E:PIE.SystemAlgo.BaseSystemAlgo.OnExecuteCompleted">
+            <summary>
+            执行完成事件
+            </summary>
+        </member>
+        <member name="M:PIE.SystemAlgo.BaseSystemAlgo.GetErrorInfo(System.Int32@,System.String@)">
+            <summary>
+            获取执行出错信息
+            </summary>
+            <param name="errCode"></param>
+            <param name="errMsg"></param>
+        </member>
+        <member name="M:PIE.SystemAlgo.BaseSystemAlgo.SetErrorInfo(System.Int32,System.String)">
+            <summary>
+            设置执行出错信息
+            </summary>
+            <param name="errCode"></param>
+            <param name="errMsg"></param>
+        </member>
+        <member name="M:PIE.SystemAlgo.BaseSystemAlgo.Execute">
+            <summary>
+            同步执行算法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PIE.SystemAlgo.BaseSystemAlgo.RaiseExecuteCompletedEvent">
+            <summary>
+            触发完成事件
+            </summary>
+        </member>
+        <member name="M:PIE.SystemAlgo.BaseSystemAlgo.RaiseProgressChangedEvent(System.Double,System.String)">
+            <summary>
+            触发进度变化事件
+            </summary>
+            <param name="complete">完成进度</param>  
+            <param name="msg">显示信息</param>
+        </member>
+        <member name="T:PIE.SystemAlgo.OnProgressChangedEventHandler">
+            <summary>
+            算法进度变化事件Handler
+            </summary>
+            <param name="complete">完成进度</param>  
+            <param name="msg">显示信息</param>
+            <param name="algo">算法</param>
+        </member>
+        <member name="T:PIE.SystemAlgo.OnExecuteCompletedEventHandler">
+            <summary>
+            算法执行完成事件Handler
+            </summary>
+            <param name="algo">算法</param>  
+        </member>
+        <member name="T:PIE.SystemAlgo.ISystemAlgoEvents">
+            <summary>
+            ISystemAlgoEvents系统算法事件接口
+            </summary>
+        </member>
+        <member name="E:PIE.SystemAlgo.ISystemAlgoEvents.OnProgressChanged">
+            <summary>
+            进度变化事件
+            </summary>
+        </member>
+        <member name="E:PIE.SystemAlgo.ISystemAlgoEvents.OnExecuteCompleted">
+            <summary>
+            执行完成事件
+            </summary>
+        </member>
+        <member name="T:PIE.SystemAlgo.ISystemAlgo">
+            <summary>
+            ISystemAlgo 系统算法接口
+            </summary>
+        </member>
+        <member name="P:PIE.SystemAlgo.ISystemAlgo.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:PIE.SystemAlgo.ISystemAlgo.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:PIE.SystemAlgo.ISystemAlgo.Params">
+            <summary>
+            参数
+            </summary>
+        </member>
+        <member name="M:PIE.SystemAlgo.ISystemAlgo.GetErrorInfo(System.Int32@,System.String@)">
+            <summary>
+            获取错误信息
+            </summary>
+            <param name="errCode">错误信息编号</param>  
+            <param name="errMsg">错误信息描述</param>
+        </member>
+        <member name="M:PIE.SystemAlgo.ISystemAlgo.SetErrorInfo(System.Int32,System.String)">
+            <summary>
+            设置错误信息
+            </summary>
+            <param name="errCode">错误信息编号</param>  
+            <param name="errMsg">错误信息描述</param>
+        </member>
+        <member name="M:PIE.SystemAlgo.ISystemAlgo.Execute">
+            <summary>
+            执行算法
+            </summary>
+            <returns>是否执行成功</returns> 
+        </member>
+        <member name="M:PIE.SystemAlgo.ISystemAlgo.RaiseExecuteCompletedEvent">
+            <summary>
+            触发完成事件
+            </summary>
+            <return></return>
+        </member>
+    </members>
+</doc>

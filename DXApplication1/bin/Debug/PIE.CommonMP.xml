@@ -1,0 +1,174 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PIE.CommonMP</name>
+    </assembly>
+    <members>
+        <member name="F:PIE.CommonMP.AddFYDataCommand.m_InfoData">
+             <summary>
+            执行数据信息列表
+             </summary>
+        </member>
+        <member name="F:PIE.CommonMP.AddFYDataCommand.m_MapControl">
+            <summary>
+            TOCControl
+            </summary>
+        </member>
+        <member name="T:PIE.CommonMP.AddFYDataCommand.OnAddDataHander">
+            <summary>
+            添加数据委托
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="F:PIE.CommonMP.AddFYDataCommand.m_DataWrapper">
+            <summary>
+             FY4DataWrapper 读写类
+            </summary>
+        </member>
+        <member name="M:PIE.CommonMP.AddFYDataCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.CommonMP.AddFYDataCommand.OnClick">
+            <summary>
+            点击确定
+            </summary>
+        </member>
+        <member name="M:PIE.CommonMP.AddFYDataCommand.ThreadProc">
+            <summary>
+            执行数据列表读写
+            </summary>
+        </member>
+        <member name="M:PIE.CommonMP.AddFYDataCommand.dataWrapper_OnErrorMessage(System.String)">
+            <summary>
+            异常报错
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:PIE.CommonMP.AddFYDataCommand.OnProgressStatusCallback(System.String)">
+            <summary>
+            进度条更新
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:PIE.CommonMP.AddFYDataCommand.AddData(System.String,System.String)">
+            <summary>
+            加载数据
+            </summary>
+            <param name="path">数据路径</param>
+        </member>
+        <member name="T:PIE.CommonMP.NewPageLayoutCommand">
+            <summary>
+            新建模板Command
+            </summary>
+        </member>
+        <member name="M:PIE.CommonMP.NewPageLayoutCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.CommonMP.NewPageLayoutCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.CommonMP.OpenPageLayoutCommand">
+            <summary>
+            打开模板Command
+            </summary>
+        </member>
+        <member name="M:PIE.CommonMP.OpenPageLayoutCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.CommonMP.OpenPageLayoutCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="M:PIE.CommonMP.OpenPageLayoutCommand.OnClick_OK">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.CommonMP.AddDataCommand">
+            <summary>
+            添加数据Command
+            </summary>
+        </member>
+        <member name="M:PIE.CommonMP.AddDataCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.CommonMP.AddDataCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+        <member name="T:PIE.CommonMP.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:PIE.CommonMP.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:PIE.CommonMP.Properties.Resources.Culture">
+            <summary>
+              使用此强类型资源类，为所有资源查找
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="P:PIE.CommonMP.Properties.Resources.AddDataCommand">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="T:PIE.CommonMP.ShowTOCCommand">
+            <summary>
+            显示图层Command
+            </summary>
+        </member>
+        <member name="F:PIE.CommonMP.ShowTOCCommand.m_TOCDockPanel">
+            <summary>
+            DockPanel对象
+            </summary>
+        </member>
+        <member name="F:PIE.CommonMP.ShowTOCCommand.m_TOCControl">
+            <summary>
+             图层树控件
+            </summary>
+        </member>
+        <member name="M:PIE.CommonMP.ShowTOCCommand.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:PIE.CommonMP.ShowTOCCommand.OnCreate(System.Object)">
+            <summary>
+            创建方法
+            </summary>
+            <param name="hook"></param>
+        </member>
+        <member name="P:PIE.CommonMP.ShowTOCCommand.Enabled">
+            <summary>
+            可用性
+            </summary>
+        </member>
+        <member name="P:PIE.CommonMP.ShowTOCCommand.Checked">
+            <summary>
+            是否选中
+            </summary>
+        </member>
+        <member name="M:PIE.CommonMP.ShowTOCCommand.OnClick">
+            <summary>
+            单击方法
+            </summary>
+        </member>
+    </members>
+</doc>
