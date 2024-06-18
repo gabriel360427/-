@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(brightnessParam));
             this.labelBrightness = new System.Windows.Forms.Label();
             this.numericUpDownBrightness = new System.Windows.Forms.NumericUpDown();
             this.brightnessConfirm = new System.Windows.Forms.Button();
@@ -93,11 +94,11 @@
             this.Controls.Add(this.brightnessConfirm);
             this.Controls.Add(this.numericUpDownBrightness);
             this.Controls.Add(this.labelBrightness);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "brightnessParam";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "输入亮度值";
-            this.Load += new System.EventHandler(this.brightnessParam_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBrightness)).EndInit();
             this.ResumeLayout(false);
 

@@ -39,10 +39,10 @@
             // contrastRatioCancel
             // 
             this.contrastRatioCancel.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.contrastRatioCancel.Location = new System.Drawing.Point(142, 70);
-            this.contrastRatioCancel.Margin = new System.Windows.Forms.Padding(2);
+            this.contrastRatioCancel.Location = new System.Drawing.Point(162, 90);
+            this.contrastRatioCancel.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.contrastRatioCancel.Name = "contrastRatioCancel";
-            this.contrastRatioCancel.Size = new System.Drawing.Size(93, 28);
+            this.contrastRatioCancel.Size = new System.Drawing.Size(106, 36);
             this.contrastRatioCancel.TabIndex = 7;
             this.contrastRatioCancel.Text = "取消";
             this.contrastRatioCancel.UseVisualStyleBackColor = true;
@@ -51,10 +51,10 @@
             // contrastRatioConfirm
             // 
             this.contrastRatioConfirm.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.contrastRatioConfirm.Location = new System.Drawing.Point(19, 70);
-            this.contrastRatioConfirm.Margin = new System.Windows.Forms.Padding(2);
+            this.contrastRatioConfirm.Location = new System.Drawing.Point(22, 90);
+            this.contrastRatioConfirm.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.contrastRatioConfirm.Name = "contrastRatioConfirm";
-            this.contrastRatioConfirm.Size = new System.Drawing.Size(93, 28);
+            this.contrastRatioConfirm.Size = new System.Drawing.Size(106, 36);
             this.contrastRatioConfirm.TabIndex = 6;
             this.contrastRatioConfirm.Text = "确定";
             this.contrastRatioConfirm.UseVisualStyleBackColor = true;
@@ -62,10 +62,10 @@
             // 
             // numericUpDownContrastRatio
             // 
-            this.numericUpDownContrastRatio.Location = new System.Drawing.Point(70, 26);
-            this.numericUpDownContrastRatio.Margin = new System.Windows.Forms.Padding(2);
+            this.numericUpDownContrastRatio.Location = new System.Drawing.Point(80, 33);
+            this.numericUpDownContrastRatio.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.numericUpDownContrastRatio.Name = "numericUpDownContrastRatio";
-            this.numericUpDownContrastRatio.Size = new System.Drawing.Size(166, 22);
+            this.numericUpDownContrastRatio.Size = new System.Drawing.Size(190, 26);
             this.numericUpDownContrastRatio.TabIndex = 5;
             this.numericUpDownContrastRatio.Value = new decimal(new int[] {
             50,
@@ -76,10 +76,10 @@
             // labelContrastRatio
             // 
             this.labelContrastRatio.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelContrastRatio.Location = new System.Drawing.Point(5, 26);
+            this.labelContrastRatio.Location = new System.Drawing.Point(6, 33);
             this.labelContrastRatio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelContrastRatio.Name = "labelContrastRatio";
-            this.labelContrastRatio.Size = new System.Drawing.Size(72, 21);
+            this.labelContrastRatio.Size = new System.Drawing.Size(82, 27);
             this.labelContrastRatio.TabIndex = 4;
             this.labelContrastRatio.Text = "对比度：";
             // 
@@ -87,16 +87,16 @@
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
             this.Appearance.Options.UseBackColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(250, 119);
+            this.ClientSize = new System.Drawing.Size(286, 153);
             this.Controls.Add(this.contrastRatioCancel);
             this.Controls.Add(this.contrastRatioConfirm);
             this.Controls.Add(this.numericUpDownContrastRatio);
             this.Controls.Add(this.labelContrastRatio);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "contrastRatioParam";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "输入对比度";

@@ -34,7 +34,7 @@ namespace 城市空间生态格局智能评估系统.Custom_Commands
                 openFileDialog.Title = "请选择要打开的数据：";
                 openFileDialog.Multiselect = false;
                 openFileDialog.Filter = "栅格数据(*.tiff)|*.tif;*.tiff";
-                openFileDialog.InitialDirectory = @"C:\Users\Administrator\Desktop\黄河故道生态富民廊道\演示数据";
+                openFileDialog.InitialDirectory = @"C:\Users\Administrator\Desktop\城市空间生态格局智能评估系统\演示数据";
                 if (openFileDialog.ShowDialog() != System.Windows.Forms.DialogResult.OK) return;
                 // 打开栅格数据集
                 string filePath = openFileDialog.FileName;

@@ -79,11 +79,11 @@
     <Compile Include="Custom Commands\AddDataCommand.cs" />
     <Compile Include="Custom Commands\LoadFeatureDataCommand.cs" />
     <Compile Include="Custom Commands\LoadRasterDataCommand.cs" />
-    <Compile Include="Custom Forms\AtmosphericCorrectionCommand.cs">
+    <Compile Include="Custom Forms\BandSynthesisForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Custom Forms\AtmosphericCorrectionCommand.designer.cs">
-      <DependentUpon>AtmosphericCorrectionCommand.cs</DependentUpon>
+    <Compile Include="Custom Forms\BandSynthesisForm.designer.cs">
+      <DependentUpon>BandSynthesisForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Custom Forms\brightnessParam.cs">
       <SubType>Form</SubType>
@@ -97,11 +97,29 @@
     <Compile Include="Custom Forms\contrastRatioParam.Designer.cs">
       <DependentUpon>contrastRatioParam.cs</DependentUpon>
     </Compile>
-    <Compile Include="Custom Forms\linearResistanceFactor.cs">
+    <Compile Include="Custom Forms\distanceClassifyForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Custom Forms\linearResistanceFactor.designer.cs">
-      <DependentUpon>linearResistanceFactor.cs</DependentUpon>
+    <Compile Include="Custom Forms\distanceClassifyForm.designer.cs">
+      <DependentUpon>distanceClassifyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Forms\ISODATAForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\ISODATAForm.designer.cs">
+      <DependentUpon>ISODATAForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Forms\kmeansForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\kmeansForm.designer.cs">
+      <DependentUpon>kmeansForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Forms\maximumLikelihoodForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\maximumLikelihoodForm.designer.cs">
+      <DependentUpon>maximumLikelihoodForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Custom Forms\percentLinearStrechParam.cs">
       <SubType>Form</SubType>
@@ -109,17 +127,11 @@
     <Compile Include="Custom Forms\percentLinearStrechParam.Designer.cs">
       <DependentUpon>percentLinearStrechParam.cs</DependentUpon>
     </Compile>
-    <Compile Include="Custom Forms\RadiationCalibrationCommand.cs">
+    <Compile Include="Custom Forms\radiometricCalibrationForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Custom Forms\RadiationCalibrationCommand.designer.cs">
-      <DependentUpon>RadiationCalibrationCommand.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Custom Forms\reClassification.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Custom Forms\reClassification.designer.cs">
-      <DependentUpon>reClassification.cs</DependentUpon>
+    <Compile Include="Custom Forms\radiometricCalibrationForm.designer.cs">
+      <DependentUpon>radiometricCalibrationForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Custom Forms\transparencyParam.cs">
       <SubType>Form</SubType>
@@ -136,20 +148,35 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Custom Forms\AtmosphericCorrectionCommand.resx">
-      <DependentUpon>AtmosphericCorrectionCommand.cs</DependentUpon>
+    <EmbeddedResource Include="Custom Forms\BandSynthesisForm.resx">
+      <DependentUpon>BandSynthesisForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\brightnessParam.resx">
       <DependentUpon>brightnessParam.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Custom Forms\linearResistanceFactor.resx">
-      <DependentUpon>linearResistanceFactor.cs</DependentUpon>
+    <EmbeddedResource Include="Custom Forms\contrastRatioParam.resx">
+      <DependentUpon>contrastRatioParam.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Custom Forms\RadiationCalibrationCommand.resx">
-      <DependentUpon>RadiationCalibrationCommand.cs</DependentUpon>
+    <EmbeddedResource Include="Custom Forms\distanceClassifyForm.resx">
+      <DependentUpon>distanceClassifyForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Custom Forms\reClassification.resx">
-      <DependentUpon>reClassification.cs</DependentUpon>
+    <EmbeddedResource Include="Custom Forms\ISODATAForm.resx">
+      <DependentUpon>ISODATAForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\kmeansForm.resx">
+      <DependentUpon>kmeansForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\maximumLikelihoodForm.resx">
+      <DependentUpon>maximumLikelihoodForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\percentLinearStrechParam.resx">
+      <DependentUpon>percentLinearStrechParam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\radiometricCalibrationForm.resx">
+      <DependentUpon>radiometricCalibrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\transparencyParam.resx">
+      <DependentUpon>transparencyParam.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
@@ -175,6 +202,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\1度网格.png" />
   </ItemGroup>

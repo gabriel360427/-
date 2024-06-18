@@ -39,10 +39,10 @@
             // percentLinearStrechCancel
             // 
             this.percentLinearStrechCancel.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.percentLinearStrechCancel.Location = new System.Drawing.Point(163, 68);
-            this.percentLinearStrechCancel.Margin = new System.Windows.Forms.Padding(2);
+            this.percentLinearStrechCancel.Location = new System.Drawing.Point(186, 87);
+            this.percentLinearStrechCancel.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.percentLinearStrechCancel.Name = "percentLinearStrechCancel";
-            this.percentLinearStrechCancel.Size = new System.Drawing.Size(93, 28);
+            this.percentLinearStrechCancel.Size = new System.Drawing.Size(106, 36);
             this.percentLinearStrechCancel.TabIndex = 15;
             this.percentLinearStrechCancel.Text = "取消";
             this.percentLinearStrechCancel.UseVisualStyleBackColor = true;
@@ -51,10 +51,10 @@
             // percentLinearStrechConfirm
             // 
             this.percentLinearStrechConfirm.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.percentLinearStrechConfirm.Location = new System.Drawing.Point(28, 68);
-            this.percentLinearStrechConfirm.Margin = new System.Windows.Forms.Padding(2);
+            this.percentLinearStrechConfirm.Location = new System.Drawing.Point(32, 87);
+            this.percentLinearStrechConfirm.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.percentLinearStrechConfirm.Name = "percentLinearStrechConfirm";
-            this.percentLinearStrechConfirm.Size = new System.Drawing.Size(93, 28);
+            this.percentLinearStrechConfirm.Size = new System.Drawing.Size(106, 36);
             this.percentLinearStrechConfirm.TabIndex = 14;
             this.percentLinearStrechConfirm.Text = "确认";
             this.percentLinearStrechConfirm.UseVisualStyleBackColor = true;
@@ -62,15 +62,15 @@
             // 
             // numericUpDownPercentLinearStrech
             // 
-            this.numericUpDownPercentLinearStrech.Location = new System.Drawing.Point(104, 23);
-            this.numericUpDownPercentLinearStrech.Margin = new System.Windows.Forms.Padding(2);
+            this.numericUpDownPercentLinearStrech.Location = new System.Drawing.Point(119, 30);
+            this.numericUpDownPercentLinearStrech.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.numericUpDownPercentLinearStrech.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
             this.numericUpDownPercentLinearStrech.Name = "numericUpDownPercentLinearStrech";
-            this.numericUpDownPercentLinearStrech.Size = new System.Drawing.Size(166, 22);
+            this.numericUpDownPercentLinearStrech.Size = new System.Drawing.Size(190, 26);
             this.numericUpDownPercentLinearStrech.TabIndex = 13;
             this.numericUpDownPercentLinearStrech.Value = new decimal(new int[] {
             255,
@@ -81,10 +81,10 @@
             // labelPercentLinearStrech
             // 
             this.labelPercentLinearStrech.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelPercentLinearStrech.Location = new System.Drawing.Point(21, 25);
+            this.labelPercentLinearStrech.Location = new System.Drawing.Point(24, 32);
             this.labelPercentLinearStrech.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelPercentLinearStrech.Name = "labelPercentLinearStrech";
-            this.labelPercentLinearStrech.Size = new System.Drawing.Size(79, 21);
+            this.labelPercentLinearStrech.Size = new System.Drawing.Size(90, 27);
             this.labelPercentLinearStrech.TabIndex = 12;
             this.labelPercentLinearStrech.Text = "百分比：";
             // 
@@ -92,18 +92,18 @@
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
             this.Appearance.Options.UseBackColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(282, 119);
+            this.ClientSize = new System.Drawing.Size(322, 153);
             this.Controls.Add(this.percentLinearStrechCancel);
             this.Controls.Add(this.percentLinearStrechConfirm);
             this.Controls.Add(this.numericUpDownPercentLinearStrech);
             this.Controls.Add(this.labelPercentLinearStrech);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "percentLinearStrechParam";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "输入线性拉伸百分比";
+            this.Text = "输入线性拉伸百分比";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPercentLinearStrech)).EndInit();
             this.ResumeLayout(false);
 

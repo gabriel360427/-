@@ -29,9 +29,6 @@ namespace 城市空间生态格局智能评估系统
             InitializeComponent();
             Init();
         }
-        /// <summary>
-        /// 初始化函数
-        /// </summary>
         private void Init()
         {
             //地图和制图绑定，图层树和制图绑定
@@ -903,62 +900,354 @@ namespace 城市空间生态格局智能评估系统
                 }
             }
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        #endregion
         #endregion
 
-        #endregion
-
-        #region
-        private void atmosphericCorrection_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            AtmosphericCorrectionCommand form = new AtmosphericCorrectionCommand();
-            form.ShowDialog();
-        }
-        #endregion
-        #region
+        #region 三、影像处理
+        #region 1. 辐射校正
+        #region 1.1 辐射定标
         private void radiometricCalibration_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            RadiationCalibrationCommand form = new RadiationCalibrationCommand();
+            radiometricCalibrationForm form = new radiometricCalibrationForm();
             form.ShowDialog();
         }
         #endregion
 
-        private void imageMatching_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        #region 1.2 大气校正
+
+        #endregion
+
+        #endregion
+
+        #region 2. 几何校正
+        #region 2.1 影像匹配
+
+        #endregion
+
+        #region 2.2 正射校正
+
+        #endregion
+        #region 2.3 几何精校正
+
+        #endregion
+
+        #endregion
+
+        #region 3. 影像镶嵌
+        #region 3.1 快速拼接
+
+        #endregion
+
+        #region 3.2 无缝镶嵌
+
+        #endregion
+
+        #endregion
+
+        #region 4. 影像裁剪
+
+        #endregion
+
+        #region 5. 波段处理
+        #region 5.1 波段运算
+
+        #endregion
+
+        #region 5.2 波段合成
+        private void bandSynthesis_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            PIE.AxControls.DataPrepGeoCorrDialog frm = new PIE.AxControls.DataPrepGeoCorrDialog();
-            frm.ShowDialog();
-            (frm as IDisposable).Dispose();
-            frm = null;
+            BandSynthesisForm form = new BandSynthesisForm();
+            form.ShowDialog();
         }
+        #endregion
+
+        #endregion
+
+        #endregion
+
+        #region 四、影像分类
+
+        #region 1. ROI工具
+        private void roiTool_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            bool flag = false;
+            IList<ILayer> layerList = new List<ILayer>();
+            layerList = mapControlMain.ActiveView.FocusMap.GetAllLayer();
+            foreach (ILayer currentlayer in layerList)
+            {
+                if (currentlayer.LayerType.Equals(LayerType.LayerTypeRasterLayer))
+                {
+                    flag = true;
+                }
+            }
+            if (flag)
+            {
+                PIE.SystemUI.ICommand cmd = new PIE.Plugin.ROIToolCommand();
+                cmd.OnCreate(mapControlMain);
+                cmd.OnClick();
+            }
+            else
+            {
+                MessageBox.Show("未加载栅格图层！");
+            }
+        }
+        #endregion
+
+        #region 2. 非监督分类
+
+        #region 2.1 ISODATA分类
+        private void isoData_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            //PIE.SystemUI.ICommand cmd = new ISODATA();
+            //cmd.OnCreate(mapControlMain);
+            //cmd.OnClick();
+            ISODATAForm frm = new ISODATAForm();
+            frm.ShowDialog();
+            if (frm.DialogResult == DialogResult.OK)
+            {
+                #region 1、参数设置
+                PIE.CommonAlgo.ISODataClassification_Exchange_Info info = new PIE.CommonAlgo.ISODataClassification_Exchange_Info();
+
+                info.InputFilePath = frm.selectedImage;
+                info.OutputFilePath = frm.resultImage;
+                info.ProspClassNum = frm.ProspClassNumFrm;
+                info.InitClassNum = frm.InitClassNumFrm;
+                info.MinSam = frm.MinSamFrm;
+                info.MaxLoop = frm.MaxLoopFrm;
+                info.MaxMerge = frm.MaxMergeFrm;
+                info.Dev = frm.DevFrm;
+                info.MinDis = frm.MinDisFrm;
+                IRasterDataset rDataset = PIE.DataSource.DatasetFactory.OpenRasterDataset(frm.selectedImage, OpenMode.ReadOnly);
+                if (rDataset == null) return;
+                info.LowBands = frm.selectedBands;
+                info.FileTypeCode = "Gtiff";
+
+                PIE.SystemAlgo.ISystemAlgo algo = PIE.SystemAlgo.AlgoFactory.Instance().CreateAlgo("PIE.CommonAlgo.dll", "PIE.CommonAlgo.ISODataClassificationAlgo");
+                if (algo == null) return;
+                #endregion
+
+                //2、算法执行
+                PIE.SystemAlgo.ISystemAlgoEvents algoEvents = algo as PIE.SystemAlgo.ISystemAlgoEvents;
+                algo.Name = "ISODATA分类";
+                algo.Params = info;
+                bool result = PIE.SystemAlgo.AlgoFactory.Instance().ExecuteAlgo(algo);
+
+                //3、结果显示
+                ILayer layer = PIE.Carto.LayerFactory.CreateDefaultLayer(frm.resultImage);
+                mapControlMain.ActiveView.FocusMap.AddLayer(layer);
+                mapControlMain.ActiveView.PartialRefresh(ViewDrawPhaseType.ViewAll);
+            }
+        }
+        #endregion
+
+        #region 2.2 K-Means分类
+        private void kmeans_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            kmeansForm frm = new kmeansForm();
+            frm.ShowDialog();
+            if (frm.DialogResult == DialogResult.OK)
+            {
+                #region 1、参数设置
+                PIE.CommonAlgo.KmeansClassification_Exchange_Info info = new PIE.CommonAlgo.KmeansClassification_Exchange_Info();
+                info.InputFilePath = frm.selectedImage;
+                info.OutputFilePath = frm.resultImage;
+                info.ClassNum = frm.ClassNumFrm;
+                info.Maxloop = frm.MaxLoopFrm;
+                info.Threshold = frm.ThresholdFrm;
+                info.LowBands = frm.selectedBands;
+
+                PIE.SystemAlgo.ISystemAlgo algo = PIE.SystemAlgo.AlgoFactory.Instance().CreateAlgo("PIE.CommonAlgo.dll", "PIE.CommonAlgo.KmeansClassificationAlgo");
+                if (algo == null) return;
+                #endregion
+
+                //2、算法执行
+                PIE.SystemAlgo.ISystemAlgoEvents algoEvents = algo as PIE.SystemAlgo.ISystemAlgoEvents;
+                algo.Name = " K-Means分类";
+                algo.Params = info;
+                bool result = PIE.SystemAlgo.AlgoFactory.Instance().ExecuteAlgo(algo);
+
+                //3、结果显示
+                ILayer layer = PIE.Carto.LayerFactory.CreateDefaultLayer(info.OutputFilePath);
+                mapControlMain.ActiveView.FocusMap.AddLayer(layer);
+                mapControlMain.ActiveView.PartialRefresh(ViewDrawPhaseType.ViewAll);
+            }
+        }
+        #endregion
+
+        #endregion
+
+        #region 3. 监督分类
+        PIE.CommonAlgo.SupervisedClassification_Exchange_Info m_DataInfo = new SupervisedClassification_Exchange_Info();
+
+        void systemEvents_OnExecuteCompleted(ISystemAlgo algo)
+        {
+            ISystemAlgoEvents systemEvents = algo as ISystemAlgoEvents;
+            systemEvents.OnExecuteCompleted -= systemEvents_OnExecuteCompleted;
+            ILayer layer = LayerFactory.CreateDefaultLayer(m_DataInfo.OutputFilePath);
+            if (layer == null)
+            {
+                System.Windows.Forms.MessageBox.Show("分类后图层为空");
+                return;
+            }
+            mapControlMain.ActiveView.FocusMap.AddLayer(layer);
+            mapControlMain.ActiveView.PartialRefresh(ViewDrawPhaseType.ViewAll);
+        }
+
+        #region 3.1 距离分类
+        private void distanceClassification_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            distanceClassifyForm frm = new distanceClassifyForm(mapControlMain);
+            frm.ShowDialog();
+            if (frm.DialogResult != DialogResult.OK) return;
+            m_DataInfo.InputFilePath = frm.selectedImage;
+            m_DataInfo.OutputFilePath = frm.resultImage;
+            m_DataInfo.CStart = frm.CStartFrm;
+            m_DataInfo.CEnd = frm.CEndFrm;
+            m_DataInfo.RStart = frm.RStartFrm;
+            m_DataInfo.REnd = frm.REndFrm;
+            m_DataInfo.SelBandNums = frm.SelectBandNums;//波段的个数
+            m_DataInfo.ClassifierType = frm.ClassType;//分类类型 0 代表最大似然;11代表最小距离分类；12代表马氏距离分类
+            m_DataInfo.SelBandIndexs = frm.listBandIndex;
+
+            #region ROIStatistics ROI统计算法
+            ROIStatistics_Exchange_Info roiDataInfo = new PIE.CommonAlgo.ROIStatistics_Exchange_Info();
+            roiDataInfo.ClassifierType = m_DataInfo.ClassifierType;
+            roiDataInfo.currentFileName = m_DataInfo.InputFilePath;
+            roiDataInfo.selBandIndex = m_DataInfo.SelBandIndexs.ToArray();
+            roiDataInfo.selBandNums = m_DataInfo.SelBandNums;
+            roiDataInfo.pROILayer = frm.ROILayer;
+
+            ISystemAlgo algo = AlgoFactory.Instance().CreateAlgo("PIE.CommonAlgo.dll", "PIE.CommonAlgo.ROIStatisticsAlgo");
+            algo.Params = roiDataInfo;
+            bool result = AlgoFactory.Instance().ExecuteAlgo(algo);//同步执行roi统计算法
+            #endregion
+
+            #region DistanceClassify算法
+            //执行完成后得到roi统计的参数会发生变化
+            roiDataInfo = (ROIStatistics_Exchange_Info)algo.Params;
+            int roiNum = roiDataInfo.vecROIName.Count;
+
+            m_DataInfo.ROINums = roiNum; //ROI个数
+            m_DataInfo.ListRoiNames = roiDataInfo.vecROIName;//roi名称列表
+            m_DataInfo.ListRoiColors = roiDataInfo.vecROIColor;//roi颜色集合
+            m_DataInfo.ROIMean = new List<double>();
+            m_DataInfo.ROICof = new List<double>();
+            for (int i = 0; i < roiNum; i++)//roi均值集合
+            {
+                for (int j = 0; j < frm.SelectBandNums; j++)
+                {
+                    m_DataInfo.ROIMean.Add(roiDataInfo.vecMean[i * frm.SelectBandNums + j]);
+                }
+                for (int k = 0; k < frm.SelectBandNums * frm.SelectBandNums; k++)
+                {
+                    m_DataInfo.ROICof.Add(roiDataInfo.vecCof[i * frm.SelectBandNums * frm.SelectBandNums + k]);
+                }
+            }
+            ISystemAlgo distanceAlgo = AlgoFactory.Instance().CreateAlgo("PIE.CommonAlgo.dll", "PIE.CommonAlgo.DistanceClassificationAlgo");//最大似然法就将DistanceClassificationAlgo替换为MLClassificationAlgo
+            distanceAlgo.Params = m_DataInfo;
+            ISystemAlgoEvents systemEvents = distanceAlgo as ISystemAlgoEvents;
+            systemEvents.OnExecuteCompleted += systemEvents_OnExecuteCompleted;
+            result = AlgoFactory.Instance().ExecuteAlgo(distanceAlgo);
+            #endregion
+        }
+        #endregion
+
+        #region 3.2 最大似然分类
+        private void mlClassification_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            maximumLikelihoodForm frm = new maximumLikelihoodForm(mapControlMain);
+            frm.ShowDialog();
+            if (frm.DialogResult != DialogResult.OK) return;
+            m_DataInfo.InputFilePath = frm.selectedImage;
+            m_DataInfo.OutputFilePath = frm.resultImage;
+            m_DataInfo.CStart = frm.CStartFrm;
+            m_DataInfo.CEnd = frm.CEndFrm;
+            m_DataInfo.RStart = frm.RStartFrm;
+            m_DataInfo.REnd = frm.REndFrm;
+            m_DataInfo.SelBandNums = frm.SelectBandNums;//波段的个数
+            m_DataInfo.ClassifierType = frm.ClassType;//分类类型 0 代表最大似然;11代表最小距离分类；12代表马氏距离分类
+            m_DataInfo.SelBandIndexs = frm.listBandIndex;
+
+            #region ROIStatistics ROI统计算法
+            ROIStatistics_Exchange_Info roiDataInfo = new PIE.CommonAlgo.ROIStatistics_Exchange_Info();
+            roiDataInfo.ClassifierType = m_DataInfo.ClassifierType;
+            roiDataInfo.currentFileName = m_DataInfo.InputFilePath;
+            roiDataInfo.selBandIndex = m_DataInfo.SelBandIndexs.ToArray();
+            roiDataInfo.selBandNums = m_DataInfo.SelBandNums;
+            roiDataInfo.pROILayer = frm.ROILayer;
+
+            ISystemAlgo algo = AlgoFactory.Instance().CreateAlgo("PIE.CommonAlgo.dll", "PIE.CommonAlgo.ROIStatisticsAlgo");
+            algo.Params = roiDataInfo;
+            bool result = AlgoFactory.Instance().ExecuteAlgo(algo);//同步执行roi统计算法
+            #endregion
+
+            #region DistanceClassify算法
+            //执行完成后得到roi统计的参数会发生变化
+            roiDataInfo = (ROIStatistics_Exchange_Info)algo.Params;
+            int roiNum = roiDataInfo.vecROIName.Count;
+
+            m_DataInfo.ROINums = roiNum; //ROI个数
+            m_DataInfo.ListRoiNames = roiDataInfo.vecROIName;//roi名称列表
+            m_DataInfo.ListRoiColors = roiDataInfo.vecROIColor;//roi颜色集合
+            m_DataInfo.ROIMean = new List<double>();
+            m_DataInfo.ROICof = new List<double>();
+            for (int i = 0; i < roiNum; i++)//roi均值集合
+            {
+                for (int j = 0; j < frm.SelectBandNums; j++)
+                {
+                    m_DataInfo.ROIMean.Add(roiDataInfo.vecMean[i * frm.SelectBandNums + j]);
+                }
+                for (int k = 0; k < frm.SelectBandNums * frm.SelectBandNums; k++)
+                {
+                    m_DataInfo.ROICof.Add(roiDataInfo.vecCof[i * frm.SelectBandNums * frm.SelectBandNums + k]);
+                }
+            }
+            ISystemAlgo distanceAlgo = AlgoFactory.Instance().CreateAlgo("PIE.CommonAlgo.dll", "PIE.CommonAlgo.DistanceClassificationAlgo");//最大似然法就将DistanceClassificationAlgo替换为MLClassificationAlgo
+            distanceAlgo.Params = m_DataInfo;
+            ISystemAlgoEvents systemEvents = distanceAlgo as ISystemAlgoEvents;
+            systemEvents.OnExecuteCompleted += systemEvents_OnExecuteCompleted;
+            result = AlgoFactory.Instance().ExecuteAlgo(distanceAlgo);
+            #endregion
+        }
+        #endregion
+
+        #endregion
+
+        #endregion
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }

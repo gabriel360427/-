@@ -39,10 +39,10 @@
             // transparencyCancel
             // 
             this.transparencyCancel.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.transparencyCancel.Location = new System.Drawing.Point(172, 81);
-            this.transparencyCancel.Margin = new System.Windows.Forms.Padding(2);
+            this.transparencyCancel.Location = new System.Drawing.Point(197, 104);
+            this.transparencyCancel.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.transparencyCancel.Name = "transparencyCancel";
-            this.transparencyCancel.Size = new System.Drawing.Size(93, 28);
+            this.transparencyCancel.Size = new System.Drawing.Size(106, 36);
             this.transparencyCancel.TabIndex = 11;
             this.transparencyCancel.Text = "取消";
             this.transparencyCancel.UseVisualStyleBackColor = true;
@@ -51,10 +51,10 @@
             // transparencyConfirm
             // 
             this.transparencyConfirm.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.transparencyConfirm.Location = new System.Drawing.Point(48, 81);
-            this.transparencyConfirm.Margin = new System.Windows.Forms.Padding(2);
+            this.transparencyConfirm.Location = new System.Drawing.Point(55, 104);
+            this.transparencyConfirm.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.transparencyConfirm.Name = "transparencyConfirm";
-            this.transparencyConfirm.Size = new System.Drawing.Size(93, 28);
+            this.transparencyConfirm.Size = new System.Drawing.Size(106, 36);
             this.transparencyConfirm.TabIndex = 10;
             this.transparencyConfirm.Text = "确定";
             this.transparencyConfirm.UseVisualStyleBackColor = true;
@@ -62,15 +62,15 @@
             // 
             // numericUpDownTransparency
             // 
-            this.numericUpDownTransparency.Location = new System.Drawing.Point(111, 36);
-            this.numericUpDownTransparency.Margin = new System.Windows.Forms.Padding(2);
+            this.numericUpDownTransparency.Location = new System.Drawing.Point(127, 46);
+            this.numericUpDownTransparency.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.numericUpDownTransparency.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
             this.numericUpDownTransparency.Name = "numericUpDownTransparency";
-            this.numericUpDownTransparency.Size = new System.Drawing.Size(166, 22);
+            this.numericUpDownTransparency.Size = new System.Drawing.Size(190, 26);
             this.numericUpDownTransparency.TabIndex = 9;
             this.numericUpDownTransparency.Value = new decimal(new int[] {
             255,
@@ -81,10 +81,10 @@
             // labelTransparency
             // 
             this.labelTransparency.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelTransparency.Location = new System.Drawing.Point(35, 38);
+            this.labelTransparency.Location = new System.Drawing.Point(40, 49);
             this.labelTransparency.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTransparency.Name = "labelTransparency";
-            this.labelTransparency.Size = new System.Drawing.Size(72, 21);
+            this.labelTransparency.Size = new System.Drawing.Size(82, 27);
             this.labelTransparency.TabIndex = 8;
             this.labelTransparency.Text = "透明度：";
             // 
@@ -92,18 +92,18 @@
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
             this.Appearance.Options.UseBackColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(317, 153);
+            this.ClientSize = new System.Drawing.Size(362, 197);
             this.Controls.Add(this.transparencyCancel);
             this.Controls.Add(this.transparencyConfirm);
             this.Controls.Add(this.numericUpDownTransparency);
             this.Controls.Add(this.labelTransparency);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "transparencyParam";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "输入透明度";
+            this.Text = "输入透明度";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTransparency)).EndInit();
             this.ResumeLayout(false);
 
