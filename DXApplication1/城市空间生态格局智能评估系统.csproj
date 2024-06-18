@@ -127,6 +127,12 @@
     <Compile Include="Custom Forms\distanceClassifyForm.designer.cs">
       <DependentUpon>distanceClassifyForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Custom Forms\imageClippingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\imageClippingForm.designer.cs">
+      <DependentUpon>imageClippingForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Custom Forms\ISODATAForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -213,6 +219,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\distanceClassifyForm.resx">
       <DependentUpon>distanceClassifyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\imageClippingForm.resx">
+      <DependentUpon>imageClippingForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\ISODATAForm.resx">
       <DependentUpon>ISODATAForm.cs</DependentUpon>

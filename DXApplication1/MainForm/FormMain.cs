@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Diagnostics;
 using PIE.AxControls;
 using PIE.Carto;
 using PIE.Controls;
@@ -691,11 +692,6 @@ namespace 城市空间生态格局智能评估系统
         private void brightEditItem_Scroll(object sender, EventArgs e)
         {
             int brightness = int.Parse(brightnessEditItem.EditValue.ToString());
-            /* if (brightnessEditItem.EditValue != null)
-            {
-                brightnessEditItem.EditValue.MinValue = 1;
-                brightnessEditItem.EditValue.MaxValue = 100;
-            }*/
             if (mapControlMain.ActiveView.CurrentLayer == null) return;
             IRasterLayer rasterLayer = mapControlMain.ActiveView.CurrentLayer as IRasterLayer;
             if (rasterLayer != null)
@@ -812,7 +808,7 @@ namespace 城市空间生态格局智能评估系统
             IRasterLayer rasterLayer = mapControlMain.ActiveView.CurrentLayer as IRasterLayer;
             if (rasterLayer != null)
             {
-                //通过界面去设置亮度
+                //通过界面去设置
                 contrastRatioParam frm = new contrastRatioParam(rasterLayer);
                 frm.ShowDialog();
                 if (frm.DialogResult == DialogResult.OK)
@@ -881,7 +877,7 @@ namespace 城市空间生态格局智能评估系统
             IRasterLayer rasterLayer = mapControlMain.ActiveView.CurrentLayer as IRasterLayer;
             if (rasterLayer != null)
             {
-                //通过界面去设置亮度
+                //通过界面去设置
                 percentLinearStrechParam frm = new percentLinearStrechParam(rasterLayer);
                 frm.ShowDialog();
                 if (frm.DialogResult == DialogResult.OK)
@@ -983,7 +979,7 @@ namespace 城市空间生态格局智能评估系统
         }
         #endregion
 
-        #region 3.2 无缝镶嵌
+        #region 3.2 镶嵌至新栅格
 
         #endregion
 
@@ -1365,6 +1361,12 @@ namespace 城市空间生态格局智能评估系统
             form.ShowDialog();
         }
         #endregion
+
+        private void imageClipping_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            imageClippingForm frm = new imageClippingForm();
+            frm.ShowDialog();
+         }
 
         
         #endregion 
