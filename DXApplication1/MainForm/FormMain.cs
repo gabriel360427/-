@@ -952,5 +952,35 @@ namespace 城市空间生态格局智能评估系统
             form.ShowDialog();
         }
         #endregion
+
+        #region 生态廊道提取
+        #region 1.铁路因子操作
+        private void railwayFactor_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            linearResistanceFactor form = new linearResistanceFactor();
+            form.Text = "铁路因子";
+            form.Column1.HeaderText = "距铁路距离（m）";
+            form.Column2.HeaderText = "阻力值";
+            form.dataGridView1.Rows.Add(new object[] { "1000", "100" });
+            form.dataGridView1.Rows.Add(new object[] { "2000", "80" });
+            form.dataGridView1.Rows.Add(new object[] { "3000", "60" });
+            form.dataGridView1.Rows.Add(new object[] { "5000", "20" });
+            form.dataGridView1.Rows.Add(new object[] { "∞", "1" });
+            form.dataGridView1.Rows.Add(new object[] { "NoData", "NoData" });
+            form.ShowDialog();
+        }
+        #endregion
+
+        #endregion
+
+        #region 重分类功能
+        private void reClassification_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            reClassification form = new reClassification();
+            form.ShowDialog();
+        }
+        #endregion
+
+        
     }
 }
