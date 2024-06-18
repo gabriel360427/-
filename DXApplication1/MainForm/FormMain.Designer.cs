@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.newProject = new DevExpress.XtraBars.BarButtonItem();
@@ -167,7 +168,7 @@
             this.repositoryItemTrackBar2 = new DevExpress.XtraEditors.Repository.RepositoryItemTrackBar();
             this.repositoryItemTrackBar3 = new DevExpress.XtraEditors.Repository.RepositoryItemTrackBar();
             this.repositoryItemZoomTrackBar1 = new DevExpress.XtraEditors.Repository.RepositoryItemZoomTrackBar();
-            this.popupMenu1 = new DevExpress.XtraBars.PopupMenu();
+            this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.tocControlMain = new PIE.AxControls.TOCControl();
             this.tabControlMain = new System.Windows.Forms.TabControl();
@@ -206,10 +207,10 @@
             this.toolStripStatusLabel7 = new System.Windows.Forms.ToolStripStatusLabel();
             this.barButtonItem17 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem40 = new DevExpress.XtraBars.BarButtonItem();
-            this.contextMenuStrip_MapControl = new System.Windows.Forms.ContextMenuStrip();
+            this.contextMenuStrip_MapControl = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.FullExtentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.RasterIdentifyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.contextMenuStrip_TocControl = new System.Windows.Forms.ContextMenuStrip();
+            this.contextMenuStrip_TocControl = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.DeleteLayerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.FeatureLayerAttributeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SymbolSelectorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -594,6 +595,7 @@
             this.imageMatching.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("imageMatching.ImageOptions.Image")));
             this.imageMatching.Name = "imageMatching";
             this.imageMatching.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.imageMatching.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.imageMatching_ItemClick);
             // 
             // bandOperation
             // 

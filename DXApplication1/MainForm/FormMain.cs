@@ -952,5 +952,13 @@ namespace 城市空间生态格局智能评估系统
             form.ShowDialog();
         }
         #endregion
+
+        private void imageMatching_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            PIE.AxControls.DataPrepGeoCorrDialog frm = new PIE.AxControls.DataPrepGeoCorrDialog();
+            frm.ShowDialog();
+            (frm as IDisposable).Dispose();
+            frm = null;
+        }
     }
 }
