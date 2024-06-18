@@ -45,7 +45,7 @@ namespace 城市空间生态格局智能评估系统
             //地图监听事件
             IActiveViewEvents activeViewEvents = mapControlMain.FocusMap as PIE.Carto.IActiveViewEvents;
             activeViewEvents.OnLayerDeleted += MapControl_OnLayerDeleted;//图层删除事件
-            
+
         }
 
         #region 地图模式制图模式
@@ -440,7 +440,7 @@ namespace 城市空间生态格局智能评估系统
             }
         }
         #endregion
-        
+
         #region 1.3 保存工程
         /// <summary>
         /// 保存地图工程
@@ -1220,45 +1220,70 @@ namespace 城市空间生态格局智能评估系统
             classificationStatisticForm frm = new classificationStatisticForm();
             frm.ShowDialog();
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         #endregion
 
         #endregion
 
         #endregion
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        #region 重分类
+        private void reClassification_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            reClassification form = new reClassification();
+            form.ShowDialog();
+        }
+        #endregion
+        #region 廊道提取
+        #region 铁路因子
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            linearResistanceFactor form = new linearResistanceFactor();
+            form.Text = "铁路因子";
+            form.Column1.HeaderText = "距铁路距离（m）";
+            form.Column2.HeaderText = "阻力值";
+            form.dataGridView1.Rows.Add(new object[] { "1000", "100" });
+            form.dataGridView1.Rows.Add(new object[] { "2000", "80" });
+            form.dataGridView1.Rows.Add(new object[] { "3000", "60" });
+            form.dataGridView1.Rows.Add(new object[] { "5000", "20" });
+            form.dataGridView1.Rows.Add(new object[] { "∞", "1" });
+            form.dataGridView1.Rows.Add(new object[] { "NoData", "NoData" });
+            form.ShowDialog();
+        }
+        #endregion
+        #endregion 
     }
 }
