@@ -1209,73 +1209,55 @@ namespace 城市空间生态格局智能评估系统
             result = AlgoFactory.Instance().ExecuteAlgo(distanceAlgo);
             #endregion
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         #endregion
 
         #endregion
 
-        #endregion
-
-        #region 重分类
-        private void reClassification_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        #region 4.分类后处理
+        #region 4.1 分类统计
+        private void classStatistics_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            reClassification form = new reClassification();
-            form.ShowDialog();
-        }
-        #endregion
-
-        #region 廊道提取
-        #region 铁路因子
-        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            linearResistanceFactor form = new linearResistanceFactor();
-            form.Text = "铁路因子";
-            form.Column1.HeaderText = "距铁路距离（m）";
-            form.Column2.HeaderText = "阻力值";
-            form.dataGridView1.Rows.Add(new object[] { "1000", "100" });
-            form.dataGridView1.Rows.Add(new object[] { "2000", "80" });
-            form.dataGridView1.Rows.Add(new object[] { "3000", "60" });
-            form.dataGridView1.Rows.Add(new object[] { "5000", "20" });
-            form.dataGridView1.Rows.Add(new object[] { "∞", "1" });
-            form.dataGridView1.Rows.Add(new object[] { "NoData", "NoData" });
-            form.ShowDialog();
+            classificationStatisticForm frm = new classificationStatisticForm();
+            frm.ShowDialog();
         }
         #endregion
 
         #endregion
+
+        #endregion
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     }

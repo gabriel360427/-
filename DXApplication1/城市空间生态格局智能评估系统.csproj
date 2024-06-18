@@ -91,6 +91,12 @@
     <Compile Include="Custom Forms\brightnessParam.Designer.cs">
       <DependentUpon>brightnessParam.cs</DependentUpon>
     </Compile>
+    <Compile Include="Custom Forms\classificationStatisticForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\classificationStatisticForm.designer.cs">
+      <DependentUpon>classificationStatisticForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Custom Forms\contrastRatioParam.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,12 +121,6 @@
     <Compile Include="Custom Forms\kmeansForm.designer.cs">
       <DependentUpon>kmeansForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Custom Forms\linearResistanceFactor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Custom Forms\linearResistanceFactor.Designer.cs">
-      <DependentUpon>linearResistanceFactor.cs</DependentUpon>
-    </Compile>
     <Compile Include="Custom Forms\maximumLikelihoodForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,12 +138,6 @@
     </Compile>
     <Compile Include="Custom Forms\radiometricCalibrationForm.designer.cs">
       <DependentUpon>radiometricCalibrationForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Custom Forms\reClassification.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Custom Forms\reClassification.Designer.cs">
-      <DependentUpon>reClassification.cs</DependentUpon>
     </Compile>
     <Compile Include="Custom Forms\transparencyParam.cs">
       <SubType>Form</SubType>
@@ -166,6 +160,9 @@
     <EmbeddedResource Include="Custom Forms\brightnessParam.resx">
       <DependentUpon>brightnessParam.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\classificationStatisticForm.resx">
+      <DependentUpon>classificationStatisticForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\contrastRatioParam.resx">
       <DependentUpon>contrastRatioParam.cs</DependentUpon>
     </EmbeddedResource>
@@ -178,9 +175,6 @@
     <EmbeddedResource Include="Custom Forms\kmeansForm.resx">
       <DependentUpon>kmeansForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Custom Forms\linearResistanceFactor.resx">
-      <DependentUpon>linearResistanceFactor.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\maximumLikelihoodForm.resx">
       <DependentUpon>maximumLikelihoodForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -189,9 +183,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\radiometricCalibrationForm.resx">
       <DependentUpon>radiometricCalibrationForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Custom Forms\reClassification.resx">
-      <DependentUpon>reClassification.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\transparencyParam.resx">
       <DependentUpon>transparencyParam.cs</DependentUpon>
