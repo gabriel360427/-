@@ -1,0 +1,2106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5EABB42C-C19A-4ECB-B730-D43F2C2483ED}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>城市空间生态格局智能评估系统</RootNamespace>
+    <AssemblyName>城市空间生态格局智能评估系统</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v18.1" />
+    <Reference Include="DevExpress.Data.v18.1" />
+    <Reference Include="DevExpress.Printing.v18.1.Core" />
+    <Reference Include="DevExpress.Utils.v18.1" />
+    <Reference Include="DevExpress.XtraBars.v18.1" />
+    <Reference Include="DevExpress.Sparkline.v18.1.Core" />
+    <Reference Include="DevExpress.XtraEditors.v18.1" />
+    <Reference Include="PIE.AdapterUI, Version=5.2.0.0, Culture=neutral, PublicKeyToken=ee1bc88606bd5383, processorArchitecture=x86" />
+    <Reference Include="PIE.AdapterUICLR, Version=5.2.0.0, Culture=neutral, PublicKeyToken=ee1bc88606bd5383, processorArchitecture=x86" />
+    <Reference Include="PIE.Carto, Version=5.2.0.0, Culture=neutral, PublicKeyToken=ee1bc88606bd5383" />
+    <Reference Include="PIE.CommonAlgo, Version=5.2.0.0, Culture=neutral, PublicKeyToken=ee1bc88606bd5383" />
+    <Reference Include="PIE.CommonMP, Version=5.2.0.0, Culture=neutral, processorArchitecture=x86" />
+    <Reference Include="PIE.Configuration, Version=5.2.0.0, Culture=neutral, PublicKeyToken=ee1bc88606bd5383, processorArchitecture=x86" />
+    <Reference Include="PIE.Controls, Version=5.2.0.0, Culture=neutral, PublicKeyToken=ee1bc88606bd5383, processorArchitecture=x86" />
+    <Reference Include="PIE.ControlsEx, Version=5.2.0.0, Culture=neutral, PublicKeyToken=ee1bc88606bd5383, processorArchitecture=x86" />
+    <Reference Include="PIE.ControlsUI, Version=5.2.0.0, Culture=neutral, PublicKeyToken=ee1bc88606bd5383, processorArchitecture=x86" />
+    <Reference Include="PIE.DataSource, Version=5.2.0.0, Culture=neutral, PublicKeyToken=ee1bc88606bd5383" />
+    <Reference Include="PIE.Display, Version=5.2.0.0, Culture=neutral, PublicKeyToken=ee1bc88606bd5383" />
+    <Reference Include="PIE.Framework, Version=5.2.0.0, Culture=neutral, PublicKeyToken=ee1bc88606bd5383, processorArchitecture=x86" />
+    <Reference Include="PIE.Geometry, Version=5.2.0.0, Culture=neutral, PublicKeyToken=ee1bc88606bd5383" />
+    <Reference Include="PIE.Plugin.BatchDealTools, Version=5.2.0.0, Culture=neutral, PublicKeyToken=ee1bc88606bd5383, processorArchitecture=x86" />
+    <Reference Include="PIE.Plugin.CloudFlash, Version=5.2.0.0, Culture=neutral, PublicKeyToken=ee1bc88606bd5383, processorArchitecture=x86" />
+    <Reference Include="PIE.Plugin.ImagePreProcess, Version=5.2.0.0, Culture=neutral, PublicKeyToken=ee1bc88606bd5383, processorArchitecture=x86" />
+    <Reference Include="PIE.Plugin.ImageTransform, Version=5.2.0.0, Culture=neutral, PublicKeyToken=ee1bc88606bd5383, processorArchitecture=x86" />
+    <Reference Include="PIE.Plugin.MapSubdivision, Version=5.2.0.0, Culture=neutral, PublicKeyToken=ee1bc88606bd5383, processorArchitecture=x86" />
+    <Reference Include="PIE.Plugin.MonitorAnalysis, Version=5.2.0.0, Culture=neutral, PublicKeyToken=ee1bc88606bd5383, processorArchitecture=x86" />
+    <Reference Include="PIE.Plugin.UtilityTools, Version=5.2.0.0, Culture=neutral, PublicKeyToken=ee1bc88606bd5383, processorArchitecture=x86" />
+    <Reference Include="PIE.SARAlgo, Version=5.2.0.0, Culture=neutral, processorArchitecture=x86" />
+    <Reference Include="PIE.SystemAlgo, Version=5.2.0.0, Culture=neutral, PublicKeyToken=ee1bc88606bd5383" />
+    <Reference Include="PIE.SystemUI, Version=5.2.0.0, Culture=neutral, PublicKeyToken=ee1bc88606bd5383" />
+    <Reference Include="PIE.Utility, Version=5.2.0.0, Culture=neutral, PublicKeyToken=ee1bc88606bd5383" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Custom Commands\AddDataCommand.cs" />
+    <Compile Include="Custom Commands\LoadFeatureDataCommand.cs" />
+    <Compile Include="Custom Commands\LoadRasterDataCommand.cs" />
+    <Compile Include="Custom Forms\AtmosphericCorrectionCommand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\AtmosphericCorrectionCommand.designer.cs">
+      <DependentUpon>AtmosphericCorrectionCommand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Forms\brightnessParam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\brightnessParam.Designer.cs">
+      <DependentUpon>brightnessParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Forms\contrastRatioParam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\contrastRatioParam.Designer.cs">
+      <DependentUpon>contrastRatioParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Forms\percentLinearStrechParam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\percentLinearStrechParam.Designer.cs">
+      <DependentUpon>percentLinearStrechParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Forms\RadiationCalibrationCommand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\RadiationCalibrationCommand.designer.cs">
+      <DependentUpon>RadiationCalibrationCommand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Forms\transparencyParam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\transparencyParam.Designer.cs">
+      <DependentUpon>transparencyParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Tools\SpatialQueryTool.cs" />
+    <Compile Include="MainForm\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Custom Forms\AtmosphericCorrectionCommand.resx">
+      <DependentUpon>AtmosphericCorrectionCommand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\brightnessParam.resx">
+      <DependentUpon>brightnessParam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\RadiationCalibrationCommand.resx">
+      <DependentUpon>RadiationCalibrationCommand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1度网格.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5度网格.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10度网格.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AbundanceInversion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AdaptiveCoherenceEstimator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AdaptiveFilter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AdaptiveFilter_EnFrost.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AdaptiveFilter_EnLee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AdaptiveFilter_Frost.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AdaptiveFilter_Gamma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AdaptiveFilter_Kuan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AdaptiveFilter_Lee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AdaptiveMatchedFilter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddGridCommand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AirportDetection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ALOS PALSAR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ALOS1_PALSARSLCImport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ALOS2_PALSARSLCImport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ALOS-PALSAR1_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AmplitudeCoregistration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\App_Plugin_Man.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\App_Sys_Set.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\App_Sys_Update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArcGisMapServer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AtmosphericCorrQueue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BadBandDetection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BandSequenHistogram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Baseline refinement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BaseLine_LS_Estimation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Baseline_Refinement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Batch_AdaptiveFilter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Batch_AdaptiveFilter_EnFrost.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Batch_AdaptiveFilter_EnLee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Batch_AdaptiveFilter_Frost.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Batch_AdaptiveFilter_Gamma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Batch_AdaptiveFilter_Kuan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Batch_AdaptiveFilter_Lee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Batch_ASAR_DataImport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Batch_ComplexDataConvert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Batch_CSK_DataImport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Batch_ERS_DataImport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Batch_GF3_Strip_DataImport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Batch_MultiLook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Batch_SARGeocode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Batch_TransformToDb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Batch_TSX_DataImport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BinaryEncoding.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlockAdjust_AddCtrl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlockAdjust_AddLink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlockAdjust_Adjustment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlockAdjust_CloseProj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlockAdjust_CtrlMatch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlockAdjust_ExportGcpFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlockAdjust_LinkMatch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlockAdjust_NewProj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlockAdjust_OpenProj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlockAdjust_OrthoQueue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlockAdjust_PickPoint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlockAdjust_ProjSet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlockAdjust_SaveProj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Build_Pyramid_Queue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CartoGraphy_AlignToMargins.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CartoGraphy_BottomAlignment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CartoGraphy_BringForwardElements.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CartoGraphy_BringToFrontElements.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CartoGraphy_CenterAlignment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CartoGraphy_ChangePageLayout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CartoGraphy_DistributeHorizontallyElements.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CartoGraphy_DistributeVerticallyElements.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CartoGraphy_Export.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CartoGraphy_FitHeighttoMarginsElements.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CartoGraphy_FittoMarginsElements.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CartoGraphy_FitWidthtoMarginsElements.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CartoGraphy_Grid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CartoGraphy_LeftAlignment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CartoGraphy_Legend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CartoGraphy_LockDataFrame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CartoGraphy_MakeSameHeightElements.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CartoGraphy_MakeSameSizeElements.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CartoGraphy_MakeSameWidthElements.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CartoGraphy_MapFrame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CartoGraphy_NorthArrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CartoGraphy_PageSetting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CartoGraphy_Pan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CartoGraphy_RightAlignment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CartoGraphy_ScaleBar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CartoGraphy_ScaleText.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CartoGraphy_SendBackwardElements.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CartoGraphy_SendToBackElements.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CartoGraphy_TopAlignment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CartoGraphy_UnlockDataFrame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CartoGraphy_VerticalCenterAlignment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CartoGraphy_ZoomIn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CartoGraphy_ZoomOut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CartoGraphy_ZoomToNextExtent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CartoGraphy_ZoomToOrigin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CartoGraphy_ZoomToPreviousExtent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CartoGraphy_ZoomToWhole.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloudFlash_LayerCollection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloudFlash_Resume.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloudFlash_Start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloudFlash_Stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloudFlash_Suspend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CoarseCoregistration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CoastlineExtract.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CoherenceCompute.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ComplexDataConvert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConnectionPointEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConnectionPointMatch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConstrainedEnergyMin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ContainProjectionAllosMatch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ContinuumRemoval.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ControlPointEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ControlPointMatch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CoordImageResample.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CoordsTransform_4params.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CoordsTransform_7params.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CoordsTransform_BatchProjectTrans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CoordsTransform_DataProjTransCommand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CoordsTransform_FileDataProjTransCommand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CoordsTransform_PointCoordsTransCommand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CoordsTransform_Set4params.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CoordsTransform_Set7params.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CopyElementCommand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Coregistration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\COSMO_SkyMedSLCImport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\create_fishnet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CreateVrtFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CurveAdjustmentUICommand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CustomServerCommand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataAutoMagicUI_Water.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataLoader_ArcGISImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataLoader_BingAnnotSatellite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataLoader_BingMaps.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataLoader_BingSatellite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataLoader_GaoDeAnnotation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataLoader_GaoDeRoad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataLoader_GaoDeSatellite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataLoader_GoogleAnnotation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataLoader_GoogleRoad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataLoader_GoogleSatellite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataLoader_GoogleTopography.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataLoader_HDF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataLoader_HJ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataLoader_HTHTImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataLoader_HTHTVector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataLoader_Raster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataLoader_TDTTiledCia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataLoader_TDTTiledCva.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataLoader_TDTTiledImg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataLoader_TDTTiledVec.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataLoader_Tiled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataLoader_Vector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataLoader_WMS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataPrep_Cali_Atmosphere.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataPrep_Cali_InnerMean.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataPrep_Cali_Radiation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataPrep_Cali_SunElevAngle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataPrep_Clip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataPrep_Fus_Brovey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataPrep_Fus_PCA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataPrep_Fus_PS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataPrep_Fus_SFIM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataPrep_MapSub.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataPrep_MapSubVec.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataPrep_Match.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataPrep_Ortho.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataPrepGcpSelect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataPrepGcpSelectCommand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataPrepQueue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeepLearning_Airplane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeepLearning_Airport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeepLearning_Building.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeepLearning_Grass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeepLearning_Playground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeepLearning_Soil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeepLearning_Tower.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Display_Enhan_Bright.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Display_Enhan_Contrast.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Display_Enhan_ResetAll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Display_Enhan_Stretch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Display_Enhan_Transparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Display_Inverse_Bright.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Display_Raster_TransparentValue_All.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DistributeHorizontallyElementsCommand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DistributeVerticallyElementsCommand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EndmemberExtraction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FileFolderSmall_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FineCoregistration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FitHeighttoMarginsElementsCommand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FittoMarginsElementsCommand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FitWidthtoMarginsElementsCommand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FiveComponentDec.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GCP_UnwrapPhase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GeneralImageClip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GeoProjCoordTransform.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GeoRectifyUI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GF3_ContourShp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GF3_FSI_SLCImport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GF3_Scan_SLCDataImport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GF3_SLCImport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GF3_Strip_SLCDataImport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GF5PreProcessing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HAAlphaClassification.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HarmonicAnalysis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HypEYE_FCM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HypEYE_MPC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HypEYE_MRF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HypEYE_Parallelepiped.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HypEYE_RFCM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HypEYE_SpectralAngle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HypEYE_SpectralSimilarity.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HypEYE_SVM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HypGF5RadiometricCalibrate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HypHySime.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HysHyperplaneDistance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HysImageFusion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HysLeastSquares.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HysNFINDR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HyspecAtmoCorr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HyspecDenoise.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HyspecPrePro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HysRemoveBadLines.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HysSharpness.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HysSimplexVolume.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HysSoilIndex.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HysSpectralDifferential.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Identify_AttributeIdentify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Identify_RasterIdentify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Identify_ScaleToFeature.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Identify_SwitchCoordinate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image3DCube.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImageEvaluation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImageSieveFilter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgClass_BEC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgClass_DIS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgClass_DisC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgClass_ISODATA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgClass_KMeans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgClass_MLC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgClass_NN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgClass_Post_Class.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgClass_Post_Clump.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgClass_Post_Color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgClass_Post_Comb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgClass_Post_MMA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgClass_Post_PA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgClass_Post_ROI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgClass_Post_Sieve.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgClass_Post_Sta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgClass_ROI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgClass_SAC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgClass_Supervised.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgClass_UnSupervised.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgFilter_Custom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgFilter_Derect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgFilter_DiffSharp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgFilter_Freq.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgFilter_Homo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgFilter_HomoExp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgFilter_HomoLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgFilter_Mean.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgFilter_Median.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgFilter_Norm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgFilter_Spa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgTrans_CT_IHSToRGB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgTrans_CT_RGBToIHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgTrans_DecS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgTrans_FFT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgTrans_InvFFT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgTrans_InvKL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgTrans_InvMNF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgTrans_InvWT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgTrans_KL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgTrans_KT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgTrans_MNF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgTrans_WT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IndexToolBox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InformationEntropy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InitBaselineCompute.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InSAR_AdaptiveFilter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InSAR_AdaptiveFilter_EnFrost.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InSAR_AdaptiveFilter_EnLee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InSAR_AdaptiveFilter_Frost.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InSAR_AdaptiveFilter_Gamma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InSAR_AdaptiveFilter_Kuan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InSAR_AdaptiveFilter_Lee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InSAR_ALOS1_SLCImport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InSAR_ALOS2_SLCImport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InSAR_ASAR_SLCImport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InSAR_ComplexDataConvert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InSAR_CSK_SLCImport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InSAR_ERS_SLCImport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InSAR_Geocoding.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InSAR_GF3_SLCImport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InSAR_MultiLook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InSAR_RadioCal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InSAR_RS2_SLCImport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InSAR_Sentinel1_TOPSImport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InSAR_SingleImageCrop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InSAR_Slant2Ground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InSAR_SLCImport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InSAR_TransToDB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InSAR_TSX_SLCImport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InteractiveGCPExtraction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InterfCompute.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InterferogramFilter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KIWaterExtraction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Layer_list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LayerStack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Magic_Wand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MagicWand_ClipElement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MagicWand_ReShape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MagicWand_SaveAs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainCategory_About.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainCategory_Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainCategory_Cut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainCategory_DeleteAllSelect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainCategory_License.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainCategory_Paste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainCategory_ProcessWatcher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainCategory_shortcuts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainCategory_UserManual.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MakeSameHeightElementsCommand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MakeSameSizeElementsCommand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MakeSameWidthElementsCommand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MapBrowser_CenterZoomIn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MapBrowser_CenterZoomOut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MapBrowser_FullExtent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MapBrowser_Pan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MapBrowser_SelectRaster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MapBrowser_SwipeLayer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MapBrowser_ZoomIn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MapBrowser_ZoomOut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MapBrowser_ZoomToNativeResolution.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MapBrowser_ZoomToNextExtent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MapBrowser_ZoomToPreviousExtent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MapHawkEyeCommand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MapHawkEyeCommand16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MapHawkEyeCommand32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarkTool_Arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarkTool_Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarkTool_DrawBalloonCalloutTextElement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarkTool_DrawCircleElement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarkTool_DrawCurveElement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarkTool_DrawDynDateElement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarkTool_DrawDynTimeElement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarkTool_DrawEllipseElement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarkTool_DrawFreehandElement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarkTool_DrawNeatline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarkTool_DrawPictureElement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarkTool_DrawPointElement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarkTool_DrawPolygonElement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarkTool_DrawPolylineElement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarkTool_DrawRectElement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarkTool_DrawScrewElement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarkTool_DrawScrewElement.png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarkTool_DrawTextElement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarkTool_EditElementNode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarkTool_FillColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarkTool_LineArrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarkTool_LineColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarkTool_Mark_Export.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarkTool_Mark_Import.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarkTool_MarkClear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarkTool_MarkerColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarkTool_Paste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarkTool_RotateElement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarkTool_SelectElement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarkTool_TextBold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarkTool_TextColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarkTool_TextItalic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarkTool_TextUnderline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MicapsShow_ControlPanel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MoniAnaly_ChangeDetectVegetation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MoniAnaly_CloudDetect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MoniAnaly_DanDaoChangeDetect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MoniAnaly_DanDaoVector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MoniAnaly_GCDKIdentify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MoniAnaly_Land_ChangeDect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MoniAnaly_Ocean_SeaIceDect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MoniAnaly_RTGPTF_ForEetExtract.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MoniAnaly_RTGPTF_StatisticFeatureInfo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MoniAnaly_YouShi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multi_scale_seg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MultiLook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NoiseEstimation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NoiseEstimationView.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OpenFY4Command.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OrbitRefinement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OrthogonalSubspaceProjection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PALSAR1_SLCDataImport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PALSAR2_SLCDataImport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PasteElementCommand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Phase2Height.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PhaseSimulation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PhaseSubtraction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PhaseUnwrap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PhaseUnwrapping.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pie_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pie_sias_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PIEAtmCorr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PIECalibrationQueue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PIEFusionQueue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PIEOrtho_AutoProcess.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PIEOrthoMatchQueue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PieXmlAndGammaParTransform.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolarizationSignatures.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolReflectionSymmetry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolSAR_ALOS2_SLCImport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolSAR_BasisChange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolSAR_CameronDecom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolSAR_ClassMerge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolSAR_Decomposition_AnYang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolSAR_Decomposition_Cloude.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolSAR_Decomposition_CloudePottier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolSAR_Decomposition_Freeman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolSAR_Decomposition_Yamaguchi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolSAR_HAAlphaClassification.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolSAR_HuynenDecomposition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolSAR_KroDecomposition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolSAR_MatrixConvert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolSAR_MeanShift_Filter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolSAR_PolSignatures.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolSAR_RGBCombine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolSAR_ShipDetection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolSAR_WaterExtraction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolSAR_WishartUnsupervisedClassification.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolSARBasisChange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolSARFilt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolSARFilt_PolSARBoxcarFilt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolSARFilt_PolSARGaussFilt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolSARFilt_PolSARPWFFilt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolSARFilt_PolSARRefinedLeeFilt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolSARFilter_PolSAR_BoxcarFilter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolSARFilter_PolSAR_GaussFilter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolSARFilter_PolSAR_PWFFilter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolSARFilter_PolSAR_RefinedLeeFilter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolSARInDecomposition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolSARInDecomposition_AnYang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolSARInDecomposition_Cloude.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolSARInDecomposition_CloudePottier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolSARInDecomposition_Freeman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolSARInDecomposition_Yamaguchi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolygonAreaMeasure.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProjectionModify_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProjectionSmall_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QuantitativeRetrieval.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Radar_UTMCoordTransform.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RadarCoordinateDem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Radarsat2SLC_DataImport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Radarsat2SLCImport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RadiometricTerrainCorrection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refine_LookUpTable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RemoveFlatPhase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RGBCombine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ribbonMaximize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ribbonMinimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rule_class.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RXAnomalyDetection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S1_MergeSubSwath.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S1_Strip_SLCDataImport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S1_TOPS_SLCDataImport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sample_sel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SARConnectionPointEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SARConnectionPointMatch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SARConnectPointMatch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SARControlPointEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SARControlPointMatch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SARGeocoding.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SARGeoPreciseCorrection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SARImageCrop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SARImageResample.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SARImgCorrection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SARMatrixConvert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SARRadioCal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SARStripAdjustment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SARStripManager.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SavitzkyGolayFiltering.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ScatterPlot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SComplex2FComplex.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sentinel1_TOPSImport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sentinel-1A_B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Set_Invalid_Value.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shortcuts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SIAS_AutoSample.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SIAS_CategoryConversion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SIAS_ChangeDetection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SIAS_Classify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SIAS_ClassShape2Raster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SIAS_Close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SIAS_Dissolve.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SIAS_ExportSegment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SIAS_ImportSample.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SIAS_New.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SIAS_Open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SIAS_ProjectEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SIAS_Sample.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SIAS_Segment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SIAS_Simply.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SIAS_Smooth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SIAT_Classify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SIAT_Close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SIAT_New.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SIAT_Open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SIAT_Sample.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SIAT_Segment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SingleImageCrop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slant2Ground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SLC_FourCornersLatlon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpectralAnalysis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpectralAnalysisTool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpectralAngleMapper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpectralInformationDivergence.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpectralLibraryViewer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpectralResampling.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SSIE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SSRX.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StatisticalAnalysis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StripAdjustment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StripeNoisesRemove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Style.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SuperpixelMeg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SuperpixelSeg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SynInter_Measure.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SystemProject_ExitApplication.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SystemProject_NewProject.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SystemProject_OpenProject.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SystemProject_SaveAsProject.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SystemProject_SaveProject.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TCIMF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TeaAreaExtraction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TerrainRadiometricCorrection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TerrasarSLCImport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolBox_ToolBox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TransToDB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui_FastMosaic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui_ImageMosaic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UTCIMF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Utility_BatchTrans_BitDepth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Utility_BatchTrans_Format.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Utility_BatchTrans_Interleave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Utility_BufferAnalyse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Utility_Coor_Trans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Utility_HotMap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Utility_ImageBadLinesFix.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Utility_ImageSieveFilter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Utility_Img_Resamp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Utility_InverseDistanceInterpolation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Utility_KrigingInterpolation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Utility_Mask_App.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Utility_Mask_Cre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Utility_Oper_Band.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Utility_Oper_Comb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Utility_Oper_Mirror.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Utility_Oper_Rotat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Utility_Oper_Spec.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Utility_Proj_Def.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Utility_Proj_Trans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Utility_RasterToVector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Utility_ShapeUnion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Utility_SPlineInterpolation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Utility_Statis_Hist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Utility_Statis_Plot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Utility_Statis_SpectralReording.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Utility_Strip_Remo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Utility_Trans_BitDepth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Utility_Trans_Format.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Utility_Trans_Interleave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Utility_VectorToContourLineFace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Utility_VectorToRaster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VectorEditor_AddFeature.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VectorEditor_AnalyseBuffer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VectorEditor_AttributeEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VectorEditor_BatchAttributeEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VectorEditor_ClearSelectionFeatures.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VectorEditor_ClipFeature.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VectorEditor_CreateLayer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VectorEditor_DeleteFeature.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VectorEditor_DrawCircleFeature.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VectorEditor_DrawEllipseFeature.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VectorEditor_DrawPointFeature.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VectorEditor_DrawPolygonFeature.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VectorEditor_DrawPolylineFeature.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VectorEditor_DrawRectFeature.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VectorEditor_EdgeSnapping.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VectorEditor_Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VectorEditor_EditFeatureNode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VectorEditor_EndSnapping.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VectorEditor_MidPointSnapping.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VectorEditor_MoveFeature.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VectorEditor_PointSnapping.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VectorEditor_Redo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VectorEditor_ReshapeFeature.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VectorEditor_RotateFeature.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VectorEditor_SaveEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VectorEditor_SelectFeature.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VectorEditor_SplitFeature.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VectorEditor_SplitToShapeFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VectorEditor_StartEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VectorEditor_StopEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VectorEditor_SurfaceRepair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VectorEditor_Trace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VectorEditor_Undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VectorEditor_UnionFeature.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VectorEditor_VertexSnapping.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VertexComponentAnalysis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\View_Map_New.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WAlgaeBloom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WaterExtract_Normalize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WaterExtract_SingleBand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WaterExtract_SpecPhMethod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WaterStatistics_Depth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WBiochemicalOxygenDemand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WCdom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WChemicalOxygenDemandMn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WChlorophylla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WColorIndex.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WDissolvedOxygen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WishartSupervisedClassification.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WishartUnsupervisedClassification.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WMaskOperator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WPhycocyain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WTotalNitrogen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WTotalPhosphorus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WTotalSuspendedMatter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WTransparency.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WTrophismStatusIndex.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WTurbidity.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZYZXAnoImg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZYZXImg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\点状数据.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\国家区域.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\经纬网格.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\静止卫星数据.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\面状数据.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\省级行政区.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\市级行政区.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\无分幅.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\县级行政区.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\线状数据.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\自定义网格.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
