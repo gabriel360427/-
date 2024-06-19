@@ -151,7 +151,7 @@
             this.postClassification = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.reClassifications = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.timeseriesClassification = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.VectorProcess = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.VectorProcessandFormatConversion = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.vectorTools = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.formatConversion = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage5 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -351,7 +351,7 @@
             this.DISPLAY,
             this.ImageProcess,
             this.Classification,
-            this.VectorProcess,
+            this.VectorProcessandFormatConversion,
             this.ribbonPage5,
             this.ribbonPage1,
             this.ribbonPage6});
@@ -610,6 +610,7 @@
             this.imageMatching.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("imageMatching.ImageOptions.Image")));
             this.imageMatching.Name = "imageMatching";
             this.imageMatching.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.imageMatching.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.imageMatching_ItemClick);
             // 
             // bandOperation
             // 
@@ -618,6 +619,7 @@
             this.bandOperation.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bandOperation.ImageOptions.Image")));
             this.bandOperation.Name = "bandOperation";
             this.bandOperation.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.bandOperation.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bandOperation_ItemClick);
             // 
             // roiTool
             // 
@@ -647,6 +649,7 @@
             this.orthographicCorrection.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("orthographicCorrection.ImageOptions.Image")));
             this.orthographicCorrection.Name = "orthographicCorrection";
             this.orthographicCorrection.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.orthographicCorrection.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.orthographicCorrection_ItemClick);
             // 
             // transparencyText
             // 
@@ -668,6 +671,7 @@
             this.geometricRefinement.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.SARGeocoding;
             this.geometricRefinement.Name = "geometricRefinement";
             this.geometricRefinement.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.geometricRefinement.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.geometricRefinement_ItemClick);
             // 
             // barButtonItem24
             // 
@@ -733,7 +737,7 @@
             // 
             this.mosaicToNewRaster.Caption = "镶嵌至新栅格";
             this.mosaicToNewRaster.Id = 51;
-            this.mosaicToNewRaster.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("seamlessMosaic.ImageOptions.Image")));
+            this.mosaicToNewRaster.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("mosaicToNewRaster.ImageOptions.Image")));
             this.mosaicToNewRaster.Name = "mosaicToNewRaster";
             this.mosaicToNewRaster.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -1154,6 +1158,7 @@
             this.storageFormatConversion.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.Utility_BatchTrans_Interleave;
             this.storageFormatConversion.Name = "storageFormatConversion";
             this.storageFormatConversion.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.storageFormatConversion.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.storageFormatConversion_ItemClick);
             // 
             // BASEMENT
             // 
@@ -1342,13 +1347,13 @@
             this.timeseriesClassification.Name = "timeseriesClassification";
             this.timeseriesClassification.Text = "基于时序的影像分类";
             // 
-            // VectorProcess
+            // VectorProcessandFormatConversion
             // 
-            this.VectorProcess.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.VectorProcessandFormatConversion.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.vectorTools,
             this.formatConversion});
-            this.VectorProcess.Name = "VectorProcess";
-            this.VectorProcess.Text = "矢量处理";
+            this.VectorProcessandFormatConversion.Name = "VectorProcessandFormatConversion";
+            this.VectorProcessandFormatConversion.Text = "矢量处理与格式转换";
             // 
             // vectorTools
             // 
@@ -2146,7 +2151,7 @@
         private DevExpress.XtraBars.BarButtonItem startEdit;
         private DevExpress.XtraBars.BarButtonItem saveEdit;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup timeseriesClassification;
-        private DevExpress.XtraBars.Ribbon.RibbonPage VectorProcess;
+        private DevExpress.XtraBars.Ribbon.RibbonPage VectorProcessandFormatConversion;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup vectorTools;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup dataOperation;
