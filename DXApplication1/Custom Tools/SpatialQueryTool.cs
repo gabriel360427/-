@@ -43,24 +43,18 @@ namespace 城市空间生态格局智能评估系统.Custom_Tools
             envelope = trackExtent;
             queryFilter.SetSpatialQuery(envelope as IGeometry);
             IFeatureCursor featureCursor = featureLayer.FeatureClass.Search(queryFilter);
-            if (featureCursor != null)
+            IFeature feature = null;
+            feature = featureCursor.NextFeature();
+            //地图显示得到的结果
+            map.ClearSelectionFeatures();
+            while (feature != null)
             {
-                IFeature feature = null;
-                feature = featureCursor.NextFeature();
-                //地图显示得到的结果
-                map.ClearSelectionFeatures();
-                while (feature != null)
-                {
-                    m_MapControl.FocusMap.SelectFeature(featureLayer as ILayer, feature);
+              m_MapControl.FocusMap.SelectFeature(featureLayer as ILayer, feature);
                     feature = featureCursor.NextFeature();
-                }
-                m_MapControl.PartialRefresh(ViewDrawPhaseType.ViewAll);
-            }
-            else 
-            {
-                MessageBox.Show("所选图层不是矢量数据，请选择矢量数据！");
+             }
+              m_MapControl.PartialRefresh(ViewDrawPhaseType.ViewAll);
             }
             
         }
     }
-}
+
