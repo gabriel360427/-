@@ -956,15 +956,30 @@ namespace 城市空间生态格局智能评估系统
 
         #region 2. 几何校正
         #region 2.1 影像匹配
-
+        private void imageMatching_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            PIE.Controls.LanguageManager.GetInstance().InstallTranslator();
+            PIE.AxControls.DataPrepGeoCorrDialog frm = new PIE.AxControls.DataPrepGeoCorrDialog();
+            frm.ShowDialog();
+            (frm as IDisposable).Dispose();
+            frm = null;
+        }
         #endregion
 
         #region 2.2 正射校正
-
+        private void orthographicCorrection_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            PIE.Plugin.FrmPIEOrtho form = new PIE.Plugin.FrmPIEOrtho();
+            if (form.ShowDialog() != DialogResult.OK) return;
+        }
         #endregion
 
         #region 2.3 几何精校正
-
+        private void geometricRefinement_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            PIE.Plugin.FrmGeoRectify form = new PIE.Plugin.FrmGeoRectify();
+            if (form.ShowDialog() != DialogResult.OK) return;
+        }
         #endregion
 
         #endregion
@@ -986,12 +1001,52 @@ namespace 城市空间生态格局智能评估系统
         #endregion
 
         #region 4. 影像裁剪
-
+        private void imageClipping_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            //根据shp
+            imageClippingForm frm = new imageClippingForm();
+            frm.ShowDialog();
+        }
         #endregion
 
         #region 5. 波段处理
         #region 5.1 波段运算
+        private void bandOperation_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            bandOperationForm frm = new bandOperationForm(mapControlMain);
+            frm.ShowDialog();
+            if (frm.DialogResult == DialogResult.OK)
+            {
+                #region 1、参数设置
+                PIE.CommonAlgo.BandOper_Exchange_Info info = new PIE.CommonAlgo.BandOper_Exchange_Info();
+                info.StrExp = frm.CalExpression;
+                info.SelectFileBands = new List<int> { frm.BandOne, frm.BandTwo };//frm.BandOne和bfrm.BandOne 根据运算公式的波段大小先后顺序确定；
+                info.SelectFileNames = new List<string> { frm.ImageOne, frm.ImageTwo };//分别为frm.ImageOne和frm.ImageOne数据路径
+                info.OutputFilePath = frm.BandResult;
+                string path = info.OutputFilePath;
+                info.FileTypeCode = "GTiff";
+                info.PixelDataType = 6;
+                PIE.SystemAlgo.ISystemAlgo algo = PIE.SystemAlgo.AlgoFactory.Instance().CreateAlgo("PIE.CommonAlgo.dll", "PIE.CommonAlgo.BandOperAlgo");
+                if (algo == null) return;
+                #endregion
 
+                //2、算法执行
+                PIE.SystemAlgo.ISystemAlgoEvents algoEvents = algo as PIE.SystemAlgo.ISystemAlgoEvents;
+                algo.Name = "波段运算";
+                algo.Params = info;
+
+                //3、结果显示
+                bool result = PIE.SystemAlgo.AlgoFactory.Instance().ExecuteAlgo(algo);
+                if (result)
+                {
+                    MessageBox.Show("波段算法执行成功");
+                    ILayer layer = LayerFactory.CreateDefaultLayer(info.OutputFilePath);
+                    if (layer == null) return;
+                    mapControlMain.ActiveView.FocusMap.AddLayer(layer);
+                    mapControlMain.ActiveView.PartialRefresh(ViewDrawPhaseType.ViewAll);
+                }
+            }
+        }
         #endregion
 
         #region 5.2 波段合成
@@ -1344,6 +1399,67 @@ namespace 城市空间生态格局智能评估系统
 
         #endregion
 
+        #region 五、矢量处理与格式转换
+
+
+        #region 2. 格式转换
+        #region 2.1 栅格转矢量
+
+        #endregion
+
+        #region 2.2 矢量转栅格
+
+        #endregion
+
+        #region 2.3 存储格式转换
+        private void storageFormatConversion_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            storageFormatConversionForm f1 = new storageFormatConversionForm();
+            f1.ShowDialog();
+            if (f1.DialogResult != DialogResult.OK) return;
+
+            #region 1、参数设置
+            PIE.CommonAlgo.FormatTran_Exchange_Info info = new PIE.CommonAlgo.FormatTran_Exchange_Info();
+            info.strInFile = f1.str1;
+            IRasterDataset rDataset = PIE.DataSource.DatasetFactory.OpenRasterDataset(info.strInFile, OpenMode.ReadOnly);
+            if (rDataset == null) return;
+            string a = "";
+            string b = "";
+            string c = "";
+            c = rDataset.GetMetadataItem(a, b);
+            info.strOutFile = f1.str3;
+            info.m_strFileType = "ENVI";
+            if (f1.boxstr == "BSQ")
+            {
+                info.lOutDataType = 1;
+            }
+            else if (f1.boxstr == "BIL")
+            {
+                info.lOutDataType = 2;
+            }
+            else if (f1.boxstr == "BIL")
+            {
+                info.lOutDataType = 0;
+            }
+            PIE.SystemAlgo.ISystemAlgo algo = PIE.SystemAlgo.AlgoFactory.Instance().CreateAlgo("PIE.CommonAlgo.dll", "PIE.CommonAlgo.FormatTranAlgo");
+            if (algo == null) return;
+            #endregion
+            //2、算法执行
+            PIE.SystemAlgo.ISystemAlgoEvents algoEvents = algo as PIE.SystemAlgo.ISystemAlgoEvents;
+            algo.Name = "存储格式转换";
+            algo.Params = info;
+            PIE.SystemAlgo.AlgoFactory.Instance().ExecuteAlgo(algo);
+            //3、结果显示
+            ILayer layer = PIE.Carto.LayerFactory.CreateDefaultLayer(f1.str3);
+            mapControlMain.ActiveView.FocusMap.AddLayer(layer);
+            mapControlMain.ActiveView.PartialRefresh(ViewDrawPhaseType.ViewAll);
+        }
+        #endregion
+
+        #endregion
+        
+        #endregion
+
         #region 廊道提取
         #region 铁路因子
         private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -1362,13 +1478,7 @@ namespace 城市空间生态格局智能评估系统
         }
         #endregion
 
-        private void imageClipping_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            imageClippingForm frm = new imageClippingForm();
-            frm.ShowDialog();
-         }
-
-        
         #endregion 
+
     }
 }

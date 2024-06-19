@@ -85,6 +85,12 @@
     <Compile Include="Custom Forms\atmosphericCorrectionForm.designer.cs">
       <DependentUpon>atmosphericCorrectionForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Custom Forms\bandOperationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\bandOperationForm.designer.cs">
+      <DependentUpon>bandOperationForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Custom Forms\classpostMMAForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +181,12 @@
     <Compile Include="Custom Forms\reClassification.Designer.cs">
       <DependentUpon>reClassification.cs</DependentUpon>
     </Compile>
+    <Compile Include="Custom Forms\storageFormatConversionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\storageFormatConversionForm.designer.cs">
+      <DependentUpon>storageFormatConversionForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Custom Forms\transparencyParam.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -198,6 +210,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Custom Forms\atmosphericCorrectionForm.resx">
       <DependentUpon>atmosphericCorrectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\bandOperationForm.resx">
+      <DependentUpon>bandOperationForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\classpostMMAForm.resx">
       <DependentUpon>classpostMMAForm.cs</DependentUpon>
@@ -243,6 +258,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\reClassification.resx">
       <DependentUpon>reClassification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\storageFormatConversionForm.resx">
+      <DependentUpon>storageFormatConversionForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\transparencyParam.resx">
       <DependentUpon>transparencyParam.cs</DependentUpon>
