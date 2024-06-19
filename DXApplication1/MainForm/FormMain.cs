@@ -1404,11 +1404,18 @@ namespace 城市空间生态格局智能评估系统
 
         #region 2. 格式转换
         #region 2.1 栅格转矢量
-
+        private void rasterToVector_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            
+        }
         #endregion
 
         #region 2.2 矢量转栅格
-
+        private void vectorToRaster_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            vectorToRasterForm form = new vectorToRasterForm();
+            form.ShowDialog();
+        }
         #endregion
 
         #region 2.3 存储格式转换
@@ -1477,6 +1484,8 @@ namespace 城市空间生态格局智能评估系统
             form.ShowDialog();
         }
         #endregion
+
+
 
         #endregion 
 

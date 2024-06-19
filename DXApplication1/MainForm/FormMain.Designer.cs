@@ -108,8 +108,8 @@
             this.saveEdit = new DevExpress.XtraBars.BarButtonItem();
             this.stopEdit = new DevExpress.XtraBars.BarButtonItem();
             this.addFeature = new DevExpress.XtraBars.BarButtonItem();
-            this.gridToVector = new DevExpress.XtraBars.BarButtonItem();
-            this.vectorToGrid = new DevExpress.XtraBars.BarButtonItem();
+            this.rasterToVector = new DevExpress.XtraBars.BarButtonItem();
+            this.vectorToRaster = new DevExpress.XtraBars.BarButtonItem();
             this.deleteFeature = new DevExpress.XtraBars.BarButtonItem();
             this.selectFeature = new DevExpress.XtraBars.BarButtonItem();
             this.undo = new DevExpress.XtraBars.BarButtonItem();
@@ -322,8 +322,8 @@
             this.saveEdit,
             this.stopEdit,
             this.addFeature,
-            this.gridToVector,
-            this.vectorToGrid,
+            this.rasterToVector,
+            this.vectorToRaster,
             this.deleteFeature,
             this.selectFeature,
             this.undo,
@@ -991,21 +991,23 @@
             this.addFeature.Name = "addFeature";
             this.addFeature.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
-            // gridToVector
+            // rasterToVector
             // 
-            this.gridToVector.Caption = "栅格转矢量";
-            this.gridToVector.Id = 84;
-            this.gridToVector.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.Utility_RasterToVector;
-            this.gridToVector.Name = "gridToVector";
-            this.gridToVector.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.rasterToVector.Caption = "栅格转矢量";
+            this.rasterToVector.Id = 84;
+            this.rasterToVector.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.Utility_RasterToVector;
+            this.rasterToVector.Name = "rasterToVector";
+            this.rasterToVector.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.rasterToVector.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.rasterToVector_ItemClick);
             // 
-            // vectorToGrid
+            // vectorToRaster
             // 
-            this.vectorToGrid.Caption = "矢量转栅格";
-            this.vectorToGrid.Id = 85;
-            this.vectorToGrid.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.Utility_VectorToRaster;
-            this.vectorToGrid.Name = "vectorToGrid";
-            this.vectorToGrid.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.vectorToRaster.Caption = "矢量转栅格";
+            this.vectorToRaster.Id = 85;
+            this.vectorToRaster.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.Utility_VectorToRaster;
+            this.vectorToRaster.Name = "vectorToRaster";
+            this.vectorToRaster.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.vectorToRaster.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.vectorToRaster_ItemClick);
             // 
             // deleteFeature
             // 
@@ -1372,8 +1374,8 @@
             // 
             // formatConversion
             // 
-            this.formatConversion.ItemLinks.Add(this.gridToVector);
-            this.formatConversion.ItemLinks.Add(this.vectorToGrid);
+            this.formatConversion.ItemLinks.Add(this.rasterToVector);
+            this.formatConversion.ItemLinks.Add(this.vectorToRaster);
             this.formatConversion.ItemLinks.Add(this.storageFormatConversion);
             this.formatConversion.Name = "formatConversion";
             this.formatConversion.Text = "格式转换";
@@ -2162,8 +2164,8 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup26;
         private DevExpress.XtraBars.BarButtonItem stopEdit;
         private DevExpress.XtraBars.BarButtonItem addFeature;
-        private DevExpress.XtraBars.BarButtonItem gridToVector;
-        private DevExpress.XtraBars.BarButtonItem vectorToGrid;
+        private DevExpress.XtraBars.BarButtonItem rasterToVector;
+        private DevExpress.XtraBars.BarButtonItem vectorToRaster;
         private DevExpress.XtraBars.BarButtonItem deleteFeature;
         private DevExpress.XtraBars.BarButtonItem selectFeature;
         private DevExpress.XtraBars.BarButtonItem undo;

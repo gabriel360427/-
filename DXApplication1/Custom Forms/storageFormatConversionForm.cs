@@ -32,7 +32,7 @@ namespace 城市空间生态格局智能评估系统.Custom_Commands
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "Raster Data|*.tif;*.tiff;*.img";
             openFileDialog.Title = "选择输入文件";
-            openFileDialog.InitialDirectory = @"C:\Users\84405\Desktop\尾矿系统开发资料\演示数据\演示数据\存储格式转换";
+            openFileDialog.InitialDirectory = @"C:\Users\Administrator\Desktop\城市空间生态格局智能评估系统\演示数据";
             if (openFileDialog.ShowDialog() != DialogResult.OK) return;
             string filePath = openFileDialog.FileName;
             this.filetextBox.Text = filePath;
