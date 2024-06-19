@@ -1415,7 +1415,7 @@ namespace 城市空间生态格局智能评估系统
                 Process p = new Process();
                 string path = System.AppDomain.CurrentDomain.SetupInformation.ApplicationBase + "arcpy\\TifToShp.py";
                 // 启动python.exe
-                p.StartInfo.FileName = @"C:\Python27\ArcGIS10.4\python.exe";
+                p.StartInfo.FileName = @"C:\Program Files (x86)\ArcGIS\ArcGIS10.4\python.exe";
                 string sArguments = path;
                 sArguments += frm.allFile;
                 p.StartInfo.Arguments = sArguments;
