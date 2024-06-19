@@ -388,6 +388,7 @@ C:\Users\Administrator\Desktop\新建文件夹 (3)\DXApplication1\obj\Debug\城�
 C:\Users\Administrator\Desktop\新建文件夹 (2)\-\DXApplication1\obj\Debug\城市空间生态格局智能评估系统.Custom_Forms.classpostMMAForm.resources
 C:\Users\Administrator\Desktop\新建文件夹 (2)\-\DXApplication1\obj\Debug\城市空间生态格局智能评估系统.Custom_Forms.quickMosaicForm.resources
 C:\Users\Administrator\Desktop\新建文件夹 (2)\-\DXApplication1\obj\Debug\城市空间生态格局智能评估系统.Custom_Forms.atmosphericCorrectionForm.resources
-C:\Users\Administrator\Desktop\新建文件夹 (2)\-\DXApplication1\obj\Debug\城市空间生态格局智能评估系统.Custom_Forms.imageClippingForm.resources
-C:\Users\Administrator\Desktop\新建文件夹 (2)\-\DXApplication1\obj\Debug\城市空间生态格局智能评估系统.Custom_Forms.bandOperationForm.resources
-C:\Users\Administrator\Desktop\新建文件夹 (2)\-\DXApplication1\obj\Debug\城市空间生态格局智能评估系统.Custom_Commands.storageFormatConversionForm.resources
+C:\Users\Gabriel_36\Desktop\git\-\DXApplication1\obj\Debug\城市空间生态格局智能评估系统.Custom_Forms.atmosphericCorrectionForm.resources
+C:\Users\Gabriel_36\Desktop\git\-\DXApplication1\obj\Debug\城市空间生态格局智能评估系统.Custom_Forms.classpostMMAForm.resources
+C:\Users\Gabriel_36\Desktop\git\-\DXApplication1\obj\Debug\城市空间生态格局智能评估系统.Custom_Forms.classificationMergeForm.resources
+C:\Users\Gabriel_36\Desktop\git\-\DXApplication1\obj\Debug\城市空间生态格局智能评估系统.Custom_Forms.quickMosaicForm.resources
