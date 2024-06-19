@@ -45,67 +45,67 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(32, 49);
+            this.label1.Font = new System.Drawing.Font("华文中宋", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(26, 52);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 22);
+            this.label1.Size = new System.Drawing.Size(93, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "输入文件 ";
+            this.label1.Text = "输入文件: ";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(32, 102);
+            this.label2.Font = new System.Drawing.Font("华文中宋", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(26, 104);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 22);
+            this.label2.Size = new System.Drawing.Size(87, 20);
             this.label2.TabIndex = 1;
-            this.label2.Text = "基准文件";
+            this.label2.Text = "基准文件:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(32, 163);
+            this.label3.Font = new System.Drawing.Font("华文中宋", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(26, 163);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 22);
+            this.label3.Size = new System.Drawing.Size(87, 20);
             this.label3.TabIndex = 2;
-            this.label3.Text = "输出文件";
+            this.label3.Text = "输出文件:";
             // 
             // filetextBox
             // 
             this.filetextBox.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.filetextBox.Location = new System.Drawing.Point(113, 48);
+            this.filetextBox.Location = new System.Drawing.Point(123, 48);
             this.filetextBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.filetextBox.Name = "filetextBox";
-            this.filetextBox.Size = new System.Drawing.Size(258, 29);
+            this.filetextBox.Size = new System.Drawing.Size(333, 29);
             this.filetextBox.TabIndex = 3;
             // 
             // basefiletextBox
             // 
             this.basefiletextBox.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.basefiletextBox.Location = new System.Drawing.Point(113, 100);
+            this.basefiletextBox.Location = new System.Drawing.Point(123, 100);
             this.basefiletextBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.basefiletextBox.Name = "basefiletextBox";
-            this.basefiletextBox.Size = new System.Drawing.Size(258, 29);
+            this.basefiletextBox.Size = new System.Drawing.Size(333, 29);
             this.basefiletextBox.TabIndex = 4;
             // 
             // outputtextBox
             // 
             this.outputtextBox.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.outputtextBox.Location = new System.Drawing.Point(113, 162);
+            this.outputtextBox.Location = new System.Drawing.Point(123, 160);
             this.outputtextBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.outputtextBox.Name = "outputtextBox";
-            this.outputtextBox.Size = new System.Drawing.Size(258, 29);
+            this.outputtextBox.Size = new System.Drawing.Size(333, 29);
             this.outputtextBox.TabIndex = 5;
             // 
             // inputfile_button
             // 
-            this.inputfile_button.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputfile_button.Location = new System.Drawing.Point(385, 44);
+            this.inputfile_button.Font = new System.Drawing.Font("华文中宋", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputfile_button.Location = new System.Drawing.Point(460, 44);
             this.inputfile_button.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.inputfile_button.Name = "inputfile_button";
             this.inputfile_button.Size = new System.Drawing.Size(90, 36);
@@ -116,8 +116,8 @@
             // 
             // inputbasefile_button
             // 
-            this.inputbasefile_button.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputbasefile_button.Location = new System.Drawing.Point(385, 98);
+            this.inputbasefile_button.Font = new System.Drawing.Font("华文中宋", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputbasefile_button.Location = new System.Drawing.Point(460, 96);
             this.inputbasefile_button.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.inputbasefile_button.Name = "inputbasefile_button";
             this.inputbasefile_button.Size = new System.Drawing.Size(90, 36);
@@ -128,8 +128,8 @@
             // 
             // outputfile_button
             // 
-            this.outputfile_button.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.outputfile_button.Location = new System.Drawing.Point(385, 154);
+            this.outputfile_button.Font = new System.Drawing.Font("华文中宋", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.outputfile_button.Location = new System.Drawing.Point(460, 155);
             this.outputfile_button.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.outputfile_button.Name = "outputfile_button";
             this.outputfile_button.Size = new System.Drawing.Size(90, 36);
@@ -140,8 +140,8 @@
             // 
             // button4
             // 
-            this.button4.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(113, 237);
+            this.button4.Font = new System.Drawing.Font("华文中宋", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button4.Location = new System.Drawing.Point(123, 237);
             this.button4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(90, 36);
@@ -152,8 +152,8 @@
             // 
             // button5
             // 
-            this.button5.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(307, 237);
+            this.button5.Font = new System.Drawing.Font("华文中宋", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(366, 237);
             this.button5.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(90, 36);
@@ -162,13 +162,13 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // FeatureToRasterForm
+            // featureToRasterForm
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(507, 318);
+            this.ClientSize = new System.Drawing.Size(584, 318);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.outputfile_button);
@@ -182,7 +182,7 @@
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.Name = "FeatureToRasterForm";
+            this.Name = "featureToRasterForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "矢量转栅格";
             this.ResumeLayout(false);
