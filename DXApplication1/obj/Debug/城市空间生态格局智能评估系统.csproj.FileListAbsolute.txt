@@ -478,3 +478,5 @@ C:\Users\Administrator\Desktop\新建文件夹 (2) - 副本\-\DXApplication1\obj
 C:\Users\Administrator\Desktop\新建文件夹 (2) - 副本\-\DXApplication1\obj\Debug\城市空间生态格局智能评估系统.Properties.Resources.resources
 C:\Users\Administrator\Desktop\新建文件夹 (2) - 副本\-\DXApplication1\obj\Debug\城市空间生态格局智能评估系统.csproj.GenerateResource.Cache
 C:\Users\Administrator\Desktop\新建文件夹 (2) - 副本\-\DXApplication1\obj\Debug\城市空间生态格局智能评估系统.exe.licenses
+C:\Users\Administrator\Desktop\新建文件夹 (2)\-\DXApplication1\obj\Debug\城市空间生态格局智能评估系统.Custom_Forms.featureToRasterForm.resources
+C:\Users\Administrator\Desktop\新建文件夹 (2)\-\DXApplication1\obj\Debug\城市空间生态格局智能评估系统.Custom_Forms.rasterToFeatureAreaForm.resources

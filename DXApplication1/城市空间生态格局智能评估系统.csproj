@@ -133,6 +133,12 @@
     <Compile Include="Custom Forms\distanceClassifyForm.designer.cs">
       <DependentUpon>distanceClassifyForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Custom Forms\featureToRasterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\featureToRasterForm.designer.cs">
+      <DependentUpon>featureToRasterForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Custom Forms\imageClippingForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,6 +180,12 @@
     </Compile>
     <Compile Include="Custom Forms\radiometricCalibrationForm.designer.cs">
       <DependentUpon>radiometricCalibrationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Forms\rasterToFeatureAreaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\rasterToFeatureAreaForm.designer.cs">
+      <DependentUpon>rasterToFeatureAreaForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Custom Forms\reClassification.cs">
       <SubType>Form</SubType>
@@ -235,6 +247,9 @@
     <EmbeddedResource Include="Custom Forms\distanceClassifyForm.resx">
       <DependentUpon>distanceClassifyForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\featureToRasterForm.resx">
+      <DependentUpon>featureToRasterForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\imageClippingForm.resx">
       <DependentUpon>imageClippingForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -255,6 +270,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\radiometricCalibrationForm.resx">
       <DependentUpon>radiometricCalibrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\rasterToFeatureAreaForm.resx">
+      <DependentUpon>rasterToFeatureAreaForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\reClassification.resx">
       <DependentUpon>reClassification.cs</DependentUpon>

@@ -1403,12 +1403,95 @@ namespace 城市空间生态格局智能评估系统
 
 
         #region 2. 格式转换
-        #region 2.1 栅格转矢量
 
+        #region 2.1 栅格转矢量
+        private void rasterToFeaturer_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            rasterToFeatureAreaForm frm = new rasterToFeatureAreaForm();
+            frm.ShowDialog();
+            if (frm.DialogResult == DialogResult.OK)
+            {
+                // 启动一个进程
+                Process p = new Process();
+                string path = System.AppDomain.CurrentDomain.SetupInformation.ApplicationBase + "arcpy\\TifToShp.py";
+                // 启动python.exe
+                p.StartInfo.FileName = @"C:\Python27\ArcGIS10.4\python.exe";
+                string sArguments = path;
+                sArguments += frm.allFile;
+                p.StartInfo.Arguments = sArguments;
+                p.StartInfo.UseShellExecute = false;
+                //p.StartInfo.RedirectStandardInput = true; // 重定向输入
+                p.StartInfo.RedirectStandardOutput = true; // 重定向输出
+                p.StartInfo.RedirectStandardError = true;
+                p.StartInfo.CreateNoWindow = true;
+                p.Start();
+                p.WaitForExit();
+                int exitcode = p.ExitCode;
+                string errorOutput = p.StandardError.ReadToEnd();
+                if (exitcode == 0)
+                {
+                    MessageBox.Show("运行成功！");
+                    try
+                    {
+                        string files = frm.file1;
+                        ILayer layer = PIE.Carto.LayerFactory.CreateDefaultLayer(files);
+                        if (layer == null) return;
+                        // 添加图层到地图
+                        mapControlMain.AddLayer(layer, 0);
+                        mapControlMain.Extent = mapControlMain.FullExtent;  // 全图显示
+                        mapControlMain.ActiveView.PartialRefresh(PIE.Carto.ViewDrawPhaseType.ViewAll);
+                    }
+                    catch (Exception addDataError)
+                    {
+                        MessageBox.Show("添加数据失败" + addDataError.ToString());
+                    }
+                }
+                else
+                {
+                    MessageBox.Show(errorOutput);
+                }
+            }
+
+        }
         #endregion
 
         #region 2.2 矢量转栅格
-
+        private void featureToRaster_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            featureToRasterForm f1 = new featureToRasterForm();
+            f1.ShowDialog();
+            VectorToRaster_Exchange_Info info = new VectorToRaster_Exchange_Info();
+            // 获得要打开Shape数据的路径
+            if (f1.DialogResult == DialogResult.OK)
+            {
+                info.strInputFile = f1.str1;
+                //IRasterDataset rDataset = PIE.DataSource.DatasetFactory.OpenRasterDataset(f1.str1, OpenMode.ReadOnly);
+                //IEnvelope envelop = rDataset.GetExtent();
+                info.strOutputFile = f1.str3;
+                info.strOutputFileType = "GTiff";//GTiff、HAF或者ENVI
+                info.nFieldIndex = 2;//选择字段的索引
+                info.bStandardFile = true;//是否指定;false:基于指定大小 xy有效；true:基于影像大小 strStandardFile有效
+                info.strStandardFile = f1.str2;//基准影像路径
+                //info.x = rDataset.GetRasterXSize();//指定输出的栅格列数
+                //info.y = rDataset.GetRasterYSize();//指定输出的栅格行数
+                info.bHasNoData = true;//是否设置无效值
+                info.dbNoData = 65535;//无效值  
+                PIE.SystemAlgo.ISystemAlgo algo = PIE.SystemAlgo.AlgoFactory.Instance().CreateAlgo("PIE.CommonAlgo.dll", "PIE.CommonAlgo.VectorToRasterAlgo");
+                if (algo == null) return;
+                PIE.SystemAlgo.ISystemAlgoEvents algoEvents = algo as PIE.SystemAlgo.ISystemAlgoEvents;
+                algo.Name = "矢量栅格化";
+                algo.Params = info;
+                bool result = PIE.SystemAlgo.AlgoFactory.Instance().ExecuteAlgo(algo);
+                if (result)
+                {
+                    MessageBox.Show("矢量栅格化算法执行成功");
+                    ILayer layer = LayerFactory.CreateDefaultLayer(info.strOutputFile);
+                    if (layer == null) return;
+                    mapControlMain.FocusMap.AddLayer(layer);
+                    mapControlMain.ActiveView.PartialRefresh(ViewDrawPhaseType.ViewAll);
+                }
+            }
+        }
         #endregion
 
         #region 2.3 存储格式转换
@@ -1457,7 +1540,7 @@ namespace 城市空间生态格局智能评估系统
         #endregion
 
         #endregion
-        
+
         #endregion
 
         #region 廊道提取
@@ -1478,7 +1561,10 @@ namespace 城市空间生态格局智能评估系统
         }
         #endregion
 
-        #endregion 
+
+
+        #endregion
+
 
     }
 }
