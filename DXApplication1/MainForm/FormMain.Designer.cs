@@ -77,7 +77,7 @@
             this.stretch = new DevExpress.XtraBars.BarButtonItem();
             this.histogramStatistics = new DevExpress.XtraBars.BarButtonItem();
             this.quickMosaic = new DevExpress.XtraBars.BarButtonItem();
-            this.seamlessMosaic = new DevExpress.XtraBars.BarButtonItem();
+            this.mosaicToNewRaster = new DevExpress.XtraBars.BarButtonItem();
             this.bandSynthesis = new DevExpress.XtraBars.BarButtonItem();
             this.rgbCombine = new DevExpress.XtraBars.BarButtonItem();
             this.isoData = new DevExpress.XtraBars.BarButtonItem();
@@ -291,7 +291,7 @@
             this.stretch,
             this.histogramStatistics,
             this.quickMosaic,
-            this.seamlessMosaic,
+            this.mosaicToNewRaster,
             this.bandSynthesis,
             this.rgbCombine,
             this.isoData,
@@ -729,13 +729,13 @@
             this.quickMosaic.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.quickMosaic.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.quickMosaic_ItemClick);
             // 
-            // seamlessMosaic
+            // mosaicToNewRaster
             // 
-            this.seamlessMosaic.Caption = "无缝镶嵌";
-            this.seamlessMosaic.Id = 51;
-            this.seamlessMosaic.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("seamlessMosaic.ImageOptions.Image")));
-            this.seamlessMosaic.Name = "seamlessMosaic";
-            this.seamlessMosaic.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.mosaicToNewRaster.Caption = "镶嵌至新栅格";
+            this.mosaicToNewRaster.Id = 51;
+            this.mosaicToNewRaster.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("seamlessMosaic.ImageOptions.Image")));
+            this.mosaicToNewRaster.Name = "mosaicToNewRaster";
+            this.mosaicToNewRaster.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
             // bandSynthesis
             // 
@@ -1066,6 +1066,7 @@
             this.imageClipping.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.MainCategory_Cut;
             this.imageClipping.Name = "imageClipping";
             this.imageClipping.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.imageClipping.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.imageClipping_ItemClick);
             // 
             // precisionAnalysis
             // 
@@ -1272,7 +1273,7 @@
             // imageMosaic
             // 
             this.imageMosaic.ItemLinks.Add(this.quickMosaic);
-            this.imageMosaic.ItemLinks.Add(this.seamlessMosaic);
+            this.imageMosaic.ItemLinks.Add(this.mosaicToNewRaster);
             this.imageMosaic.Name = "imageMosaic";
             this.imageMosaic.Text = "影像镶嵌";
             // 
@@ -2108,7 +2109,7 @@
         private DevExpress.XtraBars.BarButtonItem stretch;
         private DevExpress.XtraBars.BarButtonItem histogramStatistics;
         private DevExpress.XtraBars.BarButtonItem quickMosaic;
-        private DevExpress.XtraBars.BarButtonItem seamlessMosaic;
+        private DevExpress.XtraBars.BarButtonItem mosaicToNewRaster;
         private DevExpress.XtraBars.BarButtonItem bandSynthesis;
         private DevExpress.XtraBars.BarButtonItem rgbCombine;
         private DevExpress.XtraBars.BarButtonItem isoData;
