@@ -77,7 +77,6 @@
             this.stretch = new DevExpress.XtraBars.BarButtonItem();
             this.histogramStatistics = new DevExpress.XtraBars.BarButtonItem();
             this.quickMosaic = new DevExpress.XtraBars.BarButtonItem();
-            this.mosaicToNewRaster = new DevExpress.XtraBars.BarButtonItem();
             this.bandSynthesis = new DevExpress.XtraBars.BarButtonItem();
             this.rgbCombine = new DevExpress.XtraBars.BarButtonItem();
             this.isoData = new DevExpress.XtraBars.BarButtonItem();
@@ -107,11 +106,11 @@
             this.startEdit = new DevExpress.XtraBars.BarButtonItem();
             this.saveEdit = new DevExpress.XtraBars.BarButtonItem();
             this.stopEdit = new DevExpress.XtraBars.BarButtonItem();
-            this.addFeature = new DevExpress.XtraBars.BarButtonItem();
+            this.createFeature = new DevExpress.XtraBars.BarButtonItem();
             this.rasterToVector = new DevExpress.XtraBars.BarButtonItem();
             this.vectorToRaster = new DevExpress.XtraBars.BarButtonItem();
             this.deleteFeature = new DevExpress.XtraBars.BarButtonItem();
-            this.selectFeature = new DevExpress.XtraBars.BarButtonItem();
+            this.moveFeature = new DevExpress.XtraBars.BarButtonItem();
             this.undo = new DevExpress.XtraBars.BarButtonItem();
             this.redo = new DevExpress.XtraBars.BarButtonItem();
             this.attributeEdit = new DevExpress.XtraBars.BarButtonItem();
@@ -198,25 +197,27 @@
             this.elementSelect3 = new System.Windows.Forms.ToolStripButton();
             this.pageLayoutControlMain = new PIE.AxControls.PageLayoutControl();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel_CoordinateInfo = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel4 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel5 = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel8 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
-            this.toolStripStatusLabel6 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel7 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel_coordinateSystem = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel_screenCoordinate = new System.Windows.Forms.ToolStripStatusLabel();
             this.barButtonItem17 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem40 = new DevExpress.XtraBars.BarButtonItem();
             this.contextMenuStrip_MapControl = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.FullExtentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.RasterIdentifyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip_TocControl = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.AddDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.DeleteLayerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.FeatureLayerAttributeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SymbolSelectorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.LayerPropertyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SelectCoordinateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar3)).BeginInit();
@@ -291,7 +292,6 @@
             this.stretch,
             this.histogramStatistics,
             this.quickMosaic,
-            this.mosaicToNewRaster,
             this.bandSynthesis,
             this.rgbCombine,
             this.isoData,
@@ -321,11 +321,11 @@
             this.startEdit,
             this.saveEdit,
             this.stopEdit,
-            this.addFeature,
+            this.createFeature,
             this.rasterToVector,
             this.vectorToRaster,
             this.deleteFeature,
-            this.selectFeature,
+            this.moveFeature,
             this.undo,
             this.redo,
             this.attributeEdit,
@@ -733,14 +733,6 @@
             this.quickMosaic.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.quickMosaic.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.quickMosaic_ItemClick);
             // 
-            // mosaicToNewRaster
-            // 
-            this.mosaicToNewRaster.Caption = "镶嵌至新栅格";
-            this.mosaicToNewRaster.Id = 51;
-            this.mosaicToNewRaster.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("mosaicToNewRaster.ImageOptions.Image")));
-            this.mosaicToNewRaster.Name = "mosaicToNewRaster";
-            this.mosaicToNewRaster.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            // 
             // bandSynthesis
             // 
             this.bandSynthesis.Caption = "波段合成";
@@ -838,6 +830,7 @@
             this.zoomIn1.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.MapBrowser_ZoomIn;
             this.zoomIn1.Name = "zoomIn1";
             this.zoomIn1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.zoomIn1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.zoomIn1_ItemClick);
             // 
             // zoomOut1
             // 
@@ -846,6 +839,7 @@
             this.zoomOut1.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.MapBrowser_ZoomOut;
             this.zoomOut1.Name = "zoomOut1";
             this.zoomOut1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.zoomOut1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.zoomOut1_ItemClick);
             // 
             // panTool1
             // 
@@ -854,6 +848,7 @@
             this.panTool1.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.MapBrowser_Pan;
             this.panTool1.Name = "panTool1";
             this.panTool1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.panTool1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.panTool1_ItemClick);
             // 
             // fullExtent1
             // 
@@ -862,6 +857,7 @@
             this.fullExtent1.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.MapBrowser_FullExtent;
             this.fullExtent1.Name = "fullExtent1";
             this.fullExtent1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.fullExtent1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.fullExtent1_ItemClick);
             // 
             // zoomToOrigin1
             // 
@@ -870,6 +866,7 @@
             this.zoomToOrigin1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("zoomToOrigin1.ImageOptions.Image")));
             this.zoomToOrigin1.Name = "zoomToOrigin1";
             this.zoomToOrigin1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.zoomToOrigin1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.zoomToOrigin1_ItemClick);
             // 
             // zoomIn2
             // 
@@ -878,6 +875,7 @@
             this.zoomIn2.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.CartoGraphy_ZoomIn;
             this.zoomIn2.Name = "zoomIn2";
             this.zoomIn2.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.zoomIn2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.zoomIn2_ItemClick);
             // 
             // zoomOut2
             // 
@@ -886,6 +884,7 @@
             this.zoomOut2.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.CartoGraphy_ZoomOut;
             this.zoomOut2.Name = "zoomOut2";
             this.zoomOut2.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.zoomOut2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.zoomOut2_ItemClick);
             // 
             // panTool2
             // 
@@ -894,6 +893,7 @@
             this.panTool2.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.CartoGraphy_Pan;
             this.panTool2.Name = "panTool2";
             this.panTool2.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.panTool2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.panTool2_ItemClick);
             // 
             // fullExtent2
             // 
@@ -902,6 +902,7 @@
             this.fullExtent2.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.CartoGraphy_ZoomToWhole;
             this.fullExtent2.Name = "fullExtent2";
             this.fullExtent2.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.fullExtent2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.fullExtent2_ItemClick);
             // 
             // zoomToOrigin2
             // 
@@ -910,6 +911,7 @@
             this.zoomToOrigin2.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.CartoGraphy_ZoomToOrigin;
             this.zoomToOrigin2.Name = "zoomToOrigin2";
             this.zoomToOrigin2.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.zoomToOrigin2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.zoomToOrigin2_ItemClick);
             // 
             // elementSelect1
             // 
@@ -918,6 +920,7 @@
             this.elementSelect1.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.MarkTool_SelectElement;
             this.elementSelect1.Name = "elementSelect1";
             this.elementSelect1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.elementSelect1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.elementSelect1_ItemClick);
             // 
             // addNorthArrow
             // 
@@ -926,6 +929,7 @@
             this.addNorthArrow.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("addNorthArrow.ImageOptions.Image")));
             this.addNorthArrow.Name = "addNorthArrow";
             this.addNorthArrow.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.addNorthArrow.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.addNorthArrow_ItemClick);
             // 
             // addPageScale
             // 
@@ -934,6 +938,7 @@
             this.addPageScale.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("addPageScale.ImageOptions.Image")));
             this.addPageScale.Name = "addPageScale";
             this.addPageScale.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.addPageScale.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.addPageScale_ItemClick);
             // 
             // addPageLegend
             // 
@@ -942,6 +947,7 @@
             this.addPageLegend.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("addPageLegend.ImageOptions.Image")));
             this.addPageLegend.Name = "addPageLegend";
             this.addPageLegend.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.addPageLegend.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.addPageLegend_ItemClick);
             // 
             // addText
             // 
@@ -950,6 +956,7 @@
             this.addText.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("addText.ImageOptions.Image")));
             this.addText.Name = "addText";
             this.addText.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.addText.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.addText_ItemClick);
             // 
             // mapExport
             // 
@@ -958,6 +965,7 @@
             this.mapExport.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("mapExport.ImageOptions.Image")));
             this.mapExport.Name = "mapExport";
             this.mapExport.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.mapExport.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mapExport_ItemClick);
             // 
             // startEdit
             // 
@@ -966,6 +974,7 @@
             this.startEdit.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.VectorEditor_StartEdit;
             this.startEdit.Name = "startEdit";
             this.startEdit.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.startEdit.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.startEdit_ItemClick);
             // 
             // saveEdit
             // 
@@ -974,6 +983,7 @@
             this.saveEdit.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.VectorEditor_SaveEdit;
             this.saveEdit.Name = "saveEdit";
             this.saveEdit.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.saveEdit.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.saveEdit_ItemClick);
             // 
             // stopEdit
             // 
@@ -982,14 +992,16 @@
             this.stopEdit.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.VectorEditor_StopEdit;
             this.stopEdit.Name = "stopEdit";
             this.stopEdit.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.stopEdit.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.stopEdit_ItemClick);
             // 
-            // addFeature
+            // createFeature
             // 
-            this.addFeature.Caption = "创建要素";
-            this.addFeature.Id = 83;
-            this.addFeature.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.VectorEditor_CreateLayer;
-            this.addFeature.Name = "addFeature";
-            this.addFeature.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.createFeature.Caption = "创建要素";
+            this.createFeature.Id = 83;
+            this.createFeature.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.VectorEditor_CreateLayer;
+            this.createFeature.Name = "createFeature";
+            this.createFeature.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.createFeature.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.createFeature_ItemClick);
             // 
             // rasterToVector
             // 
@@ -1016,14 +1028,16 @@
             this.deleteFeature.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.VectorEditor_DeleteFeature;
             this.deleteFeature.Name = "deleteFeature";
             this.deleteFeature.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.deleteFeature.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.deleteFeature_ItemClick);
             // 
-            // selectFeature
+            // moveFeature
             // 
-            this.selectFeature.Caption = "选择要素";
-            this.selectFeature.Id = 88;
-            this.selectFeature.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.VectorEditor_SelectFeature;
-            this.selectFeature.Name = "selectFeature";
-            this.selectFeature.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.moveFeature.Caption = "移动要素";
+            this.moveFeature.Id = 88;
+            this.moveFeature.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.VectorEditor_SelectFeature;
+            this.moveFeature.Name = "moveFeature";
+            this.moveFeature.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.moveFeature.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.moveFeature_ItemClick);
             // 
             // undo
             // 
@@ -1032,6 +1046,7 @@
             this.undo.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.VectorEditor_Undo;
             this.undo.Name = "undo";
             this.undo.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.undo.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.undo_ItemClick);
             // 
             // redo
             // 
@@ -1040,6 +1055,7 @@
             this.redo.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.VectorEditor_Redo;
             this.redo.Name = "redo";
             this.redo.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.redo.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.redo_ItemClick);
             // 
             // attributeEdit
             // 
@@ -1048,6 +1064,7 @@
             this.attributeEdit.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.VectorEditor_AttributeEdit;
             this.attributeEdit.Name = "attributeEdit";
             this.attributeEdit.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.attributeEdit.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.attributeEdit_ItemClick);
             // 
             // barButtonItem64
             // 
@@ -1064,6 +1081,7 @@
             this.unionFeature.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.Utility_ShapeUnion;
             this.unionFeature.Name = "unionFeature";
             this.unionFeature.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.unionFeature.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.unionFeature_ItemClick);
             // 
             // imageClipping
             // 
@@ -1280,7 +1298,6 @@
             // imageMosaic
             // 
             this.imageMosaic.ItemLinks.Add(this.quickMosaic);
-            this.imageMosaic.ItemLinks.Add(this.mosaicToNewRaster);
             this.imageMosaic.Name = "imageMosaic";
             this.imageMosaic.Text = "影像镶嵌";
             // 
@@ -1362,9 +1379,9 @@
             this.vectorTools.ItemLinks.Add(this.startEdit);
             this.vectorTools.ItemLinks.Add(this.saveEdit);
             this.vectorTools.ItemLinks.Add(this.stopEdit);
-            this.vectorTools.ItemLinks.Add(this.addFeature);
+            this.vectorTools.ItemLinks.Add(this.createFeature);
             this.vectorTools.ItemLinks.Add(this.deleteFeature);
-            this.vectorTools.ItemLinks.Add(this.selectFeature);
+            this.vectorTools.ItemLinks.Add(this.moveFeature);
             this.vectorTools.ItemLinks.Add(this.undo);
             this.vectorTools.ItemLinks.Add(this.redo);
             this.vectorTools.ItemLinks.Add(this.attributeEdit);
@@ -1669,6 +1686,7 @@
             this.mapControlMain.Size = new System.Drawing.Size(1166, 482);
             this.mapControlMain.TabIndex = 0;
             this.mapControlMain.Text = "mapControlMain";
+            this.mapControlMain.MouseMove += new System.Windows.Forms.MouseEventHandler(this.mapControlMain_MouseMove);
             this.mapControlMain.MouseUp += new System.Windows.Forms.MouseEventHandler(this.mapControlMain_MouseUp);
             // 
             // tabPage2
@@ -1800,11 +1818,11 @@
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(112, 26);
             this.toolStripStatusLabel1.Text = "坐标系信息：";
             // 
-            // toolStripStatusLabel2
+            // toolStripStatusLabel_CoordinateInfo
             // 
-            this.toolStripStatusLabel2.AutoSize = false;
-            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(167, 26);
+            this.toolStripStatusLabel_CoordinateInfo.AutoSize = false;
+            this.toolStripStatusLabel_CoordinateInfo.Name = "toolStripStatusLabel_CoordinateInfo";
+            this.toolStripStatusLabel_CoordinateInfo.Size = new System.Drawing.Size(200, 26);
             // 
             // toolStripStatusLabel3
             // 
@@ -1833,13 +1851,13 @@
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel8,
             this.toolStripStatusLabel1,
-            this.toolStripStatusLabel2,
+            this.toolStripStatusLabel_CoordinateInfo,
             this.toolStripStatusLabel3,
             this.toolStripComboBox1,
             this.toolStripStatusLabel4,
-            this.toolStripStatusLabel6,
+            this.toolStripStatusLabel_coordinateSystem,
             this.toolStripStatusLabel5,
-            this.toolStripStatusLabel7});
+            this.toolStripStatusLabel_screenCoordinate});
             this.statusStrip1.Location = new System.Drawing.Point(0, 713);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(1419, 31);
@@ -1850,32 +1868,32 @@
             // 
             this.toolStripStatusLabel8.AutoSize = false;
             this.toolStripStatusLabel8.Name = "toolStripStatusLabel8";
-            this.toolStripStatusLabel8.Size = new System.Drawing.Size(251, 26);
+            this.toolStripStatusLabel8.Size = new System.Drawing.Size(230, 26);
             // 
             // toolStripComboBox1
             // 
             this.toolStripComboBox1.AutoSize = false;
             this.toolStripComboBox1.Margin = new System.Windows.Forms.Padding(0, 2, 0, 1);
             this.toolStripComboBox1.Name = "toolStripComboBox1";
-            this.toolStripComboBox1.Size = new System.Drawing.Size(193, 28);
+            this.toolStripComboBox1.Size = new System.Drawing.Size(200, 28);
             // 
-            // toolStripStatusLabel6
+            // toolStripStatusLabel_coordinateSystem
             // 
-            this.toolStripStatusLabel6.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top) 
+            this.toolStripStatusLabel_coordinateSystem.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top) 
             | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right) 
             | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
-            this.toolStripStatusLabel6.Name = "toolStripStatusLabel6";
-            this.toolStripStatusLabel6.Size = new System.Drawing.Size(115, 26);
-            this.toolStripStatusLabel6.Text = "100.00,100.00";
+            this.toolStripStatusLabel_coordinateSystem.Name = "toolStripStatusLabel_coordinateSystem";
+            this.toolStripStatusLabel_coordinateSystem.Size = new System.Drawing.Size(115, 26);
+            this.toolStripStatusLabel_coordinateSystem.Text = "100.00,100.00";
             // 
-            // toolStripStatusLabel7
+            // toolStripStatusLabel_screenCoordinate
             // 
-            this.toolStripStatusLabel7.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top) 
+            this.toolStripStatusLabel_screenCoordinate.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top) 
             | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right) 
             | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
-            this.toolStripStatusLabel7.Name = "toolStripStatusLabel7";
-            this.toolStripStatusLabel7.Size = new System.Drawing.Size(115, 26);
-            this.toolStripStatusLabel7.Text = "100.00,100.00";
+            this.toolStripStatusLabel_screenCoordinate.Name = "toolStripStatusLabel_screenCoordinate";
+            this.toolStripStatusLabel_screenCoordinate.Size = new System.Drawing.Size(115, 26);
+            this.toolStripStatusLabel_screenCoordinate.Text = "100.00,100.00";
             // 
             // barButtonItem17
             // 
@@ -1920,12 +1938,21 @@
             // 
             this.contextMenuStrip_TocControl.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip_TocControl.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.AddDataToolStripMenuItem,
             this.DeleteLayerToolStripMenuItem,
             this.FeatureLayerAttributeToolStripMenuItem,
             this.SymbolSelectorToolStripMenuItem,
-            this.LayerPropertyToolStripMenuItem});
+            this.LayerPropertyToolStripMenuItem,
+            this.SelectCoordinateToolStripMenuItem});
             this.contextMenuStrip_TocControl.Name = "contextMenuStrip_TocControl";
-            this.contextMenuStrip_TocControl.Size = new System.Drawing.Size(154, 100);
+            this.contextMenuStrip_TocControl.Size = new System.Drawing.Size(154, 148);
+            // 
+            // AddDataToolStripMenuItem
+            // 
+            this.AddDataToolStripMenuItem.Name = "AddDataToolStripMenuItem";
+            this.AddDataToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
+            this.AddDataToolStripMenuItem.Text = "添加数据";
+            this.AddDataToolStripMenuItem.Click += new System.EventHandler(this.AddDataToolStripMenuItem_Click);
             // 
             // DeleteLayerToolStripMenuItem
             // 
@@ -1954,6 +1981,13 @@
             this.LayerPropertyToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
             this.LayerPropertyToolStripMenuItem.Text = "层属性";
             this.LayerPropertyToolStripMenuItem.Click += new System.EventHandler(this.LayerPropertyToolStripMenuItem_Click);
+            // 
+            // SelectCoordinateToolStripMenuItem
+            // 
+            this.SelectCoordinateToolStripMenuItem.Name = "SelectCoordinateToolStripMenuItem";
+            this.SelectCoordinateToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
+            this.SelectCoordinateToolStripMenuItem.Text = "坐标系选择";
+            this.SelectCoordinateToolStripMenuItem.Click += new System.EventHandler(this.SelectCoordinateToolStripMenuItem_Click);
             // 
             // FormMain
             // 
@@ -2052,14 +2086,14 @@
         private DevExpress.XtraBars.Ribbon.RibbonPage Classification;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup RoiTools;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel_CoordinateInfo;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel4;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel5;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripComboBox toolStripComboBox1;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel6;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel7;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel_coordinateSystem;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel_screenCoordinate;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel8;
         private DevExpress.XtraBars.BarButtonItem rasterIdentify;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup brightnessControl;
@@ -2116,7 +2150,6 @@
         private DevExpress.XtraBars.BarButtonItem stretch;
         private DevExpress.XtraBars.BarButtonItem histogramStatistics;
         private DevExpress.XtraBars.BarButtonItem quickMosaic;
-        private DevExpress.XtraBars.BarButtonItem mosaicToNewRaster;
         private DevExpress.XtraBars.BarButtonItem bandSynthesis;
         private DevExpress.XtraBars.BarButtonItem rgbCombine;
         private DevExpress.XtraBars.BarButtonItem isoData;
@@ -2163,11 +2196,11 @@
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage6;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup26;
         private DevExpress.XtraBars.BarButtonItem stopEdit;
-        private DevExpress.XtraBars.BarButtonItem addFeature;
+        private DevExpress.XtraBars.BarButtonItem createFeature;
         private DevExpress.XtraBars.BarButtonItem rasterToVector;
         private DevExpress.XtraBars.BarButtonItem vectorToRaster;
         private DevExpress.XtraBars.BarButtonItem deleteFeature;
-        private DevExpress.XtraBars.BarButtonItem selectFeature;
+        private DevExpress.XtraBars.BarButtonItem moveFeature;
         private DevExpress.XtraBars.BarButtonItem undo;
         private DevExpress.XtraBars.BarButtonItem redo;
         private DevExpress.XtraBars.BarButtonItem attributeEdit;
@@ -2198,6 +2231,8 @@
         private DevExpress.XtraEditors.Repository.RepositoryItemTrackBar repositoryItemTrackBar4;
         private DevExpress.XtraEditors.Repository.RepositoryItemZoomTrackBar repositoryItemZoomTrackBar6;
         private DevExpress.XtraBars.BarButtonItem storageFormatConversion;
+        private System.Windows.Forms.ToolStripMenuItem AddDataToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem SelectCoordinateToolStripMenuItem;
     }
 }
 

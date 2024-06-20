@@ -127,6 +127,12 @@
     <Compile Include="Custom Forms\contrastRatioParam.Designer.cs">
       <DependentUpon>contrastRatioParam.cs</DependentUpon>
     </Compile>
+    <Compile Include="Custom Forms\createFeatureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\createFeatureForm.designer.cs">
+      <DependentUpon>createFeatureForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Custom Forms\distanceClassifyForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -237,6 +243,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\contrastRatioParam.resx">
       <DependentUpon>contrastRatioParam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\createFeatureForm.resx">
+      <DependentUpon>createFeatureForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\distanceClassifyForm.resx">
       <DependentUpon>distanceClassifyForm.cs</DependentUpon>

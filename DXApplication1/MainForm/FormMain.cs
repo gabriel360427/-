@@ -29,6 +29,10 @@ namespace 城市空间生态格局智能评估系统
         {
             InitializeComponent();
             Init();
+            //比例尺
+            ICommandControl mapScaleCmdControl = new MapScaleCommandControl();
+            mapScaleCmdControl.Control = toolStripComboBox1;
+            (mapScaleCmdControl as ICommand).OnCreate(mapControlMain);
         }
         private void Init()
         {
@@ -47,6 +51,26 @@ namespace 城市空间生态格局智能评估系统
             IActiveViewEvents activeViewEvents = mapControlMain.FocusMap as PIE.Carto.IActiveViewEvents;
             activeViewEvents.OnLayerDeleted += MapControl_OnLayerDeleted;//图层删除事件
 
+        }
+
+        private void mapControlMain_MouseMove(object sender, MouseEventArgs e)
+        {
+            //地图坐标转换为地图坐标
+            PIE.Geometry.IPoint point = new PIE.Geometry.Point();
+            //将屏幕坐标转换为地图坐标
+            point = mapControlMain.ToMapPoint(e.X, e.Y);
+            //弹出坐标信息显示框
+            toolStripStatusLabel_screenCoordinate.Text = string.Format("X:{0},Y:{1}", e.X, e.Y);
+            toolStripStatusLabel_coordinateSystem.Text = string.Format("X:{0},Y:{1}", point.X.ToString(), point.Y.ToString());
+            //坐标系显示
+            string spatialReferenceName = string.Empty;
+            ISpatialReference spatialReference = mapControlMain.FocusMap.SpatialReference;
+            if (spatialReference != null)
+            {
+                spatialReferenceName = spatialReference.Name;
+                //设置坐标系的名称
+                toolStripStatusLabel_CoordinateInfo.Text = spatialReferenceName;
+            }
         }
 
         #region 地图模式制图模式
@@ -127,6 +151,13 @@ namespace 城市空间生态格局智能评估系统
                 this.contextMenuStrip_TocControl.Show(this.tocControlMain, new System.Drawing.Point(e.X, e.Y));//右键菜单显示
             }
         }
+        //添加数据
+        private void AddDataToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ICommand cmd = new AddDataCommand();
+            cmd.OnCreate(mapControlMain);
+            cmd.OnClick();
+        }
         //删除图层
         private void DeleteLayerToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -189,6 +220,19 @@ namespace 城市空间生态格局智能评估系统
             ICommand cmd = new LayerPropertyCommand();
             cmd.OnCreate(mapControlMain);
             cmd.OnClick();
+        }
+        //坐标系选择
+        private void SelectCoordinateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //1.获取当前地图
+            IMap map = mapControlMain.FocusMap;
+            //2.实例化空间参考窗口对象
+            PIE.AxControls.SpatialReferenceSelectorDialog sRSelectorDialog = new SpatialReferenceSelectorDialog();
+            sRSelectorDialog.SetMap(map);
+            sRSelectorDialog.SpatialReference = map.SpatialReference;
+            if (sRSelectorDialog.ShowDialog() != 1) return;
+            map.SpatialReference = sRSelectorDialog.SpatialReference;
+           (map as IActiveView).PartialRefresh(ViewDrawPhaseType.ViewAll);
         }
         #endregion
 
@@ -674,19 +718,19 @@ namespace 城市空间生态格局智能评估系统
             if (rasterLayer == null) return;
             //初始化rgbRender
             IRasterRGBRender rRGBRender = new PIE.Carto.RasterRGBRender();
-
             //设置参数
             rRGBRender.UseRedBand = true;
             rRGBRender.UseGreenBand = true;
             rRGBRender.UseBlueBand = true;
             //根据栅格数据的波段数进行rgb波段索引设置，
             rRGBRender.SetBandIndices(3, 2, 1);
-
             //设置rasterrender
             IRasterRender render = rRGBRender as IRasterRender;
             rasterLayer.Render = render;
-            //刷新视图  mapControlMain.ActiveView.PartialRefresh(ViewDrawPhaseType.ViewAll);
+            //刷新视图  
+            mapControlMain.ActiveView.PartialRefresh(ViewDrawPhaseType.ViewAll);
         }
+
         #region Scroll部分
         //滚动条调节亮度
         private void brightEditItem_Scroll(object sender, EventArgs e)
@@ -1400,13 +1444,218 @@ namespace 城市空间生态格局智能评估系统
         #endregion
 
         #region 五、矢量处理与格式转换
+        #region 1. 矢量工具
+        #region 1.1 开始编辑
+        private void startEdit_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            bool flag = false;
+            IList<ILayer> layerList = new List<ILayer>();
+            layerList = mapControlMain.ActiveView.FocusMap.GetAllLayer();
+            foreach (ILayer currentlayer in layerList)
+            {
+                if (currentlayer.LayerType.Equals(LayerType.LayerTypeFeatureLayer))
+                {
+                    flag = true;
+                }
+            }
+            if (flag)
+            {
+                PIE.SystemUI.ICommand cmd = new PIE.Controls.StartEditCommand();
+                cmd.OnCreate(mapControlMain);
+                cmd.OnClick();
+                saveEdit.Enabled = true;
+                stopEdit.Enabled = true;
+                moveFeature.Enabled = true;
+                createFeature.Enabled = true;
+                deleteFeature.Enabled = true;
+                undo.Enabled = true;
+                redo.Enabled = true;
+                unionFeature.Enabled = true;
+                attributeEdit.Enabled = true;
+            }
+            else
+            {
+                MessageBox.Show("未加载矢量图层！");
+            }
+        }
+        #endregion
 
+        #region 1.2 保存编辑
+        private void saveEdit_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            ICommand cmd = new SaveEditCommand();
+            if (tabControlMain.SelectedIndex == 0)
+            {
+                cmd.OnCreate(mapControlMain);
+                cmd.OnClick();
+            }
+        }
+        #endregion
+
+        #region 1.3 结束编辑
+        private void stopEdit_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            ICommand cmd = new StopEditCommand();
+            if (tabControlMain.SelectedIndex == 0)
+            {
+                cmd.OnCreate(mapControlMain);
+                cmd.OnClick();
+            }
+        }
+        #endregion
+
+        #region 1.4 创建要素
+        private int feature_flag = 0;
+        private void createFeature_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            createFeatureForm frm = new createFeatureForm();
+            frm.ShowDialog();
+            if (frm.DialogResult != DialogResult.OK) return;
+            List<IField> fieldSet = new List<IField>();
+            IFields fields = new Fields();
+            for (int i = 0; i < frm.propertyNum; i++)
+            {
+                if (frm.fType[i] == "int")
+                {
+                    fieldSet.Add(new Field(frm.fieldName[i], FieldType.OFTInteger, frm.fieldWidth[i], frm.fieldPrecision[i]));
+                }
+                else if (frm.fType[i] == "double")
+                {
+                    fieldSet.Add(new Field(frm.fieldName[i], FieldType.OFTReal, frm.fieldWidth[i], frm.fieldPrecision[i]));
+                }
+                else if (frm.fType[i] == "string")
+                {
+                    fieldSet.Add(new Field(frm.fieldName[i], FieldType.OFTString, frm.fieldWidth[i], frm.fieldPrecision[i]));
+                }
+                else if (frm.fType[i] == "DateTime")
+                {
+                    fieldSet.Add(new Field(frm.fieldName[i], FieldType.OFTDateTime, frm.fieldWidth[i], frm.fieldPrecision[i]));
+                }
+                fieldSet[i].Name = frm.fieldName[i];
+                fieldSet[i].AliasName = frm.fieldAliasName[i];
+                fields.AddField(fieldSet[i]);
+            }
+            string path = frm.fileName;
+            ISpatialReference spatialReference = SpatialReferenceFactory.CreateSpatialReference(frm.spatialReferenceWKT);
+            if (frm.GeoType == "点")
+            {
+                IFeatureDataset newFeatureDataset = DatasetFactory.CreateFeatureDataset(path, fields, GeometryType.GeometryPoint, spatialReference, "SHP");
+                MessageBox.Show("要素创建成功！");
+                IFeatureLayer fLayer = PIE.Carto.LayerFactory.CreateDefaultFeatureLayer(newFeatureDataset);
+                if (fLayer == null) return;
+                mapControlMain.FocusMap.AddLayer(fLayer as ILayer);
+                mapControlMain.ActiveView.PartialRefresh(PIE.Carto.ViewDrawPhaseType.ViewAll);
+            }
+            else if (frm.GeoType == "线")
+            {
+                IFeatureDataset newFeatureDataset = DatasetFactory.CreateFeatureDataset(path, fields, GeometryType.GeometryPolyline, spatialReference, "SHP");
+                MessageBox.Show("要素创建成功！");
+                IFeatureLayer fLayer = PIE.Carto.LayerFactory.CreateDefaultFeatureLayer(newFeatureDataset);
+                if (fLayer == null) return;
+                mapControlMain.FocusMap.AddLayer(fLayer as ILayer);
+                mapControlMain.ActiveView.PartialRefresh(PIE.Carto.ViewDrawPhaseType.ViewAll);
+            }
+            else if (frm.GeoType == "面")
+            {
+                IFeatureDataset newFeatureDataset = DatasetFactory.CreateFeatureDataset(path, fields, GeometryType.GeometryPolygon, spatialReference, "SHP");
+                MessageBox.Show("要素创建成功！");
+                IFeatureLayer fLayer = PIE.Carto.LayerFactory.CreateDefaultFeatureLayer(newFeatureDataset);
+                if (fLayer == null) return;
+                mapControlMain.FocusMap.AddLayer(fLayer as ILayer);
+                mapControlMain.ActiveView.PartialRefresh(PIE.Carto.ViewDrawPhaseType.ViewAll);
+            }
+
+            ILayer currentLayer = mapControlMain.ActiveView.CurrentLayer;
+            bool judgement = currentLayer.LayerType.Equals(LayerType.LayerTypeFeatureLayer);
+            if (judgement != true) return;
+            else
+            {
+                IFeatureClass featureClass = (currentLayer as IFeatureLayer).FeatureClass;
+                if(featureClass.GetGeomType().Equals(GeometryType.GeometryPoint))
+                {
+                    feature_flag = 1;
+                }
+                else if (featureClass.GetGeomType().Equals(GeometryType.GeometryPolyline))
+                {
+                    feature_flag = 2;
+                }
+                else if (featureClass.GetGeomType().Equals(GeometryType.GeometryPolygon))
+                {
+                    feature_flag = 3;
+                }
+            }
+        }
+        #endregion
+
+        #region 1.5	删除要素
+        private void deleteFeature_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            PIE.SystemUI.ICommand cmd = new PIE.Controls.DeleteFeatureCommand();
+            cmd.OnCreate(mapControlMain);
+            cmd.OnClick();
+        }
+        #endregion
+
+        #region 1.6 移动要素
+        private void moveFeature_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            PIE.SystemUI.ITool tool = new PIE.Controls.MoveFeatureTool();
+            (tool as ICommand).OnCreate(mapControlMain);
+            mapControlMain.CurrentTool = tool;
+        }
+        #endregion
+
+        #region 1.7 撤销
+        private void undo_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            PIE.SystemUI.ICommand cmd = new PIE.Controls.UndoCommand();
+            cmd.OnCreate(mapControlMain);
+            cmd.OnClick();
+        }
+        #endregion
+
+        #region 1.8 恢复
+        private void redo_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            PIE.SystemUI.ICommand cmd = new PIE.Controls.RedoCommand();
+            cmd.OnCreate(mapControlMain);
+            cmd.OnClick();
+        }
+        #endregion
+
+        #region 1.9 属性编辑
+        private void attributeEdit_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            ILayer currentLayer = mapControlMain.ActiveView.CurrentLayer;
+            PIE.AxControls.FeatureLayerAttributeDialog fLayerAttributeDlg = new FeatureLayerAttributeDialog();
+            PIETOCNodeTag pieTOCNodeTag = new PIETOCNodeTag();
+            pieTOCNodeTag.Map = mapControlMain.ActiveView.FocusMap;
+            pieTOCNodeTag.Layer = currentLayer;
+            fLayerAttributeDlg.Initial(mapControlMain.ActiveView.FocusMap, currentLayer);
+            fLayerAttributeDlg.ShowDialog();
+        }
+        #endregion
+
+        #region 1.10 要素合并
+        private void unionFeature_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            ICommand cmd = new UnionFeatureCommand();
+            if (tabControlMain.SelectedIndex == 0)
+            {
+                cmd.OnCreate(mapControlMain);
+                cmd.OnClick();
+            }
+        }
+        #endregion
+
+        #endregion
 
         #region 2. 格式转换
         #region 2.1 栅格转矢量
         private void rasterToVector_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            
+            PIE.Plugin.FrmRasterToVector form = new PIE.Plugin.FrmRasterToVector();
+            if (form.ShowDialog() != DialogResult.OK) return;
         }
         #endregion
 
@@ -1484,10 +1733,143 @@ namespace 城市空间生态格局智能评估系统
             form.ShowDialog();
         }
         #endregion
+        #endregion
+        #region 制图输出
 
-
-
+        #region 1. 数据操作
+        private void zoomIn1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            ITool tool = new PIE.Controls.MapZoomInTool();
+            (tool as ICommand).OnCreate(mapControlMain);
+            mapControlMain.CurrentTool = tool;
+        }
+        private void zoomOut1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            ITool tool = new PIE.Controls.MapZoomOutTool();
+            (tool as ICommand).OnCreate(mapControlMain);
+            mapControlMain.CurrentTool = tool;
+        }
+        private void panTool1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            ITool tool = new PIE.Controls.PanTool();
+            (tool as ICommand).OnCreate(mapControlMain);
+            mapControlMain.CurrentTool = tool;
+        }
+        private void fullExtent1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            ICommand command = new PIE.Controls.FullExtentCommand();
+            command.OnCreate(mapControlMain);
+            command.OnClick();
+        }
+        private void zoomToOrigin1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            ICommand cmd = new PIE.Controls.ZoomToNativeCommand();
+            cmd.OnCreate(mapControlMain);
+            cmd.OnClick();
+        }
         #endregion 
+
+        #region 2. 视图操作
+        private void zoomIn2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            ITool tool = new PIE.Controls.MapZoomInTool();
+            (tool as ICommand).OnCreate(mapControlMain);
+            mapControlMain.CurrentTool = tool;
+        }
+
+        private void zoomOut2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            ITool tool = new PIE.Controls.MapZoomOutTool();
+            (tool as ICommand).OnCreate(mapControlMain);
+            mapControlMain.CurrentTool = tool;
+        }
+
+        private void panTool2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            ITool tool = new PIE.Controls.PanTool();
+            (tool as ICommand).OnCreate(mapControlMain);
+            mapControlMain.CurrentTool = tool;
+        }
+
+        private void fullExtent2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            ICommand command = new PIE.Controls.FullExtentCommand();
+            command.OnCreate(mapControlMain);
+            command.OnClick();
+        }
+
+        private void zoomToOrigin2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            ICommand cmd = new PIE.Controls.ZoomToNativeCommand();
+            cmd.OnCreate(mapControlMain);
+            cmd.OnClick();
+        }
+        #endregion
+
+        #region 3. 地图整饰
+        private void elementSelect1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            ITool tool = new PIE.Controls.ElementSelectTool();
+            if (tabControlMain.SelectedIndex == 0)
+            {
+                (tool as ICommand).OnCreate(mapControlMain);
+                mapControlMain.CurrentTool = tool;
+            }
+            else if (tabControlMain.SelectedIndex == 1)
+            {
+                (tool as ICommand).OnCreate(pageLayoutControlMain);
+                pageLayoutControlMain.CurrentTool = tool;
+            }
+        }
+        //指北针
+        private void addNorthArrow_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            ICommand cmd = new AddNorthArrowCommand();
+            cmd.OnCreate(pageLayoutControlMain);
+            cmd.OnClick();
+        }
+        //比例尺
+        private void addPageScale_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            ICommand cmd = new AddPageScaleBarCommand();
+            cmd.OnCreate(pageLayoutControlMain);
+            cmd.OnClick();
+        }
+        //图例
+        private void addPageLegend_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            ICommand cmd = new AddPageLegendCommand();
+            cmd.OnCreate(pageLayoutControlMain);
+            cmd.OnClick();
+        }
+        //文本
+        private void addText_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            PIE.SystemUI.ITool tool = new PIE.Controls.DrawTextElementTool();
+            if (tabControlMain.SelectedIndex == 0)
+            {
+                (tool as ICommand).OnCreate(mapControlMain);
+                mapControlMain.CurrentTool = tool;
+            }
+            else if (tabControlMain.SelectedIndex == 1)
+            {
+                (tool as ICommand).OnCreate(pageLayoutControlMain);
+                pageLayoutControlMain.CurrentTool = tool;
+            }
+        }
+        #endregion
+        #region 4. 地图输出
+        private void mapExport_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            ICommand cmd = new CartoGraphy_ExportCommand();
+            cmd.OnCreate(pageLayoutControlMain);
+            cmd.OnClick();
+        }
+        #endregion
+
+        
+
+        #endregion
 
     }
 }

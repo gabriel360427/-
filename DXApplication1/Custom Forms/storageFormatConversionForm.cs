@@ -65,9 +65,5 @@ namespace 城市空间生态格局智能评估系统.Custom_Commands
             this.Close();
         }
 
-        private void StorageFormatForm_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

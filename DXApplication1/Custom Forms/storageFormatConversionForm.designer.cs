@@ -177,7 +177,6 @@
             this.Name = "storageFormatConversionForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "影像存储格式转换";
-            this.Load += new System.EventHandler(this.StorageFormatForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

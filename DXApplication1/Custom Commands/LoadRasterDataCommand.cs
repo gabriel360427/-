@@ -33,7 +33,7 @@ namespace 城市空间生态格局智能评估系统.Custom_Commands
                 OpenFileDialog openFileDialog = new OpenFileDialog();
                 openFileDialog.Title = "请选择要打开的数据：";
                 openFileDialog.Multiselect = false;
-                openFileDialog.Filter = "栅格数据(*.tiff)|*.tif;*.tiff";
+                openFileDialog.Filter = "栅格数据(*.tiff;*.img)|*.tif;*.tiff;*.img";
                 openFileDialog.InitialDirectory = @"C:\Users\Administrator\Desktop\城市空间生态格局智能评估系统\演示数据";
                 if (openFileDialog.ShowDialog() != System.Windows.Forms.DialogResult.OK) return;
                 // 打开栅格数据集
