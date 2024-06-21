@@ -17,11 +17,11 @@ using PIE.Geometry;
 using PIE.SystemAlgo;
 using PIE.SystemUI;
 using PIE.Utility;
-using 城市空间生态格局智能评估系统.Custom_Commands;
-using 城市空间生态格局智能评估系统.Custom_Tools;
-using 城市空间生态格局智能评估系统.Custom_Forms;
+using 绿廊智绘.Custom_Commands;
+using 绿廊智绘.Custom_Tools;
+using 绿廊智绘.Custom_Forms;
 
-namespace 城市空间生态格局智能评估系统
+namespace 绿廊智绘
 {
     public partial class FormMain : DevExpress.XtraBars.Ribbon.RibbonForm
     {
@@ -1108,8 +1108,11 @@ namespace 城市空间生态格局智能评估系统
         #region 四、影像分类
 
         #region 1. ROI工具
+        PIE.AxControls.ROILayerProduceToolDialog m_FormROI = null;
+        private string m_ROILayerID = "";
         private void roiTool_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            //判断
             bool flag = false;
             IList<ILayer> layerList = new List<ILayer>();
             layerList = mapControlMain.ActiveView.FocusMap.GetAllLayer();
@@ -1122,9 +1125,26 @@ namespace 城市空间生态格局智能评估系统
             }
             if (flag)
             {
+                var dlg = new PIE.AxControls.ROILayerProduceToolDialog();
+                dlg. Initialize(mapControlMain as PIE.Carto.IPmdContents);
+                HookHelper m_HookHelper = new HookHelper();
+                m_HookHelper.Hook = this.mapControlMain;	
+                m_FormROI.Initialize(m_HookHelper.GetContent());
+                if(!(dlg.ShowDialog()==1))	return;
                 PIE.SystemUI.ICommand cmd = new PIE.Plugin.ROIToolCommand();
                 cmd.OnCreate(mapControlMain);
                 cmd.OnClick();
+                //有无roi
+                if (m_FormROI == null) m_FormROI = new PIE.AxControls.ROILayerProduceToolDialog();	
+ 	            //第三步:ROI工具所需参数设置	
+                HookHelper n_HookHelper = new HookHelper();
+ 	            m_HookHelper.Hook = this.mapControlMain;	
+ 	            m_FormROI.Initialize(m_HookHelper.GetContent());	
+ 	            //mFormROI.Initialize(this.mapControlMain as PIE.Carto.IPmdContents):	
+ 	            m_FormROI.SetROIName(m_ROILayerID);	
+ 	            m_FormROI.InitRoiLayer();	
+ 	            m_FormROI.ShowDialog();	
+ 	            m_ROILayerID = m_FormROI.GetROIName();
             }
             else
             {
@@ -1144,7 +1164,6 @@ namespace 城市空间生态格局智能评估系统
             {
                 #region 1、参数设置
                 PIE.CommonAlgo.ISODataClassification_Exchange_Info info = new PIE.CommonAlgo.ISODataClassification_Exchange_Info();
-
                 info.InputFilePath = frm.selectedImage;
                 info.OutputFilePath = frm.resultImage;
                 info.ProspClassNum = frm.ProspClassNumFrm;
@@ -1165,7 +1184,7 @@ namespace 城市空间生态格局智能评估系统
 
                 //2、算法执行
                 PIE.SystemAlgo.ISystemAlgoEvents algoEvents = algo as PIE.SystemAlgo.ISystemAlgoEvents;
-                algo.Name = "ISODATA分类";
+                algo.Name = "ISODATA非监督分类";
                 algo.Params = info;
                 bool result = PIE.SystemAlgo.AlgoFactory.Instance().ExecuteAlgo(algo);
 

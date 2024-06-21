@@ -9,7 +9,7 @@ using PIE.AxControls;
 using PIE.DataSource;
 using PIE.Geometry;
 
-namespace 城市空间生态格局智能评估系统.Custom_Tools
+namespace 绿廊智绘.Custom_Tools
 {
     public class SpatialQueryTool : BaseTool
     {

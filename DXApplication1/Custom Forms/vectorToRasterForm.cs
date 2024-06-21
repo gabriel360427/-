@@ -12,7 +12,7 @@ using PIE.Carto;
 using PIE.CommonAlgo;
 using PIE.SystemAlgo;
 
-namespace 城市空间生态格局智能评估系统.Custom_Forms
+namespace 绿廊智绘.Custom_Forms
 {
     public partial class vectorToRasterForm : DevExpress.XtraEditors.XtraForm
     {

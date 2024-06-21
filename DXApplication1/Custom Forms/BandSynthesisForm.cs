@@ -9,7 +9,7 @@ using System.Windows.Forms;
 using PIE.DataSource;
 using PIE.CommonAlgo;
 
-namespace 城市空间生态格局智能评估系统.Custom_Forms
+namespace 绿廊智绘.Custom_Forms
 {
     public partial class BandSynthesisForm : DevExpress.XtraEditors.XtraForm
     {
@@ -18,7 +18,7 @@ namespace 城市空间生态格局智能评估系统.Custom_Forms
             InitializeComponent();
         }
         //主窗口
-        城市空间生态格局智能评估系统.FormMain pie1;
+        绿廊智绘.FormMain pie1;
         //全局变量，表示当前输入文件框所选择的序号
         int index = -1;
         private void label1_Click(object sender, EventArgs e)

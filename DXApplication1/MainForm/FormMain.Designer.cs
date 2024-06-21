@@ -1,4 +1,4 @@
-﻿namespace 城市空间生态格局智能评估系统
+﻿namespace 绿廊智绘
 {
     partial class FormMain
     {
@@ -131,6 +131,7 @@
             this.mapProject = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.dataManagement = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.informationQuery = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.formatConversion = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.DISPLAY = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.bandCombine = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.brightnessControl = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -150,9 +151,8 @@
             this.postClassification = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.reClassifications = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.timeseriesClassification = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.VectorProcessandFormatConversion = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.VectorProcess = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.vectorTools = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.formatConversion = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage5 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup15 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup16 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -218,6 +218,16 @@
             this.SymbolSelectorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.LayerPropertyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SelectCoordinateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar3)).BeginInit();
@@ -341,18 +351,27 @@
             this.GaoDeAnnotation,
             this.LoadArcGISServerLayer,
             this.barButtonItem1,
-            this.storageFormatConversion});
+            this.storageFormatConversion,
+            this.barButtonItem2,
+            this.barButtonItem3,
+            this.barButtonItem4,
+            this.barButtonItem5,
+            this.barButtonItem6,
+            this.barButtonItem7,
+            this.barButtonItem8,
+            this.barButtonItem9});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.ribbonControl1.MaxItemId = 113;
+            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.ribbonControl1.MaxItemId = 121;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.BASEMENT,
             this.DISPLAY,
             this.ImageProcess,
             this.Classification,
-            this.VectorProcessandFormatConversion,
+            this.VectorProcess,
             this.ribbonPage5,
+            this.ribbonPage2,
             this.ribbonPage1,
             this.ribbonPage6});
             this.ribbonControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
@@ -371,7 +390,7 @@
             this.repositoryItemTextEdit5,
             this.repositoryItemTrackBar4,
             this.repositoryItemZoomTrackBar6});
-            this.ribbonControl1.Size = new System.Drawing.Size(1419, 183);
+            this.ribbonControl1.Size = new System.Drawing.Size(1242, 147);
             // 
             // newProject
             // 
@@ -423,7 +442,7 @@
             // 
             this.loadFeatureData.Caption = "加载矢量数据";
             this.loadFeatureData.Id = 7;
-            this.loadFeatureData.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.DataLoader_Vector;
+            this.loadFeatureData.ImageOptions.Image = global::绿廊智绘.Properties.Resources.DataLoader_Vector;
             this.loadFeatureData.Name = "loadFeatureData";
             this.loadFeatureData.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.loadFeatureData.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.loadFeatureData_ItemClick);
@@ -459,7 +478,7 @@
             // 
             this.attributeQuery.Caption = "属性查询";
             this.attributeQuery.Id = 12;
-            this.attributeQuery.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.Identify_AttributeIdentify;
+            this.attributeQuery.ImageOptions.Image = global::绿廊智绘.Properties.Resources.Identify_AttributeIdentify;
             this.attributeQuery.Name = "attributeQuery";
             this.attributeQuery.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.attributeQuery.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.attributeQuery_ItemClick);
@@ -468,7 +487,7 @@
             // 
             this.spatialQuery.Caption = "空间查询";
             this.spatialQuery.Id = 13;
-            this.spatialQuery.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.Identify_SwitchCoordinate;
+            this.spatialQuery.ImageOptions.Image = global::绿廊智绘.Properties.Resources.Identify_SwitchCoordinate;
             this.spatialQuery.Name = "spatialQuery";
             this.spatialQuery.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.spatialQuery.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.spatialQuery_ItemClick);
@@ -589,7 +608,7 @@
             // 
             this.radiometricCalibration.Caption = "辐射定标";
             this.radiometricCalibration.Id = 30;
-            this.radiometricCalibration.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.InSAR_RadioCal;
+            this.radiometricCalibration.ImageOptions.Image = global::绿廊智绘.Properties.Resources.InSAR_RadioCal;
             this.radiometricCalibration.Name = "radiometricCalibration";
             this.radiometricCalibration.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.radiometricCalibration.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.radiometricCalibration_ItemClick);
@@ -625,7 +644,7 @@
             // 
             this.roiTool.Caption = "ROI工具";
             this.roiTool.Id = 35;
-            this.roiTool.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.ImgClass_ROI;
+            this.roiTool.ImageOptions.Image = global::绿廊智绘.Properties.Resources.ImgClass_ROI;
             this.roiTool.Name = "roiTool";
             this.roiTool.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.roiTool.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.roiTool_ItemClick);
@@ -668,7 +687,7 @@
             // 
             this.geometricRefinement.Caption = "几何精校正";
             this.geometricRefinement.Id = 41;
-            this.geometricRefinement.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.SARGeocoding;
+            this.geometricRefinement.ImageOptions.Image = global::绿廊智绘.Properties.Resources.SARGeocoding;
             this.geometricRefinement.Name = "geometricRefinement";
             this.geometricRefinement.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.geometricRefinement.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.geometricRefinement_ItemClick);
@@ -683,7 +702,7 @@
             // 
             this.brightness.Caption = "亮度";
             this.brightness.Id = 43;
-            this.brightness.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.Display_Enhan_Bright;
+            this.brightness.ImageOptions.Image = global::绿廊智绘.Properties.Resources.Display_Enhan_Bright;
             this.brightness.Name = "brightness";
             this.brightness.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.brightness.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.brightness_ItemClick);
@@ -692,7 +711,7 @@
             // 
             this.contrastRatio.Caption = "对比度";
             this.contrastRatio.Id = 46;
-            this.contrastRatio.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.Display_Enhan_Contrast;
+            this.contrastRatio.ImageOptions.Image = global::绿廊智绘.Properties.Resources.Display_Enhan_Contrast;
             this.contrastRatio.Name = "contrastRatio";
             this.contrastRatio.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.contrastRatio.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.contrastRatio_ItemClick);
@@ -701,7 +720,7 @@
             // 
             this.transparency.Caption = "透明度";
             this.transparency.Id = 47;
-            this.transparency.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.Display_Enhan_Transparent;
+            this.transparency.ImageOptions.Image = global::绿廊智绘.Properties.Resources.Display_Enhan_Transparent;
             this.transparency.Name = "transparency";
             this.transparency.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.transparency.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.transparency_ItemClick);
@@ -710,7 +729,7 @@
             // 
             this.stretch.Caption = "百分比线性拉伸";
             this.stretch.Id = 48;
-            this.stretch.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.Display_Enhan_Stretch;
+            this.stretch.ImageOptions.Image = global::绿廊智绘.Properties.Resources.Display_Enhan_Stretch;
             this.stretch.Name = "stretch";
             this.stretch.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.stretch.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.stretch_ItemClick);
@@ -737,7 +756,7 @@
             // 
             this.bandSynthesis.Caption = "波段合成";
             this.bandSynthesis.Id = 52;
-            this.bandSynthesis.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.Utility_Oper_Comb;
+            this.bandSynthesis.ImageOptions.Image = global::绿廊智绘.Properties.Resources.Utility_Oper_Comb;
             this.bandSynthesis.Name = "bandSynthesis";
             this.bandSynthesis.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.bandSynthesis.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bandSynthesis_ItemClick);
@@ -755,7 +774,7 @@
             // 
             this.isoData.Caption = "ISODATA";
             this.isoData.Id = 54;
-            this.isoData.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.ImgClass_ISODATA;
+            this.isoData.ImageOptions.Image = global::绿廊智绘.Properties.Resources.ImgClass_ISODATA;
             this.isoData.Name = "isoData";
             this.isoData.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.isoData.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.isoData_ItemClick);
@@ -764,7 +783,7 @@
             // 
             this.kmeans.Caption = "K-Means";
             this.kmeans.Id = 55;
-            this.kmeans.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.ImgClass_KMeans;
+            this.kmeans.ImageOptions.Image = global::绿廊智绘.Properties.Resources.ImgClass_KMeans;
             this.kmeans.Name = "kmeans";
             this.kmeans.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.kmeans.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.kmeans_ItemClick);
@@ -773,7 +792,7 @@
             // 
             this.distanceClassification.Caption = "距离分类";
             this.distanceClassification.Id = 56;
-            this.distanceClassification.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.ImgClass_DIS;
+            this.distanceClassification.ImageOptions.Image = global::绿廊智绘.Properties.Resources.ImgClass_DIS;
             this.distanceClassification.Name = "distanceClassification";
             this.distanceClassification.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.distanceClassification.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.distanceClassification_ItemClick);
@@ -818,7 +837,7 @@
             // 
             this.reClassification.Caption = "重分类";
             this.reClassification.Id = 62;
-            this.reClassification.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.SARMatrixConvert;
+            this.reClassification.ImageOptions.Image = global::绿廊智绘.Properties.Resources.SARMatrixConvert;
             this.reClassification.Name = "reClassification";
             this.reClassification.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.reClassification.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.reClassification_ItemClick);
@@ -827,7 +846,7 @@
             // 
             this.zoomIn1.Caption = "拉框放大";
             this.zoomIn1.Id = 64;
-            this.zoomIn1.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.MapBrowser_ZoomIn;
+            this.zoomIn1.ImageOptions.Image = global::绿廊智绘.Properties.Resources.MapBrowser_ZoomIn;
             this.zoomIn1.Name = "zoomIn1";
             this.zoomIn1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.zoomIn1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.zoomIn1_ItemClick);
@@ -836,7 +855,7 @@
             // 
             this.zoomOut1.Caption = "拉框缩小";
             this.zoomOut1.Id = 65;
-            this.zoomOut1.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.MapBrowser_ZoomOut;
+            this.zoomOut1.ImageOptions.Image = global::绿廊智绘.Properties.Resources.MapBrowser_ZoomOut;
             this.zoomOut1.Name = "zoomOut1";
             this.zoomOut1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.zoomOut1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.zoomOut1_ItemClick);
@@ -845,7 +864,7 @@
             // 
             this.panTool1.Caption = "漫游";
             this.panTool1.Id = 66;
-            this.panTool1.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.MapBrowser_Pan;
+            this.panTool1.ImageOptions.Image = global::绿廊智绘.Properties.Resources.MapBrowser_Pan;
             this.panTool1.Name = "panTool1";
             this.panTool1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.panTool1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.panTool1_ItemClick);
@@ -854,7 +873,7 @@
             // 
             this.fullExtent1.Caption = "全图显示";
             this.fullExtent1.Id = 67;
-            this.fullExtent1.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.MapBrowser_FullExtent;
+            this.fullExtent1.ImageOptions.Image = global::绿廊智绘.Properties.Resources.MapBrowser_FullExtent;
             this.fullExtent1.Name = "fullExtent1";
             this.fullExtent1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.fullExtent1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.fullExtent1_ItemClick);
@@ -872,7 +891,7 @@
             // 
             this.zoomIn2.Caption = "放大";
             this.zoomIn2.Id = 69;
-            this.zoomIn2.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.CartoGraphy_ZoomIn;
+            this.zoomIn2.ImageOptions.Image = global::绿廊智绘.Properties.Resources.CartoGraphy_ZoomIn;
             this.zoomIn2.Name = "zoomIn2";
             this.zoomIn2.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.zoomIn2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.zoomIn2_ItemClick);
@@ -881,7 +900,7 @@
             // 
             this.zoomOut2.Caption = "缩小";
             this.zoomOut2.Id = 70;
-            this.zoomOut2.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.CartoGraphy_ZoomOut;
+            this.zoomOut2.ImageOptions.Image = global::绿廊智绘.Properties.Resources.CartoGraphy_ZoomOut;
             this.zoomOut2.Name = "zoomOut2";
             this.zoomOut2.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.zoomOut2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.zoomOut2_ItemClick);
@@ -890,7 +909,7 @@
             // 
             this.panTool2.Caption = "漫游";
             this.panTool2.Id = 71;
-            this.panTool2.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.CartoGraphy_Pan;
+            this.panTool2.ImageOptions.Image = global::绿廊智绘.Properties.Resources.CartoGraphy_Pan;
             this.panTool2.Name = "panTool2";
             this.panTool2.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.panTool2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.panTool2_ItemClick);
@@ -899,7 +918,7 @@
             // 
             this.fullExtent2.Caption = "全图显示";
             this.fullExtent2.Id = 72;
-            this.fullExtent2.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.CartoGraphy_ZoomToWhole;
+            this.fullExtent2.ImageOptions.Image = global::绿廊智绘.Properties.Resources.CartoGraphy_ZoomToWhole;
             this.fullExtent2.Name = "fullExtent2";
             this.fullExtent2.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.fullExtent2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.fullExtent2_ItemClick);
@@ -908,7 +927,7 @@
             // 
             this.zoomToOrigin2.Caption = "1:1显示";
             this.zoomToOrigin2.Id = 73;
-            this.zoomToOrigin2.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.CartoGraphy_ZoomToOrigin;
+            this.zoomToOrigin2.ImageOptions.Image = global::绿廊智绘.Properties.Resources.CartoGraphy_ZoomToOrigin;
             this.zoomToOrigin2.Name = "zoomToOrigin2";
             this.zoomToOrigin2.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.zoomToOrigin2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.zoomToOrigin2_ItemClick);
@@ -917,7 +936,7 @@
             // 
             this.elementSelect1.Caption = "选择";
             this.elementSelect1.Id = 74;
-            this.elementSelect1.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.MarkTool_SelectElement;
+            this.elementSelect1.ImageOptions.Image = global::绿廊智绘.Properties.Resources.MarkTool_SelectElement;
             this.elementSelect1.Name = "elementSelect1";
             this.elementSelect1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.elementSelect1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.elementSelect1_ItemClick);
@@ -971,7 +990,7 @@
             // 
             this.startEdit.Caption = "开始编辑";
             this.startEdit.Id = 80;
-            this.startEdit.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.VectorEditor_StartEdit;
+            this.startEdit.ImageOptions.Image = global::绿廊智绘.Properties.Resources.VectorEditor_StartEdit;
             this.startEdit.Name = "startEdit";
             this.startEdit.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.startEdit.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.startEdit_ItemClick);
@@ -980,7 +999,7 @@
             // 
             this.saveEdit.Caption = "保存编辑";
             this.saveEdit.Id = 81;
-            this.saveEdit.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.VectorEditor_SaveEdit;
+            this.saveEdit.ImageOptions.Image = global::绿廊智绘.Properties.Resources.VectorEditor_SaveEdit;
             this.saveEdit.Name = "saveEdit";
             this.saveEdit.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.saveEdit.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.saveEdit_ItemClick);
@@ -989,7 +1008,7 @@
             // 
             this.stopEdit.Caption = "结束编辑";
             this.stopEdit.Id = 82;
-            this.stopEdit.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.VectorEditor_StopEdit;
+            this.stopEdit.ImageOptions.Image = global::绿廊智绘.Properties.Resources.VectorEditor_StopEdit;
             this.stopEdit.Name = "stopEdit";
             this.stopEdit.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.stopEdit.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.stopEdit_ItemClick);
@@ -998,7 +1017,7 @@
             // 
             this.createFeature.Caption = "创建要素";
             this.createFeature.Id = 83;
-            this.createFeature.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.VectorEditor_CreateLayer;
+            this.createFeature.ImageOptions.Image = global::绿廊智绘.Properties.Resources.VectorEditor_CreateLayer;
             this.createFeature.Name = "createFeature";
             this.createFeature.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.createFeature.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.createFeature_ItemClick);
@@ -1007,7 +1026,7 @@
             // 
             this.rasterToVector.Caption = "栅格转矢量";
             this.rasterToVector.Id = 84;
-            this.rasterToVector.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.Utility_RasterToVector;
+            this.rasterToVector.ImageOptions.Image = global::绿廊智绘.Properties.Resources.Utility_RasterToVector;
             this.rasterToVector.Name = "rasterToVector";
             this.rasterToVector.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.rasterToVector.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.rasterToVector_ItemClick);
@@ -1016,7 +1035,7 @@
             // 
             this.vectorToRaster.Caption = "矢量转栅格";
             this.vectorToRaster.Id = 85;
-            this.vectorToRaster.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.Utility_VectorToRaster;
+            this.vectorToRaster.ImageOptions.Image = global::绿廊智绘.Properties.Resources.Utility_VectorToRaster;
             this.vectorToRaster.Name = "vectorToRaster";
             this.vectorToRaster.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.vectorToRaster.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.vectorToRaster_ItemClick);
@@ -1025,7 +1044,7 @@
             // 
             this.deleteFeature.Caption = "删除要素";
             this.deleteFeature.Id = 87;
-            this.deleteFeature.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.VectorEditor_DeleteFeature;
+            this.deleteFeature.ImageOptions.Image = global::绿廊智绘.Properties.Resources.VectorEditor_DeleteFeature;
             this.deleteFeature.Name = "deleteFeature";
             this.deleteFeature.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.deleteFeature.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.deleteFeature_ItemClick);
@@ -1034,7 +1053,7 @@
             // 
             this.moveFeature.Caption = "移动要素";
             this.moveFeature.Id = 88;
-            this.moveFeature.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.VectorEditor_SelectFeature;
+            this.moveFeature.ImageOptions.Image = global::绿廊智绘.Properties.Resources.VectorEditor_SelectFeature;
             this.moveFeature.Name = "moveFeature";
             this.moveFeature.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.moveFeature.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.moveFeature_ItemClick);
@@ -1043,7 +1062,7 @@
             // 
             this.undo.Caption = "撤销";
             this.undo.Id = 89;
-            this.undo.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.VectorEditor_Undo;
+            this.undo.ImageOptions.Image = global::绿廊智绘.Properties.Resources.VectorEditor_Undo;
             this.undo.Name = "undo";
             this.undo.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.undo.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.undo_ItemClick);
@@ -1052,7 +1071,7 @@
             // 
             this.redo.Caption = "恢复";
             this.redo.Id = 90;
-            this.redo.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.VectorEditor_Redo;
+            this.redo.ImageOptions.Image = global::绿廊智绘.Properties.Resources.VectorEditor_Redo;
             this.redo.Name = "redo";
             this.redo.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.redo.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.redo_ItemClick);
@@ -1061,7 +1080,7 @@
             // 
             this.attributeEdit.Caption = "属性编辑";
             this.attributeEdit.Id = 92;
-            this.attributeEdit.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.VectorEditor_AttributeEdit;
+            this.attributeEdit.ImageOptions.Image = global::绿廊智绘.Properties.Resources.VectorEditor_AttributeEdit;
             this.attributeEdit.Name = "attributeEdit";
             this.attributeEdit.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.attributeEdit.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.attributeEdit_ItemClick);
@@ -1070,7 +1089,7 @@
             // 
             this.barButtonItem64.Caption = "缓冲区分析";
             this.barButtonItem64.Id = 93;
-            this.barButtonItem64.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.Utility_BufferAnalyse;
+            this.barButtonItem64.ImageOptions.Image = global::绿廊智绘.Properties.Resources.Utility_BufferAnalyse;
             this.barButtonItem64.Name = "barButtonItem64";
             this.barButtonItem64.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -1078,7 +1097,7 @@
             // 
             this.unionFeature.Caption = "要素合并";
             this.unionFeature.Id = 94;
-            this.unionFeature.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.Utility_ShapeUnion;
+            this.unionFeature.ImageOptions.Image = global::绿廊智绘.Properties.Resources.Utility_ShapeUnion;
             this.unionFeature.Name = "unionFeature";
             this.unionFeature.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.unionFeature.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.unionFeature_ItemClick);
@@ -1087,7 +1106,7 @@
             // 
             this.imageClipping.Caption = "影像裁剪";
             this.imageClipping.Id = 96;
-            this.imageClipping.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.MainCategory_Cut;
+            this.imageClipping.ImageOptions.Image = global::绿廊智绘.Properties.Resources.MainCategory_Cut;
             this.imageClipping.Name = "imageClipping";
             this.imageClipping.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.imageClipping.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.imageClipping_ItemClick);
@@ -1119,7 +1138,7 @@
             // 
             this.TDTTiledImg.Caption = "天地图影像底图";
             this.TDTTiledImg.Id = 99;
-            this.TDTTiledImg.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.DataLoader_TDTTiledImg;
+            this.TDTTiledImg.ImageOptions.Image = global::绿廊智绘.Properties.Resources.DataLoader_TDTTiledImg;
             this.TDTTiledImg.Name = "TDTTiledImg";
             this.TDTTiledImg.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.TDTTiledImg_ItemClick);
             // 
@@ -1127,7 +1146,7 @@
             // 
             this.TDTTiledCia.Caption = "天地图影像注记";
             this.TDTTiledCia.Id = 100;
-            this.TDTTiledCia.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.DataLoader_TDTTiledCia;
+            this.TDTTiledCia.ImageOptions.Image = global::绿廊智绘.Properties.Resources.DataLoader_TDTTiledCia;
             this.TDTTiledCia.Name = "TDTTiledCia";
             this.TDTTiledCia.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.TDTTiledCia_ItemClick);
             // 
@@ -1135,7 +1154,7 @@
             // 
             this.GaoDeSatellite.Caption = "高德卫星图";
             this.GaoDeSatellite.Id = 101;
-            this.GaoDeSatellite.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.DataLoader_GaoDeSatellite;
+            this.GaoDeSatellite.ImageOptions.Image = global::绿廊智绘.Properties.Resources.DataLoader_GaoDeSatellite;
             this.GaoDeSatellite.Name = "GaoDeSatellite";
             this.GaoDeSatellite.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.GaoDeSatellite_ItemClick);
             // 
@@ -1143,7 +1162,7 @@
             // 
             this.GaoDeRoad.Caption = "高德路线图";
             this.GaoDeRoad.Id = 102;
-            this.GaoDeRoad.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.DataLoader_GaoDeRoad;
+            this.GaoDeRoad.ImageOptions.Image = global::绿廊智绘.Properties.Resources.DataLoader_GaoDeRoad;
             this.GaoDeRoad.Name = "GaoDeRoad";
             this.GaoDeRoad.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.GaoDeRoad_ItemClick);
             // 
@@ -1151,7 +1170,7 @@
             // 
             this.GaoDeAnnotation.Caption = "高德注记图";
             this.GaoDeAnnotation.Id = 103;
-            this.GaoDeAnnotation.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.DataLoader_GaoDeAnnotation;
+            this.GaoDeAnnotation.ImageOptions.Image = global::绿廊智绘.Properties.Resources.DataLoader_GaoDeAnnotation;
             this.GaoDeAnnotation.Name = "GaoDeAnnotation";
             this.GaoDeAnnotation.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.GaoDeAnnotation_ItemClick);
             // 
@@ -1159,13 +1178,13 @@
             // 
             this.LoadArcGISServerLayer.Caption = "ArcGISImage";
             this.LoadArcGISServerLayer.Id = 106;
-            this.LoadArcGISServerLayer.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.DataLoader_ArcGISImage;
+            this.LoadArcGISServerLayer.ImageOptions.Image = global::绿廊智绘.Properties.Resources.DataLoader_ArcGISImage;
             this.LoadArcGISServerLayer.Name = "LoadArcGISServerLayer";
             this.LoadArcGISServerLayer.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.LoadArcGISServerLayer_ItemClick);
             // 
             // barButtonItem1
             // 
-            this.barButtonItem1.Caption = "铁路因子";
+            this.barButtonItem1.Caption = "铁路";
             this.barButtonItem1.Id = 108;
             this.barButtonItem1.Name = "barButtonItem1";
             this.barButtonItem1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
@@ -1175,7 +1194,7 @@
             // 
             this.storageFormatConversion.Caption = "存储格式转换";
             this.storageFormatConversion.Id = 112;
-            this.storageFormatConversion.ImageOptions.Image = global::城市空间生态格局智能评估系统.Properties.Resources.Utility_BatchTrans_Interleave;
+            this.storageFormatConversion.ImageOptions.Image = global::绿廊智绘.Properties.Resources.Utility_BatchTrans_Interleave;
             this.storageFormatConversion.Name = "storageFormatConversion";
             this.storageFormatConversion.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.storageFormatConversion.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.storageFormatConversion_ItemClick);
@@ -1185,7 +1204,8 @@
             this.BASEMENT.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.mapProject,
             this.dataManagement,
-            this.informationQuery});
+            this.informationQuery,
+            this.formatConversion});
             this.BASEMENT.Name = "BASEMENT";
             this.BASEMENT.Text = "基础功能";
             // 
@@ -1218,6 +1238,14 @@
             this.informationQuery.ItemLinks.Add(this.histogramStatistics);
             this.informationQuery.Name = "informationQuery";
             this.informationQuery.Text = "信息查询";
+            // 
+            // formatConversion
+            // 
+            this.formatConversion.ItemLinks.Add(this.rasterToVector);
+            this.formatConversion.ItemLinks.Add(this.vectorToRaster);
+            this.formatConversion.ItemLinks.Add(this.storageFormatConversion);
+            this.formatConversion.Name = "formatConversion";
+            this.formatConversion.Text = "格式转换";
             // 
             // DISPLAY
             // 
@@ -1366,13 +1394,12 @@
             this.timeseriesClassification.Name = "timeseriesClassification";
             this.timeseriesClassification.Text = "基于时序的影像分类";
             // 
-            // VectorProcessandFormatConversion
+            // VectorProcess
             // 
-            this.VectorProcessandFormatConversion.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.vectorTools,
-            this.formatConversion});
-            this.VectorProcessandFormatConversion.Name = "VectorProcessandFormatConversion";
-            this.VectorProcessandFormatConversion.Text = "矢量处理与格式转换";
+            this.VectorProcess.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.vectorTools});
+            this.VectorProcess.Name = "VectorProcess";
+            this.VectorProcess.Text = "矢量处理";
             // 
             // vectorTools
             // 
@@ -1389,32 +1416,32 @@
             this.vectorTools.Name = "vectorTools";
             this.vectorTools.Text = "矢量工具";
             // 
-            // formatConversion
-            // 
-            this.formatConversion.ItemLinks.Add(this.rasterToVector);
-            this.formatConversion.ItemLinks.Add(this.vectorToRaster);
-            this.formatConversion.ItemLinks.Add(this.storageFormatConversion);
-            this.formatConversion.Name = "formatConversion";
-            this.formatConversion.Text = "格式转换";
-            // 
             // ribbonPage5
             // 
             this.ribbonPage5.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup15,
             this.ribbonPageGroup16});
             this.ribbonPage5.Name = "ribbonPage5";
-            this.ribbonPage5.Text = "廊道提取";
+            this.ribbonPage5.Text = "生态阻力面构建";
             // 
             // ribbonPageGroup15
             // 
             this.ribbonPageGroup15.ItemLinks.Add(this.barButtonItem1);
+            this.ribbonPageGroup15.ItemLinks.Add(this.barButtonItem2);
+            this.ribbonPageGroup15.ItemLinks.Add(this.barButtonItem3);
+            this.ribbonPageGroup15.ItemLinks.Add(this.barButtonItem4);
+            this.ribbonPageGroup15.ItemLinks.Add(this.barButtonItem5);
+            this.ribbonPageGroup15.ItemLinks.Add(this.barButtonItem6);
+            this.ribbonPageGroup15.ItemLinks.Add(this.barButtonItem7);
+            this.ribbonPageGroup15.ItemLinks.Add(this.barButtonItem8);
             this.ribbonPageGroup15.Name = "ribbonPageGroup15";
-            this.ribbonPageGroup15.Text = "ribbonPageGroup15";
+            this.ribbonPageGroup15.Text = "单因子阻力面";
             // 
             // ribbonPageGroup16
             // 
+            this.ribbonPageGroup16.ItemLinks.Add(this.barButtonItem9);
             this.ribbonPageGroup16.Name = "ribbonPageGroup16";
-            this.ribbonPageGroup16.Text = "ribbonPageGroup16";
+            this.ribbonPageGroup16.Text = "综合阻力面";
             // 
             // ribbonPage1
             // 
@@ -1514,7 +1541,8 @@
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 183);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 147);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -1524,18 +1552,17 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.tabControlMain);
-            this.splitContainer1.Size = new System.Drawing.Size(1419, 530);
-            this.splitContainer1.SplitterDistance = 234;
-            this.splitContainer1.SplitterWidth = 5;
+            this.splitContainer1.Size = new System.Drawing.Size(1242, 401);
+            this.splitContainer1.SplitterDistance = 204;
             this.splitContainer1.TabIndex = 1;
             // 
             // tocControlMain
             // 
             this.tocControlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tocControlMain.Location = new System.Drawing.Point(0, 0);
-            this.tocControlMain.Margin = new System.Windows.Forms.Padding(5);
+            this.tocControlMain.Margin = new System.Windows.Forms.Padding(4);
             this.tocControlMain.Name = "tocControlMain";
-            this.tocControlMain.Size = new System.Drawing.Size(234, 530);
+            this.tocControlMain.Size = new System.Drawing.Size(204, 401);
             this.tocControlMain.TabIndex = 0;
             this.tocControlMain.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tocControlMain_MouseClick);
             // 
@@ -1547,9 +1574,10 @@
             this.tabControlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControlMain.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControlMain.Location = new System.Drawing.Point(0, 0);
+            this.tabControlMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControlMain.Name = "tabControlMain";
             this.tabControlMain.SelectedIndex = 0;
-            this.tabControlMain.Size = new System.Drawing.Size(1180, 530);
+            this.tabControlMain.Size = new System.Drawing.Size(1034, 401);
             this.tabControlMain.TabIndex = 0;
             this.tabControlMain.SelectedIndexChanged += new System.EventHandler(this.tabControlMain_SelectedIndexChanged);
             // 
@@ -1558,10 +1586,10 @@
             this.tabPage1.Controls.Add(this.toolStrip1);
             this.tabPage1.Controls.Add(this.mapControlMain);
             this.tabPage1.Location = new System.Drawing.Point(4, 4);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage1.Size = new System.Drawing.Size(1172, 490);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage1.Size = new System.Drawing.Size(1026, 367);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "地图模式";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -1580,16 +1608,16 @@
             this.panTool3,
             this.elementSelect2,
             this.swipeLayer});
-            this.toolStrip1.Location = new System.Drawing.Point(3, 4);
+            this.toolStrip1.Location = new System.Drawing.Point(3, 2);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(40, 482);
+            this.toolStrip1.Size = new System.Drawing.Size(40, 363);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // zoomIn3
             // 
             this.zoomIn3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.zoomIn3.Image = global::城市空间生态格局智能评估系统.Properties.Resources.MapBrowser_ZoomIn;
+            this.zoomIn3.Image = global::绿廊智绘.Properties.Resources.MapBrowser_ZoomIn;
             this.zoomIn3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.zoomIn3.Name = "zoomIn3";
             this.zoomIn3.Size = new System.Drawing.Size(37, 39);
@@ -1599,7 +1627,7 @@
             // zoomOut3
             // 
             this.zoomOut3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.zoomOut3.Image = global::城市空间生态格局智能评估系统.Properties.Resources.MapBrowser_ZoomOut;
+            this.zoomOut3.Image = global::绿廊智绘.Properties.Resources.MapBrowser_ZoomOut;
             this.zoomOut3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.zoomOut3.Name = "zoomOut3";
             this.zoomOut3.Size = new System.Drawing.Size(37, 39);
@@ -1609,7 +1637,7 @@
             // zoomToOrigin3
             // 
             this.zoomToOrigin3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.zoomToOrigin3.Image = global::城市空间生态格局智能评估系统.Properties.Resources.MapBrowser_ZoomToNativeResolution;
+            this.zoomToOrigin3.Image = global::绿廊智绘.Properties.Resources.MapBrowser_ZoomToNativeResolution;
             this.zoomToOrigin3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.zoomToOrigin3.Name = "zoomToOrigin3";
             this.zoomToOrigin3.Size = new System.Drawing.Size(37, 39);
@@ -1619,7 +1647,7 @@
             // centerZoomIn1
             // 
             this.centerZoomIn1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.centerZoomIn1.Image = global::城市空间生态格局智能评估系统.Properties.Resources.MapBrowser_CenterZoomIn;
+            this.centerZoomIn1.Image = global::绿廊智绘.Properties.Resources.MapBrowser_CenterZoomIn;
             this.centerZoomIn1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.centerZoomIn1.Name = "centerZoomIn1";
             this.centerZoomIn1.Size = new System.Drawing.Size(37, 39);
@@ -1629,7 +1657,7 @@
             // centerZoomOut1
             // 
             this.centerZoomOut1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.centerZoomOut1.Image = global::城市空间生态格局智能评估系统.Properties.Resources.MapBrowser_CenterZoomOut;
+            this.centerZoomOut1.Image = global::绿廊智绘.Properties.Resources.MapBrowser_CenterZoomOut;
             this.centerZoomOut1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.centerZoomOut1.Name = "centerZoomOut1";
             this.centerZoomOut1.Size = new System.Drawing.Size(37, 39);
@@ -1639,7 +1667,7 @@
             // fullExtent3
             // 
             this.fullExtent3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.fullExtent3.Image = global::城市空间生态格局智能评估系统.Properties.Resources.MapBrowser_FullExtent;
+            this.fullExtent3.Image = global::绿廊智绘.Properties.Resources.MapBrowser_FullExtent;
             this.fullExtent3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.fullExtent3.Name = "fullExtent3";
             this.fullExtent3.Size = new System.Drawing.Size(37, 39);
@@ -1649,7 +1677,7 @@
             // panTool3
             // 
             this.panTool3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.panTool3.Image = global::城市空间生态格局智能评估系统.Properties.Resources.MapBrowser_Pan;
+            this.panTool3.Image = global::绿廊智绘.Properties.Resources.MapBrowser_Pan;
             this.panTool3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.panTool3.Name = "panTool3";
             this.panTool3.Size = new System.Drawing.Size(37, 39);
@@ -1659,7 +1687,7 @@
             // elementSelect2
             // 
             this.elementSelect2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.elementSelect2.Image = global::城市空间生态格局智能评估系统.Properties.Resources.MapBrowser_SelectRaster;
+            this.elementSelect2.Image = global::绿廊智绘.Properties.Resources.MapBrowser_SelectRaster;
             this.elementSelect2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.elementSelect2.Name = "elementSelect2";
             this.elementSelect2.Size = new System.Drawing.Size(37, 39);
@@ -1672,7 +1700,7 @@
             this.swipeLayer.Image = ((System.Drawing.Image)(resources.GetObject("swipeLayer.Image")));
             this.swipeLayer.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.swipeLayer.Name = "swipeLayer";
-            this.swipeLayer.Size = new System.Drawing.Size(37, 39);
+            this.swipeLayer.Size = new System.Drawing.Size(39, 39);
             this.swipeLayer.Text = "卷帘";
             this.swipeLayer.Click += new System.EventHandler(this.swipeLayer_Click);
             // 
@@ -1681,9 +1709,10 @@
             this.mapControlMain.BackColor = System.Drawing.Color.White;
             this.mapControlMain.CustomerProperty = null;
             this.mapControlMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mapControlMain.Location = new System.Drawing.Point(3, 4);
+            this.mapControlMain.Location = new System.Drawing.Point(3, 2);
+            this.mapControlMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mapControlMain.Name = "mapControlMain";
-            this.mapControlMain.Size = new System.Drawing.Size(1166, 482);
+            this.mapControlMain.Size = new System.Drawing.Size(1020, 363);
             this.mapControlMain.TabIndex = 0;
             this.mapControlMain.Text = "mapControlMain";
             this.mapControlMain.MouseMove += new System.Windows.Forms.MouseEventHandler(this.mapControlMain_MouseMove);
@@ -1694,10 +1723,10 @@
             this.tabPage2.Controls.Add(this.toolStrip2);
             this.tabPage2.Controls.Add(this.pageLayoutControlMain);
             this.tabPage2.Location = new System.Drawing.Point(4, 4);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage2.Size = new System.Drawing.Size(1172, 490);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage2.Size = new System.Drawing.Size(1026, 367);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "制图模式";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -1715,10 +1744,10 @@
             this.fullExtent4,
             this.panTool4,
             this.elementSelect3});
-            this.toolStrip2.Location = new System.Drawing.Point(3, 4);
+            this.toolStrip2.Location = new System.Drawing.Point(3, 2);
             this.toolStrip2.Name = "toolStrip2";
             this.toolStrip2.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.toolStrip2.Size = new System.Drawing.Size(40, 482);
+            this.toolStrip2.Size = new System.Drawing.Size(40, 363);
             this.toolStrip2.TabIndex = 1;
             this.toolStrip2.Text = "toolStrip2";
             // 
@@ -1735,7 +1764,7 @@
             // zoomOut4
             // 
             this.zoomOut4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.zoomOut4.Image = global::城市空间生态格局智能评估系统.Properties.Resources.MapBrowser_ZoomOut;
+            this.zoomOut4.Image = global::绿廊智绘.Properties.Resources.MapBrowser_ZoomOut;
             this.zoomOut4.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.zoomOut4.Name = "zoomOut4";
             this.zoomOut4.Size = new System.Drawing.Size(37, 39);
@@ -1755,7 +1784,7 @@
             // centerZoomIn2
             // 
             this.centerZoomIn2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.centerZoomIn2.Image = global::城市空间生态格局智能评估系统.Properties.Resources.MapBrowser_CenterZoomIn;
+            this.centerZoomIn2.Image = global::绿廊智绘.Properties.Resources.MapBrowser_CenterZoomIn;
             this.centerZoomIn2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.centerZoomIn2.Name = "centerZoomIn2";
             this.centerZoomIn2.Size = new System.Drawing.Size(37, 39);
@@ -1765,7 +1794,7 @@
             // centerZoomOut2
             // 
             this.centerZoomOut2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.centerZoomOut2.Image = global::城市空间生态格局智能评估系统.Properties.Resources.MapBrowser_CenterZoomOut;
+            this.centerZoomOut2.Image = global::绿廊智绘.Properties.Resources.MapBrowser_CenterZoomOut;
             this.centerZoomOut2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.centerZoomOut2.Name = "centerZoomOut2";
             this.centerZoomOut2.Size = new System.Drawing.Size(37, 39);
@@ -1775,7 +1804,7 @@
             // fullExtent4
             // 
             this.fullExtent4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.fullExtent4.Image = global::城市空间生态格局智能评估系统.Properties.Resources.MapBrowser_FullExtent;
+            this.fullExtent4.Image = global::绿廊智绘.Properties.Resources.MapBrowser_FullExtent;
             this.fullExtent4.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.fullExtent4.Name = "fullExtent4";
             this.fullExtent4.Size = new System.Drawing.Size(37, 39);
@@ -1785,7 +1814,7 @@
             // panTool4
             // 
             this.panTool4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.panTool4.Image = global::城市空间生态格局智能评估系统.Properties.Resources.MapBrowser_Pan;
+            this.panTool4.Image = global::绿廊智绘.Properties.Resources.MapBrowser_Pan;
             this.panTool4.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.panTool4.Name = "panTool4";
             this.panTool4.Size = new System.Drawing.Size(37, 39);
@@ -1795,7 +1824,7 @@
             // elementSelect3
             // 
             this.elementSelect3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.elementSelect3.Image = global::城市空间生态格局智能评估系统.Properties.Resources.MapBrowser_SelectRaster;
+            this.elementSelect3.Image = global::绿廊智绘.Properties.Resources.MapBrowser_SelectRaster;
             this.elementSelect3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.elementSelect3.Name = "elementSelect3";
             this.elementSelect3.Size = new System.Drawing.Size(37, 39);
@@ -1805,9 +1834,10 @@
             // pageLayoutControlMain
             // 
             this.pageLayoutControlMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pageLayoutControlMain.Location = new System.Drawing.Point(3, 4);
+            this.pageLayoutControlMain.Location = new System.Drawing.Point(3, 2);
+            this.pageLayoutControlMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pageLayoutControlMain.Name = "pageLayoutControlMain";
-            this.pageLayoutControlMain.Size = new System.Drawing.Size(1166, 482);
+            this.pageLayoutControlMain.Size = new System.Drawing.Size(1020, 363);
             this.pageLayoutControlMain.TabIndex = 0;
             this.pageLayoutControlMain.Text = "pageLayoutControlMain";
             // 
@@ -1815,7 +1845,7 @@
             // 
             this.toolStripStatusLabel1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(112, 26);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(93, 26);
             this.toolStripStatusLabel1.Text = "坐标系信息：";
             // 
             // toolStripStatusLabel_CoordinateInfo
@@ -1828,21 +1858,21 @@
             // 
             this.toolStripStatusLabel3.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
-            this.toolStripStatusLabel3.Size = new System.Drawing.Size(78, 26);
+            this.toolStripStatusLabel3.Size = new System.Drawing.Size(65, 26);
             this.toolStripStatusLabel3.Text = "比例尺：";
             // 
             // toolStripStatusLabel4
             // 
             this.toolStripStatusLabel4.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.toolStripStatusLabel4.Name = "toolStripStatusLabel4";
-            this.toolStripStatusLabel4.Size = new System.Drawing.Size(95, 26);
+            this.toolStripStatusLabel4.Size = new System.Drawing.Size(79, 26);
             this.toolStripStatusLabel4.Text = "地图坐标：";
             // 
             // toolStripStatusLabel5
             // 
             this.toolStripStatusLabel5.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.toolStripStatusLabel5.Name = "toolStripStatusLabel5";
-            this.toolStripStatusLabel5.Size = new System.Drawing.Size(95, 26);
+            this.toolStripStatusLabel5.Size = new System.Drawing.Size(79, 26);
             this.toolStripStatusLabel5.Text = "屏幕坐标：";
             // 
             // statusStrip1
@@ -1858,9 +1888,10 @@
             this.toolStripStatusLabel_coordinateSystem,
             this.toolStripStatusLabel5,
             this.toolStripStatusLabel_screenCoordinate});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 713);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 548);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1419, 31);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 12, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(1242, 31);
             this.statusStrip1.TabIndex = 3;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -1875,7 +1906,7 @@
             this.toolStripComboBox1.AutoSize = false;
             this.toolStripComboBox1.Margin = new System.Windows.Forms.Padding(0, 2, 0, 1);
             this.toolStripComboBox1.Name = "toolStripComboBox1";
-            this.toolStripComboBox1.Size = new System.Drawing.Size(200, 28);
+            this.toolStripComboBox1.Size = new System.Drawing.Size(176, 28);
             // 
             // toolStripStatusLabel_coordinateSystem
             // 
@@ -1883,7 +1914,7 @@
             | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right) 
             | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
             this.toolStripStatusLabel_coordinateSystem.Name = "toolStripStatusLabel_coordinateSystem";
-            this.toolStripStatusLabel_coordinateSystem.Size = new System.Drawing.Size(115, 26);
+            this.toolStripStatusLabel_coordinateSystem.Size = new System.Drawing.Size(91, 26);
             this.toolStripStatusLabel_coordinateSystem.Text = "100.00,100.00";
             // 
             // toolStripStatusLabel_screenCoordinate
@@ -1892,7 +1923,7 @@
             | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right) 
             | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
             this.toolStripStatusLabel_screenCoordinate.Name = "toolStripStatusLabel_screenCoordinate";
-            this.toolStripStatusLabel_screenCoordinate.Size = new System.Drawing.Size(115, 26);
+            this.toolStripStatusLabel_screenCoordinate.Size = new System.Drawing.Size(91, 26);
             this.toolStripStatusLabel_screenCoordinate.Text = "100.00,100.00";
             // 
             // barButtonItem17
@@ -1918,19 +1949,19 @@
             this.FullExtentToolStripMenuItem,
             this.RasterIdentifyToolStripMenuItem});
             this.contextMenuStrip_MapControl.Name = "contextMenuStrip_MapControl";
-            this.contextMenuStrip_MapControl.Size = new System.Drawing.Size(139, 52);
+            this.contextMenuStrip_MapControl.Size = new System.Drawing.Size(125, 48);
             // 
             // FullExtentToolStripMenuItem
             // 
             this.FullExtentToolStripMenuItem.Name = "FullExtentToolStripMenuItem";
-            this.FullExtentToolStripMenuItem.Size = new System.Drawing.Size(138, 24);
+            this.FullExtentToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.FullExtentToolStripMenuItem.Text = "全图显示";
             this.FullExtentToolStripMenuItem.MouseUp += new System.Windows.Forms.MouseEventHandler(this.mapControlMenuItem_Click);
             // 
             // RasterIdentifyToolStripMenuItem
             // 
             this.RasterIdentifyToolStripMenuItem.Name = "RasterIdentifyToolStripMenuItem";
-            this.RasterIdentifyToolStripMenuItem.Size = new System.Drawing.Size(138, 24);
+            this.RasterIdentifyToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.RasterIdentifyToolStripMenuItem.Text = "探针工具";
             this.RasterIdentifyToolStripMenuItem.MouseUp += new System.Windows.Forms.MouseEventHandler(this.mapControlMenuItem_Click);
             // 
@@ -1945,65 +1976,133 @@
             this.LayerPropertyToolStripMenuItem,
             this.SelectCoordinateToolStripMenuItem});
             this.contextMenuStrip_TocControl.Name = "contextMenuStrip_TocControl";
-            this.contextMenuStrip_TocControl.Size = new System.Drawing.Size(154, 148);
+            this.contextMenuStrip_TocControl.Size = new System.Drawing.Size(137, 136);
             // 
             // AddDataToolStripMenuItem
             // 
             this.AddDataToolStripMenuItem.Name = "AddDataToolStripMenuItem";
-            this.AddDataToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
+            this.AddDataToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.AddDataToolStripMenuItem.Text = "添加数据";
             this.AddDataToolStripMenuItem.Click += new System.EventHandler(this.AddDataToolStripMenuItem_Click);
             // 
             // DeleteLayerToolStripMenuItem
             // 
             this.DeleteLayerToolStripMenuItem.Name = "DeleteLayerToolStripMenuItem";
-            this.DeleteLayerToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
+            this.DeleteLayerToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.DeleteLayerToolStripMenuItem.Text = "删除图层";
             this.DeleteLayerToolStripMenuItem.Click += new System.EventHandler(this.DeleteLayerToolStripMenuItem_Click);
             // 
             // FeatureLayerAttributeToolStripMenuItem
             // 
             this.FeatureLayerAttributeToolStripMenuItem.Name = "FeatureLayerAttributeToolStripMenuItem";
-            this.FeatureLayerAttributeToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
+            this.FeatureLayerAttributeToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.FeatureLayerAttributeToolStripMenuItem.Text = "打开属性表";
             this.FeatureLayerAttributeToolStripMenuItem.Click += new System.EventHandler(this.FeatureLayerAttributeToolStripMenuItem_Click);
             // 
             // SymbolSelectorToolStripMenuItem
             // 
             this.SymbolSelectorToolStripMenuItem.Name = "SymbolSelectorToolStripMenuItem";
-            this.SymbolSelectorToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
+            this.SymbolSelectorToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.SymbolSelectorToolStripMenuItem.Text = "符号选择器";
             this.SymbolSelectorToolStripMenuItem.Click += new System.EventHandler(this.SymbolSelectorToolStripMenuItem_Click);
             // 
             // LayerPropertyToolStripMenuItem
             // 
             this.LayerPropertyToolStripMenuItem.Name = "LayerPropertyToolStripMenuItem";
-            this.LayerPropertyToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
+            this.LayerPropertyToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.LayerPropertyToolStripMenuItem.Text = "层属性";
             this.LayerPropertyToolStripMenuItem.Click += new System.EventHandler(this.LayerPropertyToolStripMenuItem_Click);
             // 
             // SelectCoordinateToolStripMenuItem
             // 
             this.SelectCoordinateToolStripMenuItem.Name = "SelectCoordinateToolStripMenuItem";
-            this.SelectCoordinateToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
+            this.SelectCoordinateToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.SelectCoordinateToolStripMenuItem.Text = "坐标系选择";
             this.SelectCoordinateToolStripMenuItem.Click += new System.EventHandler(this.SelectCoordinateToolStripMenuItem_Click);
+            // 
+            // barButtonItem2
+            // 
+            this.barButtonItem2.Caption = "公路";
+            this.barButtonItem2.Id = 113;
+            this.barButtonItem2.Name = "barButtonItem2";
+            this.barButtonItem2.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem3
+            // 
+            this.barButtonItem3.Caption = "高程";
+            this.barButtonItem3.Id = 114;
+            this.barButtonItem3.Name = "barButtonItem3";
+            this.barButtonItem3.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem4
+            // 
+            this.barButtonItem4.Caption = "坡度";
+            this.barButtonItem4.Id = 115;
+            this.barButtonItem4.Name = "barButtonItem4";
+            this.barButtonItem4.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem5
+            // 
+            this.barButtonItem5.Caption = "温度";
+            this.barButtonItem5.Id = 116;
+            this.barButtonItem5.Name = "barButtonItem5";
+            this.barButtonItem5.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem6
+            // 
+            this.barButtonItem6.Caption = "用地类型";
+            this.barButtonItem6.Id = 117;
+            this.barButtonItem6.Name = "barButtonItem6";
+            this.barButtonItem6.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem7
+            // 
+            this.barButtonItem7.Caption = "景观类型";
+            this.barButtonItem7.Id = 118;
+            this.barButtonItem7.Name = "barButtonItem7";
+            this.barButtonItem7.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem8
+            // 
+            this.barButtonItem8.Caption = "地形起伏度";
+            this.barButtonItem8.Id = 119;
+            this.barButtonItem8.Name = "barButtonItem8";
+            this.barButtonItem8.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem9
+            // 
+            this.barButtonItem9.Caption = "综合阻力";
+            this.barButtonItem9.Id = 120;
+            this.barButtonItem9.Name = "barButtonItem9";
+            this.barButtonItem9.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // ribbonPage2
+            // 
+            this.ribbonPage2.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup1});
+            this.ribbonPage2.Name = "ribbonPage2";
+            this.ribbonPage2.Text = "生态廊道识别";
+            // 
+            // ribbonPageGroup1
+            // 
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            this.ribbonPageGroup1.Text = "ribbonPageGroup1";
             // 
             // FormMain
             // 
             this.Appearance.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.Appearance.Options.UseBackColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1419, 744);
+            this.ClientSize = new System.Drawing.Size(1242, 579);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.ribbonControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "FormMain";
             this.Ribbon = this.ribbonControl1;
-            this.Text = "城市空间生态格局智能评估系统";
+            this.Text = "绿廊智绘——城镇生态富民格局智能遥测系统";
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar3)).EndInit();
@@ -2186,7 +2285,7 @@
         private DevExpress.XtraBars.BarButtonItem startEdit;
         private DevExpress.XtraBars.BarButtonItem saveEdit;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup timeseriesClassification;
-        private DevExpress.XtraBars.Ribbon.RibbonPage VectorProcessandFormatConversion;
+        private DevExpress.XtraBars.Ribbon.RibbonPage VectorProcess;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup vectorTools;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup dataOperation;
@@ -2206,7 +2305,6 @@
         private DevExpress.XtraBars.BarButtonItem attributeEdit;
         private DevExpress.XtraBars.BarButtonItem barButtonItem64;
         private DevExpress.XtraBars.BarButtonItem unionFeature;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup formatConversion;
         private DevExpress.XtraBars.BarButtonItem barButtonItem17;
         private DevExpress.XtraBars.BarButtonItem imageClipping;
         private DevExpress.XtraBars.BarButtonItem precisionAnalysis;
@@ -2233,6 +2331,17 @@
         private DevExpress.XtraBars.BarButtonItem storageFormatConversion;
         private System.Windows.Forms.ToolStripMenuItem AddDataToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem SelectCoordinateToolStripMenuItem;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup formatConversion;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem4;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem5;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem6;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem7;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem8;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem9;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
     }
 }
 

@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace 城市空间生态格局智能评估系统.Custom_Forms
+namespace 绿廊智绘.Custom_Forms
 {
     public partial class atmosphericCorrectionForm : DevExpress.XtraEditors.XtraForm
     {
@@ -61,7 +61,7 @@ namespace 城市空间生态格局智能评估系统.Custom_Forms
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "栅格数据(*.tif)|*.tif;*.tiff";
-            openFileDialog.InitialDirectory = @"C:\Users\Administrator\Desktop\城市空间生态格局智能评估系统\演示数据";
+            openFileDialog.InitialDirectory = @"C:\Users\Administrator\Desktop\绿廊智绘\演示数据";
             if (openFileDialog.ShowDialog() != DialogResult.OK) return;
             string filePath = openFileDialog.FileName;
             selectedImage = filePath;

@@ -11,7 +11,7 @@ using System.Windows.Forms;
 using System.IO;
 using PIE.DataSource;
 
-namespace 城市空间生态格局智能评估系统.Custom_Forms
+namespace 绿廊智绘.Custom_Forms
 {
     public partial class bandOperationForm : DevExpress.XtraEditors.XtraForm
     {

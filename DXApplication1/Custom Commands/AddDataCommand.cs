@@ -8,7 +8,7 @@ using PIE.AxControls;
 using PIE.Controls;
 using PIE.Carto;
 
-namespace 城市空间生态格局智能评估系统.Custom_Commands 
+namespace 绿廊智绘.Custom_Commands 
 {
     public class AddDataCommand : BaseCommand
     {
@@ -33,7 +33,7 @@ namespace 城市空间生态格局智能评估系统.Custom_Commands
                 openFileDialog.Title = "请选择要打开的数据：";
                 openFileDialog.Multiselect = false;
                 openFileDialog.Filter = "All Files|*.*|Shape Files|*.shp|Raster Files|*.tif;*.tiff;*.dat;*.bmp;*.img;*.jpg|HDF Files|*.hdf;*.h5|NC Files|*.nc";
-                openFileDialog.InitialDirectory = @"C:\Users\Administrator\Desktop\城市空间生态格局智能评估系统\演示数据";
+                openFileDialog.InitialDirectory = @"C:\Users\Administrator\Desktop\绿廊智绘\演示数据";
                 if (openFileDialog.ShowDialog() != System.Windows.Forms.DialogResult.OK) return;
                 // 打开文件刷新
                 string filePath = openFileDialog.FileName;

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace 城市空间生态格局智能评估系统.Custom_Commands
+namespace 绿廊智绘.Custom_Commands
 {
 
     public partial class storageFormatConversionForm : DevExpress.XtraEditors.XtraForm
@@ -32,7 +32,7 @@ namespace 城市空间生态格局智能评估系统.Custom_Commands
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "Raster Data|*.tif;*.tiff;*.img";
             openFileDialog.Title = "选择输入文件";
-            openFileDialog.InitialDirectory = @"C:\Users\Administrator\Desktop\城市空间生态格局智能评估系统\演示数据";
+            openFileDialog.InitialDirectory = @"C:\Users\Administrator\Desktop\绿廊智绘\演示数据";
             if (openFileDialog.ShowDialog() != DialogResult.OK) return;
             string filePath = openFileDialog.FileName;
             this.filetextBox.Text = filePath;

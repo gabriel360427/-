@@ -13,7 +13,7 @@ using PIE.Carto;
 using PIE.Geometry;
 
 
-namespace 城市空间生态格局智能评估系统.Custom_Commands
+namespace 绿廊智绘.Custom_Commands
 {
     public partial class reClassification : DevExpress.XtraEditors.XtraForm
     {

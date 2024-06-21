@@ -8,8 +8,8 @@
     <ProjectGuid>{5EABB42C-C19A-4ECB-B730-D43F2C2483ED}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>城市空间生态格局智能评估系统</RootNamespace>
-    <AssemblyName>城市空间生态格局智能评估系统</AssemblyName>
+    <RootNamespace>绿廊智绘</RootNamespace>
+    <AssemblyName>绿廊智绘</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

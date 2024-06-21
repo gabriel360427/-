@@ -9,10 +9,10 @@ using System.Windows.Forms;
 using PIE.AxControls;
 using PIE.Carto;
 using PIE.CommonAlgo;
-using 城市空间生态格局智能评估系统;
+using 绿廊智绘;
 
 
-namespace 城市空间生态格局智能评估系统.Custom_Forms
+namespace 绿廊智绘.Custom_Forms
 {
     public partial class radiometricCalibrationForm : DevExpress.XtraEditors.XtraForm
     {
@@ -36,12 +36,12 @@ namespace 城市空间生态格局智能评估系统.Custom_Forms
         }
 
         //主窗口
-        城市空间生态格局智能评估系统.FormMain pie1;
+        绿廊智绘.FormMain pie1;
         //全局变量，表示当前输入文件框所选择的序号
         int index = -1;
         private void Form1_Load(object sender, EventArgs e)
         {
-            pie1 = (城市空间生态格局智能评估系统.FormMain)this.Owner;
+            pie1 = (绿廊智绘.FormMain)this.Owner;
         }
         
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
