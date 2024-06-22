@@ -139,6 +139,18 @@
     <Compile Include="Custom Forms\distanceClassifyForm.designer.cs">
       <DependentUpon>distanceClassifyForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Custom Forms\Relief.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\Relief.Designer.cs">
+      <DependentUpon>Relief.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Forms\slope.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\slope.Designer.cs">
+      <DependentUpon>slope.cs</DependentUpon>
+    </Compile>
     <Compile Include="Custom Forms\imageClippingForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -273,6 +285,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\reClassification.resx">
       <DependentUpon>reClassification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\Relief.resx">
+      <DependentUpon>Relief.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\slope.resx">
+      <DependentUpon>slope.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\storageFormatConversionForm.resx">
       <DependentUpon>storageFormatConversionForm.cs</DependentUpon>

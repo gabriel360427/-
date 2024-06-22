@@ -1884,11 +1884,28 @@ namespace 绿廊智绘
             cmd.OnCreate(pageLayoutControlMain);
             cmd.OnClick();
         }
-        #endregion
 
-        
 
         #endregion
 
+        #endregion
+
+        #region 六、生态阻力面构建
+        #region 2.1 坡度
+        private void barButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            slope Form = new slope();
+            Form.ShowDialog();
+        }
+        #endregion
+
+        #region 2.2 地形起伏度
+        private void 地面起伏度_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Relief Form = new Relief();
+            Form.ShowDialog();
+        }
+        #endregion 
+        #endregion
     }
 }

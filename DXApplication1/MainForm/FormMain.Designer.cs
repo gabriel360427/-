@@ -135,6 +135,9 @@
             this.landScapeType = new DevExpress.XtraBars.BarButtonItem();
             this.reliefAmplitude = new DevExpress.XtraBars.BarButtonItem();
             this.comprehensiveResistance = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.BASEMENT = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.mapProject = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.dataManagement = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -162,6 +165,8 @@
             this.VectorProcess = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.vectorTools = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage5 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.MSPA景观分类 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.singleFactorResistanceSurface = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.comprehensiveResistanceSurface = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -228,6 +233,8 @@
             this.SymbolSelectorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.LayerPropertyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SelectCoordinateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
+            this.地面起伏度 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar3)).BeginInit();
@@ -359,10 +366,15 @@
             this.landUseType,
             this.landScapeType,
             this.reliefAmplitude,
-            this.comprehensiveResistance});
+            this.comprehensiveResistance,
+            this.barButtonItem1,
+            this.barButtonItem2,
+            this.barButtonItem3,
+            this.barButtonItem4,
+            this.地面起伏度});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.ribbonControl1.MaxItemId = 121;
+            this.ribbonControl1.MaxItemId = 126;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.BASEMENT,
@@ -1186,7 +1198,7 @@
             // 
             this.railway.Caption = "铁路";
             this.railway.Id = 108;
-            this.railway.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.railway.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("railway.ImageOptions.Image")));
             this.railway.LargeWidth = 60;
             this.railway.Name = "railway";
             this.railway.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
@@ -1259,6 +1271,27 @@
             this.comprehensiveResistance.Id = 120;
             this.comprehensiveResistance.Name = "comprehensiveResistance";
             this.comprehensiveResistance.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "环境配置";
+            this.barButtonItem1.Id = 121;
+            this.barButtonItem1.Name = "barButtonItem1";
+            this.barButtonItem1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem2
+            // 
+            this.barButtonItem2.Caption = "数据预处理";
+            this.barButtonItem2.Id = 122;
+            this.barButtonItem2.Name = "barButtonItem2";
+            this.barButtonItem2.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem3
+            // 
+            this.barButtonItem3.Caption = "MSPA景观分类";
+            this.barButtonItem3.Id = 123;
+            this.barButtonItem3.Name = "barButtonItem3";
+            this.barButtonItem3.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
             // BASEMENT
             // 
@@ -1480,10 +1513,27 @@
             // ribbonPage5
             // 
             this.ribbonPage5.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.MSPA景观分类,
+            this.ribbonPageGroup2,
             this.singleFactorResistanceSurface,
             this.comprehensiveResistanceSurface});
             this.ribbonPage5.Name = "ribbonPage5";
             this.ribbonPage5.Text = "生态阻力面构建";
+            // 
+            // MSPA景观分类
+            // 
+            this.MSPA景观分类.ItemLinks.Add(this.barButtonItem1);
+            this.MSPA景观分类.ItemLinks.Add(this.barButtonItem2);
+            this.MSPA景观分类.ItemLinks.Add(this.barButtonItem3);
+            this.MSPA景观分类.Name = "MSPA景观分类";
+            this.MSPA景观分类.Text = "MSPA景观分类";
+            // 
+            // ribbonPageGroup2
+            // 
+            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem4);
+            this.ribbonPageGroup2.ItemLinks.Add(this.地面起伏度);
+            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
+            this.ribbonPageGroup2.Text = "DEM数据处理";
             // 
             // singleFactorResistanceSurface
             // 
@@ -2093,6 +2143,22 @@
             this.SelectCoordinateToolStripMenuItem.Text = "坐标系选择";
             this.SelectCoordinateToolStripMenuItem.Click += new System.EventHandler(this.SelectCoordinateToolStripMenuItem_Click);
             // 
+            // barButtonItem4
+            // 
+            this.barButtonItem4.Caption = "坡度";
+            this.barButtonItem4.Id = 124;
+            this.barButtonItem4.Name = "barButtonItem4";
+            this.barButtonItem4.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonItem4.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem4_ItemClick);
+            // 
+            // 地面起伏度
+            // 
+            this.地面起伏度.Caption = "地形起伏度处理";
+            this.地面起伏度.Id = 125;
+            this.地面起伏度.Name = "地面起伏度";
+            this.地面起伏度.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.地面起伏度.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.地面起伏度_ItemClick);
+            // 
             // FormMain
             // 
             this.Appearance.BackColor = System.Drawing.SystemColors.ButtonFace;
@@ -2347,6 +2413,13 @@
         private DevExpress.XtraBars.BarButtonItem comprehensiveResistance;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup MSPA景观分类;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem4;
+        private DevExpress.XtraBars.BarButtonItem 地面起伏度;
     }
 }
 
