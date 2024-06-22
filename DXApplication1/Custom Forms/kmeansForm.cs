@@ -113,5 +113,6 @@ namespace 绿廊智绘.Custom_Forms
                 thresholdControl.Text = "1";
             }
         }
+
     }
 }

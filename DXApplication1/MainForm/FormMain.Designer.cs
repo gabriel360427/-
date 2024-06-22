@@ -125,8 +125,16 @@
             this.GaoDeRoad = new DevExpress.XtraBars.BarButtonItem();
             this.GaoDeAnnotation = new DevExpress.XtraBars.BarButtonItem();
             this.LoadArcGISServerLayer = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.railway = new DevExpress.XtraBars.BarButtonItem();
             this.storageFormatConversion = new DevExpress.XtraBars.BarButtonItem();
+            this.highway = new DevExpress.XtraBars.BarButtonItem();
+            this.elevation = new DevExpress.XtraBars.BarButtonItem();
+            this.slopeGradient = new DevExpress.XtraBars.BarButtonItem();
+            this.temperature = new DevExpress.XtraBars.BarButtonItem();
+            this.landUseType = new DevExpress.XtraBars.BarButtonItem();
+            this.landScapeType = new DevExpress.XtraBars.BarButtonItem();
+            this.reliefAmplitude = new DevExpress.XtraBars.BarButtonItem();
+            this.comprehensiveResistance = new DevExpress.XtraBars.BarButtonItem();
             this.BASEMENT = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.mapProject = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.dataManagement = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -154,8 +162,10 @@
             this.VectorProcess = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.vectorTools = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage5 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup15 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup16 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.singleFactorResistanceSurface = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.comprehensiveResistanceSurface = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.dataOperation = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.viewOperation = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -218,16 +228,6 @@
             this.SymbolSelectorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.LayerPropertyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SelectCoordinateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar3)).BeginInit();
@@ -350,16 +350,16 @@
             this.GaoDeRoad,
             this.GaoDeAnnotation,
             this.LoadArcGISServerLayer,
-            this.barButtonItem1,
+            this.railway,
             this.storageFormatConversion,
-            this.barButtonItem2,
-            this.barButtonItem3,
-            this.barButtonItem4,
-            this.barButtonItem5,
-            this.barButtonItem6,
-            this.barButtonItem7,
-            this.barButtonItem8,
-            this.barButtonItem9});
+            this.highway,
+            this.elevation,
+            this.slopeGradient,
+            this.temperature,
+            this.landUseType,
+            this.landScapeType,
+            this.reliefAmplitude,
+            this.comprehensiveResistance});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ribbonControl1.MaxItemId = 121;
@@ -1182,13 +1182,15 @@
             this.LoadArcGISServerLayer.Name = "LoadArcGISServerLayer";
             this.LoadArcGISServerLayer.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.LoadArcGISServerLayer_ItemClick);
             // 
-            // barButtonItem1
+            // railway
             // 
-            this.barButtonItem1.Caption = "铁路";
-            this.barButtonItem1.Id = 108;
-            this.barButtonItem1.Name = "barButtonItem1";
-            this.barButtonItem1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
+            this.railway.Caption = "铁路";
+            this.railway.Id = 108;
+            this.railway.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.railway.LargeWidth = 60;
+            this.railway.Name = "railway";
+            this.railway.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.railway.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
             // 
             // storageFormatConversion
             // 
@@ -1198,6 +1200,65 @@
             this.storageFormatConversion.Name = "storageFormatConversion";
             this.storageFormatConversion.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.storageFormatConversion.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.storageFormatConversion_ItemClick);
+            // 
+            // highway
+            // 
+            this.highway.Caption = "公路";
+            this.highway.Id = 113;
+            this.highway.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("highway.ImageOptions.Image")));
+            this.highway.LargeWidth = 60;
+            this.highway.Name = "highway";
+            this.highway.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // elevation
+            // 
+            this.elevation.Caption = "高程";
+            this.elevation.Id = 114;
+            this.elevation.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("elevation.ImageOptions.Image")));
+            this.elevation.Name = "elevation";
+            this.elevation.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // slopeGradient
+            // 
+            this.slopeGradient.Caption = "坡度";
+            this.slopeGradient.Id = 115;
+            this.slopeGradient.Name = "slopeGradient";
+            this.slopeGradient.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // temperature
+            // 
+            this.temperature.Caption = "温度";
+            this.temperature.Id = 116;
+            this.temperature.Name = "temperature";
+            this.temperature.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // landUseType
+            // 
+            this.landUseType.Caption = "用地类型";
+            this.landUseType.Id = 117;
+            this.landUseType.Name = "landUseType";
+            this.landUseType.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // landScapeType
+            // 
+            this.landScapeType.Caption = "景观类型";
+            this.landScapeType.Id = 118;
+            this.landScapeType.Name = "landScapeType";
+            this.landScapeType.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // reliefAmplitude
+            // 
+            this.reliefAmplitude.Caption = "地形起伏度";
+            this.reliefAmplitude.Id = 119;
+            this.reliefAmplitude.Name = "reliefAmplitude";
+            this.reliefAmplitude.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // comprehensiveResistance
+            // 
+            this.comprehensiveResistance.Caption = "综合阻力";
+            this.comprehensiveResistance.Id = 120;
+            this.comprehensiveResistance.Name = "comprehensiveResistance";
+            this.comprehensiveResistance.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
             // BASEMENT
             // 
@@ -1419,29 +1480,41 @@
             // ribbonPage5
             // 
             this.ribbonPage5.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup15,
-            this.ribbonPageGroup16});
+            this.singleFactorResistanceSurface,
+            this.comprehensiveResistanceSurface});
             this.ribbonPage5.Name = "ribbonPage5";
             this.ribbonPage5.Text = "生态阻力面构建";
             // 
-            // ribbonPageGroup15
+            // singleFactorResistanceSurface
             // 
-            this.ribbonPageGroup15.ItemLinks.Add(this.barButtonItem1);
-            this.ribbonPageGroup15.ItemLinks.Add(this.barButtonItem2);
-            this.ribbonPageGroup15.ItemLinks.Add(this.barButtonItem3);
-            this.ribbonPageGroup15.ItemLinks.Add(this.barButtonItem4);
-            this.ribbonPageGroup15.ItemLinks.Add(this.barButtonItem5);
-            this.ribbonPageGroup15.ItemLinks.Add(this.barButtonItem6);
-            this.ribbonPageGroup15.ItemLinks.Add(this.barButtonItem7);
-            this.ribbonPageGroup15.ItemLinks.Add(this.barButtonItem8);
-            this.ribbonPageGroup15.Name = "ribbonPageGroup15";
-            this.ribbonPageGroup15.Text = "单因子阻力面";
+            this.singleFactorResistanceSurface.ItemLinks.Add(this.railway);
+            this.singleFactorResistanceSurface.ItemLinks.Add(this.highway);
+            this.singleFactorResistanceSurface.ItemLinks.Add(this.elevation);
+            this.singleFactorResistanceSurface.ItemLinks.Add(this.slopeGradient);
+            this.singleFactorResistanceSurface.ItemLinks.Add(this.temperature);
+            this.singleFactorResistanceSurface.ItemLinks.Add(this.landUseType);
+            this.singleFactorResistanceSurface.ItemLinks.Add(this.landScapeType);
+            this.singleFactorResistanceSurface.ItemLinks.Add(this.reliefAmplitude);
+            this.singleFactorResistanceSurface.Name = "singleFactorResistanceSurface";
+            this.singleFactorResistanceSurface.Text = "单因子阻力面";
             // 
-            // ribbonPageGroup16
+            // comprehensiveResistanceSurface
             // 
-            this.ribbonPageGroup16.ItemLinks.Add(this.barButtonItem9);
-            this.ribbonPageGroup16.Name = "ribbonPageGroup16";
-            this.ribbonPageGroup16.Text = "综合阻力面";
+            this.comprehensiveResistanceSurface.ItemLinks.Add(this.comprehensiveResistance);
+            this.comprehensiveResistanceSurface.Name = "comprehensiveResistanceSurface";
+            this.comprehensiveResistanceSurface.Text = "综合阻力面";
+            // 
+            // ribbonPage2
+            // 
+            this.ribbonPage2.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup1});
+            this.ribbonPage2.Name = "ribbonPage2";
+            this.ribbonPage2.Text = "生态廊道识别";
+            // 
+            // ribbonPageGroup1
+            // 
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            this.ribbonPageGroup1.Text = "ribbonPageGroup1";
             // 
             // ribbonPage1
             // 
@@ -2020,74 +2093,6 @@
             this.SelectCoordinateToolStripMenuItem.Text = "坐标系选择";
             this.SelectCoordinateToolStripMenuItem.Click += new System.EventHandler(this.SelectCoordinateToolStripMenuItem_Click);
             // 
-            // barButtonItem2
-            // 
-            this.barButtonItem2.Caption = "公路";
-            this.barButtonItem2.Id = 113;
-            this.barButtonItem2.Name = "barButtonItem2";
-            this.barButtonItem2.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            // 
-            // barButtonItem3
-            // 
-            this.barButtonItem3.Caption = "高程";
-            this.barButtonItem3.Id = 114;
-            this.barButtonItem3.Name = "barButtonItem3";
-            this.barButtonItem3.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            // 
-            // barButtonItem4
-            // 
-            this.barButtonItem4.Caption = "坡度";
-            this.barButtonItem4.Id = 115;
-            this.barButtonItem4.Name = "barButtonItem4";
-            this.barButtonItem4.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            // 
-            // barButtonItem5
-            // 
-            this.barButtonItem5.Caption = "温度";
-            this.barButtonItem5.Id = 116;
-            this.barButtonItem5.Name = "barButtonItem5";
-            this.barButtonItem5.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            // 
-            // barButtonItem6
-            // 
-            this.barButtonItem6.Caption = "用地类型";
-            this.barButtonItem6.Id = 117;
-            this.barButtonItem6.Name = "barButtonItem6";
-            this.barButtonItem6.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            // 
-            // barButtonItem7
-            // 
-            this.barButtonItem7.Caption = "景观类型";
-            this.barButtonItem7.Id = 118;
-            this.barButtonItem7.Name = "barButtonItem7";
-            this.barButtonItem7.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            // 
-            // barButtonItem8
-            // 
-            this.barButtonItem8.Caption = "地形起伏度";
-            this.barButtonItem8.Id = 119;
-            this.barButtonItem8.Name = "barButtonItem8";
-            this.barButtonItem8.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            // 
-            // barButtonItem9
-            // 
-            this.barButtonItem9.Caption = "综合阻力";
-            this.barButtonItem9.Id = 120;
-            this.barButtonItem9.Name = "barButtonItem9";
-            this.barButtonItem9.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            // 
-            // ribbonPage2
-            // 
-            this.ribbonPage2.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup1});
-            this.ribbonPage2.Name = "ribbonPage2";
-            this.ribbonPage2.Text = "生态廊道识别";
-            // 
-            // ribbonPageGroup1
-            // 
-            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "ribbonPageGroup1";
-            // 
             // FormMain
             // 
             this.Appearance.BackColor = System.Drawing.SystemColors.ButtonFace;
@@ -2241,7 +2246,7 @@
         private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit5;
         private DevExpress.XtraBars.BarButtonItem geometricRefinement;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage5;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup15;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup singleFactorResistanceSurface;
         private DevExpress.XtraBars.BarButtonItem barButtonItem24;
         private DevExpress.XtraBars.BarButtonItem brightness;
         private DevExpress.XtraBars.BarButtonItem contrastRatio;
@@ -2261,7 +2266,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup unSupervisedClassification;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup supervisedClassification;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup postClassification;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup16;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup comprehensiveResistanceSurface;
         private DevExpress.XtraBars.BarButtonItem classStatistics;
         private DevExpress.XtraBars.BarButtonItem reClassification;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup reClassifications;
@@ -2323,7 +2328,7 @@
         private System.Windows.Forms.ToolStripMenuItem DeleteLayerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem FeatureLayerAttributeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem SymbolSelectorToolStripMenuItem;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.BarButtonItem railway;
         private System.Windows.Forms.ToolStripButton zoomToOrigin4;
         private System.Windows.Forms.ToolStripMenuItem LayerPropertyToolStripMenuItem;
         private DevExpress.XtraEditors.Repository.RepositoryItemTrackBar repositoryItemTrackBar4;
@@ -2332,14 +2337,14 @@
         private System.Windows.Forms.ToolStripMenuItem AddDataToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem SelectCoordinateToolStripMenuItem;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup formatConversion;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem4;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem5;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem6;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem7;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem8;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem9;
+        private DevExpress.XtraBars.BarButtonItem highway;
+        private DevExpress.XtraBars.BarButtonItem elevation;
+        private DevExpress.XtraBars.BarButtonItem slopeGradient;
+        private DevExpress.XtraBars.BarButtonItem temperature;
+        private DevExpress.XtraBars.BarButtonItem landUseType;
+        private DevExpress.XtraBars.BarButtonItem landScapeType;
+        private DevExpress.XtraBars.BarButtonItem reliefAmplitude;
+        private DevExpress.XtraBars.BarButtonItem comprehensiveResistance;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
     }

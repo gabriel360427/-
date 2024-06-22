@@ -129,5 +129,10 @@ namespace 绿廊智绘.Custom_Forms
             bandNumListBox.ClearSelected();
             bandNumLabel.Text = bandNumListBox.SelectedItems.Count.ToString();
         }
+
+        private void ISODATAForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

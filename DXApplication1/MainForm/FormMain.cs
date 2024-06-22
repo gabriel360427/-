@@ -1139,8 +1139,8 @@ namespace 绿廊智绘
  	            //第三步:ROI工具所需参数设置	
                 HookHelper n_HookHelper = new HookHelper();
  	            m_HookHelper.Hook = this.mapControlMain;	
- 	            m_FormROI.Initialize(m_HookHelper.GetContent());	
- 	            //mFormROI.Initialize(this.mapControlMain as PIE.Carto.IPmdContents):	
+ 	            m_FormROI.Initialize(m_HookHelper.GetContent());
+                m_FormROI.Initialize(this.mapControlMain as PIE.Carto.IPmdContents);
  	            m_FormROI.SetROIName(m_ROILayerID);	
  	            m_FormROI.InitRoiLayer();	
  	            m_FormROI.ShowDialog();	
