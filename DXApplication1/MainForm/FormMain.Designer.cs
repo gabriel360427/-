@@ -138,6 +138,8 @@
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
+            this.地面起伏度 = new DevExpress.XtraBars.BarButtonItem();
             this.BASEMENT = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.mapProject = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.dataManagement = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -233,8 +235,6 @@
             this.SymbolSelectorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.LayerPropertyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SelectCoordinateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
-            this.地面起伏度 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar3)).BeginInit();
@@ -1293,6 +1293,22 @@
             this.barButtonItem3.Name = "barButtonItem3";
             this.barButtonItem3.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
+            // barButtonItem4
+            // 
+            this.barButtonItem4.Caption = "坡度处理";
+            this.barButtonItem4.Id = 124;
+            this.barButtonItem4.Name = "barButtonItem4";
+            this.barButtonItem4.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonItem4.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem4_ItemClick);
+            // 
+            // 地面起伏度
+            // 
+            this.地面起伏度.Caption = "地形起伏度处理";
+            this.地面起伏度.Id = 125;
+            this.地面起伏度.Name = "地面起伏度";
+            this.地面起伏度.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.地面起伏度.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.地面起伏度_ItemClick);
+            // 
             // BASEMENT
             // 
             this.BASEMENT.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -2142,22 +2158,6 @@
             this.SelectCoordinateToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.SelectCoordinateToolStripMenuItem.Text = "坐标系选择";
             this.SelectCoordinateToolStripMenuItem.Click += new System.EventHandler(this.SelectCoordinateToolStripMenuItem_Click);
-            // 
-            // barButtonItem4
-            // 
-            this.barButtonItem4.Caption = "坡度";
-            this.barButtonItem4.Id = 124;
-            this.barButtonItem4.Name = "barButtonItem4";
-            this.barButtonItem4.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.barButtonItem4.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem4_ItemClick);
-            // 
-            // 地面起伏度
-            // 
-            this.地面起伏度.Caption = "地形起伏度处理";
-            this.地面起伏度.Id = 125;
-            this.地面起伏度.Name = "地面起伏度";
-            this.地面起伏度.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.地面起伏度.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.地面起伏度_ItemClick);
             // 
             // FormMain
             // 

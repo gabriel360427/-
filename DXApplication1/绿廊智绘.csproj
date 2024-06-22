@@ -40,6 +40,58 @@
     <Reference Include="DevExpress.XtraBars.v18.1" />
     <Reference Include="DevExpress.Sparkline.v18.1.Core" />
     <Reference Include="DevExpress.XtraEditors.v18.1" />
+    <Reference Include="ESRI.ArcGIS.3DAnalyst, Version=10.4.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.ADF, Version=10.4.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86" />
+    <Reference Include="ESRI.ArcGIS.ADF.Connection.Local, Version=10.4.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86" />
+    <Reference Include="ESRI.ArcGIS.AxControls, Version=10.4.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
+    <Reference Include="ESRI.ArcGIS.Carto, Version=10.4.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Controls, Version=10.4.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.ConversionTools, Version=10.4.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
+    <Reference Include="ESRI.ArcGIS.DataSourcesFile, Version=10.4.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesRaster, Version=10.4.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Display, Version=10.4.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.GeoAnalyst, Version=10.4.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geodatabase, Version=10.4.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geometry, Version=10.4.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geoprocessing, Version=10.4.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geoprocessor, Version=10.4.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
+    <Reference Include="ESRI.ArcGIS.GlobeCore, Version=10.4.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Output, Version=10.4.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.SpatialAnalyst, Version=10.4.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.SpatialAnalystTools, Version=10.4.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
+    <Reference Include="ESRI.ArcGIS.System, Version=10.4.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.SystemUI, Version=10.4.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Version, Version=10.4.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
     <Reference Include="PIE.AdapterUI, Version=5.2.0.0, Culture=neutral, PublicKeyToken=ee1bc88606bd5383, processorArchitecture=x86" />
     <Reference Include="PIE.AdapterUICLR, Version=5.2.0.0, Culture=neutral, PublicKeyToken=ee1bc88606bd5383, processorArchitecture=x86" />
     <Reference Include="PIE.Carto, Version=5.2.0.0, Culture=neutral, PublicKeyToken=ee1bc88606bd5383" />
@@ -138,6 +190,12 @@
     </Compile>
     <Compile Include="Custom Forms\distanceClassifyForm.designer.cs">
       <DependentUpon>distanceClassifyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Forms\linearResistanceFactorNEW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\linearResistanceFactorNEW.designer.cs">
+      <DependentUpon>linearResistanceFactorNEW.cs</DependentUpon>
     </Compile>
     <Compile Include="Custom Forms\Relief.cs">
       <SubType>Form</SubType>
@@ -273,6 +331,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\linearResistanceFactor.resx">
       <DependentUpon>linearResistanceFactor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\linearResistanceFactorNEW.resx">
+      <DependentUpon>linearResistanceFactorNEW.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\maximumLikelihoodForm.resx">
       <DependentUpon>maximumLikelihoodForm.cs</DependentUpon>

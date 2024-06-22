@@ -1739,7 +1739,7 @@ namespace 绿廊智绘
         #region 铁路因子
         private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            linearResistanceFactor form = new linearResistanceFactor();
+            LinearResistenceFactorNEW form = new LinearResistenceFactorNEW();
             form.Text = "铁路因子";
             form.Column1.HeaderText = "距铁路距离（m）";
             form.Column2.HeaderText = "阻力值";
