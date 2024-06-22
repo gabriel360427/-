@@ -55,21 +55,21 @@
             // 
             this.groupBox1.Controls.Add(this.InputFile);
             this.groupBox1.Controls.Add(this.栅格数据输入框);
-            this.groupBox1.Location = new System.Drawing.Point(8, 8);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Location = new System.Drawing.Point(9, 10);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Size = new System.Drawing.Size(458, 49);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.groupBox1.Size = new System.Drawing.Size(625, 156);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "请输入栅格数据";
             // 
             // InputFile
             // 
-            this.InputFile.Location = new System.Drawing.Point(352, 14);
-            this.InputFile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.InputFile.Location = new System.Drawing.Point(479, 18);
+            this.InputFile.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.InputFile.Name = "InputFile";
-            this.InputFile.Size = new System.Drawing.Size(93, 27);
+            this.InputFile.Size = new System.Drawing.Size(106, 35);
             this.InputFile.TabIndex = 1;
             this.InputFile.Text = "加载";
             this.InputFile.UseVisualStyleBackColor = true;
@@ -78,10 +78,10 @@
             // 栅格数据输入框
             // 
             this.栅格数据输入框.FormattingEnabled = true;
-            this.栅格数据输入框.Location = new System.Drawing.Point(5, 18);
-            this.栅格数据输入框.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.栅格数据输入框.Location = new System.Drawing.Point(6, 23);
+            this.栅格数据输入框.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.栅格数据输入框.Name = "栅格数据输入框";
-            this.栅格数据输入框.Size = new System.Drawing.Size(332, 22);
+            this.栅格数据输入框.Size = new System.Drawing.Size(444, 26);
             this.栅格数据输入框.TabIndex = 0;
             this.栅格数据输入框.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             this.栅格数据输入框.Click += new System.EventHandler(this.comboBox1_Click);
@@ -93,21 +93,21 @@
             this.groupBox2.Controls.Add(this.添加条目);
             this.groupBox2.Controls.Add(this.唯一值);
             this.groupBox2.Controls.Add(this.dataGridView1);
-            this.groupBox2.Location = new System.Drawing.Point(8, 60);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Location = new System.Drawing.Point(9, 77);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox2.Size = new System.Drawing.Size(458, 139);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.groupBox2.Size = new System.Drawing.Size(625, 213);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "重分类";
             // 
             // 对新值取反
             // 
-            this.对新值取反.Location = new System.Drawing.Point(323, 102);
-            this.对新值取反.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.对新值取反.Location = new System.Drawing.Point(479, 160);
+            this.对新值取反.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.对新值取反.Name = "对新值取反";
-            this.对新值取反.Size = new System.Drawing.Size(93, 27);
+            this.对新值取反.Size = new System.Drawing.Size(106, 35);
             this.对新值取反.TabIndex = 5;
             this.对新值取反.Text = "对新值取反";
             this.对新值取反.UseVisualStyleBackColor = true;
@@ -115,10 +115,10 @@
             // 
             // 删除条目
             // 
-            this.删除条目.Location = new System.Drawing.Point(323, 72);
-            this.删除条目.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.删除条目.Location = new System.Drawing.Point(479, 119);
+            this.删除条目.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.删除条目.Name = "删除条目";
-            this.删除条目.Size = new System.Drawing.Size(93, 27);
+            this.删除条目.Size = new System.Drawing.Size(106, 35);
             this.删除条目.TabIndex = 4;
             this.删除条目.Text = "删除条目";
             this.删除条目.UseVisualStyleBackColor = true;
@@ -126,10 +126,10 @@
             // 
             // 添加条目
             // 
-            this.添加条目.Location = new System.Drawing.Point(323, 41);
-            this.添加条目.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.添加条目.Location = new System.Drawing.Point(479, 78);
+            this.添加条目.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.添加条目.Name = "添加条目";
-            this.添加条目.Size = new System.Drawing.Size(93, 27);
+            this.添加条目.Size = new System.Drawing.Size(106, 35);
             this.添加条目.TabIndex = 3;
             this.添加条目.Text = "添加条目";
             this.添加条目.UseVisualStyleBackColor = true;
@@ -137,10 +137,10 @@
             // 
             // 唯一值
             // 
-            this.唯一值.Location = new System.Drawing.Point(323, 11);
-            this.唯一值.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.唯一值.Location = new System.Drawing.Point(479, 37);
+            this.唯一值.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.唯一值.Name = "唯一值";
-            this.唯一值.Size = new System.Drawing.Size(93, 27);
+            this.唯一值.Size = new System.Drawing.Size(106, 35);
             this.唯一值.TabIndex = 2;
             this.唯一值.Text = "唯一值";
             this.唯一值.UseVisualStyleBackColor = true;
@@ -153,23 +153,25 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2});
-            this.dataGridView1.Location = new System.Drawing.Point(5, 17);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(6, 22);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 80;
             this.dataGridView1.RowTemplate.Height = 30;
-            this.dataGridView1.Size = new System.Drawing.Size(287, 118);
+            this.dataGridView1.Size = new System.Drawing.Size(444, 185);
             this.dataGridView1.TabIndex = 0;
             // 
             // Column1
             // 
             this.Column1.HeaderText = "旧值";
+            this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.Width = 150;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "新值";
+            this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.Width = 150;
             // 
@@ -179,21 +181,21 @@
             this.groupBox3.Controls.Add(this.OK);
             this.groupBox3.Controls.Add(this.OutputFile);
             this.groupBox3.Controls.Add(this.文件输出框);
-            this.groupBox3.Location = new System.Drawing.Point(8, 204);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Location = new System.Drawing.Point(9, 296);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox3.Size = new System.Drawing.Size(458, 71);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.groupBox3.Size = new System.Drawing.Size(625, 150);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "请设置栅格输出路径";
             // 
             // Cancel
             // 
-            this.Cancel.Location = new System.Drawing.Point(243, 40);
-            this.Cancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Cancel.Location = new System.Drawing.Point(360, 91);
+            this.Cancel.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Cancel.Name = "Cancel";
-            this.Cancel.Size = new System.Drawing.Size(93, 27);
+            this.Cancel.Size = new System.Drawing.Size(106, 35);
             this.Cancel.TabIndex = 4;
             this.Cancel.Text = "取消";
             this.Cancel.UseVisualStyleBackColor = true;
@@ -201,10 +203,10 @@
             // 
             // OK
             // 
-            this.OK.Location = new System.Drawing.Point(69, 40);
-            this.OK.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.OK.Location = new System.Drawing.Point(115, 91);
+            this.OK.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.OK.Name = "OK";
-            this.OK.Size = new System.Drawing.Size(93, 27);
+            this.OK.Size = new System.Drawing.Size(106, 35);
             this.OK.TabIndex = 3;
             this.OK.Text = "确认";
             this.OK.UseVisualStyleBackColor = true;
@@ -212,10 +214,10 @@
             // 
             // OutputFile
             // 
-            this.OutputFile.Location = new System.Drawing.Point(352, 13);
-            this.OutputFile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.OutputFile.Location = new System.Drawing.Point(479, 32);
+            this.OutputFile.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.OutputFile.Name = "OutputFile";
-            this.OutputFile.Size = new System.Drawing.Size(93, 27);
+            this.OutputFile.Size = new System.Drawing.Size(106, 35);
             this.OutputFile.TabIndex = 2;
             this.OutputFile.Text = "加载";
             this.OutputFile.UseVisualStyleBackColor = true;
@@ -224,24 +226,24 @@
             // 文件输出框
             // 
             this.文件输出框.FormattingEnabled = true;
-            this.文件输出框.Location = new System.Drawing.Point(5, 18);
-            this.文件输出框.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.文件输出框.Location = new System.Drawing.Point(46, 37);
+            this.文件输出框.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.文件输出框.Name = "文件输出框";
-            this.文件输出框.Size = new System.Drawing.Size(332, 22);
+            this.文件输出框.Size = new System.Drawing.Size(379, 26);
             this.文件输出框.TabIndex = 1;
             this.文件输出框.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // reClassification
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(475, 283);
+            this.ClientSize = new System.Drawing.Size(645, 457);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.MaximizeBox = false;
             this.Name = "reClassification";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

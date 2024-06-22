@@ -1732,11 +1732,94 @@ namespace 绿廊智绘
         #endregion
 
         #endregion
-        
+
         #endregion
 
-        #region 廊道提取
-        #region 铁路因子
+        #region 六、生态阻力面构建
+        #region 1.1 环境配置
+        private void barButtonItem1_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            MessageBox.Show("请保持默认设置，不要随意改动！", "温馨提示", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            Process processexe = Process.Start(Application.StartupPath + "\\GuidosToolbox3.0_64windows.exe");//安装至默认位置
+        }
+        #endregion
+
+        #region 1.2 数据预处理
+        private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            SurfaceResistanceFactor form = new SurfaceResistanceFactor();
+            form.Text = "二值数据转换";
+            form.groupBox1.Text = "请输入土地利用分类数据";
+            form.groupBox2.Text = "二值数据转换";
+            form.Column1.HeaderText = "土地类型";
+            form.Column2.HeaderText = "前景/背景";
+            form.dataGridView1.Rows.Add(new object[] { "0", "1" });
+            form.dataGridView1.Rows.Add(new object[] { "1", "2" });
+            form.dataGridView1.Rows.Add(new object[] { "2", "1" });
+            form.dataGridView1.Rows.Add(new object[] { "3", "2" });
+            form.dataGridView1.Rows.Add(new object[] { "4", "1" });
+            form.dataGridView1.Rows.Add(new object[] { "NoData", "NoData" });
+            form.richTextBox1.Text = "★☆★土地利用类型说明\r\n●0：建筑用地\r\n●1：水域\r\n●2：耕地\r\n●3：林地\r\n●4：其他用地\r\n\r\n★☆★二值说明\r\n●1：背景\r\n●2：前景\r\n\r\n本步通过重分类将土地利用数据转换为二值数据，包括：前景和背景，前景赋值为2，背景赋值为1。在这里将林地、水域作为前景，建筑用地、耕地和其他用地作为背景";
+            form.ShowDialog();
+        }
+        #endregion
+
+        #region 1.3 MSPA景观分类
+        private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Process proexe = Process.Start(@"C:\GuidosToolbox\guidostoolbox.sav");
+            //proexe.WaitForExit(); 
+            SurfaceResistanceFactor form = new SurfaceResistanceFactor();
+            form.Text = "MSPA景观分类";
+            form.groupBox1.Text = "请输入MSPA执行结果";
+            form.groupBox2.Text = "分类后整理";
+            form.Column1.HeaderText = "旧值";
+            form.Column2.HeaderText = "景观类型";
+            form.dataGridView1.Rows.Add(new object[] { "17", "0" });
+            form.dataGridView1.Rows.Add(new object[] { "117", "0" });
+            form.dataGridView1.Rows.Add(new object[] { "9", "1" });
+            form.dataGridView1.Rows.Add(new object[] { "109", "1" });
+            form.dataGridView1.Rows.Add(new object[] { "5", "2" });
+            form.dataGridView1.Rows.Add(new object[] { "105", "2" });
+            form.dataGridView1.Rows.Add(new object[] { "3", "3" });
+            form.dataGridView1.Rows.Add(new object[] { "65", "4" });
+            form.dataGridView1.Rows.Add(new object[] { "67", "4" });
+            form.dataGridView1.Rows.Add(new object[] { "69", "4" });
+            form.dataGridView1.Rows.Add(new object[] { "165", "4" });
+            form.dataGridView1.Rows.Add(new object[] { "167", "4" });
+            form.dataGridView1.Rows.Add(new object[] { "169", "4" });
+            form.dataGridView1.Rows.Add(new object[] { "33", "5" });
+            form.dataGridView1.Rows.Add(new object[] { "35", "5" });
+            form.dataGridView1.Rows.Add(new object[] { "37", "5" });
+            form.dataGridView1.Rows.Add(new object[] { "133", "5" });
+            form.dataGridView1.Rows.Add(new object[] { "135", "5" });
+            form.dataGridView1.Rows.Add(new object[] { "137", "5" });
+            form.dataGridView1.Rows.Add(new object[] { "1", "6" });
+            form.dataGridView1.Rows.Add(new object[] { "101", "6" });
+            form.dataGridView1.Rows.Add(new object[] { "0", "7" });
+            form.dataGridView1.Rows.Add(new object[] { "NoData", "NoData" });
+            form.richTextBox1.Text = "★☆★操作步骤说明\r\n①进入Guidos工具窗口，读取二值数据：【File】-【ReadImage】-【GeoTiff】打开上一步中导出的二值栅格图像\r\n②转换图像格式：【General Tools】-【Preprocessing】-【Convert】-【Convert->Byte】将图像转换为Byte格式\r\n③设置参数:FGConn勾选（8邻域）；EdgeWidth设置为2；Transition勾选（On）；Intext勾选（On）；其余均保持默认\r\n④执行MSPA：【Image Analysis】-【Pattern】-【Morphological】-【MSPA Tilling】开始分析\r\n⑤保存结果图像：【File】-【SaveImage】-【GeoTiff】将结果保存为栅格图像\r\n⑥进行分类后处理：关闭Guidos窗口，输入MSPA执行后的栅格数据，进行重分类合并调整得到7种景观类型\r\n\r\n★☆★MSPA景观类型说明\r\n●0：Core-核心区\r\n●1：Islet-孤岛\r\n●2：Perforation-穿孔\r\n●3：Edge-边缘区\r\n●4：Loop-环道\r\n●5：Bridge-桥接区\r\n●6：Branch-支线\r\n●7：Background-背景\r\n\r\n";
+            form.ShowDialog();
+        }
+        #endregion
+
+        #region 2.1 坡度
+        private void barButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            slope Form = new slope();
+            Form.ShowDialog();
+        }
+        #endregion
+
+        #region 2.2 地形起伏度
+        private void 地面起伏度_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Relief Form = new Relief();
+            Form.ShowDialog();
+        }
+        #endregion
+
+        #region 3.1 铁路因子
         private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             LinearResistenceFactorNEW form = new LinearResistenceFactorNEW();
@@ -1752,8 +1835,151 @@ namespace 绿廊智绘
             form.ShowDialog();
         }
         #endregion
+
+        #region 3.2 公路因子
+        private void highway_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            LinearResistenceFactorNEW form = new LinearResistenceFactorNEW();
+            form.Text = "公路因子";
+            form.Column1.HeaderText = "距公路距离（m）";
+            form.Column2.HeaderText = "阻力值";
+            form.dataGridView1.Rows.Add(new object[] { "1000", "100" });
+            form.dataGridView1.Rows.Add(new object[] { "2000", "80" });
+            form.dataGridView1.Rows.Add(new object[] { "3000", "60" });
+            form.dataGridView1.Rows.Add(new object[] { "5000", "20" });
+            form.dataGridView1.Rows.Add(new object[] { "∞", "1" });
+            form.dataGridView1.Rows.Add(new object[] { "NoData", "NoData" });
+            form.ShowDialog();
+        }
         #endregion
-        #region 制图输出
+
+        #region 3.3 高程因子
+        private void elevation_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            SurfaceResistanceFactor form = new SurfaceResistanceFactor();
+            form.Text = "高程因子";
+            form.Column1.HeaderText = "高程（m）";
+            form.Column2.HeaderText = "阻力值";
+            form.dataGridView1.Rows.Add(new object[] { "300-∞", "100" });
+            form.dataGridView1.Rows.Add(new object[] { "200-300", "80" });
+            form.dataGridView1.Rows.Add(new object[] { "100-200", "60" });
+            form.dataGridView1.Rows.Add(new object[] { "50-100", "20" });
+            form.dataGridView1.Rows.Add(new object[] { "-∞-50", "1" });
+            form.dataGridView1.Rows.Add(new object[] { "NoData", "NoData" });
+            form.ShowDialog();
+        }
+        #endregion
+
+        #region 3.4 坡度因子
+        private void slopeGradient_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            SurfaceResistanceFactor form = new SurfaceResistanceFactor();
+            form.Text = "坡度因子";
+            form.Column1.HeaderText = "坡度（°）";
+            form.Column2.HeaderText = "阻力值";
+            form.dataGridView1.Rows.Add(new object[] { "0-8", "1" });
+            form.dataGridView1.Rows.Add(new object[] { "8-15", "20" });
+            form.dataGridView1.Rows.Add(new object[] { "15-25", "60" });
+            form.dataGridView1.Rows.Add(new object[] { "25-35", "80" });
+            form.dataGridView1.Rows.Add(new object[] { "35-90", "100" });
+            form.dataGridView1.Rows.Add(new object[] { "NoData", "NoData" });
+            form.ShowDialog();
+        }
+        #endregion
+
+        #region 3.5 温度因子
+        private void temperature_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            SurfaceResistanceFactor form = new SurfaceResistanceFactor();
+            form.Text = "温度因子";
+            form.Column1.HeaderText = "地表温度（℃）";
+            form.Column2.HeaderText = "阻力值";
+            form.dataGridView1.Rows.Add(new object[] { "18-20", "1" });
+            form.dataGridView1.Rows.Add(new object[] { "15-18", "20" });
+            form.dataGridView1.Rows.Add(new object[] { "20-23", "20" });
+            form.dataGridView1.Rows.Add(new object[] { "10-15", "60" });
+            form.dataGridView1.Rows.Add(new object[] { "23-28", "60" });
+            form.dataGridView1.Rows.Add(new object[] { "28-35", "80" });
+            form.dataGridView1.Rows.Add(new object[] { "8-15", "80" });
+            form.dataGridView1.Rows.Add(new object[] { "-∞-8", "100" });
+            form.dataGridView1.Rows.Add(new object[] { "35-∞", "100" });
+            form.dataGridView1.Rows.Add(new object[] { "NoData", "NoData" });
+            form.ShowDialog();
+        }
+        #endregion
+
+        #region 3.6 用地类型因子
+        private void landUseType_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            SurfaceResistanceFactor form = new SurfaceResistanceFactor();
+            form.Text = "用地类型因子";
+            form.Column1.HeaderText = "用地类型";
+            form.Column2.HeaderText = "阻力值";
+            form.dataGridView1.Rows.Add(new object[] { "0", "1" });
+            form.dataGridView1.Rows.Add(new object[] { "1", "20" });
+            form.dataGridView1.Rows.Add(new object[] { "2", "30" });
+            form.dataGridView1.Rows.Add(new object[] { "3", "50" });
+            form.dataGridView1.Rows.Add(new object[] { "4", "100" });
+            form.dataGridView1.Rows.Add(new object[] { "NoData", "NoData" });
+            form.richTextBox1.Text = "★☆★用地类型说明\r\n●0：林地\r\n●1：耕地\r\n●2：其他用地\r\n●3：水体\r\n●4：建设用地\r\n";
+            form.ShowDialog();
+        }
+        #endregion
+
+        #region 3.7 景观类型因子
+        private void landScapeType_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            SurfaceResistanceFactor form = new SurfaceResistanceFactor();
+            form.Text = "MSPA景观类型因子";
+            form.Column1.HeaderText = "MSPA景观类型";
+            form.Column2.HeaderText = "阻力值";
+            form.dataGridView1.Rows.Add(new object[] { "0", "5" });
+            form.dataGridView1.Rows.Add(new object[] { "1", "50" });
+            form.dataGridView1.Rows.Add(new object[] { "2", "70" });
+            form.dataGridView1.Rows.Add(new object[] { "3", "60" });
+            form.dataGridView1.Rows.Add(new object[] { "4", "20" });
+            form.dataGridView1.Rows.Add(new object[] { "5", "10" });
+            form.dataGridView1.Rows.Add(new object[] { "6", "30" });
+            form.dataGridView1.Rows.Add(new object[] { "7", "100" });
+            form.dataGridView1.Rows.Add(new object[] { "NoData", "NoData" });
+            form.richTextBox1.Text = "★☆★MSPA景观类型说明\r\n●0：Core-核心区\r\n●1：Islet-孤岛\r\n●2：Perforation-穿孔\r\n●3：Edge-边缘区\r\n●4：Loop-环道\r\n●5：Bridge-桥接区\r\n●6：Branch-支线\r\n●7：Background-背景";
+            form.ShowDialog();
+        }
+        #endregion
+
+        #region 3.8 地形起伏度因子
+        private void reliefAmplitude_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            SurfaceResistanceFactor form = new SurfaceResistanceFactor();
+            form.Text = "地形起伏度因子";
+            form.Column1.HeaderText = "地形起伏度（m）";
+            form.Column2.HeaderText = "阻力值";
+            form.dataGridView1.Rows.Add(new object[] { "0-15", "1" });
+            form.dataGridView1.Rows.Add(new object[] { "15-30", "20" });
+            form.dataGridView1.Rows.Add(new object[] { "30-60", "60" });
+            form.dataGridView1.Rows.Add(new object[] { "60-90", "80" });
+            form.dataGridView1.Rows.Add(new object[] { "90-∞", "100" });
+            form.dataGridView1.Rows.Add(new object[] { "NoData", "NoData" });
+            form.ShowDialog();
+        }
+        #endregion
+
+        #region 4 综合阻力
+        private void comprehensiveResistance_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            BandSynthesisForm frm1 = new BandSynthesisForm();
+            frm1.ShowDialog();
+            comprehensiveResistance frm2 = new comprehensiveResistance();
+            frm2.ShowDialog();
+        }
+        #endregion
+        #endregion
+
+        #region 七、生态廊道识别
+
+        #endregion
+
+        #region 八、制图输出
 
         #region 1. 数据操作
         private void zoomIn1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -1890,22 +2116,26 @@ namespace 绿廊智绘
 
         #endregion
 
-        #region 六、生态阻力面构建
-        #region 2.1 坡度
-        private void barButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            slope Form = new slope();
-            Form.ShowDialog();
-        }
-        #endregion
+       
 
-        #region 2.2 地形起伏度
-        private void 地面起伏度_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            Relief Form = new Relief();
-            Form.ShowDialog();
-        }
-        #endregion 
-        #endregion
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
     }
 }

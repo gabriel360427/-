@@ -275,6 +275,18 @@
     <Compile Include="Custom Forms\quickMosaicForm.designer.cs">
       <DependentUpon>quickMosaicForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Custom Forms\SurfaceResistanceFactor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\SurfaceResistanceFactor.designer.cs">
+      <DependentUpon>SurfaceResistanceFactor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Forms\comprehensiveResistance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\comprehensiveResistance.designer.cs">
+      <DependentUpon>comprehensiveResistance.cs</DependentUpon>
+    </Compile>
     <Compile Include="Custom Tools\SpatialQueryTool.cs" />
     <Compile Include="MainForm\FormMain.cs">
       <SubType>Form</SubType>
@@ -361,6 +373,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\quickMosaicForm.resx">
       <DependentUpon>quickMosaicForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\SurfaceResistanceFactor.resx">
+      <DependentUpon>SurfaceResistanceFactor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\comprehensiveResistance.resx">
+      <DependentUpon>comprehensiveResistance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
