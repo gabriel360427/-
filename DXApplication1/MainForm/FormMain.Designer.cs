@@ -1234,6 +1234,8 @@
             // 
             this.slopeGradient.Caption = "坡度";
             this.slopeGradient.Id = 115;
+            this.slopeGradient.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("slopeGradient.ImageOptions.Image")));
+            this.slopeGradient.LargeWidth = 60;
             this.slopeGradient.Name = "slopeGradient";
             this.slopeGradient.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -1241,6 +1243,8 @@
             // 
             this.temperature.Caption = "温度";
             this.temperature.Id = 116;
+            this.temperature.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("temperature.ImageOptions.Image")));
+            this.temperature.LargeWidth = 60;
             this.temperature.Name = "temperature";
             this.temperature.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -1248,6 +1252,8 @@
             // 
             this.landUseType.Caption = "用地类型";
             this.landUseType.Id = 117;
+            this.landUseType.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("landUseType.ImageOptions.Image")));
+            this.landUseType.LargeWidth = 60;
             this.landUseType.Name = "landUseType";
             this.landUseType.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -1255,6 +1261,8 @@
             // 
             this.landScapeType.Caption = "景观类型";
             this.landScapeType.Id = 118;
+            this.landScapeType.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("landScapeType.ImageOptions.Image")));
+            this.landScapeType.LargeWidth = 60;
             this.landScapeType.Name = "landScapeType";
             this.landScapeType.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -1262,6 +1270,7 @@
             // 
             this.reliefAmplitude.Caption = "地形起伏度";
             this.reliefAmplitude.Id = 119;
+            this.reliefAmplitude.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("reliefAmplitude.ImageOptions.Image")));
             this.reliefAmplitude.Name = "reliefAmplitude";
             this.reliefAmplitude.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -1269,6 +1278,7 @@
             // 
             this.comprehensiveResistance.Caption = "综合阻力";
             this.comprehensiveResistance.Id = 120;
+            this.comprehensiveResistance.ImageOptions.Image = global::绿廊智绘.Properties.Resources.EndmemberExtraction;
             this.comprehensiveResistance.Name = "comprehensiveResistance";
             this.comprehensiveResistance.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -1276,6 +1286,7 @@
             // 
             this.barButtonItem1.Caption = "环境配置";
             this.barButtonItem1.Id = 121;
+            this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
             this.barButtonItem1.Name = "barButtonItem1";
             this.barButtonItem1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -1283,6 +1294,7 @@
             // 
             this.barButtonItem2.Caption = "数据预处理";
             this.barButtonItem2.Id = 122;
+            this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
             this.barButtonItem2.Name = "barButtonItem2";
             this.barButtonItem2.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -1297,6 +1309,7 @@
             // 
             this.barButtonItem4.Caption = "坡度处理";
             this.barButtonItem4.Id = 124;
+            this.barButtonItem4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.Image")));
             this.barButtonItem4.Name = "barButtonItem4";
             this.barButtonItem4.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.barButtonItem4.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem4_ItemClick);
@@ -1305,6 +1318,7 @@
             // 
             this.地面起伏度.Caption = "地形起伏度处理";
             this.地面起伏度.Id = 125;
+            this.地面起伏度.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("地面起伏度.ImageOptions.Image")));
             this.地面起伏度.Name = "地面起伏度";
             this.地面起伏度.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.地面起伏度.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.地面起伏度_ItemClick);
