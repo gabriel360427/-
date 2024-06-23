@@ -414,3 +414,15 @@ E:\桌面\PIE\6.22\-\DXApplication1\obj\Debug\绿廊智绘.csproj.CopyComplete
 E:\桌面\PIE\6.22\-\DXApplication1\obj\Debug\绿廊智绘.exe
 E:\桌面\PIE\6.22\-\DXApplication1\obj\Debug\绿廊智绘.pdb
 E:\桌面\PIE\6.22\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.comprehensiveResistance.resources
+E:\桌面\PIE\6.22\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.CoreAreaExtraction.resources
+E:\桌面\PIE\6.22\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.CoreAreaDivision.resources
+E:\桌面\PIE\6.22\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.CostDistanceCalculation.resources
+E:\桌面\PIE\6.22\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.CostPathCalculation.resources
+E:\桌面\PIE\6.22\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.Sampling.resources
+E:\桌面\PIE\6.22\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.CorridorAddField.resources
+E:\桌面\PIE\6.22\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.EcologicalNodeExtraction.resources
+E:\桌面\PIE\6.22\-\DXApplication1\bin\Debug\ESRI.ArcGIS.AnalysisTools.dll
+E:\桌面\PIE\6.22\-\DXApplication1\bin\Debug\ESRI.ArcGIS.Geoprocessing.dll
+E:\桌面\PIE\6.22\-\DXApplication1\bin\Debug\ESRI.ArcGIS.AnalysisTools.xml
+E:\桌面\PIE\6.22\-\DXApplication1\bin\Debug\ESRI.ArcGIS.AnalysisTools.dll.config
+E:\桌面\PIE\6.22\-\DXApplication1\bin\Debug\ESRI.ArcGIS.Geoprocessing.xml

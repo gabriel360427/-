@@ -706,10 +706,12 @@ namespace 绿廊智绘
         #endregion
 
         #endregion
+
         #endregion
 
         #region 二、显示控制
-        //修改RGB波段
+
+        #region 修改RGB波段
         private void rgbCombine_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             if (mapControlMain.ActiveView.CurrentLayer == null) return;
@@ -730,6 +732,7 @@ namespace 绿廊智绘
             //刷新视图  
             mapControlMain.ActiveView.PartialRefresh(ViewDrawPhaseType.ViewAll);
         }
+        #endregion
 
         #region Scroll部分
         //滚动条调节亮度
@@ -941,6 +944,7 @@ namespace 绿廊智绘
             }
         }
         #endregion
+
         #endregion
 
         #region 三、影像处理
@@ -1463,6 +1467,7 @@ namespace 绿廊智绘
         #endregion
 
         #region 五、矢量处理与格式转换
+
         #region 1. 矢量工具
         #region 1.1 开始编辑
         private void startEdit_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -1736,6 +1741,8 @@ namespace 绿廊智绘
         #endregion
 
         #region 六、生态阻力面构建
+
+        #region 1. MSPA景观分类
         #region 1.1 环境配置
         private void barButtonItem1_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -1802,7 +1809,9 @@ namespace 绿廊智绘
             form.ShowDialog();
         }
         #endregion
+        #endregion
 
+        #region 2. DEM数据处理
         #region 2.1 坡度
         private void barButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -1818,7 +1827,9 @@ namespace 绿廊智绘
             Form.ShowDialog();
         }
         #endregion
+        #endregion
 
+        #region 3. 单因子阻力面
         #region 3.1 铁路因子
         private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -1963,8 +1974,9 @@ namespace 绿廊智绘
             form.ShowDialog();
         }
         #endregion
+        #endregion
 
-        #region 4 综合阻力
+        #region 4. 综合阻力
         private void comprehensiveResistance_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             BandSynthesisForm frm1 = new BandSynthesisForm();
@@ -1973,9 +1985,135 @@ namespace 绿廊智绘
             frm2.ShowDialog();
         }
         #endregion
+
         #endregion
 
         #region 七、生态廊道识别
+
+        #region 1. 核心区重要性
+        private void ImportanceOfcore_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Process processexe = Process.Start(Application.StartupPath + "\\Conefor26.exe");
+        }
+
+        #endregion
+
+        #region 2. 核心区
+
+        #region 2.1 核心区提取
+        private void CoreAreaExtraction_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            CoreAreaExtraction form = new CoreAreaExtraction();
+            form.ShowDialog();
+        }
+        #endregion
+
+        #region 2.2 核心区划分
+        private void CoreAreaDivision_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            CoreAreaDivision frm = new CoreAreaDivision();
+            frm.ShowDialog();
+        }
+        #endregion
+
+        #endregion
+
+        #region 3. 生态廊道识别
+
+        #region 3.1 成本距离计算
+        private void CostDistanceCalculation_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            CostDistanceCalculation form = new CostDistanceCalculation();
+            form.ShowDialog();
+        }
+        #endregion
+
+        #region 3.2 成本路径计算
+        private void CostPathCalculation_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            CostPathCalculation form = new CostPathCalculation();
+            form.ShowDialog();
+        }
+        #endregion
+
+        #region 3.3 采样
+        private void Sampling_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Sampling form = new Sampling();
+            form.ShowDialog();
+        }
+        #endregion
+
+        #region 3.4 廊道添加字段
+        private void CorridorAddField_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            CorridorAddField form = new CorridorAddField();
+            form.ShowDialog();
+        }
+        #endregion
+
+        #region 3.5 廊道分级
+        private void CorridorGrading_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (mapControlMain.ActiveView.CurrentLayer == null) return;
+            IFeatureLayer featureLayer = mapControlMain.ActiveView.CurrentLayer as IFeatureLayer;
+            if (featureLayer == null) return;
+
+            //1、分级字段，根据实际情况进行修改
+            string classifyField = "grade";
+            //创建FeatureClassBreaksRender，设置参数
+            IFeatureClassBreaksRender featureClassBreaksRender = new FeatureClassBreaksRender();
+            featureClassBreaksRender.Field = classifyField;  //设置渲染字段
+            featureClassBreaksRender.ClassCount = 2;//设置分级数
+            featureClassBreaksRender.SortClassesAscending = true;
+
+            //分级数、分级的值，根据实际情况自定义修改即可
+            //2、设置分级级别
+            featureClassBreaksRender.SetBreak(0, 1);
+            featureClassBreaksRender.SetBreak(1, 2);
+
+            //3、 定义简单填充符号
+            IFillSymbol fillSymbol0 = new SimpleFillSymbol();
+            fillSymbol0.Color = Color.FromArgb(255, 0, 0);
+            IFillSymbol fillSymbol1 = new SimpleFillSymbol();
+            fillSymbol1.Color = Color.FromArgb(0, 255, 0);
+
+            ISimpleLineSymbol simpleLSymbol1 = new SimpleLineSymbol();
+            simpleLSymbol1.Style = SimpleLineStyle.SLSDashDot;
+            ILineSymbol lineSymbol1 = simpleLSymbol1 as LineSymbol;
+            lineSymbol1.Color = System.Drawing.Color.Red;
+            lineSymbol1.Width = 5;
+            ISimpleLineSymbol simpleLSymbol2 = new SimpleLineSymbol();
+            simpleLSymbol2.Style = SimpleLineStyle.SLSDashDot;
+            ILineSymbol lineSymbol2 = simpleLSymbol2 as LineSymbol;
+            lineSymbol2.Color = System.Drawing.Color.Blue;
+            lineSymbol2.Width = 1;
+
+            //设置分级符号
+            featureClassBreaksRender.SetSymbol(0, lineSymbol1);
+            featureClassBreaksRender.SetSymbol(1, lineSymbol2);
+
+            //4、设置分级标签
+            featureClassBreaksRender.SetLabel(0, "第一级");
+            featureClassBreaksRender.SetLabel(1, "第二级");
+
+            //5、进行渲染并刷新
+            featureLayer.Render = featureClassBreaksRender as IFeatureRender;
+            mapControlMain.ActiveView.PartialRefresh(ViewDrawPhaseType.ViewAll);
+        }
+
+        #endregion
+
+        #endregion
+
+        #region 4. 生态节点
+        private void EcologicalNodeExtraction_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            EcologicalNodeExtraction form = new EcologicalNodeExtraction();
+            form.ShowDialog();
+        }
+
+        #endregion
 
         #endregion
 
@@ -2103,6 +2241,7 @@ namespace 绿廊智绘
             }
         }
         #endregion
+
         #region 4. 地图输出
         private void mapExport_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -2112,30 +2251,16 @@ namespace 绿廊智绘
         }
 
 
-        #endregion
+
+
+
+
+
+
 
         #endregion
 
-       
+        #endregion
 
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
     }
 }

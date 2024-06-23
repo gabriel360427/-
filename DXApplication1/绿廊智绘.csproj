@@ -45,6 +45,7 @@
     </Reference>
     <Reference Include="ESRI.ArcGIS.ADF, Version=10.4.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86" />
     <Reference Include="ESRI.ArcGIS.ADF.Connection.Local, Version=10.4.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86" />
+    <Reference Include="ESRI.ArcGIS.AnalysisTools, Version=10.4.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
     <Reference Include="ESRI.ArcGIS.AxControls, Version=10.4.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
     <Reference Include="ESRI.ArcGIS.Carto, Version=10.4.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
       <EmbedInteropTypes>False</EmbedInteropTypes>
@@ -72,7 +73,7 @@
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="ESRI.ArcGIS.Geoprocessing, Version=10.4.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
-      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="ESRI.ArcGIS.Geoprocessor, Version=10.4.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
     <Reference Include="ESRI.ArcGIS.GlobeCore, Version=10.4.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
@@ -287,6 +288,48 @@
     <Compile Include="Custom Forms\comprehensiveResistance.designer.cs">
       <DependentUpon>comprehensiveResistance.cs</DependentUpon>
     </Compile>
+    <Compile Include="Custom Forms\CoreAreaExtraction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\CoreAreaExtraction.designer.cs">
+      <DependentUpon>CoreAreaExtraction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Forms\CoreAreaDivision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\CoreAreaDivision.designer.cs">
+      <DependentUpon>CoreAreaDivision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Forms\CostDistanceCalculation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\CostDistanceCalculation.designer.cs">
+      <DependentUpon>CostDistanceCalculation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Forms\CostPathCalculation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\CostPathCalculation.designer.cs">
+      <DependentUpon>CostPathCalculation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Forms\Sampling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\Sampling.designer.cs">
+      <DependentUpon>Sampling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Forms\CorridorAddField.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\CorridorAddField.designer.cs">
+      <DependentUpon>CorridorAddField.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Forms\EcologicalNodeExtraction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\EcologicalNodeExtraction.designer.cs">
+      <DependentUpon>EcologicalNodeExtraction.cs</DependentUpon>
+    </Compile>
     <Compile Include="Custom Tools\SpatialQueryTool.cs" />
     <Compile Include="MainForm\FormMain.cs">
       <SubType>Form</SubType>
@@ -379,6 +422,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\comprehensiveResistance.resx">
       <DependentUpon>comprehensiveResistance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\CoreAreaExtraction.resx">
+      <DependentUpon>CoreAreaExtraction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\CoreAreaDivision.resx">
+      <DependentUpon>CoreAreaDivision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\CostDistanceCalculation.resx">
+      <DependentUpon>CostDistanceCalculation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\CostPathCalculation.resx">
+      <DependentUpon>CostPathCalculation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\Sampling.resx">
+      <DependentUpon>Sampling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\CorridorAddField.resx">
+      <DependentUpon>CorridorAddField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\EcologicalNodeExtraction.resx">
+      <DependentUpon>EcologicalNodeExtraction.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>

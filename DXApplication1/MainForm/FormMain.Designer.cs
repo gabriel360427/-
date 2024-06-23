@@ -135,11 +135,20 @@
             this.landScapeType = new DevExpress.XtraBars.BarButtonItem();
             this.reliefAmplitude = new DevExpress.XtraBars.BarButtonItem();
             this.comprehensiveResistance = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
-            this.地面起伏度 = new DevExpress.XtraBars.BarButtonItem();
+            this.EnvironmentConfiguration = new DevExpress.XtraBars.BarButtonItem();
+            this.DataPreprocessing = new DevExpress.XtraBars.BarButtonItem();
+            this.MSPAlandscapeclassification = new DevExpress.XtraBars.BarButtonItem();
+            this.SlopeProcessing = new DevExpress.XtraBars.BarButtonItem();
+            this.TerrainReliefProcessing = new DevExpress.XtraBars.BarButtonItem();
+            this.ImportanceOfcore = new DevExpress.XtraBars.BarButtonItem();
+            this.CoreAreaExtraction = new DevExpress.XtraBars.BarButtonItem();
+            this.CoreAreaDivision = new DevExpress.XtraBars.BarButtonItem();
+            this.CostDistanceCalculation = new DevExpress.XtraBars.BarButtonItem();
+            this.CostPathCalculation = new DevExpress.XtraBars.BarButtonItem();
+            this.Sampling = new DevExpress.XtraBars.BarButtonItem();
+            this.CorridorAddField = new DevExpress.XtraBars.BarButtonItem();
+            this.CorridorGrading = new DevExpress.XtraBars.BarButtonItem();
+            this.EcologicalNodeExtraction = new DevExpress.XtraBars.BarButtonItem();
             this.BASEMENT = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.mapProject = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.dataManagement = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -173,6 +182,9 @@
             this.comprehensiveResistanceSurface = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.生态廊道识别 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.生态节点 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.dataOperation = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.viewOperation = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -367,14 +379,23 @@
             this.landScapeType,
             this.reliefAmplitude,
             this.comprehensiveResistance,
-            this.barButtonItem1,
-            this.barButtonItem2,
-            this.barButtonItem3,
-            this.barButtonItem4,
-            this.地面起伏度});
+            this.EnvironmentConfiguration,
+            this.DataPreprocessing,
+            this.MSPAlandscapeclassification,
+            this.SlopeProcessing,
+            this.TerrainReliefProcessing,
+            this.ImportanceOfcore,
+            this.CoreAreaExtraction,
+            this.CoreAreaDivision,
+            this.CostDistanceCalculation,
+            this.CostPathCalculation,
+            this.Sampling,
+            this.CorridorAddField,
+            this.CorridorGrading,
+            this.EcologicalNodeExtraction});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.ribbonControl1.MaxItemId = 126;
+            this.ribbonControl1.MaxItemId = 135;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.BASEMENT,
@@ -1280,45 +1301,117 @@
             this.comprehensiveResistance.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.comprehensiveResistance.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.comprehensiveResistance_ItemClick);
             // 
-            // barButtonItem1
+            // EnvironmentConfiguration
             // 
-            this.barButtonItem1.Caption = "环境配置";
-            this.barButtonItem1.Id = 121;
-            this.barButtonItem1.Name = "barButtonItem1";
-            this.barButtonItem1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick_1);
+            this.EnvironmentConfiguration.Caption = "环境配置";
+            this.EnvironmentConfiguration.Id = 121;
+            this.EnvironmentConfiguration.Name = "EnvironmentConfiguration";
+            this.EnvironmentConfiguration.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.EnvironmentConfiguration.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick_1);
             // 
-            // barButtonItem2
+            // DataPreprocessing
             // 
-            this.barButtonItem2.Caption = "数据预处理";
-            this.barButtonItem2.Id = 122;
-            this.barButtonItem2.Name = "barButtonItem2";
-            this.barButtonItem2.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.barButtonItem2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick);
+            this.DataPreprocessing.Caption = "数据预处理";
+            this.DataPreprocessing.Id = 122;
+            this.DataPreprocessing.Name = "DataPreprocessing";
+            this.DataPreprocessing.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.DataPreprocessing.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick);
             // 
-            // barButtonItem3
+            // MSPAlandscapeclassification
             // 
-            this.barButtonItem3.Caption = "MSPA景观分类";
-            this.barButtonItem3.Id = 123;
-            this.barButtonItem3.Name = "barButtonItem3";
-            this.barButtonItem3.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.barButtonItem3.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem3_ItemClick);
+            this.MSPAlandscapeclassification.Caption = "MSPA景观分类";
+            this.MSPAlandscapeclassification.Id = 123;
+            this.MSPAlandscapeclassification.Name = "MSPAlandscapeclassification";
+            this.MSPAlandscapeclassification.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.MSPAlandscapeclassification.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem3_ItemClick);
             // 
-            // barButtonItem4
+            // SlopeProcessing
             // 
-            this.barButtonItem4.Caption = "坡度处理";
-            this.barButtonItem4.Id = 124;
-            this.barButtonItem4.Name = "barButtonItem4";
-            this.barButtonItem4.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.barButtonItem4.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem4_ItemClick);
+            this.SlopeProcessing.Caption = "坡度处理";
+            this.SlopeProcessing.Id = 124;
+            this.SlopeProcessing.Name = "SlopeProcessing";
+            this.SlopeProcessing.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.SlopeProcessing.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem4_ItemClick);
             // 
-            // 地面起伏度
+            // TerrainReliefProcessing
             // 
-            this.地面起伏度.Caption = "地形起伏度处理";
-            this.地面起伏度.Id = 125;
-            this.地面起伏度.Name = "地面起伏度";
-            this.地面起伏度.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.地面起伏度.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.地面起伏度_ItemClick);
+            this.TerrainReliefProcessing.Caption = "地形起伏度处理";
+            this.TerrainReliefProcessing.Id = 125;
+            this.TerrainReliefProcessing.Name = "TerrainReliefProcessing";
+            this.TerrainReliefProcessing.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.TerrainReliefProcessing.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.地面起伏度_ItemClick);
+            // 
+            // ImportanceOfcore
+            // 
+            this.ImportanceOfcore.Caption = "核心区重要性";
+            this.ImportanceOfcore.Id = 126;
+            this.ImportanceOfcore.Name = "ImportanceOfcore";
+            this.ImportanceOfcore.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.ImportanceOfcore.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.ImportanceOfcore_ItemClick);
+            // 
+            // CoreAreaExtraction
+            // 
+            this.CoreAreaExtraction.Caption = "核心区提取";
+            this.CoreAreaExtraction.Id = 127;
+            this.CoreAreaExtraction.Name = "CoreAreaExtraction";
+            this.CoreAreaExtraction.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.CoreAreaExtraction.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.CoreAreaExtraction_ItemClick);
+            // 
+            // CoreAreaDivision
+            // 
+            this.CoreAreaDivision.Caption = "核心区划分";
+            this.CoreAreaDivision.Id = 128;
+            this.CoreAreaDivision.Name = "CoreAreaDivision";
+            this.CoreAreaDivision.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.CoreAreaDivision.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.CoreAreaDivision_ItemClick);
+            // 
+            // CostDistanceCalculation
+            // 
+            this.CostDistanceCalculation.Caption = "成本距离计算";
+            this.CostDistanceCalculation.Id = 129;
+            this.CostDistanceCalculation.Name = "CostDistanceCalculation";
+            this.CostDistanceCalculation.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.CostDistanceCalculation.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.CostDistanceCalculation_ItemClick);
+            // 
+            // CostPathCalculation
+            // 
+            this.CostPathCalculation.Caption = "成本路径计算";
+            this.CostPathCalculation.Id = 130;
+            this.CostPathCalculation.Name = "CostPathCalculation";
+            this.CostPathCalculation.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.CostPathCalculation.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.CostPathCalculation_ItemClick);
+            // 
+            // Sampling
+            // 
+            this.Sampling.Caption = "采样";
+            this.Sampling.Id = 131;
+            this.Sampling.Name = "Sampling";
+            this.Sampling.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.Sampling.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Sampling_ItemClick);
+            // 
+            // CorridorAddField
+            // 
+            this.CorridorAddField.Caption = "廊道添加字段";
+            this.CorridorAddField.Id = 132;
+            this.CorridorAddField.Name = "CorridorAddField";
+            this.CorridorAddField.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.CorridorAddField.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.CorridorAddField_ItemClick);
+            // 
+            // CorridorGrading
+            // 
+            this.CorridorGrading.Caption = "廊道分级";
+            this.CorridorGrading.Id = 133;
+            this.CorridorGrading.Name = "CorridorGrading";
+            this.CorridorGrading.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.CorridorGrading.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.CorridorGrading_ItemClick);
+            // 
+            // EcologicalNodeExtraction
+            // 
+            this.EcologicalNodeExtraction.Caption = "生态节点提取";
+            this.EcologicalNodeExtraction.Id = 134;
+            this.EcologicalNodeExtraction.Name = "EcologicalNodeExtraction";
+            this.EcologicalNodeExtraction.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.EcologicalNodeExtraction.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.EcologicalNodeExtraction_ItemClick);
             // 
             // BASEMENT
             // 
@@ -1549,16 +1642,16 @@
             // 
             // MSPA景观分类
             // 
-            this.MSPA景观分类.ItemLinks.Add(this.barButtonItem1);
-            this.MSPA景观分类.ItemLinks.Add(this.barButtonItem2);
-            this.MSPA景观分类.ItemLinks.Add(this.barButtonItem3);
+            this.MSPA景观分类.ItemLinks.Add(this.EnvironmentConfiguration);
+            this.MSPA景观分类.ItemLinks.Add(this.DataPreprocessing);
+            this.MSPA景观分类.ItemLinks.Add(this.MSPAlandscapeclassification);
             this.MSPA景观分类.Name = "MSPA景观分类";
             this.MSPA景观分类.Text = "MSPA景观分类";
             // 
             // ribbonPageGroup2
             // 
-            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem4);
-            this.ribbonPageGroup2.ItemLinks.Add(this.地面起伏度);
+            this.ribbonPageGroup2.ItemLinks.Add(this.SlopeProcessing);
+            this.ribbonPageGroup2.ItemLinks.Add(this.TerrainReliefProcessing);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.Text = "DEM数据处理";
             // 
@@ -1584,14 +1677,41 @@
             // ribbonPage2
             // 
             this.ribbonPage2.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup1});
+            this.ribbonPageGroup1,
+            this.ribbonPageGroup3,
+            this.生态廊道识别,
+            this.生态节点});
             this.ribbonPage2.Name = "ribbonPage2";
             this.ribbonPage2.Text = "生态廊道识别";
             // 
             // ribbonPageGroup1
             // 
+            this.ribbonPageGroup1.ItemLinks.Add(this.ImportanceOfcore);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "ribbonPageGroup1";
+            this.ribbonPageGroup1.Text = "Conefor";
+            // 
+            // ribbonPageGroup3
+            // 
+            this.ribbonPageGroup3.ItemLinks.Add(this.CoreAreaExtraction);
+            this.ribbonPageGroup3.ItemLinks.Add(this.CoreAreaDivision);
+            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
+            this.ribbonPageGroup3.Text = "核心区";
+            // 
+            // 生态廊道识别
+            // 
+            this.生态廊道识别.ItemLinks.Add(this.CostDistanceCalculation);
+            this.生态廊道识别.ItemLinks.Add(this.CostPathCalculation);
+            this.生态廊道识别.ItemLinks.Add(this.Sampling);
+            this.生态廊道识别.ItemLinks.Add(this.CorridorAddField);
+            this.生态廊道识别.ItemLinks.Add(this.CorridorGrading);
+            this.生态廊道识别.Name = "生态廊道识别";
+            this.生态廊道识别.Text = "生态廊道识别";
+            // 
+            // 生态节点
+            // 
+            this.生态节点.ItemLinks.Add(this.EcologicalNodeExtraction);
+            this.生态节点.Name = "生态节点";
+            this.生态节点.Text = "生态节点";
             // 
             // ribbonPage1
             // 
@@ -2420,13 +2540,25 @@
         private DevExpress.XtraBars.BarButtonItem comprehensiveResistance;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
+        private DevExpress.XtraBars.BarButtonItem EnvironmentConfiguration;
+        private DevExpress.XtraBars.BarButtonItem DataPreprocessing;
+        private DevExpress.XtraBars.BarButtonItem MSPAlandscapeclassification;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup MSPA景观分类;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem4;
-        private DevExpress.XtraBars.BarButtonItem 地面起伏度;
+        private DevExpress.XtraBars.BarButtonItem SlopeProcessing;
+        private DevExpress.XtraBars.BarButtonItem TerrainReliefProcessing;
+        private DevExpress.XtraBars.BarButtonItem ImportanceOfcore;
+        private DevExpress.XtraBars.BarButtonItem CoreAreaExtraction;
+        private DevExpress.XtraBars.BarButtonItem CoreAreaDivision;
+        private DevExpress.XtraBars.BarButtonItem CostDistanceCalculation;
+        private DevExpress.XtraBars.BarButtonItem CostPathCalculation;
+        private DevExpress.XtraBars.BarButtonItem Sampling;
+        private DevExpress.XtraBars.BarButtonItem CorridorAddField;
+        private DevExpress.XtraBars.BarButtonItem CorridorGrading;
+        private DevExpress.XtraBars.BarButtonItem EcologicalNodeExtraction;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup 生态廊道识别;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup 生态节点;
     }
 }
 
