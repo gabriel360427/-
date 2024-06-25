@@ -2265,6 +2265,41 @@ namespace 绿廊智绘
         #endregion
 
         #endregion
+
         #endregion
+
+        private void barButtonItem1_ItemClick_2(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            样本标准时序曲线 form = new 样本标准时序曲线();
+            form.Show();
+        }
+
+        private void barButtonItem4_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            主次要分析 form = new 主次要分析();
+            form.Show();
+        }
+
+        private void barButtonItem5_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
+
+        private void barButtonItem6_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            统计 form = new 统计();
+            form.Show();
+        }
+
+        private void barButtonItem7_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            土地转移矩阵 form = new 土地转移矩阵();
+            form.Show();
+        }
+
+        private void barButtonItem8_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
     }
 }

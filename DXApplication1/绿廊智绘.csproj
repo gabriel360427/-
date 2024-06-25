@@ -330,6 +330,30 @@
     <Compile Include="Custom Forms\EcologicalNodeExtraction.designer.cs">
       <DependentUpon>EcologicalNodeExtraction.cs</DependentUpon>
     </Compile>
+    <Compile Include="Custom Forms\土地转移矩阵.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\土地转移矩阵.designer.cs">
+      <DependentUpon>土地转移矩阵.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Forms\主次要分析.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\主次要分析.designer.cs">
+      <DependentUpon>主次要分析.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Forms\样本标准时间曲线.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\样本标准时间曲线.designer.cs">
+      <DependentUpon>样本标准时间曲线.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Forms\统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\统计.designer.cs">
+      <DependentUpon>统计.cs</DependentUpon>
+    </Compile>
     <Compile Include="Custom Tools\SpatialQueryTool.cs" />
     <Compile Include="MainForm\FormMain.cs">
       <SubType>Form</SubType>
@@ -443,6 +467,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\EcologicalNodeExtraction.resx">
       <DependentUpon>EcologicalNodeExtraction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\土地转移矩阵.resx">
+      <DependentUpon>土地转移矩阵.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\主次要分析.resx">
+      <DependentUpon>主次要分析.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\样本标准时间曲线.resx">
+      <DependentUpon>样本标准时间曲线.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\统计.resx">
+      <DependentUpon>统计.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
