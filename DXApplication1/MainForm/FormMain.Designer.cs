@@ -1257,6 +1257,8 @@
             // 
             this.slopeGradient.Caption = "坡度";
             this.slopeGradient.Id = 115;
+            this.slopeGradient.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("slopeGradient.ImageOptions.Image")));
+            this.slopeGradient.LargeWidth = 60;
             this.slopeGradient.Name = "slopeGradient";
             this.slopeGradient.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.slopeGradient.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.slopeGradient_ItemClick);
@@ -1265,6 +1267,8 @@
             // 
             this.temperature.Caption = "温度";
             this.temperature.Id = 116;
+            this.temperature.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("temperature.ImageOptions.Image")));
+            this.temperature.LargeWidth = 60;
             this.temperature.Name = "temperature";
             this.temperature.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.temperature.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.temperature_ItemClick);
@@ -1273,6 +1277,8 @@
             // 
             this.landUseType.Caption = "用地类型";
             this.landUseType.Id = 117;
+            this.landUseType.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("landUseType.ImageOptions.Image")));
+            this.landUseType.LargeWidth = 60;
             this.landUseType.Name = "landUseType";
             this.landUseType.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.landUseType.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.landUseType_ItemClick);
@@ -1281,6 +1287,8 @@
             // 
             this.landScapeType.Caption = "景观类型";
             this.landScapeType.Id = 118;
+            this.landScapeType.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("landScapeType.ImageOptions.Image")));
+            this.landScapeType.LargeWidth = 60;
             this.landScapeType.Name = "landScapeType";
             this.landScapeType.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.landScapeType.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.landScapeType_ItemClick);
@@ -1288,7 +1296,8 @@
             // reliefAmplitude
             // 
             this.reliefAmplitude.Caption = "地形起伏度";
-            this.reliefAmplitude.Id = 119;
+            this.reliefAmplitude.Id = 125;
+            this.reliefAmplitude.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("reliefAmplitude.ImageOptions.Image")));
             this.reliefAmplitude.Name = "reliefAmplitude";
             this.reliefAmplitude.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.reliefAmplitude.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.reliefAmplitude_ItemClick);
@@ -1297,6 +1306,7 @@
             // 
             this.comprehensiveResistance.Caption = "综合阻力";
             this.comprehensiveResistance.Id = 120;
+            this.comprehensiveResistance.ImageOptions.Image = global::绿廊智绘.Properties.Resources.EndmemberExtraction;
             this.comprehensiveResistance.Name = "comprehensiveResistance";
             this.comprehensiveResistance.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.comprehensiveResistance.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.comprehensiveResistance_ItemClick);
@@ -1305,6 +1315,7 @@
             // 
             this.EnvironmentConfiguration.Caption = "环境配置";
             this.EnvironmentConfiguration.Id = 121;
+            this.EnvironmentConfiguration.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("EnvironmentConfiguration.ImageOptions.Image")));
             this.EnvironmentConfiguration.Name = "EnvironmentConfiguration";
             this.EnvironmentConfiguration.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.EnvironmentConfiguration.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick_1);
@@ -1313,6 +1324,7 @@
             // 
             this.DataPreprocessing.Caption = "数据预处理";
             this.DataPreprocessing.Id = 122;
+            this.DataPreprocessing.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("DataPreprocessing.ImageOptions.Image")));
             this.DataPreprocessing.Name = "DataPreprocessing";
             this.DataPreprocessing.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.DataPreprocessing.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick);
@@ -1321,6 +1333,7 @@
             // 
             this.MSPAlandscapeclassification.Caption = "MSPA景观分类";
             this.MSPAlandscapeclassification.Id = 123;
+            this.MSPAlandscapeclassification.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("MSPAlandscapeclassification.ImageOptions.Image")));
             this.MSPAlandscapeclassification.Name = "MSPAlandscapeclassification";
             this.MSPAlandscapeclassification.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.MSPAlandscapeclassification.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem3_ItemClick);
@@ -1329,6 +1342,7 @@
             // 
             this.SlopeProcessing.Caption = "坡度处理";
             this.SlopeProcessing.Id = 124;
+            this.SlopeProcessing.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SlopeProcessing.ImageOptions.Image")));
             this.SlopeProcessing.Name = "SlopeProcessing";
             this.SlopeProcessing.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.SlopeProcessing.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem4_ItemClick);

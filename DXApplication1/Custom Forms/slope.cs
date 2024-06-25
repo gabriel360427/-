@@ -54,5 +54,10 @@ namespace 绿廊智绘.Custom_Forms
         {
             this.Close();
         }
+
+        private void slope_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

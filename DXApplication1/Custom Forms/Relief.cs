@@ -49,5 +49,10 @@ namespace 绿廊智绘.Custom_Forms
                 输出路径框.Text = savefile.FileName;
             }
         }
+
+        private void Relief_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -46,9 +46,9 @@ namespace 绿廊智绘.Custom_Forms
             this.groupBox1.Controls.Add(this.DEM加载按钮);
             this.groupBox1.Controls.Add(this.DEM输入框);
             this.groupBox1.Location = new System.Drawing.Point(36, 15);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(519, 94);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -57,7 +57,7 @@ namespace 绿廊智绘.Custom_Forms
             // DEM加载按钮
             // 
             this.DEM加载按钮.Location = new System.Drawing.Point(411, 38);
-            this.DEM加载按钮.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DEM加载按钮.Margin = new System.Windows.Forms.Padding(4);
             this.DEM加载按钮.Name = "DEM加载按钮";
             this.DEM加载按钮.Size = new System.Drawing.Size(100, 29);
             this.DEM加载按钮.TabIndex = 1;
@@ -69,7 +69,7 @@ namespace 绿廊智绘.Custom_Forms
             // 
             this.DEM输入框.FormattingEnabled = true;
             this.DEM输入框.Location = new System.Drawing.Point(8, 38);
-            this.DEM输入框.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DEM输入框.Margin = new System.Windows.Forms.Padding(4);
             this.DEM输入框.Name = "DEM输入框";
             this.DEM输入框.Size = new System.Drawing.Size(393, 23);
             this.DEM输入框.TabIndex = 1;
@@ -80,9 +80,9 @@ namespace 绿廊智绘.Custom_Forms
             this.groupBox2.Controls.Add(this.输出路径加载框);
             this.groupBox2.Controls.Add(this.输出路径框);
             this.groupBox2.Location = new System.Drawing.Point(36, 116);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(519, 94);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
@@ -91,7 +91,7 @@ namespace 绿廊智绘.Custom_Forms
             // 输出路径加载框
             // 
             this.输出路径加载框.Location = new System.Drawing.Point(411, 38);
-            this.输出路径加载框.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.输出路径加载框.Margin = new System.Windows.Forms.Padding(4);
             this.输出路径加载框.Name = "输出路径加载框";
             this.输出路径加载框.Size = new System.Drawing.Size(100, 29);
             this.输出路径加载框.TabIndex = 1;
@@ -103,7 +103,7 @@ namespace 绿廊智绘.Custom_Forms
             // 
             this.输出路径框.FormattingEnabled = true;
             this.输出路径框.Location = new System.Drawing.Point(8, 38);
-            this.输出路径框.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.输出路径框.Margin = new System.Windows.Forms.Padding(4);
             this.输出路径框.Name = "输出路径框";
             this.输出路径框.Size = new System.Drawing.Size(393, 23);
             this.输出路径框.TabIndex = 1;
@@ -111,7 +111,7 @@ namespace 绿廊智绘.Custom_Forms
             // 确定
             // 
             this.确定.Location = new System.Drawing.Point(135, 231);
-            this.确定.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.确定.Margin = new System.Windows.Forms.Padding(4);
             this.确定.Name = "确定";
             this.确定.Size = new System.Drawing.Size(100, 29);
             this.确定.TabIndex = 2;
@@ -122,7 +122,7 @@ namespace 绿廊智绘.Custom_Forms
             // 取消
             // 
             this.取消.Location = new System.Drawing.Point(339, 231);
-            this.取消.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.取消.Margin = new System.Windows.Forms.Padding(4);
             this.取消.Name = "取消";
             this.取消.Size = new System.Drawing.Size(100, 29);
             this.取消.TabIndex = 3;
@@ -139,10 +139,11 @@ namespace 绿廊智绘.Custom_Forms
             this.Controls.Add(this.确定);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "slope";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "坡度处理";
+            this.Load += new System.EventHandler(this.slope_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);

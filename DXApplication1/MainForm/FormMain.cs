@@ -232,7 +232,7 @@ namespace 绿廊智绘
             sRSelectorDialog.SpatialReference = map.SpatialReference;
             if (sRSelectorDialog.ShowDialog() != 1) return;
             map.SpatialReference = sRSelectorDialog.SpatialReference;
-           (map as IActiveView).PartialRefresh(ViewDrawPhaseType.ViewAll);
+            (map as IActiveView).PartialRefresh(ViewDrawPhaseType.ViewAll);
         }
         #endregion
 
@@ -1130,25 +1130,25 @@ namespace 绿廊智绘
             if (flag)
             {
                 var dlg = new PIE.AxControls.ROILayerProduceToolDialog();
-                dlg. Initialize(mapControlMain as PIE.Carto.IPmdContents);
+                dlg.Initialize(mapControlMain as PIE.Carto.IPmdContents);
                 HookHelper m_HookHelper = new HookHelper();
-                m_HookHelper.Hook = this.mapControlMain;	
+                m_HookHelper.Hook = this.mapControlMain;
                 m_FormROI.Initialize(m_HookHelper.GetContent());
-                if(!(dlg.ShowDialog()==1))	return;
+                if (!(dlg.ShowDialog() == 1)) return;
                 PIE.SystemUI.ICommand cmd = new PIE.Plugin.ROIToolCommand();
                 cmd.OnCreate(mapControlMain);
                 cmd.OnClick();
                 //有无roi
-                if (m_FormROI == null) m_FormROI = new PIE.AxControls.ROILayerProduceToolDialog();	
- 	            //第三步:ROI工具所需参数设置	
+                if (m_FormROI == null) m_FormROI = new PIE.AxControls.ROILayerProduceToolDialog();
+                //第三步:ROI工具所需参数设置	
                 HookHelper n_HookHelper = new HookHelper();
- 	            m_HookHelper.Hook = this.mapControlMain;	
- 	            m_FormROI.Initialize(m_HookHelper.GetContent());
+                m_HookHelper.Hook = this.mapControlMain;
+                m_FormROI.Initialize(m_HookHelper.GetContent());
                 m_FormROI.Initialize(this.mapControlMain as PIE.Carto.IPmdContents);
- 	            m_FormROI.SetROIName(m_ROILayerID);	
- 	            m_FormROI.InitRoiLayer();	
- 	            m_FormROI.ShowDialog();	
- 	            m_ROILayerID = m_FormROI.GetROIName();
+                m_FormROI.SetROIName(m_ROILayerID);
+                m_FormROI.InitRoiLayer();
+                m_FormROI.ShowDialog();
+                m_ROILayerID = m_FormROI.GetROIName();
             }
             else
             {
@@ -1595,7 +1595,7 @@ namespace 绿廊智绘
             else
             {
                 IFeatureClass featureClass = (currentLayer as IFeatureLayer).FeatureClass;
-                if(featureClass.GetGeomType().Equals(GeometryType.GeometryPoint))
+                if (featureClass.GetGeomType().Equals(GeometryType.GeometryPoint))
                 {
                     feature_flag = 1;
                 }
@@ -1812,6 +1812,7 @@ namespace 绿廊智绘
         #endregion
 
         #region 2. DEM数据处理
+      
         #region 2.1 坡度
         private void barButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -1827,6 +1828,7 @@ namespace 绿廊智绘
             Form.ShowDialog();
         }
         #endregion
+
         #endregion
 
         #region 3. 单因子阻力面
@@ -2119,6 +2121,8 @@ namespace 绿廊智绘
 
         #region 八、制图输出
 
+        #region 制图输出
+
         #region 1. 数据操作
         private void zoomIn1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -2261,6 +2265,6 @@ namespace 绿廊智绘
         #endregion
 
         #endregion
-
+        #endregion
     }
 }
