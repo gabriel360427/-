@@ -23,6 +23,7 @@ namespace 绿廊智绘.Custom_Forms
     {
         public Sampling()
         {
+            ESRI.ArcGIS.RuntimeManager.Bind(ESRI.ArcGIS.ProductCode.EngineOrDesktop);
             InitializeComponent();
         }
 

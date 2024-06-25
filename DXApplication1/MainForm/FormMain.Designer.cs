@@ -1351,6 +1351,7 @@
             // 
             this.TerrainReliefProcessing.Caption = "地形起伏度处理";
             this.TerrainReliefProcessing.Id = 125;
+            this.TerrainReliefProcessing.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("TerrainReliefProcessing.ImageOptions.Image")));
             this.TerrainReliefProcessing.Name = "TerrainReliefProcessing";
             this.TerrainReliefProcessing.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.TerrainReliefProcessing.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.地面起伏度_ItemClick);
