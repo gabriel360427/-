@@ -2301,5 +2301,11 @@ namespace 绿廊智绘
         {
 
         }
+
+        private void precisionAnalysis_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            PIE.Plugin.FrmImgClassPostPA form = new PIE.Plugin.FrmImgClassPostPA();
+            if (form.ShowDialog() != DialogResult.OK) return;
+        }
     }
 }
