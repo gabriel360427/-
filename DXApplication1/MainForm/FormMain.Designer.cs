@@ -445,6 +445,7 @@
             this.repositoryItemTrackBar4,
             this.repositoryItemZoomTrackBar6});
             this.ribbonControl1.Size = new System.Drawing.Size(1419, 183);
+            this.ribbonControl1.Click += new System.EventHandler(this.ribbonControl1_Click);
             // 
             // newProject
             // 
@@ -817,7 +818,7 @@
             // 
             // rgbCombine
             // 
-            this.rgbCombine.Caption = "修改RGB波段";
+            this.rgbCombine.Caption = "彩色合成";
             this.rgbCombine.Id = 53;
             this.rgbCombine.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("rgbCombine.ImageOptions.Image")));
             this.rgbCombine.Name = "rgbCombine";
@@ -1575,7 +1576,7 @@
             // 
             this.bandCombine.ItemLinks.Add(this.rgbCombine);
             this.bandCombine.Name = "bandCombine";
-            this.bandCombine.Text = "修改波段";
+            this.bandCombine.Text = "波段合成";
             // 
             // brightnessControl
             // 
@@ -1953,7 +1954,7 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.tabControlMain);
             this.splitContainer1.Size = new System.Drawing.Size(1419, 530);
-            this.splitContainer1.SplitterDistance = 231;
+            this.splitContainer1.SplitterDistance = 230;
             this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 1;
             // 
@@ -1961,9 +1962,9 @@
             // 
             this.tocControlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tocControlMain.Location = new System.Drawing.Point(0, 0);
-            this.tocControlMain.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tocControlMain.Margin = new System.Windows.Forms.Padding(5);
             this.tocControlMain.Name = "tocControlMain";
-            this.tocControlMain.Size = new System.Drawing.Size(231, 530);
+            this.tocControlMain.Size = new System.Drawing.Size(230, 530);
             this.tocControlMain.TabIndex = 0;
             this.tocControlMain.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tocControlMain_MouseClick);
             // 
@@ -1977,7 +1978,7 @@
             this.tabControlMain.Location = new System.Drawing.Point(0, 0);
             this.tabControlMain.Name = "tabControlMain";
             this.tabControlMain.SelectedIndex = 0;
-            this.tabControlMain.Size = new System.Drawing.Size(1183, 530);
+            this.tabControlMain.Size = new System.Drawing.Size(1184, 530);
             this.tabControlMain.TabIndex = 0;
             this.tabControlMain.SelectedIndexChanged += new System.EventHandler(this.tabControlMain_SelectedIndexChanged);
             // 
@@ -1989,7 +1990,7 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage1.Size = new System.Drawing.Size(1175, 490);
+            this.tabPage1.Size = new System.Drawing.Size(1176, 490);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "地图模式";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -2111,7 +2112,7 @@
             this.mapControlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mapControlMain.Location = new System.Drawing.Point(3, 4);
             this.mapControlMain.Name = "mapControlMain";
-            this.mapControlMain.Size = new System.Drawing.Size(1169, 482);
+            this.mapControlMain.Size = new System.Drawing.Size(1170, 482);
             this.mapControlMain.TabIndex = 0;
             this.mapControlMain.Text = "mapControlMain";
             this.mapControlMain.MouseMove += new System.Windows.Forms.MouseEventHandler(this.mapControlMain_MouseMove);
@@ -2125,7 +2126,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage2.Size = new System.Drawing.Size(1175, 476);
+            this.tabPage2.Size = new System.Drawing.Size(1176, 490);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "制图模式";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -2146,7 +2147,7 @@
             this.toolStrip2.Location = new System.Drawing.Point(3, 4);
             this.toolStrip2.Name = "toolStrip2";
             this.toolStrip2.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.toolStrip2.Size = new System.Drawing.Size(40, 468);
+            this.toolStrip2.Size = new System.Drawing.Size(40, 482);
             this.toolStrip2.TabIndex = 1;
             this.toolStrip2.Text = "toolStrip2";
             // 
@@ -2235,7 +2236,7 @@
             this.pageLayoutControlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pageLayoutControlMain.Location = new System.Drawing.Point(3, 4);
             this.pageLayoutControlMain.Name = "pageLayoutControlMain";
-            this.pageLayoutControlMain.Size = new System.Drawing.Size(1169, 468);
+            this.pageLayoutControlMain.Size = new System.Drawing.Size(1170, 482);
             this.pageLayoutControlMain.TabIndex = 0;
             this.pageLayoutControlMain.Text = "pageLayoutControlMain";
             // 

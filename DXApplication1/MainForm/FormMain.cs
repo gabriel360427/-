@@ -2307,5 +2307,10 @@ namespace 绿廊智绘
             PIE.Plugin.FrmImgClassPostPA form = new PIE.Plugin.FrmImgClassPostPA();
             if (form.ShowDialog() != DialogResult.OK) return;
         }
+
+        private void ribbonControl1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
