@@ -223,7 +223,7 @@ namespace 绿廊智绘.Custom_Forms
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             #endregion
@@ -273,7 +273,7 @@ namespace 绿廊智绘.Custom_Forms
                         // Update the 'Reclassified' field
                         feature.set_Value(fieldIndex, reclassifiedValue);
                         featureCursor.UpdateFeature(feature);
-                        Console.WriteLine($"Feature OID: {feature.OID}, Distence: {distance}, Reclassified: {reclassifiedValue}");
+                        Console.WriteLine("Feature OID: {feature.OID}, Distence: {distance}, Reclassified: {reclassifiedValue}");
                     }
                 }
 
@@ -367,7 +367,7 @@ namespace 绿廊智绘.Custom_Forms
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"An error occurred while creating shapefile: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("An error occurred while creating shapefile: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 throw;
             }
             

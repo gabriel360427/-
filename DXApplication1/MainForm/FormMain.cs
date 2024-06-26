@@ -2297,10 +2297,6 @@ namespace 绿廊智绘
             form.Show();
         }
 
-        private void barButtonItem8_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-
-        }
 
         private void precisionAnalysis_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -2309,6 +2305,11 @@ namespace 绿廊智绘
         }
 
         private void ribbonControl1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void barButtonItem2_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
 
         }

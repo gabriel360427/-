@@ -794,3 +794,23 @@ E:\桌面\PIE\6.25\-\DXApplication1\obj\Debug\绿廊智绘.csproj.CoreCompileInp
 E:\桌面\PIE\6.25\-\DXApplication1\obj\Debug\绿廊智绘.csproj.CopyComplete
 E:\桌面\PIE\6.25\-\DXApplication1\obj\Debug\绿廊智绘.exe
 E:\桌面\PIE\6.25\-\DXApplication1\obj\Debug\绿廊智绘.pdb
+C:\Users\Administrator\Desktop\新建文件夹 (2)\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.LinearResistenceFactorNEW.resources
+C:\Users\Administrator\Desktop\新建文件夹 (2)\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.Relief.resources
+C:\Users\Administrator\Desktop\新建文件夹 (2)\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.slope.resources
+C:\Users\Administrator\Desktop\新建文件夹 (2)\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.SurfaceResistanceFactor.resources
+C:\Users\Administrator\Desktop\新建文件夹 (2)\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.comprehensiveResistance.resources
+C:\Users\Administrator\Desktop\新建文件夹 (2)\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.CoreAreaExtraction.resources
+C:\Users\Administrator\Desktop\新建文件夹 (2)\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.CoreAreaDivision.resources
+C:\Users\Administrator\Desktop\新建文件夹 (2)\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.CostDistanceCalculation.resources
+C:\Users\Administrator\Desktop\新建文件夹 (2)\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.CostPathCalculation.resources
+C:\Users\Administrator\Desktop\新建文件夹 (2)\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.Sampling.resources
+C:\Users\Administrator\Desktop\新建文件夹 (2)\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.CorridorAddField.resources
+C:\Users\Administrator\Desktop\新建文件夹 (2)\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.EcologicalNodeExtraction.resources
+C:\Users\Administrator\Desktop\新建文件夹 (2)\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.土地转移矩阵.resources
+C:\Users\Administrator\Desktop\新建文件夹 (2)\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.主次要分析.resources
+C:\Users\Administrator\Desktop\新建文件夹 (2)\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.样本标准时序曲线.resources
+C:\Users\Administrator\Desktop\新建文件夹 (2)\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.统计.resources
+C:\Users\Administrator\Desktop\新建文件夹 (2)\-\DXApplication1\bin\Debug\ESRI.ArcGIS.ADF.Connection.Local.dll
+C:\Users\Administrator\Desktop\新建文件夹 (2)\-\DXApplication1\bin\Debug\ESRI.ArcGIS.ADF.dll
+C:\Users\Administrator\Desktop\新建文件夹 (2)\-\DXApplication1\bin\Debug\ESRI.ArcGIS.ADF.xml
+C:\Users\Administrator\Desktop\新建文件夹 (2)\-\DXApplication1\bin\Debug\ESRI.ArcGIS.ADF.Connection.Local.xml
