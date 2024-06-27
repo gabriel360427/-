@@ -150,14 +150,13 @@
             this.CorridorGrading = new DevExpress.XtraBars.BarButtonItem();
             this.EcologicalNodeExtraction = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
+            this.addFeature = new DevExpress.XtraBars.BarButtonItem();
             this.BASEMENT = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.mapProject = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.dataManagement = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -259,7 +258,11 @@
             this.SymbolSelectorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.LayerPropertyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SelectCoordinateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addFeature = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar3)).BeginInit();
@@ -407,18 +410,20 @@
             this.CorridorGrading,
             this.EcologicalNodeExtraction,
             this.barButtonItem1,
-            this.barButtonItem2,
             this.barButtonItem3,
             this.barButtonItem4,
-            this.barButtonItem5,
             this.barButtonItem6,
             this.barButtonItem7,
             this.barButtonItem8,
             this.barButtonItem9,
-            this.addFeature});
+            this.addFeature,
+            this.barButtonItem5,
+            this.barButtonItem11,
+            this.barButtonItem12,
+            this.barButtonItem10});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.ribbonControl1.MaxItemId = 145;
+            this.ribbonControl1.MaxItemId = 150;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.BASEMENT,
@@ -1481,15 +1486,6 @@
             this.barButtonItem1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick_2);
             // 
-            // barButtonItem2
-            // 
-            this.barButtonItem2.Caption = "新建决策树";
-            this.barButtonItem2.Id = 136;
-            this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
-            this.barButtonItem2.Name = "barButtonItem2";
-            this.barButtonItem2.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.barButtonItem2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick_1);
-            // 
             // barButtonItem3
             // 
             this.barButtonItem3.Caption = "执行决策树";
@@ -1507,18 +1503,9 @@
             this.barButtonItem4.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.barButtonItem4.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem4_ItemClick_1);
             // 
-            // barButtonItem5
-            // 
-            this.barButtonItem5.Caption = "精度评定";
-            this.barButtonItem5.Id = 139;
-            this.barButtonItem5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.Image")));
-            this.barButtonItem5.Name = "barButtonItem5";
-            this.barButtonItem5.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.barButtonItem5.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem5_ItemClick);
-            // 
             // barButtonItem6
             // 
-            this.barButtonItem6.Caption = "数据统计";
+            this.barButtonItem6.Caption = "变化统计";
             this.barButtonItem6.Id = 140;
             this.barButtonItem6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.Image")));
             this.barButtonItem6.Name = "barButtonItem6";
@@ -1541,6 +1528,7 @@
             this.barButtonItem8.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.ImageOptions.Image")));
             this.barButtonItem8.Name = "barButtonItem8";
             this.barButtonItem8.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonItem8.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem8_ItemClick);
             // 
             // barButtonItem9
             // 
@@ -1549,6 +1537,16 @@
             this.barButtonItem9.ImageOptions.Image = global::绿廊智绘.Properties.Resources.MainCategory_UserManual;
             this.barButtonItem9.Name = "barButtonItem9";
             this.barButtonItem9.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // addFeature
+            // 
+            this.addFeature.Caption = "添加要素";
+            this.addFeature.Enabled = false;
+            this.addFeature.Id = 144;
+            this.addFeature.ImageOptions.Image = global::绿廊智绘.Properties.Resources.VectorEditor_AddFeature;
+            this.addFeature.Name = "addFeature";
+            this.addFeature.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.addFeature.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.addfeature_ItemClick);
             // 
             // BASEMENT
             // 
@@ -1857,22 +1855,22 @@
             // ribbonPageGroup4
             // 
             this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem1);
-            this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem2);
-            this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem3);
-            this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem4);
             this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem5);
             this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem6);
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
-            this.ribbonPageGroup4.Text = "农作物种植结构提取";
+            this.ribbonPageGroup4.Text = "生态农业";
             // 
             // ribbonPageGroup5
             // 
             this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem7);
+            this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem11);
+            this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem12);
             this.ribbonPageGroup5.Name = "ribbonPageGroup5";
-            this.ribbonPageGroup5.Text = "用地类型变化评价";
+            this.ribbonPageGroup5.Text = "城镇要素变化分析";
             // 
             // ribbonPageGroup6
             // 
+            this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem10);
             this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem8);
             this.ribbonPageGroup6.Name = "ribbonPageGroup6";
             this.ribbonPageGroup6.Text = "景观格局分析";
@@ -2455,15 +2453,45 @@
             this.SelectCoordinateToolStripMenuItem.Text = "坐标系选择";
             this.SelectCoordinateToolStripMenuItem.Click += new System.EventHandler(this.SelectCoordinateToolStripMenuItem_Click);
             // 
-            // addFeature
+            // barButtonItem2
             // 
-            this.addFeature.Caption = "添加要素";
-            this.addFeature.Enabled = false;
-            this.addFeature.Id = 144;
-            this.addFeature.ImageOptions.Image = global::绿廊智绘.Properties.Resources.VectorEditor_AddFeature;
-            this.addFeature.Name = "addFeature";
-            this.addFeature.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.addFeature.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.addfeature_ItemClick);
+            this.barButtonItem2.Caption = "新建决策树";
+            this.barButtonItem2.Id = 136;
+            this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
+            this.barButtonItem2.Name = "barButtonItem2";
+            this.barButtonItem2.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonItem2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick_1);
+            // 
+            // barButtonItem5
+            // 
+            this.barButtonItem5.Caption = "农业结构分类";
+            this.barButtonItem5.Id = 145;
+            this.barButtonItem5.Name = "barButtonItem5";
+            this.barButtonItem5.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem11
+            // 
+            this.barButtonItem11.Caption = "POI变化统计";
+            this.barButtonItem11.Id = 147;
+            this.barButtonItem11.Name = "barButtonItem11";
+            this.barButtonItem11.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonItem11.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem11_ItemClick);
+            // 
+            // barButtonItem12
+            // 
+            this.barButtonItem12.Caption = "道路要素变化统计";
+            this.barButtonItem12.Id = 148;
+            this.barButtonItem12.Name = "barButtonItem12";
+            this.barButtonItem12.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonItem12.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem12_ItemClick);
+            // 
+            // barButtonItem10
+            // 
+            this.barButtonItem10.Caption = "环境配置";
+            this.barButtonItem10.Id = 149;
+            this.barButtonItem10.Name = "barButtonItem10";
+            this.barButtonItem10.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonItem10.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem10_ItemClick);
             // 
             // FormMain
             // 
@@ -2738,10 +2766,8 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup EcologicalCorridorIdentification;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup EcologicalNode;
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
         private DevExpress.XtraBars.BarButtonItem barButtonItem3;
         private DevExpress.XtraBars.BarButtonItem barButtonItem4;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem5;
         private DevExpress.XtraBars.BarButtonItem barButtonItem6;
         private DevExpress.XtraBars.BarButtonItem barButtonItem7;
         private DevExpress.XtraBars.BarButtonItem barButtonItem8;
@@ -2751,6 +2777,11 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup6;
         private DevExpress.XtraBars.BarButtonItem barButtonItem9;
         private DevExpress.XtraBars.BarButtonItem addFeature;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem5;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem11;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem12;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem10;
     }
 }
 

@@ -32,13 +32,13 @@ namespace 绿廊智绘.Custom_Forms
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(土地转移矩阵));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.第一景影像加载按钮 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.第一景影像加载框 = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.第二景影像加载 = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.第二景影像加载框 = new System.Windows.Forms.ComboBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.输出位置加载按钮 = new System.Windows.Forms.Button();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.输出位置框 = new System.Windows.Forms.ComboBox();
             this.确定 = new System.Windows.Forms.Button();
             this.取消 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -49,7 +49,7 @@ namespace 绿廊智绘.Custom_Forms
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.第一景影像加载按钮);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.第一景影像加载框);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(351, 71);
@@ -65,19 +65,20 @@ namespace 绿廊智绘.Custom_Forms
             this.第一景影像加载按钮.TabIndex = 1;
             this.第一景影像加载按钮.Text = "加载";
             this.第一景影像加载按钮.UseVisualStyleBackColor = true;
+            this.第一景影像加载按钮.Click += new System.EventHandler(this.第一景影像加载按钮_Click);
             // 
-            // comboBox1
+            // 第一景影像加载框
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(6, 20);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(339, 20);
-            this.comboBox1.TabIndex = 0;
+            this.第一景影像加载框.FormattingEnabled = true;
+            this.第一景影像加载框.Location = new System.Drawing.Point(6, 20);
+            this.第一景影像加载框.Name = "第一景影像加载框";
+            this.第一景影像加载框.Size = new System.Drawing.Size(339, 20);
+            this.第一景影像加载框.TabIndex = 0;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.第二景影像加载);
-            this.groupBox2.Controls.Add(this.comboBox2);
+            this.groupBox2.Controls.Add(this.第二景影像加载框);
             this.groupBox2.Location = new System.Drawing.Point(12, 89);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(351, 71);
@@ -93,19 +94,20 @@ namespace 绿廊智绘.Custom_Forms
             this.第二景影像加载.TabIndex = 2;
             this.第二景影像加载.Text = "加载";
             this.第二景影像加载.UseVisualStyleBackColor = true;
+            this.第二景影像加载.Click += new System.EventHandler(this.第二景影像加载_Click);
             // 
-            // comboBox2
+            // 第二景影像加载框
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(6, 20);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(339, 20);
-            this.comboBox2.TabIndex = 2;
+            this.第二景影像加载框.FormattingEnabled = true;
+            this.第二景影像加载框.Location = new System.Drawing.Point(6, 20);
+            this.第二景影像加载框.Name = "第二景影像加载框";
+            this.第二景影像加载框.Size = new System.Drawing.Size(339, 20);
+            this.第二景影像加载框.TabIndex = 2;
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.输出位置加载按钮);
-            this.groupBox3.Controls.Add(this.comboBox3);
+            this.groupBox3.Controls.Add(this.输出位置框);
             this.groupBox3.Location = new System.Drawing.Point(12, 162);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(351, 71);
@@ -121,14 +123,16 @@ namespace 绿廊智绘.Custom_Forms
             this.输出位置加载按钮.TabIndex = 2;
             this.输出位置加载按钮.Text = "加载";
             this.输出位置加载按钮.UseVisualStyleBackColor = true;
+            this.输出位置加载按钮.Click += new System.EventHandler(this.输出位置加载按钮_Click);
             // 
-            // comboBox3
+            // 输出位置框
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(6, 20);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(339, 20);
-            this.comboBox3.TabIndex = 2;
+            this.输出位置框.FormattingEnabled = true;
+            this.输出位置框.Location = new System.Drawing.Point(6, 20);
+            this.输出位置框.Name = "输出位置框";
+            this.输出位置框.Size = new System.Drawing.Size(339, 20);
+            this.输出位置框.TabIndex = 2;
+            this.输出位置框.SelectedIndexChanged += new System.EventHandler(this.输出位置框_SelectedIndexChanged);
             // 
             // 确定
             // 
@@ -173,13 +177,13 @@ namespace 绿廊智绘.Custom_Forms
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button 第一景影像加载按钮;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox 第一景影像加载框;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button 第二景影像加载;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox 第二景影像加载框;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button 输出位置加载按钮;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox 输出位置框;
         private System.Windows.Forms.Button 确定;
         private System.Windows.Forms.Button 取消;
     }

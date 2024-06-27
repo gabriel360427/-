@@ -192,6 +192,18 @@
     <Compile Include="Custom Forms\distanceClassifyForm.designer.cs">
       <DependentUpon>distanceClassifyForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Custom Forms\道路要素变化统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\道路要素变化统计.Designer.cs">
+      <DependentUpon>道路要素变化统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Forms\POI变化统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\POI变化统计.Designer.cs">
+      <DependentUpon>POI变化统计.cs</DependentUpon>
+    </Compile>
     <Compile Include="Custom Forms\linearResistanceFactorNEW.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -348,11 +360,11 @@
     <Compile Include="Custom Forms\样本标准时间曲线.designer.cs">
       <DependentUpon>样本标准时间曲线.cs</DependentUpon>
     </Compile>
-    <Compile Include="Custom Forms\统计.cs">
+    <Compile Include="Custom Forms\变化统计.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Custom Forms\统计.designer.cs">
-      <DependentUpon>统计.cs</DependentUpon>
+    <Compile Include="Custom Forms\变化统计.designer.cs">
+      <DependentUpon>变化统计.cs</DependentUpon>
     </Compile>
     <Compile Include="Custom Tools\SpatialQueryTool.cs" />
     <Compile Include="MainForm\FormMain.cs">
@@ -398,6 +410,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\distanceClassifyForm.resx">
       <DependentUpon>distanceClassifyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\POI变化统计.resx">
+      <DependentUpon>POI变化统计.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\imageClippingForm.resx">
       <DependentUpon>imageClippingForm.cs</DependentUpon>
@@ -477,8 +492,11 @@
     <EmbeddedResource Include="Custom Forms\样本标准时间曲线.resx">
       <DependentUpon>样本标准时间曲线.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Custom Forms\统计.resx">
-      <DependentUpon>统计.cs</DependentUpon>
+    <EmbeddedResource Include="Custom Forms\变化统计.resx">
+      <DependentUpon>变化统计.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\道路要素变化统计.resx">
+      <DependentUpon>道路要素变化统计.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>

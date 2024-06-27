@@ -2287,7 +2287,7 @@ namespace 绿廊智绘
 
         private void barButtonItem6_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            统计 form = new 统计();
+            变化统计 form = new 变化统计();
             form.Show();
         }
 
@@ -2314,6 +2314,34 @@ namespace 绿廊智绘
 
         }
 
+        private void barButtonItem11_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            POI form = new POI();
+            form.Show();
+        }
 
+        private void barButtonItem12_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            道路要素变化统计 form = new 道路要素变化统计();
+            form.Show();
+        }
+
+        private void barButtonItem8_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+                Process proexe = Process.Start(@"C:\Program Files (x86)\Fragstats 4\frg_gui.exe");
+            }
+            catch
+            {
+                MessageBox.Show("应用打开失败，请检查是否配置好环境！");
+            }
+        }
+
+        private void barButtonItem10_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            MessageBox.Show("请保持默认设置，不要随意改动！", "温馨提示", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            Process processexe = Process.Start(Application.StartupPath + "\\frg_setup_4.2.exe");//安装至默认位置
+        }
     }
 }

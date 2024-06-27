@@ -59,5 +59,10 @@ namespace 绿廊智绘.Custom_Forms
         {
 
         }
+
+        private void 输出路径框_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

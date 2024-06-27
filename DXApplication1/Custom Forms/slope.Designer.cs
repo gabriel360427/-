@@ -100,6 +100,7 @@ namespace 绿廊智绘.Custom_Forms
             this.输出路径框.Name = "输出路径框";
             this.输出路径框.Size = new System.Drawing.Size(296, 20);
             this.输出路径框.TabIndex = 1;
+            this.输出路径框.SelectedIndexChanged += new System.EventHandler(this.输出路径框_SelectedIndexChanged);
             // 
             // 确定
             // 
