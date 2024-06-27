@@ -53,11 +53,11 @@
             // 
             this.groupBox1.Controls.Add(this.groupBox4);
             this.groupBox1.Controls.Add(this.groupBox3);
-            this.groupBox1.Location = new System.Drawing.Point(18, 24);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.groupBox1.Location = new System.Drawing.Point(16, 19);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 4, 2, 4);
-            this.groupBox1.Size = new System.Drawing.Size(526, 205);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.groupBox1.Size = new System.Drawing.Size(460, 159);
             this.groupBox1.TabIndex = 56;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "输入数据";
@@ -66,30 +66,30 @@
             // 
             this.groupBox4.Controls.Add(this.textBox2);
             this.groupBox4.Controls.Add(this.button2);
-            this.groupBox4.Location = new System.Drawing.Point(6, 106);
+            this.groupBox4.Location = new System.Drawing.Point(5, 82);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox4.Size = new System.Drawing.Size(515, 82);
+            this.groupBox4.Size = new System.Drawing.Size(451, 64);
             this.groupBox4.TabIndex = 48;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "输入需要采样的点的数据数据：";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(39, 38);
+            this.textBox2.Location = new System.Drawing.Point(34, 30);
             this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(349, 26);
+            this.textBox2.Size = new System.Drawing.Size(306, 22);
             this.textBox2.TabIndex = 45;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(416, 30);
+            this.button2.Location = new System.Drawing.Point(364, 23);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(84, 38);
+            this.button2.Size = new System.Drawing.Size(74, 30);
             this.button2.TabIndex = 46;
             this.button2.Text = "浏览";
             this.button2.UseVisualStyleBackColor = true;
@@ -99,29 +99,29 @@
             // 
             this.groupBox3.Controls.Add(this.textBox1);
             this.groupBox3.Controls.Add(this.button1);
-            this.groupBox3.Location = new System.Drawing.Point(6, 25);
+            this.groupBox3.Location = new System.Drawing.Point(5, 19);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox3.Size = new System.Drawing.Size(515, 75);
+            this.groupBox3.Size = new System.Drawing.Size(451, 58);
             this.groupBox3.TabIndex = 47;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "输入成本距离栅格数据：";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(39, 29);
+            this.textBox1.Location = new System.Drawing.Point(34, 23);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(349, 26);
+            this.textBox1.Size = new System.Drawing.Size(306, 22);
             this.textBox1.TabIndex = 42;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(416, 22);
+            this.button1.Location = new System.Drawing.Point(364, 17);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 38);
+            this.button1.Size = new System.Drawing.Size(74, 30);
             this.button1.TabIndex = 43;
             this.button1.Text = "浏览";
             this.button1.UseVisualStyleBackColor = true;
@@ -129,10 +129,10 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(352, 407);
+            this.button5.Location = new System.Drawing.Point(308, 317);
             this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(109, 47);
+            this.button5.Size = new System.Drawing.Size(95, 37);
             this.button5.TabIndex = 55;
             this.button5.Text = "取消";
             this.button5.UseVisualStyleBackColor = true;
@@ -140,10 +140,10 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(97, 407);
+            this.button4.Location = new System.Drawing.Point(85, 317);
             this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(109, 47);
+            this.button4.Size = new System.Drawing.Size(95, 37);
             this.button4.TabIndex = 54;
             this.button4.Text = "确定";
             this.button4.UseVisualStyleBackColor = true;
@@ -153,7 +153,7 @@
             // 
             this.axLicenseControl1.Enabled = true;
             this.axLicenseControl1.Location = new System.Drawing.Point(39, 391);
-            this.axLicenseControl1.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.axLicenseControl1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.axLicenseControl1.Name = "axLicenseControl1";
             this.axLicenseControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axLicenseControl1.OcxState")));
             this.axLicenseControl1.Size = new System.Drawing.Size(32, 32);
@@ -161,10 +161,10 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(422, 25);
+            this.button3.Location = new System.Drawing.Point(369, 19);
             this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(84, 38);
+            this.button3.Size = new System.Drawing.Size(74, 30);
             this.button3.TabIndex = 51;
             this.button3.Text = "浏览";
             this.button3.UseVisualStyleBackColor = true;
@@ -172,30 +172,30 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(45, 33);
+            this.textBox3.Location = new System.Drawing.Point(39, 26);
             this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(349, 26);
+            this.textBox3.Size = new System.Drawing.Size(306, 22);
             this.textBox3.TabIndex = 50;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.textBox3);
             this.groupBox2.Controls.Add(this.button3);
-            this.groupBox2.Location = new System.Drawing.Point(18, 261);
+            this.groupBox2.Location = new System.Drawing.Point(16, 203);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(526, 82);
+            this.groupBox2.Size = new System.Drawing.Size(460, 64);
             this.groupBox2.TabIndex = 57;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "输出表";
             // 
             // Sampling
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(566, 462);
+            this.ClientSize = new System.Drawing.Size(495, 359);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button5);
@@ -203,7 +203,7 @@
             this.Controls.Add(this.axLicenseControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.MaximizeBox = false;
             this.Name = "Sampling";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

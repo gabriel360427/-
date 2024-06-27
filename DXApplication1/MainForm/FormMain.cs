@@ -1474,11 +1474,13 @@ namespace 绿廊智绘
                 stopEdit.Enabled = true;
                 moveFeature.Enabled = true;
                 createFeature.Enabled = true;
+                addFeature.Enabled = true;
                 deleteFeature.Enabled = true;
                 undo.Enabled = true;
                 redo.Enabled = true;
                 unionFeature.Enabled = true;
                 attributeEdit.Enabled = true;
+                unionFeature.Enabled = true;
             }
             else
             {
@@ -1507,6 +1509,16 @@ namespace 绿廊智绘
             {
                 cmd.OnCreate(mapControlMain);
                 cmd.OnClick();
+                saveEdit.Enabled = false;
+                stopEdit.Enabled = false;
+                moveFeature.Enabled = false;
+                createFeature.Enabled = false;
+                addFeature.Enabled = false;
+                deleteFeature.Enabled = false;
+                undo.Enabled = false;
+                redo.Enabled = false;
+                attributeEdit.Enabled = false;
+                unionFeature.Enabled = false;
             }
         }
         #endregion
@@ -1571,7 +1583,12 @@ namespace 绿廊智绘
                 mapControlMain.FocusMap.AddLayer(fLayer as ILayer);
                 mapControlMain.ActiveView.PartialRefresh(PIE.Carto.ViewDrawPhaseType.ViewAll);
             }
+        }
+        #endregion
 
+        #region 1.5 添加要素
+        private void addfeature_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
             ILayer currentLayer = mapControlMain.ActiveView.CurrentLayer;
             bool judgement = currentLayer.LayerType.Equals(LayerType.LayerTypeFeatureLayer);
             if (judgement != true) return;
@@ -1594,7 +1611,7 @@ namespace 绿廊智绘
         }
         #endregion
 
-        #region 1.5	删除要素
+        #region 1.6 删除要素
         private void deleteFeature_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             PIE.SystemUI.ICommand cmd = new PIE.Controls.DeleteFeatureCommand();
@@ -1603,7 +1620,7 @@ namespace 绿廊智绘
         }
         #endregion
 
-        #region 1.6 移动要素
+        #region 1.7 移动要素
         private void moveFeature_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             PIE.SystemUI.ITool tool = new PIE.Controls.MoveFeatureTool();
@@ -1612,7 +1629,7 @@ namespace 绿廊智绘
         }
         #endregion
 
-        #region 1.7 撤销
+        #region 1.8 撤销
         private void undo_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             PIE.SystemUI.ICommand cmd = new PIE.Controls.UndoCommand();
@@ -1621,7 +1638,7 @@ namespace 绿廊智绘
         }
         #endregion
 
-        #region 1.8 恢复
+        #region 1.9 恢复
         private void redo_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             PIE.SystemUI.ICommand cmd = new PIE.Controls.RedoCommand();
@@ -1630,7 +1647,7 @@ namespace 绿廊智绘
         }
         #endregion
 
-        #region 1.9 属性编辑
+        #region 1.10 属性编辑
         private void attributeEdit_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             ILayer currentLayer = mapControlMain.ActiveView.CurrentLayer;
@@ -1643,7 +1660,7 @@ namespace 绿廊智绘
         }
         #endregion
 
-        #region 1.10 要素合并
+        #region 1.11 要素合并
         private void unionFeature_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             ICommand cmd = new UnionFeatureCommand();
@@ -2296,5 +2313,7 @@ namespace 绿廊智绘
         {
 
         }
+
+
     }
 }

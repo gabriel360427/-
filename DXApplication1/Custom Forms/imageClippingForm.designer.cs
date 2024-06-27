@@ -47,28 +47,29 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 22);
+            this.label1.Location = new System.Drawing.Point(9, 14);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 22);
+            this.label1.Size = new System.Drawing.Size(55, 14);
             this.label1.TabIndex = 0;
             this.label1.Text = "输入文件";
             // 
             // 文件输入框
             // 
             this.文件输入框.FormattingEnabled = true;
-            this.文件输入框.Location = new System.Drawing.Point(132, 22);
-            this.文件输入框.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.文件输入框.Location = new System.Drawing.Point(92, 14);
+            this.文件输入框.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.文件输入框.Name = "文件输入框";
-            this.文件输入框.Size = new System.Drawing.Size(470, 30);
+            this.文件输入框.Size = new System.Drawing.Size(330, 22);
             this.文件输入框.TabIndex = 1;
             this.文件输入框.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // InputFile1
             // 
-            this.InputFile1.Location = new System.Drawing.Point(627, 17);
-            this.InputFile1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.InputFile1.Location = new System.Drawing.Point(439, 11);
+            this.InputFile1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.InputFile1.Name = "InputFile1";
-            this.InputFile1.Size = new System.Drawing.Size(113, 39);
+            this.InputFile1.Size = new System.Drawing.Size(79, 25);
             this.InputFile1.TabIndex = 2;
             this.InputFile1.Text = "加载";
             this.InputFile1.UseVisualStyleBackColor = true;
@@ -79,21 +80,21 @@
             this.groupBox1.Controls.Add(this.InputFile2);
             this.groupBox1.Controls.Add(this.矢量文件输入框);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(17, 104);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox1.Location = new System.Drawing.Point(12, 66);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox1.Size = new System.Drawing.Size(723, 260);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.groupBox1.Size = new System.Drawing.Size(506, 165);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "矢量裁剪";
             // 
             // InputFile2
             // 
-            this.InputFile2.Location = new System.Drawing.Point(203, 171);
-            this.InputFile2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.InputFile2.Location = new System.Drawing.Point(142, 109);
+            this.InputFile2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.InputFile2.Name = "InputFile2";
-            this.InputFile2.Size = new System.Drawing.Size(253, 51);
+            this.InputFile2.Size = new System.Drawing.Size(177, 32);
             this.InputFile2.TabIndex = 2;
             this.InputFile2.Text = "加载";
             this.InputFile2.UseVisualStyleBackColor = true;
@@ -102,47 +103,49 @@
             // 矢量文件输入框
             // 
             this.矢量文件输入框.FormattingEnabled = true;
-            this.矢量文件输入框.Location = new System.Drawing.Point(78, 106);
-            this.矢量文件输入框.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.矢量文件输入框.Location = new System.Drawing.Point(55, 67);
+            this.矢量文件输入框.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.矢量文件输入框.Name = "矢量文件输入框";
-            this.矢量文件输入框.Size = new System.Drawing.Size(548, 30);
+            this.矢量文件输入框.Size = new System.Drawing.Size(385, 22);
             this.矢量文件输入框.TabIndex = 1;
             this.矢量文件输入框.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 61);
+            this.label2.Location = new System.Drawing.Point(5, 39);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(136, 22);
+            this.label2.Size = new System.Drawing.Size(91, 14);
             this.label2.TabIndex = 0;
             this.label2.Text = "请输入矢量文件";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(27, 403);
+            this.label3.Location = new System.Drawing.Point(19, 256);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 22);
+            this.label3.Size = new System.Drawing.Size(55, 14);
             this.label3.TabIndex = 4;
             this.label3.Text = "输出文件";
             // 
             // 文件输出框
             // 
             this.文件输出框.FormattingEnabled = true;
-            this.文件输出框.Location = new System.Drawing.Point(132, 403);
-            this.文件输出框.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.文件输出框.Location = new System.Drawing.Point(92, 256);
+            this.文件输出框.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.文件输出框.Name = "文件输出框";
-            this.文件输出框.Size = new System.Drawing.Size(470, 30);
+            this.文件输出框.Size = new System.Drawing.Size(330, 22);
             this.文件输出框.TabIndex = 5;
             this.文件输出框.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
             // OutputFile
             // 
-            this.OutputFile.Location = new System.Drawing.Point(627, 398);
-            this.OutputFile.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.OutputFile.Location = new System.Drawing.Point(439, 253);
+            this.OutputFile.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.OutputFile.Name = "OutputFile";
-            this.OutputFile.Size = new System.Drawing.Size(113, 39);
+            this.OutputFile.Size = new System.Drawing.Size(79, 25);
             this.OutputFile.TabIndex = 6;
             this.OutputFile.Text = "加载";
             this.OutputFile.UseVisualStyleBackColor = true;
@@ -150,10 +153,10 @@
             // 
             // OK
             // 
-            this.OK.Location = new System.Drawing.Point(170, 472);
-            this.OK.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.OK.Location = new System.Drawing.Point(119, 300);
+            this.OK.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.OK.Name = "OK";
-            this.OK.Size = new System.Drawing.Size(113, 39);
+            this.OK.Size = new System.Drawing.Size(79, 25);
             this.OK.TabIndex = 7;
             this.OK.Text = "确定";
             this.OK.UseVisualStyleBackColor = true;
@@ -161,20 +164,20 @@
             // 
             // Cancel
             // 
-            this.Cancel.Location = new System.Drawing.Point(429, 472);
-            this.Cancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Cancel.Location = new System.Drawing.Point(300, 300);
+            this.Cancel.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Cancel.Name = "Cancel";
-            this.Cancel.Size = new System.Drawing.Size(113, 39);
+            this.Cancel.Size = new System.Drawing.Size(79, 25);
             this.Cancel.TabIndex = 8;
             this.Cancel.Text = "取消";
             this.Cancel.UseVisualStyleBackColor = true;
             this.Cancel.Click += new System.EventHandler(this.button5_Click);
             // 
-            // 影像裁剪
+            // imageClippingForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(753, 543);
+            this.ClientSize = new System.Drawing.Size(527, 346);
             this.Controls.Add(this.Cancel);
             this.Controls.Add(this.OK);
             this.Controls.Add(this.OutputFile);
@@ -186,9 +189,9 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.MaximizeBox = false;
-            this.Name = "影像裁剪";
+            this.Name = "imageClippingForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "影像裁剪";
             this.groupBox1.ResumeLayout(false);

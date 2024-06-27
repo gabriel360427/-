@@ -77,7 +77,7 @@
             this.栅格数据输入框.FormattingEnabled = true;
             this.栅格数据输入框.Location = new System.Drawing.Point(7, 29);
             this.栅格数据输入框.Name = "栅格数据输入框";
-            this.栅格数据输入框.Size = new System.Drawing.Size(489, 26);
+            this.栅格数据输入框.Size = new System.Drawing.Size(489, 22);
             this.栅格数据输入框.TabIndex = 0;
             this.栅格数据输入框.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -140,7 +140,7 @@
             "双精度浮点型(64位)"});
             this.输出数据类型.Location = new System.Drawing.Point(7, 37);
             this.输出数据类型.Name = "输出数据类型";
-            this.输出数据类型.Size = new System.Drawing.Size(257, 26);
+            this.输出数据类型.Size = new System.Drawing.Size(257, 22);
             this.输出数据类型.TabIndex = 0;
             this.输出数据类型.SelectedIndexChanged += new System.EventHandler(this.输出数据类型_SelectedIndexChanged);
             // 
@@ -192,7 +192,7 @@
             this.文件输出框.FormattingEnabled = true;
             this.文件输出框.Location = new System.Drawing.Point(7, 28);
             this.文件输出框.Name = "文件输出框";
-            this.文件输出框.Size = new System.Drawing.Size(489, 26);
+            this.文件输出框.Size = new System.Drawing.Size(489, 22);
             this.文件输出框.TabIndex = 1;
             this.文件输出框.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
@@ -205,7 +205,7 @@
             this.richTextBox1.TabIndex = 4;
             this.richTextBox1.Text = "    ★☆★示例说明\n（此窗口暂无说明）";
             // 
-            // 阻力因子A
+            // SurfaceResistanceFactor
             // 
             this.AccessibleName = "";
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -218,7 +218,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "阻力因子A";
+            this.Name = "SurfaceResistanceFactor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "阻力因子";
             this.Load += new System.EventHandler(this.高程因子_Load);

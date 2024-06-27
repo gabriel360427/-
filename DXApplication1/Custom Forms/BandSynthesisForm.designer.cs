@@ -111,11 +111,11 @@
             // 输入文件
             // 
             this.输入文件.FormattingEnabled = true;
-            this.输入文件.ItemHeight = 20;
+            this.输入文件.ItemHeight = 16;
             this.输入文件.Location = new System.Drawing.Point(33, 33);
             this.输入文件.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.输入文件.Name = "输入文件";
-            this.输入文件.Size = new System.Drawing.Size(528, 304);
+            this.输入文件.Size = new System.Drawing.Size(528, 292);
             this.输入文件.TabIndex = 0;
             // 
             // label1
@@ -123,7 +123,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(44, 414);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 18);
+            this.label1.Size = new System.Drawing.Size(55, 14);
             this.label1.TabIndex = 1;
             this.label1.Text = "输出文件";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -134,7 +134,7 @@
             this.输出文件框.Location = new System.Drawing.Point(133, 414);
             this.输出文件框.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.输出文件框.Name = "输出文件框";
-            this.输出文件框.Size = new System.Drawing.Size(443, 26);
+            this.输出文件框.Size = new System.Drawing.Size(443, 22);
             this.输出文件框.TabIndex = 2;
             this.输出文件框.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 

@@ -157,6 +157,7 @@
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
             this.BASEMENT = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.mapProject = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.dataManagement = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -189,10 +190,9 @@
             this.singleFactorResistanceSurface = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.comprehensiveResistanceSurface = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.生态廊道识别 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.生态节点 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.Core = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.EcologicalCorridorIdentification = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.EcologicalNode = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -259,7 +259,7 @@
             this.SymbolSelectorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.LayerPropertyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SelectCoordinateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
+            this.addFeature = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar3)).BeginInit();
@@ -414,10 +414,11 @@
             this.barButtonItem6,
             this.barButtonItem7,
             this.barButtonItem8,
-            this.barButtonItem9});
+            this.barButtonItem9,
+            this.addFeature});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.ribbonControl1.MaxItemId = 144;
+            this.ribbonControl1.MaxItemId = 145;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.BASEMENT,
@@ -1055,6 +1056,7 @@
             // saveEdit
             // 
             this.saveEdit.Caption = "保存编辑";
+            this.saveEdit.Enabled = false;
             this.saveEdit.Id = 81;
             this.saveEdit.ImageOptions.Image = global::绿廊智绘.Properties.Resources.VectorEditor_SaveEdit;
             this.saveEdit.Name = "saveEdit";
@@ -1064,6 +1066,7 @@
             // stopEdit
             // 
             this.stopEdit.Caption = "结束编辑";
+            this.stopEdit.Enabled = false;
             this.stopEdit.Id = 82;
             this.stopEdit.ImageOptions.Image = global::绿廊智绘.Properties.Resources.VectorEditor_StopEdit;
             this.stopEdit.Name = "stopEdit";
@@ -1073,6 +1076,7 @@
             // createFeature
             // 
             this.createFeature.Caption = "创建要素";
+            this.createFeature.Enabled = false;
             this.createFeature.Id = 83;
             this.createFeature.ImageOptions.Image = global::绿廊智绘.Properties.Resources.VectorEditor_CreateLayer;
             this.createFeature.Name = "createFeature";
@@ -1100,6 +1104,7 @@
             // deleteFeature
             // 
             this.deleteFeature.Caption = "删除要素";
+            this.deleteFeature.Enabled = false;
             this.deleteFeature.Id = 87;
             this.deleteFeature.ImageOptions.Image = global::绿廊智绘.Properties.Resources.VectorEditor_DeleteFeature;
             this.deleteFeature.Name = "deleteFeature";
@@ -1109,6 +1114,7 @@
             // moveFeature
             // 
             this.moveFeature.Caption = "移动要素";
+            this.moveFeature.Enabled = false;
             this.moveFeature.Id = 88;
             this.moveFeature.ImageOptions.Image = global::绿廊智绘.Properties.Resources.VectorEditor_SelectFeature;
             this.moveFeature.Name = "moveFeature";
@@ -1118,6 +1124,7 @@
             // undo
             // 
             this.undo.Caption = "撤销";
+            this.undo.Enabled = false;
             this.undo.Id = 89;
             this.undo.ImageOptions.Image = global::绿廊智绘.Properties.Resources.VectorEditor_Undo;
             this.undo.Name = "undo";
@@ -1127,6 +1134,7 @@
             // redo
             // 
             this.redo.Caption = "恢复";
+            this.redo.Enabled = false;
             this.redo.Id = 90;
             this.redo.ImageOptions.Image = global::绿廊智绘.Properties.Resources.VectorEditor_Redo;
             this.redo.Name = "redo";
@@ -1136,6 +1144,7 @@
             // attributeEdit
             // 
             this.attributeEdit.Caption = "属性编辑";
+            this.attributeEdit.Enabled = false;
             this.attributeEdit.Id = 92;
             this.attributeEdit.ImageOptions.Image = global::绿廊智绘.Properties.Resources.VectorEditor_AttributeEdit;
             this.attributeEdit.Name = "attributeEdit";
@@ -1153,6 +1162,7 @@
             // unionFeature
             // 
             this.unionFeature.Caption = "要素合并";
+            this.unionFeature.Enabled = false;
             this.unionFeature.Id = 94;
             this.unionFeature.ImageOptions.Image = global::绿廊智绘.Properties.Resources.Utility_ShapeUnion;
             this.unionFeature.Name = "unionFeature";
@@ -1532,6 +1542,14 @@
             this.barButtonItem8.Name = "barButtonItem8";
             this.barButtonItem8.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
+            // barButtonItem9
+            // 
+            this.barButtonItem9.Caption = "帮助文档";
+            this.barButtonItem9.Id = 143;
+            this.barButtonItem9.ImageOptions.Image = global::绿廊智绘.Properties.Resources.MainCategory_UserManual;
+            this.barButtonItem9.Name = "barButtonItem9";
+            this.barButtonItem9.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
             // BASEMENT
             // 
             this.BASEMENT.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -1740,6 +1758,7 @@
             this.vectorTools.ItemLinks.Add(this.saveEdit);
             this.vectorTools.ItemLinks.Add(this.stopEdit);
             this.vectorTools.ItemLinks.Add(this.createFeature);
+            this.vectorTools.ItemLinks.Add(this.addFeature);
             this.vectorTools.ItemLinks.Add(this.deleteFeature);
             this.vectorTools.ItemLinks.Add(this.moveFeature);
             this.vectorTools.ItemLinks.Add(this.undo);
@@ -1796,41 +1815,35 @@
             // ribbonPage2
             // 
             this.ribbonPage2.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup1,
-            this.ribbonPageGroup3,
-            this.生态廊道识别,
-            this.生态节点});
+            this.Core,
+            this.EcologicalCorridorIdentification,
+            this.EcologicalNode});
             this.ribbonPage2.Name = "ribbonPage2";
             this.ribbonPage2.Text = "生态廊道识别";
             // 
-            // ribbonPageGroup1
+            // Core
             // 
-            this.ribbonPageGroup1.ItemLinks.Add(this.ImportanceOfcore);
-            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "Conefor";
+            this.Core.ItemLinks.Add(this.ImportanceOfcore);
+            this.Core.ItemLinks.Add(this.CoreAreaExtraction);
+            this.Core.ItemLinks.Add(this.CoreAreaDivision);
+            this.Core.Name = "Core";
+            this.Core.Text = "核心区";
             // 
-            // ribbonPageGroup3
+            // EcologicalCorridorIdentification
             // 
-            this.ribbonPageGroup3.ItemLinks.Add(this.CoreAreaExtraction);
-            this.ribbonPageGroup3.ItemLinks.Add(this.CoreAreaDivision);
-            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
-            this.ribbonPageGroup3.Text = "核心区";
+            this.EcologicalCorridorIdentification.ItemLinks.Add(this.CostDistanceCalculation);
+            this.EcologicalCorridorIdentification.ItemLinks.Add(this.CostPathCalculation);
+            this.EcologicalCorridorIdentification.ItemLinks.Add(this.Sampling);
+            this.EcologicalCorridorIdentification.ItemLinks.Add(this.CorridorAddField);
+            this.EcologicalCorridorIdentification.ItemLinks.Add(this.CorridorGrading);
+            this.EcologicalCorridorIdentification.Name = "EcologicalCorridorIdentification";
+            this.EcologicalCorridorIdentification.Text = "生态廊道识别";
             // 
-            // 生态廊道识别
+            // EcologicalNode
             // 
-            this.生态廊道识别.ItemLinks.Add(this.CostDistanceCalculation);
-            this.生态廊道识别.ItemLinks.Add(this.CostPathCalculation);
-            this.生态廊道识别.ItemLinks.Add(this.Sampling);
-            this.生态廊道识别.ItemLinks.Add(this.CorridorAddField);
-            this.生态廊道识别.ItemLinks.Add(this.CorridorGrading);
-            this.生态廊道识别.Name = "生态廊道识别";
-            this.生态廊道识别.Text = "生态廊道识别";
-            // 
-            // 生态节点
-            // 
-            this.生态节点.ItemLinks.Add(this.EcologicalNodeExtraction);
-            this.生态节点.Name = "生态节点";
-            this.生态节点.Text = "生态节点";
+            this.EcologicalNode.ItemLinks.Add(this.EcologicalNodeExtraction);
+            this.EcologicalNode.Name = "EcologicalNode";
+            this.EcologicalNode.Text = "生态节点";
             // 
             // ribbonPage3
             // 
@@ -2442,13 +2455,15 @@
             this.SelectCoordinateToolStripMenuItem.Text = "坐标系选择";
             this.SelectCoordinateToolStripMenuItem.Click += new System.EventHandler(this.SelectCoordinateToolStripMenuItem_Click);
             // 
-            // barButtonItem9
+            // addFeature
             // 
-            this.barButtonItem9.Caption = "帮助文档";
-            this.barButtonItem9.Id = 143;
-            this.barButtonItem9.ImageOptions.Image = global::绿廊智绘.Properties.Resources.MainCategory_UserManual;
-            this.barButtonItem9.Name = "barButtonItem9";
-            this.barButtonItem9.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.addFeature.Caption = "添加要素";
+            this.addFeature.Enabled = false;
+            this.addFeature.Id = 144;
+            this.addFeature.ImageOptions.Image = global::绿廊智绘.Properties.Resources.VectorEditor_AddFeature;
+            this.addFeature.Name = "addFeature";
+            this.addFeature.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.addFeature.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.addfeature_ItemClick);
             // 
             // FormMain
             // 
@@ -2703,7 +2718,6 @@
         private DevExpress.XtraBars.BarButtonItem reliefAmplitude;
         private DevExpress.XtraBars.BarButtonItem comprehensiveResistance;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
         private DevExpress.XtraBars.BarButtonItem EnvironmentConfiguration;
         private DevExpress.XtraBars.BarButtonItem DataPreprocessing;
         private DevExpress.XtraBars.BarButtonItem MSPAlandscapeclassification;
@@ -2720,9 +2734,9 @@
         private DevExpress.XtraBars.BarButtonItem CorridorAddField;
         private DevExpress.XtraBars.BarButtonItem CorridorGrading;
         private DevExpress.XtraBars.BarButtonItem EcologicalNodeExtraction;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup 生态廊道识别;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup 生态节点;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup Core;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup EcologicalCorridorIdentification;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup EcologicalNode;
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
         private DevExpress.XtraBars.BarButtonItem barButtonItem3;
@@ -2736,6 +2750,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup6;
         private DevExpress.XtraBars.BarButtonItem barButtonItem9;
+        private DevExpress.XtraBars.BarButtonItem addFeature;
     }
 }
 

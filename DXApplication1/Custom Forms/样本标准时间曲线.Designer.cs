@@ -30,6 +30,7 @@ namespace 绿廊智绘.Custom_Forms
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(样本标准时序曲线));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.样本集加载按钮 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -222,6 +223,7 @@ namespace 绿廊智绘.Custom_Forms
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.请输入遥感影像);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "样本标准时序曲线";
             this.Text = "样本标准时间曲线";
             this.groupBox1.ResumeLayout(false);

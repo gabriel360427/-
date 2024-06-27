@@ -29,6 +29,7 @@ namespace 绿廊智绘.Custom_Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(土地转移矩阵));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.第一景影像加载按钮 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -158,6 +159,7 @@ namespace 绿廊智绘.Custom_Forms
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "土地转移矩阵";
             this.Text = "土地转移矩阵";
             this.groupBox1.ResumeLayout(false);

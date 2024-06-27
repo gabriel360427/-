@@ -29,6 +29,7 @@ namespace 绿廊智绘.Custom_Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(主次要分析));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.分类文件加载按钮 = new System.Windows.Forms.Button();
             this.分类文件加载框 = new System.Windows.Forms.ComboBox();
@@ -125,6 +126,7 @@ namespace 绿廊智绘.Custom_Forms
             this.Controls.Add(this.确认);
             this.Controls.Add(this.选择输出位置);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "主次要分析";
             this.Text = "主次要分析";
             this.groupBox1.ResumeLayout(false);
