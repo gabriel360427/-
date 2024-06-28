@@ -2336,6 +2336,8 @@ namespace 绿廊智绘
             {
                 MessageBox.Show("应用打开失败，请检查是否配置好环境！");
             }
+            参考建议 form = new 参考建议();
+            form.ShowDialog();
         }
 
         private void barButtonItem10_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

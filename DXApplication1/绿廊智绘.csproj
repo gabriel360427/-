@@ -192,6 +192,12 @@
     <Compile Include="Custom Forms\distanceClassifyForm.designer.cs">
       <DependentUpon>distanceClassifyForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Custom Forms\参考建议.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\参考建议.Designer.cs">
+      <DependentUpon>参考建议.cs</DependentUpon>
+    </Compile>
     <Compile Include="Custom Forms\道路要素变化统计.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -482,6 +488,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\EcologicalNodeExtraction.resx">
       <DependentUpon>EcologicalNodeExtraction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\参考建议.resx">
+      <DependentUpon>参考建议.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\土地转移矩阵.resx">
       <DependentUpon>土地转移矩阵.cs</DependentUpon>

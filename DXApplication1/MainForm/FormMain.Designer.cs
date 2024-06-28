@@ -1882,7 +1882,7 @@
             this.ribbonPageGroup5,
             this.ribbonPageGroup6});
             this.ribbonPage3.Name = "ribbonPage3";
-            this.ribbonPage3.Text = "富民格局评估";
+            this.ribbonPage3.Text = "富民进程可视化";
             // 
             // ribbonPageGroup4
             // 
@@ -2025,7 +2025,7 @@
             // 
             this.tocControlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tocControlMain.Location = new System.Drawing.Point(0, 0);
-            this.tocControlMain.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tocControlMain.Margin = new System.Windows.Forms.Padding(5);
             this.tocControlMain.Name = "tocControlMain";
             this.tocControlMain.Size = new System.Drawing.Size(229, 530);
             this.tocControlMain.TabIndex = 0;
@@ -2189,7 +2189,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage2.Size = new System.Drawing.Size(1177, 476);
+            this.tabPage2.Size = new System.Drawing.Size(1177, 490);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "制图模式";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -2210,7 +2210,7 @@
             this.toolStrip2.Location = new System.Drawing.Point(3, 4);
             this.toolStrip2.Name = "toolStrip2";
             this.toolStrip2.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.toolStrip2.Size = new System.Drawing.Size(40, 468);
+            this.toolStrip2.Size = new System.Drawing.Size(40, 482);
             this.toolStrip2.TabIndex = 1;
             this.toolStrip2.Text = "toolStrip2";
             // 
@@ -2299,7 +2299,7 @@
             this.pageLayoutControlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pageLayoutControlMain.Location = new System.Drawing.Point(3, 4);
             this.pageLayoutControlMain.Name = "pageLayoutControlMain";
-            this.pageLayoutControlMain.Size = new System.Drawing.Size(1171, 468);
+            this.pageLayoutControlMain.Size = new System.Drawing.Size(1171, 482);
             this.pageLayoutControlMain.TabIndex = 0;
             this.pageLayoutControlMain.Text = "pageLayoutControlMain";
             // 
