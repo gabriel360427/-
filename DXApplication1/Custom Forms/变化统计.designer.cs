@@ -49,18 +49,21 @@ namespace 绿廊智绘.Custom_Forms
             // 
             this.groupBox1.Controls.Add(this.第一景分类文件加载按钮);
             this.groupBox1.Controls.Add(this.第一景分类文件框);
-            this.groupBox1.Location = new System.Drawing.Point(12, 7);
+            this.groupBox1.Location = new System.Drawing.Point(16, 9);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(286, 120);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(381, 150);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "输入第一景分类文件";
             // 
             // 第一景分类文件加载按钮
             // 
-            this.第一景分类文件加载按钮.Location = new System.Drawing.Point(102, 89);
+            this.第一景分类文件加载按钮.Location = new System.Drawing.Point(136, 111);
+            this.第一景分类文件加载按钮.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.第一景分类文件加载按钮.Name = "第一景分类文件加载按钮";
-            this.第一景分类文件加载按钮.Size = new System.Drawing.Size(75, 23);
+            this.第一景分类文件加载按钮.Size = new System.Drawing.Size(100, 29);
             this.第一景分类文件加载按钮.TabIndex = 2;
             this.第一景分类文件加载按钮.Text = "加载";
             this.第一景分类文件加载按钮.UseVisualStyleBackColor = true;
@@ -69,9 +72,10 @@ namespace 绿廊智绘.Custom_Forms
             // 第一景分类文件框
             // 
             this.第一景分类文件框.FormattingEnabled = true;
-            this.第一景分类文件框.Location = new System.Drawing.Point(7, 42);
+            this.第一景分类文件框.Location = new System.Drawing.Point(9, 52);
+            this.第一景分类文件框.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.第一景分类文件框.Name = "第一景分类文件框";
-            this.第一景分类文件框.Size = new System.Drawing.Size(273, 20);
+            this.第一景分类文件框.Size = new System.Drawing.Size(363, 23);
             this.第一景分类文件框.TabIndex = 0;
             this.第一景分类文件框.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -79,18 +83,21 @@ namespace 绿廊智绘.Custom_Forms
             // 
             this.groupBox2.Controls.Add(this.第二景分类文件加载按钮);
             this.groupBox2.Controls.Add(this.第二景分类文件框);
-            this.groupBox2.Location = new System.Drawing.Point(12, 133);
+            this.groupBox2.Location = new System.Drawing.Point(16, 166);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(286, 121);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Size = new System.Drawing.Size(381, 151);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "输入第二景分类文件";
             // 
             // 第二景分类文件加载按钮
             // 
-            this.第二景分类文件加载按钮.Location = new System.Drawing.Point(103, 92);
+            this.第二景分类文件加载按钮.Location = new System.Drawing.Point(137, 115);
+            this.第二景分类文件加载按钮.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.第二景分类文件加载按钮.Name = "第二景分类文件加载按钮";
-            this.第二景分类文件加载按钮.Size = new System.Drawing.Size(75, 23);
+            this.第二景分类文件加载按钮.Size = new System.Drawing.Size(100, 29);
             this.第二景分类文件加载按钮.TabIndex = 3;
             this.第二景分类文件加载按钮.Text = "加载";
             this.第二景分类文件加载按钮.UseVisualStyleBackColor = true;
@@ -99,16 +106,18 @@ namespace 绿廊智绘.Custom_Forms
             // 第二景分类文件框
             // 
             this.第二景分类文件框.FormattingEnabled = true;
-            this.第二景分类文件框.Location = new System.Drawing.Point(7, 45);
+            this.第二景分类文件框.Location = new System.Drawing.Point(9, 56);
+            this.第二景分类文件框.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.第二景分类文件框.Name = "第二景分类文件框";
-            this.第二景分类文件框.Size = new System.Drawing.Size(273, 20);
+            this.第二景分类文件框.Size = new System.Drawing.Size(363, 23);
             this.第二景分类文件框.TabIndex = 1;
             // 
             // 确定
             // 
-            this.确定.Location = new System.Drawing.Point(48, 263);
+            this.确定.Location = new System.Drawing.Point(64, 329);
+            this.确定.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.确定.Name = "确定";
-            this.确定.Size = new System.Drawing.Size(75, 23);
+            this.确定.Size = new System.Drawing.Size(100, 29);
             this.确定.TabIndex = 4;
             this.确定.Text = "确定";
             this.确定.UseVisualStyleBackColor = true;
@@ -116,9 +125,10 @@ namespace 绿廊智绘.Custom_Forms
             // 
             // 取消
             // 
-            this.取消.Location = new System.Drawing.Point(176, 263);
+            this.取消.Location = new System.Drawing.Point(235, 329);
+            this.取消.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.取消.Name = "取消";
-            this.取消.Size = new System.Drawing.Size(75, 23);
+            this.取消.Size = new System.Drawing.Size(100, 29);
             this.取消.TabIndex = 5;
             this.取消.Text = "取消";
             this.取消.UseVisualStyleBackColor = true;
@@ -127,33 +137,38 @@ namespace 绿廊智绘.Custom_Forms
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.结果框);
-            this.groupBox3.Location = new System.Drawing.Point(315, 7);
+            this.groupBox3.Location = new System.Drawing.Point(420, 9);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(307, 285);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Size = new System.Drawing.Size(409, 356);
             this.groupBox3.TabIndex = 6;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "统计结果";
             // 
             // 结果框
             // 
-            this.结果框.Location = new System.Drawing.Point(6, 24);
+            this.结果框.Location = new System.Drawing.Point(8, 30);
+            this.结果框.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.结果框.Name = "结果框";
-            this.结果框.Size = new System.Drawing.Size(295, 255);
+            this.结果框.Size = new System.Drawing.Size(392, 318);
             this.结果框.TabIndex = 0;
             this.结果框.Text = "";
             // 
             // 变化统计
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(634, 304);
+            this.ClientSize = new System.Drawing.Size(845, 380);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.取消);
             this.Controls.Add(this.确定);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "变化统计";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "变化统计";
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);

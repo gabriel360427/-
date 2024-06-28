@@ -2343,5 +2343,18 @@ namespace 绿廊智绘
             MessageBox.Show("请保持默认设置，不要随意改动！", "温馨提示", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             Process processexe = Process.Start(Application.StartupPath + "\\frg_setup_4.2.exe");//安装至默认位置
         }
+
+        private void barButtonItem5_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            SurfaceResistanceFactor form = new SurfaceResistanceFactor();
+            form.Text = "农业结构分类";
+            form.Column1.HeaderText = "作物";
+            form.Column2.HeaderText = "阻力值";
+            form.dataGridView1.Rows.Add(new object[] { "经济作物", "1" });
+            form.dataGridView1.Rows.Add(new object[] { "一般作物", "0" });
+            form.dataGridView1.Rows.Add(new object[] { "其它", "NoData" });
+            form.richTextBox1.Text = "★☆★农业结构分类说明\r\n●1：经济作物\r\n●0：一般作物\r\n●NoData：其它";
+            form.ShowDialog();
+        }
     }
 }
