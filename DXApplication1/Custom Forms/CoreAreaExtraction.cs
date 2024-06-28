@@ -50,14 +50,14 @@ namespace 绿廊智绘.Custom_Forms
         {
             RasterVectorization_Exchange_Info info = new RasterVectorization_Exchange_Info();
             //info.indexList = new List<int> { 0, 1, 2, 3, 4,5,6,7 };//类别列表
-            info.indexList = new List<int> { 1 };
+            info.indexList = new List<int> { 0 };
             //info.indexNameList = new List<string> { "Core", "Islet", "Perforation", "Edge", "Loop","Bridge","Branch","Background" };//类别名称列表
             info.indexNameList = new List<string> { "Core" };
             info.isCountPolygonInfo = false;
             info.isSaveAsOneFile = true;//是否保存单个文件 fasle 保存多个文件
             info.pchrasterIndexImgPath = comboBox1.Text;//输入的栅格路径
             //info.pixList = new List<int> { 0, 1, 2, 3, 4,5,6,7 };//类别对应像素列表 和类别列表对应
-            info.pixList = new List<int> { 1 };
+            info.pixList = new List<int> { 0 };
             info.savingPathList = new List<string> { comboBox2.Text };//保存路径列表：若保存单个文件，一个输出路径即可，若输出多个文件，输出路径即为每一类生成文件路径
             //info.vpixTable = new List<int>(); ;//像素值索引表， 可以设置这个参数，默认是0
 

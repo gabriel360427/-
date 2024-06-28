@@ -1913,7 +1913,7 @@ namespace 绿廊智绘
             form.dataGridView1.Rows.Add(new object[] { "10-15", "60" });
             form.dataGridView1.Rows.Add(new object[] { "23-28", "60" });
             form.dataGridView1.Rows.Add(new object[] { "28-35", "80" });
-            form.dataGridView1.Rows.Add(new object[] { "8-15", "80" });
+            form.dataGridView1.Rows.Add(new object[] { "8-10", "80" });
             form.dataGridView1.Rows.Add(new object[] { "-∞-8", "100" });
             form.dataGridView1.Rows.Add(new object[] { "35-∞", "100" });
             form.dataGridView1.Rows.Add(new object[] { "NoData", "NoData" });

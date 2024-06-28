@@ -1189,3 +1189,5 @@ E:\桌面\PIE\6.2828\-\DXApplication1\obj\Debug\绿廊智绘.csproj.CopyComplete
 E:\桌面\PIE\6.2828\-\DXApplication1\obj\Debug\绿廊智绘.exe
 E:\桌面\PIE\6.2828\-\DXApplication1\obj\Debug\绿廊智绘.pdb
 E:\桌面\PIE\6.2828\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.参考建议.resources
+C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.exe
+C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.pdb
