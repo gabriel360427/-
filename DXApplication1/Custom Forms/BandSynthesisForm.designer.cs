@@ -62,7 +62,7 @@
             // 
             // Remove
             // 
-            this.Remove.Font = new System.Drawing.Font("华文中宋", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Remove.Font = new System.Drawing.Font("华文中宋", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Remove.Location = new System.Drawing.Point(601, 295);
             this.Remove.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Remove.Name = "Remove";
@@ -74,7 +74,7 @@
             // 
             // MoveDown
             // 
-            this.MoveDown.Font = new System.Drawing.Font("华文中宋", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MoveDown.Font = new System.Drawing.Font("华文中宋", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.MoveDown.Location = new System.Drawing.Point(601, 211);
             this.MoveDown.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MoveDown.Name = "MoveDown";
@@ -86,7 +86,7 @@
             // 
             // MoveUp
             // 
-            this.MoveUp.Font = new System.Drawing.Font("华文中宋", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MoveUp.Font = new System.Drawing.Font("华文中宋", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.MoveUp.Location = new System.Drawing.Point(601, 122);
             this.MoveUp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MoveUp.Name = "MoveUp";
@@ -98,7 +98,7 @@
             // 
             // InputFile
             // 
-            this.InputFile.Font = new System.Drawing.Font("华文中宋", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.InputFile.Font = new System.Drawing.Font("华文中宋", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.InputFile.Location = new System.Drawing.Point(601, 33);
             this.InputFile.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.InputFile.Name = "InputFile";
@@ -121,9 +121,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(44, 414);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 14);
+            this.label1.Size = new System.Drawing.Size(64, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "输出文件";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -140,11 +141,11 @@
             // 
             // OutputFile
             // 
-            this.OutputFile.Font = new System.Drawing.Font("华文中宋", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OutputFile.Location = new System.Drawing.Point(616, 403);
+            this.OutputFile.Font = new System.Drawing.Font("华文中宋", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.OutputFile.Location = new System.Drawing.Point(616, 406);
             this.OutputFile.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.OutputFile.Name = "OutputFile";
-            this.OutputFile.Size = new System.Drawing.Size(99, 51);
+            this.OutputFile.Size = new System.Drawing.Size(98, 34);
             this.OutputFile.TabIndex = 5;
             this.OutputFile.Text = "加载";
             this.OutputFile.UseVisualStyleBackColor = true;
@@ -152,7 +153,7 @@
             // 
             // OK
             // 
-            this.OK.Font = new System.Drawing.Font("微软雅黑", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OK.Font = new System.Drawing.Font("华文中宋", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.OK.Location = new System.Drawing.Point(133, 477);
             this.OK.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.OK.Name = "OK";
@@ -164,7 +165,7 @@
             // 
             // Cancel
             // 
-            this.Cancel.Font = new System.Drawing.Font("微软雅黑", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cancel.Font = new System.Drawing.Font("华文中宋", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Cancel.Location = new System.Drawing.Point(478, 477);
             this.Cancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Cancel.Name = "Cancel";

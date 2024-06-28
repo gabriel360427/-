@@ -69,11 +69,11 @@ namespace 绿廊智绘.Custom_Forms
             int economicChange = 500;
             double economicChangePercentage = 10.0;
 
-            sb.AppendLine($"第一景图像非经济作物像元数：{firstNonEconomicCount1}，占比{firstNonEconomicPercentage1}%；");
-            sb.AppendLine($"第一景图像经济作物像元数：{firstEconomicCount1}，占比{firstEconomicPercentage1}%；");
-            sb.AppendLine($"第二景图像非经济作物像元数：{secondNonEconomicCount2}，占比{secondNonEconomicPercentage2}%；");
-            sb.AppendLine($"第二景图像经济作物像元数：{secondEconomicCount2}，占比{secondEconomicPercentage2}%；");
-            sb.AppendLine($"经济作物像元变化：{economicChange}，同比变化{economicChangePercentage}%；");
+            sb.AppendLine("第一景图像非经济作物像元数：{firstNonEconomicCount1}，占比{firstNonEconomicPercentage1}%；");
+            sb.AppendLine("第一景图像经济作物像元数：{firstEconomicCount1}，占比{firstEconomicPercentage1}%；");
+            sb.AppendLine("第二景图像非经济作物像元数：{secondNonEconomicCount2}，占比{secondNonEconomicPercentage2}%；");
+            sb.AppendLine("第二景图像经济作物像元数：{secondEconomicCount2}，占比{secondEconomicPercentage2}%；");
+            sb.AppendLine("经济作物像元变化：{economicChange}，同比变化{economicChangePercentage}%；");
 
             // 将内容设置到 RichTextBox
             结果框.Text = sb.ToString();
