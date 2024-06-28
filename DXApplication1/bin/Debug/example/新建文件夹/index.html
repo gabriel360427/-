@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>徐州市黄河故道</title>
+    <link href="css/style.css"  rel="stylesheet" type="text/css" media="all" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+</head>
+<body>
+    <div id="mainwindow">
+        <!-- 小河精灵 -->
+        <div id="xiaohe">
+            <img src="pic/小河/小河.png" alt="error" id="xiaohejingling">
+            <audio id="audioPlayer" src="pic/小河/配音/自我介绍.MP3"></audio>
+        </div>
+        <div id="xiaohesay">
+            <h2 id="xiaohesayh2">欢迎来到“回首黄河故道，展望彭城新章”创意世界！我是小精灵小河，我可以为你讲述黄河变迁的故事，以及介绍现今彭城黄河故道的发展！有什么问题可以随时问我哦！</h2>
+        </div>
+        <div class="xiaohemulu">
+            <a href="#default">我想要做：</a>
+            <div class="header-right">
+              <a id='historybutton' class="active" href="#history">介绍一下黄河改道吧</a>
+              <a id='mordenbutton' href="#mordern">带我转转现在的黄河故道</a>
+              <a id='ai' href="#talk">跟你聊聊天</a>
+            </div>
+        </div>
+        <div id="xiaohesayai">
+            <div id="results">
+                <textarea id="result"></textarea>
+            </div>
+            <div id="sendVal">
+                <input id="question" type="text">
+                <div id="sendbutton">
+                    <button id="sendbtn">发送</button>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="main.js"></script>
+        <div id="xiaohesayhistory">
+            <div id="xiaohehistoryimg">
+                <img src="pic/古代六次黄河故道变迁/各时期黄河水道.png" alt="error" id="historyimgditu">
+                <img src="pic/古代六次黄河故道变迁/第一次改道.png" alt="error" id="historyimg1">
+                <img src="pic/古代六次黄河故道变迁/第二次改道.png" alt="error" id="historyimg2">
+                <img src="pic/古代六次黄河故道变迁/第三次改道.png" alt="error" id="historyimg3">
+                <img src="pic/古代六次黄河故道变迁/第四次改道.png" alt="error" id="historyimg4">
+                <img src="pic/古代六次黄河故道变迁/第五次改道.png" alt="error" id="historyimg5">
+                <img src="pic/古代六次黄河故道变迁/第六次改道.png" alt="error" id="historyimg6">
+            </div>
+        </div>
+        <!-- sidebar -->
+        <div id="sidebar_1">
+            <div class="accordionMenu">
+                <div class="menuSection" id="head">
+                    <h2><a href="#head">展望彭城新章</a></h2>
+                </div>
+                <div class="menuSection" id="brand">
+                    <h2><a href="#brand">美丽景区</a></h2>
+                    <div id="scenic">
+                        <h3 class="sce-tenth">刘邦故里文化景区</h3>
+                        <h3 class="sce-seventh">安国湖湿地公园</h3>
+                        <h3 class="sce-second">大沙河湿地公园</h3>
+                        <h3 class="sce-sixth">黄楼公园</h3>
+                        <h3 class="sce-third">百步洪</h3>
+                        <h3 class="sce-fourth">古黄河公园</h3>
+                        <h3 class="sce-eighth">显红岛公园</h3>
+                        <h3 class="sce-fifth">汉桥公园</h3>
+                        <h3 class="sce-first">吕梁风景区</h3>
+                        <h3 class="sce-ninth">睢宁房湾</h3>
+                    </div>
+                </div>
+                <div class="menuSection" id="promotion">
+                    <h2><a href="#promotion">蓬勃农业</a></h2>
+                    <div id="agriculture">
+                        <h3 class="agri-first">安国镇万亩西瓜</h3>
+                        <h3 class="agri-third">丰县梁寨苹果示范园</h3>
+                        <h3 class="agri-second">房村镇万亩藕田</h3>
+                        <h3 class="agri-fourth">双沟三产融合示范区</h3>
+                        <h3 class="agri-fifth">沛县沿大沙河果蔬产业带</h3>
+                        <h3 class="agri-sixth">姚集现代农业示范区</h3>
+                        <h3 class="agri-seventh">刘集水果种植区</h3>
+                        <h3 class="agri-eighth">新河镇</h3>
+                        <h3 class="agri-ninth">八路镇花卉种植</h3>
+                    </div>
+                </div>
+                <div class="menuSection" id="extend">
+                    <h2><a href="#extend">示范乡村</a></h2>
+                    <div id="rustic">
+                        <h3 class="rus-first">鲤鱼山庄</h3>
+                        <h3 class="rus-second">睢宁县姚集镇高党村</h3></div>
+                    </div>
+                </div>
+        </div>
+        <div id="sidebar_2">
+            <div class="accordionMenu">
+                <div class="menuSection_1" id="head_2">
+                    <h2><a href="#head_2">回首黄河故道</a></h2>
+                </div>
+                <div class="menuSection_1" id="brand_2">
+                    <h2><a href="#brand_2">黄河改道历史</a></h2>
+                </div>
+                <div class="menuSection_1" id="promotion_2">
+                    <h2><a href="#promotion_2">改道历史影响</a></h2>
+                </div>
+                <div class="menuSection_1" id="extend_2">
+                    <h2><a href="#extend_2">徐州故道现状</a></h2>
+                </div>    
+            </div>
+        </div>
+        <div id="sidebar_button">
+            <button id="switch2">故事模式</button>
+        </div>
+        <div class="check">
+            <input type="checkbox" id="switch1" name="switch1" class="switch" />
+            <label for="switch1">
+                <span class="unchecked-text">古</span>
+                <span class="checked-text">今</span>
+            </label>
+        </div>
+        <div class="picture" id="mainpicture">
+            <div id="imagecontainer">
+                <!-- 底图放置部分 -->
+                <img id="Modernpictures" src="pic/mainpic/最底层.jpg" alt="error" class="pic">
+                <img id="mainarea" src="pic/mainpic/研究区.png" alt="error" class="pic">
+                <img id="grasses" src="pic/mainpic/小草.png" alt="error" class="pic">
+                <img id="huangheriver" src="pic/mainpic/黄河故道.png" alt="error" class="pic">
+                <!-- 底图结束 -->
+                <!-- ui放置部分 -->
+                <img id="liubangguli" src="pic/logo/liubangguli.png" class="logo">
+                <img id="wanmuguatian" src="pic/logo/wanmuguatian.png" class="logo">
+                <img id="peixiananguo" src="pic/logo/peixiananguohushidi.png" class="logo">
+                <img id="dashaheshidi" src="pic/logo/dashaheshidigongyuan.png" class="logo">
+                <img id="aihuapingguo" src="pic/logo/aihuapingguo.png" class="logo">
+                <img id="huanglou" src="pic/logo/huanglou.png" class="logo">
+                <img id="guhuanghegongyuan" src="pic/logo/guhuanghegongyuan.png" class="logo">
+                <img id="biansijiaohui" src="pic/logo/biansijiaohui.png" class="logo">
+                <img id="baibuhong" src="pic/logo/baibuhong.png" class="logo">
+                <img id="xianhongdaogongyuan" src="pic/logo/xianhongdaogongyuan.png" class="logo">
+                <img id="hepingdaqiao" src="pic/logo/hepingdaqiao.png" class="logo">
+                <img id="hanqiaogongyuan" src="pic/logo/hanqiaogongyuan.png" class="logo">
+                <img id="lvliangshan" src="pic/logo/lvliangshan.png" class="logo">
+                <img id="liyushanzhuang" src="pic/logo/liyushanzhuang.png" class="logo">
+                <img id="wanmuou" src="pic/logo/fancunzhenwanmuou.png" class="logo">
+                <img id="shuanggouzhen" src="pic/logo/shuanggousanchanrongheshifanqu.png" class="logo">
+                <img id="fangwanshidi" src="pic/logo/fangwanshidi.png" class="logo">
+                <img id="yaoji" src="pic/logo/suiningxianyaojixiandainongyeshifanqu.png" class="logo">
+                <!-- ui结束 -->
+            </div>
+            <div id="snackbar">拖动以进行探索吧</div>
+            <div id="Ancientpictures">
+                <img id="Ancientpic" src="pic/ancientpic/古黄河.png" alt="error">
+                <img id="Ancientpic2" src="pic/ancientpic/兰考.png" alt="error">
+                <img id="Ancientpic3" src="pic/ancientpic/决口.png" alt="error">
+                <img id="Ancientpic4" src="pic/ancientpic/黄泛区.png" alt="error">
+                <img id="Ancientpic5" src="pic/ancientpic/古河道.png" alt="error">
+                <img id="Ancientpic6" src="pic/ancientpic/arrow1.png" alt="error">
+                <img id="Ancientpic7" src="pic/ancientpic/arrow2.png" alt="error">
+                <img id="Ancientpic8" src="pic/ancientpic/arrow3.png" alt="error">
+                <img id="Ancientpic9" src="pic/ancientpic/arrow4.png" alt="error">
+            </div>
+            <img id="storymodernpic" src="pic/展彭城新章（总）.png" alt="'error">
+        </div>
+        <!-- 可拖动的 DIV -->
+        <div  class="drag" id="dragdiv_1">
+            <a class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="content-container" id="ppt_1">
+                <img class="slide-img" src="pic/美丽风景/夫子观道.jpg">
+                <img class="slide-img" src="pic/美丽风景/白塔问泉.jpg">
+                <img class="slide-img" src="pic/美丽风景/黄河玉带.jpg">
+                <!-- 设置plusSlides的参数时需要增加容器id避免点击按钮出现slideIndex未被定义的情况-->
+                <button class="prev" onclick="plusSlides(1,'ppt_1')">&#10094;</button>
+                <button class="next" onclick="plusSlides(1,'ppt_1')">&#10095;</button>
+            </div>
+            <div class="floating-text">
+                <span>吕梁风景区</span>
+            </div>
+            <p class="Textual_data">
+                徐州城市“后花园”和东南片区“生态屏障”——吕梁山风景区，位于江苏省徐州市铜山区区东南20余公里处，东西约40公里，南北约10公里，面积186.22平方公里。区内群峰林立，低山丘陵共173座，山林资源丰富，植被类型多样，森林覆盖率达89.5%，空气清新。区内湖泊众多，包括吕梁湖、悬水湖、水口水库、螭龙湖（倪园水库）、白桥水库、圣人窝水库、下洪水库、白塔水库等等，沿故黄河两岸分布七座大小水库。
+            </p> 
+        </div>
+        <div class="drag" id="dragdiv_2">
+            <a class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="content-container" id="ppt_2">
+                <img class="slide-img" src="pic/美丽风景/夕阳西下.jpg">
+                <img class="slide-img" src="pic/美丽风景/春季风光.jpg">
+                <img class="slide-img" src="pic/美丽风景/断堤烟柳.jpg">
+                <button class="prev" onclick="plusSlides(-1,'ppt_2')">&#10094;</button>
+                <button class="next" onclick="plusSlides(1,'ppt_2')">&#10095;</button>
+            </div>
+            <div class="floating-text">
+                <span>大沙河湿地公园</span>
+            </div>
+            <p class="Textual_data">
+                江苏丰县黄河故道大沙河国家湿地公园位于丰县大沙河镇二坝村，是黄河故道进入江苏境内的第一站，也是百里大沙河的源头。湿地公园东起254省道，西至丰砀边界，南至黄河故道，北抵大沙河，全长8.1公里，总面积381公顷，分为生态保育、恢复重建、宣教展示、合理利用和管理服务五大功能区。故黄河二坝湿地生态资源丰富、自然景观质朴，唯美的自然风光和浓郁的田园风情令人心旷神怡、流连忘返。
+            </p>
+        </div>
+        <div class="drag" id="dragdiv_3">
+            <a class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="content-container" id="ppt_3">
+                <img class="slide-img" src="pic/美丽风景/百步洪/1.jpg">
+                <img class="slide-img" src="pic/美丽风景/百步洪/2.jpeg">
+                <button class="prev" onclick="plusSlides(-1,'ppt_3')">&#10094;</button>
+                <button class="next" onclick="plusSlides(1,'ppt_3')">&#10095;</button>
+            </div>
+            <div class="floating-text">
+                <span>百步洪</span>
+            </div>
+            <p class="Textual_data">
+                百步洪，位于徐州城东南二里处（今徐州市区和平桥一带），因巨石盘踞长百余步而得名。苏轼知徐州时与弟苏辙分别有咏歌百步洪的多首诗词传世。
+            </p>
+        </div>
+        <div class="drag" id="dragdiv_4">
+            <a class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="content-container" id="ppt_4">
+                <img class="slide-img" src="pic/美丽风景/古黄河公园/1.jpg">
+                <img class="slide-img" src="pic/美丽风景/古黄河公园/2.jpeg">
+                <img class="slide-img" src="pic/美丽风景/古黄河公园/3.jpeg">
+                <img class="slide-img" src="pic/美丽风景/古黄河公园/4.jpg">
+                <button class="prev" onclick="plusSlides(-1,'ppt_4')">&#10094;</button>
+                <button class="next" onclick="plusSlides(1,'ppt_4')">&#10095;</button>
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <div class="floating-text">
+                <span>古黄河公园</span>
+            </div>
+            <p class="Textual_data" >
+                自解放以来，徐州市委、市政府遵循"人民城市人民建，建好城市为人民"的原则，大力整治河床，基本控制了五十年代末的水患。十多年的努力成果显现为一个四季常青、景色宜人的开放式带状公园——故黄河公园。该公园北起合群桥，南至鸡嘴坝，穿越市区多座桥梁和主干道，总长6313米，宽20米。公园内花坛众多，树木繁茂，拥有多样的树种，道路和绿化面积广阔，林带和播种花草的面积也相当可观。昔日的黄河故道已变成绕城而过的绿色玉带，成为徐州市的重要风景旅游区。今天的故黄河，早已停止了咆哮，但随城而起的治水历史不可淹灭。如今的黄楼巍然屹立，也是徐州这座城市不屈的精神象征。
+           </p>
+        </div>
+        <div class="drag" id="dragdiv_5">
+            <a class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="content-container" id="ppt_5">
+                <img class="slide-img" src="pic/美丽风景/汉桥公园/1.jpg">
+                <img class="slide-img" src="pic/美丽风景/汉桥公园/2.jpg">
+                <img class="slide-img" src="pic/美丽风景/汉桥公园/3.jpg">
+                <img class="slide-img" src="pic/美丽风景/汉桥公园/4.jpg">
+                <button class="prev" onclick="plusSlides(-1,'ppt_5')">&#10094;</button>
+                <button class="next" onclick="plusSlides(1,'ppt_5')">&#10095;</button>
+            </div>
+            <div class="floating-text">
+                <span>汉桥公园</span>
+            </div>
+            <p class="Textual_data">
+                徐州汉桥于1999年12月竣工，设计上采用了仿古风格，与徐州的汉文化相融合，彰显了汉代的雄伟气息。这座桥梁位于市区东南部，跨越故黄河，北接复兴路，南连淮塔路，是通往东南方向的重要交通枢纽，全长400米，采用先进的箱式结构设计。为了确保稳定性和泄洪功能，桥底使用了石柱支撑。桥上的装饰十分独特，引桥部分整排摆放着形态各异的小狮子，而四个大桥墩上方则采用了仿古建筑风格，护栏上刻有汉画像石图案，两侧也以汉画像石作为装饰，凸显了徐州的汉文化特色。汉桥东侧的汉桥公园以其幽美的生态环境和黄河故道的自然风光，为市民提供了一处宜人的休闲场所。
+            </p>
+        </div>
+        <div class="drag" id="dragdiv_6">
+            <a class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="content-container" id="ppt_6">
+                <img class="slide-img" src="pic/美丽风景/黄楼公园/1.jpg">
+                <img class="slide-img" src="pic/美丽风景/黄楼公园/2.jpg">
+                <img class="slide-img" src="pic/美丽风景/黄楼公园/3.jpg">
+                <button class="prev" onclick="plusSlides(-1,'ppt_6')">&#10094;</button>
+                <button class="next" onclick="plusSlides(1,'ppt_6')">&#10095;</button>
+            </div>
+            <div class="floating-text">
+                <span>黄楼公园</span>
+            </div>
+            <p class="Textual_data">
+                黄楼为北宋苏轼所建，是徐州五大名楼之一，也是徐州的地标性建筑。公元1077年，北宋熙宁十年，黄河大决口，洪水浩浩汤汤，波及徐州。时任徐州知州的苏东坡率军民治水，防止徐州城被淹。为了纪念这次治水事件，苏东坡在当时徐州城的东门，建起一座大楼，由于“土实胜水”，以土克水，有镇水之意，所以用黄土涂饰墙面，故名黄楼。在这之后900年日月不辍的时空里，黄楼废了又修，修了又废，到上世纪30年代，黄楼已没有实体，只剩下一个意象，悬浮在历史的笔端。1988年，重建黄楼于黄河故道畔，新建的黄楼为黄琉璃瓦覆顶，歇山抱厦，有苏辙撰文，苏轼所书的《黄楼赋》碑立于楼内。今天的故黄河，早已停止了咆哮，但随城而起的治水历史不可淹灭。如今的黄楼巍然屹立，也是徐州这座城市不屈的精神象征。
+            </p>
+        </div>
+        <div class="drag" id="dragdiv_7">
+            <a class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="content-container" id="ppt_7">
+                <img class="slide-img" src="pic/美丽风景/沛县安国/城市绿肺.jpeg">
+                <img class="slide-img" src="pic/美丽风景/沛县安国/夕阳下的湿地.jpg">
+                <img class="slide-img" src="pic/美丽风景/沛县安国/美丽风景.jpg">
+                <img class="slide-img" src="pic/美丽风景/沛县安国/诗意家园.jpeg">
+                <img class="slide-img" src="pic/美丽风景/沛县安国/飞鸟.jpg">
+                <button class="prev" onclick="plusSlides(-1,'ppt_7')">&#10094;</button>
+                <button class="next" onclick="plusSlides(1,'ppt_7')">&#10095;</button>
+            </div>
+            <div class="floating-text">
+                <span>安国湖湿地公园</span>
+            </div>
+            <p class="Textual_data">
+                江苏沛县安国湖国家湿地公园，位于安国镇，总面积517公顷，原为张双楼煤矿采煤后沉降地。该湿地是沛县重点生态工程，结合了塌陷地治理、生态保护等元素，划分为六个功能区，包括由十里芦苇荡、百果花园岛、千亩荷花塘、万鸟栖侯区组成的天然生态区、表流净化区、缓冲隔离区、湿地宣教区、休闲娱乐区和管理服务区，提供观光、休闲体验。2012年成为省级湿地公园，2015年获得“国家湿地公园（试点）”称号。2020年3月，国家林草局批复安国湖国家湿地公园功能区划调整。2021年底通过验收，正式成为国家级湿地公园，继九里湖、潘安湖、大沙河国家级湿地公园之后，徐州市再添一“国”字号宝藏，为徐州市增添了一处“绿肺”。
+            </p>
+        </div>
+        <div class="drag" id="dragdiv_8">
+            <a class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="content-container" id="ppt_8">
+                <img class="slide-img" src="pic/美丽风景/显红岛公园/1.jpg">
+                <img class="slide-img" src="pic/美丽风景/显红岛公园/2.jpg">
+                <img class="slide-img" src="pic/美丽风景/显红岛公园/3.jpg">
+                <img class="slide-img" src="pic/美丽风景/显红岛公园/4.jpg">
+                <img class="slide-img" src="pic/美丽风景/显红岛公园/5.jpeg">
+                <button class="prev" onclick="plusSlides(-1,'ppt_8')">&#10094;</button>
+                <button class="next" onclick="plusSlides(1,'ppt_8')">&#10095;</button>
+            </div>
+            <div class="floating-text">
+                <span>显红岛公园</span>
+            </div>
+            <p class="Textual_data">
+                显红岛公园始建于1986年，是徐州百步洪南的一处沙洲，后因传说而得名。显红岛是故黄河风光带建设中的重点工程之一，由同济大学负责设计，总投资数百万元，2006年4月开工建设，包括仿古水榭、亲水平台、木栈道三大景点2006年进行改造提升，成为故黄河风光带的重点工程之一。公园内设有仿古水榭、亲水平台、木栈道等景点，东侧建有三拱桥，长46米、宽4.2米，连接显红岛与东岸路。工程重视绿化，岛上覆盖率超过98%，栽植大型乔木。显红岛是市民休闲娱乐的热门去处，是徐州故黄河风光带建设中的亮点之一。
+            </p>
+        </div>
+        <div class="drag" id="dragdiv_9">
+            <a class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="content-container" id="ppt_9">
+                <img class="slide-img" src="pic/美丽风景/睢宁房湾/1.jpg">
+                <img class="slide-img" src="pic/美丽风景/睢宁房湾/2.jpg">
+                <img class="slide-img" src="pic/美丽风景/睢宁房湾/3.jpg">
+                <img class="slide-img" src="pic/美丽风景/睢宁房湾/5.jpg">
+                <button class="prev" onclick="plusSlides(-1,'ppt_9')">&#10094;</button>
+                <button class="next" onclick="plusSlides(1,'ppt_9')">&#10095;</button>
+            </div>
+            <div class="floating-text">
+                <span>睢宁房湾</span>
+            </div>
+            <p class="Textual_data">
+                房湾湿地公园是位于睢宁县姚集镇的省级保护区，拥有550公顷的广阔区域，四季开放。它地处黄河故道沿线，交通便利。气候属于温带季风气候，自然生态资源丰富，周边配套清水畔水库和万亩果园等农业休闲景观。房湾湿地公园的发展规划以“一核四组团”为格局，包括核心湿地和百花百果庄园、滨水养生小镇、田园创意公园、湿地水乡四个功能区。目标是在3年内将其打造为苏北地区最大的省级生态旅游示范区。度假区总规划面积45.8平方公里，预计投资20亿。区位优势明显，三条省道穿境而过。依托徐州市黄河故道综合开发工程，房湾片区建设得到推进，规划了国家级农业公园、省级湿地公园和省级生态旅游度假区“三区合一”的建设方案。项目采用PPP合作模式，深入挖掘当地水资源和生态科技潜力，结合地方文化，通过多样化的旅游和文化体验活动，旨在打造徐州东部的休闲新地标。
+            </p>
+        </div>
+        <div class="drag" id="dragdiv_10">
+            <a class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="content-container" id="ppt_10">
+                <img class="slide-img" src="pic/美丽风景/刘邦故里/1.png">
+                <!-- <button class="prev" onclick="plusSlides(-1,'ppt_10')">&#10094;</button> -->
+                <!-- <button class="next" onclick="plusSlides(1,'ppt_10')">&#10095;</button> -->
+            </div>
+            <div class="floating-text">
+                <span>刘邦故里文化景区</span>
+            </div>
+            <p class="Textual_data">
+                刘邦故里文化景区位于徐州市丰县赵庄镇金刘寨村，是集汉文化体验、生态观光、根祖祈福、研学休闲等功能于一体的历史文化景区。汉皇祖陵俗称"皇陵"，始建于秦汉时期，历来是当地汉里堂刘氏祭祀祖先的场所。原有墓有祠，但经过千百年来的改朝换代和沧桑变化，再加上新中国成立后的"破四旧"，许多古迹建筑被破坏，现有刘邦曾祖父刘清的土坟和部分遗迹。1990年经县政府批准重建，1992年县政府与刘姓族人对其进行了保护性修复，2013年重新启动规划建设，2017年建成开园。现是国家4A级旅游景区。
+            </p>
+        </div>
+        <div class="drag" id="dragdiv_11">
+            <a class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="content-container" id="ppt_11">
+                <img class="slide-img" src="pic/蓬勃农业/安国镇万亩西瓜/沛公西瓜节.jpg">
+                <img class="slide-img" src="pic/蓬勃农业/安国镇万亩西瓜/沛县西瓜.webp">
+                <img class="slide-img" src="pic/蓬勃农业/安国镇万亩西瓜/瓜农收瓜.jpg">
+                <button class="prev" onclick="plusSlides(-1,'ppt_11')">&#10094;</button>
+                <button class="next" onclick="plusSlides(1,'ppt_11')">&#10095;</button>
+            </div>
+            <div class="floating-text">
+                <span>安国镇万亩西瓜</span>
+            </div>
+            <p class="Textual_data">
+                安国西瓜又称“沛公西瓜”，主打8424等品种，凭借超过40年的种植历史、适宜的地理位置、优越的土壤条件、优良的品种和丰富的种植经验，安国镇的西瓜风味独特，深受消费者喜爱。2020年，该镇以西瓜产业为核心，成功打造为国家农业产业强镇，被誉为“西瓜之乡”，使“沛公西瓜”成为当地的标志性品牌。该镇的发展紧密结合全市的“两带两圈多点”规划布局，利用大沙河区域的自然资源，如土壤和光照，推进设施瓜菜产业发展，建立了育苗、生产和销售的一体化产业体系，有效促进了产业振兴和农民收入增加。目前，全镇设施瓜菜种植面积达3万余亩，主要生产西瓜和蔬菜，成为全国知名的产业强镇和省级优质西瓜生产基地。到2022年，该镇瓜农户均纯收入约为12万元，人均纯收入约3.4万元，成为当地农民增收的关键产业，也是乡村振兴和产业发展的典范。
+            </p>
+        </div>
+        <div class="drag" id="dragdiv_12">
+            <a class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="content-container" id="ppt_12">
+                <img class="slide-img" src="pic/蓬勃农业/房村镇万亩藕田/万亩荷园荷花开，娇艳清新惹人醉.jpg">
+                <img class="slide-img" src="pic/蓬勃农业/房村镇万亩藕田/万亩荷园荷花开，娇艳清新惹人醉.png">
+                <img class="slide-img" src="pic/蓬勃农业/房村镇万亩藕田/藕农采藕.jpg">
+                <img class="slide-img" src="pic/蓬勃农业/房村镇万亩藕田/铜山区境内黄河故道流域.webp">
+                <button class="prev" onclick="plusSlides(-1,'ppt_12')">&#10094;</button>
+                <button class="next" onclick="plusSlides(1,'ppt_12')">&#10095;</button>
+            </div>
+            <div class="floating-text">
+                <span>房村镇万亩藕田</span>
+            </div>
+            <p class="Textual_data">
+                房村镇是国家级生态镇，境内有15公里黄河故道。黄河两岸水质洁净、土地肥沃，有悠久的种植浅水藕历史。经过多年产业调整，现在全镇有万亩浅水藕。浅水藕可以从当年9月份一直挖到来年4月初，在地里存的时间长且不易腐烂，可以随挖随卖，就像到银行取钱一样方便，群众形象地称之为“地下银行”。黄河两岸水质洁净、土地肥沃，有悠久的浅水藕种植历史，自古就有“水陆码头房村驿，千年古镇荷花香”之说。如今，房村镇浅水藕种植面积已超过万亩，该村打造的赏荷、采摘、农家乐为一体的故黄河旅游观光带，成为吕梁风景区重要组成部分。
+            </p>
+        </div>
+        <div class="drag" id="dragdiv_13">
+            <a class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="content-container" id="ppt_13">
+                <img class="slide-img" src="pic/暂无图片1.png">
+                <img class="slide-img" src="pic/暂无图片2.png">
+                <button class="prev" onclick="plusSlides(-1,'ppt_13')">&#10094;</button>
+                <button class="next" onclick="plusSlides(1,'ppt_13')">&#10095;</button>
+            </div>
+            <div class="floating-text">
+                <span>丰县梁寨苹果示范园</span>
+            </div>
+            <p class="Textual_data">
+                江苏丰县在现代农业科技示范中，推广了150亩的“八月富士王”苹果矮化栽培技术。这种技术让苹果树高仅3.5米，但产量不减反增，每亩可栽植约100棵，是传统乔化苹果树的两倍。矮化栽培的优势在于更密集的结果枝桠和优化的株行距，同时便于机械化作业，降低了劳动强度。自2013年引进以来，丰县于2016年获得省级项目立项，并通过省级验收。
+            </p>
+        </div>
+        <div class="drag" id="dragdiv_14">
+            <a class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="content-container" id="ppt_14">
+                <img class="slide-img" src="pic/蓬勃农业/双沟三产/1.png">
+                <img class="slide-img" src="pic/蓬勃农业/双沟三产/2.png">
+                <button class="prev" onclick="plusSlides(-1,'ppt_14')">&#10094;</button>
+                <button class="next" onclick="plusSlides(1,'ppt_14')">&#10095;</button>
+            </div>
+            <div class="floating-text">
+                <span>双沟三产融合示范区</span>
+            </div>
+            <p class="Textual_data">
+                双沟镇大白村三产融合基地展现出一幅生机盎然的田园风光，得益于当地推动农业供给侧结构性改革和“一二三”产业融合发展。为贯彻新时代“三农”工作要求，双沟镇致力于现代设施农业、生态畜禽养殖、四大名果壮大、现代渔业、水利建设及林业发展，旨在提升农业质量，助力脱贫攻坚，促进乡村全面振兴，实现农业增效、农民增收和农村繁荣。城镇化方面，双沟镇实施“同一乡镇”试点计划，优化村庄布局，构建“1+1”新型城镇化格局。通过高标准建设安置房和社区，如官路、幸福里、爱民等小区，以及增建公园绿地和商业街区，双沟镇不断完善基础设施，提升居民生活质量。此外，引入中建、中冶、绿地等国有企业参与城市建设，进一步加速了新型城镇化进程。
+            </p>
+        </div>
+        <div class="drag" id="dragdiv_15">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="content-container" id="ppt_15">
+                <img class="slide-img" src="pic/蓬勃农业/沛县沿大沙河果蔬产业带/果农.jpg">
+                <img class="slide-img" src="pic/蓬勃农业/沛县沿大沙河果蔬产业带/猴脑菌.jpg">
+                <img class="slide-img" src="pic/蓬勃农业/沛县沿大沙河果蔬产业带/稻田.jpg">
+                <img class="slide-img" src="pic/蓬勃农业/沛县沿大沙河果蔬产业带/金蝉.webp">
+                <button class="prev" onclick="plusSlides(-1,'ppt_15')">&#10094;</button>
+                <button class="next" onclick="plusSlides(1,'ppt_15')">&#10095;</button>
+            </div>
+            <div class="floating-text">
+                <span>沛县沿大沙河果蔬产业带</span>
+            </div>
+            <p class="Textual_data">
+                鹿楼镇通过治理大沙河，将其两岸由贫瘠沙滩改造成富饶的果海绿洲。目前，该镇依托6.5公里长的大沙河产业带培育了260多家家庭农场，包括9家省级示范家庭农场，为农业科技人才提供施展才华的平台。还获批建设“省级现代农业科技综合示范基地”和“上海蔬菜外延基地”，并着手创建“省级现代农业产业示范园”。为了增加农民收入，鹿楼镇鼓励林下养金蝉，已发展3.5万亩林下金蝉养殖面积，并成立30多家种植专业合作社，形成了完整的产业链。同时，推进美丽乡村建设，建成多个特色田园乡村和美丽宜居村庄，吸引工商资本投入农村，发放涉农贷款带动低收入农户增收。未来，鹿楼镇计划培育更多农村专家和经纪人，吸引更多人才下乡和能人返乡创业。通过加快示范引领和招商引资，打造创新创业园区，推动乡村产业振兴。
+            </p>
+        </div>
+        <div class="drag" id="dragdiv_16">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="content-container" id="ppt_16">
+                <img class="slide-img" src="pic/蓬勃农业/姚集现代农业示范区/1 (1).jpeg">
+                <img class="slide-img" src="pic/蓬勃农业/姚集现代农业示范区/1 (1).jpg">
+                <img class="slide-img" src="pic/蓬勃农业/姚集现代农业示范区/1 (2).jpg">
+                <img class="slide-img" src="pic/蓬勃农业/姚集现代农业示范区/1 (3).jpg">
+                <button class="prev" onclick="plusSlides(-1,'ppt_16')">&#10094;</button>
+                <button class="next" onclick="plusSlides(1,'ppt_16')">&#10095;</button>
+            </div>
+            <div class="floating-text">
+                <span>姚集现代农业示范区</span>
+            </div>
+            <p class="Textual_data">
+                苏北的睢宁县姚集镇位于曲折蜿蜒的黄河故道边，是一个犹如乡镇明珠般璀璨的地方。自党的十九大以来，该镇积极落实乡村振兴战略，重点发展产业、建设项目、提升乡镇管理水平及打造美丽乡村，致力于推动农业和农村发展进入新时代。姚集镇拥有12万亩耕地，是一个重要的粮食生产基地；同时，超过1万亩的高效设施农业使其成为重要的瓜蔬生产基地。此外，镇内还建有优质果示范区，专注于反季节水果的生产，保证全年水果供应。果树种植面积达1.5万亩，且以黄河故道两侧为核心的万亩优质果园是当地重要的果品输出基地。这些项目不仅为近千人提供了就业机会，还增加了劳动收入1500万元以上。姚集镇依托其农业优势，推动了产品深加工和多个农业亮点项目的发展，如食用菌工厂、猕猴桃基地、向日葵育种基地、稻虾共养、家庭农场、鱼菜共生以及日光温室等，实现了产业的平稳增长。
+            </p>
+        </div>
+        <div class="drag" id="dragdiv_17">
+            <a class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="content-container" id="ppt_17">
+                <img class="slide-img" src="pic/蓬勃农业/刘集水果种植区/刘集葡萄.jpg">
+                <img class="slide-img" src="pic/蓬勃农业/刘集水果种植区/喜悦的葡萄果农.jpg">
+                <img class="slide-img" src="pic/蓬勃农业/刘集水果种植区/李婉樱桃采摘园.jpg">
+                <img class="slide-img" src="pic/蓬勃农业/刘集水果种植区/樱桃.jpeg">
+                <button class="prev" onclick="plusSlides(-1,'ppt_17')">&#10094;</button>
+                <button class="next" onclick="plusSlides(1,'ppt_17')">&#10095;</button>
+            </div>
+            <div class="floating-text">
+                <span>刘集水果种植区</span>
+            </div>
+            <p class="Textual_data">
+                近年来，随着农业不断转型发展，刘集镇确立了“生态立镇、旅游强镇”的战略目标，大力发展休闲农业与乡村旅游产业，取得了理想成效。目前，刘集镇共有葡萄近5000亩，其中集中连片3000亩，共有专业葡萄产业园10余家，其中设施大棚葡萄1500亩，常规葡萄3500亩。葡萄产业已成为刘集镇特色农副产品和农民增收致富的主渠道，年增收达1.5亿元，年接待游客10万余人，辐射带动3000多人就业，辐射带动效应亿元以上。丁孟村的李婉樱桃采摘园是刘集镇另一道美丽的风景。走进采摘园，映入眼帘的是一串串晶莹剔透的大樱桃挂满枝头，不少市民游客慕名前来采摘。目前樱桃采摘园已发展至近百亩，有十多个大樱桃品种，出产的樱桃果实饱满、色泽鲜艳、质细多汁、酸甜可口，深受消费者喜爱。
+            </p>
+        </div>
+        <div class="drag" id="dragdiv_18">
+            <a class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="content-container" id="ppt_18">
+                <img class="slide-img" src="pic/蓬勃农业/新河镇/新河镇丰收.jpg">
+                <img class="slide-img" src="pic/蓬勃农业/新河镇/新河镇润客食品有限公司.jpg">
+                <img class="slide-img" src="pic/蓬勃农业/新河镇/邳州农业种植.jpg">
+                <button class="prev" onclick="plusSlides(-1,'ppt_18')">&#10094;</button>
+                <button class="next" onclick="plusSlides(1,'ppt_18')">&#10095;</button>
+            </div>
+            <div class="floating-text">
+                <span>新河镇</span>
+            </div>
+            <p class="Textual_data">
+                阿巴阿巴
+            </p>
+        </div>
+        <div class="drag" id="dragdiv_19">
+            <a class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="content-container" id="ppt_19">
+                <img class="slide-img" src="pic/蓬勃农业/八路镇花卉种植/八路镇花卉园.webp">
+                <img class="slide-img" src="pic/蓬勃农业/八路镇花卉种植/八路镇花卉种植园区.webp">
+                <img class="slide-img" src="pic/蓬勃农业/八路镇花卉种植/蝴蝶兰花卉大棚.webp">
+                <button class="prev" onclick="plusSlides(-1,'ppt_19')">&#10094;</button>
+                <button class="next" onclick="plusSlides(1,'ppt_19')">&#10095;</button>
+            </div>
+            <div class="floating-text">
+                <span>八路镇花卉种植</span>
+            </div>
+            <p class="Textual_data">
+                阿巴阿巴
+            </p>
+        </div>
+        <div class="drag" id="dragdiv_20">
+            <a class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="content-container" id="ppt_20">
+                <img class="slide-img" src="pic/示范乡村/鲤鱼山庄/俯瞰乡村.png">
+                <img class="slide-img" src="pic/示范乡村/鲤鱼山庄/乡村景色.jpeg">
+                <img class="slide-img" src="pic/示范乡村/鲤鱼山庄/果树.png">
+                <img class="slide-img" src="pic/示范乡村/鲤鱼山庄/涓涓细流.jpeg">
+                <img class="slide-img" src="pic/示范乡村/鲤鱼山庄/特色手绘墙画.jpg">
+                <img class="slide-img" src="pic/示范乡村/鲤鱼山庄/特色风光.png">
+                <img class="slide-img" src="pic/示范乡村/鲤鱼山庄/鲤鱼山庄.jpg">
+                <button class="prev" onclick="plusSlides(-1,'ppt_20')">&#10094;</button>
+                <button class="next" onclick="plusSlides(1,'ppt_20')">&#10095;</button>
+            </div>
+            <div class="floating-text">
+                <span>鲤鱼山庄</span>
+            </div>
+            <p class="Textual_data">
+                鲤鱼山庄位于徐州市东郊、睢宁县西北，是黄河故道风光带上的重要节点。它有悠久的历史，因地理位置和山体形状得名。2018年5月，鲤鱼山庄开始旧村改造，规划建设为特色田园乡村，并在同年8月启动建设。规划设计遵循“三特”主线，即特色产业、文化和民居，打造了新型农村社区，增加了文化元素，并进行了绿化改造。因此获得了多项荣誉称号。2019年下半年，以古民居风貌为原型，开始建设新型农民社区，保留了传统建筑风格和乡土情怀。新村共有119套民宅以及多个公共服务设施，如龙鲤文化中心、锦鲤一条街等。古黄河流入这里形成的沙质土壤,很适合果树生长。立冬过后,鲤鱼山附近果园的枝头上还挂着红彤彤的苹果,霜后的苹果更甜更脆更爽口。
+            </p>
+        </div>
+        <div class="drag" id="dragdiv_21">
+            <a class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="content-container" id="ppt_21">
+                <img class="slide-img" src="pic/示范乡村/睢宁县姚记镇高党村/1.png">
+                <img class="slide-img" src="pic/示范乡村/睢宁县姚记镇高党村/2.png">
+                <img class="slide-img" src="pic/示范乡村/睢宁县姚记镇高党村/3.png">
+                <button class="prev" onclick="plusSlides(-1,'ppt_21')">&#10094;</button>
+                <button class="next" onclick="plusSlides(1,'ppt_21')">&#10095;</button>
+            </div>
+            <div class="floating-text">
+                <span>睢宁县姚集镇高党村</span>
+            </div>
+            <p class="Textual_data">
+                高党村位于姚集镇东北黄河南岸滩面上，距镇政府约4公里，是一个多姓氏的行政村。全村辖新庄、戴庄、周庄、王庄、高党5个自然庄，共716户人家，2560口人，占地总面积约3050亩，可耕地面积2800亩。2020年11月20日，入选第六届全国文明村镇名单。高党村新农村建设于2015年8月拆迁动工，新村集中居住区建设在原址周庄及以北区域。新村建成后，将可腾出土地500余亩。这些土地均为黄河滩面上的优质二合土壤，具有较高的土地产出价值，是增加农民收入的永久性资源。同时，该村距离黄河中泓仅有三五百米，又是黄河故道二次开发、发展乡村游的最佳基地。高党村依托房湾湿地、万亩优质果园、黄河故道等旅游资源，高党村推进民俗商业街、农家乐、民宿经济发展，先后实施稻虾共养、优质猕猴桃基地、向日葵花海及育种基地、园艺草皮基地等一批优质农业项目。
+            </p>
+        </div>
+        </div>
+    </div>
+</body>
+<script>
+//////////////////////////////////////////小河功能//////////////////////////////////////////////////////
+//基础设置
+var startcondition = 'none';
+var condition = 'none';
+var anicondition = 'none';
+document.addEventListener("DOMContentLoaded", function() {
+    const xiaohesay= document.getElementById("xiaohesay");
+    const xiaohe = document.getElementById("xiaohejingling");
+    const xiaohesayh2 = document.getElementById('xiaohesayh2');
+    const history=document.getElementById('historybutton');
+    const morden=document.getElementById('mordenbutton');
+    const ai=document.getElementById('ai');
+    const audioPlayer = document.getElementById('audioPlayer');
+    const xiaohemulu = document.querySelector('.xiaohemulu');
+    const xiaohesayhistory = document.getElementById('xiaohesayhistory');
+    const historyimg1=document.getElementById('historyimg1');
+    const historyimg2=document.getElementById('historyimg2');
+    const historyimg3=document.getElementById('historyimg3');
+    const historyimg4=document.getElementById('historyimg4');
+    const historyimg5=document.getElementById('historyimg5');
+    const historyimg6=document.getElementById('historyimg6');
+    const xiaohesayai = document.getElementById('xiaohesayai');
+    const results = document.getElementById('results');
+    const result = document.getElementById('result');
+    const sendVal = document.getElementById('sendVal');
+    const sendbtn = document.getElementById('sendbtn');
+    let timeoutId;
+//打开小河
+xiaohe.addEventListener("click", function() { 
+        if(startcondition=='already'){
+            xiaohesayh2.textContent="小精灵小河能帮你做些什么呢？"
+            audioPlayer.src='pic/小河/配音/能为您做些什么.MP3';
+            audioPlayer.load();
+        }  
+        if(startcondition=='none'){
+            xiaohesayh2.textContent="欢迎来到“回首黄河故道，展望彭城新章”创意世界！我是小精灵小河，我可以为你讲述黄河变迁的故事，以及介绍现今彭城黄河故道的发展！有什么问题可以随时问我哦！"
+            audioPlayer.src='pic/小河/配音/自我介绍.MP3';
+            audioPlayer.load();
+            startcondition='already';
+        } 
+            xiaohesayhistory.style.animation='sinkOut 0.5s ease forwards';
+            xiaohesayai.style.animation='sinkOut 0.5s ease forwards';  
+            setTimeout(() => {
+                        xiaohesayhistory.style.display = 'none'; 
+                        xiaohesayai.style.display = 'none'; 
+                        }, 500);      
+            condition = 'start';
+            xiaohesay.style.animation='fade-in 0.5s ease-out forwards';
+            xiaohesay.style.display='block';
+            xiaohemulu.style.animation='sinkOut 0.5s ease forwards';
+            audioPlayer.play();
+
+        audioPlayer.addEventListener('ended', () => {
+            if(condition=='start'){
+                xiaohemulu.style.animation='fade-in 0.5s ease-out forwards';
+                xiaohemulu.style.display='block';
+                timeoutId = setTimeout(() => {
+                    xiaohemulu.style.animation='sinkOut 0.5s ease forwards';
+                    setTimeout(() => {
+                        xiaohemulu.style.display = 'none'; // 隐藏容器
+                        }, 500);
+                    }, 3000); // 5秒后隐藏
+                xiaohesay.style.animation='sinkOut 0.5s ease forwards'
+                setTimeout(function() {
+                xiaohesay.style.display='none';
+            }, 500); // 延迟500毫秒（即0.5秒）
+            }
+        });
+    });
+//小河目录设置
+// 监听鼠标移入容器事件
+xiaohe.addEventListener('mouseover', () => {
+    // 如果之前设置了隐藏的计时器，取消隐藏操作
+    clearTimeout(timeoutId);
+    // 显示容器
+    if(anicondition=='none'&&window.getComputedStyle(xiaohesay).display == 'none'&&startcondition=='already'){
+        anicondition='fade-in';
+        xiaohemulu.style.animation='fade-in 0.5s ease-out forwards';
+        xiaohemulu.style.display = 'block';
+    }
+    setTimeout(function(){
+            anicondition='none'; 
+        },500)
+  });
+
+xiaohe.addEventListener('mouseleave', () => {
+    // 设置隐藏容器的计时器
+    timeoutId = setTimeout(() => {
+        if(anicondition=='none'){
+            anicondition='sink-out';
+            xiaohemulu.style.animation='sinkOut 0.5s ease forwards';
+        }
+        setTimeout(function(){
+            xiaohemulu.style.display = 'none'; // 隐藏容器
+            anicondition='none';
+        },500)
+    }, 1000); // 2秒后隐藏
+  });
+
+xiaohemulu.addEventListener('mouseover', () => {
+    // 如果之前设置了隐藏的计时器，取消隐藏操作
+    clearTimeout(timeoutId);
+    // 显示容器
+    if(anicondition=='none'&&window.getComputedStyle(xiaohesay).display == 'none'&&startcondition=='already'){
+        anicondition='fade-in';
+        xiaohemulu.style.animation='fade-in 0.5s ease-out forwards';
+        xiaohemulu.style.display = 'block';
+    }
+    setTimeout(function(){
+            anicondition='none'; 
+        },500)
+  });
+
+xiaohemulu.addEventListener('mouseleave', () => {
+    // 设置隐藏容器的计时器
+    timeoutId = setTimeout(() => {
+        if(anicondition=='none'){
+            anicondition='sink-out';
+            xiaohemulu.style.animation='sinkOut 0.5s ease forwards';
+        }
+        setTimeout(function(){
+            xiaohemulu.style.display = 'none'; // 隐藏容器
+            anicondition='none';
+        },500)
+    }, 1000); // 2秒后隐藏
+  });
+
+//介绍古代
+    history.addEventListener('click',function(){
+        condition='history';
+        audioPlayer.src='pic/小河/配音/黄河改道/改道.MP3';
+        audioPlayer.load();
+        xiaohesayh2.textContent="好的，小河这就为您介绍古黄河改道的历史！历史上黄河有先后六次的改道历史，让我一一为您讲述吧~"
+        xiaohesay.style.animation='fade-in 0.5s ease-out forwards';
+        xiaohesay.style.display='block';
+        xiaohemulu.style.animation='sinkOut 0.5s ease forwards';
+        audioPlayer.play();
+        audioPlayer.addEventListener('ended', () => {
+            if(condition=='history'){
+            xiaohesayhistory.style.animation='fade-in 0.5s ease-out forwards';
+            xiaohesayhistory.style.display='block';
+            xiaohesay.style.animation='sinkOut 0.5s ease forwards';
+            xiaohemulu.style.display='none';
+            historyimg1.style.display='block';
+            setTimeout(function() {
+                condition='history1'
+                xiaohesayh2.textContent="黄河第一次大改道：周定王五年（公元前602年），黄河决口于宿胥口（今滑县东北），河道从黄河故道向东迁移40km，经滑县、大名、夏津、清河，由沧州、黄骅入渤海，史称汉志河，行河613 年。"
+                xiaohesay.style.animation='fade-in 0.5s ease-out forwards';
+                audioPlayer.src='pic/小河/配音/黄河改道/黄河第一次改道.MP3';
+                audioPlayer.load();
+                audioPlayer.play();
+                }, 500);
+            }
+            if(condition=='history1'){
+                xiaohesay.style.animation='sinkOut 0.5s ease forwards';
+                setTimeout(function() {
+                condition='history2'
+                historyimg2.style.display='block';
+                historyimg1.style.display='none';
+                xiaohesayh2.textContent="黄河第二次大改道：西汉末年王莽始建国三年（公元11年），“河决魏郡（今濮阳西北），泛清河以东数郡”，河道向东迁移80km，经濮阳、清丰、阳谷、聊城、临邑、惠民，至利津入渤海，史称东汉河，行河1037年。因河道地势有利，加之王景治河之功，历东汉、隋、唐、五代无水患。"
+                xiaohesay.style.animation='fade-in 0.5s ease-out forwards';
+                audioPlayer.src='pic/小河/配音/黄河改道/黄河第二次改道.MP3';
+                audioPlayer.load();
+                audioPlayer.play();
+                }, 500);
+            }
+            if(condition=='history2'){
+                xiaohesay.style.animation='sinkOut 0.5s ease forwards';
+                setTimeout(function() {
+                 condition='history3'
+                historyimg3.style.display='block';
+                historyimg2.style.display='none';
+                xiaohesayh2.textContent="黄河第三次大改道：宋仁宗庆历八年（公元1048年），河决澶州商胡埽（今濮阳市东昌湖集），在黄河两次南迁之后向北迁移40~80km，经大名、馆陶、临清、夏津、景县、东光、南皮由青县、天津入渤海，史称“商胡北流”，至宋仁宗嘉（祜）五年（公元1060年），黄河又在魏郡第六埽分出一条分流，又称东流，由无棣笃马河入渤海，行河146 年。"
+                xiaohesay.style.animation='fade-in 0.5s ease-out forwards';
+                audioPlayer.src='pic/小河/配音/黄河改道/黄河第三次改道.MP3';
+                audioPlayer.load();
+                audioPlayer.play();
+                }, 500);
+            }
+            if(condition=='history3'){
+                xiaohesay.style.animation='sinkOut 0.5s ease forwards';
+                setTimeout(function() {
+                condition='history4'
+                historyimg4.style.display='block';
+                historyimg3.style.display='none';
+                xiaohesayh2.textContent="黄河第四次大改道：金章宗明昌五年（公元1194年），河决阳武光禄寺村周视堤口（今原阳西北张大夫人寨），向东经延津、封丘、长垣、兰封、东明、曹县，又入曹、单、萧、砀河道，由清江口云梯关入黄海。"
+                xiaohesay.style.animation='fade-in 0.5s ease-out forwards';
+                audioPlayer.src='pic/小河/配音/黄河改道/黄河第四次改道.MP3';
+                audioPlayer.load();
+                audioPlayer.play();
+                }, 500);
+            }
+            if(condition=='history4'){
+                xiaohesay.style.animation='sinkOut 0.5s ease forwards';
+                setTimeout(function() {
+                condition='history5'
+                historyimg5.style.display='block';
+                historyimg4.style.display='none';
+                xiaohesayh2.textContent="黄河第五次大改道：明孝宗弘治二年（公元1489年），黄河在开封及荆隆口决口，分为三支，向南一支分三股，入涡河、颖河入淮，向北一支由长垣、东明冲入张秋运河，向东一支由开封翟家口东出归德（商丘），直下徐州，合泗水入淮。"
+                xiaohesay.style.animation='fade-in 0.5s ease-out forwards';
+                audioPlayer.src='pic/小河/配音/黄河改道/黄河第五次改道.MP3';
+                audioPlayer.load();
+                audioPlayer.play();
+                }, 500);
+            }
+            if(condition=='history5'){
+                xiaohesay.style.animation='sinkOut 0.5s ease forwards';
+                setTimeout(function() {
+                condition='history6'
+                historyimg6.style.display='block';
+                historyimg5.style.display='none';
+                xiaohesayh2.textContent="黄河第六次大改道：清咸丰五年（公元1855年），黄河决考城（今兰考）铜瓦厢，改道离开徐州，转向东北最终由山东大清河入渤海，河道又重回到泰山之阴，形成了现代黄河。"
+                xiaohesay.style.animation='fade-in 0.5s ease-out forwards';
+                audioPlayer.src='pic/小河/配音/黄河改道/黄河第六次改道.MP3';
+                audioPlayer.load();
+                audioPlayer.play();
+                }, 500);
+            }
+            if(condition=='history6'){
+                xiaohesay.style.animation='sinkOut 0.5s ease forwards';
+                xiaohesayhistory.style.animation='sinkOut 0.5s ease forwards'
+                setTimeout(function() {
+                condition='history7'
+                xiaohesayhistory.style.display='none';
+                historyimg6.style.display='none';
+                xiaohesayh2.textContent="跟徐州密切相关的就是第六次黄河大改道了，接下来让我详细讲述一下这次改道的内容吧~"
+                xiaohesay.style.animation='fade-in 0.5s ease-out forwards';
+                audioPlayer.src='pic/小河/配音/黄河改道/详细讲述开始.MP3';
+                audioPlayer.load();
+                audioPlayer.play();
+                }, 500);
+            }
+            if(condition=='history7'){
+                xiaohesay.style.animation='sinkOut 0.5s ease forwards';
+                xiaohesayhistory.style.animation='sinkOut 0.5s ease forwards'
+                setTimeout(function() {
+                condition='history8'
+                xiaohesayhistory.style.display='none';
+                historyimg6.style.display='none';
+                xiaohesayh2.textContent="跟徐州密切相关的就是第六次黄河大改道了，接下来让我详细讲述一下这次改道的内容吧~"
+                xiaohesay.style.animation='fade-in 0.5s ease-out forwards';
+                audioPlayer.src='pic/小河/配音/黄河改道/详细讲述开始.MP3';
+                audioPlayer.load();
+                audioPlayer.play();
+                }, 500);
+            }
+        });
+    })
+
+//ai聊天
+    ai.addEventListener('click',function(){
+        condition = 'ai';
+        audioPlayer.src = 'pic/小河/配音/能为您做些什么.MP3';//ai聊天打招呼的配音
+        audioPlayer.load();
+        xiaohesayh2.textContent = "当然啦！我很高兴与你聊天。有什么想聊的或者需要帮助的吗？";
+        xiaohesay.style.animation = 'fade-in 0.5s ease-out forwards';
+        xiaohesay.style.display = 'block';
+        xiaohemulu.style.animation='sinkOut 0.5s ease forwards';
+        audioPlayer.play();
+        audioPlayer.addEventListener('ended', () => {
+            if(condition=='ai'){
+                xiaohesay.style.animation='sinkOut 0.5s ease forwards';
+                xiaohemulu.style.display='none';
+                xiaohesayai.style.animation = 'fade-in 0.5s ease-out forwards';
+                xiaohesayai.style.display = 'block';
+            }
+        });
+    })
+});
+//界面切换
+document.addEventListener("DOMContentLoaded", function() {
+    var main = document.getElementById("mainpicture");
+    var switchButton = document.getElementById("switch1");
+    var switchButton2=document.getElementById('switch2');
+    var sidebar_button = document.getElementById("sidebar_button");
+    var modernPicture = document.getElementById("imagecontainer");
+    var ancientPicture = document.getElementById("Ancientpictures"); 
+    var storyModernPic=document.getElementById('storymodernpic');
+    var sidebar_1 = document.getElementById('sidebar_1');
+    var sidebar_2 = document.getElementById('sidebar_2');
+    var snackbar = document.getElementById('snackbar');
+    const drag = document.querySelectorAll('.drag');
+
+    // 初始显示古代图片
+    modernPicture.style.display = "none";
+    ancientPicture.style.display = "block";
+    storyModernPic.style.display = 'none';
+    sidebar_button.style.display = "none";
+
+    switchButton.addEventListener("change", function() {
+        if (switchButton.checked) {
+            // 显示现代图片
+            debug();
+            removeScaleEffect();
+            switchButton2.innerText = "故事模式";
+            storyModernPic.style.display = "none";
+            ancientPicture.style.display = "none";
+            modernPicture.style.display = "block";
+            sidebar_1.style.display = 'block';
+            main.style.transition = "none"; // 移除过渡效果
+            sidebar_1.style.width = "17.5%";
+            setTimeout(() => {
+            main.style.transition = ""; // 恢复过渡效果
+        }, 0); // 延迟0毫秒以确保样式立即生效
+            sidebar_2.style.display = 'none';
+            sidebar_button.style.display = "block";
+            showSnackbar();
+        } else {
+            // 显示古代图片
+            modernPicture.style.display = "none";
+            ancientPicture.style.display = "block";
+            storyModernPic.style.display = "none";
+            sidebar_1.style.display = 'none';
+            sidebar_2.style.display = 'block';
+            main.style.transition = "none"; // 移除过渡效果
+            main.style.width = "82.5%";
+            setTimeout(() => {
+            main.style.transition = ""; // 恢复过渡效果
+        }, 0); // 延迟0毫秒以确保样式立即生效
+            sidebar_button.style.display = "none";
+            drag.forEach(container => {
+                container.style.display = 'none';
+            });
+        }
+    });
+
+    switchButton2.addEventListener("click", function() {
+        if (storyModernPic.style.display === "block") {
+            // 切换到现代全图
+            debug();
+            removeScaleEffect();
+            storyModernPic.style.display = "none";
+            modernPicture.style.display = "block";
+            switchButton2.innerText = "故事模式";
+            sidebar_1.style.width = "17.5%";
+            main.style.width = "82.5%";
+            sidebar_1.classList.add('transition'); // 添加过渡效果类名
+            main.classList.add('transition'); // 添加过渡效果类名           
+            showSnackbar();
+        } else {
+            // 切换回普通现代图片
+            storyModernPic.style.display = "block";
+            modernPicture.style.display = "none";
+            switchButton2.innerText = "开始探索";
+            sidebar_1.style.width = "0%";
+            main.style.width = "100%";
+            sidebar_1.classList.remove('transition'); // 移除过渡效果类名
+            main.classList.remove('transition'); // 移除过渡效果类名
+            drag.forEach(container => {
+                container.style.display = 'none';
+            });
+        }
+    });
+
+    function showSnackbar() {
+        snackbar.classList.add("show");
+        setTimeout(function(){ snackbar.classList.remove("show"); }, 2900); // 3秒后隐藏 snackbar
+    }
+});
+
+    // 使 DIV 元素可拖动:
+    function dragElement(elmnt) {
+    var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+    if (document.getElementById(elmnt.id + "header")) {
+        // 如果存在，标题是您从中移动 DIV 的位置:
+        document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+    } else {
+        // 否则，从 DIV 内的任何位置移动 DIV:
+        elmnt.onmousedown = dragMouseDown;
+    }
+
+    function dragMouseDown(e) {
+        e = e || window.event;
+        e.preventDefault();
+        // 在启动时获取鼠标光标位置:
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        document.onmouseup = closeDragElement;
+        // 每当光标移动时调用一个函数:
+        document.onmousemove = elementDrag;
+    }
+
+    function elementDrag(e) {
+        e = e || window.event;
+        e.preventDefault();
+        // 计算新的光标位置:
+        pos1 = pos3 - e.clientX;
+        pos2 = pos4 - e.clientY;
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        // 设置元素的新位置:
+        elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+        elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+    }
+
+    function closeDragElement() {
+        // 释放鼠标按钮时停止移动:
+        document.onmouseup = null;
+        document.onmousemove = null;
+    }
+    }
+
+// 幻灯片功能
+var slideIndex = 1; // 设置初始的幻灯片索引为 1
+
+function plusSlides(n, pptId) {
+    showSlides(slideIndex += n, pptId);
+}
+
+function currentSlide(n, pptId) {
+    showSlides(slideIndex = n, pptId);
+}
+
+function showSlides(n, pptId) {
+    var i;
+    var slides = document.querySelectorAll("#" + pptId + " .slide-img");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex-1].style.display = "block";
+}
+
+// 关闭按钮效果
+function closeNav() {
+    const drag = document.querySelectorAll('.drag');
+    drag.forEach(container => {
+                container.style.display = 'none';
+            });
+    removeScaleEffect();
+}
+
+// 添加底图拖动效果
+        const container = document.getElementById('mainpicture');
+        const content = document.getElementById('imagecontainer');
+// 设置点击sidebar引导底图转移按钮
+const moveToBtn1 = document.querySelector('.sce-first');
+        const moveTologo1 = document.getElementById("lvliangshan");
+        const moveToBtn2 = document.querySelector('.sce-second');
+        const moveTologo2 = document.getElementById("dashaheshidi");
+        const moveToBtn3 = document.querySelector('.sce-third');
+        const moveTologo3 = document.getElementById("baibuhong");
+        const moveToBtn4 = document.querySelector('.sce-fourth');
+        const moveTologo4 = document.getElementById("guhuanghegongyuan");
+        const moveToBtn5 = document.querySelector('.sce-fifth');
+        const moveTologo5 = document.getElementById("hanqiaogongyuan");
+        const moveToBtn6 = document.querySelector('.sce-sixth');
+        const moveTologo6 = document.getElementById("huanglou");
+        const moveToBtn7 = document.querySelector('.sce-seventh');
+        const moveTologo7 = document.getElementById("peixiananguo");
+        const moveToBtn8 = document.querySelector('.sce-eighth');
+        const moveTologo8 = document.getElementById("xianhongdaogongyuan");
+        const moveToBtn9 = document.querySelector('.sce-ninth');
+        const moveTologo9 = document.getElementById("fangwanshidi");
+        const moveToBtn10 = document.querySelector('.sce-tenth');
+        const moveTologo10 = document.getElementById("liubangguli");
+        const moveToBtn11 = document.querySelector('.agri-first');
+        const moveTologo11 = document.getElementById("wanmuguatian");
+        const moveToBtn12 = document.querySelector('.agri-second');
+        const moveTologo12 = document.getElementById("wanmuou");
+        const moveToBtn13 = document.querySelector('.agri-third');
+        const moveTologo13 = document.getElementById("aihuapingguo");
+        const moveToBtn14 = document.querySelector('.agri-fourth');
+        const moveTologo14 = document.getElementById("shuanggouzhen");
+        const moveToBtn15 = document.querySelector('.agri-fifth');
+        // const moveTologo15 = document.getElementById("dashaheshidi"); 没有logo
+        const moveToBtn16 = document.querySelector('.agri-sixth');
+        const moveTologo16 = document.getElementById("yaoji");
+        const moveToBtn17 = document.querySelector('.agri-seventh');
+        // const moveTologo17 = document.getElementById("dashaheshidi");
+        const moveToBtn18 = document.querySelector('.agri-eighth');
+        // const moveTologo18 = document.getElementById("dashaheshidi");
+        const moveToBtn19 = document.querySelector('.agri-ninth');
+        // const moveTologo19 = document.getElementById("dashaheshidi");
+        const moveToBtn20 = document.querySelector('.rus-first');
+        const moveTologo20 = document.getElementById("liyushanzhuang");
+        const moveToBtn21 = document.querySelector('.rus-second');
+        const moveTologo21 = document.getElementById("yaoji");
+
+
+        let offsetX = 0, offsetY = 0; // 初始化偏移量为0
+        let velocityX = 0, velocityY = 0; // 初始化速度为0
+        const friction = 0.9; // 设置阻尼系数
+        let minX, maxX, minY, maxY;
+
+        content.addEventListener('mousedown', handleDragStart);
+        function handleClick1() {
+            debug();
+            moveToTarget(-1000, -500);
+            showSlides(1, "ppt_1");
+            displaydrag('dragdiv_1');
+            removeScaleEffect();
+            addScaleEffect('lvliangshan');
+        }
+        moveToBtn1.addEventListener('click', handleClick1);
+        moveTologo1.addEventListener('dblclick', handleClick1);
+
+        function handleClick2(){
+            debug();
+            moveToTarget(100,-95);
+            showSlides(1, "ppt_2"); // 显示dragdiv_2中的幻灯片 
+            displaydrag('dragdiv_2') ;
+            removeScaleEffect();
+            addScaleEffect('dashaheshidi');
+        };
+        moveToBtn2.addEventListener('click', handleClick2);
+        moveTologo2.addEventListener('dblclick', handleClick2);
+
+        function handleClick3(){
+            debug();
+            moveToTarget(-350,-600);
+            showSlides(1, "ppt_3"); 
+            displaydrag('dragdiv_3') ;
+            removeScaleEffect();
+            addScaleEffect('baibuhong');
+        };
+        moveToBtn3.addEventListener('click', handleClick3);
+        moveTologo3.addEventListener('dblclick', handleClick3);
+
+        function handleClick4(){
+            debug();
+            moveToTarget(-500,-400);
+            showSlides(1, "ppt_4"); 
+            displaydrag('dragdiv_4') ;
+            removeScaleEffect();
+            addScaleEffect('guhuanghegongyuan');
+        };
+        moveToBtn4.addEventListener('click', handleClick4);
+        moveTologo4.addEventListener('dblclick', handleClick4);
+
+        function handleClick5(){
+            debug();
+            moveToTarget(-600,-750);
+            showSlides(1, "ppt_5"); 
+            displaydrag('dragdiv_5') ;
+            removeScaleEffect();
+            addScaleEffect('hanqiaogongyuan');
+        };
+        moveToBtn5.addEventListener('click', handleClick5);
+        moveTologo5.addEventListener('dblclick', handleClick5);
+
+        function handleClick6(){
+            debug();
+            moveToTarget(-400,-300);
+            showSlides(1, "ppt_6"); 
+            displaydrag('dragdiv_6') ;
+            removeScaleEffect();
+            addScaleEffect('huanglou');
+        };
+        moveToBtn6.addEventListener('click', handleClick6);
+        moveTologo6.addEventListener('dblclick', handleClick6);
+
+        function handleClick7(){
+            debug();
+            moveToTarget(-200,20);
+            showSlides(1, "ppt_7"); 
+            displaydrag('dragdiv_7') ;
+            removeScaleEffect();
+            addScaleEffect('peixiananguo');
+        };
+        moveToBtn7.addEventListener('click', handleClick7);
+        moveTologo7.addEventListener('dblclick', handleClick7);
+
+        function handleClick8(){
+            debug();
+            moveToTarget(-400,-600);
+            showSlides(1, "ppt_8"); 
+            displaydrag('dragdiv_8') ;
+            removeScaleEffect();
+            addScaleEffect('xianhongdaogongyuan');
+        };
+        moveToBtn8.addEventListener('click', handleClick8);
+        moveTologo8.addEventListener('dblclick', handleClick8);
+
+        function handleClick9(){
+            debug();
+            moveToTarget(-1500,-500);
+            showSlides(1, "ppt_9"); 
+            displaydrag('dragdiv_9') ;
+            removeScaleEffect();
+            addScaleEffect('fangwanshidi');
+        };
+        moveToBtn9.addEventListener('click', handleClick9);
+        moveTologo9.addEventListener('dblclick', handleClick9);
+
+        function handleClick10(){
+            debug();
+            moveToTarget(0,0);
+            showSlides(1, "ppt_10"); 
+            displaydrag('dragdiv_10') ;
+            removeScaleEffect();
+            addScaleEffect('liubangguli');
+        };
+        moveToBtn10.addEventListener('click', handleClick10);
+        moveTologo10.addEventListener('dblclick', handleClick10);
+
+        function handleClick11(){
+            debug();
+            moveToTarget(-300,100);
+            showSlides(1, "ppt_11"); 
+            displaydrag('dragdiv_11') ;
+            removeScaleEffect();
+            addScaleEffect('wanmuguatian');
+        };
+        moveToBtn11.addEventListener('click', handleClick11);
+        moveTologo11.addEventListener('dblclick', handleClick11);
+
+        function handleClick12(){
+            debug();
+            moveToTarget(-1000,-900);
+            showSlides(1, "ppt_12"); 
+            displaydrag('dragdiv_12') ;
+            removeScaleEffect();
+            addScaleEffect('wanmuou');
+        };
+        moveToBtn12.addEventListener('click', handleClick12);
+        moveTologo12.addEventListener('dblclick', handleClick12);
+
+        function handleClick13(){
+            debug();
+            moveToTarget(-100,-200);
+            showSlides(1, "ppt_13"); 
+            displaydrag('dragdiv_13') ;
+            removeScaleEffect();
+            addScaleEffect('aihuapingguo');
+        };
+        moveToBtn13.addEventListener('click', handleClick13);
+        moveTologo13.addEventListener('dblclick', handleClick13);
+
+        function handleClick14(){
+            debug();
+            moveToTarget(-900,-900);
+            showSlides(1, "ppt_14"); 
+            displaydrag('dragdiv_14') 
+            removeScaleEffect();
+            addScaleEffect('shuanggouzhen');
+        };
+        moveToBtn14.addEventListener('click', handleClick14);
+        moveTologo14.addEventListener('dblclick', handleClick14);
+        
+        function handleClick15(){
+            debug();
+            moveToTarget(-1000,-500);
+            showSlides(1, "ppt_15"); 
+            displaydrag('dragdiv_15') ;
+            removeScaleEffect();
+            // addScaleEffect('baibuhong')
+        };
+        // moveToBtn15.addEventListener('click', handleClick15);
+        // moveTologo15.addEventListener('dblclick', handleClick15);
+
+        function handleClick16(){
+            debug();
+            moveToTarget(-1500,-900);
+            showSlides(1, "ppt_16"); 
+            displaydrag('dragdiv_16') ;
+            removeScaleEffect();
+            addScaleEffect('yaoji');
+        };
+        moveToBtn16.addEventListener('click', handleClick16);
+        moveTologo16.addEventListener('dblclick', handleClick16);
+
+        function handleClick17(){
+            debug();
+            moveToTarget(-1000,-500);
+            showSlides(1, "ppt_17"); 
+            displaydrag('dragdiv_17') ;
+            removeScaleEffect();
+            // addScaleEffect('baibuhong')
+        };
+        // moveToBtn17.addEventListener('click', handleClick17);
+        // moveTologo17.addEventListener('dblclick', handleClick17);
+
+        function handleClick18(){
+            debug();
+            moveToTarget(-1000,-500);
+            showSlides(1, "ppt_18"); 
+            displaydrag('dragdiv_18') ;
+            removeScaleEffect();
+            // addScaleEffect('baibuhong')
+        };
+        // moveToBtn18.addEventListener('click', handleClick18);
+        // moveTologo18.addEventListener('dblclick', handleClick18);
+
+        function handleClick19(){
+            debug();
+            moveToTarget(-1000,-500);
+            showSlides(1, "ppt_19"); 
+            displaydrag('dragdiv_19') ;
+            removeScaleEffect();
+            // addScaleEffect('baibuhong')
+        };
+        // moveToBtn19.addEventListener('click', handleClick19);
+        // moveTologo19.addEventListener('dblclick', handleClick19);
+
+        function handleClick20(){
+            debug();
+            moveToTarget(-1200,-700);
+            showSlides(1, "ppt_20"); 
+            displaydrag('dragdiv_20') 
+            removeScaleEffect();
+            addScaleEffect('liyushanzhuang');
+        };
+        moveToBtn20.addEventListener('click', handleClick20);
+        moveTologo20.addEventListener('dblclick', handleClick20);
+
+        function handleClick21(){
+            debug();
+            moveToTarget(-1500,-900);
+            showSlides(1, "ppt_21"); 
+            displaydrag('dragdiv_21') ;
+            removeScaleEffect();
+            addScaleEffect('yaoji');
+        };
+        moveToBtn21.addEventListener('click', handleClick21);
+        moveTologo21.addEventListener('dblclick', handleClick21);
+
+        function handleDragStart(e) {
+            e.preventDefault();
+            offsetX = e.clientX - content.getBoundingClientRect().left;
+            offsetY = e.clientY - content.getBoundingClientRect().top;
+
+            minX = -content.clientWidth + container.clientWidth;
+            minY = -content.clientHeight + container.clientHeight;
+            maxX = 0;
+            maxY = 0;
+
+            document.addEventListener('mousemove', handleDrag);
+            document.addEventListener('mouseup', handleDragEnd);
+        }
+
+        function handleDrag(e) {
+            e.preventDefault();
+            let newOffsetX = e.clientX - container.getBoundingClientRect().left - offsetX;
+            let newOffsetY = e.clientY - container.getBoundingClientRect().top - offsetY;
+
+            newOffsetX = Math.min(Math.max(newOffsetX, minX), maxX);
+            newOffsetY = Math.min(Math.max(newOffsetY, minY), maxY);
+
+            content.style.transform = `translate(${newOffsetX}px, ${newOffsetY}px)`;
+        }
+
+        function handleDragEnd() {
+            document.removeEventListener('mousemove', handleDrag);
+            document.removeEventListener('mouseup', handleDragEnd);
+        }
+
+        function moveToTarget(targetX, targetY) {
+            const currentX = parseFloat(content.style.transform.split('(')[1].split('px')[0]);
+            const currentY = parseFloat(content.style.transform.split(',')[1].split('px')[0]);
+            const dx = targetX - currentX;
+            const dy = targetY - currentY;
+
+            velocityX = dx * 0.1;
+            velocityY = dy * 0.1;
+            requestAnimationFrame(inertiaAnimation);
+        }
+
+        function inertiaAnimation() {
+            const dx = velocityX * friction;
+            const dy = velocityY * friction;
+            let newX = parseFloat(content.style.transform.split('(')[1].split('px')[0]) + dx;
+            let newY = parseFloat(content.style.transform.split(',')[1].split('px')[0]) + dy;
+
+            newX = Math.min(Math.max(newX, minX), maxX);
+            newY = Math.min(Math.max(newY, minY), maxY);
+
+            content.style.transform = `translate(${newX}px, ${newY}px)`;
+
+            velocityX *= friction;
+            velocityY *= friction;
+
+            if (Math.abs(velocityX) < 0.1 && Math.abs(velocityY) < 0.1) {
+                return;
+            }
+
+            requestAnimationFrame(inertiaAnimation);
+        }
+
+
+//显示弹窗函数
+function displaydrag(UID){
+    var list=['dragdiv_1','dragdiv_2','dragdiv_3','dragdiv_4','dragdiv_5','dragdiv_6','dragdiv_7','dragdiv_8','dragdiv_9','dragdiv_10','dragdiv_11','dragdiv_12','dragdiv_13','dragdiv_14','dragdiv_15','dragdiv_16','dragdiv_17','dragdiv_18','dragdiv_19','dragdiv_20','dragdiv_21']
+    for(var i = 0;i<list.length;i++){
+        var windows=document.getElementById(list[i])
+        windows.style.display='none';
+    var item = document.getElementById(UID);
+    dragElement(item);
+    item.style.display = "block";
+    item.style.top = "10%";
+    item.style.left = "55%";
+    }
+}
+
+//为UI添加点击发光效果
+function addScaleEffect(UID) {
+    var item = document.getElementById(UID);
+    item.classList.add('animation')
+    }
+function removeScaleEffect(){
+    var list=['liubangguli','wanmuguatian','peixiananguo','dashaheshidi','aihuapingguo','huanglou','guhuanghegongyuan','biansijiaohui','baibuhong','xianhongdaogongyuan','hepingdaqiao','hanqiaogongyuan','lvliangshan','liyushanzhuang','wanmuou','shuanggouzhen','fangwanshidi','yaoji']
+    for(var i = 0; i < list.length; i++){
+        var item=document.getElementById(list[i])
+        item.classList.remove('animation')
+    }
+
+}
+
+//debug
+function debug(){
+    // 获取要拖动的容器元素
+    var imagecontainer = document.getElementById('imagecontainer');
+
+// 模拟鼠标按下事件
+    var mouseDownEvent = new MouseEvent('mousedown', {
+        bubbles: true,
+        cancelable: true,
+        clientX: imagecontainer.offsetLeft,
+        clientY: imagecontainer.offsetTop
+    });
+    imagecontainer.dispatchEvent(mouseDownEvent);
+
+// 模拟鼠标移动事件
+    var mouseMoveEvent = new MouseEvent('mousemove', {
+        bubbles: true,
+        cancelable: true,
+        clientX: imagecontainer.offsetLeft,
+        clientY: imagecontainer.offsetTop + 1 // 向下拖动50个像素
+    });
+    imagecontainer.dispatchEvent(mouseMoveEvent);
+
+// 模拟鼠标释放事件
+    var mouseUpEvent = new MouseEvent('mouseup', {
+        bubbles: true,
+        cancelable: true
+    });
+    document.dispatchEvent(mouseUpEvent);
+}
+</script>
+</html>

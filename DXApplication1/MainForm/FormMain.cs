@@ -2358,5 +2358,23 @@ namespace 绿廊智绘
             form.richTextBox1.Text = "★☆★农业结构分类说明\r\n●1：经济作物\r\n●0：一般作物\r\n●NoData：其它";
             form.ShowDialog();
         }
+
+        private void barButtonItem13_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            string htmlFilePath = "tutorials\\index.html"; // 设置为HTML文件的路径
+            Process.Start(new ProcessStartInfo("cmd", $"/c start {htmlFilePath}") { CreateNoWindow = true });
+        }
+
+        private void barButtonItem14_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            string htmlFilePath = "example\\index.html"; // 设置为HTML文件的路径
+            Process.Start(new ProcessStartInfo("cmd", $"/c start {htmlFilePath}") { CreateNoWindow = true });
+        }
+
+        private void barButtonItem9_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            string pdfFilePath = "绿廊智绘—城镇生态富民格局智能遥测系统.pdf"; // 设置为PDF文件的路径
+            Process.Start(new ProcessStartInfo(pdfFilePath) { UseShellExecute = true });
+        }
     }
 }

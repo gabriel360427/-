@@ -1,0 +1,1607 @@
+/****** PLACE YOUR CUSTOM STYLES HERE ******/
+body {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    background: white;
+    font-family: 微软雅黑, MicrosoftYahei, sans-serif;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol,
+  pre,
+  table,
+  blockquote,
+  input,
+  button,
+  select,
+  em,
+  textarea {
+    margin: 0;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-style: normal;
+  }
+
+  #mainwindow{
+    height: 100%;
+    width: 100%;
+  }
+  /* 小精灵小河 */
+  #xiaohe{
+    z-index: 10000000;
+    position: absolute;
+    height: 20%;
+    width: 11%;
+    top:78%;
+    left: 18%;
+
+  }
+  @keyframes flyInAnimation {
+    from {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.5);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+  @keyframes xiaoheAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+
+  #xiaohejingling{
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    animation: flyInAnimation 0.5s forwards ease-in-out,xiaoheAnimation 1s infinite alternate;
+  }
+
+  @keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes sinkOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}
+  #xiaohesay{
+    display:none;
+    top:83%;
+    left:28%;
+    z-index:10000000;
+    position: absolute;
+    height:auto;
+    width:auto;
+    max-width:25%;
+    max-height:100vh;
+    background-color: #080808b6;
+    border-radius: 35px;
+    border:1px solid rgb(255, 255, 255);
+    animation: fade-in 0.5s ease-out forwards; /* 淡入动画 */
+  }
+
+  #xiaohesay h2{
+    color: #ffffff;
+    padding: 14px;
+    text-shadow: 0.5px 0.5px 0.5px #aeaeae;
+    font-family: 'Microsoft YaHei', '微软雅黑', sans-serif;
+    font-size: 16px;
+  }
+
+  .xiaohemulu {
+    display:none;
+    width:30%;
+    border-radius: 15px;
+    z-index:10000000;
+    overflow: hidden;
+    background-color: #242323c2;
+    padding: 20px 10px;
+    position:absolute;
+    top:83%;
+    left:28%;
+    animation:floatAnimation 1s ease-in-out forwards;
+  }
+  
+  /* 设置标题链接的样式 */
+  .xiaohemulu a {
+    float: left;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 4px;
+  }
+  
+  /* 为 logo 链接设置样式（注意我们设置了相同的 line-height 和 font-size 值，以防止当字体变大时标题增加 */
+  .xiaohemulu a.logo {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* 在鼠标悬停时更改背景颜色 */
+  .xiaohemulu a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* 设置活动/当前链接的样式*/
+  .xiaohemulu a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  
+  /* 将链接部分浮动到右侧 */
+  .xiaohemulu-right {
+    float: right;
+  }
+  
+  /* 添加媒体查询以提高响应能力 - 当屏幕宽度为 500 像素或更小时，将链接堆叠在一起 */
+  @media screen and (max-width: 500px) {
+    .xiaohemulu a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .xiaohemulu-right {
+      float: none;
+    }
+  }
+
+/* 小河ai聊天 */
+#xiaohesayai{
+  display: none;
+  position: absolute;
+  top:30%;
+  left:28%;
+  height: 65%;
+  width: 35%;
+  background-color: #c9c9c9c2;
+  z-index: 1000;
+  border-radius:15px;
+  box-sizing: border-box; /* 使用 border-box 盒模型 */
+}
+/* 设置ai问答框样式*/
+#results{
+  display: block;
+  width: 100%;
+  height: 75%;
+  z-index: 10000;
+  overflow: hidden;
+  box-sizing: border-box; /* 使用 border-box 盒模型 */
+}
+#results #result{
+  width: 100%;
+  height: 100%;
+  padding: 7%;
+  background-color:#33333300;
+  white-space:pre-line;
+  border: none;
+  overflow: auto;
+  box-sizing: border-box; /* 使用 border-box 盒模型 */
+}
+#results #result:focus {
+  outline: none; /* 隐藏被选中时的边框 */
+}
+#results textarea{
+  text-shadow: 0.5px 0.5px 0.5px #aeaeae;
+  font-family: 'Microsoft YaHei', '微软雅黑', sans-serif;
+  font-size: 16px;
+}
+#sendVal{
+  display: flex;
+  width: 85%;
+  height: 20%;
+  z-index: 10000;
+  padding: 2%;
+  border: 2px solid #7289f3df;
+  box-sizing: border-box; /* 使用 border-box 盒模型 */
+  border-radius: 13px;
+  position: absolute; /* 绝对定位 */
+  bottom: 3%; /* 距离底部 5px */
+  right: 7.5%; /* 距离右侧 5px */
+  background-color: #e7e6e6dc;
+}
+#sendVal #question{
+  flex: 8; /* 占据左侧85%的宽度 */
+  width: 80%; /* 宽度85% */
+  height: 80%;
+  background-color:#33333300;
+  caret-color: black; /* 光标颜色与文本颜色相同 */
+  box-sizing: border-box; /* 使用 border-box 盒模型 */
+  border: none;
+}
+#sendVal #question:focus {
+  outline: none; /* 隐藏被选中时的边框 */
+}
+#sendVal #sendbutton{
+  flex: 2; /* 占据右侧15%的宽度 */
+  width: 20%;
+  height: 80%;
+  background-color:#33333300;
+  box-sizing: border-box; /* 使用 border-box 盒模型 */
+  z-index: 10000;
+}
+#sendVal #sendbtn{
+  position: absolute; /* 绝对定位 */
+  bottom: 9px; /* 距离底部 5px */
+  right: 9px; /* 距离右侧 5px */
+  width: 15%; 
+  height: 40px;
+  background-color: #5D7CFF;
+  z-index: 10005;
+  border-radius:15px;
+  border: #5D7CFF;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* 小河讲六次黄河变道 */
+
+#xiaohesayhistory{
+  position: absolute;
+  height:68%;
+  width:45%;
+  z-index: 9;
+  background-color: #ffffffce;
+  border-radius:35px;
+  text-align: center;
+  top: 5%;
+  left: 35%;
+  overflow: hidden;
+  box-shadow: 0 0 10px 1px rgba(136, 136, 136, 0.7); /* 设置白色外发光效果 */
+  display:none;
+}
+
+
+#historyimgditu{
+  width: 100%;
+  height: 100%;
+  left:0;
+  top:0;
+  position: absolute;
+  z-index:30;
+}
+
+#historyimg1{
+  display:none;
+  width: 100%;
+  height: 100%;
+  left:0;
+  top:0;
+  position: absolute;
+  z-index:31;
+  animation: blink-animation 1s ease-in-out infinite alternate;
+}
+
+#historyimg2{
+  display:none;
+  width: 100%;
+  height: 100%;
+  left:0;
+  top:0;
+  position: absolute;
+  z-index:31;
+  animation: blink-animation 1s ease-in-out infinite alternate;
+}
+
+#historyimg3{
+  display:none;
+  width: 100%;
+  height: 100%;
+  left:0;
+  top:0;
+  position: absolute;
+  z-index:31;
+  animation: blink-animation 1s ease-in-out infinite alternate;
+}
+
+#historyimg4{
+  display:none;
+  width: 100%;
+  height: 100%;
+  left:0;
+  top:0;
+  position: absolute;
+  z-index:31;
+  animation: blink-animation 1s ease-in-out infinite alternate;
+}
+
+#historyimg5{
+  display:none;
+  width: 100%;
+  height: 100%;
+  left:0;
+  top:0;
+  position: absolute;
+  z-index:31;
+  animation: blink-animation 1s ease-in-out infinite alternate;
+}
+
+#historyimg6{
+  display:none;
+  width: 100%;
+  height: 100%;
+  left:0;
+  top:0;
+  position: absolute;
+  z-index:31;
+  animation: blink-animation 1s ease-in-out infinite alternate;
+}
+
+
+  /* 设置侧边栏样式*/
+  #sidebar_1{
+    background-color: #72a9fc;
+    height:100%;
+    width:17.5%;
+    float: left;
+    display: none;
+  }
+  #sidebar_2{
+    background-color: rgb(212, 131, 54);
+    height:100%;
+    width:17.5%;
+    float: left;
+  }
+
+ /* 设置侧边栏探索按钮样式*/
+  #sidebar_button{
+    background-color: rgba(165, 42, 42, 0);
+    height:10%;
+    width:17.5%;
+    top: 85%;
+    left: 5%;
+    float: left;
+    position: absolute;
+    display: none;
+    z-index: 100000;
+  }
+
+ /* 设置侧边栏和主图的过渡动画样式*/
+  #sidebar_1, #mainpicture {
+    transition: width 0.7s ease; /* 过渡宽度属性，持续0.5秒，缓动效果 */
+  }
+  
+
+  /* 设置图片样式*/
+  #mainpicture{
+    position: relative;
+    height: 100%;
+    width: 82.5%;
+    float: right;
+    overflow: hidden;
+  }
+
+/* 这里是地图图层设置 */
+#imagecontainer {
+  width: 2820px;
+  height: 1920px;
+}
+
+
+#imagecontainer .pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2820px;
+  height: 1920px;
+  object-fit: cover;
+}
+
+#mainarea {
+  z-index: 2;
+  animation: blink-animation 1s ease-in-out infinite alternate;
+}
+
+@keyframes blink-animation {
+0% {
+    opacity: 1;
+}
+100% {
+    opacity: 0.5;
+}
+}
+
+#grasses {
+  z-index: 3;
+}
+
+#huangheriver {
+  z-index: 4;
+}
+
+  #storymodernpic{
+    height: 100%;
+    width: 100%;
+  }
+
+  #Ancientpictures{
+    height: 100%;
+    width: 100%;
+  }
+
+  #Ancientpic{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+
+  #Ancientpic2{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    z-index:30;
+    display:none;
+  }
+
+  #Ancientpic3{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    z-index:30;
+    display:none;
+  }
+
+  #Ancientpic4{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    z-index:3;
+    display:none;
+  }
+
+  #Ancientpic5{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    z-index:10;
+    display:none;
+  }
+
+  #Ancientpic6{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    z-index:10;
+    display:none;
+  }
+
+  #Ancientpic7{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    z-index:10;
+    display:none;
+  }
+
+  #Ancientpic8{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    z-index:10;
+    display:none;
+  }
+  
+  #Ancientpic9{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    z-index:10;
+    display:none;
+  }
+
+/* sidebar中存在切换探索与故事模式的按钮 */
+#switch2 {
+  display: block;
+  margin: 3%; /* 调整按钮与其他元素之间的间距 */
+  background-color: #4CAF50; /* 按钮背景颜色 */
+  color: #fff; /* 按钮文字颜色 */
+  border: none; /* 去除按钮边框 */
+  cursor: pointer; /* 鼠标悬停时显示手型光标 */
+  padding: 9px 15px;
+  font-size: 15px;
+  text-align: center;
+  outline: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+#switch2:hover {background-color: #4CAF50}
+
+#switch2:active {
+background-color: #4CAF50;
+box-shadow: 0 5px #666;
+transform: translateY(4px);
+}
+
+
+
+
+  /* The snackbar - 将其放置在屏幕底部和中间 */
+#snackbar {
+  z-index:1000000;
+  visibility: hidden; /* 默认隐藏。 点击可见 */
+  min-width: 250px; /* 设置默认最小宽度 */
+  margin-left: -125px; /* min-width 的值除以 2 */
+  background-color: #333; /* 黑色背景颜色 */
+  color: #fff; /* 白色文本颜色 */
+  text-align: center; /* 居中文本 */
+  border-radius: 2px; /* 圆角边框 */
+  padding: 16px; /* 填充 */
+  position: fixed; /* 保持在屏幕顶部 */
+  z-index: 1; /* 如果需要，添加 z-index */
+  left: 50%; /* 居中 snackbar */
+  bottom: 30px; /* 距离底部 30px */
+}
+
+/* 单击按钮时显示 snackbar（使用 JavaScript 添加的类）*/
+#snackbar.show {
+  visibility: visible; /* Show the snackbar */
+  /* 添加动画：用 0.5 秒淡入和淡出 snackbar（使用。
+  但是，将淡出过程延迟 2.5 秒 */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* 使 snackbar 淡入淡出的动画 */
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+    /* 可拖动div设置 */
+.drag{
+  display:none;
+}
+
+#dragdiv_1,#dragdiv_2,#dragdiv_3,#dragdiv_4,#dragdiv_5,
+#dragdiv_6,#dragdiv_7,#dragdiv_8,#dragdiv_9,#dragdiv_10,
+#dragdiv_11,#dragdiv_12,#dragdiv_13,#dragdiv_14,#dragdiv_15,
+#dragdiv_16,#dragdiv_17,#dragdiv_18,#dragdiv_19,#dragdiv_20,
+#dragdiv_21 {
+  position: absolute;
+  height:60%;
+  width:35%;
+  z-index: 9;
+  background-color: #ffffffce;
+  border-radius:35px;
+  text-align: center;
+  top: 10%;
+  left: 55%;
+  overflow: hidden;
+  box-shadow: 0 0 10px 1px rgba(136, 136, 136, 0.7); /* 设置白色外发光效果 */
+  opacity: 0; /* 初始时隐藏容器 */
+  transform: translateY(50px); /* 初始时向下偏移 */
+  animation: floatAnimation 1s forwards;
+
+}
+#dragdiv_1 p,#dragdiv_2 p,#dragdiv_3 p,#dragdiv_4 p,#dragdiv_5 p,
+#dragdiv_6 p,#dragdiv_7 p,#dragdiv_8 p,#dragdiv_9 p,#dragdiv_10 p,
+#dragdiv_11 p,#dragdiv_12 p,#dragdiv_13 p,#dragdiv_14 p,#dragdiv_15 p,
+#dragdiv_16 p,#dragdiv_17 p,#dragdiv_18 p,#dragdiv_19 p,#dragdiv_20 p,
+#dragdiv_21 p{
+  font-size: 20px;
+  font-family: "Microsoft YaHei", sans-serif; /* 设置字体为微软雅黑 */
+  color:#333;
+  padding: 3%;
+  text-indent: 40px; /* 设置首行缩进为 20 像素 */
+  text-align: left;
+}
+/* 设置卡片文本部分的滚动效果 */
+.Textual_data{
+  height: 35%;
+  overflow: auto;
+}
+
+
+/* 容器出现效果 */
+@keyframes floatAnimation {
+  from {
+    opacity: 0; /* 初始时透明 */
+    transform: translateY(50px); /* 初始时向下偏移 */
+  }
+  to {
+    opacity: 1; /* 结束时完全显示 */
+    transform: translateY(0); /* 结束时回到原始位置 */
+  }
+}
+/* 容器出现效果 结束 */
+
+/* 可切换图片容器 */
+.content-container {
+  width: 100%;
+  height: 55%;
+  margin: 0 auto;
+  border-radius: 25px;
+  opacity: 0; /* 初始时隐藏图片 */
+  animation: fadeInAnimation 1s ease-in-out forwards;
+}
+
+.slide-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  display: none; /* 默认隐藏所有图片 */
+}
+
+/* 图片容器的渐入效果 */
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0.6; /* 初始时透明 */
+  }
+  to {
+    opacity: 1; /* 结束时完全显示 */
+  }
+}
+/* 图片容器的渐入效果 结束 */
+
+/* 设置显示第一张图片 */
+.slide-img:first-child {
+  display: block;
+}
+
+/* 设置dragdiv的关闭按钮 */
+.drag .closebtn {
+  z-index: 100000;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  cursor: pointer;
+  color: #ffffff89;
+}
+
+/* Next & previous 按钮 */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 23%;
+  width: auto;
+  padding: 2%;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgba(255, 255, 255, 0.59);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  border: 0px;
+}
+/* 将 "next button" 放在右侧 */
+.next {
+  right: 0%;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 0%;
+  border-radius: 3px 0 0 3px;
+}
+/* 悬停时，添加一点透视的黑色背景颜色 */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.355);
+}
+/* 浮动的文字标题 */
+.floating-text {
+  position: absolute;
+  top:40%;
+  left:5%;
+}
+.floating-text span {
+  font-size: 48px;
+  font-family: "Microsoft YaHei", sans-serif; /* 设置字体为微软雅黑 */
+  font-weight: bold; /* 设置加粗 */
+  color: rgb(250, 228, 238); 
+  text-shadow: 2px 2px 4px gray; /* 设置灰色描边 */
+  display: inline-block;
+  opacity: 0; /* 初始时隐藏文字 */
+  animation: floatAnimation 1s ease-in-out forwards, bounceAnimation 0.5s ease-in-out 1s infinite alternate;
+}
+
+
+@keyframes bounceAnimation {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+/* 浮动的文字标题 结束 */
+
+    /* 切换按钮 */
+  .checkcaption {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .check {
+    z-index:9999;
+    width: 100px;
+    height: 40px;
+    border: #ffffff solid 2px;
+    position: absolute;
+    margin: 10px auto;
+    border-radius: 20px;
+    top: 88.5%;
+    left: 88%;
+    background-color: #ffffff4f;
+  }
+  
+  .check input {
+    visibility: hidden;
+    height: 40px;
+    width: 100px;
+  }
+  
+  .check label {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: brown; /* 使用具体的颜色值替代变量 */
+    cursor: pointer;
+    position: absolute;
+    top: 13%;
+    left: 9%;
+    transition: all .3s ease;
+  }
+  
+  .check input:checked + label {
+    left: 60%;
+    background-color: rgb(90, 181, 247); /* 使用具体的颜色值替代变量 */
+  }
+
+  .check label span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.unchecked-text {
+  font-family: "LiSu", cursive; /* 设置字体为隶书 */
+  font-size: 20px;
+  z-index: 2; /* 确保在上层 */
+  display: inline; /* 默认显示 */
+  left: 20%; /* 默认位置 */
+}
+
+.checked-text {
+  font-family: "幼圆", "YouYuan", sans-serif; /* 设置字体为幼圆 */
+  font-weight: bolder;
+  z-index: 1; /* 确保在下层 */
+  left: 10%; /* 调整位置 */
+  display: none; /* 默认隐藏 */
+  left: 23%; /* 默认位置 */
+}
+
+.check input:checked + label .unchecked-text {
+    display: none; /* 选中状态下隐藏未选中文字 */
+}
+
+.check input:checked + label .checked-text {
+    display: inline; /* 选中状态下显示选中文字 */
+}
+
+  /* 手风琴 */
+  .accordionMenu {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    background-size: #fff;
+    color: #fdfdfd;
+    font: 12px Arial, Verdana, sans-serif;
+}
+.accordionMenu h2 {
+    position: relative;
+    margin: 5px 0;
+    padding: 0;
+}
+.accordionMenu h2:before { /*制作向下三角效果*/
+    position: absolute;
+    top: 42.5%;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 5px solid #ffffff;
+    border-color: #fff transparent transparent;
+    content: "";
+}
+
+/*设置总标题背景图片*/
+.accordionMenu #head_2 h2 a {
+  background: url('../pic/h2/古黄河.jpg') no-repeat center center;
+  background-size: 100%;
+  background-clip: padding-box;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  color: transparent; /* 修改文字颜色为透明 */
+  display: block;
+  font-family: 'Microsoft YaHei', '微软雅黑', sans-serif;
+  font-size: 18px;
+  letter-spacing: 5px;
+  font-weight: bold;
+  margin: 0;
+  padding: 15px 18px;
+}
+
+.accordionMenu #head_2 h2:before {
+  display: none;
+}
+
+.accordionMenu #head h2 a {
+  background: url('../pic/h2/美丽风景.jpg') no-repeat center center;
+  background-size: 100%;
+  background-clip: padding-box;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  color: transparent; /* 修改文字颜色为透明 */
+  display: block;
+  font-family: 'Microsoft YaHei', '微软雅黑', sans-serif;
+  font-size: 18px;
+  letter-spacing: 5px;
+  font-weight: bold;
+  margin: 0;
+  padding: 15px 18px;
+}
+
+.accordionMenu #head h2:before {
+  display: none;
+}
+
+/*设置h2和h3的样式使其在过渡动画更平滑*/
+.menuSection h2,
+.menuSection h3 {
+    min-width: 150px; /* 最小宽度 */
+    white-space: nowrap;/* 不进行换行 */
+}
+
+/*设置标题背景图片*/
+.accordionMenu #brand h2 a {
+  background: url('../pic/h2/美丽风景.jpg') no-repeat center center;
+  background-size: 100%;
+  background-clip: padding-box;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  color: #fff; /* 修改文字颜色为白色 */
+  display: block;
+  font-family: 'Microsoft YaHei', '微软雅黑', sans-serif;
+  font-size: 18px;
+  letter-spacing: 5px;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+  padding: 15px 18px;
+  text-shadow: 2px 2px 2px #aeaeae;
+  text-decoration: none;
+}
+
+.accordionMenu #brand :target h2 a, /*目标标题的效果*/
+.accordionMenu #brand h2 a:focus,
+.accordionMenu #brand h2 a:hover,
+.accordionMenu #brand h2 a:active {
+  background: url('../pic/h2/美丽风景.jpg') no-repeat center center;
+  background-size: 100%;
+  background-clip: padding-box;
+  color: #fff; /* 修改文字颜色为白色 */
+  box-shadow: 1px 2px 4px rgba(0,0,0,0.2);
+}
+
+.accordionMenu #promotion h2 a {
+  background: url('../pic/h2/蓬勃农业.jpg') no-repeat center center;
+  background-size: 100%;
+  background-clip: padding-box;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  color: #fff; /* 修改文字颜色为白色 */
+  display: block;
+  font-family: 'Microsoft YaHei', '微软雅黑', sans-serif;
+  font-size: 18px;
+  letter-spacing: 5px;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+  padding: 15px 18px;
+  text-shadow: 2px 2px 2px #aeaeae;
+  text-decoration: none;
+}
+
+.accordionMenu #promotion :target h2 a, /*目标标题的效果*/
+.accordionMenu #promotion h2 a:focus,
+.accordionMenu #promotion h2 a:hover,
+.accordionMenu #promotion h2 a:active {
+  background: url('../pic/h2/蓬勃农业.jpg') no-repeat center center;
+  background-size: 100%;
+  background-clip: padding-box;
+  color: #fff; /* 修改文字颜色为白色 */
+  box-shadow: 1px 2px 4px rgba(0,0,0,0.2);
+}
+
+.accordionMenu #extend h2 a {
+  background: url('../pic/h2/示范乡村.png') no-repeat center center;
+  background-size: 100%;
+  background-clip: padding-box;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  color: #fff; /* 修改文字颜色为白色 */
+  display: block;
+  font-family: 'Microsoft YaHei', '微软雅黑', sans-serif;
+  font-size: 18px;
+  letter-spacing: 5px;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+  padding: 15px 18px;
+  text-shadow: 2px 2px 2px #aeaeae;
+  text-decoration: none;
+}
+
+.accordionMenu #extend :target h2 a, /*目标标题的效果*/
+.accordionMenu #extend h2 a:focus,
+.accordionMenu #extend h2 a:hover,
+.accordionMenu #extend h2 a:active {
+  background: url('../pic/h2/示范乡村.png') no-repeat center center;
+  background-size: 100%;
+  background-clip: padding-box;
+  color: #fff; /* 修改文字颜色为白色 */
+  box-shadow: 1px 2px 4px rgba(0,0,0,0.2);
+}
+
+/* 修改古代sidebar */
+.accordionMenu .menuSection_1 h2 a {
+  background: #fb000000;
+  background-size: 100%;
+  background-clip: padding-box;
+  border-radius: 5px;
+  border: 2px solid #fea202;
+  color: #fff; /* 修改文字颜色为白色 */
+  display: block;
+  font-family: 'Microsoft YaHei', '微软雅黑', sans-serif;
+  font-size: 18px;
+  letter-spacing: 5px;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+  padding: 15px 18px;
+  text-decoration: none;
+}
+
+.accordionMenu .menuSection_1 :target h2 a, /*目标标题的效果*/
+.accordionMenu .menuSection_1 h2 a:focus,
+.accordionMenu .menuSection_1 h2 a:hover,
+.accordionMenu .menuSection_1 h2 a:active {
+  background: #e3d7d3;
+  background-size: 100%;
+  background-clip: padding-box;
+  color: #f94b4b; /* 修改文字颜色为白色 */
+  box-shadow: 1px 2px 4px rgba(0,0,0,0.2);
+}
+
+.accordionMenu .menuSection_1 h2:before {
+  display: none;
+}
+
+.accordionMenu h3 { /* 标题栏对应的内容 */
+    overflow: hidden;
+    height: 0; /*默认栏目内容高度为0，达到隐藏效果*/
+    margin: 0;
+    padding: 0px 10px;
+    -webkit-transition: height 0.6s ease-in, padding 0.7s ease-in; /* 添加 padding 过渡效果 */
+    -moz-transition: height 0.6s ease-in, padding 0.7s ease-in;
+    -o-transition: height 0.6s ease-in, padding 0.7s ease-in;
+    transition: height 0.6s ease-in, padding 0.7s ease-in;
+    cursor:pointer;
+}
+
+/*关键代码 显示内容部分信息*/
+.accordionMenu :target h3 { /*展开对应目标内容*/
+    overflow: hidden;
+    height: 20px; /* 显示对应目标栏内容，可以根据需要设置具体高度或者 auto */
+    padding: 10px;/*显示对应目标栏内容*/
+    margin: 10px 0; /* 添加垂直方向上的间隙 */
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
+
+.accordionMenu :target h2:before { /*展开时标题三角效果*/
+    border-color: transparent transparent transparent #fff;
+}
+
+/*设置每个景区和农业区的背景*/
+.accordionMenu .sce-first{
+    background: url("../pic/h3/scenic/吕梁风景.jpg")no-repeat center center;
+    background-size: 100%;
+    background-clip: padding-box;
+    border-radius: 5px;
+    color: #fff; /* 修改文字颜色为白色 */
+    display: block;
+    font-family: 'Microsoft YaHei', '微软雅黑', sans-serif;
+    font-size: 16px;
+    letter-spacing: 3px;
+    font-weight: normal;
+    margin: 1px;
+    padding: 0px 10px;
+    text-shadow: 0.5px 0.5px 0.5px #aeaeae;
+    text-decoration: none;
+}
+.accordionMenu .sce-second{
+  background: url("../pic/h3/scenic/湿地鹭鸟.jpg")no-repeat center center;
+  background-size: 100%;
+  background-clip: padding-box;
+  border-radius: 5px;
+  color: #fff; /* 修改文字颜色为白色 */
+  display: block;
+  font-family: 'Microsoft YaHei', '微软雅黑', sans-serif;
+  font-size: 16px;
+  letter-spacing: 3px;
+  font-weight: normal;
+  margin: 1px;
+  padding: 0px 10px;
+  text-shadow: 0.5px 0.5px 0.5px #aeaeae;
+  text-decoration: none;
+}
+.accordionMenu .sce-third{
+  background: url("../pic/h3/scenic/百步洪.jpg")no-repeat center center;
+  background-size: 100%;
+  background-clip: padding-box;
+  border-radius: 5px;
+  color: #fff; /* 修改文字颜色为白色 */
+  display: block;
+  font-family: 'Microsoft YaHei', '微软雅黑', sans-serif;
+  font-size: 16px;
+  letter-spacing: 3px;
+  font-weight: normal;
+  margin: 1px;
+  padding: 0px 10px;
+  text-shadow: 0.5px 0.5px 0.5px #aeaeae;
+  text-decoration: none;
+}
+.accordionMenu .sce-fourth{
+  background: url("../pic/h3/scenic/古黄河公园.jpg")no-repeat center center;
+  background-size: 100%;
+  background-clip: padding-box;
+  border-radius: 5px;
+  color: #fff; /* 修改文字颜色为白色 */
+  display: block;
+  font-family: 'Microsoft YaHei', '微软雅黑', sans-serif;
+  font-size: 16px;
+  letter-spacing: 3px;
+  font-weight: normal;
+  margin: 1px;
+  padding: 0px 10px;
+  text-shadow: 0.5px 0.5px 0.5px #aeaeae;
+  text-decoration: none;
+}
+.accordionMenu .sce-fifth{
+  background: url("../pic/h3/scenic/汉桥公园.jpg")no-repeat center center;
+  background-size: 100%;
+  background-clip: padding-box;
+  border-radius: 5px;
+  color: #fff; /* 修改文字颜色为白色 */
+  display: block;
+  font-family: 'Microsoft YaHei', '微软雅黑', sans-serif;
+  font-size: 16px;
+  letter-spacing: 3px;
+  font-weight: normal;
+  margin: 1px;
+  padding: 0px 10px;
+  text-shadow: 0.5px 0.5px 0.5px #aeaeae;
+  text-decoration: none;
+}
+.accordionMenu .sce-sixth{
+  background: url("../pic/h3/scenic/黄楼公园.jpg")no-repeat center center;
+  background-size: 100%;
+  background-clip: padding-box;
+  border-radius: 5px;
+  color: #fff; /* 修改文字颜色为白色 */
+  display: block;
+  font-family: 'Microsoft YaHei', '微软雅黑', sans-serif;
+  font-size: 16px;
+  letter-spacing: 3px;
+  font-weight: normal;
+  margin: 1px;
+  padding: 0px 10px;
+  text-shadow: 0.5px 0.5px 0.5px #aeaeae;
+  text-decoration: none;
+}
+.accordionMenu .sce-seventh{
+  background: url("../pic/h3/scenic/安国湖湿地.jpg")no-repeat center center;
+  background-size: 100%;
+  background-clip: padding-box;
+  border-radius: 5px;
+  color: #fff; /* 修改文字颜色为白色 */
+  display: block;
+  font-family: 'Microsoft YaHei', '微软雅黑', sans-serif;
+  font-size: 16px;
+  letter-spacing: 3px;
+  font-weight: normal;
+  margin: 1px;
+  padding: 0px 10px;
+  text-shadow: 0.5px 0.5px 0.5px #aeaeae;
+  text-decoration: none;
+}
+.accordionMenu .sce-eighth{
+  background: url("../pic/h3/scenic/显红岛.jpg")no-repeat center center;
+  background-size: 100%;
+  background-clip: padding-box;
+  border-radius: 5px;
+  color: #fff; /* 修改文字颜色为白色 */
+  display: block;
+  font-family: 'Microsoft YaHei', '微软雅黑', sans-serif;
+  font-size: 16px;
+  letter-spacing: 3px;
+  font-weight: normal;
+  margin: 1px;
+  padding: 0px 10px;
+  text-shadow: 0.5px 0.5px 0.5px #aeaeae;
+  text-decoration: none;
+}
+.accordionMenu .sce-ninth{
+  background: url("../pic/h3/scenic/睢宁.jpg")no-repeat center center;
+  background-size: 100%;
+  background-clip: padding-box;
+  border-radius: 5px;
+  color: #fff; /* 修改文字颜色为白色 */
+  display: block;
+  font-family: 'Microsoft YaHei', '微软雅黑', sans-serif;
+  font-size: 16px;
+  letter-spacing: 3px;
+  font-weight: normal;
+  margin: 1px;
+  padding: 0px 10px;
+  text-shadow: 0.5px 0.5px 0.5px #aeaeae;
+  text-decoration: none;
+}
+.accordionMenu .sce-tenth{
+  background: url("../pic/h3/scenic/刘邦故里.jpg")no-repeat center center;
+  background-size: 100%;
+  background-clip: padding-box;
+  border-radius: 5px;
+  color: #fff; /* 修改文字颜色为白色 */
+  display: block;
+  font-family: 'Microsoft YaHei', '微软雅黑', sans-serif;
+  font-size: 16px;
+  letter-spacing: 3px;
+  font-weight: normal;
+  margin: 1px;
+  padding: 0px 10px;
+  text-shadow: 0.5px 0.5px 0.5px #aeaeae;
+  text-decoration: none;
+}
+.accordionMenu .agri-first{
+  background: url("../pic/h3/agriculture/万亩瓜田.jpg")no-repeat center center;
+  background-size: 100%;
+  background-clip: padding-box;
+  border-radius: 5px;
+  color: #fff; /* 修改文字颜色为白色 */
+  display: block;
+  font-family: 'Microsoft YaHei', '微软雅黑', sans-serif;
+  font-size: 16px;
+  letter-spacing: 3px;
+  font-weight: normal;
+  margin: 1px;
+  padding: 0px 10px;
+  text-shadow: 0.5px 0.5px 0.5px #aeaeae;
+  text-decoration: none;
+}
+.accordionMenu .agri-second{
+  background: url("../pic/h3/agriculture/万亩藕田.jpg")no-repeat center center;
+  background-size: 100%;
+  background-clip: padding-box;
+  border-radius: 5px;
+  color: #fff; /* 修改文字颜色为白色 */
+  display: block;
+  font-family: 'Microsoft YaHei', '微软雅黑', sans-serif;
+  font-size: 16px;
+  letter-spacing: 3px;
+  font-weight: normal;
+  margin: 1px;
+  padding: 0px 10px;
+  text-shadow: 0.5px 0.5px 0.5px #aeaeae;
+  text-decoration: none;
+}
+.accordionMenu .agri-third{
+  background: url("../pic/h3/agriculture/")no-repeat center center;
+  background-size: 100%;
+  background-clip: padding-box;
+  border-radius: 5px;
+  color: #fff; /* 修改文字颜色为白色 */
+  display: block;
+  font-family: 'Microsoft YaHei', '微软雅黑', sans-serif;
+  font-size: 16px;
+  letter-spacing: 3px;
+  font-weight: normal;
+  margin: 1px;
+  padding: 0px 10px;
+  text-shadow: 0.5px 0.5px 0.5px #aeaeae;
+  text-decoration: none;
+}
+.accordionMenu .agri-fourth{
+  background: url("../pic/h3/")no-repeat center center;
+  background-size: 100%;
+  background-clip: padding-box;
+  border-radius: 5px;
+  color: #fff; /* 修改文字颜色为白色 */
+  display: block;
+  font-family: 'Microsoft YaHei', '微软雅黑', sans-serif;
+  font-size: 16px;
+  letter-spacing: 3px;
+  font-weight: normal;
+  margin: 1px;
+  padding: 0px 10px;
+  text-shadow: 0.5px 0.5px 0.5px #aeaeae;
+  text-decoration: none;
+}
+.accordionMenu .agri-fifth{
+  background: url("../pic/h3/agriculture/沛县沿大沙河稻田.jpg")no-repeat center center;
+  background-size: 100%;
+  background-clip: padding-box;
+  border-radius: 5px;
+  color: #fff; /* 修改文字颜色为白色 */
+  display: block;
+  font-family: 'Microsoft YaHei', '微软雅黑', sans-serif;
+  font-size: 16px;
+  letter-spacing: 3px;
+  font-weight: normal;
+  margin: 1px;
+  padding: 0px 10px;
+  text-shadow: 0.5px 0.5px 0.5px #aeaeae;
+  text-decoration: none;
+}
+.accordionMenu .agri-sixth{
+  background: url("../pic/h3/agriculture/睢宁县姚集现代农业示范区.jpg")no-repeat center center;
+  background-size: 100%;
+  background-clip: padding-box;
+  border-radius: 5px;
+  color: #fff; /* 修改文字颜色为白色 */
+  display: block;
+  font-family: 'Microsoft YaHei', '微软雅黑', sans-serif;
+  font-size: 16px;
+  letter-spacing: 3px;
+  font-weight: normal;
+  margin: 1px;
+  padding: 0px 10px;
+  text-shadow: 0.5px 0.5px 0.5px #aeaeae;
+  text-decoration: none;
+}
+.accordionMenu .agri-seventh{
+  background: url("../pic/h3/agriculture/刘集大樱桃.jpg")no-repeat center center;
+  background-size: 100%;
+  background-clip: padding-box;
+  border-radius: 5px;
+  color: #fff; /* 修改文字颜色为白色 */
+  display: block;
+  font-family: 'Microsoft YaHei', '微软雅黑', sans-serif;
+  font-size: 16px;
+  letter-spacing: 3px;
+  font-weight: normal;
+  margin: 1px;
+  padding: 0px 10px;
+  text-shadow: 0.5px 0.5px 0.5px #aeaeae;
+  text-decoration: none;
+}
+.accordionMenu .agri-eighth{
+  background: url("../pic/h3/agriculture/")no-repeat center center;
+  background-size: 100%;
+  background-clip: padding-box;
+  border-radius: 5px;
+  color: #fff; /* 修改文字颜色为白色 */
+  display: block;
+  font-family: 'Microsoft YaHei', '微软雅黑', sans-serif;
+  font-size: 16px;
+  letter-spacing: 3px;
+  font-weight: normal;
+  margin: 1px;
+  padding: 0px 10px;
+  text-shadow: 0.5px 0.5px 0.5px #aeaeae;
+  text-decoration: none;
+}
+.accordionMenu .agri-ninth{
+  background: url("../pic/h3/agriculture/八路镇蝴蝶兰花卉大棚.jpg")no-repeat center center;
+  background-size: 100%;
+  background-clip: padding-box;
+  border-radius: 5px;
+  color: #fff; /* 修改文字颜色为白色 */
+  display: block;
+  font-family: 'Microsoft YaHei', '微软雅黑', sans-serif;
+  font-size: 16px;
+  letter-spacing: 3px;
+  font-weight: normal;
+  margin: 1px;
+  padding: 0px 10px;
+  text-shadow: 0.5px 0.5px 0.5px #aeaeae;
+  text-decoration: none;
+}
+.accordionMenu .rus-first{
+  background: url("../pic/h3/rustic/鲤鱼山庄.jpg")no-repeat center center;
+  background-size: 100%;
+  background-clip: padding-box;
+  border-radius: 5px;
+  color: #fff; /* 修改文字颜色为白色 */
+  display: block;
+  font-family: 'Microsoft YaHei', '微软雅黑', sans-serif;
+  font-size: 16px;
+  letter-spacing: 3px;
+  font-weight: normal;
+  margin: 1px;
+  padding: 0px 10px;
+  text-shadow: 0.5px 0.5px 0.5px #aeaeae;
+  text-decoration: none;
+}
+.accordionMenu .rus-second{
+  background: url("../pic/h3/rustic/高党村.jpg")no-repeat center center;
+  background-size: 100%;
+  background-clip: padding-box;
+  border-radius: 5px;
+  color: #fff; /* 修改文字颜色为白色 */
+  display: block;
+  font-family: 'Microsoft YaHei', '微软雅黑', sans-serif;
+  font-size: 16px;
+  letter-spacing: 3px;
+  font-weight: normal;
+  margin: 1px;
+  padding: 0px 10px;
+  text-shadow: 0.5px 0.5px 0.5px #aeaeae;
+  text-decoration: none;
+}
+
+/* logo放置开始 */
+.logo{
+  cursor: pointer;
+}
+/* liubangguli */
+#liubangguli{
+  position: absolute;
+  z-index:10000;
+  width: 12%;
+  height: 12.5%;
+  margin-top:8%;
+  margin-left:8%;
+  transition: transform 0.3s ease;
+}
+/* wanmuguatian */
+#wanmuguatian{
+  position: absolute;
+  z-index:10000;
+  width: 7%;
+  height: 7%;
+  margin-top:8%;
+  margin-left:20.5%;
+  transition: transform 0.3s ease;
+}
+/* peixiananguo */
+#peixiananguo{
+  position: absolute;
+  z-index:10000;
+  width: 9%;
+  height: 9%;
+  margin-top:13%;
+  margin-left:19%;
+  transition: transform 0.3s ease;
+}
+/* dashaheshidi */
+#dashaheshidi{
+  position: absolute;
+  z-index:10000;
+  width: 12%;
+  height: 12%;
+  margin-top:17.3%;
+  margin-left:4.5%;
+  transition: transform 0.3s ease;
+}
+/* aihuapingguo */
+#aihuapingguo{
+  position: absolute;
+  z-index:10000;
+  width: 11%;
+  height: 11%;
+  margin-top:19%;
+  margin-left:15.5%;
+  transition: transform 0.3s ease;
+}
+/* huanglou */
+#huanglou{
+  position: absolute;
+  z-index:10000;
+  width: 6%;
+  height: 8%;
+  margin-top:26%;
+  margin-left:23.5%;
+  transition: transform 0.3s ease;
+}
+/* guhuanghegongyuan */
+#guhuanghegongyuan{
+  position: absolute;
+  z-index:10000;
+  width: 7%;
+  height: 8%;
+  margin-top:29.7%;
+  margin-left:29.2%;
+  transition: transform 0.3s ease;
+}
+/* biansijiaohui */
+#biansijiaohui{
+  position: absolute;
+  z-index:10000;
+  width: 6.8%;
+  height: 8%;
+  margin-top:31.2%;
+  margin-left:34.8%;
+  transition: transform 0.3s ease;
+}
+/* baibuhong */
+#baibuhong{
+  position: absolute;
+  z-index:10000;
+  width: 8%;
+  height: 8%;
+  margin-top:33.5%;
+  margin-left:21.5%;
+  transition: transform 0.3s ease;
+}
+/* xianhongdaogongyuan */
+#xianhongdaogongyuan{
+  position: absolute;
+  z-index:10000;
+  width: 9%;
+  height: 10.2%;
+  margin-top:36%;
+  margin-left:26.5%;
+  transition: transform 0.3s ease;
+}
+/* hepingdaqiao */
+#hepingdaqiao{
+  position: absolute;
+  z-index:10000;
+  width: 7%;
+  height: 14.5%;
+  margin-top:30.4%;
+  margin-left:39%;
+  transition: transform 0.3s ease;
+}
+/* hanqiaogongyuan */
+#hanqiaogongyuan{
+  position: absolute;
+  z-index:10000;
+  width: 16%;
+  height: 14.5%;
+  margin-top:38.5%;
+  margin-left:30%;
+  transition: transform 0.3s ease;
+}
+/* lvliangshan */
+#lvliangshan{
+  position: absolute;
+  z-index:10000;
+  width: 7%;
+  height: 13.5%;
+  margin-top:32%;
+  margin-left:44%;
+  transition: transform 0.3s ease;
+}
+/* liyushanzhuang */
+#liyushanzhuang{
+  position: absolute;
+  z-index:10000;
+  width: 10.5%;
+  height: 9%;
+  margin-top:37.7%;
+  margin-left:47.2%;
+  transition: transform 0.3s ease;
+}
+/* wanmuou */
+#wanmuou{
+  position: absolute;
+  z-index:10000;
+  width: 7%;
+  height: 10%;
+  margin-top:43%;
+  margin-left:41.2%;
+  transition: transform 0.3s ease;
+}
+/* shuanggouzhen */
+#shuanggouzhen{
+  position: absolute;
+  z-index:10000;
+  width: 8%;
+  height: 8%;
+  margin-top:47%;
+  margin-left:46%;
+  transition: transform 0.3s ease;
+}
+/* fangwanshidi */
+#fangwanshidi{
+  position: absolute;
+  z-index:10000;
+  width: 9%;
+  height: 14%;
+  margin-top:36%;
+  margin-left:57.5%;
+  transition: transform 0.3s ease;
+}
+/* yaoji */
+#yaoji{
+  position: absolute;
+  z-index:10000;
+  width: 11%;
+  height: 11%;
+  margin-top:47.2%;
+  margin-left:60.5%;
+  transition: transform 0.3s ease;
+}
+/* logo放置结束 */
+/* logo外发光效果 */
+.animation{
+  animation: scaleAnimation 1s infinite alternate,shineAnimation 1s infinite;
+}
+@keyframes scaleAnimation {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+@keyframes shineAnimation {
+  0% {
+    filter: brightness(90%);
+  }
+  50% {
+    filter: brightness(115%);
+  }
+  100% {
+    filter: brightness(90%);
+  }
+}

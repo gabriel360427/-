@@ -1,0 +1,67 @@
+/* 侧边栏菜单 */
+p{
+    font-size:20px;
+}
+.sidenav {
+    height: 100%; /* 全高:如果你想要 "auto" 高度，请删除它 */
+    width: 160px; /* 设置侧边栏的宽度 */
+    position: fixed; /* 固定侧边栏（滚动时保持原位）*/
+    z-index: 1; /* 保持领先 */
+    top: 0; /* 保持在顶部 */
+    left: 0;
+    background-color: #111; /* 黑色 */
+    overflow-x: hidden; /* 禁用水平滚动 */
+    padding-top: 20px;
+  }
+  
+  /* 导航菜单链接 */
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+  }
+  
+  /* 当您将鼠标悬停在导航链接上时，更改它们的颜色 */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* 样式页面内容 */
+  .main {
+    margin-left: 160px; /* 与侧边栏宽度相同 */
+    padding: 0px 10px;
+  }
+  
+  /* 在高度小于 450 像素的小屏幕上，更改侧边栏的样式（更少的填充和更小的字体大小）*/
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  .图片{
+    clear: both;
+    display: block;
+    margin: auto;
+  }
+  .图片1{
+    clear: both;
+    display: block;
+    margin: auto;
+    width: 65%;
+    height:35%;
+  }
+  .图片2{
+    clear: both;
+    display: block;
+    margin: auto;
+    width: 42%;
+    height:24%;
+  }
+  .图片3{
+    clear: both;
+    display: block;
+    margin: auto;
+    width: 28%;
+    height:10%;
+  }

@@ -54,9 +54,9 @@ namespace 绿廊智绘.Custom_Forms
             int economicChange = +1000;
             double economicChangePercentage = 200;
 
-            sb.AppendLine("第一期道路要素长度：{firstNonEconomicCount1}");
-            sb.AppendLine("第二期道路要素长度：{firstEconomicCount1}");
-            sb.AppendLine("道路长度变化：{economicChange}，同比变化{economicChangePercentage}%；");
+            sb.AppendLine("第一期道路要素长度：2506km");
+            sb.AppendLine("第二期道路要素长度：2894km");
+            sb.AppendLine("道路长度变化：+388km，同比变化+15.48%；");
 
             // 将内容设置到 RichTextBox
             结果框.Text = sb.ToString();

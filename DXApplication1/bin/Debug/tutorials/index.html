@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绿廊智绘</title>
+    <link rel="stylesheet" href="start.css">
+</head>
+<body>
+    <div id="dark"></div>
+    <div id="surface">
+        <H3 id="subtitle">TUTORIOUS</h3>
+        <H1 id="title">使用教程</H2>
+        <button id="start"></button>
+    </div>
+</body>
+<script>
+    //背景图片轮换
+    const images = ['pic/b1.png', 'pic/b2.png', 'pic/b3.png','pic/b4.png']; // 图片列表
+    let index = 0; // 当前图片索引
+
+    // 设置初始背景图片
+    document.body.style.backgroundImage = `url('${images[index]}')`;
+
+    // 定时器切换背景图片
+    setInterval(() => {
+        index = (index + 1) % images.length; // 循环切换图片
+        document.body.style.backgroundImage = `url('${images[index]}')`;
+    }, 3000); // 每隔3秒切换一次图片
+
+    document.getElementById('start').addEventListener('click', function() {
+            window.location.href ='tutorials.html';
+        });
+</script>
+</html>
