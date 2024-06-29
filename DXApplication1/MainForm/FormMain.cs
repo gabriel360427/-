@@ -1992,7 +1992,9 @@ namespace 绿廊智绘
 
         #region 七、生态廊道识别
 
-        #region 1. 核心区重要性
+        #region 1. 核心区
+
+        #region 1.1 核心区重要性
         private void ImportanceOfcore_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             Process processexe = Process.Start(Application.StartupPath + "\\Conefor26.exe");
@@ -2000,9 +2002,7 @@ namespace 绿廊智绘
 
         #endregion
 
-        #region 2. 核心区
-
-        #region 2.1 核心区提取
+        #region 1.2 核心区提取
         private void CoreAreaExtraction_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             CoreAreaExtraction form = new CoreAreaExtraction();
@@ -2010,7 +2010,7 @@ namespace 绿廊智绘
         }
         #endregion
 
-        #region 2.2 核心区划分
+        #region 1.3 核心区划分
         private void CoreAreaDivision_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             CoreAreaDivision frm = new CoreAreaDivision();
@@ -2020,9 +2020,9 @@ namespace 绿廊智绘
 
         #endregion
 
-        #region 3. 生态廊道识别
+        #region 2. 生态廊道识别
 
-        #region 3.1 成本距离计算
+        #region 2.1 成本距离计算
         private void CostDistanceCalculation_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             CostDistanceCalculation form = new CostDistanceCalculation();
@@ -2030,7 +2030,7 @@ namespace 绿廊智绘
         }
         #endregion
 
-        #region 3.2 成本路径计算
+        #region 2.2 成本路径计算
         private void CostPathCalculation_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             CostPathCalculation form = new CostPathCalculation();
@@ -2038,7 +2038,7 @@ namespace 绿廊智绘
         }
         #endregion
 
-        #region 3.3 栅格转折线
+        #region 2.3 栅格转折线
         private void rasterToPolyline_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             rasterToPolylineForm frm = new rasterToPolylineForm();
@@ -2046,7 +2046,7 @@ namespace 绿廊智绘
         }
         #endregion
 
-        #region 3.4 采样
+        #region 2.4 采样
         private void Sampling_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             Sampling form = new Sampling();
@@ -2054,7 +2054,7 @@ namespace 绿廊智绘
         }
         #endregion
 
-        #region 3.5 廊道添加字段
+        #region 2.5 廊道添加字段
         private void CorridorAddField_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             CorridorAddField form = new CorridorAddField();
@@ -2062,7 +2062,7 @@ namespace 绿廊智绘
         }
         #endregion
 
-        #region 3.6 廊道分级
+        #region 2.6 廊道分级
         private void CorridorGrading_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             if (mapControlMain.ActiveView.CurrentLayer == null) return;
@@ -2116,7 +2116,7 @@ namespace 绿廊智绘
 
         #endregion
 
-        #region 4. 生态节点
+        #region 3. 生态节点
         private void EcologicalNodeExtraction_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             EcologicalNodeExtraction form = new EcologicalNodeExtraction();
