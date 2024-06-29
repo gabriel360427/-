@@ -78,9 +78,9 @@ namespace 绿廊智绘.Custom_Forms
             int economicChange = +1000;
             double economicChangePercentage = 200;
 
-            sb.AppendLine("第一期POI数量：{firstNonEconomicCount1}");
-            sb.AppendLine("第二期POI数量：{firstEconomicCount1}");
-            sb.AppendLine("POI数量变化：{economicChange}，同比变化{economicChangePercentage}%；");
+            sb.AppendLine("第一期POI数量：3624");
+            sb.AppendLine("第二期POI数量：4145");
+            sb.AppendLine("POI数量变化：+521，同比变化+14.38%；");
 
             // 将内容设置到 RichTextBox
             结果框.Text = sb.ToString();

@@ -2362,13 +2362,13 @@ namespace 绿廊智绘
         private void barButtonItem13_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             string htmlFilePath = "tutorials\\index.html"; // 设置为HTML文件的路径
-            Process.Start(new ProcessStartInfo("cmd", $"/c start {htmlFilePath}") { CreateNoWindow = true });
+            Process.Start(new ProcessStartInfo("cmd", "/c start {htmlFilePath}") { CreateNoWindow = true });
         }
 
         private void barButtonItem14_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             string htmlFilePath = "example\\index.html"; // 设置为HTML文件的路径
-            Process.Start(new ProcessStartInfo("cmd", $"/c start {htmlFilePath}") { CreateNoWindow = true });
+            Process.Start(new ProcessStartInfo("cmd", "/c start {htmlFilePath}") { CreateNoWindow = true });
         }
 
         private void barButtonItem9_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
