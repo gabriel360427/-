@@ -1303,3 +1303,4 @@ C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\bin\Debug\es\DevExpress.Map.v1
 C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\bin\Debug\ja\DevExpress.Map.v18.1.Core.resources.dll
 C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\bin\Debug\ru\DevExpress.Map.v18.1.Core.resources.dll
 C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.参考建议.resources
+C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.inputTime.resources

@@ -195,6 +195,12 @@
     <Compile Include="Custom Forms\distanceClassifyForm.designer.cs">
       <DependentUpon>distanceClassifyForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Custom Forms\inputTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\inputTime.Designer.cs">
+      <DependentUpon>inputTime.cs</DependentUpon>
+    </Compile>
     <Compile Include="Custom Forms\参考建议.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -419,6 +425,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\distanceClassifyForm.resx">
       <DependentUpon>distanceClassifyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\inputTime.resx">
+      <DependentUpon>inputTime.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\POI变化统计.resx">
       <DependentUpon>POI变化统计.cs</DependentUpon>

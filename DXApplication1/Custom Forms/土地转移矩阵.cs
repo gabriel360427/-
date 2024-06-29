@@ -48,11 +48,6 @@ namespace 绿廊智绘.Custom_Forms
 
         private void 输出位置加载按钮_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void 输出位置框_SelectedIndexChanged(object sender, EventArgs e)
-        {
             SaveFileDialog savefile = new SaveFileDialog();
             savefile.Title = "输出表格文件";
             savefile.Filter = "表格文件|*.dbf;";
@@ -60,6 +55,11 @@ namespace 绿廊智绘.Custom_Forms
             {
                 输出位置框.Text = savefile.FileName;
             }
+        }
+
+        private void 输出位置框_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
