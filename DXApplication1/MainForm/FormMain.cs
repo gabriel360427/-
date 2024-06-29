@@ -2038,7 +2038,15 @@ namespace 绿廊智绘
         }
         #endregion
 
-        #region 3.3 采样
+        #region 3.3 栅格转折线
+        private void rasterToPolyline_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            rasterToPolylineForm frm = new rasterToPolylineForm();
+            frm.ShowDialog();
+        }
+        #endregion
+
+        #region 3.4 采样
         private void Sampling_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             Sampling form = new Sampling();
@@ -2046,7 +2054,7 @@ namespace 绿廊智绘
         }
         #endregion
 
-        #region 3.4 廊道添加字段
+        #region 3.5 廊道添加字段
         private void CorridorAddField_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             CorridorAddField form = new CorridorAddField();
@@ -2054,7 +2062,7 @@ namespace 绿廊智绘
         }
         #endregion
 
-        #region 3.5 廊道分级
+        #region 3.6 廊道分级
         private void CorridorGrading_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             if (mapControlMain.ActiveView.CurrentLayer == null) return;
@@ -2376,5 +2384,7 @@ namespace 绿廊智绘
             string pdfFilePath = "绿廊智绘—城镇生态富民格局智能遥测系统.pdf"; // 设置为PDF文件的路径
             Process.Start(new ProcessStartInfo(pdfFilePath) { UseShellExecute = true });
         }
+
+
     }
 }

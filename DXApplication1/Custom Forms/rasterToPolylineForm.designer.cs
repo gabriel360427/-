@@ -1,7 +1,7 @@
 ﻿
 namespace 绿廊智绘.Custom_Forms
 {
-    partial class rasterToPolyline
+    partial class rasterToPolylineForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace 绿廊智绘.Custom_Forms
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(rasterToPolyline));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(rasterToPolylineForm));
             this.Cancel = new System.Windows.Forms.Button();
             this.OK = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();

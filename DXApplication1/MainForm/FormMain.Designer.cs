@@ -163,6 +163,7 @@
             this.EnvironmentConfiguration1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem14 = new DevExpress.XtraBars.BarButtonItem();
+            this.rasterToPolyline = new DevExpress.XtraBars.BarButtonItem();
             this.BASEMENT = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.mapProject = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.dataManagement = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -264,7 +265,6 @@
             this.LayerPropertyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SelectCoordinateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
-            this.rasterToPolyline = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar3)).BeginInit();
@@ -1608,6 +1608,15 @@
             this.barButtonItem14.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.barButtonItem14.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem14_ItemClick);
             // 
+            // rasterToPolyline
+            // 
+            this.rasterToPolyline.Caption = "栅格转折线";
+            this.rasterToPolyline.Id = 152;
+            this.rasterToPolyline.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("rasterToPolyline.ImageOptions.Image")));
+            this.rasterToPolyline.Name = "rasterToPolyline";
+            this.rasterToPolyline.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.rasterToPolyline.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.rasterToPolyline_ItemClick);
+            // 
             // BASEMENT
             // 
             this.BASEMENT.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -2518,14 +2527,6 @@
             this.barButtonItem2.Name = "barButtonItem2";
             this.barButtonItem2.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.barButtonItem2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick_1);
-            // 
-            // rasterToPolyline
-            // 
-            this.rasterToPolyline.Caption = "栅格转折线";
-            this.rasterToPolyline.Id = 152;
-            this.rasterToPolyline.ImageOptions.Image = global::绿廊智绘.Properties.Resources.Baseline_refinement;
-            this.rasterToPolyline.Name = "rasterToPolyline";
-            this.rasterToPolyline.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
             // FormMain
             // 

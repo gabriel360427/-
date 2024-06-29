@@ -21,9 +21,9 @@ using ESRI.ArcGIS.ConversionTools;
 
 namespace 绿廊智绘.Custom_Forms
 {
-    public partial class rasterToPolyline : DevExpress.XtraEditors.XtraForm
+    public partial class rasterToPolylineForm : DevExpress.XtraEditors.XtraForm
     {
-        public rasterToPolyline()
+        public rasterToPolylineForm()
         {
             InitializeComponent();
         }
