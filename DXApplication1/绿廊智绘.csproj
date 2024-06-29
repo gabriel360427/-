@@ -57,6 +57,7 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="ESRI.ArcGIS.ConversionTools, Version=10.4.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
+    <Reference Include="ESRI.ArcGIS.DataManagementTools, Version=10.4.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
     <Reference Include="ESRI.ArcGIS.DataSourcesFile, Version=10.4.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
@@ -206,6 +207,12 @@
     </Compile>
     <Compile Include="Custom Forms\参考建议.Designer.cs">
       <DependentUpon>参考建议.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Forms\rasterToPolyline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\rasterToPolyline.designer.cs">
+      <DependentUpon>rasterToPolyline.cs</DependentUpon>
     </Compile>
     <Compile Include="Custom Forms\道路要素变化统计.cs">
       <SubType>Form</SubType>
@@ -509,6 +516,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\主次要分析.resx">
       <DependentUpon>主次要分析.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\rasterToPolyline.resx">
+      <DependentUpon>rasterToPolyline.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\样本标准时间曲线.resx">
       <DependentUpon>样本标准时间曲线.cs</DependentUpon>

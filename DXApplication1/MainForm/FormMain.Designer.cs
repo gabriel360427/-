@@ -186,7 +186,6 @@
             this.supervisedClassification = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.postClassification = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.reClassifications = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.timeseriesClassification = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.VectorProcess = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.vectorTools = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage5 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -265,6 +264,7 @@
             this.LayerPropertyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SelectCoordinateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.rasterToPolyline = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar3)).BeginInit();
@@ -424,10 +424,11 @@
             this.RoadChangeStatistics,
             this.EnvironmentConfiguration1,
             this.barButtonItem13,
-            this.barButtonItem14});
+            this.barButtonItem14,
+            this.rasterToPolyline});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.ribbonControl1.MaxItemId = 152;
+            this.ribbonControl1.MaxItemId = 153;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.BASEMENT,
@@ -1485,7 +1486,7 @@
             // 
             this.TimeSeriesCurve.Caption = "样本标准时序曲线";
             this.TimeSeriesCurve.Id = 135;
-            this.TimeSeriesCurve.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.TimeSeriesCurve.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("TimeSeriesCurve.ImageOptions.Image")));
             this.TimeSeriesCurve.Name = "TimeSeriesCurve";
             this.TimeSeriesCurve.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.TimeSeriesCurve.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick_2);
@@ -1511,7 +1512,7 @@
             // 
             this.ChangeStatistics.Caption = "变化统计";
             this.ChangeStatistics.Id = 140;
-            this.ChangeStatistics.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.Image")));
+            this.ChangeStatistics.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ChangeStatistics.ImageOptions.Image")));
             this.ChangeStatistics.Name = "ChangeStatistics";
             this.ChangeStatistics.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.ChangeStatistics.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem6_ItemClick);
@@ -1520,7 +1521,7 @@
             // 
             this.LandUseTypeTransferMatrix.Caption = "用地类型转移矩阵";
             this.LandUseTypeTransferMatrix.Id = 141;
-            this.LandUseTypeTransferMatrix.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.ImageOptions.Image")));
+            this.LandUseTypeTransferMatrix.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("LandUseTypeTransferMatrix.ImageOptions.Image")));
             this.LandUseTypeTransferMatrix.Name = "LandUseTypeTransferMatrix";
             this.LandUseTypeTransferMatrix.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.LandUseTypeTransferMatrix.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem7_ItemClick);
@@ -1529,7 +1530,7 @@
             // 
             this.LandscapePatternAnalysis.Caption = "景观格局分析";
             this.LandscapePatternAnalysis.Id = 142;
-            this.LandscapePatternAnalysis.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.ImageOptions.Image")));
+            this.LandscapePatternAnalysis.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("LandscapePatternAnalysis.ImageOptions.Image")));
             this.LandscapePatternAnalysis.Name = "LandscapePatternAnalysis";
             this.LandscapePatternAnalysis.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.LandscapePatternAnalysis.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem8_ItemClick);
@@ -1557,7 +1558,7 @@
             // 
             this.AgriculturalStructureClassification.Caption = "农业结构分类";
             this.AgriculturalStructureClassification.Id = 145;
-            this.AgriculturalStructureClassification.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.Image")));
+            this.AgriculturalStructureClassification.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("AgriculturalStructureClassification.ImageOptions.Image")));
             this.AgriculturalStructureClassification.Name = "AgriculturalStructureClassification";
             this.AgriculturalStructureClassification.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.AgriculturalStructureClassification.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem5_ItemClick_1);
@@ -1566,7 +1567,7 @@
             // 
             this.POIChangeStatistics.Caption = "POI变化统计";
             this.POIChangeStatistics.Id = 147;
-            this.POIChangeStatistics.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.ImageOptions.Image")));
+            this.POIChangeStatistics.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("POIChangeStatistics.ImageOptions.Image")));
             this.POIChangeStatistics.Name = "POIChangeStatistics";
             this.POIChangeStatistics.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.POIChangeStatistics.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem11_ItemClick);
@@ -1575,7 +1576,7 @@
             // 
             this.RoadChangeStatistics.Caption = "道路要素变化统计";
             this.RoadChangeStatistics.Id = 148;
-            this.RoadChangeStatistics.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.ImageOptions.Image")));
+            this.RoadChangeStatistics.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("RoadChangeStatistics.ImageOptions.Image")));
             this.RoadChangeStatistics.Name = "RoadChangeStatistics";
             this.RoadChangeStatistics.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.RoadChangeStatistics.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem12_ItemClick);
@@ -1584,7 +1585,7 @@
             // 
             this.EnvironmentConfiguration1.Caption = "环境配置";
             this.EnvironmentConfiguration1.Id = 149;
-            this.EnvironmentConfiguration1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem10.ImageOptions.Image")));
+            this.EnvironmentConfiguration1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("EnvironmentConfiguration1.ImageOptions.Image")));
             this.EnvironmentConfiguration1.Name = "EnvironmentConfiguration1";
             this.EnvironmentConfiguration1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.EnvironmentConfiguration1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem10_ItemClick);
@@ -1757,8 +1758,7 @@
             this.unSupervisedClassification,
             this.supervisedClassification,
             this.postClassification,
-            this.reClassifications,
-            this.timeseriesClassification});
+            this.reClassifications});
             this.Classification.Name = "Classification";
             this.Classification.Text = "影像分类";
             // 
@@ -1796,11 +1796,6 @@
             this.reClassifications.ItemLinks.Add(this.reClassification);
             this.reClassifications.Name = "reClassifications";
             this.reClassifications.Text = "重分类";
-            // 
-            // timeseriesClassification
-            // 
-            this.timeseriesClassification.Name = "timeseriesClassification";
-            this.timeseriesClassification.Text = "基于时序的影像分类";
             // 
             // VectorProcess
             // 
@@ -1890,6 +1885,7 @@
             // 
             this.EcologicalCorridorIdentification.ItemLinks.Add(this.CostDistanceCalculation);
             this.EcologicalCorridorIdentification.ItemLinks.Add(this.CostPathCalculation);
+            this.EcologicalCorridorIdentification.ItemLinks.Add(this.rasterToPolyline);
             this.EcologicalCorridorIdentification.ItemLinks.Add(this.Sampling);
             this.EcologicalCorridorIdentification.ItemLinks.Add(this.CorridorAddField);
             this.EcologicalCorridorIdentification.ItemLinks.Add(this.CorridorGrading);
@@ -2194,7 +2190,7 @@
             this.swipeLayer.Image = ((System.Drawing.Image)(resources.GetObject("swipeLayer.Image")));
             this.swipeLayer.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.swipeLayer.Name = "swipeLayer";
-            this.swipeLayer.Size = new System.Drawing.Size(39, 39);
+            this.swipeLayer.Size = new System.Drawing.Size(37, 39);
             this.swipeLayer.Text = "卷帘";
             this.swipeLayer.Click += new System.EventHandler(this.swipeLayer_Click);
             // 
@@ -2220,7 +2216,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage2.Size = new System.Drawing.Size(1030, 367);
+            this.tabPage2.Size = new System.Drawing.Size(1030, 446);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "制图模式";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -2241,7 +2237,7 @@
             this.toolStrip2.Location = new System.Drawing.Point(3, 2);
             this.toolStrip2.Name = "toolStrip2";
             this.toolStrip2.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.toolStrip2.Size = new System.Drawing.Size(40, 363);
+            this.toolStrip2.Size = new System.Drawing.Size(40, 442);
             this.toolStrip2.TabIndex = 1;
             this.toolStrip2.Text = "toolStrip2";
             // 
@@ -2331,7 +2327,7 @@
             this.pageLayoutControlMain.Location = new System.Drawing.Point(3, 2);
             this.pageLayoutControlMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pageLayoutControlMain.Name = "pageLayoutControlMain";
-            this.pageLayoutControlMain.Size = new System.Drawing.Size(1024, 363);
+            this.pageLayoutControlMain.Size = new System.Drawing.Size(1024, 442);
             this.pageLayoutControlMain.TabIndex = 0;
             this.pageLayoutControlMain.Text = "pageLayoutControlMain";
             // 
@@ -2522,6 +2518,14 @@
             this.barButtonItem2.Name = "barButtonItem2";
             this.barButtonItem2.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.barButtonItem2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick_1);
+            // 
+            // rasterToPolyline
+            // 
+            this.rasterToPolyline.Caption = "栅格转折线";
+            this.rasterToPolyline.Id = 152;
+            this.rasterToPolyline.ImageOptions.Image = global::绿廊智绘.Properties.Resources.Baseline_refinement;
+            this.rasterToPolyline.Name = "rasterToPolyline";
+            this.rasterToPolyline.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
             // FormMain
             // 
@@ -2719,7 +2723,6 @@
         private DevExpress.XtraBars.BarButtonItem mapExport;
         private DevExpress.XtraBars.BarButtonItem startEdit;
         private DevExpress.XtraBars.BarButtonItem saveEdit;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup timeseriesClassification;
         private DevExpress.XtraBars.Ribbon.RibbonPage VectorProcess;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup vectorTools;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
@@ -2814,6 +2817,7 @@
         private DevExpress.XtraBars.BarButtonItem EnvironmentConfiguration1;
         private DevExpress.XtraBars.BarButtonItem barButtonItem13;
         private DevExpress.XtraBars.BarButtonItem barButtonItem14;
+        private DevExpress.XtraBars.BarButtonItem rasterToPolyline;
     }
 }
 
