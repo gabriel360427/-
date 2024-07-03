@@ -52,7 +52,7 @@ namespace 绿廊智绘
             activeViewEvents.OnLayerDeleted += MapControl_OnLayerDeleted;//图层删除事件
 
         }
-
+        
         private void mapControlMain_MouseMove(object sender, MouseEventArgs e)
         {
             //地图坐标转换为地图坐标
@@ -945,6 +945,63 @@ namespace 绿廊智绘
         }
         #endregion
 
+        #region 伪彩色增强
+        private void barButtonItem1_ItemClick_3(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (mapControlMain.ActiveView.CurrentLayer == null) return;
+            IRasterLayer rasterLayer = mapControlMain.ActiveView.CurrentLayer as IRasterLayer;
+            if (rasterLayer == null)
+                return;
+            //1 设置分级阈值，根据实际情况进行添加
+            IUniqueValues uniqueValues = new UniqueValues();
+            uniqueValues.Clear();
+            uniqueValues.Add(181, 1);
+            uniqueValues.Add(319, 1);
+            uniqueValues.Add(457, 1);
+            uniqueValues.Add(595, 1);
+            uniqueValues.Add(733, 1);
+            uniqueValues.Add(871, 1);
+
+            //2 设置色带
+            IList<Color> colors = new List<Color>();
+            colors.Add(Color.FromArgb(200, 210, 30));
+            colors.Add(Color.FromArgb(20, 150, 30));
+            colors.Add(Color.FromArgb(50, 210, 160));
+            colors.Add(Color.FromArgb(140, 110, 25));
+            colors.Add(Color.FromArgb(100, 20, 10));
+            colors.Add(Color.FromArgb(84, 110, 240));
+
+            //3 RasterClassifyColorRampRender分级渲染
+            IRasterClassifyColorRampRender rClassifyColorRampRender = new RasterClassifyColorRampRender();
+            rClassifyColorRampRender.ClassColors = colors;
+
+            rClassifyColorRampRender.SetBandIndex(0);
+            rClassifyColorRampRender.UniqueValues = uniqueValues;
+
+            //4 设置备注信息（可以自定义备注信息）
+            IList<string> listLabel = new List<string>();
+            int count = uniqueValues.GetCount();
+            string beginLabel = "Min";
+            string lastLabel = "";
+            for (int i = 0; i < count; i++)
+            {
+                if (i - 1 >= 0)
+                {
+                    beginLabel = uniqueValues.GetUniqueValue(i - 1).ToString();
+                }
+                lastLabel = uniqueValues.GetUniqueValue(i).ToString();
+                string labelInfo = string.Format("{0}-{1}", beginLabel, lastLabel);
+                listLabel.Add(labelInfo);
+            }
+            rClassifyColorRampRender.Labels = listLabel;
+
+            //设置rasterRender
+            IRasterRender rasterRender = rClassifyColorRampRender as IRasterRender;
+            rasterLayer.Render = rasterRender;
+            mapControlMain.ActiveView.PartialRefresh(ViewDrawPhaseType.ViewAll);
+        }
+        #endregion
+
         #endregion
 
         #region 三、影像处理
@@ -1049,11 +1106,20 @@ namespace 绿廊智绘
         #endregion
 
         #region 4. 影像裁剪
-        private void imageClipping_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void barButtonItem15_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             //根据shp
             imageClippingForm frm = new imageClippingForm();
             frm.ShowDialog();
+        }
+        private void barButtonItem12_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
+
+        private void barButtonItem16_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
         }
         #endregion
 
@@ -1395,7 +1461,7 @@ namespace 绿廊智绘
             mapControlMain.ActiveView.PartialRefresh(ViewDrawPhaseType.ViewAll);
         }
         #endregion
-
+        
         #region 4.3 主/次要分析
         private void classpostMMA_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -1434,7 +1500,11 @@ namespace 绿廊智绘
         #endregion
 
         #region 4.4 精度分析
-
+        private void precisionAnalysis_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            PIE.Plugin.FrmImgClassPostPA form = new PIE.Plugin.FrmImgClassPostPA();
+            if (form.ShowDialog() != DialogResult.OK) return;
+        }
         #endregion
 
         #endregion
@@ -2127,7 +2197,81 @@ namespace 绿廊智绘
 
         #endregion
 
-        #region 八、制图输出
+        #region 八、富民进程可视化
+
+        #region 1. 生态农业
+        private void barButtonItem1_ItemClick_2(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            样本标准时序曲线 form = new 样本标准时序曲线();
+            form.Show();
+        }
+
+        private void barButtonItem5_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            SurfaceResistanceFactor form = new SurfaceResistanceFactor();
+            form.Text = "农业结构分类";
+            form.Column1.HeaderText = "作物";
+            form.Column2.HeaderText = "阻力值";
+            form.dataGridView1.Rows.Add(new object[] { "经济作物", "1" });
+            form.dataGridView1.Rows.Add(new object[] { "一般作物", "0" });
+            form.dataGridView1.Rows.Add(new object[] { "其它", "NoData" });
+            form.richTextBox1.Text = "★☆★农业结构分类说明\r\n●1：经济作物\r\n●0：一般作物\r\n●NoData：其它";
+            form.ShowDialog();
+        }
+
+        private void barButtonItem6_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            变化统计 form = new 变化统计();
+            form.Show();
+        }
+
+        #endregion
+
+        #region 2. 城镇要素变化分析
+        private void barButtonItem7_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            土地转移矩阵 form = new 土地转移矩阵();
+            form.Show();
+        }
+
+        private void barButtonItem11_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            POI form = new POI();
+            form.Show();
+        }
+
+        private void barButtonItem12_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            道路要素变化统计 form = new 道路要素变化统计();
+            form.Show();
+        }
+        #endregion
+
+        #region 3. 景观格局分析
+        private void barButtonItem10_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            MessageBox.Show("请保持默认设置，不要随意改动！", "温馨提示", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            Process processexe = Process.Start(Application.StartupPath + "\\frg_setup_4.2.exe");//安装至默认位置
+        }
+
+        private void barButtonItem8_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+                Process proexe = Process.Start(@"C:\Program Files (x86)\Fragstats 4\frg_gui.exe");
+            }
+            catch
+            {
+                MessageBox.Show("应用打开失败，请检查是否配置好环境！");
+            }
+            参考建议 form = new 参考建议();
+            form.ShowDialog();
+        }
+        #endregion
+
+        #endregion
+
+        #region 九、制图输出
 
         #region 制图输出
 
@@ -2276,114 +2420,50 @@ namespace 绿廊智绘
 
         #endregion
 
-        private void barButtonItem1_ItemClick_2(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            样本标准时序曲线 form = new 样本标准时序曲线();
-            form.Show();
-        }
-
-        private void barButtonItem4_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            主次要分析 form = new 主次要分析();
-            form.Show();
-        }
-
-        private void barButtonItem5_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-
-        }
-
-        private void barButtonItem6_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            变化统计 form = new 变化统计();
-            form.Show();
-        }
-
-        private void barButtonItem7_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            土地转移矩阵 form = new 土地转移矩阵();
-            form.Show();
-        }
-
-
-        private void precisionAnalysis_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            PIE.Plugin.FrmImgClassPostPA form = new PIE.Plugin.FrmImgClassPostPA();
-            if (form.ShowDialog() != DialogResult.OK) return;
-        }
-
-        private void ribbonControl1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void barButtonItem2_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-
-        }
-
-        private void barButtonItem11_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            POI form = new POI();
-            form.Show();
-        }
-
-        private void barButtonItem12_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            道路要素变化统计 form = new 道路要素变化统计();
-            form.Show();
-        }
-
-        private void barButtonItem8_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            try
-            {
-                Process proexe = Process.Start(@"C:\Program Files (x86)\Fragstats 4\frg_gui.exe");
-            }
-            catch
-            {
-                MessageBox.Show("应用打开失败，请检查是否配置好环境！");
-            }
-            参考建议 form = new 参考建议();
-            form.ShowDialog();
-        }
-
-        private void barButtonItem10_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            MessageBox.Show("请保持默认设置，不要随意改动！", "温馨提示", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            Process processexe = Process.Start(Application.StartupPath + "\\frg_setup_4.2.exe");//安装至默认位置
-        }
-
-        private void barButtonItem5_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            SurfaceResistanceFactor form = new SurfaceResistanceFactor();
-            form.Text = "农业结构分类";
-            form.Column1.HeaderText = "作物";
-            form.Column2.HeaderText = "阻力值";
-            form.dataGridView1.Rows.Add(new object[] { "经济作物", "1" });
-            form.dataGridView1.Rows.Add(new object[] { "一般作物", "0" });
-            form.dataGridView1.Rows.Add(new object[] { "其它", "NoData" });
-            form.richTextBox1.Text = "★☆★农业结构分类说明\r\n●1：经济作物\r\n●0：一般作物\r\n●NoData：其它";
-            form.ShowDialog();
-        }
-
-        private void barButtonItem13_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            string htmlFilePath = "tutorials\\index.html"; // 设置为HTML文件的路径
-            Process.Start(new ProcessStartInfo("cmd", $"/c start {htmlFilePath}") { CreateNoWindow = true });
-        }
-
-        private void barButtonItem14_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            string htmlFilePath = "example\\index.html"; // 设置为HTML文件的路径
-            Process.Start(new ProcessStartInfo("cmd", $"/c start {htmlFilePath}") { CreateNoWindow = true });
-        }
-
+        #region 十、帮助
         private void barButtonItem9_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             string pdfFilePath = "绿廊智绘—城镇生态富民格局智能遥测系统.pdf"; // 设置为PDF文件的路径
             Process.Start(new ProcessStartInfo(pdfFilePath) { UseShellExecute = true });
         }
+
+        private void barButtonItem13_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            string htmlFilePath = "tutorials\\index.html"; // 设置为HTML文件的路径
+            Process.Start(new ProcessStartInfo("cmd", "/c start {htmlFilePath}") { CreateNoWindow = true });
+        }
+
+        private void barButtonItem14_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            string htmlFilePath = "example\\index.html"; // 设置为HTML文件的路径
+            Process.Start(new ProcessStartInfo("cmd", "/c start {htmlFilePath}") { CreateNoWindow = true });
+        }
+        #endregion
+
+
+
+
+
+
+
+        
+
+
+
+        
+
+       
+
+        
+
+       
+
+        
+
+       
+
+
+
 
 
     }

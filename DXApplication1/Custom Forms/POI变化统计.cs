@@ -298,5 +298,10 @@ namespace 绿廊智绘.Custom_Forms
             POImapControl2.ActiveView.PartialRefresh(ViewDrawPhaseType.ViewAll);
             结果框.Clear();
         }
+
+        private void POI_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -41,19 +41,11 @@ namespace 绿廊智绘.Custom_Forms
             this.第一期POI加载按钮 = new System.Windows.Forms.Button();
             this.第一景分类文件框 = new System.Windows.Forms.ComboBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.mapControl1 = new PIE.AxControls.MapControl();
-            this.mapControl2 = new PIE.AxControls.MapControl();
-            this.axLicenseControl1 = new ESRI.ArcGIS.Controls.AxLicenseControl();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton8 = new System.Windows.Forms.ToolStripButton();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.POImapControl2 = new PIE.AxControls.MapControl();
-            this.toolStrip3 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton16 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton17 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton18 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton19 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton20 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton21 = new System.Windows.Forms.ToolStripButton();
-            this.POImapControl1 = new PIE.AxControls.MapControl();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton9 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton10 = new System.Windows.Forms.ToolStripButton();
@@ -61,26 +53,34 @@ namespace 绿廊智绘.Custom_Forms
             this.toolStripButton12 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton13 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton14 = new System.Windows.Forms.ToolStripButton();
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton8 = new System.Windows.Forms.ToolStripButton();
+            this.POImapControl1 = new PIE.AxControls.MapControl();
+            this.toolStrip3 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton16 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton17 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton18 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton19 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton20 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton21 = new System.Windows.Forms.ToolStripButton();
+            this.POImapControl2 = new PIE.AxControls.MapControl();
+            this.mapControl1 = new PIE.AxControls.MapControl();
+            this.mapControl2 = new PIE.AxControls.MapControl();
+            this.axLicenseControl1 = new ESRI.ArcGIS.Controls.AxLicenseControl();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axLicenseControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
-            this.splitContainer2.Panel1.SuspendLayout();
-            this.splitContainer2.Panel2.SuspendLayout();
-            this.splitContainer2.SuspendLayout();
-            this.toolStrip3.SuspendLayout();
-            this.toolStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
+            this.splitContainer2.Panel1.SuspendLayout();
+            this.splitContainer2.Panel2.SuspendLayout();
+            this.splitContainer2.SuspendLayout();
+            this.toolStrip2.SuspendLayout();
+            this.toolStrip3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axLicenseControl1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox3
@@ -199,36 +199,52 @@ namespace 绿廊智绘.Custom_Forms
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "变化展示";
             // 
-            // mapControl1
+            // splitContainer1
             // 
-            this.mapControl1.BackColor = System.Drawing.Color.White;
-            this.mapControl1.CustomerProperty = null;
-            this.mapControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mapControl1.Location = new System.Drawing.Point(0, 0);
-            this.mapControl1.Name = "mapControl1";
-            this.mapControl1.Size = new System.Drawing.Size(577, 502);
-            this.mapControl1.TabIndex = 0;
-            this.mapControl1.Text = "第一期";
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.Location = new System.Drawing.Point(3, 22);
+            this.splitContainer1.Name = "splitContainer1";
+            this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
-            // mapControl2
+            // splitContainer1.Panel1
             // 
-            this.mapControl2.BackColor = System.Drawing.Color.White;
-            this.mapControl2.CustomerProperty = null;
-            this.mapControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mapControl2.Location = new System.Drawing.Point(0, 0);
-            this.mapControl2.Name = "mapControl2";
-            this.mapControl2.Size = new System.Drawing.Size(600, 502);
-            this.mapControl2.TabIndex = 0;
-            this.mapControl2.Text = "第二期";
+            this.splitContainer1.Panel1.Controls.Add(this.toolStrip1);
             // 
-            // axLicenseControl1
+            // splitContainer1.Panel2
             // 
-            this.axLicenseControl1.Enabled = true;
-            this.axLicenseControl1.Location = new System.Drawing.Point(1167, 12);
-            this.axLicenseControl1.Name = "axLicenseControl1";
-            this.axLicenseControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axLicenseControl1.OcxState")));
-            this.axLicenseControl1.Size = new System.Drawing.Size(32, 32);
-            this.axLicenseControl1.TabIndex = 13;
+            this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
+            this.splitContainer1.Size = new System.Drawing.Size(1181, 505);
+            this.splitContainer1.SplitterDistance = 27;
+            this.splitContainer1.TabIndex = 0;
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton5,
+            this.toolStripButton8});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(1181, 25);
+            this.toolStrip1.TabIndex = 0;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // toolStripButton5
+            // 
+            this.toolStripButton5.Image = global::绿廊智绘.Properties.Resources.BlockAdjust_NewProj;
+            this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton5.Name = "toolStripButton5";
+            this.toolStripButton5.Size = new System.Drawing.Size(100, 22);
+            this.toolStripButton5.Text = "同步添加底图";
+            this.toolStripButton5.Click += new System.EventHandler(this.toolStripButton5_Click);
+            // 
+            // toolStripButton8
+            // 
+            this.toolStripButton8.Image = global::绿廊智绘.Properties.Resources.CartoGraphy_ChangePageLayout;
+            this.toolStripButton8.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton8.Name = "toolStripButton8";
+            this.toolStripButton8.Size = new System.Drawing.Size(52, 22);
+            this.toolStripButton8.Text = "重置";
+            this.toolStripButton8.Click += new System.EventHandler(this.toolStripButton8_Click);
             // 
             // splitContainer2
             // 
@@ -248,97 +264,6 @@ namespace 绿廊智绘.Custom_Forms
             this.splitContainer2.Size = new System.Drawing.Size(1181, 474);
             this.splitContainer2.SplitterDistance = 589;
             this.splitContainer2.TabIndex = 0;
-            // 
-            // POImapControl2
-            // 
-            this.POImapControl2.BackColor = System.Drawing.Color.White;
-            this.POImapControl2.CustomerProperty = null;
-            this.POImapControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.POImapControl2.Location = new System.Drawing.Point(0, 0);
-            this.POImapControl2.Name = "POImapControl2";
-            this.POImapControl2.Size = new System.Drawing.Size(588, 474);
-            this.POImapControl2.TabIndex = 0;
-            this.POImapControl2.Text = "第二期POI地图控件";
-            // 
-            // toolStrip3
-            // 
-            this.toolStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton16,
-            this.toolStripButton17,
-            this.toolStripButton18,
-            this.toolStripButton19,
-            this.toolStripButton20,
-            this.toolStripButton21});
-            this.toolStrip3.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip3.Name = "toolStrip3";
-            this.toolStrip3.Size = new System.Drawing.Size(588, 25);
-            this.toolStrip3.TabIndex = 1;
-            this.toolStrip3.Text = "toolStrip3";
-            // 
-            // toolStripButton16
-            // 
-            this.toolStripButton16.Image = global::绿廊智绘.Properties.Resources.MainCategory_DeleteAllSelect;
-            this.toolStripButton16.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton16.Name = "toolStripButton16";
-            this.toolStripButton16.Size = new System.Drawing.Size(76, 22);
-            this.toolStripButton16.Text = "清空图层";
-            this.toolStripButton16.Click += new System.EventHandler(this.toolStripButton16_Click);
-            // 
-            // toolStripButton17
-            // 
-            this.toolStripButton17.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton17.Image")));
-            this.toolStripButton17.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton17.Name = "toolStripButton17";
-            this.toolStripButton17.Size = new System.Drawing.Size(76, 22);
-            this.toolStripButton17.Text = "移动图层";
-            this.toolStripButton17.Click += new System.EventHandler(this.toolStripButton17_Click);
-            // 
-            // toolStripButton18
-            // 
-            this.toolStripButton18.Image = global::绿廊智绘.Properties.Resources.MapBrowser_Pan;
-            this.toolStripButton18.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton18.Name = "toolStripButton18";
-            this.toolStripButton18.Size = new System.Drawing.Size(52, 22);
-            this.toolStripButton18.Text = "漫游";
-            this.toolStripButton18.Click += new System.EventHandler(this.toolStripButton18_Click);
-            // 
-            // toolStripButton19
-            // 
-            this.toolStripButton19.Image = global::绿廊智绘.Properties.Resources.MapBrowser_CenterZoomIn;
-            this.toolStripButton19.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton19.Name = "toolStripButton19";
-            this.toolStripButton19.Size = new System.Drawing.Size(76, 22);
-            this.toolStripButton19.Text = "中心放大";
-            this.toolStripButton19.Click += new System.EventHandler(this.toolStripButton19_Click);
-            // 
-            // toolStripButton20
-            // 
-            this.toolStripButton20.Image = global::绿廊智绘.Properties.Resources.MapBrowser_CenterZoomOut;
-            this.toolStripButton20.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton20.Name = "toolStripButton20";
-            this.toolStripButton20.Size = new System.Drawing.Size(76, 22);
-            this.toolStripButton20.Text = "中心缩小";
-            this.toolStripButton20.Click += new System.EventHandler(this.toolStripButton20_Click);
-            // 
-            // toolStripButton21
-            // 
-            this.toolStripButton21.Image = global::绿廊智绘.Properties.Resources.MapBrowser_FullExtent;
-            this.toolStripButton21.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton21.Name = "toolStripButton21";
-            this.toolStripButton21.Size = new System.Drawing.Size(76, 22);
-            this.toolStripButton21.Text = "全图显示";
-            this.toolStripButton21.Click += new System.EventHandler(this.toolStripButton21_Click);
-            // 
-            // POImapControl1
-            // 
-            this.POImapControl1.BackColor = System.Drawing.Color.White;
-            this.POImapControl1.CustomerProperty = null;
-            this.POImapControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.POImapControl1.Location = new System.Drawing.Point(0, 0);
-            this.POImapControl1.Name = "POImapControl1";
-            this.POImapControl1.Size = new System.Drawing.Size(589, 474);
-            this.POImapControl1.TabIndex = 0;
-            this.POImapControl1.Text = "第一期POI地图控件";
             // 
             // toolStrip2
             // 
@@ -409,52 +334,127 @@ namespace 绿廊智绘.Custom_Forms
             this.toolStripButton14.Text = "全图显示";
             this.toolStripButton14.Click += new System.EventHandler(this.toolStripButton14_Click);
             // 
-            // splitContainer1
+            // POImapControl1
             // 
-            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(3, 22);
-            this.splitContainer1.Name = "splitContainer1";
-            this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.POImapControl1.BackColor = System.Drawing.Color.White;
+            this.POImapControl1.CustomerProperty = null;
+            this.POImapControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.POImapControl1.Location = new System.Drawing.Point(0, 0);
+            this.POImapControl1.Name = "POImapControl1";
+            this.POImapControl1.Size = new System.Drawing.Size(589, 474);
+            this.POImapControl1.TabIndex = 0;
+            this.POImapControl1.Text = "第一期POI地图控件";
             // 
-            // splitContainer1.Panel1
+            // toolStrip3
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.toolStrip1);
+            this.toolStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton16,
+            this.toolStripButton17,
+            this.toolStripButton18,
+            this.toolStripButton19,
+            this.toolStripButton20,
+            this.toolStripButton21});
+            this.toolStrip3.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip3.Name = "toolStrip3";
+            this.toolStrip3.Size = new System.Drawing.Size(588, 25);
+            this.toolStrip3.TabIndex = 1;
+            this.toolStrip3.Text = "toolStrip3";
             // 
-            // splitContainer1.Panel2
+            // toolStripButton16
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
-            this.splitContainer1.Size = new System.Drawing.Size(1181, 505);
-            this.splitContainer1.SplitterDistance = 27;
-            this.splitContainer1.TabIndex = 0;
+            this.toolStripButton16.Image = global::绿廊智绘.Properties.Resources.MainCategory_DeleteAllSelect;
+            this.toolStripButton16.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton16.Name = "toolStripButton16";
+            this.toolStripButton16.Size = new System.Drawing.Size(76, 22);
+            this.toolStripButton16.Text = "清空图层";
+            this.toolStripButton16.Click += new System.EventHandler(this.toolStripButton16_Click);
             // 
-            // toolStripButton5
+            // toolStripButton17
             // 
-            this.toolStripButton5.Image = global::绿廊智绘.Properties.Resources.BlockAdjust_NewProj;
-            this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton5.Name = "toolStripButton5";
-            this.toolStripButton5.Size = new System.Drawing.Size(100, 22);
-            this.toolStripButton5.Text = "同步添加底图";
-            this.toolStripButton5.Click += new System.EventHandler(this.toolStripButton5_Click);
+            this.toolStripButton17.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton17.Image")));
+            this.toolStripButton17.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton17.Name = "toolStripButton17";
+            this.toolStripButton17.Size = new System.Drawing.Size(76, 22);
+            this.toolStripButton17.Text = "移动图层";
+            this.toolStripButton17.Click += new System.EventHandler(this.toolStripButton17_Click);
             // 
-            // toolStrip1
+            // toolStripButton18
             // 
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton5,
-            this.toolStripButton8});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1181, 25);
-            this.toolStrip1.TabIndex = 0;
-            this.toolStrip1.Text = "toolStrip1";
+            this.toolStripButton18.Image = global::绿廊智绘.Properties.Resources.MapBrowser_Pan;
+            this.toolStripButton18.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton18.Name = "toolStripButton18";
+            this.toolStripButton18.Size = new System.Drawing.Size(52, 22);
+            this.toolStripButton18.Text = "漫游";
+            this.toolStripButton18.Click += new System.EventHandler(this.toolStripButton18_Click);
             // 
-            // toolStripButton8
+            // toolStripButton19
             // 
-            this.toolStripButton8.Image = global::绿廊智绘.Properties.Resources.CartoGraphy_ChangePageLayout;
-            this.toolStripButton8.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton8.Name = "toolStripButton8";
-            this.toolStripButton8.Size = new System.Drawing.Size(52, 22);
-            this.toolStripButton8.Text = "重置";
-            this.toolStripButton8.Click += new System.EventHandler(this.toolStripButton8_Click);
+            this.toolStripButton19.Image = global::绿廊智绘.Properties.Resources.MapBrowser_CenterZoomIn;
+            this.toolStripButton19.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton19.Name = "toolStripButton19";
+            this.toolStripButton19.Size = new System.Drawing.Size(76, 22);
+            this.toolStripButton19.Text = "中心放大";
+            this.toolStripButton19.Click += new System.EventHandler(this.toolStripButton19_Click);
+            // 
+            // toolStripButton20
+            // 
+            this.toolStripButton20.Image = global::绿廊智绘.Properties.Resources.MapBrowser_CenterZoomOut;
+            this.toolStripButton20.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton20.Name = "toolStripButton20";
+            this.toolStripButton20.Size = new System.Drawing.Size(76, 22);
+            this.toolStripButton20.Text = "中心缩小";
+            this.toolStripButton20.Click += new System.EventHandler(this.toolStripButton20_Click);
+            // 
+            // toolStripButton21
+            // 
+            this.toolStripButton21.Image = global::绿廊智绘.Properties.Resources.MapBrowser_FullExtent;
+            this.toolStripButton21.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton21.Name = "toolStripButton21";
+            this.toolStripButton21.Size = new System.Drawing.Size(76, 22);
+            this.toolStripButton21.Text = "全图显示";
+            this.toolStripButton21.Click += new System.EventHandler(this.toolStripButton21_Click);
+            // 
+            // POImapControl2
+            // 
+            this.POImapControl2.BackColor = System.Drawing.Color.White;
+            this.POImapControl2.CustomerProperty = null;
+            this.POImapControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.POImapControl2.Location = new System.Drawing.Point(0, 0);
+            this.POImapControl2.Name = "POImapControl2";
+            this.POImapControl2.Size = new System.Drawing.Size(588, 474);
+            this.POImapControl2.TabIndex = 0;
+            this.POImapControl2.Text = "第二期POI地图控件";
+            // 
+            // mapControl1
+            // 
+            this.mapControl1.BackColor = System.Drawing.Color.White;
+            this.mapControl1.CustomerProperty = null;
+            this.mapControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mapControl1.Location = new System.Drawing.Point(0, 0);
+            this.mapControl1.Name = "mapControl1";
+            this.mapControl1.Size = new System.Drawing.Size(577, 502);
+            this.mapControl1.TabIndex = 0;
+            this.mapControl1.Text = "第一期";
+            // 
+            // mapControl2
+            // 
+            this.mapControl2.BackColor = System.Drawing.Color.White;
+            this.mapControl2.CustomerProperty = null;
+            this.mapControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mapControl2.Location = new System.Drawing.Point(0, 0);
+            this.mapControl2.Name = "mapControl2";
+            this.mapControl2.Size = new System.Drawing.Size(600, 502);
+            this.mapControl2.TabIndex = 0;
+            this.mapControl2.Text = "第二期";
+            // 
+            // axLicenseControl1
+            // 
+            this.axLicenseControl1.Enabled = true;
+            this.axLicenseControl1.Location = new System.Drawing.Point(1167, 12);
+            this.axLicenseControl1.Name = "axLicenseControl1";
+            this.axLicenseControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axLicenseControl1.OcxState")));
+            this.axLicenseControl1.Size = new System.Drawing.Size(32, 32);
+            this.axLicenseControl1.TabIndex = 13;
             // 
             // POI
             // 
@@ -472,21 +472,11 @@ namespace 绿廊智绘.Custom_Forms
             this.Name = "POI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "POI变化统计";
+            this.Load += new System.EventHandler(this.POI_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.axLicenseControl1)).EndInit();
-            this.splitContainer2.Panel1.ResumeLayout(false);
-            this.splitContainer2.Panel1.PerformLayout();
-            this.splitContainer2.Panel2.ResumeLayout(false);
-            this.splitContainer2.Panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
-            this.splitContainer2.ResumeLayout(false);
-            this.toolStrip3.ResumeLayout(false);
-            this.toolStrip3.PerformLayout();
-            this.toolStrip2.ResumeLayout(false);
-            this.toolStrip2.PerformLayout();
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
@@ -494,6 +484,17 @@ namespace 绿廊智绘.Custom_Forms
             this.splitContainer1.ResumeLayout(false);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            this.splitContainer2.Panel1.ResumeLayout(false);
+            this.splitContainer2.Panel1.PerformLayout();
+            this.splitContainer2.Panel2.ResumeLayout(false);
+            this.splitContainer2.Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
+            this.splitContainer2.ResumeLayout(false);
+            this.toolStrip2.ResumeLayout(false);
+            this.toolStrip2.PerformLayout();
+            this.toolStrip3.ResumeLayout(false);
+            this.toolStrip3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axLicenseControl1)).EndInit();
             this.ResumeLayout(false);
 
         }

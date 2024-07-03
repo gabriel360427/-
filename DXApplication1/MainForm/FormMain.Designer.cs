@@ -116,7 +116,6 @@
             this.attributeEdit = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem64 = new DevExpress.XtraBars.BarButtonItem();
             this.unionFeature = new DevExpress.XtraBars.BarButtonItem();
-            this.imageClipping = new DevExpress.XtraBars.BarButtonItem();
             this.precisionAnalysis = new DevExpress.XtraBars.BarButtonItem();
             this.addBaseMap = new DevExpress.XtraBars.BarSubItem();
             this.TDTTiledImg = new DevExpress.XtraBars.BarButtonItem();
@@ -164,17 +163,22 @@
             this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem14 = new DevExpress.XtraBars.BarButtonItem();
             this.rasterToPolyline = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
+            this.popupMenu2 = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
+            this.popupMenu3 = new DevExpress.XtraBars.PopupMenu(this.components);
             this.BASEMENT = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.mapProject = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.dataManagement = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.informationQuery = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.formatConversion = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.DISPLAY = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.bandCombine = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.brightnessControl = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.contrastRatioControl = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.transparencyControl = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.stretchControl = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.bandCombine = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ImageProcess = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.radiationCorrection = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.geometricCorrection = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -265,6 +269,16 @@
             this.LayerPropertyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SelectCoordinateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.popupMenu4 = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem15 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem16 = new DevExpress.XtraBars.BarButtonItem();
+            this.barSubItem1 = new DevExpress.XtraBars.BarSubItem();
+            this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem18 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar3)).BeginInit();
@@ -275,6 +289,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTrackBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTrackBar2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTrackBar3)).BeginInit();
@@ -294,6 +310,7 @@
             this.statusStrip1.SuspendLayout();
             this.contextMenuStrip_MapControl.SuspendLayout();
             this.contextMenuStrip_TocControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu4)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl1
@@ -378,7 +395,6 @@
             this.attributeEdit,
             this.barButtonItem64,
             this.unionFeature,
-            this.imageClipping,
             this.precisionAnalysis,
             this.addBaseMap,
             this.TDTTiledImg,
@@ -425,10 +441,22 @@
             this.EnvironmentConfiguration1,
             this.barButtonItem13,
             this.barButtonItem14,
-            this.rasterToPolyline});
+            this.rasterToPolyline,
+            this.barButtonItem1,
+            this.barButtonItem5,
+            this.barButtonItem6,
+            this.barButtonItem8,
+            this.barButtonItem10,
+            this.barButtonItem11,
+            this.barButtonItem12,
+            this.barButtonItem15,
+            this.barButtonItem16,
+            this.barSubItem1,
+            this.barButtonItem7,
+            this.barButtonItem18});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.ribbonControl1.MaxItemId = 153;
+            this.ribbonControl1.MaxItemId = 171;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.BASEMENT,
@@ -458,7 +486,6 @@
             this.repositoryItemTrackBar4,
             this.repositoryItemZoomTrackBar6});
             this.ribbonControl1.Size = new System.Drawing.Size(1242, 147);
-            this.ribbonControl1.Click += new System.EventHandler(this.ribbonControl1_Click);
             // 
             // newProject
             // 
@@ -1179,15 +1206,6 @@
             this.unionFeature.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.unionFeature.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.unionFeature_ItemClick);
             // 
-            // imageClipping
-            // 
-            this.imageClipping.Caption = "影像裁剪";
-            this.imageClipping.Id = 96;
-            this.imageClipping.ImageOptions.Image = global::绿廊智绘.Properties.Resources.MainCategory_Cut;
-            this.imageClipping.Name = "imageClipping";
-            this.imageClipping.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.imageClipping.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.imageClipping_ItemClick);
-            // 
             // precisionAnalysis
             // 
             this.precisionAnalysis.Caption = "精度分析";
@@ -1493,20 +1511,13 @@
             // 
             // barButtonItem3
             // 
-            this.barButtonItem3.Caption = "执行决策树";
-            this.barButtonItem3.Id = 137;
-            this.barButtonItem3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.Image")));
+            this.barButtonItem3.Id = 157;
             this.barButtonItem3.Name = "barButtonItem3";
-            this.barButtonItem3.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
             // barButtonItem4
             // 
-            this.barButtonItem4.Caption = "主要/次要分析";
-            this.barButtonItem4.Id = 138;
-            this.barButtonItem4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.Image")));
+            this.barButtonItem4.Id = 158;
             this.barButtonItem4.Name = "barButtonItem4";
-            this.barButtonItem4.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.barButtonItem4.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem4_ItemClick_1);
             // 
             // ChangeStatistics
             // 
@@ -1617,6 +1628,41 @@
             this.rasterToPolyline.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.rasterToPolyline.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.rasterToPolyline_ItemClick);
             // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "伪彩色增强";
+            this.barButtonItem1.Id = 153;
+            this.barButtonItem1.Name = "barButtonItem1";
+            this.barButtonItem1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick_3);
+            // 
+            // barButtonItem5
+            // 
+            this.barButtonItem5.ActAsDropDown = true;
+            this.barButtonItem5.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
+            this.barButtonItem5.Caption = "IHS变换";
+            this.barButtonItem5.DropDownControl = this.popupMenu2;
+            this.barButtonItem5.Id = 154;
+            this.barButtonItem5.Name = "barButtonItem5";
+            this.barButtonItem5.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // popupMenu2
+            // 
+            this.popupMenu2.Name = "popupMenu2";
+            this.popupMenu2.Ribbon = this.ribbonControl1;
+            // 
+            // barButtonItem6
+            // 
+            this.barButtonItem6.Caption = "假彩色增强";
+            this.barButtonItem6.Id = 155;
+            this.barButtonItem6.Name = "barButtonItem6";
+            this.barButtonItem6.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // popupMenu3
+            // 
+            this.popupMenu3.Name = "popupMenu3";
+            this.popupMenu3.Ribbon = this.ribbonControl1;
+            // 
             // BASEMENT
             // 
             this.BASEMENT.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -1668,19 +1714,13 @@
             // DISPLAY
             // 
             this.DISPLAY.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.bandCombine,
             this.brightnessControl,
             this.contrastRatioControl,
             this.transparencyControl,
-            this.stretchControl});
+            this.stretchControl,
+            this.bandCombine});
             this.DISPLAY.Name = "DISPLAY";
             this.DISPLAY.Text = "显示控制";
-            // 
-            // bandCombine
-            // 
-            this.bandCombine.ItemLinks.Add(this.rgbCombine);
-            this.bandCombine.Name = "bandCombine";
-            this.bandCombine.Text = "波段合成";
             // 
             // brightnessControl
             // 
@@ -1714,6 +1754,15 @@
             this.stretchControl.ItemLinks.Add(this.stretchText);
             this.stretchControl.Name = "stretchControl";
             this.stretchControl.Text = "拉伸控制";
+            // 
+            // bandCombine
+            // 
+            this.bandCombine.ItemLinks.Add(this.rgbCombine);
+            this.bandCombine.ItemLinks.Add(this.barButtonItem1);
+            this.bandCombine.ItemLinks.Add(this.barButtonItem6);
+            this.bandCombine.ItemLinks.Add(this.barSubItem1);
+            this.bandCombine.Name = "bandCombine";
+            this.bandCombine.Text = "彩色变换";
             // 
             // ImageProcess
             // 
@@ -1749,7 +1798,9 @@
             // 
             // imageClip
             // 
-            this.imageClip.ItemLinks.Add(this.imageClipping);
+            this.imageClip.ItemLinks.Add(this.barButtonItem12);
+            this.imageClip.ItemLinks.Add(this.barButtonItem15);
+            this.imageClip.ItemLinks.Add(this.barButtonItem16);
             this.imageClip.Name = "imageClip";
             this.imageClip.Text = "影像裁剪";
             // 
@@ -2526,7 +2577,75 @@
             this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
             this.barButtonItem2.Name = "barButtonItem2";
             this.barButtonItem2.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.barButtonItem2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick_1);
+            // 
+            // popupMenu4
+            // 
+            this.popupMenu4.Name = "popupMenu4";
+            this.popupMenu4.Ribbon = this.ribbonControl1;
+            // 
+            // barButtonItem8
+            // 
+            this.barButtonItem8.Caption = "通过栅格范围裁剪";
+            this.barButtonItem8.Id = 161;
+            this.barButtonItem8.Name = "barButtonItem8";
+            // 
+            // barButtonItem10
+            // 
+            this.barButtonItem10.Caption = "使用shape文件裁剪";
+            this.barButtonItem10.Id = 162;
+            this.barButtonItem10.Name = "barButtonItem10";
+            // 
+            // barButtonItem11
+            // 
+            this.barButtonItem11.Caption = "使用几何范围裁剪";
+            this.barButtonItem11.Id = 163;
+            this.barButtonItem11.Name = "barButtonItem11";
+            // 
+            // barButtonItem12
+            // 
+            this.barButtonItem12.Caption = "通过栅格范围裁剪";
+            this.barButtonItem12.Id = 164;
+            this.barButtonItem12.Name = "barButtonItem12";
+            this.barButtonItem12.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonItem12.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem12_ItemClick_1);
+            // 
+            // barButtonItem15
+            // 
+            this.barButtonItem15.Caption = "使用shape文件裁剪";
+            this.barButtonItem15.Id = 165;
+            this.barButtonItem15.Name = "barButtonItem15";
+            this.barButtonItem15.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonItem15.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem15_ItemClick);
+            // 
+            // barButtonItem16
+            // 
+            this.barButtonItem16.Caption = "使用几何范围裁剪";
+            this.barButtonItem16.Id = 166;
+            this.barButtonItem16.Name = "barButtonItem16";
+            this.barButtonItem16.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonItem16.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem16_ItemClick);
+            // 
+            // barSubItem1
+            // 
+            this.barSubItem1.Caption = "IHS变换";
+            this.barSubItem1.Id = 168;
+            this.barSubItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem7),
+            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem18)});
+            this.barSubItem1.Name = "barSubItem1";
+            this.barSubItem1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem7
+            // 
+            this.barButtonItem7.Caption = "IHS正变换";
+            this.barButtonItem7.Id = 169;
+            this.barButtonItem7.Name = "barButtonItem7";
+            // 
+            // barButtonItem18
+            // 
+            this.barButtonItem18.Caption = "IHS逆变换";
+            this.barButtonItem18.Id = 170;
+            this.barButtonItem18.Name = "barButtonItem18";
             // 
             // FormMain
             // 
@@ -2553,6 +2672,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTrackBar1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTrackBar2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTrackBar3)).EndInit();
@@ -2577,6 +2698,7 @@
             this.statusStrip1.PerformLayout();
             this.contextMenuStrip_MapControl.ResumeLayout(false);
             this.contextMenuStrip_TocControl.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2745,7 +2867,6 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem64;
         private DevExpress.XtraBars.BarButtonItem unionFeature;
         private DevExpress.XtraBars.BarButtonItem barButtonItem17;
-        private DevExpress.XtraBars.BarButtonItem imageClipping;
         private DevExpress.XtraBars.BarButtonItem precisionAnalysis;
         private DevExpress.XtraBars.BarButtonItem barButtonItem40;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip_MapControl;
@@ -2819,6 +2940,21 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem13;
         private DevExpress.XtraBars.BarButtonItem barButtonItem14;
         private DevExpress.XtraBars.BarButtonItem rasterToPolyline;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem5;
+        private DevExpress.XtraBars.PopupMenu popupMenu2;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem6;
+        private DevExpress.XtraBars.PopupMenu popupMenu3;
+        private DevExpress.XtraBars.PopupMenu popupMenu4;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem8;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem10;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem11;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem12;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem15;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem16;
+        private DevExpress.XtraBars.BarSubItem barSubItem1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem7;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem18;
     }
 }
 
