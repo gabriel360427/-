@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace 绿廊智绘.Custom_Forms
 {
-    public partial class Relief : Form
+    public partial class relief : Form
     {
-        public Relief()
+        public relief()
         {
             InitializeComponent();
         }

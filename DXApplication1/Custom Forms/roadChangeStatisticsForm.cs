@@ -18,9 +18,9 @@ using System.Runtime.InteropServices;
 
 namespace 绿廊智绘.Custom_Forms
 {
-    public partial class 道路要素变化统计 : Form
+    public partial class roadChangeStatisticsForm : Form
     {
-        public 道路要素变化统计()
+        public roadChangeStatisticsForm()
         {
             if (!ESRI.ArcGIS.RuntimeManager.Bind(ESRI.ArcGIS.ProductCode.EngineOrDesktop))
             {

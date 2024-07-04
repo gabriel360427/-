@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace 绿廊智绘.Custom_Forms
 {
-    public partial class 参考建议 : Form
+    public partial class referenceSuggestion : Form
     {
-        public 参考建议()
+        public referenceSuggestion()
         {
             InitializeComponent();
         }

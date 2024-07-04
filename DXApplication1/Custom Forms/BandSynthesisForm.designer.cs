@@ -1,6 +1,6 @@
 ﻿namespace 绿廊智绘.Custom_Forms
 {
-    partial class BandSynthesisForm
+    partial class bandSynthesisForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BandSynthesisForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(bandSynthesisForm));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.Remove = new System.Windows.Forms.Button();
             this.MoveDown = new System.Windows.Forms.Button();

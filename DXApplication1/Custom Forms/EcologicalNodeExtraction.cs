@@ -20,9 +20,9 @@ using System.Windows.Forms;
 
 namespace 绿廊智绘.Custom_Forms
 {
-    public partial class EcologicalNodeExtraction : DevExpress.XtraEditors.XtraForm
+    public partial class ecologicalNodeExtraction : DevExpress.XtraEditors.XtraForm
     {
-        public EcologicalNodeExtraction()
+        public ecologicalNodeExtraction()
         {
             InitializeComponent();
         }

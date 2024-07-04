@@ -1,6 +1,6 @@
 ﻿namespace 绿廊智绘.Custom_Forms
 {
-    partial class CostPathCalculation
+    partial class costPathCalculation
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CostPathCalculation));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(costPathCalculation));
             this.button6 = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.axMapControl1 = new ESRI.ArcGIS.Controls.AxMapControl();

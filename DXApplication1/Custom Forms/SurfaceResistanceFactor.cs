@@ -16,9 +16,9 @@ using 绿廊智绘.Custom_Commands;
 
 namespace 绿廊智绘.Custom_Forms
 {
-    public partial class SurfaceResistanceFactor : DevExpress.XtraEditors.XtraForm
+    public partial class surfaceResistanceFactor : DevExpress.XtraEditors.XtraForm
     {
-        public SurfaceResistanceFactor()
+        public surfaceResistanceFactor()
         {
             InitializeComponent();
         }

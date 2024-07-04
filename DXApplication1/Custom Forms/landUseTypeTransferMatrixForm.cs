@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace 绿廊智绘.Custom_Forms
 {
-    public partial class 土地转移矩阵 : Form
+    public partial class landUseTypeTransferMatrixForm : Form
     {
-        public 土地转移矩阵()
+        public landUseTypeTransferMatrixForm()
         {
             InitializeComponent();
         }

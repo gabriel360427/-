@@ -148,7 +148,7 @@
             this.CorridorAddField = new DevExpress.XtraBars.BarButtonItem();
             this.CorridorGrading = new DevExpress.XtraBars.BarButtonItem();
             this.EcologicalNodeExtraction = new DevExpress.XtraBars.BarButtonItem();
-            this.TimeSeriesCurve = new DevExpress.XtraBars.BarButtonItem();
+            this.timeSeriesCurve = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.ChangeStatistics = new DevExpress.XtraBars.BarButtonItem();
@@ -167,7 +167,16 @@
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.popupMenu2 = new DevExpress.XtraBars.PopupMenu(this.components);
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
-            this.popupMenu3 = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
+            this.clippingThroughGridRange = new DevExpress.XtraBars.BarButtonItem();
+            this.clippingThroughShapeFile = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem16 = new DevExpress.XtraBars.BarButtonItem();
+            this.barSubItem1 = new DevExpress.XtraBars.BarSubItem();
+            this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem18 = new DevExpress.XtraBars.BarButtonItem();
+            this.segmentAnythingModel = new DevExpress.XtraBars.BarButtonItem();
             this.BASEMENT = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.mapProject = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.dataManagement = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -219,9 +228,17 @@
             this.repositoryItemZoomTrackBar1 = new DevExpress.XtraEditors.Repository.RepositoryItemZoomTrackBar();
             this.repositoryItemTrackBar4 = new DevExpress.XtraEditors.Repository.RepositoryItemTrackBar();
             this.repositoryItemZoomTrackBar6 = new DevExpress.XtraEditors.Repository.RepositoryItemZoomTrackBar();
+            this.popupMenu3 = new DevExpress.XtraBars.PopupMenu(this.components);
             this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.tocControlMain = new PIE.AxControls.TOCControl();
+            this.contextMenuStrip_TocControl = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.AddDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.DeleteLayerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.FeatureLayerAttributeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SymbolSelectorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.LayerPropertyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SelectCoordinateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControlMain = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
@@ -235,6 +252,9 @@
             this.elementSelect2 = new System.Windows.Forms.ToolStripButton();
             this.swipeLayer = new System.Windows.Forms.ToolStripButton();
             this.mapControlMain = new PIE.AxControls.MapControl();
+            this.contextMenuStrip_MapControl = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.FullExtentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.RasterIdentifyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
             this.zoomIn4 = new System.Windows.Forms.ToolStripButton();
@@ -258,27 +278,8 @@
             this.toolStripStatusLabel_screenCoordinate = new System.Windows.Forms.ToolStripStatusLabel();
             this.barButtonItem17 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem40 = new DevExpress.XtraBars.BarButtonItem();
-            this.contextMenuStrip_MapControl = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.FullExtentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.RasterIdentifyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.contextMenuStrip_TocControl = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.AddDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.DeleteLayerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.FeatureLayerAttributeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.SymbolSelectorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.LayerPropertyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.SelectCoordinateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.popupMenu4 = new DevExpress.XtraBars.PopupMenu(this.components);
-            this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem15 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem16 = new DevExpress.XtraBars.BarButtonItem();
-            this.barSubItem1 = new DevExpress.XtraBars.BarSubItem();
-            this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem18 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar3)).BeginInit();
@@ -290,33 +291,35 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.popupMenu3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTrackBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTrackBar2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTrackBar3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTrackBar4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
+            this.contextMenuStrip_TocControl.SuspendLayout();
             this.tabControlMain.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
+            this.contextMenuStrip_MapControl.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.toolStrip2.SuspendLayout();
             this.statusStrip1.SuspendLayout();
-            this.contextMenuStrip_MapControl.SuspendLayout();
-            this.contextMenuStrip_TocControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu4)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl1
             // 
-            this.ribbonControl1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ribbonControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(87)))), ((int)(((byte)(115)))));
             this.ribbonControl1.ExpandCollapseItem.Id = 0;
+            this.ribbonControl1.Image = ((System.Drawing.Image)(resources.GetObject("ribbonControl1.Image")));
+            this.ribbonControl1.ImageAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl1.ExpandCollapseItem,
             this.newProject,
@@ -427,7 +430,7 @@
             this.CorridorAddField,
             this.CorridorGrading,
             this.EcologicalNodeExtraction,
-            this.TimeSeriesCurve,
+            this.timeSeriesCurve,
             this.barButtonItem3,
             this.barButtonItem4,
             this.ChangeStatistics,
@@ -448,15 +451,16 @@
             this.barButtonItem8,
             this.barButtonItem10,
             this.barButtonItem11,
-            this.barButtonItem12,
-            this.barButtonItem15,
+            this.clippingThroughGridRange,
+            this.clippingThroughShapeFile,
             this.barButtonItem16,
             this.barSubItem1,
             this.barButtonItem7,
-            this.barButtonItem18});
+            this.barButtonItem18,
+            this.segmentAnythingModel});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.ribbonControl1.MaxItemId = 171;
+            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.ribbonControl1.MaxItemId = 172;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.BASEMENT,
@@ -485,7 +489,7 @@
             this.repositoryItemTextEdit5,
             this.repositoryItemTrackBar4,
             this.repositoryItemZoomTrackBar6});
-            this.ribbonControl1.Size = new System.Drawing.Size(1242, 147);
+            this.ribbonControl1.Size = new System.Drawing.Size(1419, 150);
             // 
             // newProject
             // 
@@ -1500,14 +1504,14 @@
             this.EcologicalNodeExtraction.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.EcologicalNodeExtraction.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.EcologicalNodeExtraction_ItemClick);
             // 
-            // TimeSeriesCurve
+            // timeSeriesCurve
             // 
-            this.TimeSeriesCurve.Caption = "样本标准时序曲线";
-            this.TimeSeriesCurve.Id = 135;
-            this.TimeSeriesCurve.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("TimeSeriesCurve.ImageOptions.Image")));
-            this.TimeSeriesCurve.Name = "TimeSeriesCurve";
-            this.TimeSeriesCurve.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.TimeSeriesCurve.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick_2);
+            this.timeSeriesCurve.Caption = "样本标准时序曲线";
+            this.timeSeriesCurve.Id = 135;
+            this.timeSeriesCurve.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("timeSeriesCurve.ImageOptions.Image")));
+            this.timeSeriesCurve.Name = "timeSeriesCurve";
+            this.timeSeriesCurve.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.timeSeriesCurve.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.TimeSeriesCurve_ItemClick_2);
             // 
             // barButtonItem3
             // 
@@ -1658,13 +1662,83 @@
             this.barButtonItem6.Name = "barButtonItem6";
             this.barButtonItem6.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
-            // popupMenu3
+            // barButtonItem8
             // 
-            this.popupMenu3.Name = "popupMenu3";
-            this.popupMenu3.Ribbon = this.ribbonControl1;
+            this.barButtonItem8.Caption = "通过栅格范围裁剪";
+            this.barButtonItem8.Id = 161;
+            this.barButtonItem8.Name = "barButtonItem8";
+            // 
+            // barButtonItem10
+            // 
+            this.barButtonItem10.Caption = "使用shape文件裁剪";
+            this.barButtonItem10.Id = 162;
+            this.barButtonItem10.Name = "barButtonItem10";
+            // 
+            // barButtonItem11
+            // 
+            this.barButtonItem11.Caption = "使用几何范围裁剪";
+            this.barButtonItem11.Id = 163;
+            this.barButtonItem11.Name = "barButtonItem11";
+            // 
+            // clippingThroughGridRange
+            // 
+            this.clippingThroughGridRange.Caption = "通过栅格范围裁剪";
+            this.clippingThroughGridRange.Id = 164;
+            this.clippingThroughGridRange.Name = "clippingThroughGridRange";
+            this.clippingThroughGridRange.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.clippingThroughGridRange.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.clippingThroughGridRange_ItemClick_1);
+            // 
+            // clippingThroughShapeFile
+            // 
+            this.clippingThroughShapeFile.Caption = "使用shape文件裁剪";
+            this.clippingThroughShapeFile.Id = 165;
+            this.clippingThroughShapeFile.Name = "clippingThroughShapeFile";
+            this.clippingThroughShapeFile.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.clippingThroughShapeFile.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.clippingThroughShapeFile_ItemClick);
+            // 
+            // barButtonItem16
+            // 
+            this.barButtonItem16.Caption = "使用几何范围裁剪";
+            this.barButtonItem16.Id = 166;
+            this.barButtonItem16.Name = "barButtonItem16";
+            this.barButtonItem16.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonItem16.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.clippingThroughGeometricRange_ItemClick);
+            // 
+            // barSubItem1
+            // 
+            this.barSubItem1.Caption = "IHS变换";
+            this.barSubItem1.Id = 168;
+            this.barSubItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem7),
+            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem18)});
+            this.barSubItem1.Name = "barSubItem1";
+            this.barSubItem1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem7
+            // 
+            this.barButtonItem7.Caption = "IHS正变换";
+            this.barButtonItem7.Id = 169;
+            this.barButtonItem7.Name = "barButtonItem7";
+            // 
+            // barButtonItem18
+            // 
+            this.barButtonItem18.Caption = "IHS逆变换";
+            this.barButtonItem18.Id = 170;
+            this.barButtonItem18.Name = "barButtonItem18";
+            // 
+            // segmentAnythingModel
+            // 
+            this.segmentAnythingModel.Caption = "SAM分割";
+            this.segmentAnythingModel.Id = 171;
+            this.segmentAnythingModel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("segmentAnythingModel.ImageOptions.Image")));
+            this.segmentAnythingModel.Name = "segmentAnythingModel";
+            this.segmentAnythingModel.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.segmentAnythingModel.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.segmentAnythingModel_ItemClick);
             // 
             // BASEMENT
             // 
+            this.BASEMENT.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BASEMENT.Appearance.Options.UseFont = true;
             this.BASEMENT.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.mapProject,
             this.dataManagement,
@@ -1686,6 +1760,7 @@
             // 
             // dataManagement
             // 
+            this.dataManagement.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("dataManagement.ImageOptions.Image")));
             this.dataManagement.ItemLinks.Add(this.loadData);
             this.dataManagement.ItemLinks.Add(this.loadFeatureData);
             this.dataManagement.ItemLinks.Add(this.loadRasterData);
@@ -1713,6 +1788,8 @@
             // 
             // DISPLAY
             // 
+            this.DISPLAY.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DISPLAY.Appearance.Options.UseFont = true;
             this.DISPLAY.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.brightnessControl,
             this.contrastRatioControl,
@@ -1766,6 +1843,8 @@
             // 
             // ImageProcess
             // 
+            this.ImageProcess.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ImageProcess.Appearance.Options.UseFont = true;
             this.ImageProcess.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.radiationCorrection,
             this.geometricCorrection,
@@ -1798,8 +1877,8 @@
             // 
             // imageClip
             // 
-            this.imageClip.ItemLinks.Add(this.barButtonItem12);
-            this.imageClip.ItemLinks.Add(this.barButtonItem15);
+            this.imageClip.ItemLinks.Add(this.clippingThroughGridRange);
+            this.imageClip.ItemLinks.Add(this.clippingThroughShapeFile);
             this.imageClip.ItemLinks.Add(this.barButtonItem16);
             this.imageClip.Name = "imageClip";
             this.imageClip.Text = "影像裁剪";
@@ -1813,6 +1892,8 @@
             // 
             // Classification
             // 
+            this.Classification.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Classification.Appearance.Options.UseFont = true;
             this.Classification.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.RoiTools,
             this.unSupervisedClassification,
@@ -1859,6 +1940,8 @@
             // 
             // VectorProcess
             // 
+            this.VectorProcess.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VectorProcess.Appearance.Options.UseFont = true;
             this.VectorProcess.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.vectorTools});
             this.VectorProcess.Name = "VectorProcess";
@@ -1882,6 +1965,8 @@
             // 
             // ribbonPage5
             // 
+            this.ribbonPage5.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ribbonPage5.Appearance.Options.UseFont = true;
             this.ribbonPage5.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.MSPA景观分类,
             this.ribbonPageGroup2,
@@ -1926,6 +2011,8 @@
             // 
             // ribbonPage2
             // 
+            this.ribbonPage2.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ribbonPage2.Appearance.Options.UseFont = true;
             this.ribbonPage2.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.Core,
             this.EcologicalCorridorIdentification,
@@ -1960,6 +2047,8 @@
             // 
             // ribbonPage3
             // 
+            this.ribbonPage3.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ribbonPage3.Appearance.Options.UseFont = true;
             this.ribbonPage3.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.EcologicalAgriculture,
             this.UrbanElementsChangeAnalysis,
@@ -1969,7 +2058,7 @@
             // 
             // EcologicalAgriculture
             // 
-            this.EcologicalAgriculture.ItemLinks.Add(this.TimeSeriesCurve);
+            this.EcologicalAgriculture.ItemLinks.Add(this.timeSeriesCurve);
             this.EcologicalAgriculture.ItemLinks.Add(this.AgriculturalStructureClassification);
             this.EcologicalAgriculture.ItemLinks.Add(this.ChangeStatistics);
             this.EcologicalAgriculture.Name = "EcologicalAgriculture";
@@ -1980,6 +2069,7 @@
             this.UrbanElementsChangeAnalysis.ItemLinks.Add(this.LandUseTypeTransferMatrix);
             this.UrbanElementsChangeAnalysis.ItemLinks.Add(this.POIChangeStatistics);
             this.UrbanElementsChangeAnalysis.ItemLinks.Add(this.RoadChangeStatistics);
+            this.UrbanElementsChangeAnalysis.ItemLinks.Add(this.segmentAnythingModel);
             this.UrbanElementsChangeAnalysis.Name = "UrbanElementsChangeAnalysis";
             this.UrbanElementsChangeAnalysis.Text = "城镇要素变化分析";
             // 
@@ -1992,6 +2082,8 @@
             // 
             // ribbonPage1
             // 
+            this.ribbonPage1.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ribbonPage1.Appearance.Options.UseFont = true;
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.dataOperation,
             this.viewOperation,
@@ -2038,6 +2130,8 @@
             // 
             // ribbonPage6
             // 
+            this.ribbonPage6.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ribbonPage6.Appearance.Options.UseFont = true;
             this.ribbonPage6.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.helpDocument});
             this.ribbonPage6.Name = "ribbonPage6";
@@ -2083,6 +2177,11 @@
             // 
             this.repositoryItemZoomTrackBar6.Name = "repositoryItemZoomTrackBar6";
             // 
+            // popupMenu3
+            // 
+            this.popupMenu3.Name = "popupMenu3";
+            this.popupMenu3.Ribbon = this.ribbonControl1;
+            // 
             // popupMenu1
             // 
             this.popupMenu1.Name = "popupMenu1";
@@ -2091,7 +2190,7 @@
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 147);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 150);
             this.splitContainer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.splitContainer1.Name = "splitContainer1";
             // 
@@ -2102,19 +2201,78 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.tabControlMain);
-            this.splitContainer1.Size = new System.Drawing.Size(1242, 480);
-            this.splitContainer1.SplitterDistance = 200;
+            this.splitContainer1.Size = new System.Drawing.Size(1419, 611);
+            this.splitContainer1.SplitterDistance = 228;
+            this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 1;
             // 
             // tocControlMain
             // 
+            this.tocControlMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(87)))), ((int)(((byte)(115)))));
+            this.tocControlMain.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tocControlMain.BackgroundImage")));
+            this.tocControlMain.ContextMenuStrip = this.contextMenuStrip_TocControl;
             this.tocControlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tocControlMain.Location = new System.Drawing.Point(0, 0);
-            this.tocControlMain.Margin = new System.Windows.Forms.Padding(4);
+            this.tocControlMain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tocControlMain.Name = "tocControlMain";
-            this.tocControlMain.Size = new System.Drawing.Size(200, 480);
+            this.tocControlMain.Size = new System.Drawing.Size(228, 611);
             this.tocControlMain.TabIndex = 0;
             this.tocControlMain.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tocControlMain_MouseClick);
+            // 
+            // contextMenuStrip_TocControl
+            // 
+            this.contextMenuStrip_TocControl.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip_TocControl.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.AddDataToolStripMenuItem,
+            this.DeleteLayerToolStripMenuItem,
+            this.FeatureLayerAttributeToolStripMenuItem,
+            this.SymbolSelectorToolStripMenuItem,
+            this.LayerPropertyToolStripMenuItem,
+            this.SelectCoordinateToolStripMenuItem});
+            this.contextMenuStrip_TocControl.Name = "contextMenuStrip_TocControl";
+            this.contextMenuStrip_TocControl.Size = new System.Drawing.Size(137, 136);
+            // 
+            // AddDataToolStripMenuItem
+            // 
+            this.AddDataToolStripMenuItem.Name = "AddDataToolStripMenuItem";
+            this.AddDataToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.AddDataToolStripMenuItem.Text = "添加数据";
+            this.AddDataToolStripMenuItem.Click += new System.EventHandler(this.AddDataToolStripMenuItem_Click);
+            // 
+            // DeleteLayerToolStripMenuItem
+            // 
+            this.DeleteLayerToolStripMenuItem.Name = "DeleteLayerToolStripMenuItem";
+            this.DeleteLayerToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.DeleteLayerToolStripMenuItem.Text = "删除图层";
+            this.DeleteLayerToolStripMenuItem.Click += new System.EventHandler(this.DeleteLayerToolStripMenuItem_Click);
+            // 
+            // FeatureLayerAttributeToolStripMenuItem
+            // 
+            this.FeatureLayerAttributeToolStripMenuItem.Name = "FeatureLayerAttributeToolStripMenuItem";
+            this.FeatureLayerAttributeToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.FeatureLayerAttributeToolStripMenuItem.Text = "打开属性表";
+            this.FeatureLayerAttributeToolStripMenuItem.Click += new System.EventHandler(this.FeatureLayerAttributeToolStripMenuItem_Click);
+            // 
+            // SymbolSelectorToolStripMenuItem
+            // 
+            this.SymbolSelectorToolStripMenuItem.Name = "SymbolSelectorToolStripMenuItem";
+            this.SymbolSelectorToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.SymbolSelectorToolStripMenuItem.Text = "符号选择器";
+            this.SymbolSelectorToolStripMenuItem.Click += new System.EventHandler(this.SymbolSelectorToolStripMenuItem_Click);
+            // 
+            // LayerPropertyToolStripMenuItem
+            // 
+            this.LayerPropertyToolStripMenuItem.Name = "LayerPropertyToolStripMenuItem";
+            this.LayerPropertyToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.LayerPropertyToolStripMenuItem.Text = "层属性";
+            this.LayerPropertyToolStripMenuItem.Click += new System.EventHandler(this.LayerPropertyToolStripMenuItem_Click);
+            // 
+            // SelectCoordinateToolStripMenuItem
+            // 
+            this.SelectCoordinateToolStripMenuItem.Name = "SelectCoordinateToolStripMenuItem";
+            this.SelectCoordinateToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.SelectCoordinateToolStripMenuItem.Text = "坐标系选择";
+            this.SelectCoordinateToolStripMenuItem.Click += new System.EventHandler(this.SelectCoordinateToolStripMenuItem_Click);
             // 
             // tabControlMain
             // 
@@ -2127,7 +2285,7 @@
             this.tabControlMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControlMain.Name = "tabControlMain";
             this.tabControlMain.SelectedIndex = 0;
-            this.tabControlMain.Size = new System.Drawing.Size(1038, 480);
+            this.tabControlMain.Size = new System.Drawing.Size(1186, 611);
             this.tabControlMain.TabIndex = 0;
             this.tabControlMain.SelectedIndexChanged += new System.EventHandler(this.tabControlMain_SelectedIndexChanged);
             // 
@@ -2139,7 +2297,7 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage1.Size = new System.Drawing.Size(1030, 446);
+            this.tabPage1.Size = new System.Drawing.Size(1178, 577);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "地图模式";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -2160,7 +2318,7 @@
             this.swipeLayer});
             this.toolStrip1.Location = new System.Drawing.Point(3, 2);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(40, 442);
+            this.toolStrip1.Size = new System.Drawing.Size(40, 573);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -2257,16 +2415,40 @@
             // mapControlMain
             // 
             this.mapControlMain.BackColor = System.Drawing.Color.White;
+            this.mapControlMain.ContextMenuStrip = this.contextMenuStrip_MapControl;
             this.mapControlMain.CustomerProperty = null;
             this.mapControlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mapControlMain.Location = new System.Drawing.Point(3, 2);
             this.mapControlMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mapControlMain.Name = "mapControlMain";
-            this.mapControlMain.Size = new System.Drawing.Size(1024, 442);
+            this.mapControlMain.Size = new System.Drawing.Size(1172, 573);
             this.mapControlMain.TabIndex = 0;
             this.mapControlMain.Text = "mapControlMain";
             this.mapControlMain.MouseMove += new System.Windows.Forms.MouseEventHandler(this.mapControlMain_MouseMove);
             this.mapControlMain.MouseUp += new System.Windows.Forms.MouseEventHandler(this.mapControlMain_MouseUp);
+            // 
+            // contextMenuStrip_MapControl
+            // 
+            this.contextMenuStrip_MapControl.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip_MapControl.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.FullExtentToolStripMenuItem,
+            this.RasterIdentifyToolStripMenuItem});
+            this.contextMenuStrip_MapControl.Name = "contextMenuStrip_MapControl";
+            this.contextMenuStrip_MapControl.Size = new System.Drawing.Size(125, 48);
+            // 
+            // FullExtentToolStripMenuItem
+            // 
+            this.FullExtentToolStripMenuItem.Name = "FullExtentToolStripMenuItem";
+            this.FullExtentToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.FullExtentToolStripMenuItem.Text = "全图显示";
+            this.FullExtentToolStripMenuItem.MouseUp += new System.Windows.Forms.MouseEventHandler(this.mapControlMenuItem_Click);
+            // 
+            // RasterIdentifyToolStripMenuItem
+            // 
+            this.RasterIdentifyToolStripMenuItem.Name = "RasterIdentifyToolStripMenuItem";
+            this.RasterIdentifyToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.RasterIdentifyToolStripMenuItem.Text = "探针工具";
+            this.RasterIdentifyToolStripMenuItem.MouseUp += new System.Windows.Forms.MouseEventHandler(this.mapControlMenuItem_Click);
             // 
             // tabPage2
             // 
@@ -2276,7 +2458,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage2.Size = new System.Drawing.Size(1030, 446);
+            this.tabPage2.Size = new System.Drawing.Size(1030, 469);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "制图模式";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -2297,7 +2479,7 @@
             this.toolStrip2.Location = new System.Drawing.Point(3, 2);
             this.toolStrip2.Name = "toolStrip2";
             this.toolStrip2.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.toolStrip2.Size = new System.Drawing.Size(40, 442);
+            this.toolStrip2.Size = new System.Drawing.Size(40, 465);
             this.toolStrip2.TabIndex = 1;
             this.toolStrip2.Text = "toolStrip2";
             // 
@@ -2387,46 +2569,57 @@
             this.pageLayoutControlMain.Location = new System.Drawing.Point(3, 2);
             this.pageLayoutControlMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pageLayoutControlMain.Name = "pageLayoutControlMain";
-            this.pageLayoutControlMain.Size = new System.Drawing.Size(1024, 442);
+            this.pageLayoutControlMain.Size = new System.Drawing.Size(1024, 465);
             this.pageLayoutControlMain.TabIndex = 0;
             this.pageLayoutControlMain.Text = "pageLayoutControlMain";
             // 
             // toolStripStatusLabel1
             // 
+            this.toolStripStatusLabel1.BackColor = System.Drawing.SystemColors.Control;
             this.toolStripStatusLabel1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolStripStatusLabel1.ForeColor = System.Drawing.Color.White;
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(93, 26);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(93, 33);
             this.toolStripStatusLabel1.Text = "坐标系信息：";
             // 
             // toolStripStatusLabel_CoordinateInfo
             // 
             this.toolStripStatusLabel_CoordinateInfo.AutoSize = false;
+            this.toolStripStatusLabel_CoordinateInfo.BackColor = System.Drawing.Color.White;
             this.toolStripStatusLabel_CoordinateInfo.Name = "toolStripStatusLabel_CoordinateInfo";
-            this.toolStripStatusLabel_CoordinateInfo.Size = new System.Drawing.Size(200, 26);
+            this.toolStripStatusLabel_CoordinateInfo.Size = new System.Drawing.Size(200, 33);
             // 
             // toolStripStatusLabel3
             // 
+            this.toolStripStatusLabel3.BackColor = System.Drawing.SystemColors.Control;
             this.toolStripStatusLabel3.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolStripStatusLabel3.ForeColor = System.Drawing.Color.White;
             this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
-            this.toolStripStatusLabel3.Size = new System.Drawing.Size(65, 26);
+            this.toolStripStatusLabel3.Size = new System.Drawing.Size(65, 33);
             this.toolStripStatusLabel3.Text = "比例尺：";
             // 
             // toolStripStatusLabel4
             // 
+            this.toolStripStatusLabel4.BackColor = System.Drawing.SystemColors.Control;
             this.toolStripStatusLabel4.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolStripStatusLabel4.ForeColor = System.Drawing.Color.White;
             this.toolStripStatusLabel4.Name = "toolStripStatusLabel4";
-            this.toolStripStatusLabel4.Size = new System.Drawing.Size(79, 26);
+            this.toolStripStatusLabel4.Size = new System.Drawing.Size(79, 33);
             this.toolStripStatusLabel4.Text = "地图坐标：";
             // 
             // toolStripStatusLabel5
             // 
+            this.toolStripStatusLabel5.BackColor = System.Drawing.SystemColors.Control;
             this.toolStripStatusLabel5.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolStripStatusLabel5.ForeColor = System.Drawing.Color.White;
             this.toolStripStatusLabel5.Name = "toolStripStatusLabel5";
-            this.toolStripStatusLabel5.Size = new System.Drawing.Size(79, 26);
+            this.toolStripStatusLabel5.Size = new System.Drawing.Size(79, 33);
             this.toolStripStatusLabel5.Text = "屏幕坐标：";
             // 
             // statusStrip1
             // 
+            this.statusStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(87)))), ((int)(((byte)(115)))));
+            this.statusStrip1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("statusStrip1.BackgroundImage")));
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel8,
@@ -2438,42 +2631,44 @@
             this.toolStripStatusLabel_coordinateSystem,
             this.toolStripStatusLabel5,
             this.toolStripStatusLabel_screenCoordinate});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 627);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 761);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 12, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(1242, 31);
+            this.statusStrip1.Size = new System.Drawing.Size(1419, 38);
             this.statusStrip1.TabIndex = 3;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // toolStripStatusLabel8
             // 
             this.toolStripStatusLabel8.AutoSize = false;
+            this.toolStripStatusLabel8.BackColor = System.Drawing.SystemColors.Control;
             this.toolStripStatusLabel8.Name = "toolStripStatusLabel8";
-            this.toolStripStatusLabel8.Size = new System.Drawing.Size(230, 26);
+            this.toolStripStatusLabel8.Size = new System.Drawing.Size(230, 33);
             // 
             // toolStripComboBox1
             // 
             this.toolStripComboBox1.AutoSize = false;
             this.toolStripComboBox1.Margin = new System.Windows.Forms.Padding(0, 2, 0, 1);
             this.toolStripComboBox1.Name = "toolStripComboBox1";
-            this.toolStripComboBox1.Size = new System.Drawing.Size(176, 28);
+            this.toolStripComboBox1.Size = new System.Drawing.Size(176, 35);
             // 
             // toolStripStatusLabel_coordinateSystem
             // 
+            this.toolStripStatusLabel_coordinateSystem.BackColor = System.Drawing.Color.White;
             this.toolStripStatusLabel_coordinateSystem.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top) 
             | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right) 
             | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
             this.toolStripStatusLabel_coordinateSystem.Name = "toolStripStatusLabel_coordinateSystem";
-            this.toolStripStatusLabel_coordinateSystem.Size = new System.Drawing.Size(91, 26);
+            this.toolStripStatusLabel_coordinateSystem.Size = new System.Drawing.Size(91, 33);
             this.toolStripStatusLabel_coordinateSystem.Text = "100.00,100.00";
             // 
             // toolStripStatusLabel_screenCoordinate
             // 
+            this.toolStripStatusLabel_screenCoordinate.BackColor = System.Drawing.Color.White;
             this.toolStripStatusLabel_screenCoordinate.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top) 
             | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right) 
             | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
             this.toolStripStatusLabel_screenCoordinate.Name = "toolStripStatusLabel_screenCoordinate";
-            this.toolStripStatusLabel_screenCoordinate.Size = new System.Drawing.Size(91, 26);
+            this.toolStripStatusLabel_screenCoordinate.Size = new System.Drawing.Size(91, 33);
             this.toolStripStatusLabel_screenCoordinate.Text = "100.00,100.00";
             // 
             // barButtonItem17
@@ -2492,84 +2687,6 @@
             this.barButtonItem40.Name = "barButtonItem40";
             this.barButtonItem40.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
-            // contextMenuStrip_MapControl
-            // 
-            this.contextMenuStrip_MapControl.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenuStrip_MapControl.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.FullExtentToolStripMenuItem,
-            this.RasterIdentifyToolStripMenuItem});
-            this.contextMenuStrip_MapControl.Name = "contextMenuStrip_MapControl";
-            this.contextMenuStrip_MapControl.Size = new System.Drawing.Size(125, 48);
-            // 
-            // FullExtentToolStripMenuItem
-            // 
-            this.FullExtentToolStripMenuItem.Name = "FullExtentToolStripMenuItem";
-            this.FullExtentToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.FullExtentToolStripMenuItem.Text = "全图显示";
-            this.FullExtentToolStripMenuItem.MouseUp += new System.Windows.Forms.MouseEventHandler(this.mapControlMenuItem_Click);
-            // 
-            // RasterIdentifyToolStripMenuItem
-            // 
-            this.RasterIdentifyToolStripMenuItem.Name = "RasterIdentifyToolStripMenuItem";
-            this.RasterIdentifyToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.RasterIdentifyToolStripMenuItem.Text = "探针工具";
-            this.RasterIdentifyToolStripMenuItem.MouseUp += new System.Windows.Forms.MouseEventHandler(this.mapControlMenuItem_Click);
-            // 
-            // contextMenuStrip_TocControl
-            // 
-            this.contextMenuStrip_TocControl.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenuStrip_TocControl.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.AddDataToolStripMenuItem,
-            this.DeleteLayerToolStripMenuItem,
-            this.FeatureLayerAttributeToolStripMenuItem,
-            this.SymbolSelectorToolStripMenuItem,
-            this.LayerPropertyToolStripMenuItem,
-            this.SelectCoordinateToolStripMenuItem});
-            this.contextMenuStrip_TocControl.Name = "contextMenuStrip_TocControl";
-            this.contextMenuStrip_TocControl.Size = new System.Drawing.Size(137, 136);
-            // 
-            // AddDataToolStripMenuItem
-            // 
-            this.AddDataToolStripMenuItem.Name = "AddDataToolStripMenuItem";
-            this.AddDataToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
-            this.AddDataToolStripMenuItem.Text = "添加数据";
-            this.AddDataToolStripMenuItem.Click += new System.EventHandler(this.AddDataToolStripMenuItem_Click);
-            // 
-            // DeleteLayerToolStripMenuItem
-            // 
-            this.DeleteLayerToolStripMenuItem.Name = "DeleteLayerToolStripMenuItem";
-            this.DeleteLayerToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
-            this.DeleteLayerToolStripMenuItem.Text = "删除图层";
-            this.DeleteLayerToolStripMenuItem.Click += new System.EventHandler(this.DeleteLayerToolStripMenuItem_Click);
-            // 
-            // FeatureLayerAttributeToolStripMenuItem
-            // 
-            this.FeatureLayerAttributeToolStripMenuItem.Name = "FeatureLayerAttributeToolStripMenuItem";
-            this.FeatureLayerAttributeToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
-            this.FeatureLayerAttributeToolStripMenuItem.Text = "打开属性表";
-            this.FeatureLayerAttributeToolStripMenuItem.Click += new System.EventHandler(this.FeatureLayerAttributeToolStripMenuItem_Click);
-            // 
-            // SymbolSelectorToolStripMenuItem
-            // 
-            this.SymbolSelectorToolStripMenuItem.Name = "SymbolSelectorToolStripMenuItem";
-            this.SymbolSelectorToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
-            this.SymbolSelectorToolStripMenuItem.Text = "符号选择器";
-            this.SymbolSelectorToolStripMenuItem.Click += new System.EventHandler(this.SymbolSelectorToolStripMenuItem_Click);
-            // 
-            // LayerPropertyToolStripMenuItem
-            // 
-            this.LayerPropertyToolStripMenuItem.Name = "LayerPropertyToolStripMenuItem";
-            this.LayerPropertyToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
-            this.LayerPropertyToolStripMenuItem.Text = "层属性";
-            this.LayerPropertyToolStripMenuItem.Click += new System.EventHandler(this.LayerPropertyToolStripMenuItem_Click);
-            // 
-            // SelectCoordinateToolStripMenuItem
-            // 
-            this.SelectCoordinateToolStripMenuItem.Name = "SelectCoordinateToolStripMenuItem";
-            this.SelectCoordinateToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
-            this.SelectCoordinateToolStripMenuItem.Text = "坐标系选择";
-            this.SelectCoordinateToolStripMenuItem.Click += new System.EventHandler(this.SelectCoordinateToolStripMenuItem_Click);
-            // 
             // barButtonItem2
             // 
             this.barButtonItem2.Caption = "新建决策树";
@@ -2583,82 +2700,27 @@
             this.popupMenu4.Name = "popupMenu4";
             this.popupMenu4.Ribbon = this.ribbonControl1;
             // 
-            // barButtonItem8
-            // 
-            this.barButtonItem8.Caption = "通过栅格范围裁剪";
-            this.barButtonItem8.Id = 161;
-            this.barButtonItem8.Name = "barButtonItem8";
-            // 
-            // barButtonItem10
-            // 
-            this.barButtonItem10.Caption = "使用shape文件裁剪";
-            this.barButtonItem10.Id = 162;
-            this.barButtonItem10.Name = "barButtonItem10";
-            // 
-            // barButtonItem11
-            // 
-            this.barButtonItem11.Caption = "使用几何范围裁剪";
-            this.barButtonItem11.Id = 163;
-            this.barButtonItem11.Name = "barButtonItem11";
-            // 
-            // barButtonItem12
-            // 
-            this.barButtonItem12.Caption = "通过栅格范围裁剪";
-            this.barButtonItem12.Id = 164;
-            this.barButtonItem12.Name = "barButtonItem12";
-            this.barButtonItem12.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.barButtonItem12.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem12_ItemClick_1);
-            // 
-            // barButtonItem15
-            // 
-            this.barButtonItem15.Caption = "使用shape文件裁剪";
-            this.barButtonItem15.Id = 165;
-            this.barButtonItem15.Name = "barButtonItem15";
-            this.barButtonItem15.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.barButtonItem15.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem15_ItemClick);
-            // 
-            // barButtonItem16
-            // 
-            this.barButtonItem16.Caption = "使用几何范围裁剪";
-            this.barButtonItem16.Id = 166;
-            this.barButtonItem16.Name = "barButtonItem16";
-            this.barButtonItem16.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.barButtonItem16.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem16_ItemClick);
-            // 
-            // barSubItem1
-            // 
-            this.barSubItem1.Caption = "IHS变换";
-            this.barSubItem1.Id = 168;
-            this.barSubItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem7),
-            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem18)});
-            this.barSubItem1.Name = "barSubItem1";
-            this.barSubItem1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            // 
-            // barButtonItem7
-            // 
-            this.barButtonItem7.Caption = "IHS正变换";
-            this.barButtonItem7.Id = 169;
-            this.barButtonItem7.Name = "barButtonItem7";
-            // 
-            // barButtonItem18
-            // 
-            this.barButtonItem18.Caption = "IHS逆变换";
-            this.barButtonItem18.Id = 170;
-            this.barButtonItem18.Name = "barButtonItem18";
-            // 
             // FormMain
             // 
-            this.Appearance.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(87)))), ((int)(((byte)(115)))));
+            this.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(87)))), ((int)(((byte)(115)))));
+            this.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(87)))), ((int)(((byte)(115)))));
+            this.Appearance.ForeColor = System.Drawing.Color.Black;
             this.Appearance.Options.UseBackColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
+            this.Appearance.Options.UseBorderColor = true;
+            this.Appearance.Options.UseFont = true;
+            this.Appearance.Options.UseForeColor = true;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1242, 658);
+            this.BackgroundImageLayoutStore = System.Windows.Forms.ImageLayout.Tile;
+            this.BackgroundImageStore = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImageStore")));
+            this.ClientSize = new System.Drawing.Size(1419, 799);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.ribbonControl1);
+            this.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "FormMain";
             this.Ribbon = this.ribbonControl1;
             this.Text = "绿廊智绘——城镇生态富民格局智能遥测系统";
@@ -2673,31 +2735,31 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.popupMenu3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTrackBar1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTrackBar2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTrackBar3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTrackBar4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).EndInit();
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
+            this.contextMenuStrip_TocControl.ResumeLayout(false);
             this.tabControlMain.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            this.contextMenuStrip_MapControl.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.toolStrip2.ResumeLayout(false);
             this.toolStrip2.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            this.contextMenuStrip_MapControl.ResumeLayout(false);
-            this.contextMenuStrip_TocControl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -2920,7 +2982,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup Core;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup EcologicalCorridorIdentification;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup EcologicalNode;
-        private DevExpress.XtraBars.BarButtonItem TimeSeriesCurve;
+        private DevExpress.XtraBars.BarButtonItem timeSeriesCurve;
         private DevExpress.XtraBars.BarButtonItem barButtonItem3;
         private DevExpress.XtraBars.BarButtonItem barButtonItem4;
         private DevExpress.XtraBars.BarButtonItem ChangeStatistics;
@@ -2949,12 +3011,13 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem8;
         private DevExpress.XtraBars.BarButtonItem barButtonItem10;
         private DevExpress.XtraBars.BarButtonItem barButtonItem11;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem12;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem15;
+        private DevExpress.XtraBars.BarButtonItem clippingThroughGridRange;
+        private DevExpress.XtraBars.BarButtonItem clippingThroughShapeFile;
         private DevExpress.XtraBars.BarButtonItem barButtonItem16;
         private DevExpress.XtraBars.BarSubItem barSubItem1;
         private DevExpress.XtraBars.BarButtonItem barButtonItem7;
         private DevExpress.XtraBars.BarButtonItem barButtonItem18;
+        private DevExpress.XtraBars.BarButtonItem segmentAnythingModel;
     }
 }
 

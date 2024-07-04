@@ -1,7 +1,7 @@
 ﻿
 namespace 绿廊智绘.Custom_Forms
 {
-    partial class 样本标准时序曲线
+    partial class timeSeriesCurveForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace 绿廊智绘.Custom_Forms
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(样本标准时序曲线));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(timeSeriesCurveForm));
             this.请输入遥感影像 = new System.Windows.Forms.GroupBox();
             this.button7 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();

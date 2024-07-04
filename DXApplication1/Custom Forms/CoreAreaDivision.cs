@@ -17,9 +17,9 @@ using System.IO;
 
 namespace 绿廊智绘.Custom_Forms
 {
-    public partial class CoreAreaDivision : DevExpress.XtraEditors.XtraForm
+    public partial class coreAreaDivision : DevExpress.XtraEditors.XtraForm
     {
-        public CoreAreaDivision()
+        public coreAreaDivision()
         {
             InitializeComponent();
         }

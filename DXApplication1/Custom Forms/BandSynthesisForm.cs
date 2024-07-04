@@ -11,9 +11,9 @@ using PIE.CommonAlgo;
 
 namespace 绿廊智绘.Custom_Forms
 {
-    public partial class BandSynthesisForm : DevExpress.XtraEditors.XtraForm
+    public partial class bandSynthesisForm : DevExpress.XtraEditors.XtraForm
     {
-        public BandSynthesisForm()
+        public bandSynthesisForm()
         {
             InitializeComponent();
         }

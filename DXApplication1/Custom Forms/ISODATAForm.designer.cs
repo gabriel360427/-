@@ -1,6 +1,6 @@
 ﻿namespace 绿廊智绘.Custom_Forms
 {
-    partial class ISODATAForm
+    partial class isoDataForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ISODATAForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(isoDataForm));
             this.label1 = new System.Windows.Forms.Label();
             this.inputImageTextBox = new System.Windows.Forms.TextBox();
             this.inputImageButton = new System.Windows.Forms.Button();

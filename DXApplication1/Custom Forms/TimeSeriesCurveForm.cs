@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace 绿廊智绘.Custom_Forms
 {
-    public partial class 样本标准时序曲线 : Form
+    public partial class timeSeriesCurveForm : Form
     {
-        public 样本标准时序曲线()
+        public timeSeriesCurveForm()
         {
             InitializeComponent();
         }

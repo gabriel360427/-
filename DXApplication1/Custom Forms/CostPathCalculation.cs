@@ -19,9 +19,9 @@ using System.Windows.Forms;
 
 namespace 绿廊智绘.Custom_Forms
 {
-    public partial class CostPathCalculation : DevExpress.XtraEditors.XtraForm
+    public partial class costPathCalculation : DevExpress.XtraEditors.XtraForm
     {
-        public CostPathCalculation()
+        public costPathCalculation()
         {
             InitializeComponent();
         }

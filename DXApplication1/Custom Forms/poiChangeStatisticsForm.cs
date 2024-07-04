@@ -19,9 +19,9 @@ using System.Runtime.InteropServices;
 
 namespace 绿廊智绘.Custom_Forms
 {
-    public partial class POI : Form
+    public partial class poiChangeStatisticsForm : Form
     {
-        public POI()
+        public poiChangeStatisticsForm()
         {
             if (!ESRI.ArcGIS.RuntimeManager.Bind(ESRI.ArcGIS.ProductCode.EngineOrDesktop))
             {

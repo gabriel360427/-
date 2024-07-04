@@ -11,9 +11,9 @@ using PIE.DataSource;
 
 namespace 绿廊智绘.Custom_Forms
 {
-    public partial class ISODATAForm : DevExpress.XtraEditors.XtraForm
+    public partial class isoDataForm : DevExpress.XtraEditors.XtraForm
     {
-        public ISODATAForm()
+        public isoDataForm()
         {
             InitializeComponent();
         }

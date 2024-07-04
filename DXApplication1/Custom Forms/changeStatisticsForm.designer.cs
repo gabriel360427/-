@@ -1,7 +1,7 @@
 ﻿
 namespace 绿廊智绘.Custom_Forms
 {
-    partial class 变化统计
+    partial class changeStatisticsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace 绿廊智绘.Custom_Forms
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(变化统计));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(changeStatisticsForm));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.第一景分类文件加载按钮 = new System.Windows.Forms.Button();
             this.第一景分类文件框 = new System.Windows.Forms.ComboBox();

@@ -20,9 +20,9 @@ using System.Windows.Forms;
 
 namespace 绿廊智绘.Custom_Forms
 {
-    public partial class CostDistanceCalculation : DevExpress.XtraEditors.XtraForm
+    public partial class costDistanceCalculation : DevExpress.XtraEditors.XtraForm
     {
-        public CostDistanceCalculation()
+        public costDistanceCalculation()
         {
             InitializeComponent();
         }

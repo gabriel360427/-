@@ -1200,7 +1200,6 @@ C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Cust
 C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.contrastRatioParam.resources
 C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.createFeatureForm.resources
 C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.distanceClassifyForm.resources
-C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.POI.resources
 C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.imageClippingForm.resources
 C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.ISODATAForm.resources
 C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.kmeansForm.resources
@@ -1224,12 +1223,6 @@ C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Cust
 C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.Sampling.resources
 C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.CorridorAddField.resources
 C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.EcologicalNodeExtraction.resources
-C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.参考建议.resources
-C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.土地转移矩阵.resources
-C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.主次要分析.resources
-C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.样本标准时序曲线.resources
-C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.变化统计.resources
-C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.道路要素变化统计.resources
 C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.FormMain.resources
 C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Properties.Resources.resources
 C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.vectorToRasterForm.resources
@@ -1306,3 +1299,10 @@ C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_
 C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.inputTime.resources
 C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.inputTime.resources
 C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.rasterToPolylineForm.resources
+C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.poiChangeStatisticsForm.resources
+C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.segmentAnythingModelForm.resources
+C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.landUseTypeTransferMatrixForm.resources
+C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.timeSeriesCurveForm.resources
+C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.changeStatisticsForm.resources
+C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.roadChangeStatisticsForm.resources
+C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.referenceSuggestion.resources

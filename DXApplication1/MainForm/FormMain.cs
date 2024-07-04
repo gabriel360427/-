@@ -1106,18 +1106,18 @@ namespace 绿廊智绘
         #endregion
 
         #region 4. 影像裁剪
-        private void barButtonItem15_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void clippingThroughShapeFile_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             //根据shp
             imageClippingForm frm = new imageClippingForm();
             frm.ShowDialog();
         }
-        private void barButtonItem12_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void clippingThroughGridRange_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
 
         }
 
-        private void barButtonItem16_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void clippingThroughGeometricRange_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
 
         }
@@ -1166,7 +1166,7 @@ namespace 绿廊智绘
         #region 5.2 波段合成
         private void bandSynthesis_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            BandSynthesisForm form = new BandSynthesisForm();
+            bandSynthesisForm form = new bandSynthesisForm();
             form.ShowDialog();
         }
         #endregion
@@ -1211,7 +1211,7 @@ namespace 绿廊智绘
         #region 2.1 ISODATA分类
         private void isoData_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            ISODATAForm frm = new ISODATAForm();
+            isoDataForm frm = new isoDataForm();
             frm.ShowDialog();
             if (frm.DialogResult == DialogResult.OK)
             {
@@ -1423,6 +1423,7 @@ namespace 绿廊智绘
         #endregion
 
         #region 4.分类后处理
+
         #region 4.1 分类统计
         private void classStatistics_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -1824,7 +1825,7 @@ namespace 绿廊智绘
         #region 1.2 数据预处理
         private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            SurfaceResistanceFactor form = new SurfaceResistanceFactor();
+            surfaceResistanceFactor form = new surfaceResistanceFactor();
             form.Text = "二值数据转换";
             form.groupBox1.Text = "请输入土地利用分类数据";
             form.groupBox2.Text = "二值数据转换";
@@ -1846,7 +1847,7 @@ namespace 绿廊智绘
         {
             Process proexe = Process.Start(@"C:\GuidosToolbox\guidostoolbox.sav");
             //proexe.WaitForExit(); 
-            SurfaceResistanceFactor form = new SurfaceResistanceFactor();
+            surfaceResistanceFactor form = new surfaceResistanceFactor();
             form.Text = "MSPA景观分类";
             form.groupBox1.Text = "请输入MSPA执行结果";
             form.groupBox2.Text = "分类后整理";
@@ -1894,7 +1895,7 @@ namespace 绿廊智绘
         #region 2.2 地形起伏度
         private void 地面起伏度_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Relief Form = new Relief();
+            relief Form = new relief();
             Form.ShowDialog();
         }
         #endregion
@@ -1939,7 +1940,7 @@ namespace 绿廊智绘
         #region 3.3 高程因子
         private void elevation_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            SurfaceResistanceFactor form = new SurfaceResistanceFactor();
+            surfaceResistanceFactor form = new surfaceResistanceFactor();
             form.Text = "高程因子";
             form.Column1.HeaderText = "高程（m）";
             form.Column2.HeaderText = "阻力值";
@@ -1956,7 +1957,7 @@ namespace 绿廊智绘
         #region 3.4 坡度因子
         private void slopeGradient_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            SurfaceResistanceFactor form = new SurfaceResistanceFactor();
+            surfaceResistanceFactor form = new surfaceResistanceFactor();
             form.Text = "坡度因子";
             form.Column1.HeaderText = "坡度（°）";
             form.Column2.HeaderText = "阻力值";
@@ -1973,7 +1974,7 @@ namespace 绿廊智绘
         #region 3.5 温度因子
         private void temperature_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            SurfaceResistanceFactor form = new SurfaceResistanceFactor();
+            surfaceResistanceFactor form = new surfaceResistanceFactor();
             form.Text = "温度因子";
             form.Column1.HeaderText = "地表温度（℃）";
             form.Column2.HeaderText = "阻力值";
@@ -1994,7 +1995,7 @@ namespace 绿廊智绘
         #region 3.6 用地类型因子
         private void landUseType_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            SurfaceResistanceFactor form = new SurfaceResistanceFactor();
+            surfaceResistanceFactor form = new surfaceResistanceFactor();
             form.Text = "用地类型因子";
             form.Column1.HeaderText = "用地类型";
             form.Column2.HeaderText = "阻力值";
@@ -2012,7 +2013,7 @@ namespace 绿廊智绘
         #region 3.7 景观类型因子
         private void landScapeType_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            SurfaceResistanceFactor form = new SurfaceResistanceFactor();
+            surfaceResistanceFactor form = new surfaceResistanceFactor();
             form.Text = "MSPA景观类型因子";
             form.Column1.HeaderText = "MSPA景观类型";
             form.Column2.HeaderText = "阻力值";
@@ -2033,7 +2034,7 @@ namespace 绿廊智绘
         #region 3.8 地形起伏度因子
         private void reliefAmplitude_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            SurfaceResistanceFactor form = new SurfaceResistanceFactor();
+            surfaceResistanceFactor form = new surfaceResistanceFactor();
             form.Text = "地形起伏度因子";
             form.Column1.HeaderText = "地形起伏度（m）";
             form.Column2.HeaderText = "阻力值";
@@ -2051,7 +2052,7 @@ namespace 绿廊智绘
         #region 4. 综合阻力
         private void comprehensiveResistance_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            BandSynthesisForm frm1 = new BandSynthesisForm();
+            bandSynthesisForm frm1 = new bandSynthesisForm();
             frm1.ShowDialog();
             comprehensiveResistance frm2 = new comprehensiveResistance();
             frm2.ShowDialog();
@@ -2075,7 +2076,7 @@ namespace 绿廊智绘
         #region 1.2 核心区提取
         private void CoreAreaExtraction_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            CoreAreaExtraction form = new CoreAreaExtraction();
+            coreAreaExtraction form = new coreAreaExtraction();
             form.ShowDialog();
         }
         #endregion
@@ -2083,7 +2084,7 @@ namespace 绿廊智绘
         #region 1.3 核心区划分
         private void CoreAreaDivision_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            CoreAreaDivision frm = new CoreAreaDivision();
+            coreAreaDivision frm = new coreAreaDivision();
             frm.ShowDialog();
         }
         #endregion
@@ -2095,7 +2096,7 @@ namespace 绿廊智绘
         #region 2.1 成本距离计算
         private void CostDistanceCalculation_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            CostDistanceCalculation form = new CostDistanceCalculation();
+            costDistanceCalculation form = new costDistanceCalculation();
             form.ShowDialog();
         }
         #endregion
@@ -2103,7 +2104,7 @@ namespace 绿廊智绘
         #region 2.2 成本路径计算
         private void CostPathCalculation_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            CostPathCalculation form = new CostPathCalculation();
+            costPathCalculation form = new costPathCalculation();
             form.ShowDialog();
         }
         #endregion
@@ -2119,7 +2120,7 @@ namespace 绿廊智绘
         #region 2.4 采样
         private void Sampling_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Sampling form = new Sampling();
+            sampling form = new sampling();
             form.ShowDialog();
         }
         #endregion
@@ -2127,7 +2128,7 @@ namespace 绿廊智绘
         #region 2.5 廊道添加字段
         private void CorridorAddField_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            CorridorAddField form = new CorridorAddField();
+            corridorAddField form = new corridorAddField();
             form.ShowDialog();
         }
         #endregion
@@ -2189,7 +2190,7 @@ namespace 绿廊智绘
         #region 3. 生态节点
         private void EcologicalNodeExtraction_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            EcologicalNodeExtraction form = new EcologicalNodeExtraction();
+            ecologicalNodeExtraction form = new ecologicalNodeExtraction();
             form.ShowDialog();
         }
 
@@ -2200,15 +2201,15 @@ namespace 绿廊智绘
         #region 八、富民进程可视化
 
         #region 1. 生态农业
-        private void barButtonItem1_ItemClick_2(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void TimeSeriesCurve_ItemClick_2(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            样本标准时序曲线 form = new 样本标准时序曲线();
+            timeSeriesCurveForm form = new timeSeriesCurveForm();
             form.Show();
         }
 
         private void barButtonItem5_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            SurfaceResistanceFactor form = new SurfaceResistanceFactor();
+            surfaceResistanceFactor form = new surfaceResistanceFactor();
             form.Text = "农业结构分类";
             form.Column1.HeaderText = "作物";
             form.Column2.HeaderText = "阻力值";
@@ -2221,7 +2222,7 @@ namespace 绿廊智绘
 
         private void barButtonItem6_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            变化统计 form = new 变化统计();
+            changeStatisticsForm form = new changeStatisticsForm();
             form.Show();
         }
 
@@ -2230,20 +2231,26 @@ namespace 绿廊智绘
         #region 2. 城镇要素变化分析
         private void barButtonItem7_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            土地转移矩阵 form = new 土地转移矩阵();
+            landUseTypeTransferMatrixForm form = new landUseTypeTransferMatrixForm();
             form.Show();
         }
 
         private void barButtonItem11_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            POI form = new POI();
+            poiChangeStatisticsForm form = new poiChangeStatisticsForm();
             form.Show();
         }
 
         private void barButtonItem12_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            道路要素变化统计 form = new 道路要素变化统计();
+            roadChangeStatisticsForm form = new roadChangeStatisticsForm();
             form.Show();
+        }
+
+        private void segmentAnythingModel_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            segmentAnythingModelForm frm = new segmentAnythingModelForm();
+            frm.ShowDialog();
         }
         #endregion
 
@@ -2264,7 +2271,7 @@ namespace 绿廊智绘
             {
                 MessageBox.Show("应用打开失败，请检查是否配置好环境！");
             }
-            参考建议 form = new 参考建议();
+            referenceSuggestion form = new referenceSuggestion();
             form.ShowDialog();
         }
         #endregion
@@ -2439,6 +2446,8 @@ namespace 绿廊智绘
             Process.Start(new ProcessStartInfo("cmd", "/c start {htmlFilePath}") { CreateNoWindow = true });
         }
         #endregion
+
+
 
 
 

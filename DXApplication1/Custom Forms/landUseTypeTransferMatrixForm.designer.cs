@@ -1,7 +1,7 @@
 ﻿
 namespace 绿廊智绘.Custom_Forms
 {
-    partial class 土地转移矩阵
+    partial class landUseTypeTransferMatrixForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace 绿廊智绘.Custom_Forms
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(土地转移矩阵));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(landUseTypeTransferMatrixForm));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.第一景影像加载按钮 = new System.Windows.Forms.Button();
             this.第一景影像加载框 = new System.Windows.Forms.ComboBox();

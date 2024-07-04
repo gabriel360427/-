@@ -19,9 +19,9 @@ using System.Windows.Forms;
 
 namespace 绿廊智绘.Custom_Forms
 {
-    public partial class Sampling : DevExpress.XtraEditors.XtraForm
+    public partial class sampling : DevExpress.XtraEditors.XtraForm
     {
-        public Sampling()
+        public sampling()
         {
             ESRI.ArcGIS.RuntimeManager.Bind(ESRI.ArcGIS.ProductCode.EngineOrDesktop);
             InitializeComponent();

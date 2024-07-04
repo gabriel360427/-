@@ -18,9 +18,9 @@ using System.Data.OleDb;
 
 namespace 绿廊智绘.Custom_Forms
 {
-    public partial class CorridorAddField : DevExpress.XtraEditors.XtraForm
+    public partial class corridorAddField : DevExpress.XtraEditors.XtraForm
     {
-        public CorridorAddField()
+        public corridorAddField()
         {
             InitializeComponent();
         }

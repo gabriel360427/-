@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace 绿廊智绘.Custom_Forms
 {
-    public partial class 变化统计 : Form
+    public partial class changeStatisticsForm : Form
     {
-        public 变化统计()
+        public changeStatisticsForm()
         {
             InitializeComponent();
 

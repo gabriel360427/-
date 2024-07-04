@@ -29,6 +29,7 @@ namespace 绿廊智绘.Custom_Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(inputTime));
             this.label1 = new System.Windows.Forms.Label();
             this.输入时间框 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -68,6 +69,7 @@ namespace 绿廊智绘.Custom_Forms
             this.Controls.Add(this.button1);
             this.Controls.Add(this.输入时间框);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "inputTime";
             this.Text = "输入时间";
             this.ResumeLayout(false);

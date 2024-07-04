@@ -1,7 +1,7 @@
 ﻿
 namespace 绿廊智绘.Custom_Forms
 {
-    partial class POI
+    partial class poiChangeStatisticsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace 绿廊智绘.Custom_Forms
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(POI));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(poiChangeStatisticsForm));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.结果框 = new System.Windows.Forms.RichTextBox();
             this.取消 = new System.Windows.Forms.Button();

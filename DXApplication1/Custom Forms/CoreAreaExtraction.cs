@@ -15,9 +15,9 @@ using PIE.DataSource;
 
 namespace 绿廊智绘.Custom_Forms
 {
-    public partial class CoreAreaExtraction : DevExpress.XtraEditors.XtraForm
+    public partial class coreAreaExtraction : DevExpress.XtraEditors.XtraForm
     {
-        public CoreAreaExtraction()
+        public coreAreaExtraction()
         {
             InitializeComponent();
         }
