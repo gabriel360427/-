@@ -318,6 +318,7 @@
             // 
             this.ribbonControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(87)))), ((int)(((byte)(115)))));
             this.ribbonControl1.ExpandCollapseItem.Id = 0;
+            this.ribbonControl1.ForeColor = System.Drawing.Color.Transparent;
             this.ribbonControl1.Image = ((System.Drawing.Image)(resources.GetObject("ribbonControl1.Image")));
             this.ribbonControl1.ImageAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
@@ -2213,7 +2214,7 @@
             this.tocControlMain.ContextMenuStrip = this.contextMenuStrip_TocControl;
             this.tocControlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tocControlMain.Location = new System.Drawing.Point(0, 0);
-            this.tocControlMain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tocControlMain.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tocControlMain.Name = "tocControlMain";
             this.tocControlMain.Size = new System.Drawing.Size(228, 611);
             this.tocControlMain.TabIndex = 0;
