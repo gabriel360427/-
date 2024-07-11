@@ -2445,35 +2445,64 @@ namespace 绿廊智绘
             string htmlFilePath = "example\\index.html"; // 设置为HTML文件的路径
             Process.Start(new ProcessStartInfo("cmd", "/c start {htmlFilePath}") { CreateNoWindow = true });
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         #endregion
 
+        private void barButtonItem23_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            coordinationEvaluation form = new coordinationEvaluation();
+            form.Show();
+        }
 
+        private void barButtonItem12_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            drawingAndReporting form = new drawingAndReporting();
+            form.Show();
+        }
 
+        private void barButtonItem15_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            studyAreaOverlayTreatment form = new studyAreaOverlayTreatment();
+            form.Show();
+        }
 
+        private void barButtonItem19_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            economicPatternTreatment form = new economicPatternTreatment();
+            form.Show();
+        }
 
-
-
-
-
-        
-
-
-
-        
-
-       
-
-        
-
-       
-
-        
-
-       
-
-
-
-
-
+        private void barButtonItem22_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            landscapeFragmentationAnalysis form = new landscapeFragmentationAnalysis();
+            form.Show();
+        }
     }
 }

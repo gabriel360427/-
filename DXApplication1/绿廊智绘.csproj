@@ -123,6 +123,7 @@
     <Reference Include="PIE.Utility, Version=5.2.0.0, Culture=neutral, PublicKeyToken=ee1bc88606bd5383" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -195,6 +196,36 @@
     </Compile>
     <Compile Include="Custom Forms\distanceClassifyForm.designer.cs">
       <DependentUpon>distanceClassifyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Forms\economicPatternTreatment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\economicPatternTreatment.Designer.cs">
+      <DependentUpon>economicPatternTreatment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Forms\coordinationEvaluation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\coordinationEvaluation.Designer.cs">
+      <DependentUpon>coordinationEvaluation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Forms\drawingAndReporting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\drawingAndReporting.Designer.cs">
+      <DependentUpon>drawingAndReporting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Forms\landscapeFragmentationAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\landscapeFragmentationAnalysis.Designer.cs">
+      <DependentUpon>landscapeFragmentationAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Forms\studyAreaOverlayTreatment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\studyAreaOverlayTreatment.Designer.cs">
+      <DependentUpon>studyAreaOverlayTreatment.cs</DependentUpon>
     </Compile>
     <Compile Include="Custom Forms\inputTime.cs">
       <SubType>Form</SubType>
@@ -433,6 +464,18 @@
     <EmbeddedResource Include="Custom Forms\distanceClassifyForm.resx">
       <DependentUpon>distanceClassifyForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\economicPatternTreatment.resx">
+      <DependentUpon>economicPatternTreatment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\coordinationEvaluation.resx">
+      <DependentUpon>coordinationEvaluation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\drawingAndReporting.resx">
+      <DependentUpon>drawingAndReporting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\landscapeFragmentationAnalysis.resx">
+      <DependentUpon>landscapeFragmentationAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\inputTime.resx">
       <DependentUpon>inputTime.cs</DependentUpon>
     </EmbeddedResource>
@@ -477,6 +520,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\storageFormatConversionForm.resx">
       <DependentUpon>storageFormatConversionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\studyAreaOverlayTreatment.resx">
+      <DependentUpon>studyAreaOverlayTreatment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\transparencyParam.resx">
       <DependentUpon>transparencyParam.cs</DependentUpon>

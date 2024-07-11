@@ -148,18 +148,13 @@
             this.CorridorAddField = new DevExpress.XtraBars.BarButtonItem();
             this.CorridorGrading = new DevExpress.XtraBars.BarButtonItem();
             this.EcologicalNodeExtraction = new DevExpress.XtraBars.BarButtonItem();
-            this.timeSeriesCurve = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
-            this.ChangeStatistics = new DevExpress.XtraBars.BarButtonItem();
             this.LandUseTypeTransferMatrix = new DevExpress.XtraBars.BarButtonItem();
             this.LandscapePatternAnalysis = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
             this.addFeature = new DevExpress.XtraBars.BarButtonItem();
             this.AgriculturalStructureClassification = new DevExpress.XtraBars.BarButtonItem();
-            this.POIChangeStatistics = new DevExpress.XtraBars.BarButtonItem();
-            this.RoadChangeStatistics = new DevExpress.XtraBars.BarButtonItem();
-            this.EnvironmentConfiguration1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem14 = new DevExpress.XtraBars.BarButtonItem();
             this.rasterToPolyline = new DevExpress.XtraBars.BarButtonItem();
@@ -176,7 +171,11 @@
             this.barSubItem1 = new DevExpress.XtraBars.BarSubItem();
             this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem18 = new DevExpress.XtraBars.BarButtonItem();
-            this.segmentAnythingModel = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem15 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem19 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem22 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem23 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
             this.BASEMENT = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.mapProject = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.dataManagement = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -212,9 +211,7 @@
             this.EcologicalCorridorIdentification = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.EcologicalNode = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.EcologicalAgriculture = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.UrbanElementsChangeAnalysis = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.LandscapePattern = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.dataOperation = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.viewOperation = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -431,18 +428,13 @@
             this.CorridorAddField,
             this.CorridorGrading,
             this.EcologicalNodeExtraction,
-            this.timeSeriesCurve,
             this.barButtonItem3,
             this.barButtonItem4,
-            this.ChangeStatistics,
             this.LandUseTypeTransferMatrix,
             this.LandscapePatternAnalysis,
             this.barButtonItem9,
             this.addFeature,
             this.AgriculturalStructureClassification,
-            this.POIChangeStatistics,
-            this.RoadChangeStatistics,
-            this.EnvironmentConfiguration1,
             this.barButtonItem13,
             this.barButtonItem14,
             this.rasterToPolyline,
@@ -458,10 +450,14 @@
             this.barSubItem1,
             this.barButtonItem7,
             this.barButtonItem18,
-            this.segmentAnythingModel});
+            this.barButtonItem15,
+            this.barButtonItem19,
+            this.barButtonItem22,
+            this.barButtonItem23,
+            this.barButtonItem12});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.ribbonControl1.MaxItemId = 172;
+            this.ribbonControl1.MaxItemId = 178;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.BASEMENT,
@@ -1505,15 +1501,6 @@
             this.EcologicalNodeExtraction.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.EcologicalNodeExtraction.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.EcologicalNodeExtraction_ItemClick);
             // 
-            // timeSeriesCurve
-            // 
-            this.timeSeriesCurve.Caption = "样本标准时序曲线";
-            this.timeSeriesCurve.Id = 135;
-            this.timeSeriesCurve.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("timeSeriesCurve.ImageOptions.Image")));
-            this.timeSeriesCurve.Name = "timeSeriesCurve";
-            this.timeSeriesCurve.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.timeSeriesCurve.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.TimeSeriesCurve_ItemClick_2);
-            // 
             // barButtonItem3
             // 
             this.barButtonItem3.Id = 157;
@@ -1523,15 +1510,6 @@
             // 
             this.barButtonItem4.Id = 158;
             this.barButtonItem4.Name = "barButtonItem4";
-            // 
-            // ChangeStatistics
-            // 
-            this.ChangeStatistics.Caption = "变化统计";
-            this.ChangeStatistics.Id = 140;
-            this.ChangeStatistics.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ChangeStatistics.ImageOptions.Image")));
-            this.ChangeStatistics.Name = "ChangeStatistics";
-            this.ChangeStatistics.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.ChangeStatistics.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem6_ItemClick);
             // 
             // LandUseTypeTransferMatrix
             // 
@@ -1578,33 +1556,6 @@
             this.AgriculturalStructureClassification.Name = "AgriculturalStructureClassification";
             this.AgriculturalStructureClassification.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.AgriculturalStructureClassification.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem5_ItemClick_1);
-            // 
-            // POIChangeStatistics
-            // 
-            this.POIChangeStatistics.Caption = "POI变化统计";
-            this.POIChangeStatistics.Id = 147;
-            this.POIChangeStatistics.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("POIChangeStatistics.ImageOptions.Image")));
-            this.POIChangeStatistics.Name = "POIChangeStatistics";
-            this.POIChangeStatistics.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.POIChangeStatistics.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem11_ItemClick);
-            // 
-            // RoadChangeStatistics
-            // 
-            this.RoadChangeStatistics.Caption = "道路要素变化统计";
-            this.RoadChangeStatistics.Id = 148;
-            this.RoadChangeStatistics.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("RoadChangeStatistics.ImageOptions.Image")));
-            this.RoadChangeStatistics.Name = "RoadChangeStatistics";
-            this.RoadChangeStatistics.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.RoadChangeStatistics.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem12_ItemClick);
-            // 
-            // EnvironmentConfiguration1
-            // 
-            this.EnvironmentConfiguration1.Caption = "环境配置";
-            this.EnvironmentConfiguration1.Id = 149;
-            this.EnvironmentConfiguration1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("EnvironmentConfiguration1.ImageOptions.Image")));
-            this.EnvironmentConfiguration1.Name = "EnvironmentConfiguration1";
-            this.EnvironmentConfiguration1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.EnvironmentConfiguration1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem10_ItemClick);
             // 
             // barButtonItem13
             // 
@@ -1727,14 +1678,45 @@
             this.barButtonItem18.Id = 170;
             this.barButtonItem18.Name = "barButtonItem18";
             // 
-            // segmentAnythingModel
+            // barButtonItem15
             // 
-            this.segmentAnythingModel.Caption = "SAM分割";
-            this.segmentAnythingModel.Id = 171;
-            this.segmentAnythingModel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("segmentAnythingModel.ImageOptions.Image")));
-            this.segmentAnythingModel.Name = "segmentAnythingModel";
-            this.segmentAnythingModel.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.segmentAnythingModel.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.segmentAnythingModel_ItemClick);
+            this.barButtonItem15.Caption = "研究区叠置处理";
+            this.barButtonItem15.Id = 173;
+            this.barButtonItem15.Name = "barButtonItem15";
+            this.barButtonItem15.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonItem15.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem15_ItemClick);
+            // 
+            // barButtonItem19
+            // 
+            this.barButtonItem19.Caption = "富民格局提取";
+            this.barButtonItem19.Id = 174;
+            this.barButtonItem19.Name = "barButtonItem19";
+            this.barButtonItem19.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonItem19.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem19_ItemClick);
+            // 
+            // barButtonItem22
+            // 
+            this.barButtonItem22.Caption = "景观破碎度分布";
+            this.barButtonItem22.Id = 175;
+            this.barButtonItem22.Name = "barButtonItem22";
+            this.barButtonItem22.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonItem22.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem22_ItemClick);
+            // 
+            // barButtonItem23
+            // 
+            this.barButtonItem23.Caption = "生态富民协调度评估";
+            this.barButtonItem23.Id = 176;
+            this.barButtonItem23.Name = "barButtonItem23";
+            this.barButtonItem23.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonItem23.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem23_ItemClick);
+            // 
+            // barButtonItem12
+            // 
+            this.barButtonItem12.Caption = "制图报告";
+            this.barButtonItem12.Id = 177;
+            this.barButtonItem12.Name = "barButtonItem12";
+            this.barButtonItem12.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonItem12.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem12_ItemClick_1);
             // 
             // BASEMENT
             // 
@@ -2051,35 +2033,19 @@
             this.ribbonPage3.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ribbonPage3.Appearance.Options.UseFont = true;
             this.ribbonPage3.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.EcologicalAgriculture,
-            this.UrbanElementsChangeAnalysis,
-            this.LandscapePattern});
+            this.ribbonPageGroup3});
             this.ribbonPage3.Name = "ribbonPage3";
-            this.ribbonPage3.Text = "富民进程可视化";
+            this.ribbonPage3.Text = "生态富民格局与协调性评估";
             // 
-            // EcologicalAgriculture
+            // ribbonPageGroup3
             // 
-            this.EcologicalAgriculture.ItemLinks.Add(this.timeSeriesCurve);
-            this.EcologicalAgriculture.ItemLinks.Add(this.AgriculturalStructureClassification);
-            this.EcologicalAgriculture.ItemLinks.Add(this.ChangeStatistics);
-            this.EcologicalAgriculture.Name = "EcologicalAgriculture";
-            this.EcologicalAgriculture.Text = "生态农业";
-            // 
-            // UrbanElementsChangeAnalysis
-            // 
-            this.UrbanElementsChangeAnalysis.ItemLinks.Add(this.LandUseTypeTransferMatrix);
-            this.UrbanElementsChangeAnalysis.ItemLinks.Add(this.POIChangeStatistics);
-            this.UrbanElementsChangeAnalysis.ItemLinks.Add(this.RoadChangeStatistics);
-            this.UrbanElementsChangeAnalysis.ItemLinks.Add(this.segmentAnythingModel);
-            this.UrbanElementsChangeAnalysis.Name = "UrbanElementsChangeAnalysis";
-            this.UrbanElementsChangeAnalysis.Text = "城镇要素变化分析";
-            // 
-            // LandscapePattern
-            // 
-            this.LandscapePattern.ItemLinks.Add(this.EnvironmentConfiguration1);
-            this.LandscapePattern.ItemLinks.Add(this.LandscapePatternAnalysis);
-            this.LandscapePattern.Name = "LandscapePattern";
-            this.LandscapePattern.Text = "景观格局分析";
+            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem15);
+            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem19);
+            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem22);
+            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem23);
+            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem12);
+            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
+            this.ribbonPageGroup3.Text = "生态富民协调度评估";
             // 
             // ribbonPage1
             // 
@@ -2214,7 +2180,7 @@
             this.tocControlMain.ContextMenuStrip = this.contextMenuStrip_TocControl;
             this.tocControlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tocControlMain.Location = new System.Drawing.Point(0, 0);
-            this.tocControlMain.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tocControlMain.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.tocControlMain.Name = "tocControlMain";
             this.tocControlMain.Size = new System.Drawing.Size(228, 611);
             this.tocControlMain.TabIndex = 0;
@@ -2983,23 +2949,15 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup Core;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup EcologicalCorridorIdentification;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup EcologicalNode;
-        private DevExpress.XtraBars.BarButtonItem timeSeriesCurve;
         private DevExpress.XtraBars.BarButtonItem barButtonItem3;
         private DevExpress.XtraBars.BarButtonItem barButtonItem4;
-        private DevExpress.XtraBars.BarButtonItem ChangeStatistics;
         private DevExpress.XtraBars.BarButtonItem LandUseTypeTransferMatrix;
         private DevExpress.XtraBars.BarButtonItem LandscapePatternAnalysis;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage3;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup EcologicalAgriculture;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup UrbanElementsChangeAnalysis;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup LandscapePattern;
         private DevExpress.XtraBars.BarButtonItem barButtonItem9;
         private DevExpress.XtraBars.BarButtonItem addFeature;
         private DevExpress.XtraBars.BarButtonItem AgriculturalStructureClassification;
-        private DevExpress.XtraBars.BarButtonItem POIChangeStatistics;
-        private DevExpress.XtraBars.BarButtonItem RoadChangeStatistics;
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
-        private DevExpress.XtraBars.BarButtonItem EnvironmentConfiguration1;
         private DevExpress.XtraBars.BarButtonItem barButtonItem13;
         private DevExpress.XtraBars.BarButtonItem barButtonItem14;
         private DevExpress.XtraBars.BarButtonItem rasterToPolyline;
@@ -3018,7 +2976,12 @@
         private DevExpress.XtraBars.BarSubItem barSubItem1;
         private DevExpress.XtraBars.BarButtonItem barButtonItem7;
         private DevExpress.XtraBars.BarButtonItem barButtonItem18;
-        private DevExpress.XtraBars.BarButtonItem segmentAnythingModel;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem15;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem19;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem22;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem23;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem12;
     }
 }
 
