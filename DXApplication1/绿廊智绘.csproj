@@ -281,11 +281,11 @@
     <Compile Include="Custom Forms\slope.Designer.cs">
       <DependentUpon>slope.cs</DependentUpon>
     </Compile>
-    <Compile Include="Custom Forms\imageClippingForm.cs">
+    <Compile Include="Custom Forms\clippingThroughShapeFileForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Custom Forms\imageClippingForm.designer.cs">
-      <DependentUpon>imageClippingForm.cs</DependentUpon>
+    <Compile Include="Custom Forms\clippingThroughShapeFileForm.designer.cs">
+      <DependentUpon>clippingThroughShapeFileForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Custom Forms\isoDataForm.cs">
       <SubType>Form</SubType>
@@ -482,8 +482,8 @@
     <EmbeddedResource Include="Custom Forms\poiChangeStatisticsForm.resx">
       <DependentUpon>poiChangeStatisticsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Custom Forms\imageClippingForm.resx">
-      <DependentUpon>imageClippingForm.cs</DependentUpon>
+    <EmbeddedResource Include="Custom Forms\clippingThroughShapeFileForm.resx">
+      <DependentUpon>clippingThroughShapeFileForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\isoDataForm.resx">
       <DependentUpon>isoDataForm.cs</DependentUpon>

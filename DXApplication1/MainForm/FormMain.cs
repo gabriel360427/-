@@ -50,7 +50,6 @@ namespace 绿廊智绘
             //地图监听事件
             IActiveViewEvents activeViewEvents = mapControlMain.FocusMap as PIE.Carto.IActiveViewEvents;
             activeViewEvents.OnLayerDeleted += MapControl_OnLayerDeleted;//图层删除事件
-
         }
         
         private void mapControlMain_MouseMove(object sender, MouseEventArgs e)
@@ -1109,7 +1108,7 @@ namespace 绿廊智绘
         private void clippingThroughShapeFile_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             //根据shp
-            imageClippingForm frm = new imageClippingForm();
+            clippingThroughShapeFileForm frm = new clippingThroughShapeFileForm();
             frm.ShowDialog();
         }
         private void clippingThroughGridRange_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -2503,6 +2502,11 @@ namespace 绿廊智绘
         {
             landscapeFragmentationAnalysis form = new landscapeFragmentationAnalysis();
             form.Show();
+        }
+
+        private void falseColorEnhancement_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
         }
     }
 }

@@ -1511,3 +1511,8 @@ C:\Users\Gabriel_36\Desktop\非代码仓2\DXApplication1\obj\Debug\绿廊智绘.
 C:\Users\Gabriel_36\Desktop\非代码仓2\DXApplication1\obj\Debug\绿廊智绘.csproj.CopyComplete
 C:\Users\Gabriel_36\Desktop\非代码仓2\DXApplication1\obj\Debug\绿廊智绘.exe
 C:\Users\Gabriel_36\Desktop\非代码仓2\DXApplication1\obj\Debug\绿廊智绘.pdb
+C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.economicPatternTreatment.resources
+C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.coordinationEvaluation.resources
+C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.drawingAndReporting.resources
+C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.landscapeFragmentationAnalysis.resources
+C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.studyAreaOverlayTreatment.resources

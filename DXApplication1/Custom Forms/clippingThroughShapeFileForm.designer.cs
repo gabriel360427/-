@@ -1,6 +1,6 @@
 ﻿namespace 绿廊智绘.Custom_Forms
 {
-    partial class imageClippingForm
+    partial class clippingThroughShapeFileForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(imageClippingForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(clippingThroughShapeFileForm));
             this.label1 = new System.Windows.Forms.Label();
             this.文件输入框 = new System.Windows.Forms.ComboBox();
             this.InputFile1 = new System.Windows.Forms.Button();

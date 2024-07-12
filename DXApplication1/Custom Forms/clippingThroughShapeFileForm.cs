@@ -12,9 +12,9 @@ using 绿廊智绘;
 
 namespace 绿廊智绘.Custom_Forms
 {
-    public partial class imageClippingForm : DevExpress.XtraEditors.XtraForm
+    public partial class clippingThroughShapeFileForm : DevExpress.XtraEditors.XtraForm
     {
-        public imageClippingForm()
+        public clippingThroughShapeFileForm()
         {
             InitializeComponent();
         }

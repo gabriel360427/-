@@ -74,11 +74,11 @@
             // 
             // atmosConfirm
             // 
-            this.atmosConfirm.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.atmosConfirm.Location = new System.Drawing.Point(190, 609);
-            this.atmosConfirm.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.atmosConfirm.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.atmosConfirm.Location = new System.Drawing.Point(166, 474);
+            this.atmosConfirm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.atmosConfirm.Name = "atmosConfirm";
-            this.atmosConfirm.Size = new System.Drawing.Size(123, 37);
+            this.atmosConfirm.Size = new System.Drawing.Size(108, 35);
             this.atmosConfirm.TabIndex = 18;
             this.atmosConfirm.Text = "确定";
             this.atmosConfirm.UseVisualStyleBackColor = true;
@@ -86,11 +86,11 @@
             // 
             // atmosCancel
             // 
-            this.atmosCancel.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.atmosCancel.Location = new System.Drawing.Point(461, 609);
-            this.atmosCancel.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.atmosCancel.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.atmosCancel.Location = new System.Drawing.Point(403, 474);
+            this.atmosCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.atmosCancel.Name = "atmosCancel";
-            this.atmosCancel.Size = new System.Drawing.Size(123, 37);
+            this.atmosCancel.Size = new System.Drawing.Size(108, 35);
             this.atmosCancel.TabIndex = 19;
             this.atmosCancel.Text = "取消";
             this.atmosCancel.UseVisualStyleBackColor = true;
@@ -98,10 +98,12 @@
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(284, 105);
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelControl2.Appearance.Options.UseFont = true;
+            this.labelControl2.Location = new System.Drawing.Point(233, 107);
             this.labelControl2.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(135, 18);
+            this.labelControl2.Size = new System.Drawing.Size(126, 20);
             this.labelControl2.TabIndex = 0;
             this.labelControl2.Text = "逐像元反演气溶胶：";
             // 
@@ -111,21 +113,21 @@
             this.airosolYesOrNo.Items.AddRange(new object[] {
             "是",
             "否"});
-            this.airosolYesOrNo.Location = new System.Drawing.Point(423, 102);
-            this.airosolYesOrNo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.airosolYesOrNo.Location = new System.Drawing.Point(363, 104);
+            this.airosolYesOrNo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.airosolYesOrNo.Name = "airosolYesOrNo";
-            this.airosolYesOrNo.Size = new System.Drawing.Size(190, 26);
+            this.airosolYesOrNo.Size = new System.Drawing.Size(167, 25);
             this.airosolYesOrNo.TabIndex = 16;
             this.airosolYesOrNo.SelectedIndexChanged += new System.EventHandler(this.airosolYesOrNo_SelectedIndexChanged);
             // 
             // labelControl3
             // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F);
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(19, 67);
+            this.labelControl3.Location = new System.Drawing.Point(17, 67);
             this.labelControl3.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(108, 22);
+            this.labelControl3.Size = new System.Drawing.Size(84, 20);
             this.labelControl3.TabIndex = 17;
             this.labelControl3.Text = "气溶胶类型：";
             // 
@@ -139,21 +141,21 @@
             "沙尘型气溶胶",
             "煤烟型气溶胶",
             "平流层型气溶胶"});
-            this.airosolPattern.Location = new System.Drawing.Point(139, 60);
-            this.airosolPattern.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.airosolPattern.Location = new System.Drawing.Point(122, 62);
+            this.airosolPattern.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.airosolPattern.Name = "airosolPattern";
-            this.airosolPattern.Size = new System.Drawing.Size(466, 26);
+            this.airosolPattern.Size = new System.Drawing.Size(408, 25);
             this.airosolPattern.TabIndex = 15;
             this.airosolPattern.SelectedIndexChanged += new System.EventHandler(this.airosolPattern_SelectedIndexChanged);
             // 
             // labelControl4
             // 
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F);
+            this.labelControl4.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(19, 31);
+            this.labelControl4.Location = new System.Drawing.Point(17, 24);
             this.labelControl4.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(90, 22);
+            this.labelControl4.Size = new System.Drawing.Size(70, 20);
             this.labelControl4.TabIndex = 18;
             this.labelControl4.Text = "大气模式：";
             // 
@@ -168,41 +170,41 @@
             "副极地夏季大气模式",
             "副极地冬季大气模式",
             "美国1962大气模式"});
-            this.atmosPattern.Location = new System.Drawing.Point(139, 24);
-            this.atmosPattern.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.atmosPattern.Location = new System.Drawing.Point(122, 19);
+            this.atmosPattern.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.atmosPattern.Name = "atmosPattern";
-            this.atmosPattern.Size = new System.Drawing.Size(466, 26);
+            this.atmosPattern.Size = new System.Drawing.Size(408, 25);
             this.atmosPattern.TabIndex = 14;
             this.atmosPattern.SelectedIndexChanged += new System.EventHandler(this.atmosPattern_SelectedIndexChanged);
             // 
             // labelControl5
             // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.labelControl5.Appearance.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(234, 105);
+            this.labelControl5.Location = new System.Drawing.Point(194, 109);
             this.labelControl5.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(25, 22);
+            this.labelControl5.Size = new System.Drawing.Size(25, 20);
             this.labelControl5.TabIndex = 19;
             this.labelControl5.Text = "KM";
             // 
             // label5
             // 
-            this.label5.Font = new System.Drawing.Font("宋体", 10.5F);
-            this.label5.Location = new System.Drawing.Point(71, 431);
+            this.label5.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label5.Location = new System.Drawing.Point(13, 104);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(106, 24);
+            this.label5.Size = new System.Drawing.Size(93, 19);
             this.label5.TabIndex = 9;
             this.label5.Text = "初始能见度:";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // visibility
             // 
-            this.visibility.Location = new System.Drawing.Point(139, 105);
-            this.visibility.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.visibility.Location = new System.Drawing.Point(115, 107);
+            this.visibility.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.visibility.Name = "visibility";
-            this.visibility.Size = new System.Drawing.Size(73, 26);
+            this.visibility.Size = new System.Drawing.Size(64, 23);
             this.visibility.TabIndex = 12;
             // 
             // groupBox1
@@ -214,22 +216,23 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Location = new System.Drawing.Point(55, 27);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.groupBox1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(48, 21);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.groupBox1.Size = new System.Drawing.Size(619, 278);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(542, 216);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "输入信息";
             // 
             // selectMetadata
             // 
-            this.selectMetadata.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.selectMetadata.Location = new System.Drawing.Point(513, 228);
-            this.selectMetadata.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.selectMetadata.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.selectMetadata.Location = new System.Drawing.Point(449, 174);
+            this.selectMetadata.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.selectMetadata.Name = "selectMetadata";
-            this.selectMetadata.Size = new System.Drawing.Size(93, 28);
+            this.selectMetadata.Size = new System.Drawing.Size(81, 31);
             this.selectMetadata.TabIndex = 6;
             this.selectMetadata.Text = "浏览";
             this.selectMetadata.UseVisualStyleBackColor = true;
@@ -237,11 +240,11 @@
             // 
             // selectImage
             // 
-            this.selectImage.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.selectImage.Location = new System.Drawing.Point(513, 186);
-            this.selectImage.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.selectImage.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.selectImage.Location = new System.Drawing.Point(449, 137);
+            this.selectImage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.selectImage.Name = "selectImage";
-            this.selectImage.Size = new System.Drawing.Size(93, 28);
+            this.selectImage.Size = new System.Drawing.Size(81, 31);
             this.selectImage.TabIndex = 5;
             this.selectImage.Text = "浏览";
             this.selectImage.UseVisualStyleBackColor = true;
@@ -249,39 +252,39 @@
             // 
             // inputMetadata
             // 
-            this.inputMetadata.Location = new System.Drawing.Point(139, 228);
-            this.inputMetadata.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.inputMetadata.Location = new System.Drawing.Point(122, 177);
+            this.inputMetadata.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.inputMetadata.Name = "inputMetadata";
-            this.inputMetadata.Size = new System.Drawing.Size(369, 26);
+            this.inputMetadata.Size = new System.Drawing.Size(323, 23);
             this.inputMetadata.TabIndex = 4;
             // 
             // inputImage
             // 
-            this.inputImage.Location = new System.Drawing.Point(139, 186);
-            this.inputImage.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.inputImage.Location = new System.Drawing.Point(122, 142);
+            this.inputImage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.inputImage.Name = "inputImage";
-            this.inputImage.Size = new System.Drawing.Size(369, 26);
+            this.inputImage.Size = new System.Drawing.Size(323, 23);
             this.inputImage.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(18, 230);
+            this.label2.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label2.Location = new System.Drawing.Point(16, 179);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(116, 18);
+            this.label2.Size = new System.Drawing.Size(93, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "元数据文件：";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(18, 186);
+            this.label1.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Location = new System.Drawing.Point(22, 142);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 18);
+            this.label1.Size = new System.Drawing.Size(79, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "输入文件：";
             // 
@@ -290,11 +293,11 @@
             this.groupBox2.Controls.Add(this.EpigeneticReflectance);
             this.groupBox2.Controls.Add(this.EpigeneticBrightness);
             this.groupBox2.Controls.Add(this.DN);
-            this.groupBox2.Location = new System.Drawing.Point(16, 28);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.groupBox2.Location = new System.Drawing.Point(14, 22);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.groupBox2.Size = new System.Drawing.Size(576, 132);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Size = new System.Drawing.Size(504, 103);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "数据类型";
@@ -302,11 +305,11 @@
             // EpigeneticReflectance
             // 
             this.EpigeneticReflectance.AutoSize = true;
-            this.EpigeneticReflectance.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.EpigeneticReflectance.Location = new System.Drawing.Point(447, 60);
-            this.EpigeneticReflectance.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.EpigeneticReflectance.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.EpigeneticReflectance.Location = new System.Drawing.Point(391, 47);
+            this.EpigeneticReflectance.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.EpigeneticReflectance.Name = "EpigeneticReflectance";
-            this.EpigeneticReflectance.Size = new System.Drawing.Size(119, 22);
+            this.EpigeneticReflectance.Size = new System.Drawing.Size(97, 24);
             this.EpigeneticReflectance.TabIndex = 2;
             this.EpigeneticReflectance.TabStop = true;
             this.EpigeneticReflectance.Text = "表观反射率";
@@ -316,11 +319,11 @@
             // EpigeneticBrightness
             // 
             this.EpigeneticBrightness.AutoSize = true;
-            this.EpigeneticBrightness.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.EpigeneticBrightness.Location = new System.Drawing.Point(218, 60);
-            this.EpigeneticBrightness.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.EpigeneticBrightness.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.EpigeneticBrightness.Location = new System.Drawing.Point(191, 47);
+            this.EpigeneticBrightness.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.EpigeneticBrightness.Name = "EpigeneticBrightness";
-            this.EpigeneticBrightness.Size = new System.Drawing.Size(119, 22);
+            this.EpigeneticBrightness.Size = new System.Drawing.Size(97, 24);
             this.EpigeneticBrightness.TabIndex = 1;
             this.EpigeneticBrightness.TabStop = true;
             this.EpigeneticBrightness.Text = "表观辐亮度";
@@ -331,11 +334,11 @@
             // 
             this.DN.AutoSize = true;
             this.DN.Checked = true;
-            this.DN.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.DN.Location = new System.Drawing.Point(6, 60);
-            this.DN.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.DN.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.DN.Location = new System.Drawing.Point(5, 47);
+            this.DN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DN.Name = "DN";
-            this.DN.Size = new System.Drawing.Size(65, 22);
+            this.DN.Size = new System.Drawing.Size(63, 24);
             this.DN.TabIndex = 0;
             this.DN.TabStop = true;
             this.DN.Text = "DN值";
@@ -344,22 +347,22 @@
             // 
             // labelControl1
             // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F);
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(71, 532);
+            this.labelControl1.Location = new System.Drawing.Point(62, 414);
             this.labelControl1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(90, 22);
+            this.labelControl1.Size = new System.Drawing.Size(70, 20);
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "输出文件：";
             // 
             // outputImage
             // 
-            this.outputImage.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.outputImage.Location = new System.Drawing.Point(568, 525);
-            this.outputImage.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.outputImage.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.outputImage.Location = new System.Drawing.Point(497, 401);
+            this.outputImage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.outputImage.Name = "outputImage";
-            this.outputImage.Size = new System.Drawing.Size(93, 30);
+            this.outputImage.Size = new System.Drawing.Size(81, 32);
             this.outputImage.TabIndex = 7;
             this.outputImage.Text = "浏览";
             this.outputImage.UseVisualStyleBackColor = true;
@@ -367,10 +370,10 @@
             // 
             // outputFile
             // 
-            this.outputFile.Location = new System.Drawing.Point(190, 525);
-            this.outputFile.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.outputFile.Location = new System.Drawing.Point(166, 408);
+            this.outputFile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.outputFile.Name = "outputFile";
-            this.outputFile.Size = new System.Drawing.Size(369, 26);
+            this.outputFile.Size = new System.Drawing.Size(323, 22);
             this.outputFile.TabIndex = 7;
             // 
             // groupBox3
@@ -379,15 +382,15 @@
             this.groupBox3.Controls.Add(this.airosolYesOrNo);
             this.groupBox3.Controls.Add(this.visibility);
             this.groupBox3.Controls.Add(this.labelControl5);
+            this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.labelControl3);
             this.groupBox3.Controls.Add(this.airosolPattern);
             this.groupBox3.Controls.Add(this.atmosPattern);
             this.groupBox3.Controls.Add(this.labelControl4);
-            this.groupBox3.Location = new System.Drawing.Point(55, 325);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(48, 253);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox3.Size = new System.Drawing.Size(619, 162);
+            this.groupBox3.Size = new System.Drawing.Size(542, 143);
             this.groupBox3.TabIndex = 21;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "参数设置";
@@ -396,19 +399,18 @@
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
             this.Appearance.Options.UseBackColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(770, 705);
+            this.ClientSize = new System.Drawing.Size(674, 548);
             this.Controls.Add(this.outputFile);
             this.Controls.Add(this.outputImage);
             this.Controls.Add(this.atmosCancel);
             this.Controls.Add(this.atmosConfirm);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.groupBox3);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "atmosphericCorrectionForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "大气校正";
