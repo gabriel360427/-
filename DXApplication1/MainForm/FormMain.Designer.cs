@@ -203,7 +203,6 @@
             this.vectorTools = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage5 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.MSPA景观分类 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.singleFactorResistanceSurface = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.comprehensiveResistanceSurface = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -277,6 +276,7 @@
             this.barButtonItem40 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.popupMenu4 = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.segmentAnythingModel = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar3)).BeginInit();
@@ -454,10 +454,11 @@
             this.patternExtraction,
             this.landscapeFragmentation,
             this.coordinationDegree,
-            this.cartographicReport});
+            this.cartographicReport,
+            this.segmentAnythingModel});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.ribbonControl1.MaxItemId = 178;
+            this.ribbonControl1.MaxItemId = 184;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.BASEMENT,
@@ -1404,21 +1405,13 @@
             // 
             // SlopeProcessing
             // 
-            this.SlopeProcessing.Caption = "坡度处理";
-            this.SlopeProcessing.Id = 124;
-            this.SlopeProcessing.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SlopeProcessing.ImageOptions.Image")));
+            this.SlopeProcessing.Id = 178;
             this.SlopeProcessing.Name = "SlopeProcessing";
-            this.SlopeProcessing.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.SlopeProcessing.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem4_ItemClick);
             // 
             // TerrainReliefProcessing
             // 
-            this.TerrainReliefProcessing.Caption = "地形起伏度处理";
-            this.TerrainReliefProcessing.Id = 125;
-            this.TerrainReliefProcessing.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("TerrainReliefProcessing.ImageOptions.Image")));
+            this.TerrainReliefProcessing.Id = 179;
             this.TerrainReliefProcessing.Name = "TerrainReliefProcessing";
-            this.TerrainReliefProcessing.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.TerrainReliefProcessing.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.地面起伏度_ItemClick);
             // 
             // ImportanceOfcore
             // 
@@ -1513,21 +1506,13 @@
             // 
             // LandUseTypeTransferMatrix
             // 
-            this.LandUseTypeTransferMatrix.Caption = "用地类型转移矩阵";
-            this.LandUseTypeTransferMatrix.Id = 141;
-            this.LandUseTypeTransferMatrix.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("LandUseTypeTransferMatrix.ImageOptions.Image")));
+            this.LandUseTypeTransferMatrix.Id = 180;
             this.LandUseTypeTransferMatrix.Name = "LandUseTypeTransferMatrix";
-            this.LandUseTypeTransferMatrix.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.LandUseTypeTransferMatrix.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem7_ItemClick);
             // 
             // LandscapePatternAnalysis
             // 
-            this.LandscapePatternAnalysis.Caption = "景观格局分析";
-            this.LandscapePatternAnalysis.Id = 142;
-            this.LandscapePatternAnalysis.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("LandscapePatternAnalysis.ImageOptions.Image")));
+            this.LandscapePatternAnalysis.Id = 181;
             this.LandscapePatternAnalysis.Name = "LandscapePatternAnalysis";
-            this.LandscapePatternAnalysis.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.LandscapePatternAnalysis.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem8_ItemClick);
             // 
             // barButtonItem9
             // 
@@ -1550,12 +1535,8 @@
             // 
             // AgriculturalStructureClassification
             // 
-            this.AgriculturalStructureClassification.Caption = "农业结构分类";
-            this.AgriculturalStructureClassification.Id = 145;
-            this.AgriculturalStructureClassification.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("AgriculturalStructureClassification.ImageOptions.Image")));
+            this.AgriculturalStructureClassification.Id = 182;
             this.AgriculturalStructureClassification.Name = "AgriculturalStructureClassification";
-            this.AgriculturalStructureClassification.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.AgriculturalStructureClassification.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem5_ItemClick_1);
             // 
             // barButtonItem13
             // 
@@ -1678,18 +1659,20 @@
             this.ihsPositiveTransform.Caption = "IHS正变换";
             this.ihsPositiveTransform.Id = 169;
             this.ihsPositiveTransform.Name = "ihsPositiveTransform";
+            this.ihsPositiveTransform.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.ihsPositiveTransform_ItemClick);
             // 
             // ihsInverseTransform
             // 
             this.ihsInverseTransform.Caption = "IHS逆变换";
             this.ihsInverseTransform.Id = 170;
             this.ihsInverseTransform.Name = "ihsInverseTransform";
+            this.ihsInverseTransform.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.ihsInverseTransform_ItemClick);
             // 
             // overLappingProcessing
             // 
             this.overLappingProcessing.Caption = "研究区叠置处理";
             this.overLappingProcessing.Id = 173;
-            this.overLappingProcessing.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem15.ImageOptions.Image")));
+            this.overLappingProcessing.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("overLappingProcessing.ImageOptions.Image")));
             this.overLappingProcessing.Name = "overLappingProcessing";
             this.overLappingProcessing.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.overLappingProcessing.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem15_ItemClick);
@@ -1698,7 +1681,7 @@
             // 
             this.patternExtraction.Caption = "富民格局提取";
             this.patternExtraction.Id = 174;
-            this.patternExtraction.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem19.ImageOptions.Image")));
+            this.patternExtraction.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("patternExtraction.ImageOptions.Image")));
             this.patternExtraction.Name = "patternExtraction";
             this.patternExtraction.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.patternExtraction.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem19_ItemClick);
@@ -1707,7 +1690,7 @@
             // 
             this.landscapeFragmentation.Caption = "景观破碎度分布";
             this.landscapeFragmentation.Id = 175;
-            this.landscapeFragmentation.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem22.ImageOptions.Image")));
+            this.landscapeFragmentation.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("landscapeFragmentation.ImageOptions.Image")));
             this.landscapeFragmentation.Name = "landscapeFragmentation";
             this.landscapeFragmentation.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.landscapeFragmentation.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem22_ItemClick);
@@ -1716,7 +1699,7 @@
             // 
             this.coordinationDegree.Caption = "生态富民协调度评估";
             this.coordinationDegree.Id = 176;
-            this.coordinationDegree.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem23.ImageOptions.Image")));
+            this.coordinationDegree.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("coordinationDegree.ImageOptions.Image")));
             this.coordinationDegree.Name = "coordinationDegree";
             this.coordinationDegree.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.coordinationDegree.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem23_ItemClick);
@@ -1725,7 +1708,7 @@
             // 
             this.cartographicReport.Caption = "制图报告";
             this.cartographicReport.Id = 177;
-            this.cartographicReport.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.ImageOptions.Image")));
+            this.cartographicReport.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("cartographicReport.ImageOptions.Image")));
             this.cartographicReport.Name = "cartographicReport";
             this.cartographicReport.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.cartographicReport.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem12_ItemClick_1);
@@ -1895,8 +1878,8 @@
             this.Classification.Appearance.Options.UseFont = true;
             this.Classification.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.RoiTools,
-            this.unSupervisedClassification,
             this.supervisedClassification,
+            this.unSupervisedClassification,
             this.postClassification,
             this.reClassifications});
             this.Classification.Name = "Classification";
@@ -1905,6 +1888,7 @@
             // RoiTools
             // 
             this.RoiTools.ItemLinks.Add(this.roiTool);
+            this.RoiTools.ItemLinks.Add(this.segmentAnythingModel);
             this.RoiTools.Name = "RoiTools";
             this.RoiTools.Text = "ROI工具";
             // 
@@ -1918,7 +1902,7 @@
             // supervisedClassification
             // 
             this.supervisedClassification.ItemLinks.Add(this.distanceClassification);
-            this.supervisedClassification.ItemLinks.Add(this.mlClassification);
+            this.supervisedClassification.ItemLinks.Add(this.mlClassification, true);
             this.supervisedClassification.Name = "supervisedClassification";
             this.supervisedClassification.Text = "监督分类";
             // 
@@ -1968,7 +1952,6 @@
             this.ribbonPage5.Appearance.Options.UseFont = true;
             this.ribbonPage5.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.MSPA景观分类,
-            this.ribbonPageGroup2,
             this.singleFactorResistanceSurface,
             this.comprehensiveResistanceSurface});
             this.ribbonPage5.Name = "ribbonPage5";
@@ -1981,13 +1964,6 @@
             this.MSPA景观分类.ItemLinks.Add(this.MSPAlandscapeclassification);
             this.MSPA景观分类.Name = "MSPA景观分类";
             this.MSPA景观分类.Text = "MSPA景观分类";
-            // 
-            // ribbonPageGroup2
-            // 
-            this.ribbonPageGroup2.ItemLinks.Add(this.SlopeProcessing);
-            this.ribbonPageGroup2.ItemLinks.Add(this.TerrainReliefProcessing);
-            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
-            this.ribbonPageGroup2.Text = "DEM数据处理";
             // 
             // singleFactorResistanceSurface
             // 
@@ -2683,6 +2659,15 @@
             this.popupMenu4.Name = "popupMenu4";
             this.popupMenu4.Ribbon = this.ribbonControl1;
             // 
+            // segmentAnythingModel
+            // 
+            this.segmentAnythingModel.Caption = "SAM模型";
+            this.segmentAnythingModel.Id = 183;
+            this.segmentAnythingModel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("segmentAnythingModel.ImageOptions.Image")));
+            this.segmentAnythingModel.Name = "segmentAnythingModel";
+            this.segmentAnythingModel.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.segmentAnythingModel.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.segmentAnythingModel_ItemClick);
+            // 
             // FormMain
             // 
             this.Appearance.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -2950,7 +2935,6 @@
         private DevExpress.XtraBars.BarButtonItem DataPreprocessing;
         private DevExpress.XtraBars.BarButtonItem MSPAlandscapeclassification;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup MSPA景观分类;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
         private DevExpress.XtraBars.BarButtonItem SlopeProcessing;
         private DevExpress.XtraBars.BarButtonItem TerrainReliefProcessing;
         private DevExpress.XtraBars.BarButtonItem ImportanceOfcore;
@@ -2998,6 +2982,7 @@
         private DevExpress.XtraBars.BarButtonItem coordinationDegree;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
         private DevExpress.XtraBars.BarButtonItem cartographicReport;
+        private DevExpress.XtraBars.BarButtonItem segmentAnythingModel;
     }
 }
 

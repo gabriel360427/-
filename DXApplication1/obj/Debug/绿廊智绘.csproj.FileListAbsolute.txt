@@ -1200,7 +1200,6 @@ C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Cust
 C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.contrastRatioParam.resources
 C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.createFeatureForm.resources
 C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.distanceClassifyForm.resources
-C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.imageClippingForm.resources
 C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.ISODATAForm.resources
 C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.kmeansForm.resources
 C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Commands.linearResistanceFactor.resources
@@ -1516,3 +1515,4 @@ C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Cust
 C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.drawingAndReporting.resources
 C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.landscapeFragmentationAnalysis.resources
 C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.studyAreaOverlayTreatment.resources
+C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.clippingThroughShapeFileForm.resources

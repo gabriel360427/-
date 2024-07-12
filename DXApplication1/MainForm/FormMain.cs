@@ -698,7 +698,6 @@ namespace 绿廊智绘
             PIE.AxControls.HistogramStatDialog frmSupervisedClassificaiton = new PIE.AxControls.HistogramStatDialog();
             frmSupervisedClassificaiton.Initialize(mapControlMain.FocusMap);
             frmSupervisedClassificaiton.ShowDialog();
-
             (frmSupervisedClassificaiton as IDisposable).Dispose();
             frmSupervisedClassificaiton = null;
         }
@@ -1001,6 +1000,45 @@ namespace 绿廊智绘
         }
         #endregion
 
+        #region 假彩色增强
+        private void falseColorEnhancement_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (mapControlMain.ActiveView.CurrentLayer == null) return;
+            //判断选择的图层是否为栅格图层
+            IRasterLayer rasterLayer = mapControlMain.ActiveView.CurrentLayer as IRasterLayer;
+            if (rasterLayer == null) return;
+            //初始化rgbRender
+            IRasterRGBRender rRGBRender = new PIE.Carto.RasterRGBRender();
+            //设置参数
+            rRGBRender.UseRedBand = true;
+            rRGBRender.UseGreenBand = true;
+            rRGBRender.UseBlueBand = true;
+            //根据栅格数据的波段数进行rgb波段索引设置，
+            rRGBRender.SetBandIndices(3, 2, 1);
+            //设置rasterrender
+            IRasterRender render = rRGBRender as IRasterRender;
+            rasterLayer.Render = render;
+            //刷新视图  
+            mapControlMain.ActiveView.PartialRefresh(ViewDrawPhaseType.ViewAll);
+        }
+        #endregion
+
+        #region IHS变换
+        //正变换
+        private void ihsPositiveTransform_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            ICommand cmd = new ihsPositiveTransformCommand();
+            cmd.OnCreate(mapControlMain);
+            cmd.OnClick();
+        }
+        //逆变换
+        private void ihsInverseTransform_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            ICommand cmd = new ihsInverseTransformCommand();
+            cmd.OnCreate(mapControlMain);
+            cmd.OnClick();
+        }
+        #endregion
         #endregion
 
         #region 三、影像处理
@@ -1202,6 +1240,13 @@ namespace 绿廊智绘
             {
                 MessageBox.Show("未加载栅格图层！");
             }
+        }
+        #endregion
+        #region SAM模型
+        private void segmentAnythingModel_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            segmentAnythingModelForm frm = new segmentAnythingModelForm();
+            frm.ShowDialog();
         }
         #endregion
 
@@ -1881,26 +1926,6 @@ namespace 绿廊智绘
         #endregion
         #endregion
 
-        #region 2. DEM数据处理
-      
-        #region 2.1 坡度
-        private void barButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            slope Form = new slope();
-            Form.ShowDialog();
-        }
-        #endregion
-
-        #region 2.2 地形起伏度
-        private void 地面起伏度_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            relief Form = new relief();
-            Form.ShowDialog();
-        }
-        #endregion
-
-        #endregion
-
         #region 3. 单因子阻力面
         #region 3.1 铁路因子
         private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -2197,83 +2222,36 @@ namespace 绿廊智绘
 
         #endregion
 
-        #region 八、富民进程可视化
-
-        #region 1. 生态农业
-        private void TimeSeriesCurve_ItemClick_2(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        #region 八、生态富民格局与协调性评估
+        private void barButtonItem23_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            timeSeriesCurveForm form = new timeSeriesCurveForm();
+            coordinationEvaluation form = new coordinationEvaluation();
             form.Show();
         }
 
-        private void barButtonItem5_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void barButtonItem12_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            surfaceResistanceFactor form = new surfaceResistanceFactor();
-            form.Text = "农业结构分类";
-            form.Column1.HeaderText = "作物";
-            form.Column2.HeaderText = "阻力值";
-            form.dataGridView1.Rows.Add(new object[] { "经济作物", "1" });
-            form.dataGridView1.Rows.Add(new object[] { "一般作物", "0" });
-            form.dataGridView1.Rows.Add(new object[] { "其它", "NoData" });
-            form.richTextBox1.Text = "★☆★农业结构分类说明\r\n●1：经济作物\r\n●0：一般作物\r\n●NoData：其它";
-            form.ShowDialog();
-        }
-
-        private void barButtonItem6_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            changeStatisticsForm form = new changeStatisticsForm();
+            drawingAndReporting form = new drawingAndReporting();
             form.Show();
         }
 
-        #endregion
-
-        #region 2. 城镇要素变化分析
-        private void barButtonItem7_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void barButtonItem15_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            landUseTypeTransferMatrixForm form = new landUseTypeTransferMatrixForm();
+            studyAreaOverlayTreatment form = new studyAreaOverlayTreatment();
             form.Show();
         }
 
-        private void barButtonItem11_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void barButtonItem19_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            poiChangeStatisticsForm form = new poiChangeStatisticsForm();
+            economicPatternTreatment form = new economicPatternTreatment();
             form.Show();
         }
 
-        private void barButtonItem12_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void barButtonItem22_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            roadChangeStatisticsForm form = new roadChangeStatisticsForm();
+            landscapeFragmentationAnalysis form = new landscapeFragmentationAnalysis();
             form.Show();
         }
-
-        private void segmentAnythingModel_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            segmentAnythingModelForm frm = new segmentAnythingModelForm();
-            frm.ShowDialog();
-        }
-        #endregion
-
-        #region 3. 景观格局分析
-        private void barButtonItem10_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            MessageBox.Show("请保持默认设置，不要随意改动！", "温馨提示", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            Process processexe = Process.Start(Application.StartupPath + "\\frg_setup_4.2.exe");//安装至默认位置
-        }
-
-        private void barButtonItem8_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            try
-            {
-                Process proexe = Process.Start(@"C:\Program Files (x86)\Fragstats 4\frg_gui.exe");
-            }
-            catch
-            {
-                MessageBox.Show("应用打开失败，请检查是否配置好环境！");
-            }
-            referenceSuggestion form = new referenceSuggestion();
-            form.ShowDialog();
-        }
-        #endregion
 
         #endregion
 
@@ -2474,39 +2452,5 @@ namespace 绿廊智绘
 
         #endregion
 
-        private void barButtonItem23_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            coordinationEvaluation form = new coordinationEvaluation();
-            form.Show();
-        }
-
-        private void barButtonItem12_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            drawingAndReporting form = new drawingAndReporting();
-            form.Show();
-        }
-
-        private void barButtonItem15_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            studyAreaOverlayTreatment form = new studyAreaOverlayTreatment();
-            form.Show();
-        }
-
-        private void barButtonItem19_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            economicPatternTreatment form = new economicPatternTreatment();
-            form.Show();
-        }
-
-        private void barButtonItem22_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            landscapeFragmentationAnalysis form = new landscapeFragmentationAnalysis();
-            form.Show();
-        }
-
-        private void falseColorEnhancement_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-
-        }
     }
 }
