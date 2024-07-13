@@ -42,10 +42,10 @@
             // selectoutputfile
             // 
             this.selectoutputfile.Font = new System.Drawing.Font("等线", 12F);
-            this.selectoutputfile.Location = new System.Drawing.Point(381, 80);
+            this.selectoutputfile.Location = new System.Drawing.Point(444, 93);
             this.selectoutputfile.Margin = new System.Windows.Forms.Padding(2);
             this.selectoutputfile.Name = "selectoutputfile";
-            this.selectoutputfile.Size = new System.Drawing.Size(70, 25);
+            this.selectoutputfile.Size = new System.Drawing.Size(82, 29);
             this.selectoutputfile.TabIndex = 22;
             this.selectoutputfile.Text = "浏览";
             this.selectoutputfile.UseVisualStyleBackColor = true;
@@ -54,10 +54,10 @@
             // selectImage
             // 
             this.selectImage.Font = new System.Drawing.Font("等线", 12F);
-            this.selectImage.Location = new System.Drawing.Point(381, 31);
+            this.selectImage.Location = new System.Drawing.Point(444, 36);
             this.selectImage.Margin = new System.Windows.Forms.Padding(2);
             this.selectImage.Name = "selectImage";
-            this.selectImage.Size = new System.Drawing.Size(70, 25);
+            this.selectImage.Size = new System.Drawing.Size(82, 29);
             this.selectImage.TabIndex = 21;
             this.selectImage.Text = "浏览";
             this.selectImage.UseVisualStyleBackColor = true;
@@ -66,10 +66,10 @@
             // cancelBtn
             // 
             this.cancelBtn.Font = new System.Drawing.Font("等线", 12F);
-            this.cancelBtn.Location = new System.Drawing.Point(305, 140);
+            this.cancelBtn.Location = new System.Drawing.Point(356, 163);
             this.cancelBtn.Margin = new System.Windows.Forms.Padding(2);
             this.cancelBtn.Name = "cancelBtn";
-            this.cancelBtn.Size = new System.Drawing.Size(72, 39);
+            this.cancelBtn.Size = new System.Drawing.Size(84, 45);
             this.cancelBtn.TabIndex = 20;
             this.cancelBtn.Text = "取消";
             this.cancelBtn.UseVisualStyleBackColor = true;
@@ -78,10 +78,10 @@
             // btnRunScript
             // 
             this.btnRunScript.Font = new System.Drawing.Font("等线", 12F);
-            this.btnRunScript.Location = new System.Drawing.Point(138, 140);
+            this.btnRunScript.Location = new System.Drawing.Point(161, 163);
             this.btnRunScript.Margin = new System.Windows.Forms.Padding(2);
             this.btnRunScript.Name = "btnRunScript";
-            this.btnRunScript.Size = new System.Drawing.Size(75, 39);
+            this.btnRunScript.Size = new System.Drawing.Size(87, 45);
             this.btnRunScript.TabIndex = 19;
             this.btnRunScript.Text = "确定";
             this.btnRunScript.UseVisualStyleBackColor = true;
@@ -90,17 +90,17 @@
             // outputfileBox
             // 
             this.outputfileBox.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.outputfileBox.Location = new System.Drawing.Point(138, 79);
+            this.outputfileBox.Location = new System.Drawing.Point(161, 92);
             this.outputfileBox.Margin = new System.Windows.Forms.Padding(2);
             this.outputfileBox.Name = "outputfileBox";
-            this.outputfileBox.Size = new System.Drawing.Size(239, 25);
+            this.outputfileBox.Size = new System.Drawing.Size(278, 25);
             this.outputfileBox.TabIndex = 18;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("等线", 12F);
-            this.label3.Location = new System.Drawing.Point(11, 84);
+            this.label3.Location = new System.Drawing.Point(13, 98);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(104, 17);
@@ -110,17 +110,17 @@
             // inputfileBox
             // 
             this.inputfileBox.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.inputfileBox.Location = new System.Drawing.Point(138, 31);
+            this.inputfileBox.Location = new System.Drawing.Point(161, 36);
             this.inputfileBox.Margin = new System.Windows.Forms.Padding(2);
             this.inputfileBox.Name = "inputfileBox";
-            this.inputfileBox.Size = new System.Drawing.Size(239, 25);
+            this.inputfileBox.Size = new System.Drawing.Size(278, 25);
             this.inputfileBox.TabIndex = 16;
             // 
             // txtImagePath
             // 
             this.txtImagePath.AutoSize = true;
             this.txtImagePath.Font = new System.Drawing.Font("等线", 12F);
-            this.txtImagePath.Location = new System.Drawing.Point(11, 35);
+            this.txtImagePath.Location = new System.Drawing.Point(13, 41);
             this.txtImagePath.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.txtImagePath.Name = "txtImagePath";
             this.txtImagePath.Size = new System.Drawing.Size(136, 17);
@@ -129,9 +129,9 @@
             // 
             // segmentAnythingModelForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(462, 222);
+            this.ClientSize = new System.Drawing.Size(539, 259);
             this.Controls.Add(this.selectoutputfile);
             this.Controls.Add(this.selectImage);
             this.Controls.Add(this.cancelBtn);
@@ -143,6 +143,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "segmentAnythingModelForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SAM面向对象分割";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -175,8 +175,8 @@
             this.patternExtraction = new DevExpress.XtraBars.BarButtonItem();
             this.landscapeFragmentation = new DevExpress.XtraBars.BarButtonItem();
             this.coordinationDegree = new DevExpress.XtraBars.BarButtonItem();
-            this.cartographicReport = new DevExpress.XtraBars.BarButtonItem();
             this.segmentAnythingModel = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.BASEMENT = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.mapProject = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.dataManagement = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -454,11 +454,11 @@
             this.patternExtraction,
             this.landscapeFragmentation,
             this.coordinationDegree,
-            this.cartographicReport,
-            this.segmentAnythingModel});
+            this.segmentAnythingModel,
+            this.barButtonItem1});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.ribbonControl1.MaxItemId = 184;
+            this.ribbonControl1.MaxItemId = 185;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.BASEMENT,
@@ -1706,15 +1706,6 @@
             this.coordinationDegree.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.coordinationDegree.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem23_ItemClick);
             // 
-            // cartographicReport
-            // 
-            this.cartographicReport.Caption = "制图报告";
-            this.cartographicReport.Id = 177;
-            this.cartographicReport.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("cartographicReport.ImageOptions.Image")));
-            this.cartographicReport.Name = "cartographicReport";
-            this.cartographicReport.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.cartographicReport.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem12_ItemClick_1);
-            // 
             // segmentAnythingModel
             // 
             this.segmentAnythingModel.Caption = "SAM模型";
@@ -1723,6 +1714,15 @@
             this.segmentAnythingModel.Name = "segmentAnythingModel";
             this.segmentAnythingModel.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.segmentAnythingModel.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.segmentAnythingModel_ItemClick);
+            // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "面向对象分类";
+            this.barButtonItem1.Id = 184;
+            this.barButtonItem1.ImageOptions.Image = global::绿廊智绘.Properties.Resources.PolSAR_HAAlphaClassification;
+            this.barButtonItem1.Name = "barButtonItem1";
+            this.barButtonItem1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick_2);
             // 
             // BASEMENT
             // 
@@ -1907,6 +1907,7 @@
             // 
             this.supervisedClassification.ItemLinks.Add(this.distanceClassification);
             this.supervisedClassification.ItemLinks.Add(this.mlClassification, true);
+            this.supervisedClassification.ItemLinks.Add(this.barButtonItem1);
             this.supervisedClassification.Name = "supervisedClassification";
             this.supervisedClassification.Text = "监督分类";
             // 
@@ -2034,7 +2035,9 @@
             // ribbonPage3
             // 
             this.ribbonPage3.Appearance.Font = new System.Drawing.Font("黑体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ribbonPage3.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ribbonPage3.Appearance.Options.UseFont = true;
+            this.ribbonPage3.Appearance.Options.UseForeColor = true;
             this.ribbonPage3.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup3});
             this.ribbonPage3.Name = "ribbonPage3";
@@ -2046,7 +2049,6 @@
             this.ribbonPageGroup3.ItemLinks.Add(this.patternExtraction);
             this.ribbonPageGroup3.ItemLinks.Add(this.landscapeFragmentation);
             this.ribbonPageGroup3.ItemLinks.Add(this.coordinationDegree);
-            this.ribbonPageGroup3.ItemLinks.Add(this.cartographicReport);
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             this.ribbonPageGroup3.Text = "生态富民协调度评估";
             // 
@@ -2983,8 +2985,8 @@
         private DevExpress.XtraBars.BarButtonItem landscapeFragmentation;
         private DevExpress.XtraBars.BarButtonItem coordinationDegree;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
-        private DevExpress.XtraBars.BarButtonItem cartographicReport;
         private DevExpress.XtraBars.BarButtonItem segmentAnythingModel;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
     }
 }
 

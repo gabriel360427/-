@@ -58,18 +58,18 @@ namespace 绿廊智绘.Custom_Forms
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.comboBox2);
             this.groupBox2.Font = new System.Drawing.Font("等线", 12F);
-            this.groupBox2.Location = new System.Drawing.Point(12, 12);
+            this.groupBox2.Location = new System.Drawing.Point(14, 14);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(313, 55);
+            this.groupBox2.Size = new System.Drawing.Size(365, 64);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "输入富民格局提取结果";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(232, 20);
+            this.button2.Location = new System.Drawing.Point(271, 23);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 29);
+            this.button2.Size = new System.Drawing.Size(87, 34);
             this.button2.TabIndex = 1;
             this.button2.Text = "加载";
             this.button2.UseVisualStyleBackColor = true;
@@ -78,9 +78,9 @@ namespace 绿廊智绘.Custom_Forms
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(7, 21);
+            this.comboBox2.Location = new System.Drawing.Point(8, 24);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(190, 25);
+            this.comboBox2.Size = new System.Drawing.Size(221, 25);
             this.comboBox2.TabIndex = 0;
             // 
             // groupBox1
@@ -88,18 +88,18 @@ namespace 绿廊智绘.Custom_Forms
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Font = new System.Drawing.Font("等线", 12F);
-            this.groupBox1.Location = new System.Drawing.Point(12, 73);
+            this.groupBox1.Location = new System.Drawing.Point(14, 85);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(313, 55);
+            this.groupBox1.Size = new System.Drawing.Size(365, 64);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "输入景观破碎度分布结果";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(232, 21);
+            this.button1.Location = new System.Drawing.Point(271, 24);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 25);
+            this.button1.Size = new System.Drawing.Size(87, 29);
             this.button1.TabIndex = 1;
             this.button1.Text = "加载";
             this.button1.UseVisualStyleBackColor = true;
@@ -108,9 +108,9 @@ namespace 绿廊智绘.Custom_Forms
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(7, 21);
+            this.comboBox1.Location = new System.Drawing.Point(8, 24);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(190, 25);
+            this.comboBox1.Size = new System.Drawing.Size(221, 25);
             this.comboBox1.TabIndex = 0;
             // 
             // groupBox3
@@ -121,18 +121,18 @@ namespace 绿廊智绘.Custom_Forms
             this.groupBox3.Controls.Add(this.textBox1);
             this.groupBox3.Controls.Add(this.label1);
             this.groupBox3.Font = new System.Drawing.Font("等线", 12F);
-            this.groupBox3.Location = new System.Drawing.Point(12, 134);
+            this.groupBox3.Location = new System.Drawing.Point(14, 156);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(313, 114);
+            this.groupBox3.Size = new System.Drawing.Size(365, 133);
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "参数设定";
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(187, 77);
+            this.button3.Location = new System.Drawing.Point(218, 90);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(120, 23);
+            this.button3.Size = new System.Drawing.Size(140, 27);
             this.button3.TabIndex = 4;
             this.button3.Text = "使用默认参数";
             this.button3.UseVisualStyleBackColor = true;
@@ -140,16 +140,16 @@ namespace 绿廊智绘.Custom_Forms
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(207, 47);
+            this.textBox2.Location = new System.Drawing.Point(241, 55);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 24);
+            this.textBox2.Size = new System.Drawing.Size(116, 24);
             this.textBox2.TabIndex = 3;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 54);
+            this.label2.Location = new System.Drawing.Point(21, 63);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(184, 17);
             this.label2.TabIndex = 2;
@@ -157,16 +157,16 @@ namespace 绿廊智绘.Custom_Forms
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(207, 21);
+            this.textBox1.Location = new System.Drawing.Point(241, 24);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 24);
+            this.textBox1.Size = new System.Drawing.Size(116, 24);
             this.textBox1.TabIndex = 1;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 28);
+            this.label1.Location = new System.Drawing.Point(21, 33);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(152, 17);
             this.label1.TabIndex = 0;
@@ -177,18 +177,18 @@ namespace 绿廊智绘.Custom_Forms
             this.groupBox4.Controls.Add(this.button4);
             this.groupBox4.Controls.Add(this.comboBox3);
             this.groupBox4.Font = new System.Drawing.Font("等线", 12F);
-            this.groupBox4.Location = new System.Drawing.Point(12, 254);
+            this.groupBox4.Location = new System.Drawing.Point(14, 296);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(313, 55);
+            this.groupBox4.Size = new System.Drawing.Size(365, 64);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "选择输出文件位置";
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(232, 18);
+            this.button4.Location = new System.Drawing.Point(271, 21);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 29);
+            this.button4.Size = new System.Drawing.Size(87, 34);
             this.button4.TabIndex = 1;
             this.button4.Text = "加载";
             this.button4.UseVisualStyleBackColor = true;
@@ -197,17 +197,17 @@ namespace 绿廊智绘.Custom_Forms
             // comboBox3
             // 
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(7, 21);
+            this.comboBox3.Location = new System.Drawing.Point(8, 24);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(190, 25);
+            this.comboBox3.Size = new System.Drawing.Size(221, 25);
             this.comboBox3.TabIndex = 0;
             // 
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("等线", 12F);
-            this.button5.Location = new System.Drawing.Point(134, 325);
+            this.button5.Location = new System.Drawing.Point(156, 379);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 34);
+            this.button5.Size = new System.Drawing.Size(87, 40);
             this.button5.TabIndex = 4;
             this.button5.Text = "确定";
             this.button5.UseVisualStyleBackColor = true;
@@ -216,9 +216,9 @@ namespace 绿廊智绘.Custom_Forms
             // button6
             // 
             this.button6.Font = new System.Drawing.Font("等线", 12F);
-            this.button6.Location = new System.Drawing.Point(244, 325);
+            this.button6.Location = new System.Drawing.Point(285, 379);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 34);
+            this.button6.Size = new System.Drawing.Size(87, 40);
             this.button6.TabIndex = 5;
             this.button6.Text = "取消";
             this.button6.UseVisualStyleBackColor = true;
@@ -226,9 +226,9 @@ namespace 绿廊智绘.Custom_Forms
             // 
             // coordinationEvaluation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(352, 391);
+            this.ClientSize = new System.Drawing.Size(411, 456);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.groupBox4);
@@ -237,6 +237,7 @@ namespace 绿廊智绘.Custom_Forms
             this.Controls.Add(this.groupBox2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "coordinationEvaluation";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "生态富民协调度评估";
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

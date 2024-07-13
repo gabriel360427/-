@@ -42,5 +42,9 @@ namespace 绿廊智绘.Custom_Forms
             this.Close();
         }
 
+        private void brightnessConfirm_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

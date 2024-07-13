@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace 绿廊智绘.Custom_Forms
 {
-    public partial class landscapeFragmentationAnalysis : Form
+    public partial class landscapeFragmentationAnalysis : DevExpress.XtraEditors.XtraForm
     {
         public landscapeFragmentationAnalysis()
         {
             InitializeComponent();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -12,7 +12,7 @@ using System.IO;
 
 namespace 绿廊智绘.Custom_Forms
 {
-    public partial class coordinationEvaluation : Form
+    public partial class coordinationEvaluation : DevExpress.XtraEditors.XtraForm
     {
         public coordinationEvaluation()
         {

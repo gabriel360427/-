@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace 绿廊智绘.Custom_Forms
 {
-    public partial class inputTimeForm : Form
+    public partial class inputTimeForm : DevExpress.XtraEditors.XtraForm
     {
         public inputTimeForm()
         {

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace 绿廊智绘.Custom_Forms
 {
-    public partial class economicPatternTreatment : Form
+    public partial class economicPatternTreatment : DevExpress.XtraEditors.XtraForm
     {
         public economicPatternTreatment()
         {
@@ -23,6 +23,11 @@ namespace 绿廊智绘.Custom_Forms
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
         {
 
         }

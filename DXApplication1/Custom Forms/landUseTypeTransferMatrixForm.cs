@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace 绿廊智绘.Custom_Forms
 {
-    public partial class landUseTypeTransferMatrixForm : Form
+    public partial class landUseTypeTransferMatrixForm : DevExpress.XtraEditors.XtraForm
     {
         public landUseTypeTransferMatrixForm()
         {

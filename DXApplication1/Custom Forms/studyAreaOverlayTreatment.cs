@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace 绿廊智绘.Custom_Forms
 {
-    public partial class studyAreaOverlayTreatment : Form
+    public partial class studyAreaOverlayTreatment : DevExpress.XtraEditors.XtraForm
     {
         public studyAreaOverlayTreatment()
         {
@@ -28,6 +28,11 @@ namespace 绿廊智绘.Custom_Forms
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
         {
 
         }

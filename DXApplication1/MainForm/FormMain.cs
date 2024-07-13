@@ -1337,6 +1337,7 @@ namespace 绿廊智绘
         #endregion
 
         #region 3. 监督分类
+
         PIE.CommonAlgo.SupervisedClassification_Exchange_Info m_DataInfo = new SupervisedClassification_Exchange_Info();
 
         void systemEvents_OnExecuteCompleted(ISystemAlgo algo)
@@ -1470,6 +1471,15 @@ namespace 绿廊智绘
             #endregion
         }
         #endregion
+
+        #region 3.3 面向对象分类
+        private void barButtonItem1_ItemClick_2(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            ObjectOrientedclassification frm = new ObjectOrientedclassification();
+            frm.Show();
+        }
+        #endregion
+
 
         #endregion
 
@@ -2236,12 +2246,6 @@ namespace 绿廊智绘
             form.Show();
         }
 
-        private void barButtonItem12_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            drawingAndReporting form = new drawingAndReporting();
-            form.Show();
-        }
-
         private void barButtonItem15_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             studyAreaOverlayTreatment form = new studyAreaOverlayTreatment();
@@ -2430,34 +2434,8 @@ namespace 绿廊智绘
             Process.Start(new ProcessStartInfo("cmd", "/c start {htmlFilePath}") { CreateNoWindow = true });
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         #endregion
+
 
     }
 }

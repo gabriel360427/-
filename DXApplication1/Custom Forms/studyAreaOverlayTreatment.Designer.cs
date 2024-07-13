@@ -218,6 +218,7 @@ namespace 绿廊智绘.Custom_Forms
             this.button4.TabIndex = 4;
             this.button4.Text = "确定";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -242,6 +243,7 @@ namespace 绿廊智绘.Custom_Forms
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "studyAreaOverlayTreatment";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "研究区叠置处理";
             this.Load += new System.EventHandler(this.studyAreaOverlayTreatment_Load);
             this.groupBox1.ResumeLayout(false);

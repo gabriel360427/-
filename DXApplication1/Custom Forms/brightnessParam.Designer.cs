@@ -49,7 +49,7 @@
             // numericUpDownBrightness
             // 
             this.numericUpDownBrightness.Location = new System.Drawing.Point(68, 28);
-            this.numericUpDownBrightness.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownBrightness.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownBrightness.Name = "numericUpDownBrightness";
             this.numericUpDownBrightness.Size = new System.Drawing.Size(166, 22);
             this.numericUpDownBrightness.TabIndex = 1;
@@ -63,19 +63,20 @@
             // 
             this.brightnessConfirm.Font = new System.Drawing.Font("宋体", 10.5F);
             this.brightnessConfirm.Location = new System.Drawing.Point(19, 70);
-            this.brightnessConfirm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.brightnessConfirm.Margin = new System.Windows.Forms.Padding(2);
             this.brightnessConfirm.Name = "brightnessConfirm";
             this.brightnessConfirm.Size = new System.Drawing.Size(93, 28);
             this.brightnessConfirm.TabIndex = 2;
             this.brightnessConfirm.Text = "确定";
             this.brightnessConfirm.UseVisualStyleBackColor = true;
+            this.brightnessConfirm.Click += new System.EventHandler(this.brightnessConfirm_Click);
             this.brightnessConfirm.MouseClick += new System.Windows.Forms.MouseEventHandler(this.brightnessBtnConfirm);
             // 
             // brightnessCancel
             // 
             this.brightnessCancel.Font = new System.Drawing.Font("等线", 10.5F);
             this.brightnessCancel.Location = new System.Drawing.Point(138, 70);
-            this.brightnessCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.brightnessCancel.Margin = new System.Windows.Forms.Padding(2);
             this.brightnessCancel.Name = "brightnessCancel";
             this.brightnessCancel.Size = new System.Drawing.Size(93, 28);
             this.brightnessCancel.TabIndex = 3;
@@ -95,7 +96,7 @@
             this.Controls.Add(this.numericUpDownBrightness);
             this.Controls.Add(this.labelBrightness);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "brightnessParam";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "输入亮度值";

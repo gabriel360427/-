@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace 绿廊智绘.Custom_Forms
 {
-    public partial class createFeatureForm : Form
+    public partial class createFeatureForm : DevExpress.XtraEditors.XtraForm
     {
         public createFeatureForm()
         {

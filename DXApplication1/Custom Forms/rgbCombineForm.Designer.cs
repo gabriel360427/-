@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(rgbCombineForm));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.BlueBandNum = new System.Windows.Forms.NumericUpDown();
             this.GreenBandNum = new System.Windows.Forms.NumericUpDown();
             this.RedBandNum = new System.Windows.Forms.NumericUpDown();
             this.button2 = new System.Windows.Forms.Button();
@@ -37,11 +38,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.BlueBandNum = new System.Windows.Forms.NumericUpDown();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BlueBandNum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GreenBandNum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RedBandNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BlueBandNum)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -61,6 +61,24 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "请输入波段组合";
+            // 
+            // BlueBandNum
+            // 
+            this.BlueBandNum.Location = new System.Drawing.Point(79, 129);
+            this.BlueBandNum.Margin = new System.Windows.Forms.Padding(2);
+            this.BlueBandNum.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.BlueBandNum.Name = "BlueBandNum";
+            this.BlueBandNum.Size = new System.Drawing.Size(168, 24);
+            this.BlueBandNum.TabIndex = 10;
+            this.BlueBandNum.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // GreenBandNum
             // 
@@ -148,38 +166,22 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Red：";
             // 
-            // BlueBandNum
-            // 
-            this.BlueBandNum.Location = new System.Drawing.Point(79, 129);
-            this.BlueBandNum.Margin = new System.Windows.Forms.Padding(2);
-            this.BlueBandNum.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.BlueBandNum.Name = "BlueBandNum";
-            this.BlueBandNum.Size = new System.Drawing.Size(168, 24);
-            this.BlueBandNum.TabIndex = 10;
-            this.BlueBandNum.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
             // rgbCombineForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(259, 231);
             this.Controls.Add(this.groupBox1);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "rgbCombineForm";
-            this.Text = "rgbCombineForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "彩色合成";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BlueBandNum)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GreenBandNum)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RedBandNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BlueBandNum)).EndInit();
             this.ResumeLayout(false);
 
         }

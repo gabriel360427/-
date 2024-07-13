@@ -76,7 +76,7 @@
             // 
             this.atmosConfirm.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.atmosConfirm.Location = new System.Drawing.Point(166, 474);
-            this.atmosConfirm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.atmosConfirm.Margin = new System.Windows.Forms.Padding(2);
             this.atmosConfirm.Name = "atmosConfirm";
             this.atmosConfirm.Size = new System.Drawing.Size(108, 35);
             this.atmosConfirm.TabIndex = 18;
@@ -88,7 +88,7 @@
             // 
             this.atmosCancel.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.atmosCancel.Location = new System.Drawing.Point(403, 474);
-            this.atmosCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.atmosCancel.Margin = new System.Windows.Forms.Padding(2);
             this.atmosCancel.Name = "atmosCancel";
             this.atmosCancel.Size = new System.Drawing.Size(108, 35);
             this.atmosCancel.TabIndex = 19;
@@ -114,7 +114,7 @@
             "是",
             "否"});
             this.airosolYesOrNo.Location = new System.Drawing.Point(363, 104);
-            this.airosolYesOrNo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.airosolYesOrNo.Margin = new System.Windows.Forms.Padding(2);
             this.airosolYesOrNo.Name = "airosolYesOrNo";
             this.airosolYesOrNo.Size = new System.Drawing.Size(167, 25);
             this.airosolYesOrNo.TabIndex = 16;
@@ -142,7 +142,7 @@
             "煤烟型气溶胶",
             "平流层型气溶胶"});
             this.airosolPattern.Location = new System.Drawing.Point(122, 62);
-            this.airosolPattern.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.airosolPattern.Margin = new System.Windows.Forms.Padding(2);
             this.airosolPattern.Name = "airosolPattern";
             this.airosolPattern.Size = new System.Drawing.Size(408, 25);
             this.airosolPattern.TabIndex = 15;
@@ -171,7 +171,7 @@
             "副极地冬季大气模式",
             "美国1962大气模式"});
             this.atmosPattern.Location = new System.Drawing.Point(122, 19);
-            this.atmosPattern.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.atmosPattern.Margin = new System.Windows.Forms.Padding(2);
             this.atmosPattern.Name = "atmosPattern";
             this.atmosPattern.Size = new System.Drawing.Size(408, 25);
             this.atmosPattern.TabIndex = 14;
@@ -202,7 +202,7 @@
             // visibility
             // 
             this.visibility.Location = new System.Drawing.Point(115, 107);
-            this.visibility.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.visibility.Margin = new System.Windows.Forms.Padding(2);
             this.visibility.Name = "visibility";
             this.visibility.Size = new System.Drawing.Size(64, 23);
             this.visibility.TabIndex = 12;
@@ -218,9 +218,9 @@
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(48, 21);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(542, 216);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -230,7 +230,7 @@
             // 
             this.selectMetadata.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.selectMetadata.Location = new System.Drawing.Point(449, 174);
-            this.selectMetadata.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.selectMetadata.Margin = new System.Windows.Forms.Padding(2);
             this.selectMetadata.Name = "selectMetadata";
             this.selectMetadata.Size = new System.Drawing.Size(81, 31);
             this.selectMetadata.TabIndex = 6;
@@ -242,7 +242,7 @@
             // 
             this.selectImage.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.selectImage.Location = new System.Drawing.Point(449, 137);
-            this.selectImage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.selectImage.Margin = new System.Windows.Forms.Padding(2);
             this.selectImage.Name = "selectImage";
             this.selectImage.Size = new System.Drawing.Size(81, 31);
             this.selectImage.TabIndex = 5;
@@ -253,7 +253,7 @@
             // inputMetadata
             // 
             this.inputMetadata.Location = new System.Drawing.Point(122, 177);
-            this.inputMetadata.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.inputMetadata.Margin = new System.Windows.Forms.Padding(2);
             this.inputMetadata.Name = "inputMetadata";
             this.inputMetadata.Size = new System.Drawing.Size(323, 23);
             this.inputMetadata.TabIndex = 4;
@@ -261,7 +261,7 @@
             // inputImage
             // 
             this.inputImage.Location = new System.Drawing.Point(122, 142);
-            this.inputImage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.inputImage.Margin = new System.Windows.Forms.Padding(2);
             this.inputImage.Name = "inputImage";
             this.inputImage.Size = new System.Drawing.Size(323, 23);
             this.inputImage.TabIndex = 3;
@@ -294,9 +294,9 @@
             this.groupBox2.Controls.Add(this.EpigeneticBrightness);
             this.groupBox2.Controls.Add(this.DN);
             this.groupBox2.Location = new System.Drawing.Point(14, 22);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(504, 103);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
@@ -307,7 +307,7 @@
             this.EpigeneticReflectance.AutoSize = true;
             this.EpigeneticReflectance.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.EpigeneticReflectance.Location = new System.Drawing.Point(391, 47);
-            this.EpigeneticReflectance.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EpigeneticReflectance.Margin = new System.Windows.Forms.Padding(2);
             this.EpigeneticReflectance.Name = "EpigeneticReflectance";
             this.EpigeneticReflectance.Size = new System.Drawing.Size(97, 24);
             this.EpigeneticReflectance.TabIndex = 2;
@@ -321,7 +321,7 @@
             this.EpigeneticBrightness.AutoSize = true;
             this.EpigeneticBrightness.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.EpigeneticBrightness.Location = new System.Drawing.Point(191, 47);
-            this.EpigeneticBrightness.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EpigeneticBrightness.Margin = new System.Windows.Forms.Padding(2);
             this.EpigeneticBrightness.Name = "EpigeneticBrightness";
             this.EpigeneticBrightness.Size = new System.Drawing.Size(97, 24);
             this.EpigeneticBrightness.TabIndex = 1;
@@ -336,7 +336,7 @@
             this.DN.Checked = true;
             this.DN.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.DN.Location = new System.Drawing.Point(5, 47);
-            this.DN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DN.Margin = new System.Windows.Forms.Padding(2);
             this.DN.Name = "DN";
             this.DN.Size = new System.Drawing.Size(63, 24);
             this.DN.TabIndex = 0;
@@ -360,7 +360,7 @@
             // 
             this.outputImage.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.outputImage.Location = new System.Drawing.Point(497, 401);
-            this.outputImage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.outputImage.Margin = new System.Windows.Forms.Padding(2);
             this.outputImage.Name = "outputImage";
             this.outputImage.Size = new System.Drawing.Size(81, 32);
             this.outputImage.TabIndex = 7;
@@ -371,7 +371,7 @@
             // outputFile
             // 
             this.outputFile.Location = new System.Drawing.Point(166, 408);
-            this.outputFile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.outputFile.Margin = new System.Windows.Forms.Padding(2);
             this.outputFile.Name = "outputFile";
             this.outputFile.Size = new System.Drawing.Size(323, 22);
             this.outputFile.TabIndex = 7;
@@ -397,8 +397,11 @@
             // 
             // atmosphericCorrectionForm
             // 
-            this.Appearance.BackColor = System.Drawing.Color.White;
+            this.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(178)))), ((int)(((byte)(197)))));
+            this.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(178)))), ((int)(((byte)(197)))));
             this.Appearance.Options.UseBackColor = true;
+            this.Appearance.Options.UseBorderColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(674, 548);
@@ -410,7 +413,7 @@
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.groupBox3);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "atmosphericCorrectionForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "大气校正";

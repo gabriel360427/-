@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CSkin">
+      <HintPath>D:\Program Files (x86)\Microsoft Visual Studio\CSkin 16.1.14.3\CSkin 4.0\CSkin.dll</HintPath>
+    </Reference>
     <Reference Include="DevExpress.BonusSkins.v18.1" />
     <Reference Include="DevExpress.Data.v18.1" />
     <Reference Include="DevExpress.Map.v18.1.Core, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -123,6 +126,7 @@
     <Reference Include="PIE.Utility, Version=5.2.0.0, Culture=neutral, PublicKeyToken=ee1bc88606bd5383" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
     <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -213,17 +217,17 @@
     <Compile Include="Custom Forms\coordinationEvaluation.Designer.cs">
       <DependentUpon>coordinationEvaluation.cs</DependentUpon>
     </Compile>
-    <Compile Include="Custom Forms\drawingAndReporting.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Custom Forms\drawingAndReporting.Designer.cs">
-      <DependentUpon>drawingAndReporting.cs</DependentUpon>
-    </Compile>
     <Compile Include="Custom Forms\landscapeFragmentationAnalysis.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Custom Forms\landscapeFragmentationAnalysis.Designer.cs">
       <DependentUpon>landscapeFragmentationAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Forms\ObjectOrientedclassification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\ObjectOrientedclassification.designer.cs">
+      <DependentUpon>ObjectOrientedclassification.cs</DependentUpon>
     </Compile>
     <Compile Include="Custom Forms\rgbCombineForm.cs">
       <SubType>Form</SubType>
@@ -468,14 +472,14 @@
     <EmbeddedResource Include="Custom Forms\coordinationEvaluation.resx">
       <DependentUpon>coordinationEvaluation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Custom Forms\drawingAndReporting.resx">
-      <DependentUpon>drawingAndReporting.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\landscapeFragmentationAnalysis.resx">
       <DependentUpon>landscapeFragmentationAnalysis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\inputTimeForm.resx">
       <DependentUpon>inputTimeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\ObjectOrientedclassification.resx">
+      <DependentUpon>ObjectOrientedclassification.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\poiChangeStatisticsForm.resx">
       <DependentUpon>poiChangeStatisticsForm.cs</DependentUpon>

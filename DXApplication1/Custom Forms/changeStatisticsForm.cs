@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace 绿廊智绘.Custom_Forms
 {
-    public partial class changeStatisticsForm : Form
+    public partial class changeStatisticsForm : DevExpress.XtraEditors.XtraForm
     {
         public changeStatisticsForm()
         {
@@ -78,5 +78,6 @@ namespace 绿廊智绘.Custom_Forms
             // 将内容设置到 RichTextBox
             结果框.Text = sb.ToString();
         }
+
     }
 }

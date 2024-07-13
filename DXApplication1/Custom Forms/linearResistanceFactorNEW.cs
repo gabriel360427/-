@@ -32,7 +32,7 @@ using ESRI.ArcGIS.DataSourcesRaster;
 
 namespace 绿廊智绘.Custom_Forms
 {
-    public partial class LinearResistenceFactorNEW : Form
+    public partial class LinearResistenceFactorNEW : DevExpress.XtraEditors.XtraForm
     {
         public LinearResistenceFactorNEW()
         {

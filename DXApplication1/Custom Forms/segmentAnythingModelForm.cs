@@ -12,7 +12,7 @@ using System.IO;
 
 namespace 绿廊智绘.Custom_Forms
 {
-    public partial class segmentAnythingModelForm : Form
+    public partial class segmentAnythingModelForm : DevExpress.XtraEditors.XtraForm
     {
         public segmentAnythingModelForm()
         {
