@@ -223,6 +223,12 @@
     <Compile Include="Custom Forms\landscapeFragmentationAnalysis.Designer.cs">
       <DependentUpon>landscapeFragmentationAnalysis.cs</DependentUpon>
     </Compile>
+    <Compile Include="Custom Forms\ndviBandOperationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\ndviBandOperationForm.designer.cs">
+      <DependentUpon>ndviBandOperationForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Custom Forms\ObjectOrientedclassification.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -477,6 +483,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\inputTimeForm.resx">
       <DependentUpon>inputTimeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\ndviBandOperationForm.resx">
+      <DependentUpon>ndviBandOperationForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\ObjectOrientedclassification.resx">
       <DependentUpon>ObjectOrientedclassification.cs</DependentUpon>

@@ -177,6 +177,8 @@
             this.coordinationDegree = new DevExpress.XtraBars.BarButtonItem();
             this.segmentAnythingModel = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
             this.BASEMENT = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.mapProject = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.dataManagement = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -194,6 +196,7 @@
             this.imageMosaic = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.imageClip = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.bandProcessing = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.Classification = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.RoiTools = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.supervisedClassification = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -455,10 +458,12 @@
             this.landscapeFragmentation,
             this.coordinationDegree,
             this.segmentAnythingModel,
-            this.barButtonItem1});
+            this.barButtonItem1,
+            this.barButtonItem6,
+            this.barButtonItem7});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.ribbonControl1.MaxItemId = 185;
+            this.ribbonControl1.MaxItemId = 187;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.BASEMENT,
@@ -1724,6 +1729,23 @@
             this.barButtonItem1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick_2);
             // 
+            // barButtonItem6
+            // 
+            this.barButtonItem6.Caption = "NDWI计算";
+            this.barButtonItem6.Id = 185;
+            this.barButtonItem6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.Image")));
+            this.barButtonItem6.Name = "barButtonItem6";
+            this.barButtonItem6.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonItem6.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem6_ItemClick);
+            // 
+            // barButtonItem7
+            // 
+            this.barButtonItem7.Caption = "NDVI计算";
+            this.barButtonItem7.Id = 186;
+            this.barButtonItem7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.ImageOptions.Image")));
+            this.barButtonItem7.Name = "barButtonItem7";
+            this.barButtonItem7.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
             // BASEMENT
             // 
             this.BASEMENT.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -1843,7 +1865,8 @@
             this.geometricCorrection,
             this.imageMosaic,
             this.imageClip,
-            this.bandProcessing});
+            this.bandProcessing,
+            this.ribbonPageGroup1});
             this.ImageProcess.Name = "ImageProcess";
             this.ImageProcess.Text = "影像处理";
             // 
@@ -1882,6 +1905,13 @@
             this.bandProcessing.ItemLinks.Add(this.bandSynthesis);
             this.bandProcessing.Name = "bandProcessing";
             this.bandProcessing.Text = "波段处理";
+            // 
+            // ribbonPageGroup1
+            // 
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem6);
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem7);
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            this.ribbonPageGroup1.Text = "遥感指数计算";
             // 
             // Classification
             // 
@@ -2987,6 +3017,9 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
         private DevExpress.XtraBars.BarButtonItem segmentAnythingModel;
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem6;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem7;
     }
 }
 
