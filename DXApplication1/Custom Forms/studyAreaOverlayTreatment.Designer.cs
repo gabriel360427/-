@@ -258,7 +258,7 @@ namespace 绿廊智绘.Custom_Forms
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "studyAreaOverlayTreatment";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "研究区叠置处理";
+            this.Text = "研究区范围处理";
             this.Load += new System.EventHandler(this.studyAreaOverlayTreatment_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);

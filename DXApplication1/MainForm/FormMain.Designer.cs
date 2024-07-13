@@ -1677,7 +1677,7 @@
             // 
             // overLappingProcessing
             // 
-            this.overLappingProcessing.Caption = "研究区叠置处理";
+            this.overLappingProcessing.Caption = "研究区范围处理";
             this.overLappingProcessing.Id = 173;
             this.overLappingProcessing.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("overLappingProcessing.ImageOptions.Image")));
             this.overLappingProcessing.Name = "overLappingProcessing";
