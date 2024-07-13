@@ -55,7 +55,7 @@ namespace 绿廊智绘.Custom_Forms
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
             // 获取TextBox中的文本
-            string userInput = textBox1.Text;
+            string userInput = textBox2.Text;
         }
 
         private void button3_Click(object sender, EventArgs e)

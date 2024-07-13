@@ -2072,7 +2072,7 @@
             this.ribbonPage3.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup3});
             this.ribbonPage3.Name = "ribbonPage3";
-            this.ribbonPage3.Text = "生态富民格局与协调性评估";
+            this.ribbonPage3.Text = "生态富民格局与协调度评估";
             // 
             // ribbonPageGroup3
             // 
