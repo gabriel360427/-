@@ -1,7 +1,7 @@
 ﻿
 namespace 绿廊智绘.Custom_Forms
 {
-    partial class relief
+    partial class reliefForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace 绿廊智绘.Custom_Forms
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(relief));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(reliefForm));
             this.取消 = new System.Windows.Forms.Button();
             this.确定 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -44,9 +44,10 @@ namespace 绿廊智绘.Custom_Forms
             // 
             // 取消
             // 
-            this.取消.Location = new System.Drawing.Point(245, 193);
+            this.取消.Font = new System.Drawing.Font("等线", 12F);
+            this.取消.Location = new System.Drawing.Point(245, 189);
             this.取消.Name = "取消";
-            this.取消.Size = new System.Drawing.Size(75, 23);
+            this.取消.Size = new System.Drawing.Size(75, 34);
             this.取消.TabIndex = 7;
             this.取消.Text = "取消";
             this.取消.UseVisualStyleBackColor = true;
@@ -54,9 +55,10 @@ namespace 绿廊智绘.Custom_Forms
             // 
             // 确定
             // 
-            this.确定.Location = new System.Drawing.Point(92, 193);
+            this.确定.Font = new System.Drawing.Font("等线", 12F);
+            this.确定.Location = new System.Drawing.Point(92, 189);
             this.确定.Name = "确定";
-            this.确定.Size = new System.Drawing.Size(75, 23);
+            this.确定.Size = new System.Drawing.Size(75, 34);
             this.确定.TabIndex = 6;
             this.确定.Text = "确定";
             this.确定.UseVisualStyleBackColor = true;
@@ -66,6 +68,7 @@ namespace 绿廊智绘.Custom_Forms
             // 
             this.groupBox2.Controls.Add(this.输出路径加载框);
             this.groupBox2.Controls.Add(this.输出路径框);
+            this.groupBox2.Font = new System.Drawing.Font("等线", 12F);
             this.groupBox2.Location = new System.Drawing.Point(18, 101);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(389, 75);
@@ -88,13 +91,14 @@ namespace 绿廊智绘.Custom_Forms
             this.输出路径框.FormattingEnabled = true;
             this.输出路径框.Location = new System.Drawing.Point(6, 30);
             this.输出路径框.Name = "输出路径框";
-            this.输出路径框.Size = new System.Drawing.Size(296, 20);
+            this.输出路径框.Size = new System.Drawing.Size(296, 25);
             this.输出路径框.TabIndex = 1;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.DEM加载按钮);
             this.groupBox1.Controls.Add(this.DEM输入框);
+            this.groupBox1.Font = new System.Drawing.Font("等线", 12F);
             this.groupBox1.Location = new System.Drawing.Point(18, 20);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(389, 75);
@@ -117,10 +121,10 @@ namespace 绿廊智绘.Custom_Forms
             this.DEM输入框.FormattingEnabled = true;
             this.DEM输入框.Location = new System.Drawing.Point(6, 30);
             this.DEM输入框.Name = "DEM输入框";
-            this.DEM输入框.Size = new System.Drawing.Size(296, 20);
+            this.DEM输入框.Size = new System.Drawing.Size(296, 25);
             this.DEM输入框.TabIndex = 1;
             // 
-            // Relief
+            // relief
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -130,7 +134,7 @@ namespace 绿廊智绘.Custom_Forms
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Relief";
+            this.Name = "relief";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "地形起伏度处理";
             this.Load += new System.EventHandler(this.Relief_Load);

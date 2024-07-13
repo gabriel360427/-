@@ -76,7 +76,7 @@ namespace 绿廊智绘.Custom_Forms
             this.矢量数据输入框.FormattingEnabled = true;
             this.矢量数据输入框.Location = new System.Drawing.Point(16, 19);
             this.矢量数据输入框.Name = "矢量数据输入框";
-            this.矢量数据输入框.Size = new System.Drawing.Size(158, 20);
+            this.矢量数据输入框.Size = new System.Drawing.Size(158, 25);
             this.矢量数据输入框.TabIndex = 0;
             this.矢量数据输入框.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -84,6 +84,7 @@ namespace 绿廊智绘.Custom_Forms
             // 
             this.groupBox1.Controls.Add(this.矢量加载按钮);
             this.groupBox1.Controls.Add(this.矢量数据输入框);
+            this.groupBox1.Font = new System.Drawing.Font("等线", 12F);
             this.groupBox1.Location = new System.Drawing.Point(23, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(265, 54);
@@ -95,7 +96,7 @@ namespace 绿廊智绘.Custom_Forms
             // 
             this.矢量加载按钮.Location = new System.Drawing.Point(180, 19);
             this.矢量加载按钮.Name = "矢量加载按钮";
-            this.矢量加载按钮.Size = new System.Drawing.Size(70, 20);
+            this.矢量加载按钮.Size = new System.Drawing.Size(70, 29);
             this.矢量加载按钮.TabIndex = 1;
             this.矢量加载按钮.Text = "加载";
             this.矢量加载按钮.UseVisualStyleBackColor = true;
@@ -104,10 +105,11 @@ namespace 绿廊智绘.Custom_Forms
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dataGridView1);
+            this.groupBox2.Font = new System.Drawing.Font("等线", 12F);
             this.groupBox2.Location = new System.Drawing.Point(23, 71);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(265, 329);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
@@ -121,8 +123,8 @@ namespace 绿廊智绘.Custom_Forms
             this.Column1,
             this.Column2});
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ActiveBorder;
-            this.dataGridView1.Location = new System.Drawing.Point(4, 21);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 21);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 30;
@@ -148,6 +150,7 @@ namespace 绿廊智绘.Custom_Forms
             this.矢量裁剪.Controls.Add(this.矢量裁剪加载按钮);
             this.矢量裁剪.Controls.Add(this.裁剪矢量输入框);
             this.矢量裁剪.Controls.Add(this.label1);
+            this.矢量裁剪.Font = new System.Drawing.Font("等线", 11F);
             this.矢量裁剪.Location = new System.Drawing.Point(305, 12);
             this.矢量裁剪.Name = "矢量裁剪";
             this.矢量裁剪.Size = new System.Drawing.Size(268, 77);
@@ -170,7 +173,7 @@ namespace 绿廊智绘.Custom_Forms
             this.裁剪矢量输入框.FormattingEnabled = true;
             this.裁剪矢量输入框.Location = new System.Drawing.Point(9, 47);
             this.裁剪矢量输入框.Name = "裁剪矢量输入框";
-            this.裁剪矢量输入框.Size = new System.Drawing.Size(253, 20);
+            this.裁剪矢量输入框.Size = new System.Drawing.Size(253, 23);
             this.裁剪矢量输入框.TabIndex = 1;
             this.裁剪矢量输入框.SelectedIndexChanged += new System.EventHandler(this.裁剪矢量输入框_SelectedIndexChanged);
             // 
@@ -179,13 +182,14 @@ namespace 绿廊智绘.Custom_Forms
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(6, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(143, 12);
+            this.label1.Size = new System.Drawing.Size(181, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "输入裁剪范围的shape文件";
             // 
             // 矢量转栅格设置
             // 
             this.矢量转栅格设置.Controls.Add(this.tabControl1);
+            this.矢量转栅格设置.Font = new System.Drawing.Font("等线", 11F);
             this.矢量转栅格设置.Location = new System.Drawing.Point(306, 96);
             this.矢量转栅格设置.Name = "矢量转栅格设置";
             this.矢量转栅格设置.Size = new System.Drawing.Size(266, 121);
@@ -209,10 +213,10 @@ namespace 绿廊智绘.Custom_Forms
             this.指定大小.Controls.Add(this.label3);
             this.指定大小.Controls.Add(this.label2);
             this.指定大小.Controls.Add(this.X输入框);
-            this.指定大小.Location = new System.Drawing.Point(4, 22);
+            this.指定大小.Location = new System.Drawing.Point(4, 25);
             this.指定大小.Name = "指定大小";
-            this.指定大小.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.指定大小.Size = new System.Drawing.Size(243, 59);
+            this.指定大小.Padding = new System.Windows.Forms.Padding(3);
+            this.指定大小.Size = new System.Drawing.Size(243, 56);
             this.指定大小.TabIndex = 0;
             this.指定大小.Text = "指定像元大小";
             this.指定大小.UseVisualStyleBackColor = true;
@@ -221,7 +225,7 @@ namespace 绿廊智绘.Custom_Forms
             // 
             this.Y输入框.Location = new System.Drawing.Point(140, 18);
             this.Y输入框.Name = "Y输入框";
-            this.Y输入框.Size = new System.Drawing.Size(84, 21);
+            this.Y输入框.Size = new System.Drawing.Size(84, 23);
             this.Y输入框.TabIndex = 3;
             // 
             // label3
@@ -229,7 +233,7 @@ namespace 绿廊智绘.Custom_Forms
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(123, 21);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(11, 12);
+            this.label3.Size = new System.Drawing.Size(15, 15);
             this.label3.TabIndex = 2;
             this.label3.Text = "Y";
             // 
@@ -238,7 +242,7 @@ namespace 绿廊智绘.Custom_Forms
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(16, 21);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(11, 12);
+            this.label2.Size = new System.Drawing.Size(16, 15);
             this.label2.TabIndex = 1;
             this.label2.Text = "X";
             // 
@@ -246,7 +250,7 @@ namespace 绿廊智绘.Custom_Forms
             // 
             this.X输入框.Location = new System.Drawing.Point(33, 18);
             this.X输入框.Name = "X输入框";
-            this.X输入框.Size = new System.Drawing.Size(84, 21);
+            this.X输入框.Size = new System.Drawing.Size(84, 23);
             this.X输入框.TabIndex = 0;
             // 
             // tabPage2
@@ -255,7 +259,7 @@ namespace 绿廊智绘.Custom_Forms
             this.tabPage2.Controls.Add(this.基准影像输入框);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(243, 59);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "基准影像";
@@ -276,7 +280,7 @@ namespace 绿廊智绘.Custom_Forms
             this.基准影像输入框.FormattingEnabled = true;
             this.基准影像输入框.Location = new System.Drawing.Point(12, 9);
             this.基准影像输入框.Name = "基准影像输入框";
-            this.基准影像输入框.Size = new System.Drawing.Size(220, 20);
+            this.基准影像输入框.Size = new System.Drawing.Size(220, 23);
             this.基准影像输入框.TabIndex = 0;
             this.基准影像输入框.SelectedIndexChanged += new System.EventHandler(this.基准影像输入框_SelectedIndexChanged);
             // 
@@ -289,6 +293,7 @@ namespace 绿廊智绘.Custom_Forms
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.文件输出加载);
             this.groupBox3.Controls.Add(this.文件输出框);
+            this.groupBox3.Font = new System.Drawing.Font("等线", 11F);
             this.groupBox3.Location = new System.Drawing.Point(307, 224);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(265, 175);
@@ -330,7 +335,7 @@ namespace 绿廊智绘.Custom_Forms
             this.文件输出类型框.FormattingEnabled = true;
             this.文件输出类型框.Location = new System.Drawing.Point(5, 70);
             this.文件输出类型框.Name = "文件输出类型框";
-            this.文件输出类型框.Size = new System.Drawing.Size(253, 20);
+            this.文件输出类型框.Size = new System.Drawing.Size(253, 23);
             this.文件输出类型框.TabIndex = 5;
             this.文件输出类型框.SelectedIndexChanged += new System.EventHandler(this.文件输出类型框_SelectedIndexChanged);
             // 
@@ -339,7 +344,7 @@ namespace 绿廊智绘.Custom_Forms
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(6, 50);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(101, 12);
+            this.label4.Size = new System.Drawing.Size(127, 15);
             this.label4.TabIndex = 4;
             this.label4.Text = "设置文件输出类型";
             // 
@@ -358,7 +363,7 @@ namespace 绿廊智绘.Custom_Forms
             this.文件输出框.FormattingEnabled = true;
             this.文件输出框.Location = new System.Drawing.Point(5, 20);
             this.文件输出框.Name = "文件输出框";
-            this.文件输出框.Size = new System.Drawing.Size(161, 20);
+            this.文件输出框.Size = new System.Drawing.Size(161, 23);
             this.文件输出框.TabIndex = 2;
             this.文件输出框.SelectedIndexChanged += new System.EventHandler(this.文件输出框_SelectedIndexChanged);
             // 

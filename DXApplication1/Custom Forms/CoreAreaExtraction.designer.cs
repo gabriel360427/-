@@ -43,7 +43,7 @@
             // 
             // button4
             // 
-            this.button4.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button4.Font = new System.Drawing.Font("等线", 12F);
             this.button4.Location = new System.Drawing.Point(354, 281);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
@@ -55,7 +55,7 @@
             // 
             // button3
             // 
-            this.button3.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button3.Font = new System.Drawing.Font("等线", 12F);
             this.button3.Location = new System.Drawing.Point(74, 281);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
@@ -93,7 +93,7 @@
             this.comboBox2.Location = new System.Drawing.Point(5, 44);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(339, 22);
+            this.comboBox2.Size = new System.Drawing.Size(339, 25);
             this.comboBox2.TabIndex = 9;
             // 
             // comboBox1
@@ -102,14 +102,14 @@
             this.comboBox1.Location = new System.Drawing.Point(4, 61);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(339, 22);
+            this.comboBox1.Size = new System.Drawing.Size(339, 25);
             this.comboBox1.TabIndex = 8;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.groupBox1.Font = new System.Drawing.Font("等线", 12F);
             this.groupBox1.Location = new System.Drawing.Point(10, 10);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
@@ -123,7 +123,7 @@
             // 
             this.groupBox2.Controls.Add(this.comboBox2);
             this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.groupBox2.Font = new System.Drawing.Font("等线", 12F);
             this.groupBox2.Location = new System.Drawing.Point(10, 157);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
@@ -133,7 +133,7 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "输出路径";
             // 
-            // CoreAreaExtraction
+            // coreAreaExtraction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -146,7 +146,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
-            this.Name = "CoreAreaExtraction";
+            this.Name = "coreAreaExtraction";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "核心区提取";
             this.Load += new System.EventHandler(this.核心区提取_Load);

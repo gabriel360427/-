@@ -68,7 +68,7 @@ namespace 绿廊智绘.Custom_Forms
             this.景观格局指数,
             this.生态富民意义});
             this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listView1.Font = new System.Drawing.Font("华文中宋", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.listView1.Font = new System.Drawing.Font("等线", 12F);
             this.listView1.HideSelection = false;
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
             listViewItem1,
@@ -81,7 +81,7 @@ namespace 绿廊智绘.Custom_Forms
             listViewItem8,
             listViewItem9});
             this.listView1.Location = new System.Drawing.Point(0, 0);
-            this.listView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listView1.Margin = new System.Windows.Forms.Padding(2);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(803, 286);
             this.listView1.TabIndex = 1;
@@ -98,15 +98,15 @@ namespace 绿廊智绘.Custom_Forms
             this.生态富民意义.Text = "生态富民意义";
             this.生态富民意义.Width = 715;
             // 
-            // 参考建议
+            // referenceSuggestion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(803, 286);
             this.Controls.Add(this.listView1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "参考建议";
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "referenceSuggestion";
             this.Text = "指数选取参考建议";
             this.ResumeLayout(false);
 

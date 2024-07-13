@@ -19,8 +19,8 @@ namespace 绿廊智绘.Custom_Commands
     {
         public ihsInverseTransformCommand()
         {
-            base.Caption = "IHS正变换";
-            base.ToolTip = "IHS正变换";
+            base.Caption = "IHS逆变换";
+            base.ToolTip = "IHS逆变换";
         }
         public override void OnClick()
         {

@@ -55,6 +55,7 @@
             // 
             this.groupBox1.Controls.Add(this.InputFile);
             this.groupBox1.Controls.Add(this.栅格数据输入框);
+            this.groupBox1.Font = new System.Drawing.Font("等线", 12F);
             this.groupBox1.Location = new System.Drawing.Point(13, 13);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(653, 82);
@@ -77,13 +78,14 @@
             this.栅格数据输入框.FormattingEnabled = true;
             this.栅格数据输入框.Location = new System.Drawing.Point(7, 29);
             this.栅格数据输入框.Name = "栅格数据输入框";
-            this.栅格数据输入框.Size = new System.Drawing.Size(489, 22);
+            this.栅格数据输入框.Size = new System.Drawing.Size(489, 25);
             this.栅格数据输入框.TabIndex = 0;
             this.栅格数据输入框.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dataGridView1);
+            this.groupBox2.Font = new System.Drawing.Font("等线", 12F);
             this.groupBox2.Location = new System.Drawing.Point(12, 101);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(360, 436);
@@ -120,6 +122,7 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.输出数据类型);
+            this.groupBox3.Font = new System.Drawing.Font("等线", 12F);
             this.groupBox3.Location = new System.Drawing.Point(379, 428);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(287, 100);
@@ -140,7 +143,7 @@
             "双精度浮点型(64位)"});
             this.输出数据类型.Location = new System.Drawing.Point(7, 37);
             this.输出数据类型.Name = "输出数据类型";
-            this.输出数据类型.Size = new System.Drawing.Size(257, 22);
+            this.输出数据类型.Size = new System.Drawing.Size(257, 25);
             this.输出数据类型.TabIndex = 0;
             this.输出数据类型.SelectedIndexChanged += new System.EventHandler(this.输出数据类型_SelectedIndexChanged);
             // 
@@ -150,6 +153,7 @@
             this.groupBox4.Controls.Add(this.OK);
             this.groupBox4.Controls.Add(this.OutputFile);
             this.groupBox4.Controls.Add(this.文件输出框);
+            this.groupBox4.Font = new System.Drawing.Font("等线", 12F);
             this.groupBox4.Location = new System.Drawing.Point(19, 534);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(653, 125);
@@ -192,7 +196,7 @@
             this.文件输出框.FormattingEnabled = true;
             this.文件输出框.Location = new System.Drawing.Point(7, 28);
             this.文件输出框.Name = "文件输出框";
-            this.文件输出框.Size = new System.Drawing.Size(489, 22);
+            this.文件输出框.Size = new System.Drawing.Size(489, 25);
             this.文件输出框.TabIndex = 1;
             this.文件输出框.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
@@ -205,7 +209,7 @@
             this.richTextBox1.TabIndex = 4;
             this.richTextBox1.Text = "    ★☆★示例说明\n（此窗口暂无说明）";
             // 
-            // SurfaceResistanceFactor
+            // surfaceResistanceFactor
             // 
             this.AccessibleName = "";
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -218,7 +222,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "SurfaceResistanceFactor";
+            this.Name = "surfaceResistanceFactor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "阻力因子";
             this.Load += new System.EventHandler(this.高程因子_Load);

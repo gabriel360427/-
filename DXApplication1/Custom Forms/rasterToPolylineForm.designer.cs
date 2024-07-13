@@ -48,8 +48,9 @@ namespace 绿廊智绘.Custom_Forms
             // 
             // Cancel
             // 
+            this.Cancel.Font = new System.Drawing.Font("等线", 12F);
             this.Cancel.Location = new System.Drawing.Point(314, 228);
-            this.Cancel.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Cancel.Margin = new System.Windows.Forms.Padding(1);
             this.Cancel.Name = "Cancel";
             this.Cancel.Size = new System.Drawing.Size(106, 50);
             this.Cancel.TabIndex = 88;
@@ -59,8 +60,9 @@ namespace 绿廊智绘.Custom_Forms
             // 
             // OK
             // 
+            this.OK.Font = new System.Drawing.Font("等线", 12F);
             this.OK.Location = new System.Drawing.Point(99, 228);
-            this.OK.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.OK.Margin = new System.Windows.Forms.Padding(1);
             this.OK.Name = "OK";
             this.OK.Size = new System.Drawing.Size(106, 50);
             this.OK.TabIndex = 87;
@@ -72,10 +74,11 @@ namespace 绿廊智绘.Custom_Forms
             // 
             this.groupBox2.Controls.Add(this.textBox2);
             this.groupBox2.Controls.Add(this.button2);
+            this.groupBox2.Font = new System.Drawing.Font("等线", 12F);
             this.groupBox2.Location = new System.Drawing.Point(13, 108);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(1);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(1);
             this.groupBox2.Size = new System.Drawing.Size(517, 87);
             this.groupBox2.TabIndex = 86;
             this.groupBox2.TabStop = false;
@@ -84,15 +87,15 @@ namespace 绿廊智绘.Custom_Forms
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(5, 34);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(1);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(362, 22);
+            this.textBox2.Size = new System.Drawing.Size(362, 24);
             this.textBox2.TabIndex = 76;
             // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(398, 20);
-            this.button2.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.button2.Margin = new System.Windows.Forms.Padding(1);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(106, 50);
             this.button2.TabIndex = 77;
@@ -104,10 +107,11 @@ namespace 绿廊智绘.Custom_Forms
             // 
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Font = new System.Drawing.Font("等线", 12F);
             this.groupBox1.Location = new System.Drawing.Point(13, 17);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(1);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(1);
             this.groupBox1.Size = new System.Drawing.Size(517, 85);
             this.groupBox1.TabIndex = 85;
             this.groupBox1.TabStop = false;
@@ -116,15 +120,15 @@ namespace 绿廊智绘.Custom_Forms
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(5, 36);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(1);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(362, 22);
+            this.textBox1.Size = new System.Drawing.Size(362, 24);
             this.textBox1.TabIndex = 61;
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(398, 20);
-            this.button1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.button1.Margin = new System.Windows.Forms.Padding(1);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(106, 50);
             this.button1.TabIndex = 74;
@@ -151,7 +155,7 @@ namespace 绿廊智绘.Custom_Forms
             this.axLicenseControl1.Size = new System.Drawing.Size(32, 32);
             this.axLicenseControl1.TabIndex = 83;
             // 
-            // rasterToPolyline
+            // rasterToPolylineForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -166,7 +170,7 @@ namespace 绿廊智绘.Custom_Forms
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.MaximizeBox = false;
-            this.Name = "rasterToPolyline";
+            this.Name = "rasterToPolylineForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "栅格转折线";
             this.Load += new System.EventHandler(this.栅格转折线_Load);

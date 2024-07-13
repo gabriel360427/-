@@ -42,29 +42,29 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(10, 30);
+            this.label1.Font = new System.Drawing.Font("等线", 12F);
+            this.label1.Location = new System.Drawing.Point(9, 23);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 20);
+            this.label1.Size = new System.Drawing.Size(88, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "输入文件：";
             // 
             // inputImageTextBox
             // 
-            this.inputImageTextBox.Location = new System.Drawing.Point(131, 30);
-            this.inputImageTextBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.inputImageTextBox.Location = new System.Drawing.Point(115, 23);
+            this.inputImageTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.inputImageTextBox.Name = "inputImageTextBox";
-            this.inputImageTextBox.Size = new System.Drawing.Size(627, 26);
+            this.inputImageTextBox.Size = new System.Drawing.Size(549, 22);
             this.inputImageTextBox.TabIndex = 1;
             // 
             // inputImageBtn
             // 
-            this.inputImageBtn.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.inputImageBtn.Location = new System.Drawing.Point(763, 22);
-            this.inputImageBtn.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.inputImageBtn.Font = new System.Drawing.Font("等线", 12F);
+            this.inputImageBtn.Location = new System.Drawing.Point(668, 17);
+            this.inputImageBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.inputImageBtn.Name = "inputImageBtn";
-            this.inputImageBtn.Size = new System.Drawing.Size(119, 37);
+            this.inputImageBtn.Size = new System.Drawing.Size(104, 29);
             this.inputImageBtn.TabIndex = 2;
             this.inputImageBtn.Text = "浏览";
             this.inputImageBtn.UseVisualStyleBackColor = true;
@@ -73,32 +73,32 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.classificationStatisticTextBox);
-            this.groupBox1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox1.Location = new System.Drawing.Point(15, 76);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.groupBox1.Font = new System.Drawing.Font("等线", 12F);
+            this.groupBox1.Location = new System.Drawing.Point(13, 59);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.groupBox1.Size = new System.Drawing.Size(870, 459);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(761, 357);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "分类统计结果";
             // 
             // classificationStatisticTextBox
             // 
-            this.classificationStatisticTextBox.Location = new System.Drawing.Point(7, 35);
-            this.classificationStatisticTextBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.classificationStatisticTextBox.Location = new System.Drawing.Point(6, 27);
+            this.classificationStatisticTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.classificationStatisticTextBox.Multiline = true;
             this.classificationStatisticTextBox.Name = "classificationStatisticTextBox";
-            this.classificationStatisticTextBox.Size = new System.Drawing.Size(859, 408);
+            this.classificationStatisticTextBox.Size = new System.Drawing.Size(752, 318);
             this.classificationStatisticTextBox.TabIndex = 0;
             // 
             // StartBtn
             // 
-            this.StartBtn.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.StartBtn.Location = new System.Drawing.Point(97, 550);
-            this.StartBtn.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.StartBtn.Font = new System.Drawing.Font("等线", 12F);
+            this.StartBtn.Location = new System.Drawing.Point(85, 428);
+            this.StartBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.StartBtn.Name = "StartBtn";
-            this.StartBtn.Size = new System.Drawing.Size(210, 54);
+            this.StartBtn.Size = new System.Drawing.Size(184, 42);
             this.StartBtn.TabIndex = 4;
             this.StartBtn.Text = "开始统计";
             this.StartBtn.UseVisualStyleBackColor = true;
@@ -106,11 +106,11 @@
             // 
             // exportBtn
             // 
-            this.exportBtn.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.exportBtn.Location = new System.Drawing.Point(579, 550);
-            this.exportBtn.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.exportBtn.Font = new System.Drawing.Font("等线", 12F);
+            this.exportBtn.Location = new System.Drawing.Point(507, 428);
+            this.exportBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.exportBtn.Name = "exportBtn";
-            this.exportBtn.Size = new System.Drawing.Size(210, 54);
+            this.exportBtn.Size = new System.Drawing.Size(184, 42);
             this.exportBtn.TabIndex = 5;
             this.exportBtn.Text = "导出文件";
             this.exportBtn.UseVisualStyleBackColor = true;
@@ -120,9 +120,9 @@
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
             this.Appearance.Options.UseBackColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(895, 630);
+            this.ClientSize = new System.Drawing.Size(783, 490);
             this.Controls.Add(this.exportBtn);
             this.Controls.Add(this.StartBtn);
             this.Controls.Add(this.groupBox1);
@@ -130,7 +130,7 @@
             this.Controls.Add(this.inputImageTextBox);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "classificationStatisticForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "分类统计";

@@ -722,8 +722,11 @@ namespace 绿廊智绘
             rRGBRender.UseRedBand = true;
             rRGBRender.UseGreenBand = true;
             rRGBRender.UseBlueBand = true;
-            //根据栅格数据的波段数进行rgb波段索引设置，
-            rRGBRender.SetBandIndices(3, 2, 1);
+            //根据栅格数据的波段数进行rgb波段索引设置
+            rgbCombineForm frm = new rgbCombineForm();
+            frm.ShowDialog();
+
+            rRGBRender.SetBandIndices(frm.RedBand -1, frm.GreenBand -1, frm.BlueBand -1);
             //设置rasterrender
             IRasterRender render = rRGBRender as IRasterRender;
             rasterLayer.Render = render;
@@ -1151,12 +1154,16 @@ namespace 绿廊智绘
         }
         private void clippingThroughGridRange_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            ICommand cmd = new clippingThroughGridRangeCommand();
+            cmd.OnCreate(mapControlMain);
+            cmd.OnClick();
+            
         }
-
         private void clippingThroughGeometricRange_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            ICommand cmd = new clippingThroughGeometricRangeCommand();
+            cmd.OnCreate(mapControlMain);
+            cmd.OnClick();
         }
         #endregion
 
@@ -2144,7 +2151,7 @@ namespace 绿廊智绘
         #region 2.4 采样
         private void Sampling_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            sampling form = new sampling();
+            samplingForm form = new samplingForm();
             form.ShowDialog();
         }
         #endregion

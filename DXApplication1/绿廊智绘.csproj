@@ -135,6 +135,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Custom Commands\AddDataCommand.cs" />
+    <Compile Include="Custom Commands\clippingThroughGeometricRangeCommand.cs" />
+    <Compile Include="Custom Commands\clippingThroughGridRangeCommand.cs" />
     <Compile Include="Custom Commands\ihsInverseTransformCommand.cs" />
     <Compile Include="Custom Commands\ihsPositiveTransformCommand.cs" />
     <Compile Include="Custom Commands\LoadFeatureDataCommand.cs" />
@@ -235,11 +237,11 @@
     <Compile Include="Custom Forms\studyAreaOverlayTreatment.Designer.cs">
       <DependentUpon>studyAreaOverlayTreatment.cs</DependentUpon>
     </Compile>
-    <Compile Include="Custom Forms\inputTime.cs">
+    <Compile Include="Custom Forms\inputTimeForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Custom Forms\inputTime.Designer.cs">
-      <DependentUpon>inputTime.cs</DependentUpon>
+    <Compile Include="Custom Forms\inputTimeForm.Designer.cs">
+      <DependentUpon>inputTimeForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Custom Forms\segmentAnythingModelForm.cs">
       <SubType>Form</SubType>
@@ -259,12 +261,6 @@
     <Compile Include="Custom Forms\rasterToPolylineForm.designer.cs">
       <DependentUpon>rasterToPolylineForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Custom Forms\roadChangeStatisticsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Custom Forms\roadChangeStatisticsForm.Designer.cs">
-      <DependentUpon>roadChangeStatisticsForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Custom Forms\poiChangeStatisticsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -277,17 +273,17 @@
     <Compile Include="Custom Forms\linearResistanceFactorNEW.designer.cs">
       <DependentUpon>linearResistanceFactorNEW.cs</DependentUpon>
     </Compile>
-    <Compile Include="Custom Forms\relief.cs">
+    <Compile Include="Custom Forms\reliefForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Custom Forms\relief.Designer.cs">
-      <DependentUpon>relief.cs</DependentUpon>
+    <Compile Include="Custom Forms\reliefForm.Designer.cs">
+      <DependentUpon>reliefForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Custom Forms\slope.cs">
+    <Compile Include="Custom Forms\slopeForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Custom Forms\slope.Designer.cs">
-      <DependentUpon>slope.cs</DependentUpon>
+    <Compile Include="Custom Forms\slopeForm.Designer.cs">
+      <DependentUpon>slopeForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Custom Forms\clippingThroughShapeFileForm.cs">
       <SubType>Form</SubType>
@@ -391,11 +387,11 @@
     <Compile Include="Custom Forms\costPathCalculation.designer.cs">
       <DependentUpon>costPathCalculation.cs</DependentUpon>
     </Compile>
-    <Compile Include="Custom Forms\sampling.cs">
+    <Compile Include="Custom Forms\samplingForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Custom Forms\sampling.designer.cs">
-      <DependentUpon>sampling.cs</DependentUpon>
+    <Compile Include="Custom Forms\samplingForm.designer.cs">
+      <DependentUpon>samplingForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Custom Forms\corridorAddField.cs">
       <SubType>Form</SubType>
@@ -414,12 +410,6 @@
     </Compile>
     <Compile Include="Custom Forms\landUseTypeTransferMatrixForm.designer.cs">
       <DependentUpon>landUseTypeTransferMatrixForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Custom Forms\timeSeriesCurveForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Custom Forms\timeSeriesCurveForm.designer.cs">
-      <DependentUpon>timeSeriesCurveForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Custom Forms\changeStatisticsForm.cs">
       <SubType>Form</SubType>
@@ -484,8 +474,8 @@
     <EmbeddedResource Include="Custom Forms\landscapeFragmentationAnalysis.resx">
       <DependentUpon>landscapeFragmentationAnalysis.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Custom Forms\inputTime.resx">
-      <DependentUpon>inputTime.cs</DependentUpon>
+    <EmbeddedResource Include="Custom Forms\inputTimeForm.resx">
+      <DependentUpon>inputTimeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\poiChangeStatisticsForm.resx">
       <DependentUpon>poiChangeStatisticsForm.cs</DependentUpon>
@@ -517,8 +507,8 @@
     <EmbeddedResource Include="Custom Forms\reClassification.resx">
       <DependentUpon>reClassification.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Custom Forms\relief.resx">
-      <DependentUpon>relief.cs</DependentUpon>
+    <EmbeddedResource Include="Custom Forms\reliefForm.resx">
+      <DependentUpon>reliefForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\rgbCombineForm.resx">
       <DependentUpon>rgbCombineForm.cs</DependentUpon>
@@ -526,8 +516,8 @@
     <EmbeddedResource Include="Custom Forms\segmentAnythingModelForm.resx">
       <DependentUpon>segmentAnythingModelForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Custom Forms\slope.resx">
-      <DependentUpon>slope.cs</DependentUpon>
+    <EmbeddedResource Include="Custom Forms\slopeForm.resx">
+      <DependentUpon>slopeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\storageFormatConversionForm.resx">
       <DependentUpon>storageFormatConversionForm.cs</DependentUpon>
@@ -559,8 +549,8 @@
     <EmbeddedResource Include="Custom Forms\costPathCalculation.resx">
       <DependentUpon>costPathCalculation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Custom Forms\sampling.resx">
-      <DependentUpon>sampling.cs</DependentUpon>
+    <EmbeddedResource Include="Custom Forms\samplingForm.resx">
+      <DependentUpon>samplingForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\corridorAddField.resx">
       <DependentUpon>corridorAddField.cs</DependentUpon>
@@ -577,14 +567,8 @@
     <EmbeddedResource Include="Custom Forms\rasterToPolylineForm.resx">
       <DependentUpon>rasterToPolylineForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Custom Forms\timeSeriesCurveForm.resx">
-      <DependentUpon>timeSeriesCurveForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\changeStatisticsForm.resx">
       <DependentUpon>changeStatisticsForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Custom Forms\roadChangeStatisticsForm.resx">
-      <DependentUpon>roadChangeStatisticsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>

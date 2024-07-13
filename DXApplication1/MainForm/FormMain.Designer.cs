@@ -176,6 +176,7 @@
             this.landscapeFragmentation = new DevExpress.XtraBars.BarButtonItem();
             this.coordinationDegree = new DevExpress.XtraBars.BarButtonItem();
             this.cartographicReport = new DevExpress.XtraBars.BarButtonItem();
+            this.segmentAnythingModel = new DevExpress.XtraBars.BarButtonItem();
             this.BASEMENT = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.mapProject = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.dataManagement = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -195,8 +196,8 @@
             this.bandProcessing = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.Classification = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.RoiTools = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.unSupervisedClassification = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.supervisedClassification = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.unSupervisedClassification = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.postClassification = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.reClassifications = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.VectorProcess = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -276,7 +277,6 @@
             this.barButtonItem40 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.popupMenu4 = new DevExpress.XtraBars.PopupMenu(this.components);
-            this.segmentAnythingModel = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar3)).BeginInit();
@@ -494,6 +494,8 @@
             this.newProject.Caption = "新建工程";
             this.newProject.Id = 1;
             this.newProject.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("newProject.ImageOptions.Image")));
+            this.newProject.ItemAppearance.Disabled.Font = new System.Drawing.Font("黑体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.newProject.ItemAppearance.Disabled.Options.UseFont = true;
             this.newProject.Name = "newProject";
             this.newProject.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.newProject.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.newProject_ItemClick);
@@ -1713,6 +1715,15 @@
             this.cartographicReport.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.cartographicReport.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem12_ItemClick_1);
             // 
+            // segmentAnythingModel
+            // 
+            this.segmentAnythingModel.Caption = "SAM模型";
+            this.segmentAnythingModel.Id = 183;
+            this.segmentAnythingModel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("segmentAnythingModel.ImageOptions.Image")));
+            this.segmentAnythingModel.Name = "segmentAnythingModel";
+            this.segmentAnythingModel.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.segmentAnythingModel.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.segmentAnythingModel_ItemClick);
+            // 
             // BASEMENT
             // 
             this.BASEMENT.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -1892,19 +1903,19 @@
             this.RoiTools.Name = "RoiTools";
             this.RoiTools.Text = "ROI工具";
             // 
-            // unSupervisedClassification
-            // 
-            this.unSupervisedClassification.ItemLinks.Add(this.isoData);
-            this.unSupervisedClassification.ItemLinks.Add(this.kmeans);
-            this.unSupervisedClassification.Name = "unSupervisedClassification";
-            this.unSupervisedClassification.Text = "非监督分类";
-            // 
             // supervisedClassification
             // 
             this.supervisedClassification.ItemLinks.Add(this.distanceClassification);
             this.supervisedClassification.ItemLinks.Add(this.mlClassification, true);
             this.supervisedClassification.Name = "supervisedClassification";
             this.supervisedClassification.Text = "监督分类";
+            // 
+            // unSupervisedClassification
+            // 
+            this.unSupervisedClassification.ItemLinks.Add(this.isoData);
+            this.unSupervisedClassification.ItemLinks.Add(this.kmeans);
+            this.unSupervisedClassification.Name = "unSupervisedClassification";
+            this.unSupervisedClassification.Text = "非监督分类";
             // 
             // postClassification
             // 
@@ -2658,15 +2669,6 @@
             // 
             this.popupMenu4.Name = "popupMenu4";
             this.popupMenu4.Ribbon = this.ribbonControl1;
-            // 
-            // segmentAnythingModel
-            // 
-            this.segmentAnythingModel.Caption = "SAM模型";
-            this.segmentAnythingModel.Id = 183;
-            this.segmentAnythingModel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("segmentAnythingModel.ImageOptions.Image")));
-            this.segmentAnythingModel.Name = "segmentAnythingModel";
-            this.segmentAnythingModel.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.segmentAnythingModel.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.segmentAnythingModel_ItemClick);
             // 
             // FormMain
             // 

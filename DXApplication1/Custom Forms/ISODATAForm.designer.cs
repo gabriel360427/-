@@ -69,27 +69,27 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Font = new System.Drawing.Font("等线", 12F);
             this.label1.Location = new System.Drawing.Point(23, 21);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 14);
+            this.label1.Size = new System.Drawing.Size(88, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "输入文件：";
             // 
             // inputImageTextBox
             // 
             this.inputImageTextBox.Location = new System.Drawing.Point(107, 19);
-            this.inputImageTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.inputImageTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.inputImageTextBox.Name = "inputImageTextBox";
             this.inputImageTextBox.Size = new System.Drawing.Size(359, 22);
             this.inputImageTextBox.TabIndex = 1;
             // 
             // inputImageButton
             // 
-            this.inputImageButton.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.inputImageButton.Location = new System.Drawing.Point(471, 14);
-            this.inputImageButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.inputImageButton.Font = new System.Drawing.Font("等线", 12F);
+            this.inputImageButton.Location = new System.Drawing.Point(470, 14);
+            this.inputImageButton.Margin = new System.Windows.Forms.Padding(2);
             this.inputImageButton.Name = "inputImageButton";
             this.inputImageButton.Size = new System.Drawing.Size(77, 30);
             this.inputImageButton.TabIndex = 2;
@@ -113,11 +113,11 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.ProspClassNumControl);
-            this.groupBox1.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.groupBox1.Font = new System.Drawing.Font("等线", 12F);
             this.groupBox1.Location = new System.Drawing.Point(266, 58);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(294, 324);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
@@ -126,32 +126,32 @@
             // MinDisControl
             // 
             this.MinDisControl.Location = new System.Drawing.Point(142, 273);
-            this.MinDisControl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MinDisControl.Margin = new System.Windows.Forms.Padding(2);
             this.MinDisControl.Name = "MinDisControl";
-            this.MinDisControl.Size = new System.Drawing.Size(137, 23);
+            this.MinDisControl.Size = new System.Drawing.Size(137, 24);
             this.MinDisControl.TabIndex = 17;
             this.MinDisControl.Text = "6.4";
             // 
             // DevControl
             // 
             this.DevControl.Location = new System.Drawing.Point(126, 236);
-            this.DevControl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DevControl.Margin = new System.Windows.Forms.Padding(2);
             this.DevControl.Name = "DevControl";
-            this.DevControl.Size = new System.Drawing.Size(153, 23);
+            this.DevControl.Size = new System.Drawing.Size(153, 24);
             this.DevControl.TabIndex = 16;
             this.DevControl.Text = "9.8";
             // 
             // MaxLoopControl
             // 
             this.MaxLoopControl.Location = new System.Drawing.Point(142, 194);
-            this.MaxLoopControl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaxLoopControl.Margin = new System.Windows.Forms.Padding(2);
             this.MaxLoopControl.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.MaxLoopControl.Name = "MaxLoopControl";
-            this.MaxLoopControl.Size = new System.Drawing.Size(135, 23);
+            this.MaxLoopControl.Size = new System.Drawing.Size(135, 24);
             this.MaxLoopControl.TabIndex = 15;
             this.MaxLoopControl.Value = new decimal(new int[] {
             5,
@@ -162,14 +162,14 @@
             // MaxMergeControl
             // 
             this.MaxMergeControl.Location = new System.Drawing.Point(142, 154);
-            this.MaxMergeControl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaxMergeControl.Margin = new System.Windows.Forms.Padding(2);
             this.MaxMergeControl.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.MaxMergeControl.Name = "MaxMergeControl";
-            this.MaxMergeControl.Size = new System.Drawing.Size(135, 23);
+            this.MaxMergeControl.Size = new System.Drawing.Size(135, 24);
             this.MaxMergeControl.TabIndex = 6;
             this.MaxMergeControl.Value = new decimal(new int[] {
             1,
@@ -180,14 +180,14 @@
             // MinSamControl
             // 
             this.MinSamControl.Location = new System.Drawing.Point(126, 114);
-            this.MinSamControl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MinSamControl.Margin = new System.Windows.Forms.Padding(2);
             this.MinSamControl.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.MinSamControl.Name = "MinSamControl";
-            this.MinSamControl.Size = new System.Drawing.Size(152, 23);
+            this.MinSamControl.Size = new System.Drawing.Size(152, 24);
             this.MinSamControl.TabIndex = 14;
             this.MinSamControl.Value = new decimal(new int[] {
             5,
@@ -198,14 +198,14 @@
             // InitClassNumControl
             // 
             this.InitClassNumControl.Location = new System.Drawing.Point(110, 77);
-            this.InitClassNumControl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.InitClassNumControl.Margin = new System.Windows.Forms.Padding(2);
             this.InitClassNumControl.Minimum = new decimal(new int[] {
             2,
             0,
             0,
             0});
             this.InitClassNumControl.Name = "InitClassNumControl";
-            this.InitClassNumControl.Size = new System.Drawing.Size(168, 23);
+            this.InitClassNumControl.Size = new System.Drawing.Size(168, 24);
             this.InitClassNumControl.TabIndex = 13;
             this.InitClassNumControl.Value = new decimal(new int[] {
             5,
@@ -293,14 +293,14 @@
             // ProspClassNumControl
             // 
             this.ProspClassNumControl.Location = new System.Drawing.Point(110, 40);
-            this.ProspClassNumControl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ProspClassNumControl.Margin = new System.Windows.Forms.Padding(2);
             this.ProspClassNumControl.Minimum = new decimal(new int[] {
             2,
             0,
             0,
             0});
             this.ProspClassNumControl.Name = "ProspClassNumControl";
-            this.ProspClassNumControl.Size = new System.Drawing.Size(168, 23);
+            this.ProspClassNumControl.Size = new System.Drawing.Size(168, 24);
             this.ProspClassNumControl.TabIndex = 0;
             this.ProspClassNumControl.Value = new decimal(new int[] {
             8,
@@ -311,27 +311,27 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label10.Font = new System.Drawing.Font("等线", 12F);
             this.label10.Location = new System.Drawing.Point(23, 399);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(77, 14);
+            this.label10.Size = new System.Drawing.Size(88, 17);
             this.label10.TabIndex = 6;
             this.label10.Text = "输出文件：";
             // 
             // outputImageTextBox
             // 
             this.outputImageTextBox.Location = new System.Drawing.Point(107, 399);
-            this.outputImageTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.outputImageTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.outputImageTextBox.Name = "outputImageTextBox";
             this.outputImageTextBox.Size = new System.Drawing.Size(359, 22);
             this.outputImageTextBox.TabIndex = 7;
             // 
             // outputImageButton
             // 
-            this.outputImageButton.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.outputImageButton.Font = new System.Drawing.Font("等线", 12F);
             this.outputImageButton.Location = new System.Drawing.Point(469, 391);
-            this.outputImageButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.outputImageButton.Margin = new System.Windows.Forms.Padding(2);
             this.outputImageButton.Name = "outputImageButton";
             this.outputImageButton.Size = new System.Drawing.Size(72, 33);
             this.outputImageButton.TabIndex = 8;
@@ -341,9 +341,9 @@
             // 
             // formConfirm
             // 
-            this.formConfirm.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.formConfirm.Font = new System.Drawing.Font("等线", 12F);
             this.formConfirm.Location = new System.Drawing.Point(107, 429);
-            this.formConfirm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.formConfirm.Margin = new System.Windows.Forms.Padding(2);
             this.formConfirm.Name = "formConfirm";
             this.formConfirm.Size = new System.Drawing.Size(110, 33);
             this.formConfirm.TabIndex = 9;
@@ -353,9 +353,9 @@
             // 
             // formCancel
             // 
-            this.formCancel.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.formCancel.Font = new System.Drawing.Font("等线", 12F);
             this.formCancel.Location = new System.Drawing.Point(357, 429);
-            this.formCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.formCancel.Margin = new System.Windows.Forms.Padding(2);
             this.formCancel.Name = "formCancel";
             this.formCancel.Size = new System.Drawing.Size(110, 33);
             this.formCancel.TabIndex = 10;
@@ -369,11 +369,11 @@
             this.groupBox2.Controls.Add(this.bandNumLabel);
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.bandNumListBox);
-            this.groupBox2.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.groupBox2.Font = new System.Drawing.Font("等线", 12F);
             this.groupBox2.Location = new System.Drawing.Point(9, 58);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(252, 324);
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
@@ -382,7 +382,7 @@
             // bandClear
             // 
             this.bandClear.Location = new System.Drawing.Point(175, 285);
-            this.bandClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bandClear.Margin = new System.Windows.Forms.Padding(2);
             this.bandClear.Name = "bandClear";
             this.bandClear.Size = new System.Drawing.Size(68, 26);
             this.bandClear.TabIndex = 3;
@@ -415,16 +415,16 @@
             // bandNumListBox
             // 
             this.bandNumListBox.FormattingEnabled = true;
-            this.bandNumListBox.ItemHeight = 14;
+            this.bandNumListBox.ItemHeight = 17;
             this.bandNumListBox.Location = new System.Drawing.Point(0, 40);
-            this.bandNumListBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bandNumListBox.Margin = new System.Windows.Forms.Padding(2);
             this.bandNumListBox.Name = "bandNumListBox";
             this.bandNumListBox.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
-            this.bandNumListBox.Size = new System.Drawing.Size(242, 214);
+            this.bandNumListBox.Size = new System.Drawing.Size(242, 208);
             this.bandNumListBox.TabIndex = 0;
             this.bandNumListBox.SelectedIndexChanged += new System.EventHandler(this.bandNumListBox_SelectedIndexChanged);
             // 
-            // ISODATAForm
+            // isoDataForm
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
             this.Appearance.Options.UseBackColor = true;
@@ -442,8 +442,8 @@
             this.Controls.Add(this.inputImageTextBox);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "ISODATAForm";
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "isoDataForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ISODATA分类";
             this.Load += new System.EventHandler(this.ISODATAForm_Load);

@@ -86,7 +86,7 @@ namespace 绿廊智绘.Custom_Forms
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.结果框);
-            this.groupBox3.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.groupBox3.Font = new System.Drawing.Font("等线", 12F);
             this.groupBox3.Location = new System.Drawing.Point(12, 640);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(1187, 126);
@@ -105,7 +105,7 @@ namespace 绿廊智绘.Custom_Forms
             // 
             // 取消
             // 
-            this.取消.Font = new System.Drawing.Font("华文中宋", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.取消.Font = new System.Drawing.Font("等线", 12F);
             this.取消.Location = new System.Drawing.Point(1111, 52);
             this.取消.Name = "取消";
             this.取消.Size = new System.Drawing.Size(88, 49);
@@ -116,7 +116,7 @@ namespace 绿廊智绘.Custom_Forms
             // 
             // 确定
             // 
-            this.确定.Font = new System.Drawing.Font("华文中宋", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.确定.Font = new System.Drawing.Font("等线", 12F);
             this.确定.Location = new System.Drawing.Point(1014, 52);
             this.确定.Name = "确定";
             this.确定.Size = new System.Drawing.Size(91, 49);
@@ -129,7 +129,7 @@ namespace 绿廊智绘.Custom_Forms
             // 
             this.groupBox2.Controls.Add(this.第二期POI加载按钮);
             this.groupBox2.Controls.Add(this.第二景分类文件框);
-            this.groupBox2.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.groupBox2.Font = new System.Drawing.Font("等线", 12F);
             this.groupBox2.Location = new System.Drawing.Point(523, 12);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(485, 89);
@@ -139,7 +139,7 @@ namespace 绿廊智绘.Custom_Forms
             // 
             // 第二期POI加载按钮
             // 
-            this.第二期POI加载按钮.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.第二期POI加载按钮.Font = new System.Drawing.Font("等线", 12F);
             this.第二期POI加载按钮.Location = new System.Drawing.Point(376, 36);
             this.第二期POI加载按钮.Name = "第二期POI加载按钮";
             this.第二期POI加载按钮.Size = new System.Drawing.Size(103, 34);
@@ -153,14 +153,14 @@ namespace 绿廊智绘.Custom_Forms
             this.第二景分类文件框.FormattingEnabled = true;
             this.第二景分类文件框.Location = new System.Drawing.Point(6, 42);
             this.第二景分类文件框.Name = "第二景分类文件框";
-            this.第二景分类文件框.Size = new System.Drawing.Size(364, 24);
+            this.第二景分类文件框.Size = new System.Drawing.Size(364, 25);
             this.第二景分类文件框.TabIndex = 1;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.第一期POI加载按钮);
             this.groupBox1.Controls.Add(this.第一景分类文件框);
-            this.groupBox1.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.groupBox1.Font = new System.Drawing.Font("等线", 12F);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(505, 89);
@@ -170,7 +170,7 @@ namespace 绿廊智绘.Custom_Forms
             // 
             // 第一期POI加载按钮
             // 
-            this.第一期POI加载按钮.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.第一期POI加载按钮.Font = new System.Drawing.Font("等线", 12F);
             this.第一期POI加载按钮.Location = new System.Drawing.Point(401, 38);
             this.第一期POI加载按钮.Name = "第一期POI加载按钮";
             this.第一期POI加载按钮.Size = new System.Drawing.Size(98, 31);
@@ -184,14 +184,14 @@ namespace 绿廊智绘.Custom_Forms
             this.第一景分类文件框.FormattingEnabled = true;
             this.第一景分类文件框.Location = new System.Drawing.Point(7, 42);
             this.第一景分类文件框.Name = "第一景分类文件框";
-            this.第一景分类文件框.Size = new System.Drawing.Size(388, 24);
+            this.第一景分类文件框.Size = new System.Drawing.Size(388, 25);
             this.第一景分类文件框.TabIndex = 0;
             this.第一景分类文件框.SelectedIndexChanged += new System.EventHandler(this.第一景分类文件框_SelectedIndexChanged);
             // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.splitContainer1);
-            this.groupBox4.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.groupBox4.Font = new System.Drawing.Font("等线", 12F);
             this.groupBox4.Location = new System.Drawing.Point(12, 107);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(1187, 530);
@@ -202,7 +202,7 @@ namespace 绿廊智绘.Custom_Forms
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(3, 22);
+            this.splitContainer1.Location = new System.Drawing.Point(3, 20);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -213,7 +213,7 @@ namespace 绿廊智绘.Custom_Forms
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
-            this.splitContainer1.Size = new System.Drawing.Size(1181, 505);
+            this.splitContainer1.Size = new System.Drawing.Size(1181, 507);
             this.splitContainer1.SplitterDistance = 27;
             this.splitContainer1.TabIndex = 0;
             // 
@@ -261,7 +261,7 @@ namespace 绿廊智绘.Custom_Forms
             // 
             this.splitContainer2.Panel2.Controls.Add(this.toolStrip3);
             this.splitContainer2.Panel2.Controls.Add(this.POImapControl2);
-            this.splitContainer2.Size = new System.Drawing.Size(1181, 474);
+            this.splitContainer2.Size = new System.Drawing.Size(1181, 476);
             this.splitContainer2.SplitterDistance = 589;
             this.splitContainer2.TabIndex = 0;
             // 
@@ -341,7 +341,7 @@ namespace 绿廊智绘.Custom_Forms
             this.POImapControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.POImapControl1.Location = new System.Drawing.Point(0, 0);
             this.POImapControl1.Name = "POImapControl1";
-            this.POImapControl1.Size = new System.Drawing.Size(589, 474);
+            this.POImapControl1.Size = new System.Drawing.Size(589, 476);
             this.POImapControl1.TabIndex = 0;
             this.POImapControl1.Text = "第一期POI地图控件";
             // 
@@ -421,7 +421,7 @@ namespace 绿廊智绘.Custom_Forms
             this.POImapControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.POImapControl2.Location = new System.Drawing.Point(0, 0);
             this.POImapControl2.Name = "POImapControl2";
-            this.POImapControl2.Size = new System.Drawing.Size(588, 474);
+            this.POImapControl2.Size = new System.Drawing.Size(588, 476);
             this.POImapControl2.TabIndex = 0;
             this.POImapControl2.Text = "第二期POI地图控件";
             // 
@@ -456,7 +456,7 @@ namespace 绿廊智绘.Custom_Forms
             this.axLicenseControl1.Size = new System.Drawing.Size(32, 32);
             this.axLicenseControl1.TabIndex = 13;
             // 
-            // POI
+            // poiChangeStatisticsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -469,7 +469,7 @@ namespace 绿廊智绘.Custom_Forms
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "POI";
+            this.Name = "poiChangeStatisticsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "POI变化统计";
             this.Load += new System.EventHandler(this.POI_Load);

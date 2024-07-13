@@ -44,52 +44,52 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("华文中宋", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(86, 39);
+            this.label1.Font = new System.Drawing.Font("等线", 12F);
+            this.label1.Location = new System.Drawing.Point(75, 30);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 20);
+            this.label1.Size = new System.Drawing.Size(72, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "输入文件";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("华文中宋", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(86, 96);
+            this.label2.Font = new System.Drawing.Font("等线", 12F);
+            this.label2.Location = new System.Drawing.Point(75, 75);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 20);
+            this.label2.Size = new System.Drawing.Size(72, 17);
             this.label2.TabIndex = 1;
             this.label2.Text = "存储格式";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("华文中宋", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(86, 161);
+            this.label3.Font = new System.Drawing.Font("等线", 12F);
+            this.label3.Location = new System.Drawing.Point(75, 125);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 20);
+            this.label3.Size = new System.Drawing.Size(72, 17);
             this.label3.TabIndex = 2;
             this.label3.Text = "输出文件";
             // 
             // filetextBox
             // 
             this.filetextBox.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.filetextBox.Location = new System.Drawing.Point(191, 35);
-            this.filetextBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.filetextBox.Location = new System.Drawing.Point(167, 27);
+            this.filetextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.filetextBox.Name = "filetextBox";
-            this.filetextBox.Size = new System.Drawing.Size(218, 30);
+            this.filetextBox.Size = new System.Drawing.Size(191, 25);
             this.filetextBox.TabIndex = 3;
             // 
             // outputtextBox
             // 
             this.outputtextBox.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.outputtextBox.Location = new System.Drawing.Point(191, 152);
-            this.outputtextBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.outputtextBox.Location = new System.Drawing.Point(167, 118);
+            this.outputtextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.outputtextBox.Name = "outputtextBox";
-            this.outputtextBox.Size = new System.Drawing.Size(218, 30);
+            this.outputtextBox.Size = new System.Drawing.Size(191, 25);
             this.outputtextBox.TabIndex = 4;
             // 
             // outputcomboBox
@@ -101,19 +101,19 @@
             "BSQ",
             "BIL",
             "BIP"});
-            this.outputcomboBox.Location = new System.Drawing.Point(191, 93);
-            this.outputcomboBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.outputcomboBox.Location = new System.Drawing.Point(167, 72);
+            this.outputcomboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.outputcomboBox.Name = "outputcomboBox";
-            this.outputcomboBox.Size = new System.Drawing.Size(218, 30);
+            this.outputcomboBox.Size = new System.Drawing.Size(191, 26);
             this.outputcomboBox.TabIndex = 5;
             // 
             // inputfile_button
             // 
-            this.inputfile_button.Font = new System.Drawing.Font("华文中宋", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputfile_button.Location = new System.Drawing.Point(435, 32);
-            this.inputfile_button.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.inputfile_button.Font = new System.Drawing.Font("等线", 12F);
+            this.inputfile_button.Location = new System.Drawing.Point(381, 25);
+            this.inputfile_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.inputfile_button.Name = "inputfile_button";
-            this.inputfile_button.Size = new System.Drawing.Size(90, 36);
+            this.inputfile_button.Size = new System.Drawing.Size(79, 28);
             this.inputfile_button.TabIndex = 6;
             this.inputfile_button.Text = "浏览";
             this.inputfile_button.UseVisualStyleBackColor = true;
@@ -121,11 +121,11 @@
             // 
             // outputfile_button
             // 
-            this.outputfile_button.Font = new System.Drawing.Font("华文中宋", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.outputfile_button.Location = new System.Drawing.Point(435, 148);
-            this.outputfile_button.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.outputfile_button.Font = new System.Drawing.Font("等线", 12F);
+            this.outputfile_button.Location = new System.Drawing.Point(381, 115);
+            this.outputfile_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.outputfile_button.Name = "outputfile_button";
-            this.outputfile_button.Size = new System.Drawing.Size(90, 36);
+            this.outputfile_button.Size = new System.Drawing.Size(79, 28);
             this.outputfile_button.TabIndex = 7;
             this.outputfile_button.Text = "浏览";
             this.outputfile_button.UseVisualStyleBackColor = true;
@@ -133,11 +133,11 @@
             // 
             // button3
             // 
-            this.button3.Font = new System.Drawing.Font("华文中宋", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(138, 229);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.button3.Font = new System.Drawing.Font("等线", 12F);
+            this.button3.Location = new System.Drawing.Point(121, 178);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(90, 36);
+            this.button3.Size = new System.Drawing.Size(79, 28);
             this.button3.TabIndex = 8;
             this.button3.Text = "确定";
             this.button3.UseVisualStyleBackColor = true;
@@ -145,11 +145,11 @@
             // 
             // button4
             // 
-            this.button4.Font = new System.Drawing.Font("华文中宋", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(360, 229);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.button4.Font = new System.Drawing.Font("等线", 12F);
+            this.button4.Location = new System.Drawing.Point(315, 178);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(90, 36);
+            this.button4.Size = new System.Drawing.Size(79, 28);
             this.button4.TabIndex = 9;
             this.button4.Text = "取消";
             this.button4.UseVisualStyleBackColor = true;
@@ -157,11 +157,11 @@
             // 
             // storageFormatConversionForm
             // 
-            this.Appearance.BackColor = System.Drawing.Color.White;
+            this.Appearance.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Appearance.Options.UseBackColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(592, 329);
+            this.ClientSize = new System.Drawing.Size(518, 256);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.outputfile_button);
@@ -173,7 +173,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "storageFormatConversionForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "影像存储格式转换";

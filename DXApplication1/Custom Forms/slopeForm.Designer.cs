@@ -1,7 +1,7 @@
 ﻿
 namespace 绿廊智绘.Custom_Forms
 {
-    partial class slope
+    partial class slopeForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace 绿廊智绘.Custom_Forms
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(slope));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(slopeForm));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.DEM加载按钮 = new System.Windows.Forms.Button();
             this.DEM输入框 = new System.Windows.Forms.ComboBox();
@@ -46,6 +46,7 @@ namespace 绿廊智绘.Custom_Forms
             // 
             this.groupBox1.Controls.Add(this.DEM加载按钮);
             this.groupBox1.Controls.Add(this.DEM输入框);
+            this.groupBox1.Font = new System.Drawing.Font("等线", 12F);
             this.groupBox1.Location = new System.Drawing.Point(27, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(389, 75);
@@ -57,7 +58,7 @@ namespace 绿廊智绘.Custom_Forms
             // 
             this.DEM加载按钮.Location = new System.Drawing.Point(308, 30);
             this.DEM加载按钮.Name = "DEM加载按钮";
-            this.DEM加载按钮.Size = new System.Drawing.Size(75, 23);
+            this.DEM加载按钮.Size = new System.Drawing.Size(75, 25);
             this.DEM加载按钮.TabIndex = 1;
             this.DEM加载按钮.Text = "加载";
             this.DEM加载按钮.UseVisualStyleBackColor = true;
@@ -68,7 +69,7 @@ namespace 绿廊智绘.Custom_Forms
             this.DEM输入框.FormattingEnabled = true;
             this.DEM输入框.Location = new System.Drawing.Point(6, 30);
             this.DEM输入框.Name = "DEM输入框";
-            this.DEM输入框.Size = new System.Drawing.Size(296, 20);
+            this.DEM输入框.Size = new System.Drawing.Size(296, 25);
             this.DEM输入框.TabIndex = 1;
             this.DEM输入框.SelectedIndexChanged += new System.EventHandler(this.DEM输入框_SelectedIndexChanged);
             // 
@@ -76,6 +77,7 @@ namespace 绿廊智绘.Custom_Forms
             // 
             this.groupBox2.Controls.Add(this.输出路径加载框);
             this.groupBox2.Controls.Add(this.输出路径框);
+            this.groupBox2.Font = new System.Drawing.Font("等线", 12F);
             this.groupBox2.Location = new System.Drawing.Point(27, 93);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(389, 75);
@@ -87,7 +89,7 @@ namespace 绿廊智绘.Custom_Forms
             // 
             this.输出路径加载框.Location = new System.Drawing.Point(308, 30);
             this.输出路径加载框.Name = "输出路径加载框";
-            this.输出路径加载框.Size = new System.Drawing.Size(75, 23);
+            this.输出路径加载框.Size = new System.Drawing.Size(75, 25);
             this.输出路径加载框.TabIndex = 1;
             this.输出路径加载框.Text = "浏览";
             this.输出路径加载框.UseVisualStyleBackColor = true;
@@ -98,15 +100,16 @@ namespace 绿廊智绘.Custom_Forms
             this.输出路径框.FormattingEnabled = true;
             this.输出路径框.Location = new System.Drawing.Point(6, 30);
             this.输出路径框.Name = "输出路径框";
-            this.输出路径框.Size = new System.Drawing.Size(296, 20);
+            this.输出路径框.Size = new System.Drawing.Size(296, 25);
             this.输出路径框.TabIndex = 1;
             this.输出路径框.SelectedIndexChanged += new System.EventHandler(this.输出路径框_SelectedIndexChanged);
             // 
             // 确定
             // 
-            this.确定.Location = new System.Drawing.Point(101, 185);
+            this.确定.Font = new System.Drawing.Font("等线", 12F);
+            this.确定.Location = new System.Drawing.Point(101, 174);
             this.确定.Name = "确定";
-            this.确定.Size = new System.Drawing.Size(75, 23);
+            this.确定.Size = new System.Drawing.Size(75, 34);
             this.确定.TabIndex = 2;
             this.确定.Text = "确定";
             this.确定.UseVisualStyleBackColor = true;
@@ -114,15 +117,16 @@ namespace 绿廊智绘.Custom_Forms
             // 
             // 取消
             // 
-            this.取消.Location = new System.Drawing.Point(254, 185);
+            this.取消.Font = new System.Drawing.Font("等线", 12F);
+            this.取消.Location = new System.Drawing.Point(254, 174);
             this.取消.Name = "取消";
-            this.取消.Size = new System.Drawing.Size(75, 23);
+            this.取消.Size = new System.Drawing.Size(75, 34);
             this.取消.TabIndex = 3;
             this.取消.Text = "取消";
             this.取消.UseVisualStyleBackColor = true;
             this.取消.Click += new System.EventHandler(this.取消_Click);
             // 
-            // slope
+            // slopeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -132,7 +136,7 @@ namespace 绿廊智绘.Custom_Forms
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "slope";
+            this.Name = "slopeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "坡度处理";
             this.Load += new System.EventHandler(this.slope_Load);

@@ -38,20 +38,20 @@
             // 
             // labelBrightness
             // 
-            this.labelBrightness.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelBrightness.Location = new System.Drawing.Point(18, 36);
+            this.labelBrightness.Font = new System.Drawing.Font("等线", 12F);
+            this.labelBrightness.Location = new System.Drawing.Point(16, 31);
             this.labelBrightness.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelBrightness.Name = "labelBrightness";
-            this.labelBrightness.Size = new System.Drawing.Size(66, 27);
+            this.labelBrightness.Size = new System.Drawing.Size(58, 21);
             this.labelBrightness.TabIndex = 0;
             this.labelBrightness.Text = "亮度：";
             // 
             // numericUpDownBrightness
             // 
-            this.numericUpDownBrightness.Location = new System.Drawing.Point(78, 36);
-            this.numericUpDownBrightness.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.numericUpDownBrightness.Location = new System.Drawing.Point(68, 28);
+            this.numericUpDownBrightness.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownBrightness.Name = "numericUpDownBrightness";
-            this.numericUpDownBrightness.Size = new System.Drawing.Size(190, 26);
+            this.numericUpDownBrightness.Size = new System.Drawing.Size(166, 22);
             this.numericUpDownBrightness.TabIndex = 1;
             this.numericUpDownBrightness.Value = new decimal(new int[] {
             50,
@@ -61,11 +61,11 @@
             // 
             // brightnessConfirm
             // 
-            this.brightnessConfirm.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.brightnessConfirm.Location = new System.Drawing.Point(22, 90);
-            this.brightnessConfirm.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.brightnessConfirm.Font = new System.Drawing.Font("宋体", 10.5F);
+            this.brightnessConfirm.Location = new System.Drawing.Point(19, 70);
+            this.brightnessConfirm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.brightnessConfirm.Name = "brightnessConfirm";
-            this.brightnessConfirm.Size = new System.Drawing.Size(106, 36);
+            this.brightnessConfirm.Size = new System.Drawing.Size(93, 28);
             this.brightnessConfirm.TabIndex = 2;
             this.brightnessConfirm.Text = "确定";
             this.brightnessConfirm.UseVisualStyleBackColor = true;
@@ -73,13 +73,13 @@
             // 
             // brightnessCancel
             // 
-            this.brightnessCancel.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.brightnessCancel.Location = new System.Drawing.Point(158, 90);
-            this.brightnessCancel.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.brightnessCancel.Font = new System.Drawing.Font("等线", 10.5F);
+            this.brightnessCancel.Location = new System.Drawing.Point(138, 70);
+            this.brightnessCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.brightnessCancel.Name = "brightnessCancel";
-            this.brightnessCancel.Size = new System.Drawing.Size(106, 36);
+            this.brightnessCancel.Size = new System.Drawing.Size(93, 28);
             this.brightnessCancel.TabIndex = 3;
-            this.brightnessCancel.Text = "取消";
+            this.brightnessCancel.Text = "取消";
             this.brightnessCancel.UseVisualStyleBackColor = true;
             this.brightnessCancel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.brightnessBtnCancel);
             // 
@@ -87,15 +87,15 @@
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
             this.Appearance.Options.UseBackColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(286, 153);
+            this.ClientSize = new System.Drawing.Size(250, 119);
             this.Controls.Add(this.brightnessCancel);
             this.Controls.Add(this.brightnessConfirm);
             this.Controls.Add(this.numericUpDownBrightness);
             this.Controls.Add(this.labelBrightness);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "brightnessParam";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "输入亮度值";

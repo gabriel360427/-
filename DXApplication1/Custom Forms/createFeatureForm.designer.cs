@@ -55,28 +55,29 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(19, 26);
+            this.label1.Font = new System.Drawing.Font("等线", 12F);
+            this.label1.Location = new System.Drawing.Point(14, 21);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 20);
+            this.label1.Size = new System.Drawing.Size(88, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "输出文件：";
             // 
             // outputFeatureTextBox
             // 
-            this.outputFeatureTextBox.Location = new System.Drawing.Point(140, 26);
-            this.outputFeatureTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.outputFeatureTextBox.Location = new System.Drawing.Point(105, 21);
+            this.outputFeatureTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.outputFeatureTextBox.Name = "outputFeatureTextBox";
-            this.outputFeatureTextBox.Size = new System.Drawing.Size(597, 25);
+            this.outputFeatureTextBox.Size = new System.Drawing.Size(449, 21);
             this.outputFeatureTextBox.TabIndex = 1;
             // 
             // outputFeatureBtn
             // 
-            this.outputFeatureBtn.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.outputFeatureBtn.Location = new System.Drawing.Point(767, 21);
-            this.outputFeatureBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.outputFeatureBtn.Font = new System.Drawing.Font("等线", 12F);
+            this.outputFeatureBtn.Location = new System.Drawing.Point(575, 17);
+            this.outputFeatureBtn.Margin = new System.Windows.Forms.Padding(2);
             this.outputFeatureBtn.Name = "outputFeatureBtn";
-            this.outputFeatureBtn.Size = new System.Drawing.Size(95, 30);
+            this.outputFeatureBtn.Size = new System.Drawing.Size(71, 24);
             this.outputFeatureBtn.TabIndex = 2;
             this.outputFeatureBtn.Text = "浏览";
             this.outputFeatureBtn.UseVisualStyleBackColor = true;
@@ -85,10 +86,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(19, 111);
+            this.label2.Font = new System.Drawing.Font("等线", 12F);
+            this.label2.Location = new System.Drawing.Point(14, 89);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 20);
+            this.label2.Size = new System.Drawing.Size(88, 17);
             this.label2.TabIndex = 3;
             this.label2.Text = "要素类型：";
             // 
@@ -99,19 +101,19 @@
             "点",
             "线",
             "面"});
-            this.featureTypeComboBox.Location = new System.Drawing.Point(140, 111);
-            this.featureTypeComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.featureTypeComboBox.Location = new System.Drawing.Point(105, 89);
+            this.featureTypeComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.featureTypeComboBox.Name = "featureTypeComboBox";
-            this.featureTypeComboBox.Size = new System.Drawing.Size(337, 23);
+            this.featureTypeComboBox.Size = new System.Drawing.Size(254, 20);
             this.featureTypeComboBox.TabIndex = 4;
             // 
             // addFieldBtn
             // 
-            this.addFieldBtn.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.addFieldBtn.Location = new System.Drawing.Point(599, 111);
-            this.addFieldBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.addFieldBtn.Font = new System.Drawing.Font("等线", 12F);
+            this.addFieldBtn.Location = new System.Drawing.Point(449, 89);
+            this.addFieldBtn.Margin = new System.Windows.Forms.Padding(2);
             this.addFieldBtn.Name = "addFieldBtn";
-            this.addFieldBtn.Size = new System.Drawing.Size(116, 30);
+            this.addFieldBtn.Size = new System.Drawing.Size(87, 24);
             this.addFieldBtn.TabIndex = 5;
             this.addFieldBtn.Text = "添加字段";
             this.addFieldBtn.UseVisualStyleBackColor = true;
@@ -119,11 +121,11 @@
             // 
             // removeFieldBtn
             // 
-            this.removeFieldBtn.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.removeFieldBtn.Location = new System.Drawing.Point(747, 111);
-            this.removeFieldBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.removeFieldBtn.Font = new System.Drawing.Font("等线", 12F);
+            this.removeFieldBtn.Location = new System.Drawing.Point(560, 89);
+            this.removeFieldBtn.Margin = new System.Windows.Forms.Padding(2);
             this.removeFieldBtn.Name = "removeFieldBtn";
-            this.removeFieldBtn.Size = new System.Drawing.Size(116, 30);
+            this.removeFieldBtn.Size = new System.Drawing.Size(87, 24);
             this.removeFieldBtn.TabIndex = 6;
             this.removeFieldBtn.Text = "删除字段";
             this.removeFieldBtn.UseVisualStyleBackColor = true;
@@ -157,11 +159,11 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.featureDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
-            this.featureDataGridView.Location = new System.Drawing.Point(11, 151);
-            this.featureDataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.featureDataGridView.Location = new System.Drawing.Point(8, 121);
+            this.featureDataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.featureDataGridView.Name = "featureDataGridView";
             this.featureDataGridView.RowTemplate.Height = 30;
-            this.featureDataGridView.Size = new System.Drawing.Size(852, 451);
+            this.featureDataGridView.Size = new System.Drawing.Size(639, 361);
             this.featureDataGridView.TabIndex = 7;
             this.featureDataGridView.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.featureDataGridView_EditingControlShowing);
             // 
@@ -192,11 +194,11 @@
             // 
             // confirmBtn
             // 
-            this.confirmBtn.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.confirmBtn.Location = new System.Drawing.Point(140, 624);
-            this.confirmBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.confirmBtn.Font = new System.Drawing.Font("等线", 12F);
+            this.confirmBtn.Location = new System.Drawing.Point(105, 499);
+            this.confirmBtn.Margin = new System.Windows.Forms.Padding(2);
             this.confirmBtn.Name = "confirmBtn";
-            this.confirmBtn.Size = new System.Drawing.Size(153, 39);
+            this.confirmBtn.Size = new System.Drawing.Size(115, 31);
             this.confirmBtn.TabIndex = 8;
             this.confirmBtn.Text = "确定";
             this.confirmBtn.UseVisualStyleBackColor = true;
@@ -204,11 +206,11 @@
             // 
             // cancelBtn
             // 
-            this.cancelBtn.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.cancelBtn.Location = new System.Drawing.Point(583, 624);
-            this.cancelBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cancelBtn.Font = new System.Drawing.Font("等线", 12F);
+            this.cancelBtn.Location = new System.Drawing.Point(437, 499);
+            this.cancelBtn.Margin = new System.Windows.Forms.Padding(2);
             this.cancelBtn.Name = "cancelBtn";
-            this.cancelBtn.Size = new System.Drawing.Size(153, 39);
+            this.cancelBtn.Size = new System.Drawing.Size(115, 31);
             this.cancelBtn.TabIndex = 9;
             this.cancelBtn.Text = "取消";
             this.cancelBtn.UseVisualStyleBackColor = true;
@@ -217,20 +219,21 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(19, 69);
+            this.label3.Font = new System.Drawing.Font("等线", 12F);
+            this.label3.Location = new System.Drawing.Point(14, 55);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(89, 20);
+            this.label3.Size = new System.Drawing.Size(72, 17);
             this.label3.TabIndex = 10;
             this.label3.Text = "坐标系：";
             // 
             // spatialReferenceSelectorBtn
             // 
-            this.spatialReferenceSelectorBtn.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.spatialReferenceSelectorBtn.Location = new System.Drawing.Point(767, 69);
-            this.spatialReferenceSelectorBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.spatialReferenceSelectorBtn.Font = new System.Drawing.Font("等线", 12F);
+            this.spatialReferenceSelectorBtn.Location = new System.Drawing.Point(575, 55);
+            this.spatialReferenceSelectorBtn.Margin = new System.Windows.Forms.Padding(2);
             this.spatialReferenceSelectorBtn.Name = "spatialReferenceSelectorBtn";
-            this.spatialReferenceSelectorBtn.Size = new System.Drawing.Size(95, 30);
+            this.spatialReferenceSelectorBtn.Size = new System.Drawing.Size(71, 24);
             this.spatialReferenceSelectorBtn.TabIndex = 12;
             this.spatialReferenceSelectorBtn.Text = "选择";
             this.spatialReferenceSelectorBtn.UseVisualStyleBackColor = true;
@@ -238,18 +241,18 @@
             // 
             // spatialReferenceTextBox
             // 
-            this.spatialReferenceTextBox.Location = new System.Drawing.Point(140, 71);
-            this.spatialReferenceTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.spatialReferenceTextBox.Location = new System.Drawing.Point(105, 57);
+            this.spatialReferenceTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.spatialReferenceTextBox.Name = "spatialReferenceTextBox";
-            this.spatialReferenceTextBox.Size = new System.Drawing.Size(597, 25);
+            this.spatialReferenceTextBox.Size = new System.Drawing.Size(449, 21);
             this.spatialReferenceTextBox.TabIndex = 13;
             // 
             // createFeatureForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(875, 674);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(656, 539);
             this.Controls.Add(this.spatialReferenceTextBox);
             this.Controls.Add(this.spatialReferenceSelectorBtn);
             this.Controls.Add(this.label3);
@@ -264,7 +267,7 @@
             this.Controls.Add(this.outputFeatureTextBox);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "createFeatureForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "创建要素";

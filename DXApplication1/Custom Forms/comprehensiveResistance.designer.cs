@@ -43,6 +43,7 @@
             // 
             // button4
             // 
+            this.button4.Font = new System.Drawing.Font("等线", 12F);
             this.button4.Location = new System.Drawing.Point(328, 291);
             this.button4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.button4.Name = "button4";
@@ -54,6 +55,7 @@
             // 
             // button3
             // 
+            this.button3.Font = new System.Drawing.Font("等线", 12F);
             this.button3.Location = new System.Drawing.Point(115, 291);
             this.button3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.button3.Name = "button3";
@@ -90,7 +92,7 @@
             this.textBox2.Location = new System.Drawing.Point(30, 56);
             this.textBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(375, 22);
+            this.textBox2.Size = new System.Drawing.Size(375, 24);
             this.textBox2.TabIndex = 7;
             // 
             // textBox1
@@ -98,7 +100,7 @@
             this.textBox1.Location = new System.Drawing.Point(29, 55);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(375, 22);
+            this.textBox1.Size = new System.Drawing.Size(375, 24);
             this.textBox1.TabIndex = 6;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -106,6 +108,7 @@
             // 
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Font = new System.Drawing.Font("等线", 12F);
             this.groupBox1.Location = new System.Drawing.Point(10, 10);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.groupBox1.Name = "groupBox1";
@@ -119,6 +122,7 @@
             // 
             this.groupBox2.Controls.Add(this.textBox2);
             this.groupBox2.Controls.Add(this.button2);
+            this.groupBox2.Font = new System.Drawing.Font("等线", 12F);
             this.groupBox2.Location = new System.Drawing.Point(9, 176);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.groupBox2.Name = "groupBox2";

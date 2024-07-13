@@ -50,7 +50,7 @@
             this.groupBox1.Controls.Add(this.MoveUp);
             this.groupBox1.Controls.Add(this.InputFile);
             this.groupBox1.Controls.Add(this.输入文件);
-            this.groupBox1.Font = new System.Drawing.Font("华文中宋", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.groupBox1.Font = new System.Drawing.Font("等线", 10.2F);
             this.groupBox1.Location = new System.Drawing.Point(14, 16);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.Name = "groupBox1";
@@ -62,7 +62,7 @@
             // 
             // Remove
             // 
-            this.Remove.Font = new System.Drawing.Font("华文中宋", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Remove.Font = new System.Drawing.Font("等线", 12F);
             this.Remove.Location = new System.Drawing.Point(601, 295);
             this.Remove.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Remove.Name = "Remove";
@@ -74,8 +74,8 @@
             // 
             // MoveDown
             // 
-            this.MoveDown.Font = new System.Drawing.Font("华文中宋", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.MoveDown.Location = new System.Drawing.Point(601, 211);
+            this.MoveDown.Font = new System.Drawing.Font("等线", 12F);
+            this.MoveDown.Location = new System.Drawing.Point(602, 211);
             this.MoveDown.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MoveDown.Name = "MoveDown";
             this.MoveDown.Size = new System.Drawing.Size(99, 51);
@@ -86,7 +86,7 @@
             // 
             // MoveUp
             // 
-            this.MoveUp.Font = new System.Drawing.Font("华文中宋", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.MoveUp.Font = new System.Drawing.Font("等线", 12F);
             this.MoveUp.Location = new System.Drawing.Point(601, 122);
             this.MoveUp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MoveUp.Name = "MoveUp";
@@ -98,7 +98,7 @@
             // 
             // InputFile
             // 
-            this.InputFile.Font = new System.Drawing.Font("华文中宋", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.InputFile.Font = new System.Drawing.Font("等线", 12F);
             this.InputFile.Location = new System.Drawing.Point(601, 33);
             this.InputFile.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.InputFile.Name = "InputFile";
@@ -111,20 +111,20 @@
             // 输入文件
             // 
             this.输入文件.FormattingEnabled = true;
-            this.输入文件.ItemHeight = 16;
+            this.输入文件.ItemHeight = 14;
             this.输入文件.Location = new System.Drawing.Point(33, 33);
             this.输入文件.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.输入文件.Name = "输入文件";
-            this.输入文件.Size = new System.Drawing.Size(528, 292);
+            this.输入文件.Size = new System.Drawing.Size(528, 284);
             this.输入文件.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("等线", 10.5F);
             this.label1.Location = new System.Drawing.Point(44, 414);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 16);
+            this.label1.Size = new System.Drawing.Size(63, 14);
             this.label1.TabIndex = 1;
             this.label1.Text = "输出文件";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -141,7 +141,7 @@
             // 
             // OutputFile
             // 
-            this.OutputFile.Font = new System.Drawing.Font("华文中宋", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.OutputFile.Font = new System.Drawing.Font("等线", 12F);
             this.OutputFile.Location = new System.Drawing.Point(616, 406);
             this.OutputFile.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.OutputFile.Name = "OutputFile";
@@ -153,7 +153,7 @@
             // 
             // OK
             // 
-            this.OK.Font = new System.Drawing.Font("华文中宋", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.OK.Font = new System.Drawing.Font("等线", 12F);
             this.OK.Location = new System.Drawing.Point(133, 477);
             this.OK.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.OK.Name = "OK";
@@ -165,7 +165,7 @@
             // 
             // Cancel
             // 
-            this.Cancel.Font = new System.Drawing.Font("华文中宋", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Cancel.Font = new System.Drawing.Font("等线", 12F);
             this.Cancel.Location = new System.Drawing.Point(478, 477);
             this.Cancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Cancel.Name = "Cancel";
@@ -175,7 +175,7 @@
             this.Cancel.UseVisualStyleBackColor = true;
             this.Cancel.Click += new System.EventHandler(this.button7_Click);
             // 
-            // BandSynthesisForm
+            // bandSynthesisForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(753, 543);
@@ -189,7 +189,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
-            this.Name = "BandSynthesisForm";
+            this.Name = "bandSynthesisForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "波段合成";
             this.groupBox1.ResumeLayout(false);

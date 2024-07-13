@@ -69,7 +69,7 @@
             this.textBox3.Location = new System.Drawing.Point(41, 30);
             this.textBox3.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(306, 22);
+            this.textBox3.Size = new System.Drawing.Size(306, 24);
             this.textBox3.TabIndex = 62;
             // 
             // axMapControl1
@@ -107,12 +107,13 @@
             this.textBox4.Location = new System.Drawing.Point(41, 24);
             this.textBox4.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(306, 22);
+            this.textBox4.Size = new System.Drawing.Size(306, 24);
             this.textBox4.TabIndex = 57;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(254, 272);
+            this.button4.Font = new System.Drawing.Font("等线", 12F);
+            this.button4.Location = new System.Drawing.Point(283, 272);
             this.button4.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(73, 27);
@@ -123,7 +124,8 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(139, 272);
+            this.button3.Font = new System.Drawing.Font("等线", 12F);
+            this.button3.Location = new System.Drawing.Point(50, 272);
             this.button3.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(73, 27);
@@ -148,7 +150,7 @@
             this.textBox2.Location = new System.Drawing.Point(41, 25);
             this.textBox2.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(306, 22);
+            this.textBox2.Size = new System.Drawing.Size(306, 24);
             this.textBox2.TabIndex = 52;
             // 
             // button1
@@ -167,17 +169,18 @@
             this.textBox1.Location = new System.Drawing.Point(41, 25);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(306, 22);
+            this.textBox1.Size = new System.Drawing.Size(306, 24);
             this.textBox1.TabIndex = 49;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Font = new System.Drawing.Font("等线", 12F);
             this.groupBox1.Location = new System.Drawing.Point(9, 8);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(456, 57);
             this.groupBox1.TabIndex = 64;
             this.groupBox1.TabStop = false;
@@ -187,10 +190,11 @@
             // 
             this.groupBox2.Controls.Add(this.textBox4);
             this.groupBox2.Controls.Add(this.button5);
+            this.groupBox2.Font = new System.Drawing.Font("等线", 12F);
             this.groupBox2.Location = new System.Drawing.Point(9, 69);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(456, 57);
             this.groupBox2.TabIndex = 65;
             this.groupBox2.TabStop = false;
@@ -200,10 +204,11 @@
             // 
             this.groupBox3.Controls.Add(this.textBox2);
             this.groupBox3.Controls.Add(this.button2);
+            this.groupBox3.Font = new System.Drawing.Font("等线", 12F);
             this.groupBox3.Location = new System.Drawing.Point(9, 130);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox3.Size = new System.Drawing.Size(456, 55);
             this.groupBox3.TabIndex = 66;
             this.groupBox3.TabStop = false;
@@ -213,16 +218,17 @@
             // 
             this.groupBox4.Controls.Add(this.textBox3);
             this.groupBox4.Controls.Add(this.button6);
+            this.groupBox4.Font = new System.Drawing.Font("等线", 12F);
             this.groupBox4.Location = new System.Drawing.Point(9, 195);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox4.Size = new System.Drawing.Size(456, 64);
             this.groupBox4.TabIndex = 67;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "输出栅格路径：";
             // 
-            // CostPathCalculation
+            // costPathCalculation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -239,7 +245,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.MaximizeBox = false;
-            this.Name = "CostPathCalculation";
+            this.Name = "costPathCalculation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "成本路径";
             this.Load += new System.EventHandler(this.成本路径_Load);

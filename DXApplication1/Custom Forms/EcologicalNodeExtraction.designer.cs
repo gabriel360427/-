@@ -55,7 +55,7 @@
             // 
             this.groupBox1.Controls.Add(this.groupBox4);
             this.groupBox1.Controls.Add(this.groupBox3);
-            this.groupBox1.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.groupBox1.Font = new System.Drawing.Font("等线", 12F);
             this.groupBox1.Location = new System.Drawing.Point(9, 13);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.groupBox1.Name = "groupBox1";
@@ -83,7 +83,7 @@
             this.textBox4.Location = new System.Drawing.Point(11, 29);
             this.textBox4.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(362, 23);
+            this.textBox4.Size = new System.Drawing.Size(362, 24);
             this.textBox4.TabIndex = 63;
             // 
             // button5
@@ -115,7 +115,7 @@
             this.textBox1.Location = new System.Drawing.Point(11, 29);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(362, 23);
+            this.textBox1.Size = new System.Drawing.Size(362, 24);
             this.textBox1.TabIndex = 60;
             // 
             // button1
@@ -164,13 +164,13 @@
             this.textBox3.Location = new System.Drawing.Point(15, 31);
             this.textBox3.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(362, 23);
+            this.textBox3.Size = new System.Drawing.Size(362, 24);
             this.textBox3.TabIndex = 68;
             // 
             // button4
             // 
-            this.button4.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button4.Location = new System.Drawing.Point(293, 295);
+            this.button4.Font = new System.Drawing.Font("等线", 12F);
+            this.button4.Location = new System.Drawing.Point(272, 294);
             this.button4.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(115, 41);
@@ -181,7 +181,7 @@
             // 
             // button3
             // 
-            this.button3.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button3.Font = new System.Drawing.Font("等线", 12F);
             this.button3.Location = new System.Drawing.Point(98, 295);
             this.button3.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.button3.Name = "button3";
@@ -195,7 +195,7 @@
             // 
             this.groupBox2.Controls.Add(this.textBox3);
             this.groupBox2.Controls.Add(this.button6);
-            this.groupBox2.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.groupBox2.Font = new System.Drawing.Font("等线", 12F);
             this.groupBox2.Location = new System.Drawing.Point(9, 214);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.groupBox2.Name = "groupBox2";
@@ -205,7 +205,7 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "输出相交结果路径：";
             // 
-            // EcologicalNodeExtraction
+            // ecologicalNodeExtraction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -220,7 +220,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.MaximizeBox = false;
-            this.Name = "EcologicalNodeExtraction";
+            this.Name = "ecologicalNodeExtraction";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "生态节点";
             this.Load += new System.EventHandler(this.生态节点_Load);

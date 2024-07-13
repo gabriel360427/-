@@ -51,55 +51,55 @@
             // ImageOneLabel
             // 
             this.ImageOneLabel.AutoSize = true;
-            this.ImageOneLabel.Font = new System.Drawing.Font("华文中宋", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ImageOneLabel.Location = new System.Drawing.Point(11, 71);
+            this.ImageOneLabel.Font = new System.Drawing.Font("等线", 12F);
+            this.ImageOneLabel.Location = new System.Drawing.Point(10, 33);
             this.ImageOneLabel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.ImageOneLabel.Name = "ImageOneLabel";
-            this.ImageOneLabel.Size = new System.Drawing.Size(162, 21);
+            this.ImageOneLabel.Size = new System.Drawing.Size(136, 17);
             this.ImageOneLabel.TabIndex = 0;
             this.ImageOneLabel.Text = "选择第一张图像：";
             // 
             // ImageTwoLabel
             // 
             this.ImageTwoLabel.AutoSize = true;
-            this.ImageTwoLabel.Font = new System.Drawing.Font("华文中宋", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ImageTwoLabel.Location = new System.Drawing.Point(11, 126);
+            this.ImageTwoLabel.Font = new System.Drawing.Font("等线", 12F);
+            this.ImageTwoLabel.Location = new System.Drawing.Point(10, 82);
             this.ImageTwoLabel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.ImageTwoLabel.Name = "ImageTwoLabel";
-            this.ImageTwoLabel.Size = new System.Drawing.Size(162, 21);
+            this.ImageTwoLabel.Size = new System.Drawing.Size(136, 17);
             this.ImageTwoLabel.TabIndex = 1;
             this.ImageTwoLabel.Text = "选择第二张图像：";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("华文中宋", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(65, 235);
+            this.label1.Font = new System.Drawing.Font("等线", 12F);
+            this.label1.Location = new System.Drawing.Point(57, 178);
             this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 21);
+            this.label1.Size = new System.Drawing.Size(88, 17);
             this.label1.TabIndex = 4;
             this.label1.Text = "计算公式：";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("华文中宋", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(65, 285);
+            this.label2.Font = new System.Drawing.Font("等线", 12F);
+            this.label2.Location = new System.Drawing.Point(57, 222);
             this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 21);
+            this.label2.Size = new System.Drawing.Size(88, 17);
             this.label2.TabIndex = 8;
             this.label2.Text = "输出文件：";
             // 
             // CalConfirmBtn
             // 
             this.CalConfirmBtn.AutoSize = true;
-            this.CalConfirmBtn.Font = new System.Drawing.Font("华文中宋", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CalConfirmBtn.Location = new System.Drawing.Point(181, 334);
-            this.CalConfirmBtn.Margin = new System.Windows.Forms.Padding(1, 3, 1, 3);
+            this.CalConfirmBtn.Font = new System.Drawing.Font("等线", 12F);
+            this.CalConfirmBtn.Location = new System.Drawing.Point(158, 260);
+            this.CalConfirmBtn.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.CalConfirmBtn.Name = "CalConfirmBtn";
-            this.CalConfirmBtn.Size = new System.Drawing.Size(89, 35);
+            this.CalConfirmBtn.Size = new System.Drawing.Size(78, 31);
             this.CalConfirmBtn.TabIndex = 10;
             this.CalConfirmBtn.Text = "确定";
             this.CalConfirmBtn.UseVisualStyleBackColor = true;
@@ -108,11 +108,11 @@
             // CalCancelBtn
             // 
             this.CalCancelBtn.AutoSize = true;
-            this.CalCancelBtn.Font = new System.Drawing.Font("华文中宋", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CalCancelBtn.Location = new System.Drawing.Point(474, 334);
-            this.CalCancelBtn.Margin = new System.Windows.Forms.Padding(1, 3, 1, 3);
+            this.CalCancelBtn.Font = new System.Drawing.Font("等线", 12F);
+            this.CalCancelBtn.Location = new System.Drawing.Point(415, 260);
+            this.CalCancelBtn.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.CalCancelBtn.Name = "CalCancelBtn";
-            this.CalCancelBtn.Size = new System.Drawing.Size(89, 35);
+            this.CalCancelBtn.Size = new System.Drawing.Size(78, 31);
             this.CalCancelBtn.TabIndex = 11;
             this.CalCancelBtn.Text = "取消";
             this.CalCancelBtn.UseVisualStyleBackColor = true;
@@ -121,11 +121,11 @@
             // SelectImageOne
             // 
             this.SelectImageOne.AutoSize = true;
-            this.SelectImageOne.Font = new System.Drawing.Font("华文中宋", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SelectImageOne.Location = new System.Drawing.Point(567, 65);
-            this.SelectImageOne.Margin = new System.Windows.Forms.Padding(1, 3, 1, 3);
+            this.SelectImageOne.Font = new System.Drawing.Font("等线", 10.8F);
+            this.SelectImageOne.Location = new System.Drawing.Point(496, 29);
+            this.SelectImageOne.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.SelectImageOne.Name = "SelectImageOne";
-            this.SelectImageOne.Size = new System.Drawing.Size(89, 35);
+            this.SelectImageOne.Size = new System.Drawing.Size(78, 27);
             this.SelectImageOne.TabIndex = 12;
             this.SelectImageOne.Text = "浏览";
             this.SelectImageOne.UseVisualStyleBackColor = true;
@@ -134,11 +134,11 @@
             // SelectImageTwo
             // 
             this.SelectImageTwo.AutoSize = true;
-            this.SelectImageTwo.Font = new System.Drawing.Font("华文中宋", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SelectImageTwo.Location = new System.Drawing.Point(567, 126);
-            this.SelectImageTwo.Margin = new System.Windows.Forms.Padding(1, 3, 1, 3);
+            this.SelectImageTwo.Font = new System.Drawing.Font("等线", 10.8F);
+            this.SelectImageTwo.Location = new System.Drawing.Point(496, 82);
+            this.SelectImageTwo.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.SelectImageTwo.Name = "SelectImageTwo";
-            this.SelectImageTwo.Size = new System.Drawing.Size(89, 35);
+            this.SelectImageTwo.Size = new System.Drawing.Size(78, 27);
             this.SelectImageTwo.TabIndex = 13;
             this.SelectImageTwo.Text = "浏览";
             this.SelectImageTwo.UseVisualStyleBackColor = true;
@@ -147,32 +147,32 @@
             // BandCalExpression
             // 
             this.BandCalExpression.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.BandCalExpression.Location = new System.Drawing.Point(181, 231);
-            this.BandCalExpression.Margin = new System.Windows.Forms.Padding(1, 3, 1, 3);
+            this.BandCalExpression.Location = new System.Drawing.Point(158, 175);
+            this.BandCalExpression.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.BandCalExpression.Name = "BandCalExpression";
-            this.BandCalExpression.Size = new System.Drawing.Size(475, 28);
+            this.BandCalExpression.Size = new System.Drawing.Size(416, 24);
             this.BandCalExpression.TabIndex = 15;
             this.BandCalExpression.TextChanged += new System.EventHandler(this.BandCalExpression_TextChanged);
             // 
             // BandOnelabel
             // 
             this.BandOnelabel.AutoSize = true;
-            this.BandOnelabel.Font = new System.Drawing.Font("华文中宋", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BandOnelabel.Location = new System.Drawing.Point(11, 183);
+            this.BandOnelabel.Font = new System.Drawing.Font("等线", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.BandOnelabel.Location = new System.Drawing.Point(18, 134);
             this.BandOnelabel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.BandOnelabel.Name = "BandOnelabel";
-            this.BandOnelabel.Size = new System.Drawing.Size(219, 21);
+            this.BandOnelabel.Size = new System.Drawing.Size(184, 17);
             this.BandOnelabel.TabIndex = 16;
             this.BandOnelabel.Text = "选择图像一运算的波段：";
             // 
             // BnadTwolabel
             // 
             this.BnadTwolabel.AutoSize = true;
-            this.BnadTwolabel.Font = new System.Drawing.Font("华文中宋", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BnadTwolabel.Location = new System.Drawing.Point(344, 183);
+            this.BnadTwolabel.Font = new System.Drawing.Font("等线", 12F);
+            this.BnadTwolabel.Location = new System.Drawing.Point(309, 134);
             this.BnadTwolabel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.BnadTwolabel.Name = "BnadTwolabel";
-            this.BnadTwolabel.Size = new System.Drawing.Size(219, 21);
+            this.BnadTwolabel.Size = new System.Drawing.Size(184, 17);
             this.BnadTwolabel.TabIndex = 17;
             this.BnadTwolabel.Text = "选择图像二运算的波段：";
             // 
@@ -180,39 +180,39 @@
             // 
             this.BandOnecomboBox.Font = new System.Drawing.Font("Tahoma", 10F);
             this.BandOnecomboBox.FormattingEnabled = true;
-            this.BandOnecomboBox.Location = new System.Drawing.Point(232, 179);
-            this.BandOnecomboBox.Margin = new System.Windows.Forms.Padding(1, 3, 1, 3);
+            this.BandOnecomboBox.Location = new System.Drawing.Point(211, 131);
+            this.BandOnecomboBox.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.BandOnecomboBox.Name = "BandOnecomboBox";
-            this.BandOnecomboBox.Size = new System.Drawing.Size(91, 29);
+            this.BandOnecomboBox.Size = new System.Drawing.Size(80, 24);
             this.BandOnecomboBox.TabIndex = 18;
             // 
             // BandTwocomboBox
             // 
             this.BandTwocomboBox.Font = new System.Drawing.Font("Tahoma", 10F);
             this.BandTwocomboBox.FormattingEnabled = true;
-            this.BandTwocomboBox.Location = new System.Drawing.Point(565, 179);
-            this.BandTwocomboBox.Margin = new System.Windows.Forms.Padding(1, 3, 1, 3);
+            this.BandTwocomboBox.Location = new System.Drawing.Point(502, 131);
+            this.BandTwocomboBox.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.BandTwocomboBox.Name = "BandTwocomboBox";
-            this.BandTwocomboBox.Size = new System.Drawing.Size(91, 29);
+            this.BandTwocomboBox.Size = new System.Drawing.Size(80, 24);
             this.BandTwocomboBox.TabIndex = 19;
             // 
             // BandResultTextBox
             // 
             this.BandResultTextBox.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.BandResultTextBox.Location = new System.Drawing.Point(181, 282);
-            this.BandResultTextBox.Margin = new System.Windows.Forms.Padding(1, 3, 1, 3);
+            this.BandResultTextBox.Location = new System.Drawing.Point(158, 219);
+            this.BandResultTextBox.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.BandResultTextBox.Name = "BandResultTextBox";
-            this.BandResultTextBox.Size = new System.Drawing.Size(382, 28);
+            this.BandResultTextBox.Size = new System.Drawing.Size(335, 24);
             this.BandResultTextBox.TabIndex = 20;
             // 
             // ImageOnecomboBox
             // 
             this.ImageOnecomboBox.Font = new System.Drawing.Font("Tahoma", 10F);
             this.ImageOnecomboBox.FormattingEnabled = true;
-            this.ImageOnecomboBox.Location = new System.Drawing.Point(181, 68);
-            this.ImageOnecomboBox.Margin = new System.Windows.Forms.Padding(1, 3, 1, 3);
+            this.ImageOnecomboBox.Location = new System.Drawing.Point(158, 31);
+            this.ImageOnecomboBox.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.ImageOnecomboBox.Name = "ImageOnecomboBox";
-            this.ImageOnecomboBox.Size = new System.Drawing.Size(382, 29);
+            this.ImageOnecomboBox.Size = new System.Drawing.Size(335, 24);
             this.ImageOnecomboBox.TabIndex = 21;
             this.ImageOnecomboBox.SelectedIndexChanged += new System.EventHandler(this.ImageOnecomboBox_SelectedIndexChanged);
             // 
@@ -220,21 +220,21 @@
             // 
             this.ImageTwocomboBox.Font = new System.Drawing.Font("Tahoma", 10F);
             this.ImageTwocomboBox.FormattingEnabled = true;
-            this.ImageTwocomboBox.Location = new System.Drawing.Point(181, 126);
-            this.ImageTwocomboBox.Margin = new System.Windows.Forms.Padding(1, 3, 1, 3);
+            this.ImageTwocomboBox.Location = new System.Drawing.Point(158, 82);
+            this.ImageTwocomboBox.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.ImageTwocomboBox.Name = "ImageTwocomboBox";
-            this.ImageTwocomboBox.Size = new System.Drawing.Size(382, 29);
+            this.ImageTwocomboBox.Size = new System.Drawing.Size(335, 24);
             this.ImageTwocomboBox.TabIndex = 22;
             this.ImageTwocomboBox.SelectedIndexChanged += new System.EventHandler(this.ImageTwocomboBox_SelectedIndexChanged);
             // 
             // button1
             // 
             this.button1.AutoSize = true;
-            this.button1.Font = new System.Drawing.Font("华文中宋", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(567, 278);
-            this.button1.Margin = new System.Windows.Forms.Padding(1, 3, 1, 3);
+            this.button1.Font = new System.Drawing.Font("等线", 10.8F);
+            this.button1.Location = new System.Drawing.Point(504, 218);
+            this.button1.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(89, 35);
+            this.button1.Size = new System.Drawing.Size(78, 27);
             this.button1.TabIndex = 23;
             this.button1.Text = "浏览";
             this.button1.UseVisualStyleBackColor = true;
@@ -244,9 +244,9 @@
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
             this.Appearance.Options.UseBackColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(739, 414);
+            this.ClientSize = new System.Drawing.Size(647, 322);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.ImageTwocomboBox);
             this.Controls.Add(this.ImageOnecomboBox);
@@ -265,7 +265,7 @@
             this.Controls.Add(this.ImageTwoLabel);
             this.Controls.Add(this.ImageOneLabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(1, 3, 1, 3);
+            this.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.Name = "bandOperationForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "波段运算";

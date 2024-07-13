@@ -49,30 +49,33 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("等线", 12F);
             this.label1.Location = new System.Drawing.Point(18, 26);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 14);
+            this.label1.Size = new System.Drawing.Size(72, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "输入文件";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("等线", 12F);
             this.label2.Location = new System.Drawing.Point(18, 83);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 14);
+            this.label2.Size = new System.Drawing.Size(88, 17);
             this.label2.TabIndex = 1;
             this.label2.Text = "元数据文件";
             // 
             // 文件输入框
             // 
+            this.文件输入框.Font = new System.Drawing.Font("等线", 12F);
             this.文件输入框.FormattingEnabled = true;
             this.文件输入框.Location = new System.Drawing.Point(116, 26);
-            this.文件输入框.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.文件输入框.Margin = new System.Windows.Forms.Padding(2);
             this.文件输入框.Name = "文件输入框";
-            this.文件输入框.Size = new System.Drawing.Size(302, 22);
+            this.文件输入框.Size = new System.Drawing.Size(302, 25);
             this.文件输入框.TabIndex = 2;
             this.文件输入框.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -80,7 +83,7 @@
             // 
             this.元数据文件.FormattingEnabled = true;
             this.元数据文件.Location = new System.Drawing.Point(116, 83);
-            this.元数据文件.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.元数据文件.Margin = new System.Windows.Forms.Padding(2);
             this.元数据文件.Name = "元数据文件";
             this.元数据文件.Size = new System.Drawing.Size(302, 22);
             this.元数据文件.TabIndex = 3;
@@ -88,10 +91,11 @@
             // 
             // InputFile
             // 
+            this.InputFile.Font = new System.Drawing.Font("等线", 12F);
             this.InputFile.Location = new System.Drawing.Point(443, 24);
-            this.InputFile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.InputFile.Margin = new System.Windows.Forms.Padding(2);
             this.InputFile.Name = "InputFile";
-            this.InputFile.Size = new System.Drawing.Size(58, 18);
+            this.InputFile.Size = new System.Drawing.Size(58, 27);
             this.InputFile.TabIndex = 5;
             this.InputFile.Text = "加载";
             this.InputFile.UseVisualStyleBackColor = true;
@@ -99,10 +103,11 @@
             // 
             // InputXML
             // 
-            this.InputXML.Location = new System.Drawing.Point(443, 85);
-            this.InputXML.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.InputXML.Font = new System.Drawing.Font("等线", 12F);
+            this.InputXML.Location = new System.Drawing.Point(443, 83);
+            this.InputXML.Margin = new System.Windows.Forms.Padding(2);
             this.InputXML.Name = "InputXML";
-            this.InputXML.Size = new System.Drawing.Size(58, 18);
+            this.InputXML.Size = new System.Drawing.Size(58, 26);
             this.InputXML.TabIndex = 6;
             this.InputXML.Text = "加载";
             this.InputXML.UseVisualStyleBackColor = true;
@@ -112,10 +117,11 @@
             // 
             this.groupBox1.Controls.Add(this.ApparentReflectance);
             this.groupBox1.Controls.Add(this.ApparentRadiance);
+            this.groupBox1.Font = new System.Drawing.Font("等线", 12F);
             this.groupBox1.Location = new System.Drawing.Point(20, 131);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(481, 119);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
@@ -125,9 +131,9 @@
             // 
             this.ApparentReflectance.AutoSize = true;
             this.ApparentReflectance.Location = new System.Drawing.Point(287, 61);
-            this.ApparentReflectance.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ApparentReflectance.Margin = new System.Windows.Forms.Padding(2);
             this.ApparentReflectance.Name = "ApparentReflectance";
-            this.ApparentReflectance.Size = new System.Drawing.Size(85, 18);
+            this.ApparentReflectance.Size = new System.Drawing.Size(106, 21);
             this.ApparentReflectance.TabIndex = 1;
             this.ApparentReflectance.TabStop = true;
             this.ApparentReflectance.Text = "表观反射率";
@@ -137,9 +143,9 @@
             // 
             this.ApparentRadiance.AutoSize = true;
             this.ApparentRadiance.Location = new System.Drawing.Point(96, 61);
-            this.ApparentRadiance.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ApparentRadiance.Margin = new System.Windows.Forms.Padding(2);
             this.ApparentRadiance.Name = "ApparentRadiance";
-            this.ApparentRadiance.Size = new System.Drawing.Size(85, 18);
+            this.ApparentRadiance.Size = new System.Drawing.Size(106, 21);
             this.ApparentRadiance.TabIndex = 0;
             this.ApparentRadiance.TabStop = true;
             this.ApparentRadiance.Text = "表观辐射率";
@@ -148,10 +154,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("等线", 12F);
             this.label3.Location = new System.Drawing.Point(18, 269);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 14);
+            this.label3.Size = new System.Drawing.Size(72, 17);
             this.label3.TabIndex = 8;
             this.label3.Text = "输出文件";
             // 
@@ -159,17 +166,18 @@
             // 
             this.文件输出框.FormattingEnabled = true;
             this.文件输出框.Location = new System.Drawing.Point(116, 269);
-            this.文件输出框.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.文件输出框.Margin = new System.Windows.Forms.Padding(2);
             this.文件输出框.Name = "文件输出框";
             this.文件输出框.Size = new System.Drawing.Size(302, 22);
             this.文件输出框.TabIndex = 9;
             // 
             // OutputFile
             // 
+            this.OutputFile.Font = new System.Drawing.Font("等线", 12F);
             this.OutputFile.Location = new System.Drawing.Point(443, 269);
-            this.OutputFile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.OutputFile.Margin = new System.Windows.Forms.Padding(2);
             this.OutputFile.Name = "OutputFile";
-            this.OutputFile.Size = new System.Drawing.Size(58, 18);
+            this.OutputFile.Size = new System.Drawing.Size(58, 26);
             this.OutputFile.TabIndex = 10;
             this.OutputFile.Text = "加载";
             this.OutputFile.UseVisualStyleBackColor = true;
@@ -177,8 +185,9 @@
             // 
             // OK
             // 
+            this.OK.Font = new System.Drawing.Font("等线", 12F);
             this.OK.Location = new System.Drawing.Point(116, 312);
-            this.OK.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.OK.Margin = new System.Windows.Forms.Padding(2);
             this.OK.Name = "OK";
             this.OK.Size = new System.Drawing.Size(80, 24);
             this.OK.TabIndex = 11;
@@ -188,8 +197,9 @@
             // 
             // Cancel
             // 
-            this.Cancel.Location = new System.Drawing.Point(307, 312);
-            this.Cancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Cancel.Font = new System.Drawing.Font("等线", 12F);
+            this.Cancel.Location = new System.Drawing.Point(338, 312);
+            this.Cancel.Margin = new System.Windows.Forms.Padding(2);
             this.Cancel.Name = "Cancel";
             this.Cancel.Size = new System.Drawing.Size(80, 24);
             this.Cancel.TabIndex = 12;
@@ -216,7 +226,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "radiometricCalibrationForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

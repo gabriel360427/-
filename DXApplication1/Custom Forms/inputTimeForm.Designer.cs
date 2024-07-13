@@ -1,7 +1,7 @@
 ﻿
 namespace 绿廊智绘.Custom_Forms
 {
-    partial class inputTime
+    partial class inputTimeForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace 绿廊智绘.Custom_Forms
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(inputTime));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(inputTimeForm));
             this.label1 = new System.Windows.Forms.Label();
             this.输入时间框 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -38,9 +38,10 @@ namespace 绿廊智绘.Custom_Forms
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(76, 19);
+            this.label1.Font = new System.Drawing.Font("等线", 12F);
+            this.label1.Location = new System.Drawing.Point(32, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(173, 12);
+            this.label1.Size = new System.Drawing.Size(254, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "请按照YYYY-MM-DD格式输入时间";
             // 
@@ -53,9 +54,10 @@ namespace 绿廊智绘.Custom_Forms
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(122, 94);
+            this.button1.Font = new System.Drawing.Font("等线", 12F);
+            this.button1.Location = new System.Drawing.Point(117, 103);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(81, 24);
             this.button1.TabIndex = 2;
             this.button1.Text = "确定";
             this.button1.UseVisualStyleBackColor = true;

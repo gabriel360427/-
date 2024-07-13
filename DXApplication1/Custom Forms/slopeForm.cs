@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace 绿廊智绘.Custom_Forms
 {
-    public partial class slope : Form
+    public partial class slopeForm : Form
     {
-        public slope()
+        public slopeForm()
         {
             InitializeComponent();
         }
