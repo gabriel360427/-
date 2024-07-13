@@ -33,6 +33,9 @@ namespace 绿廊智绘
             ICommandControl mapScaleCmdControl = new MapScaleCommandControl();
             mapScaleCmdControl.Control = toolStripComboBox1;
             (mapScaleCmdControl as ICommand).OnCreate(mapControlMain);
+            //汉化
+            PIE.Controls.LanguageManager.GetInstance().InstallTranslator();
+            PIE.Controls.LanguageManager.GetInstance().InstallFonts();
         }
         private void Init()
         {
