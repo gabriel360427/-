@@ -12,9 +12,9 @@ using System.IO;
 
 namespace 绿廊智绘.Custom_Forms
 {
-    public partial class ObjectOrientedclassification : DevExpress.XtraEditors.XtraForm
+    public partial class objectOrientedclassification : DevExpress.XtraEditors.XtraForm
     {
-        public ObjectOrientedclassification()
+        public objectOrientedclassification()
         {
             InitializeComponent();
         }

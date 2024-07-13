@@ -1619,3 +1619,5 @@ C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_
 C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.landUseTypeTransferMatrixForm.resources
 C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.rasterToPolylineForm.resources
 C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.changeStatisticsForm.resources
+C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.ndviBandOperationForm.resources
+C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.ndwiBandOperationForm.resources

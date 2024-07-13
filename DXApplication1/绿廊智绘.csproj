@@ -229,11 +229,17 @@
     <Compile Include="Custom Forms\ndviBandOperationForm.designer.cs">
       <DependentUpon>ndviBandOperationForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Custom Forms\ObjectOrientedclassification.cs">
+    <Compile Include="Custom Forms\ndwiBandOperationForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Custom Forms\ObjectOrientedclassification.designer.cs">
-      <DependentUpon>ObjectOrientedclassification.cs</DependentUpon>
+    <Compile Include="Custom Forms\ndwiBandOperationForm.designer.cs">
+      <DependentUpon>ndwiBandOperationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Forms\objectOrientedclassification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom Forms\objectOrientedclassification.designer.cs">
+      <DependentUpon>objectOrientedclassification.cs</DependentUpon>
     </Compile>
     <Compile Include="Custom Forms\rgbCombineForm.cs">
       <SubType>Form</SubType>
@@ -487,8 +493,11 @@
     <EmbeddedResource Include="Custom Forms\ndviBandOperationForm.resx">
       <DependentUpon>ndviBandOperationForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Custom Forms\ObjectOrientedclassification.resx">
-      <DependentUpon>ObjectOrientedclassification.cs</DependentUpon>
+    <EmbeddedResource Include="Custom Forms\ndwiBandOperationForm.resx">
+      <DependentUpon>ndwiBandOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Forms\objectOrientedclassification.resx">
+      <DependentUpon>objectOrientedclassification.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Forms\poiChangeStatisticsForm.resx">
       <DependentUpon>poiChangeStatisticsForm.cs</DependentUpon>

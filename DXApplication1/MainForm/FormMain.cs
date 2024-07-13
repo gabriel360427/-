@@ -1217,6 +1217,83 @@ namespace 绿廊智绘
 
         #endregion
 
+        #region 6. 遥感指数计算
+        private void barButtonItem6_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            ndwiBandOperationForm frm = new ndwiBandOperationForm(mapControlMain);
+            frm.ShowDialog();
+            if (frm.DialogResult == DialogResult.OK)
+            {
+                #region 1、参数设置
+                PIE.CommonAlgo.BandOper_Exchange_Info info = new PIE.CommonAlgo.BandOper_Exchange_Info();
+                info.StrExp = frm.CalExpression;
+                info.SelectFileBands = new List<int> { frm.BandOne, frm.BandTwo };//frm.BandOne和bfrm.BandOne 根据运算公式的波段大小先后顺序确定；
+                info.SelectFileNames = new List<string> { frm.ImageOne, frm.ImageTwo };//分别为frm.ImageOne和frm.ImageOne数据路径
+                info.OutputFilePath = frm.BandResult;
+                string path = info.OutputFilePath;
+                info.FileTypeCode = "GTiff";
+                info.PixelDataType = 6;
+                PIE.SystemAlgo.ISystemAlgo algo = PIE.SystemAlgo.AlgoFactory.Instance().CreateAlgo("PIE.CommonAlgo.dll", "PIE.CommonAlgo.BandOperAlgo");
+                if (algo == null) return;
+                #endregion
+
+                //2、算法执行
+                PIE.SystemAlgo.ISystemAlgoEvents algoEvents = algo as PIE.SystemAlgo.ISystemAlgoEvents;
+                algo.Name = "波段运算";
+                algo.Params = info;
+
+                //3、结果显示
+                bool result = PIE.SystemAlgo.AlgoFactory.Instance().ExecuteAlgo(algo);
+                if (result)
+                {
+                    MessageBox.Show("波段算法执行成功");
+                    ILayer layer = LayerFactory.CreateDefaultLayer(info.OutputFilePath);
+                    if (layer == null) return;
+                    mapControlMain.ActiveView.FocusMap.AddLayer(layer);
+                    mapControlMain.ActiveView.PartialRefresh(ViewDrawPhaseType.ViewAll);
+                }
+            }
+        }
+
+        private void barButtonItem7_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            ndviBandOperationForm frm = new ndviBandOperationForm(mapControlMain);
+            frm.ShowDialog();
+            if (frm.DialogResult == DialogResult.OK)
+            {
+                #region 1、参数设置
+                PIE.CommonAlgo.BandOper_Exchange_Info info = new PIE.CommonAlgo.BandOper_Exchange_Info();
+                info.StrExp = frm.CalExpression;
+                info.SelectFileBands = new List<int> { frm.BandOne, frm.BandTwo };//frm.BandOne和bfrm.BandOne 根据运算公式的波段大小先后顺序确定；
+                info.SelectFileNames = new List<string> { frm.ImageOne, frm.ImageTwo };//分别为frm.ImageOne和frm.ImageOne数据路径
+                info.OutputFilePath = frm.BandResult;
+                string path = info.OutputFilePath;
+                info.FileTypeCode = "GTiff";
+                info.PixelDataType = 6;
+                PIE.SystemAlgo.ISystemAlgo algo = PIE.SystemAlgo.AlgoFactory.Instance().CreateAlgo("PIE.CommonAlgo.dll", "PIE.CommonAlgo.BandOperAlgo");
+                if (algo == null) return;
+                #endregion
+
+                //2、算法执行
+                PIE.SystemAlgo.ISystemAlgoEvents algoEvents = algo as PIE.SystemAlgo.ISystemAlgoEvents;
+                algo.Name = "波段运算";
+                algo.Params = info;
+
+                //3、结果显示
+                bool result = PIE.SystemAlgo.AlgoFactory.Instance().ExecuteAlgo(algo);
+                if (result)
+                {
+                    MessageBox.Show("波段算法执行成功");
+                    ILayer layer = LayerFactory.CreateDefaultLayer(info.OutputFilePath);
+                    if (layer == null) return;
+                    mapControlMain.ActiveView.FocusMap.AddLayer(layer);
+                    mapControlMain.ActiveView.PartialRefresh(ViewDrawPhaseType.ViewAll);
+                }
+            }
+        }
+
+        #endregion
+
         #endregion
 
         #region 四、影像分类
@@ -1475,7 +1552,7 @@ namespace 绿廊智绘
         #region 3.3 面向对象分类
         private void barButtonItem1_ItemClick_2(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            ObjectOrientedclassification frm = new ObjectOrientedclassification();
+            objectOrientedclassification frm = new objectOrientedclassification();
             frm.Show();
         }
         #endregion
@@ -2435,44 +2512,6 @@ namespace 绿廊智绘
         }
 
         #endregion
-
-        private void barButtonItem6_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            ndwiBandOperationForm frm = new ndwiBandOperationForm(mapControlMain);
-            frm.ShowDialog();
-            if (frm.DialogResult == DialogResult.OK)
-            {
-                #region 1、参数设置
-                PIE.CommonAlgo.BandOper_Exchange_Info info = new PIE.CommonAlgo.BandOper_Exchange_Info();
-                info.StrExp = frm.CalExpression;
-                info.SelectFileBands = new List<int> { frm.BandOne, frm.BandTwo };//frm.BandOne和bfrm.BandOne 根据运算公式的波段大小先后顺序确定；
-                info.SelectFileNames = new List<string> { frm.ImageOne, frm.ImageTwo };//分别为frm.ImageOne和frm.ImageOne数据路径
-                info.OutputFilePath = frm.BandResult;
-                string path = info.OutputFilePath;
-                info.FileTypeCode = "GTiff";
-                info.PixelDataType = 6;
-                PIE.SystemAlgo.ISystemAlgo algo = PIE.SystemAlgo.AlgoFactory.Instance().CreateAlgo("PIE.CommonAlgo.dll", "PIE.CommonAlgo.BandOperAlgo");
-                if (algo == null) return;
-                #endregion
-
-                //2、算法执行
-                PIE.SystemAlgo.ISystemAlgoEvents algoEvents = algo as PIE.SystemAlgo.ISystemAlgoEvents;
-                algo.Name = "波段运算";
-                algo.Params = info;
-
-                //3、结果显示
-                bool result = PIE.SystemAlgo.AlgoFactory.Instance().ExecuteAlgo(algo);
-                if (result)
-                {
-                    MessageBox.Show("波段算法执行成功");
-                    ILayer layer = LayerFactory.CreateDefaultLayer(info.OutputFilePath);
-                    if (layer == null) return;
-                    mapControlMain.ActiveView.FocusMap.AddLayer(layer);
-                    mapControlMain.ActiveView.PartialRefresh(ViewDrawPhaseType.ViewAll);
-                }
-            }
-        }
-
 
     }
 }

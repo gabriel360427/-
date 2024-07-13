@@ -1,7 +1,7 @@
 ﻿
 namespace 绿廊智绘.Custom_Forms
 {
-    partial class ObjectOrientedclassification
+    partial class objectOrientedclassification
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace 绿廊智绘.Custom_Forms
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ObjectOrientedclassification));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(objectOrientedclassification));
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
