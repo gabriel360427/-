@@ -66,6 +66,7 @@ namespace 绿廊智绘.Custom_Forms
             this.button1.TabIndex = 1;
             this.button1.Text = "加载";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // comboBox1
             // 
@@ -95,6 +96,7 @@ namespace 绿廊智绘.Custom_Forms
             this.button2.TabIndex = 1;
             this.button2.Text = "加载";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // comboBox2
             // 
@@ -124,6 +126,7 @@ namespace 绿廊智绘.Custom_Forms
             this.button3.TabIndex = 1;
             this.button3.Text = "加载";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // comboBox3
             // 
@@ -153,6 +156,7 @@ namespace 绿廊智绘.Custom_Forms
             this.button5.TabIndex = 4;
             this.button5.Text = "取消";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // landscapeFragmentationAnalysis
             // 
