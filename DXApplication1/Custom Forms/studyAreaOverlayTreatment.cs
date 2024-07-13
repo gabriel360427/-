@@ -64,12 +64,6 @@ namespace 绿廊智绘.Custom_Forms
 
         }
 
-        private void button6_Click(object sender, EventArgs e)
-        {
-            textBox1.Text = "5000";
-            textBox2.Text = "2000";
-        }
-
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -328,6 +322,12 @@ namespace 绿廊智绘.Custom_Forms
                 return topoOperator.IsKnownSimple;
             }
             return false;
+        }
+
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+            textBox1.Text = "5000";
+            textBox2.Text = "2000";
         }
     }
 

@@ -37,6 +37,7 @@ namespace 绿廊智绘.Custom_Forms
             this.button2 = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.button6 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -116,6 +117,7 @@ namespace 绿廊智绘.Custom_Forms
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.button6);
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.textBox2);
             this.groupBox3.Controls.Add(this.label3);
@@ -125,10 +127,21 @@ namespace 绿廊智绘.Custom_Forms
             this.groupBox3.Font = new System.Drawing.Font("等线", 12F);
             this.groupBox3.Location = new System.Drawing.Point(12, 151);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(340, 74);
+            this.groupBox3.Size = new System.Drawing.Size(340, 114);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "参数设置";
+            // 
+            // button6
+            // 
+            this.button6.Font = new System.Drawing.Font("等线", 12F);
+            this.button6.Location = new System.Drawing.Point(181, 77);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(116, 24);
+            this.button6.TabIndex = 6;
+            this.button6.Text = "使用默认参数";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click_1);
             // 
             // label4
             // 
@@ -186,7 +199,7 @@ namespace 绿廊智绘.Custom_Forms
             this.groupBox4.Controls.Add(this.button3);
             this.groupBox4.Controls.Add(this.comboBox3);
             this.groupBox4.Font = new System.Drawing.Font("等线", 12F);
-            this.groupBox4.Location = new System.Drawing.Point(12, 231);
+            this.groupBox4.Location = new System.Drawing.Point(12, 281);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(340, 65);
             this.groupBox4.TabIndex = 3;
@@ -213,7 +226,7 @@ namespace 绿廊智绘.Custom_Forms
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("等线", 12F);
-            this.button4.Location = new System.Drawing.Point(169, 297);
+            this.button4.Location = new System.Drawing.Point(169, 347);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 32);
             this.button4.TabIndex = 4;
@@ -224,7 +237,7 @@ namespace 绿廊智绘.Custom_Forms
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("等线", 12F);
-            this.button5.Location = new System.Drawing.Point(277, 297);
+            this.button5.Location = new System.Drawing.Point(277, 347);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 32);
             this.button5.TabIndex = 5;
@@ -235,7 +248,7 @@ namespace 绿廊智绘.Custom_Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(364, 356);
+            this.ClientSize = new System.Drawing.Size(364, 397);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.groupBox4);
@@ -276,5 +289,6 @@ namespace 绿廊智绘.Custom_Forms
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
     }
 }

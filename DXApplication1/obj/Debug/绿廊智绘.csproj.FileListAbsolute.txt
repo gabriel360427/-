@@ -1830,3 +1830,5 @@ F:\绿廊智绘——城镇生态富民格局智能遥测系统\DXApplication1\o
 F:\绿廊智绘——城镇生态富民格局智能遥测系统\DXApplication1\obj\Debug\绿廊智绘.pdb
 C:\Users\Administrator\Desktop\绿廊智绘——城镇生态富民格局智能遥测系统\DXApplication1\obj\Debug\绿廊智绘.exe
 C:\Users\Administrator\Desktop\绿廊智绘——城镇生态富民格局智能遥测系统\DXApplication1\obj\Debug\绿廊智绘.pdb
+C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.ndviBandOperationForm.resources
+C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.ndwiBandOperationForm.resources
