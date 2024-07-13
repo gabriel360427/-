@@ -574,7 +574,6 @@ C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_
 C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.contrastRatioParam.resources
 C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.createFeatureForm.resources
 C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.distanceClassifyForm.resources
-C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.imageClippingForm.resources
 C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.ISODATAForm.resources
 C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.kmeansForm.resources
 C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Commands.linearResistanceFactor.resources
@@ -583,8 +582,6 @@ C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_
 C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.percentLinearStrechParam.resources
 C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.radiometricCalibrationForm.resources
 C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Commands.reClassification.resources
-C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.Relief.resources
-C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.slope.resources
 C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Commands.storageFormatConversionForm.resources
 C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.transparencyParam.resources
 C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.quickMosaicForm.resources
@@ -594,12 +591,8 @@ C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_
 C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.CoreAreaDivision.resources
 C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.CostDistanceCalculation.resources
 C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.CostPathCalculation.resources
-C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.Sampling.resources
 C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.CorridorAddField.resources
 C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.EcologicalNodeExtraction.resources
-C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.土地转移矩阵.resources
-C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.主次要分析.resources
-C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.样本标准时序曲线.resources
 C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.FormMain.resources
 C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Properties.Resources.resources
 C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.vectorToRasterForm.resources
@@ -813,9 +806,6 @@ C:\Users\Administrator\Desktop\新建文件夹 (2)\-\DXApplication1\bin\Debug\ES
 C:\Users\Administrator\Desktop\新建文件夹 (2)\-\DXApplication1\bin\Debug\ESRI.ArcGIS.ADF.dll
 C:\Users\Administrator\Desktop\新建文件夹 (2)\-\DXApplication1\bin\Debug\ESRI.ArcGIS.ADF.xml
 C:\Users\Administrator\Desktop\新建文件夹 (2)\-\DXApplication1\bin\Debug\ESRI.ArcGIS.ADF.Connection.Local.xml
-C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.变化统计.resources
-C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.POI.resources
-C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.道路要素变化统计.resources
 E:\桌面\PIE\6.28\-\DXApplication1\bin\Debug\绿廊智绘.exe
 E:\桌面\PIE\6.28\-\DXApplication1\bin\Debug\绿廊智绘.pdb
 E:\桌面\PIE\6.28\-\DXApplication1\bin\Debug\DevExpress.BonusSkins.v18.1.dll
@@ -1290,8 +1280,6 @@ C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\bin\Debug\de\DevExpress.Map.v1
 C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\bin\Debug\es\DevExpress.Map.v18.1.Core.resources.dll
 C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\bin\Debug\ja\DevExpress.Map.v18.1.Core.resources.dll
 C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\bin\Debug\ru\DevExpress.Map.v18.1.Core.resources.dll
-C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.参考建议.resources
-C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.inputTime.resources
 C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.rasterToPolylineForm.resources
 C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.poiChangeStatisticsForm.resources
 C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.segmentAnythingModelForm.resources
@@ -1610,3 +1598,24 @@ C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.cspr
 C:\Users\Administrator\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.ObjectOrientedclassification.resources
 C:\Users\Administrator\Desktop\git2\-\DXApplication1\bin\Debug\CSkin.dll
 C:\Users\Administrator\Desktop\git2\-\DXApplication1\bin\Debug\CSkin.xml
+C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\bin\Debug\ESRI.ArcGIS.DataManagementTools.dll
+C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\bin\Debug\CSkin.xml
+C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\bin\Debug\ESRI.ArcGIS.DataManagementTools.xml
+C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\bin\Debug\ESRI.ArcGIS.DataManagementTools.dll.config
+C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.economicPatternTreatment.resources
+C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.coordinationEvaluation.resources
+C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.landscapeFragmentationAnalysis.resources
+C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.inputTimeForm.resources
+C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.ObjectOrientedclassification.resources
+C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.poiChangeStatisticsForm.resources
+C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.clippingThroughShapeFileForm.resources
+C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.reliefForm.resources
+C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.rgbCombineForm.resources
+C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.segmentAnythingModelForm.resources
+C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.slopeForm.resources
+C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.studyAreaOverlayTreatment.resources
+C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.samplingForm.resources
+C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.referenceSuggestion.resources
+C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.landUseTypeTransferMatrixForm.resources
+C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.rasterToPolylineForm.resources
+C:\Users\Gabriel_36\Desktop\git2\-\DXApplication1\obj\Debug\绿廊智绘.Custom_Forms.changeStatisticsForm.resources
