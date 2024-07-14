@@ -139,7 +139,6 @@
             this.MSPAlandscapeclassification = new DevExpress.XtraBars.BarButtonItem();
             this.SlopeProcessing = new DevExpress.XtraBars.BarButtonItem();
             this.TerrainReliefProcessing = new DevExpress.XtraBars.BarButtonItem();
-            this.ImportanceOfcore = new DevExpress.XtraBars.BarButtonItem();
             this.CoreAreaExtraction = new DevExpress.XtraBars.BarButtonItem();
             this.CoreAreaDivision = new DevExpress.XtraBars.BarButtonItem();
             this.CostDistanceCalculation = new DevExpress.XtraBars.BarButtonItem();
@@ -422,7 +421,6 @@
             this.MSPAlandscapeclassification,
             this.SlopeProcessing,
             this.TerrainReliefProcessing,
-            this.ImportanceOfcore,
             this.CoreAreaExtraction,
             this.CoreAreaDivision,
             this.CostDistanceCalculation,
@@ -1420,15 +1418,6 @@
             this.TerrainReliefProcessing.Id = 179;
             this.TerrainReliefProcessing.Name = "TerrainReliefProcessing";
             // 
-            // ImportanceOfcore
-            // 
-            this.ImportanceOfcore.Caption = "核心区重要性";
-            this.ImportanceOfcore.Id = 126;
-            this.ImportanceOfcore.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ImportanceOfcore.ImageOptions.Image")));
-            this.ImportanceOfcore.Name = "ImportanceOfcore";
-            this.ImportanceOfcore.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.ImportanceOfcore.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.ImportanceOfcore_ItemClick);
-            // 
             // CoreAreaExtraction
             // 
             this.CoreAreaExtraction.Caption = "核心区提取";
@@ -2040,7 +2029,6 @@
             // 
             // Core
             // 
-            this.Core.ItemLinks.Add(this.ImportanceOfcore);
             this.Core.ItemLinks.Add(this.CoreAreaExtraction);
             this.Core.ItemLinks.Add(this.CoreAreaDivision);
             this.Core.Name = "Core";
@@ -2972,7 +2960,6 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup MSPA景观分类;
         private DevExpress.XtraBars.BarButtonItem SlopeProcessing;
         private DevExpress.XtraBars.BarButtonItem TerrainReliefProcessing;
-        private DevExpress.XtraBars.BarButtonItem ImportanceOfcore;
         private DevExpress.XtraBars.BarButtonItem CoreAreaExtraction;
         private DevExpress.XtraBars.BarButtonItem CoreAreaDivision;
         private DevExpress.XtraBars.BarButtonItem CostDistanceCalculation;

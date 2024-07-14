@@ -1106,8 +1106,10 @@ namespace 绿廊智绘
         #region 2.1 影像匹配
         private void imageMatching_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            //汉化
             PIE.Controls.LanguageManager.GetInstance().InstallTranslator();
-            PIE.AxControls.DataPrepGeoCorrDialog frm = new PIE.AxControls.DataPrepGeoCorrDialog();
+            PIE.Controls.LanguageManager.GetInstance().InstallFonts();
+            PIE.AxControls.DataPrepGeoCorrDialog frm = new DataPrepGeoCorrDialog();
             frm.ShowDialog();
             (frm as IDisposable).Dispose();
             frm = null;
