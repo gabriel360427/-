@@ -329,6 +329,11 @@ namespace 绿廊智绘.Custom_Forms
             textBox1.Text = "5000";
             textBox2.Text = "2000";
         }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 
     public class ShapeFileMerger

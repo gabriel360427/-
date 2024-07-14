@@ -54,7 +54,7 @@ namespace 绿廊智绘
             IActiveViewEvents activeViewEvents = mapControlMain.FocusMap as PIE.Carto.IActiveViewEvents;
             activeViewEvents.OnLayerDeleted += MapControl_OnLayerDeleted;//图层删除事件
         }
-        
+
         private void mapControlMain_MouseMove(object sender, MouseEventArgs e)
         {
             //地图坐标转换为地图坐标
@@ -2027,7 +2027,7 @@ namespace 绿廊智绘
         #region 3.1 铁路因子
         private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            LinearResistenceFactorNEW form = new LinearResistenceFactorNEW();
+            linearResistanceFactor form = new linearResistanceFactor();
             form.Text = "铁路因子";
             form.Column1.HeaderText = "距铁路距离（m）";
             form.Column2.HeaderText = "阻力值";
@@ -2044,7 +2044,7 @@ namespace 绿廊智绘
         #region 3.2 公路因子
         private void highway_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            LinearResistenceFactorNEW form = new LinearResistenceFactorNEW();
+            linearResistanceFactor form = new linearResistanceFactor();
             form.Text = "公路因子";
             form.Column1.HeaderText = "距公路距离（m）";
             form.Column2.HeaderText = "阻力值";

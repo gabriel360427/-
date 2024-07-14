@@ -70,17 +70,18 @@
             // 
             // 文件输入框
             // 
-            this.文件输入框.Font = new System.Drawing.Font("等线", 12F);
+            this.文件输入框.Font = new System.Drawing.Font("Tahoma", 9F);
             this.文件输入框.FormattingEnabled = true;
             this.文件输入框.Location = new System.Drawing.Point(116, 26);
             this.文件输入框.Margin = new System.Windows.Forms.Padding(2);
             this.文件输入框.Name = "文件输入框";
-            this.文件输入框.Size = new System.Drawing.Size(302, 25);
+            this.文件输入框.Size = new System.Drawing.Size(302, 22);
             this.文件输入框.TabIndex = 2;
             this.文件输入框.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // 元数据文件
             // 
+            this.元数据文件.Font = new System.Drawing.Font("Tahoma", 9F);
             this.元数据文件.FormattingEnabled = true;
             this.元数据文件.Location = new System.Drawing.Point(116, 83);
             this.元数据文件.Margin = new System.Windows.Forms.Padding(2);
