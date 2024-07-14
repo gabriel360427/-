@@ -1581,7 +1581,6 @@ namespace 绿廊智绘
             if (frm.DialogResult != DialogResult.OK) return;
             #region 1、参数设置
             PIE.CommonAlgo.StClassPostComb info = new PIE.CommonAlgo.StClassPostComb();
-
             info.InputFileName = frm.inputImage;
             info.OutputFileName = frm.resultImage;
             info.ClassCount = frm.classCount; //分类合并前的类别
